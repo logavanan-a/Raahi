@@ -1,0 +1,5 @@
+/home/mahiti/raahi_venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1595: RuntimeWarning: DateTimeField CronJobSummaryLog.last_successful_update received a naive datetime (2024-11-01 04:04:03.663622) while time zone support is active.
+  warnings.warn(
+/home/mahiti/raahi_venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1595: RuntimeWarning: DateTimeField CronJobSummaryLog.most_recent_update received a naive datetime (2024-11-01 04:04:04.058985) while time zone support is active.
+  warnings.warn(
+Created the MPR Status

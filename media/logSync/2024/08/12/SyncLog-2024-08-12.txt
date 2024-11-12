@@ -1,0 +1,5714 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:01:19hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:01:19hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:01:25hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:01:25hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:02:13hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:02:13hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:02:18hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:02:18hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:03:02hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:03:02hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:03:29hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:03:29hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:03:38hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:03:38hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:03:42hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:03:42hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:04:20hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:04:20hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:04:24hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:04:24hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:04:57hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:04:57hrs{
+    "csdate": "2024-08-09T12:00:36.571500+05:30",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-18T17:28:09.547272+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 121,
+    "vsdate": "2024-07-30T10:17:35.733229+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:04:59hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:04:59hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:06:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:06:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:06:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:06:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:06:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:06:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:06:38hrs[
+    {
+        "address": "Dolu",
+        "block": "",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 153,
+        "date": "2024-08-17",
+        "delay_reason": "",
+        "district": 714,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "Moinagarh",
+        "modified_by": 153,
+        "name": "Moinagarh TE",
+        "partner": 37,
+        "uuid": "202408121206380e1fb09b-eae8-489b-8a3f-5d238977b7b2",
+        "village": "Dolu",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:06:38hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "202408121206380e1fb09b-eae8-489b-8a3f-5d238977b7b2",
+            "id": 181,
+            "code": 170,
+            "SCO": "2024-08-12 06:36:38.896795+00:00",
+            "SMO": "2024-08-12 06:36:38.896820+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:07:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:07:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:07:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:07:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:07:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:07:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:07:55hrs[
+    {
+        "address": "Badarpur ",
+        "block": "Badarpur ",
+        "coordinator_mobile_no": "8638162613",
+        "coordinator_name": "Kishore Chakraborty ",
+        "created_by": 153,
+        "date": "2024-08-22",
+        "delay_reason": "",
+        "district": 714,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "50",
+        "expected_glass_prescription": "25",
+        "expected_refer_surgeries": "5",
+        "location": "Badarpur",
+        "modified_by": 153,
+        "name": "Badarpur",
+        "partner": 37,
+        "uuid": "2024081212303451050e79-7f44-428d-b834-847a152b24c8",
+        "village": "Badarpur ",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:07:55hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "2024081212303451050e79-7f44-428d-b834-847a152b24c8",
+            "id": 182,
+            "code": 171,
+            "SCO": "2024-08-12 06:37:55.885051+00:00",
+            "SMO": "2024-08-12 06:37:55.885079+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:07:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:07:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:07:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:07:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:07:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:07:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:07:58hrs[
+    {
+        "address": "Ramnagar ",
+        "block": "",
+        "coordinator_mobile_no": "7002138439",
+        "coordinator_name": "Rahul Biswas ",
+        "created_by": 153,
+        "date": "2024-08-12",
+        "delay_reason": "",
+        "district": 714,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "50",
+        "expected_glass_prescription": "10",
+        "expected_refer_surgeries": "10",
+        "location": "ramnagar",
+        "modified_by": 153,
+        "name": "FCI , Silchar ",
+        "partner": 37,
+        "uuid": "2024081212075690fe453c-e36c-466b-8cfa-1946ed32ace1",
+        "village": "",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:07:58hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "2024081212075690fe453c-e36c-466b-8cfa-1946ed32ace1",
+            "id": 183,
+            "code": 172,
+            "SCO": "2024-08-12 06:37:58.547899+00:00",
+            "SMO": "2024-08-12 06:37:58.547932+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:08:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:08:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:08:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:08:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:08:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:08:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:08:20hrs[
+    {
+        "address": "Dolu",
+        "block": "",
+        "coordinator_mobile_no": "7892980157",
+        "coordinator_name": "Prasenjit Dey",
+        "created_by": 153,
+        "date": "2024-08-17",
+        "delay_reason": "",
+        "district": 714,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "100",
+        "expected_glass_prescription": "40",
+        "expected_refer_surgeries": "10",
+        "location": "Moinagarh",
+        "modified_by": 153,
+        "name": "Moinagarh TE",
+        "partner": 37,
+        "uuid": "202408121206380e1fb09b-eae8-489b-8a3f-5d238977b7b2",
+        "village": "Dolu",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:08:20hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "202408121206380e1fb09b-eae8-489b-8a3f-5d238977b7b2",
+            "id": 181,
+            "code": 173,
+            "SCO": "2024-08-12 06:36:38.896795+00:00",
+            "SMO": "2024-08-12 06:38:20.162168+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:08:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:08:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:08:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:08:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:08:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:08:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:08:37hrs[
+    {
+        "address": "Ramnagar",
+        "block": "Silchar",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 153,
+        "date": "2024-08-17",
+        "delay_reason": "",
+        "district": 714,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "silchar",
+        "modified_by": 153,
+        "name": "FCI",
+        "partner": 37,
+        "uuid": "20240812120836dbd58fbb-daea-4283-8e01-dd7807c575d5",
+        "village": "Ramnagar",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:08:37hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "20240812120836dbd58fbb-daea-4283-8e01-dd7807c575d5",
+            "id": 184,
+            "code": 174,
+            "SCO": "2024-08-12 06:38:37.173379+00:00",
+            "SMO": "2024-08-12 06:38:37.173401+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:09:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:09:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:09:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:09:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:09:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:09:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:09:11hrs[
+    {
+        "address": "RAMNAGAR",
+        "block": "SILCHAR",
+        "coordinator_mobile_no": "8473085002",
+        "coordinator_name": "RAJIB KUMAR DAS",
+        "created_by": 153,
+        "date": "2024-08-12",
+        "delay_reason": "",
+        "district": 714,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "100",
+        "expected_glass_prescription": "50",
+        "expected_refer_surgeries": "",
+        "location": "SILCHAR",
+        "modified_by": 153,
+        "name": "RAMNAGAR COMMUNITY HALL",
+        "partner": 37,
+        "uuid": "2024081212090985c5a649-b5ab-4348-b157-3b2b4301906c",
+        "village": "",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:09:11hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "2024081212090985c5a649-b5ab-4348-b157-3b2b4301906c",
+            "id": 185,
+            "code": 175,
+            "SCO": "2024-08-12 06:39:11.246070+00:00",
+            "SMO": "2024-08-12 06:39:11.246099+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:11:46hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:11:46hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:11:46hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:11:46hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:11:46hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:11:46hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:11:46hrs[
+    {
+        "address": "",
+        "block": "",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 153,
+        "date": "2024-08-12",
+        "delay_reason": "",
+        "district": 714,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "Laboc",
+        "modified_by": 153,
+        "name": "Laboc TE",
+        "partner": 37,
+        "uuid": "202408121211461e8258e8-745b-4161-a5cd-3d5debc88b3c",
+        "village": "",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:11:46hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "202408121211461e8258e8-745b-4161-a5cd-3d5debc88b3c",
+            "id": 186,
+            "code": 176,
+            "SCO": "2024-08-12 06:41:46.723312+00:00",
+            "SMO": "2024-08-12 06:41:46.723340+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:12:23hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:12:23hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:12:23hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:12:23hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:12:23hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:12:23hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:12:23hrs[
+    {
+        "address": "",
+        "block": "",
+        "coordinator_mobile_no": "7892980157",
+        "coordinator_name": "Prasenjit Dey",
+        "created_by": 153,
+        "date": "2024-08-12",
+        "delay_reason": "",
+        "district": 714,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "100",
+        "expected_glass_prescription": "90",
+        "expected_refer_surgeries": "10",
+        "location": "Laboc",
+        "modified_by": 153,
+        "name": "Laboc TE",
+        "partner": 37,
+        "uuid": "202408121211461e8258e8-745b-4161-a5cd-3d5debc88b3c",
+        "village": "",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:12:23hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "202408121211461e8258e8-745b-4161-a5cd-3d5debc88b3c",
+            "id": 186,
+            "code": 177,
+            "SCO": "2024-08-12 06:41:46.723312+00:00",
+            "SMO": "2024-08-12 06:42:23.950045+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:15:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:15:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:15:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:15:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:15:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:15:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:15:36hrs[
+    {
+        "address": "",
+        "block": "",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 153,
+        "date": "2024-08-12",
+        "delay_reason": "",
+        "district": 714,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "Silchar",
+        "modified_by": 153,
+        "name": "Demon 1",
+        "partner": 37,
+        "uuid": "20240812123815fa5cf306-aee2-42d4-9e58-4f0851b3a0ae",
+        "village": "",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:15:37hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "20240812123815fa5cf306-aee2-42d4-9e58-4f0851b3a0ae",
+            "id": 187,
+            "code": 178,
+            "SCO": "2024-08-12 06:45:36.997942+00:00",
+            "SMO": "2024-08-12 06:45:36.997969+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:18:34hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 30,
+        "app_created_at": "2024-08-12T12:18:34",
+        "app_updated_at": "2024-08-12T12:18:34",
+        "camp": 186,
+        "contact_no_1": "7892980157",
+        "contact_no_2": "",
+        "district": 714,
+        "donor": 4,
+        "drivers_license_no": "auollkh8899",
+        "educational_qualification": 44,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 40,
+        "id": 0,
+        "language": 5,
+        "latitude": "24.828812509126102",
+        "life_insurance_policy": 2,
+        "longitude": "92.79288230295171",
+        "monthly_income": 35,
+        "name": "prasenjit dey",
+        "no_of_months_employed_in_a_year": "10",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "2024-08-31",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "15",
+        "type_of_job": 15,
+        "type_of_route": 25,
+        "type_of_vehicle": 19,
+        "unique_id": "AP-37AK-29099",
+        "user": 121,
+        "uuid": "202408121218342b3f1043-f6d7-4f86-9fba-531adb6ee275",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:18:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:18:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:18:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:18:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:18:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:18:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:18:35hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408121218342b3f1043-f6d7-4f86-9fba-531adb6ee275",
+            "unique_id": "AP-37AK-29099",
+            "SCO": "2024-08-12 06:48:35.498467+00:00",
+            "SMO": "2024-08-12 06:48:35.498493+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:19:32hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 36,
+        "app_created_at": "2024-08-12T12:42:10",
+        "app_updated_at": "2024-08-12T12:42:10",
+        "camp": 187,
+        "contact_no_1": "8638162613",
+        "contact_no_2": "",
+        "district": 714,
+        "donor": 4,
+        "drivers_license_no": "Dl234566sdf",
+        "educational_qualification": 42,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 38,
+        "id": 0,
+        "language": 2,
+        "latitude": "24.81146871",
+        "life_insurance_policy": 2,
+        "longitude": "92.80399629",
+        "monthly_income": 229,
+        "name": "Kishore Chakraborty",
+        "no_of_months_employed_in_a_year": "10",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "2024-11-29",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "15",
+        "type_of_job": 15,
+        "type_of_route": 25,
+        "type_of_vehicle": 19,
+        "unique_id": "AP-37AK-29098",
+        "user": 121,
+        "uuid": "202408121242107f7831d4-5f99-4531-b126-bec96caaea98",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:19:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:19:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:19:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:19:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:19:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:19:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:19:32hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408121242107f7831d4-5f99-4531-b126-bec96caaea98",
+            "unique_id": "AP-37AK-29098",
+            "SCO": "2024-08-12 06:49:32.483654+00:00",
+            "SMO": "2024-08-12 06:49:32.483673+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:20:30hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 62,
+        "app_created_at": "2024-08-12T12:20:28",
+        "app_updated_at": "2024-08-12T12:20:28",
+        "camp": 183,
+        "contact_no_1": "7002138439",
+        "contact_no_2": "",
+        "district": 714,
+        "donor": 4,
+        "drivers_license_no": "AS11520230",
+        "educational_qualification": 44,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 36,
+        "id": 0,
+        "language": 1,
+        "life_insurance_policy": 1,
+        "monthly_income": 229,
+        "name": "Biswajit Samajpati",
+        "no_of_months_employed_in_a_year": "10",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "2034-08-12",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "12",
+        "type_of_job": 15,
+        "type_of_route": 25,
+        "type_of_vehicle": 19,
+        "unique_id": "AP-37AK-29117",
+        "user": 121,
+        "uuid": "202408121220281207113f-f7a0-4bda-a992-1ebe436dbb90",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:20:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:20:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:20:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:20:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:20:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:20:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:20:30hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408121220281207113f-f7a0-4bda-a992-1ebe436dbb90",
+            "unique_id": "AP-37AK-29117",
+            "SCO": "2024-08-12 06:50:30.801217+00:00",
+            "SMO": "2024-08-12 06:50:30.801239+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:20:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:20:47hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 2,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2024-08-12T12:20:46",
+        "app_updated_at": "2024-08-12T12:20:46",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "120/80",
+        "blood_sugar_mg_dl": "",
+        "cough_for_more_than_two_weeks": 0,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 0.0,
+        "family_history_of_diabetes": 0,
+        "fever_for_more_than_2_weeks": 0,
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 0,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "driving",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "latitude": "24.828812509126102",
+        "longitude": "92.79288230295171",
+        "medication_hypertension": 0,
+        "night_sweats": 0,
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 37,
+        "patient_uuid": "202408121218342b3f1043-f6d7-4f86-9fba-531adb6ee275",
+        "physical_activity": 0,
+        "sync_status": 0,
+        "total_family_members": "4",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 0,
+        "uuid": "2024081212204676ce6c1d-9f35-440e-990f-c6b9ae6814e7",
+        "vision_center_id": 109,
+        "waist_circumference": 0,
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 72,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:20:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:20:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:20:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:20:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:20:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:20:47hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [
+        {
+            "uuid": "2024081212204676ce6c1d-9f35-440e-990f-c6b9ae6814e7",
+            "patient_uuid": "202408121218342b3f1043-f6d7-4f86-9fba-531adb6ee275",
+            "SCO": "2024-08-12 06:50:47.242812+00:00",
+            "SMO": "2024-08-12 06:50:47.253030+00:00",
+            "sync_status": 2
+        }
+    ],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:21:15hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:21:15hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:21:15hrs[
+    {
+        "aided_distance_le": 0,
+        "aided_distance_re": 0,
+        "aided_near_le": 92,
+        "aided_near_re": 92,
+        "app_created_at": "2024-08-12T12:21:15",
+        "app_updated_at": "2024-08-12T12:21:15",
+        "color_le": 116,
+        "color_re": 116,
+        "latitude": "24.828812509126102",
+        "longitude": "92.79288230295171",
+        "partner_id": 37,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "2024081212204676ce6c1d-9f35-440e-990f-c6b9ae6814e7",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 0,
+        "un_aided_distance_re": 0,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "20240812122115064b35d0-608a-444a-92ad-8f56006c831c",
+        "vision_center_id": 109,
+        "want_to_refer": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:21:15hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:21:15hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:21:15hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:21:15hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:21:15hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "20240812122115064b35d0-608a-444a-92ad-8f56006c831c",
+            "screening_uuid": "2024081212204676ce6c1d-9f35-440e-990f-c6b9ae6814e7",
+            "SCO": "2024-08-12 06:51:15.592088+00:00",
+            "SMO": "2024-08-12 06:51:15.592106+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:21:17hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 29,
+        "app_created_at": "2024-08-12T12:21:16",
+        "app_updated_at": "2024-08-12T12:21:16",
+        "camp": 185,
+        "contact_no_1": "8473085002",
+        "contact_no_2": "",
+        "district": 125,
+        "donor": 4,
+        "drivers_license_no": "asg123456",
+        "educational_qualification": 46,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 36,
+        "id": 0,
+        "language": 1,
+        "latitude": "0.0",
+        "life_insurance_policy": 1,
+        "longitude": "0.0",
+        "monthly_income": 229,
+        "name": "MANIDEEP CHAKRABORTY",
+        "no_of_months_employed_in_a_year": "10",
+        "partner_id": 37,
+        "permanent_address": "TRIPURA",
+        "renewal_date": "2025-03-31",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 25,
+        "type_of_vehicle": 19,
+        "unique_id": "AP-37AK-29097",
+        "user": 121,
+        "uuid": "20240812122116e2f94862-898c-41d1-95ea-9d518bd51d44",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:21:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:21:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:21:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:21:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:21:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:21:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:21:17hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "20240812122116e2f94862-898c-41d1-95ea-9d518bd51d44",
+            "unique_id": "AP-37AK-29097",
+            "SCO": "2024-08-12 06:51:17.867764+00:00",
+            "SMO": "2024-08-12 06:51:17.867786+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:22:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:22:00hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 2,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2024-08-12T12:20:46",
+        "app_updated_at": "2024-08-12T12:22:00",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "120/80",
+        "blood_sugar_mg_dl": "",
+        "cough_for_more_than_two_weeks": 0,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 0.0,
+        "family_history_of_diabetes": 0,
+        "fever_for_more_than_2_weeks": 0,
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 0,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "driving",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "latitude": "24.828812509126102",
+        "longitude": "92.79288230295171",
+        "medication_hypertension": 0,
+        "night_sweats": 0,
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 37,
+        "patient_uuid": "202408121218342b3f1043-f6d7-4f86-9fba-531adb6ee275",
+        "physical_activity": 0,
+        "sync_status": 0,
+        "total_family_members": "4",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 0,
+        "uuid": "2024081212204676ce6c1d-9f35-440e-990f-c6b9ae6814e7",
+        "vision_center_id": 109,
+        "waist_circumference": 0,
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 72,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:22:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:22:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:22:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:22:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:22:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:22:00hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [
+        {
+            "uuid": "2024081212204676ce6c1d-9f35-440e-990f-c6b9ae6814e7",
+            "patient_uuid": "202408121218342b3f1043-f6d7-4f86-9fba-531adb6ee275",
+            "SCO": "2024-08-12 06:50:47.242812+00:00",
+            "SMO": "2024-08-12 06:52:00.492510+00:00",
+            "sync_status": 2
+        }
+    ],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:23:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:23:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:23:18hrs[
+    {
+        "aided_distance_le": 0,
+        "aided_distance_re": 0,
+        "aided_near_le": 93,
+        "aided_near_re": 93,
+        "app_created_at": "2024-08-12T12:21:15",
+        "app_updated_at": "2024-08-12T12:23:18",
+        "color_le": 116,
+        "color_re": 116,
+        "latitude": "24.828812509126102",
+        "longitude": "92.79288230295171",
+        "partner_id": 37,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "2024081212204676ce6c1d-9f35-440e-990f-c6b9ae6814e7",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 0,
+        "un_aided_distance_re": 0,
+        "un_aided_near_le": 96,
+        "un_aided_near_re": 96,
+        "uuid": "20240812122115064b35d0-608a-444a-92ad-8f56006c831c",
+        "vision_center_id": 109,
+        "want_to_refer": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:23:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:23:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:23:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:23:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:23:18hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "20240812122115064b35d0-608a-444a-92ad-8f56006c831c",
+            "screening_uuid": "2024081212204676ce6c1d-9f35-440e-990f-c6b9ae6814e7",
+            "SCO": "2024-08-12 06:51:15.592088+00:00",
+            "SMO": "2024-08-12 06:53:18.589944+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:23:33hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:23:33hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 2,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2024-08-12T12:46:12",
+        "app_updated_at": "2024-08-12T12:46:12",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "cough_for_more_than_two_weeks": 2,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 0.0,
+        "family_history_of_diabetes": 187,
+        "fever_for_more_than_2_weeks": 2,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_attended_awarness_training": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "latitude": "24.82876424",
+        "longitude": "92.7928697",
+        "medication_hypertension": 0,
+        "night_sweats": 2,
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 37,
+        "patient_uuid": "202408121242107f7831d4-5f99-4531-b126-bec96caaea98",
+        "physical_activity": 184,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 2,
+        "uuid": "2024081212461283d06ea1-068e-4176-8e82-787fe0f97dda",
+        "vision_center_id": 109,
+        "waist_circumference": 0,
+        "weight_kg": "51",
+        "what_do_you_do_during_non_working_months": 66,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [
+            173,
+            63
+        ],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 74,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:23:33hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:23:33hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:23:33hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:23:33hrs[
+    {
+        "age": 0,
+        "app_created_at": "2024-08-12T12:46:12",
+        "app_updated_at": "2024-08-12T12:46:12",
+        "educational_qualification": 0,
+        "monthly_average_income": 0,
+        "name": "",
+        "occupation": 0,
+        "partner_id": 37,
+        "patient_uuid": "202408121242107f7831d4-5f99-4531-b126-bec96caaea98",
+        "relationship_to_respondent": 0,
+        "screening_uuid": "2024081212461283d06ea1-068e-4176-8e82-787fe0f97dda",
+        "sex": 0,
+        "sync_status": 0,
+        "uuid": "202408121246122b65d9f4-570d-4991-aef4-0b72934979b4",
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:23:34hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:23:34hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [
+        {
+            "uuid": "2024081212461283d06ea1-068e-4176-8e82-787fe0f97dda",
+            "patient_uuid": "202408121242107f7831d4-5f99-4531-b126-bec96caaea98",
+            "SCO": "2024-08-12 06:53:33.950527+00:00",
+            "SMO": "2024-08-12 06:53:33.958337+00:00",
+            "sync_status": 2
+        }
+    ],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [
+        {
+            "uuid": "202408121246122b65d9f4-570d-4991-aef4-0b72934979b4",
+            "screening_uuid": "2024081212461283d06ea1-068e-4176-8e82-787fe0f97dda",
+            "patient_uuid": "202408121242107f7831d4-5f99-4531-b126-bec96caaea98",
+            "SCO": "2024-08-12 06:53:34.005055+00:00",
+            "SMO": "2024-08-12 06:53:34.005082+00:00",
+            "sync_status": 2
+        }
+    ],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:24:23hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:24:23hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:24:23hrs[
+    {
+        "aided_distance_le": 0,
+        "aided_distance_re": 0,
+        "aided_near_le": 94,
+        "aided_near_re": 94,
+        "app_created_at": "2024-08-12T12:47:01",
+        "app_updated_at": "2024-08-12T12:47:01",
+        "color_le": 116,
+        "color_re": 116,
+        "latitude": "24.82876424",
+        "longitude": "92.7928697",
+        "partner_id": 37,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "2024081212461283d06ea1-068e-4176-8e82-787fe0f97dda",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 0,
+        "un_aided_distance_re": 0,
+        "un_aided_near_le": 94,
+        "un_aided_near_re": 94,
+        "uuid": "202408121247019a323117-9b4c-4f6e-8d4f-e12f3e71957c",
+        "vision_center_id": 109,
+        "want_to_refer": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:24:23hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:24:23hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:24:23hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:24:23hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:24:23hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "202408121247019a323117-9b4c-4f6e-8d4f-e12f3e71957c",
+            "screening_uuid": "2024081212461283d06ea1-068e-4176-8e82-787fe0f97dda",
+            "SCO": "2024-08-12 06:54:23.478837+00:00",
+            "SMO": "2024-08-12 06:54:23.478857+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:20hrs[
+    {
+        "app_created_at": "2024-08-12T12:47:58",
+        "app_updated_at": "2024-08-12T12:47:58",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "",
+        "axis_near_re": "",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "",
+        "cyl_near_re": "",
+        "follow_up_status": 0,
+        "latitude": "24.82876424",
+        "longitude": "92.7928697",
+        "partner_id": 37,
+        "screening_uuid": "2024081212461283d06ea1-068e-4176-8e82-787fe0f97dda",
+        "spectacle_type": 99,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "",
+        "sph_near_re": "",
+        "sync_status": 0,
+        "uuid": "202408121247584d4fae26-fcc9-4aa9-876a-3d6f2d16da64",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 0,
+        "va_near_re": 0,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:20hrs[
+    {
+        "app_created_at": "2024-08-12T12:47:58",
+        "app_updated_at": "2024-08-12T12:47:58",
+        "follow_up_status": 3,
+        "frame_code": 102,
+        "frame_size": 106,
+        "glass_collecting_location": 2,
+        "glass_prescription_uuid": "202408121247584d4fae26-fcc9-4aa9-876a-3d6f2d16da64",
+        "has_the_glass_collected": 1,
+        "lens_type": 109,
+        "model_type": 0,
+        "partner_id": 37,
+        "r2c_eligible": 0,
+        "spectacle_name": "Near",
+        "spectacle_type": 99,
+        "sync_status": 0,
+        "type_of_coating": 111,
+        "uuid": "20240812124758c57b7917-06cd-4648-b85b-1c7daa88b842",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:20hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [
+        {
+            "uuid": "202408121247584d4fae26-fcc9-4aa9-876a-3d6f2d16da64",
+            "screening_uuid": "2024081212461283d06ea1-068e-4176-8e82-787fe0f97dda",
+            "SCO": "2024-08-12 06:55:20.142515+00:00",
+            "SMO": "2024-08-12 06:55:20.142536+00:00",
+            "sync_status": 2
+        }
+    ],
+    "spectacle_type": [
+        {
+            "uuid": "20240812124758c57b7917-06cd-4648-b85b-1c7daa88b842",
+            "glass_prescription_uuid": "202408121247584d4fae26-fcc9-4aa9-876a-3d6f2d16da64",
+            "SCO": "2024-08-12 06:55:20.174564+00:00",
+            "SMO": "2024-08-12 06:55:20.174585+00:00",
+            "sync_status": 2
+        }
+    ],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:23hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:23hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:23hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:23hrs[
+    {
+        "app_created_at": "2024-08-12T12:25:23",
+        "app_updated_at": "2024-08-12T12:25:23",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "",
+        "axis_near_re": "",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "",
+        "cyl_near_re": "",
+        "follow_up_status": 0,
+        "latitude": "24.828812509126102",
+        "longitude": "92.79288230295171",
+        "partner_id": 37,
+        "screening_uuid": "2024081212204676ce6c1d-9f35-440e-990f-c6b9ae6814e7",
+        "spectacle_type": 99,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "+1.50",
+        "sph_near_re": "+1.50",
+        "sync_status": 0,
+        "uuid": "2024081212252372278845-1c70-440a-bc9c-effee035aa63",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 93,
+        "va_near_re": 93,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:23hrs[
+    {
+        "app_created_at": "2024-08-12T12:25:23",
+        "app_updated_at": "2024-08-12T12:25:23",
+        "follow_up_status": 3,
+        "frame_code": 102,
+        "frame_size": 107,
+        "glass_collecting_location": 2,
+        "glass_prescription_uuid": "2024081212252372278845-1c70-440a-bc9c-effee035aa63",
+        "has_the_glass_collected": 1,
+        "lens_type": 109,
+        "model_type": 0,
+        "partner_id": 37,
+        "r2c_eligible": 0,
+        "spectacle_name": "Near",
+        "spectacle_type": 99,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "202408121225234e3d7468-abd5-484b-95dc-f84362498048",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:24hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [
+        {
+            "uuid": "2024081212252372278845-1c70-440a-bc9c-effee035aa63",
+            "screening_uuid": "2024081212204676ce6c1d-9f35-440e-990f-c6b9ae6814e7",
+            "SCO": "2024-08-12 06:55:23.963633+00:00",
+            "SMO": "2024-08-12 06:55:23.963661+00:00",
+            "sync_status": 2
+        }
+    ],
+    "spectacle_type": [
+        {
+            "uuid": "202408121225234e3d7468-abd5-484b-95dc-f84362498048",
+            "glass_prescription_uuid": "2024081212252372278845-1c70-440a-bc9c-effee035aa63",
+            "SCO": "2024-08-12 06:55:23.989966+00:00",
+            "SMO": "2024-08-12 06:55:23.989994+00:00",
+            "sync_status": 2
+        }
+    ],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:45hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:45hrs{
+    "csdate": "2024-08-12T06:42:23.950Z",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-18T17:28:09.547272+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 121,
+    "vsdate": "2024-07-30T10:17:35.733229+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:46hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:25:46hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:00hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:00hrs{
+    "csdate": "2024-08-12T12:15:36.997969+05:30",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-18T17:28:09.547272+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 121,
+    "vsdate": "2024-07-30T10:17:35.733229+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:01hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:01hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:08hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:08hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:08hrs[
+    {
+        "aided_distance_le": 0,
+        "aided_distance_re": 0,
+        "aided_near_le": 94,
+        "aided_near_re": 94,
+        "app_created_at": "2024-08-12T12:47:01",
+        "app_updated_at": "2024-08-12T12:48:46",
+        "color_le": 116,
+        "color_re": 116,
+        "latitude": "24.82876424",
+        "longitude": "92.7928697",
+        "partner_id": 37,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "2024081212461283d06ea1-068e-4176-8e82-787fe0f97dda",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 0,
+        "un_aided_distance_re": 0,
+        "un_aided_near_le": 94,
+        "un_aided_near_re": 94,
+        "uuid": "202408121247019a323117-9b4c-4f6e-8d4f-e12f3e71957c",
+        "vision_center_id": 109,
+        "want_to_refer": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:08hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:08hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:08hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:08hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:08hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "202408121247019a323117-9b4c-4f6e-8d4f-e12f3e71957c",
+            "screening_uuid": "2024081212461283d06ea1-068e-4176-8e82-787fe0f97dda",
+            "SCO": "2024-08-12 06:54:23.478837+00:00",
+            "SMO": "2024-08-12 06:56:08.029992+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:20hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:20hrs{
+    "csdate": "2024-08-12T06:45:36.997Z",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-18T17:28:09.547272+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 121,
+    "vsdate": "2024-07-30T10:17:35.733229+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:21hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:21hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:31hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 1,
+        "accident_while_driving_commercial_vehicle_before": 1,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2024-08-12T12:26:30",
+        "app_updated_at": "2024-08-12T12:26:30",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "cough_for_more_than_two_weeks": 2,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 0.0,
+        "family_history_of_diabetes": 0,
+        "fever_for_more_than_2_weeks": 2,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_attended_awarness_training": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "medication_hypertension": 0,
+        "night_sweats": 2,
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 37,
+        "patient_uuid": "202408121220281207113f-f7a0-4bda-a992-1ebe436dbb90",
+        "physical_activity": 0,
+        "sync_status": 0,
+        "total_family_members": "3",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 2,
+        "uuid": "20240812122630b144ef79-87e7-4110-b80b-ffd0df8e29a0",
+        "vision_center_id": 109,
+        "waist_circumference": 0,
+        "weight_kg": "70",
+        "what_do_you_do_during_non_working_months": 0,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 74,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:26:32hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [
+        {
+            "uuid": "20240812122630b144ef79-87e7-4110-b80b-ffd0df8e29a0",
+            "patient_uuid": "202408121220281207113f-f7a0-4bda-a992-1ebe436dbb90",
+            "SCO": "2024-08-12 06:56:32.010947+00:00",
+            "SMO": "2024-08-12 06:56:32.015446+00:00",
+            "sync_status": 2
+        }
+    ],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:01hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 2,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2024-08-12T12:26:55",
+        "app_updated_at": "2024-08-12T12:26:55",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "130/80",
+        "blood_sugar_mg_dl": "120",
+        "cough_for_more_than_two_weeks": 2,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 8.0,
+        "family_history_of_diabetes": 187,
+        "fever_for_more_than_2_weeks": 2,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "170",
+        "if_you_are_happy_specify_in_what_way": "I like this ",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "latitude": "0.0",
+        "longitude": "0.0",
+        "medication_hypertension": 0,
+        "night_sweats": 2,
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 37,
+        "patient_uuid": "20240812122116e2f94862-898c-41d1-95ea-9d518bd51d44",
+        "physical_activity": 184,
+        "sync_status": 0,
+        "total_family_members": "5",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 0,
+        "uuid": "2024081212265579ffe5a9-cb80-4a48-85da-d98419f111db",
+        "vision_center_id": 109,
+        "waist_circumference": 178,
+        "weight_kg": "69",
+        "what_do_you_do_during_non_working_months": 164,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [
+            170
+        ],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 72,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 2,
+        "your_family_members_support_you_financially": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:01hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [
+        {
+            "uuid": "2024081212265579ffe5a9-cb80-4a48-85da-d98419f111db",
+            "patient_uuid": "20240812122116e2f94862-898c-41d1-95ea-9d518bd51d44",
+            "SCO": "2024-08-12 06:57:01.520692+00:00",
+            "SMO": "2024-08-12 06:57:01.527580+00:00",
+            "sync_status": 2
+        }
+    ],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:12hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:12hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:12hrs[
+    {
+        "aided_distance_le": 0,
+        "aided_distance_re": 0,
+        "aided_near_le": 0,
+        "aided_near_re": 0,
+        "app_created_at": "2024-08-12T12:27:10",
+        "app_updated_at": "2024-08-12T12:27:10",
+        "color_le": 0,
+        "color_re": 0,
+        "partner_id": 37,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "20240812122630b144ef79-87e7-4110-b80b-ffd0df8e29a0",
+        "sync_status": 0,
+        "treatment_for_refraction": 120,
+        "un_aided_distance_le": 0,
+        "un_aided_distance_re": 0,
+        "un_aided_near_le": 0,
+        "un_aided_near_re": 0,
+        "uuid": "20240812122710c1301cce-9e39-4586-b2b2-a3def9b8ffe0",
+        "vision_center_id": 109,
+        "want_to_refer": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:12hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:12hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:12hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:12hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:12hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "20240812122710c1301cce-9e39-4586-b2b2-a3def9b8ffe0",
+            "screening_uuid": "20240812122630b144ef79-87e7-4110-b80b-ffd0df8e29a0",
+            "SCO": "2024-08-12 06:57:12.432782+00:00",
+            "SMO": "2024-08-12 06:57:12.432802+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:58hrs[
+    {
+        "aided_distance_le": 83,
+        "aided_distance_re": 83,
+        "aided_near_le": 0,
+        "aided_near_re": 0,
+        "app_created_at": "2024-08-12T12:27:10",
+        "app_updated_at": "2024-08-12T12:27:56",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 37,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "20240812122630b144ef79-87e7-4110-b80b-ffd0df8e29a0",
+        "sync_status": 0,
+        "treatment_for_refraction": 120,
+        "un_aided_distance_le": 88,
+        "un_aided_distance_re": 88,
+        "un_aided_near_le": 0,
+        "un_aided_near_re": 0,
+        "uuid": "20240812122710c1301cce-9e39-4586-b2b2-a3def9b8ffe0",
+        "vision_center_id": 109,
+        "want_to_refer": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:27:58hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "20240812122710c1301cce-9e39-4586-b2b2-a3def9b8ffe0",
+            "screening_uuid": "20240812122630b144ef79-87e7-4110-b80b-ffd0df8e29a0",
+            "SCO": "2024-08-12 06:57:12.432782+00:00",
+            "SMO": "2024-08-12 06:57:58.592082+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:24hrs[
+    {
+        "address": "Ent colony railway gate",
+        "block": "",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 153,
+        "date": "2024-08-12",
+        "delay_reason": "",
+        "district": 714,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "Ent colony",
+        "modified_by": 153,
+        "name": "FCI near Bhola",
+        "partner": 37,
+        "uuid": "202408121229246db97434-ae27-494d-8ae8-c22cd4c27da1",
+        "village": "",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:24hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "202408121229246db97434-ae27-494d-8ae8-c22cd4c27da1",
+            "id": 188,
+            "code": 179,
+            "SCO": "2024-08-12 06:59:24.899499+00:00",
+            "SMO": "2024-08-12 06:59:24.899528+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:25hrs[
+    {
+        "app_created_at": "2024-08-12T12:29:23",
+        "app_updated_at": "2024-08-12T12:29:23",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "",
+        "axis_near_re": "",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "",
+        "cyl_near_re": "",
+        "follow_up_status": 0,
+        "partner_id": 37,
+        "screening_uuid": "20240812122630b144ef79-87e7-4110-b80b-ffd0df8e29a0",
+        "spectacle_type": 227,
+        "sph_distance_le": "-1.50",
+        "sph_distance_re": "-1.50",
+        "sph_near_le": "",
+        "sph_near_re": "",
+        "sync_status": 0,
+        "uuid": "2024081212292321ed3a15-1ab7-44f4-ad8c-318dade6265e",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 0,
+        "va_near_re": 0,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:25hrs[
+    {
+        "app_created_at": "2024-08-12T12:29:23",
+        "app_updated_at": "2024-08-12T12:29:23",
+        "follow_up_status": 3,
+        "frame_code": 105,
+        "frame_size": 106,
+        "glass_collecting_location": 2,
+        "glass_prescription_uuid": "2024081212292321ed3a15-1ab7-44f4-ad8c-318dade6265e",
+        "has_the_glass_collected": 1,
+        "lens_type": 108,
+        "model_type": 0,
+        "partner_id": 37,
+        "r2c_eligible": 1,
+        "r2c_remark": "",
+        "spectacle_name": "R2C",
+        "spectacle_type": 227,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "2024081212292375f48caf-98b8-400b-9e5b-f0cb4633d89b",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:25hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [
+        {
+            "uuid": "2024081212292321ed3a15-1ab7-44f4-ad8c-318dade6265e",
+            "screening_uuid": "20240812122630b144ef79-87e7-4110-b80b-ffd0df8e29a0",
+            "SCO": "2024-08-12 06:59:25.558048+00:00",
+            "SMO": "2024-08-12 06:59:25.558075+00:00",
+            "sync_status": 2
+        }
+    ],
+    "spectacle_type": [
+        {
+            "uuid": "2024081212292375f48caf-98b8-400b-9e5b-f0cb4633d89b",
+            "glass_prescription_uuid": "2024081212292321ed3a15-1ab7-44f4-ad8c-318dade6265e",
+            "SCO": "2024-08-12 06:59:25.582598+00:00",
+            "SMO": "2024-08-12 06:59:25.582628+00:00",
+            "sync_status": 2
+        }
+    ],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:53hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:53hrs{
+    "csdate": "2024-08-12T06:37:58.547Z",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-18T17:28:09.547272+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 121,
+    "vsdate": "2024-07-30T10:17:35.733229+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:54hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:29:54hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:30:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:30:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:30:41hrs[
+    {
+        "aided_distance_le": 83,
+        "aided_distance_re": 83,
+        "aided_near_le": 0,
+        "aided_near_re": 0,
+        "app_created_at": "2024-08-12T12:30:40",
+        "app_updated_at": "2024-08-12T12:30:40",
+        "color_le": 116,
+        "color_re": 116,
+        "latitude": "0.0",
+        "longitude": "0.0",
+        "partner_id": 37,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "2024081212265579ffe5a9-cb80-4a48-85da-d98419f111db",
+        "sync_status": 0,
+        "treatment_for_refraction": 120,
+        "un_aided_distance_le": 88,
+        "un_aided_distance_re": 88,
+        "un_aided_near_le": 0,
+        "un_aided_near_re": 0,
+        "uuid": "20240812123040c1660fa7-17e4-4a1e-8634-e4800b57aa23",
+        "vision_center_id": 109,
+        "want_to_refer": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:30:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:30:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:30:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:30:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:30:41hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "20240812123040c1660fa7-17e4-4a1e-8634-e4800b57aa23",
+            "screening_uuid": "2024081212265579ffe5a9-cb80-4a48-85da-d98419f111db",
+            "SCO": "2024-08-12 07:00:41.077674+00:00",
+            "SMO": "2024-08-12 07:00:41.077703+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:31:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:31:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:31:02hrs[
+    {
+        "aided_distance_le": 83,
+        "aided_distance_re": 83,
+        "aided_near_le": 0,
+        "aided_near_re": 0,
+        "app_created_at": "2024-08-12T12:30:40",
+        "app_updated_at": "2024-08-12T12:31:01",
+        "color_le": 116,
+        "color_re": 116,
+        "latitude": "0.0",
+        "longitude": "0.0",
+        "partner_id": 37,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "2024081212265579ffe5a9-cb80-4a48-85da-d98419f111db",
+        "sync_status": 0,
+        "treatment_for_refraction": 120,
+        "un_aided_distance_le": 88,
+        "un_aided_distance_re": 88,
+        "un_aided_near_le": 0,
+        "un_aided_near_re": 0,
+        "uuid": "20240812123040c1660fa7-17e4-4a1e-8634-e4800b57aa23",
+        "vision_center_id": 109,
+        "want_to_refer": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:31:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:31:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:31:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:31:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:31:02hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "20240812123040c1660fa7-17e4-4a1e-8634-e4800b57aa23",
+            "screening_uuid": "2024081212265579ffe5a9-cb80-4a48-85da-d98419f111db",
+            "SCO": "2024-08-12 07:00:41.077674+00:00",
+            "SMO": "2024-08-12 07:01:02.797642+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:31:50hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:31:50hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 2,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2024-08-12T12:26:55",
+        "app_updated_at": "2024-08-12T12:31:49",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "130/80",
+        "blood_sugar_mg_dl": "120",
+        "cough_for_more_than_two_weeks": 2,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 8.0,
+        "family_history_of_diabetes": 187,
+        "fever_for_more_than_2_weeks": 2,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "170",
+        "if_you_are_happy_specify_in_what_way": "I like this ",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "latitude": "0.0",
+        "longitude": "0.0",
+        "medication_hypertension": 0,
+        "night_sweats": 2,
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 37,
+        "patient_uuid": "20240812122116e2f94862-898c-41d1-95ea-9d518bd51d44",
+        "physical_activity": 184,
+        "sync_status": 0,
+        "total_family_members": "5",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 0,
+        "uuid": "2024081212265579ffe5a9-cb80-4a48-85da-d98419f111db",
+        "vision_center_id": 109,
+        "waist_circumference": 178,
+        "weight_kg": "69",
+        "what_do_you_do_during_non_working_months": 164,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [
+            170
+        ],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 72,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 2,
+        "your_family_members_support_you_financially": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:31:50hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:31:50hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:31:50hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:31:50hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:31:50hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:31:50hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [
+        {
+            "uuid": "2024081212265579ffe5a9-cb80-4a48-85da-d98419f111db",
+            "patient_uuid": "20240812122116e2f94862-898c-41d1-95ea-9d518bd51d44",
+            "SCO": "2024-08-12 06:57:01.520692+00:00",
+            "SMO": "2024-08-12 07:01:50.038112+00:00",
+            "sync_status": 2
+        }
+    ],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:32:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:32:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:32:11hrs[
+    {
+        "aided_distance_le": 83,
+        "aided_distance_re": 83,
+        "aided_near_le": 0,
+        "aided_near_re": 0,
+        "app_created_at": "2024-08-12T12:30:40",
+        "app_updated_at": "2024-08-12T12:32:10",
+        "color_le": 116,
+        "color_re": 116,
+        "latitude": "0.0",
+        "longitude": "0.0",
+        "partner_id": 37,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "2024081212265579ffe5a9-cb80-4a48-85da-d98419f111db",
+        "sync_status": 0,
+        "treatment_for_refraction": 120,
+        "un_aided_distance_le": 88,
+        "un_aided_distance_re": 88,
+        "un_aided_near_le": 0,
+        "un_aided_near_re": 0,
+        "uuid": "20240812123040c1660fa7-17e4-4a1e-8634-e4800b57aa23",
+        "vision_center_id": 109,
+        "want_to_refer": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:32:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:32:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:32:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:32:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:32:11hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "20240812123040c1660fa7-17e4-4a1e-8634-e4800b57aa23",
+            "screening_uuid": "2024081212265579ffe5a9-cb80-4a48-85da-d98419f111db",
+            "SCO": "2024-08-12 07:00:41.077674+00:00",
+            "SMO": "2024-08-12 07:02:11.239547+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:32:21hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 50,
+        "app_created_at": "2024-08-12T12:32:21",
+        "app_updated_at": "2024-08-12T12:32:21",
+        "camp": 188,
+        "contact_no_1": "7005721596",
+        "contact_no_2": "",
+        "district": 714,
+        "donor": 4,
+        "drivers_license_no": "",
+        "educational_qualification": 244,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 41,
+        "id": 0,
+        "language": 5,
+        "latitude": "24.828812509126102",
+        "life_insurance_policy": 2,
+        "longitude": "92.79288230295171",
+        "monthly_income": 229,
+        "name": "Rajib Das",
+        "no_of_months_employed_in_a_year": "12",
+        "partner_id": 37,
+        "permanent_address": "Tarapur",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 228,
+        "type_of_route": 27,
+        "type_of_vehicle": 20,
+        "unique_id": "AP-37AK-29115",
+        "user": 121,
+        "uuid": "202408121232213b4cbd01-6506-4d86-a888-fbfbf9450dbb",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:32:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:32:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:32:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:32:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:32:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:32:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:32:22hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408121232213b4cbd01-6506-4d86-a888-fbfbf9450dbb",
+            "unique_id": "AP-37AK-29115",
+            "SCO": "2024-08-12 07:02:22.282867+00:00",
+            "SMO": "2024-08-12 07:02:22.282902+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:25hrs[
+    {
+        "app_created_at": "2024-08-12T12:33:24",
+        "app_updated_at": "2024-08-12T12:33:24",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "",
+        "axis_near_re": "",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "",
+        "cyl_near_re": "",
+        "follow_up_status": 0,
+        "latitude": "0.0",
+        "longitude": "0.0",
+        "partner_id": 37,
+        "screening_uuid": "2024081212265579ffe5a9-cb80-4a48-85da-d98419f111db",
+        "spectacle_type": 227,
+        "sph_distance_le": "-1.502",
+        "sph_distance_re": "-1.0",
+        "sph_near_le": "",
+        "sph_near_re": "",
+        "sync_status": 0,
+        "uuid": "20240812123324f0fb8a5d-bccc-4028-ad0c-9e6314f75e12",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 0,
+        "va_near_re": 0,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:25hrs[
+    {
+        "app_created_at": "2024-08-12T12:33:24",
+        "app_updated_at": "2024-08-12T12:33:24",
+        "follow_up_status": 3,
+        "frame_code": 105,
+        "frame_size": 106,
+        "glass_collecting_location": 2,
+        "glass_prescription_uuid": "20240812123324f0fb8a5d-bccc-4028-ad0c-9e6314f75e12",
+        "has_the_glass_collected": 1,
+        "lens_type": 108,
+        "model_type": 0,
+        "partner_id": 37,
+        "r2c_eligible": 1,
+        "r2c_remark": "",
+        "spectacle_name": "R2C",
+        "spectacle_type": 227,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "202408121233242ec94253-f4bf-49eb-9804-74772d0f9314",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:25hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [
+        {
+            "uuid": "20240812123324f0fb8a5d-bccc-4028-ad0c-9e6314f75e12",
+            "screening_uuid": "2024081212265579ffe5a9-cb80-4a48-85da-d98419f111db",
+            "SCO": "2024-08-12 07:03:25.488512+00:00",
+            "SMO": "2024-08-12 07:03:25.488542+00:00",
+            "sync_status": 2
+        }
+    ],
+    "spectacle_type": [
+        {
+            "uuid": "202408121233242ec94253-f4bf-49eb-9804-74772d0f9314",
+            "glass_prescription_uuid": "20240812123324f0fb8a5d-bccc-4028-ad0c-9e6314f75e12",
+            "SCO": "2024-08-12 07:03:25.511793+00:00",
+            "SMO": "2024-08-12 07:03:25.511819+00:00",
+            "sync_status": 2
+        }
+    ],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:40hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:40hrs[
+    {
+        "address": "udarbond",
+        "block": "",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 153,
+        "date": "2024-08-17",
+        "delay_reason": "",
+        "district": 714,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "udarbond",
+        "modified_by": 153,
+        "name": "Netrip",
+        "partner": 37,
+        "uuid": "20240812123339a0e1cd8f-7f9d-48a1-afe0-e2994aadcaa8",
+        "village": "",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:40hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "20240812123339a0e1cd8f-7f9d-48a1-afe0-e2994aadcaa8",
+            "id": 189,
+            "code": 180,
+            "SCO": "2024-08-12 07:03:40.022229+00:00",
+            "SMO": "2024-08-12 07:03:40.022262+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:53hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:53hrs{
+    "csdate": "2024-08-12T06:39:11.246Z",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-18T17:28:09.547272+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 121,
+    "vsdate": "2024-07-30T10:17:35.733229+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:55hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:33:55hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:34:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:34:01hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2024-08-12T12:34:01",
+        "app_updated_at": "2024-08-12T12:34:01",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "150/100",
+        "blood_sugar_mg_dl": "101",
+        "cough_for_more_than_two_weeks": 0,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 0.0,
+        "family_history_of_diabetes": 0,
+        "fever_for_more_than_2_weeks": 0,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 0,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "latitude": "24.828812509126102",
+        "longitude": "92.79288230295171",
+        "medication_hypertension": 0,
+        "night_sweats": 0,
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 37,
+        "patient_uuid": "202408121232213b4cbd01-6506-4d86-a888-fbfbf9450dbb",
+        "physical_activity": 0,
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 70,
+        "unexplained_weight_loss_or_loss_of_appetite": 0,
+        "uuid": "20240812123401acf490dc-525e-4a94-a884-95ffb4a36937",
+        "vision_center_id": 109,
+        "waist_circumference": 0,
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:34:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:34:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:34:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:34:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:34:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:34:01hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [
+        {
+            "uuid": "20240812123401acf490dc-525e-4a94-a884-95ffb4a36937",
+            "patient_uuid": "202408121232213b4cbd01-6506-4d86-a888-fbfbf9450dbb",
+            "SCO": "2024-08-12 07:04:01.859091+00:00",
+            "SMO": "2024-08-12 07:04:01.864922+00:00",
+            "sync_status": 2
+        }
+    ],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:35:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:35:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:35:04hrs[
+    {
+        "aided_distance_le": 0,
+        "aided_distance_re": 0,
+        "aided_near_le": 0,
+        "aided_near_re": 0,
+        "app_created_at": "2024-08-12T12:34:59",
+        "app_updated_at": "2024-08-12T12:34:59",
+        "color_le": 0,
+        "color_re": 0,
+        "latitude": "24.828812509126102",
+        "longitude": "92.79288230295171",
+        "partner_id": 37,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "20240812123401acf490dc-525e-4a94-a884-95ffb4a36937",
+        "sync_status": 0,
+        "treatment_for_refraction": 121,
+        "un_aided_distance_le": 88,
+        "un_aided_distance_re": 87,
+        "un_aided_near_le": 95,
+        "un_aided_near_re": 96,
+        "uuid": "2024081212345924608fca-8132-4b2f-85e0-cd072d0bba79",
+        "vision_center_id": 109,
+        "want_to_refer": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:35:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:35:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:35:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:35:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:35:04hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "2024081212345924608fca-8132-4b2f-85e0-cd072d0bba79",
+            "screening_uuid": "20240812123401acf490dc-525e-4a94-a884-95ffb4a36937",
+            "SCO": "2024-08-12 07:05:04.810296+00:00",
+            "SMO": "2024-08-12 07:05:04.810325+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:39:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:39:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:39:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:39:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:39:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:39:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:39:18hrs[
+    {
+        "address": "udarbond",
+        "block": "",
+        "coordinator_mobile_no": "9954132465",
+        "coordinator_name": "Biswajit Nath Samajpati",
+        "created_by": 153,
+        "date": "2024-08-12",
+        "delay_reason": "",
+        "district": 714,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "50",
+        "expected_refer_surgeries": "100",
+        "location": "udarbond",
+        "modified_by": 153,
+        "name": "Netrip",
+        "partner": 37,
+        "uuid": "20240812123339a0e1cd8f-7f9d-48a1-afe0-e2994aadcaa8",
+        "village": "",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:39:18hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "20240812123339a0e1cd8f-7f9d-48a1-afe0-e2994aadcaa8",
+            "id": 189,
+            "code": 181,
+            "SCO": "2024-08-12 07:03:40.022229+00:00",
+            "SMO": "2024-08-12 07:09:18.260108+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:40:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:40:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:40:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:40:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:40:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:40:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:40:10hrs[
+    {
+        "address": "RAMNAGAR",
+        "block": "SILCHAR",
+        "coordinator_mobile_no": "8473085002",
+        "coordinator_name": "RAJIB KUMAR DAS",
+        "created_by": 153,
+        "date": "2024-08-12",
+        "delay_reason": "",
+        "district": 714,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "100",
+        "expected_glass_prescription": "50",
+        "expected_refer_surgeries": "",
+        "location": "SILCHAR",
+        "modified_by": 153,
+        "name": "RAMNAGAR COMMUNITY HALL",
+        "partner": 37,
+        "uuid": "2024081212090985c5a649-b5ab-4348-b157-3b2b4301906c",
+        "village": "Ramnagar",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:40:10hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "2024081212090985c5a649-b5ab-4348-b157-3b2b4301906c",
+            "id": 185,
+            "code": 182,
+            "SCO": "2024-08-12 06:39:11.246070+00:00",
+            "SMO": "2024-08-12 07:10:10.661614+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:41:13hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 35,
+        "app_created_at": "2024-08-12T12:41:11",
+        "app_updated_at": "2024-08-12T12:41:11",
+        "camp": 183,
+        "contact_no_1": "9777448852",
+        "contact_no_2": "",
+        "district": 714,
+        "donor": 4,
+        "drivers_license_no": "as3356720",
+        "educational_qualification": 238,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 41,
+        "id": 0,
+        "language": 1,
+        "life_insurance_policy": 1,
+        "monthly_income": 35,
+        "name": "ABC",
+        "no_of_months_employed_in_a_year": "1",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "2029-08-12",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "5",
+        "type_of_job": 15,
+        "type_of_route": 25,
+        "type_of_vehicle": 19,
+        "unique_id": "AP-37AK-29092",
+        "user": 121,
+        "uuid": "20240812124111442335c9-ab6c-47ea-bd76-c02b4c859d89",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:41:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:41:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:41:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:41:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:41:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:41:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:41:13hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "20240812124111442335c9-ab6c-47ea-bd76-c02b4c859d89",
+            "unique_id": "AP-37AK-29092",
+            "SCO": "2024-08-12 07:11:13.443227+00:00",
+            "SMO": "2024-08-12 07:11:13.443247+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:41:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:41:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:41:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:41:42hrs[
+    {
+        "app_created_at": "2024-08-12T12:41:39",
+        "app_updated_at": "2024-08-12T12:41:39",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "",
+        "axis_near_re": "",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "",
+        "cyl_near_re": "",
+        "follow_up_status": 0,
+        "latitude": "24.828812509126102",
+        "longitude": "92.79288230295171",
+        "partner_id": 37,
+        "screening_uuid": "20240812123401acf490dc-525e-4a94-a884-95ffb4a36937",
+        "spectacle_type": 100,
+        "sph_distance_le": "-1.0",
+        "sph_distance_re": "-1.0",
+        "sph_near_le": "",
+        "sph_near_re": "",
+        "sync_status": 0,
+        "uuid": "20240812124139e1d68e4d-06f1-4353-8e85-9a96c518bf91",
+        "va_distance_le": 0,
+        "va_distance_re": 84,
+        "va_near_le": 0,
+        "va_near_re": 94,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:41:42hrs[
+    {
+        "app_created_at": "2024-08-12T12:41:39",
+        "app_updated_at": "2024-08-12T12:41:39",
+        "follow_up_status": 3,
+        "frame_code": 102,
+        "frame_size": 106,
+        "glass_collecting_location": 2,
+        "glass_prescription_uuid": "20240812124139e1d68e4d-06f1-4353-8e85-9a96c518bf91",
+        "has_the_glass_collected": 1,
+        "lens_type": 109,
+        "model_type": 0,
+        "partner_id": 37,
+        "r2c_eligible": 0,
+        "spectacle_name": "Near",
+        "spectacle_type": 100,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20240812124139f72b0ab1-d81b-4a27-9d21-a6bf6d2b57b7",
+        "vision_center": 109
+    },
+    {
+        "app_created_at": "2024-08-12T12:41:39",
+        "app_updated_at": "2024-08-12T12:41:39",
+        "follow_up_status": 3,
+        "frame_code": 104,
+        "frame_size": 106,
+        "glass_collecting_location": 2,
+        "glass_prescription_uuid": "20240812124139e1d68e4d-06f1-4353-8e85-9a96c518bf91",
+        "has_the_glass_collected": 1,
+        "lens_type": 109,
+        "model_type": 0,
+        "partner_id": 37,
+        "r2c_eligible": 1,
+        "r2c_remark": "",
+        "spectacle_name": "R2C",
+        "spectacle_type": 100,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20240812124139533cf35c-cc37-4e03-9c12-4770c668d617",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:41:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:41:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:41:42hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [
+        {
+            "uuid": "20240812124139e1d68e4d-06f1-4353-8e85-9a96c518bf91",
+            "screening_uuid": "20240812123401acf490dc-525e-4a94-a884-95ffb4a36937",
+            "SCO": "2024-08-12 07:11:42.151879+00:00",
+            "SMO": "2024-08-12 07:11:42.151906+00:00",
+            "sync_status": 2
+        }
+    ],
+    "spectacle_type": [
+        {
+            "uuid": "20240812124139f72b0ab1-d81b-4a27-9d21-a6bf6d2b57b7",
+            "glass_prescription_uuid": "20240812124139e1d68e4d-06f1-4353-8e85-9a96c518bf91",
+            "SCO": "2024-08-12 07:11:42.171639+00:00",
+            "SMO": "2024-08-12 07:11:42.171667+00:00",
+            "sync_status": 2
+        },
+        {
+            "uuid": "20240812124139533cf35c-cc37-4e03-9c12-4770c668d617",
+            "glass_prescription_uuid": "20240812124139e1d68e4d-06f1-4353-8e85-9a96c518bf91",
+            "SCO": "2024-08-12 07:11:42.260716+00:00",
+            "SMO": "2024-08-12 07:11:42.260744+00:00",
+            "sync_status": 2
+        }
+    ],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:42:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:42:57hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 1,
+        "accident_while_driving_commercial_vehicle_before": 1,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2024-08-12T12:42:54",
+        "app_updated_at": "2024-08-12T12:42:54",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "cough_for_more_than_two_weeks": 2,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 0.0,
+        "family_history_of_diabetes": 0,
+        "fever_for_more_than_2_weeks": 2,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "medication_hypertension": 0,
+        "night_sweats": 2,
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 37,
+        "patient_uuid": "20240812124111442335c9-ab6c-47ea-bd76-c02b4c859d89",
+        "physical_activity": 0,
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 70,
+        "unexplained_weight_loss_or_loss_of_appetite": 2,
+        "uuid": "20240812124254fdc74265-f839-4731-aab6-fbe50ae96591",
+        "vision_center_id": 109,
+        "waist_circumference": 0,
+        "weight_kg": "60",
+        "what_do_you_do_during_non_working_months": 0,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 74,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 2,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:42:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:42:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:42:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:42:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:42:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:42:57hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [
+        {
+            "uuid": "20240812124254fdc74265-f839-4731-aab6-fbe50ae96591",
+            "patient_uuid": "20240812124111442335c9-ab6c-47ea-bd76-c02b4c859d89",
+            "SCO": "2024-08-12 07:12:57.200507+00:00",
+            "SMO": "2024-08-12 07:12:57.204360+00:00",
+            "sync_status": 2
+        }
+    ],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:43:50hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:43:50hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:43:50hrs[
+    {
+        "aided_distance_le": 0,
+        "aided_distance_re": 0,
+        "aided_near_le": 0,
+        "aided_near_re": 0,
+        "app_created_at": "2024-08-12T12:43:48",
+        "app_updated_at": "2024-08-12T12:43:48",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 37,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "20240812124254fdc74265-f839-4731-aab6-fbe50ae96591",
+        "sync_status": 0,
+        "treatment_for_refraction": 121,
+        "un_aided_distance_le": 86,
+        "un_aided_distance_re": 85,
+        "un_aided_near_le": 96,
+        "un_aided_near_re": 96,
+        "uuid": "202408121243485da0ff51-c9f4-4b5f-9dc9-ca76bc124b16",
+        "vision_center_id": 109,
+        "want_to_refer": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:43:50hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:43:50hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:43:50hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:43:50hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:43:50hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "202408121243485da0ff51-c9f4-4b5f-9dc9-ca76bc124b16",
+            "screening_uuid": "20240812124254fdc74265-f839-4731-aab6-fbe50ae96591",
+            "SCO": "2024-08-12 07:13:50.299892+00:00",
+            "SMO": "2024-08-12 07:13:50.299922+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:44:15hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 53,
+        "app_created_at": "2024-08-12T12:44:15",
+        "app_updated_at": "2024-08-12T12:44:15",
+        "camp": 189,
+        "contact_no_1": "9954132465",
+        "contact_no_2": "",
+        "district": 714,
+        "donor": 4,
+        "drivers_license_no": "xyz123",
+        "educational_qualification": 44,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 36,
+        "id": 0,
+        "language": 1,
+        "latitude": "0.0",
+        "life_insurance_policy": 1,
+        "longitude": "0.0",
+        "monthly_income": 229,
+        "name": "Rajib Das",
+        "no_of_months_employed_in_a_year": "10",
+        "partner_id": 37,
+        "permanent_address": "tarapur",
+        "renewal_date": "2025-04-30",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "10",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "AP-37AK-29093",
+        "user": 121,
+        "uuid": "202408121244157cd067f1-83cc-4bb5-a010-ba9a837c429c",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:44:16hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:44:16hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:44:16hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:44:16hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:44:16hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:44:16hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:44:16hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408121244157cd067f1-83cc-4bb5-a010-ba9a837c429c",
+            "unique_id": "AP-37AK-29093",
+            "SCO": "2024-08-12 07:14:16.064005+00:00",
+            "SMO": "2024-08-12 07:14:16.064034+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:50:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:50:37hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 2,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2024-08-12T12:50:36",
+        "app_updated_at": "2024-08-12T12:50:36",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "150/80",
+        "blood_sugar_mg_dl": "125",
+        "cough_for_more_than_two_weeks": 2,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 8.0,
+        "family_history_of_diabetes": 187,
+        "fever_for_more_than_2_weeks": 2,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "178",
+        "if_you_are_happy_specify_in_what_way": "happy",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "latitude": "0.0",
+        "longitude": "0.0",
+        "medication_hypertension": 0,
+        "night_sweats": 2,
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 37,
+        "patient_uuid": "202408121244157cd067f1-83cc-4bb5-a010-ba9a837c429c",
+        "physical_activity": 182,
+        "sync_status": 0,
+        "total_family_members": "3",
+        "type_of_hospital": 70,
+        "unexplained_weight_loss_or_loss_of_appetite": 2,
+        "uuid": "202408121250360eab7bdc-39b5-4a19-bae0-65937989e063",
+        "vision_center_id": 109,
+        "waist_circumference": 178,
+        "weight_kg": "60",
+        "what_do_you_do_during_non_working_months": 164,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [
+            170
+        ],
+        "which_training": 225,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 72,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 2,
+        "your_family_members_support_you_financially": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:50:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:50:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:50:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:50:37hrs[
+    {
+        "age": 0,
+        "app_created_at": "2024-08-12T12:50:36",
+        "app_updated_at": "2024-08-12T12:50:36",
+        "educational_qualification": 0,
+        "monthly_average_income": 0,
+        "name": "",
+        "occupation": 0,
+        "partner_id": 37,
+        "patient_uuid": "202408121244157cd067f1-83cc-4bb5-a010-ba9a837c429c",
+        "relationship_to_respondent": 0,
+        "screening_uuid": "202408121250360eab7bdc-39b5-4a19-bae0-65937989e063",
+        "sex": 0,
+        "sync_status": 0,
+        "uuid": "2024081212503688c939d1-5470-46ad-93b5-ed6b0daff506",
+        "vision_center_id": 109
+    },
+    {
+        "age": 0,
+        "app_created_at": "2024-08-12T12:50:36",
+        "app_updated_at": "2024-08-12T12:50:36",
+        "educational_qualification": 0,
+        "monthly_average_income": 0,
+        "name": "",
+        "occupation": 0,
+        "partner_id": 37,
+        "patient_uuid": "202408121244157cd067f1-83cc-4bb5-a010-ba9a837c429c",
+        "relationship_to_respondent": 0,
+        "screening_uuid": "202408121250360eab7bdc-39b5-4a19-bae0-65937989e063",
+        "sex": 0,
+        "sync_status": 0,
+        "uuid": "20240812125036ce61c3cb-7596-453c-a2d7-424833d5621d",
+        "vision_center_id": 109
+    },
+    {
+        "age": 0,
+        "app_created_at": "2024-08-12T12:50:36",
+        "app_updated_at": "2024-08-12T12:50:36",
+        "educational_qualification": 0,
+        "monthly_average_income": 0,
+        "name": "",
+        "occupation": 0,
+        "partner_id": 37,
+        "patient_uuid": "202408121244157cd067f1-83cc-4bb5-a010-ba9a837c429c",
+        "relationship_to_respondent": 0,
+        "screening_uuid": "202408121250360eab7bdc-39b5-4a19-bae0-65937989e063",
+        "sex": 0,
+        "sync_status": 0,
+        "uuid": "20240812125036a7081c07-ce47-498b-b6ba-cbf1bdaa59e9",
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:50:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:50:37hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [
+        {
+            "uuid": "202408121250360eab7bdc-39b5-4a19-bae0-65937989e063",
+            "patient_uuid": "202408121244157cd067f1-83cc-4bb5-a010-ba9a837c429c",
+            "SCO": "2024-08-12 07:20:37.372715+00:00",
+            "SMO": "2024-08-12 07:20:37.379674+00:00",
+            "sync_status": 2
+        }
+    ],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [
+        {
+            "uuid": "2024081212503688c939d1-5470-46ad-93b5-ed6b0daff506",
+            "screening_uuid": "202408121250360eab7bdc-39b5-4a19-bae0-65937989e063",
+            "patient_uuid": "202408121244157cd067f1-83cc-4bb5-a010-ba9a837c429c",
+            "SCO": "2024-08-12 07:20:37.414223+00:00",
+            "SMO": "2024-08-12 07:20:37.414242+00:00",
+            "sync_status": 2
+        },
+        {
+            "uuid": "20240812125036ce61c3cb-7596-453c-a2d7-424833d5621d",
+            "screening_uuid": "202408121250360eab7bdc-39b5-4a19-bae0-65937989e063",
+            "patient_uuid": "202408121244157cd067f1-83cc-4bb5-a010-ba9a837c429c",
+            "SCO": "2024-08-12 07:20:37.420768+00:00",
+            "SMO": "2024-08-12 07:20:37.420787+00:00",
+            "sync_status": 2
+        },
+        {
+            "uuid": "20240812125036a7081c07-ce47-498b-b6ba-cbf1bdaa59e9",
+            "screening_uuid": "202408121250360eab7bdc-39b5-4a19-bae0-65937989e063",
+            "patient_uuid": "202408121244157cd067f1-83cc-4bb5-a010-ba9a837c429c",
+            "SCO": "2024-08-12 07:20:37.426275+00:00",
+            "SMO": "2024-08-12 07:20:37.426293+00:00",
+            "sync_status": 2
+        }
+    ],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:51:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:51:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:51:22hrs[
+    {
+        "aided_distance_le": 0,
+        "aided_distance_re": 0,
+        "aided_near_le": 0,
+        "aided_near_re": 0,
+        "app_created_at": "2024-08-12T12:51:21",
+        "app_updated_at": "2024-08-12T12:51:21",
+        "color_le": 0,
+        "color_re": 0,
+        "latitude": "0.0",
+        "longitude": "0.0",
+        "partner_id": 37,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "202408121250360eab7bdc-39b5-4a19-bae0-65937989e063",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 0,
+        "un_aided_distance_re": 0,
+        "un_aided_near_le": 0,
+        "un_aided_near_re": 0,
+        "uuid": "20240812125121f5915654-7ddb-4ace-91e4-6d6002fb60c9",
+        "vision_center_id": 109,
+        "want_to_refer": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:51:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:51:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:51:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:51:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:51:22hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "20240812125121f5915654-7ddb-4ace-91e4-6d6002fb60c9",
+            "screening_uuid": "202408121250360eab7bdc-39b5-4a19-bae0-65937989e063",
+            "SCO": "2024-08-12 07:21:22.734802+00:00",
+            "SMO": "2024-08-12 07:21:22.734821+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:53:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:53:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:53:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:53:37hrs[
+    {
+        "app_created_at": "2024-08-12T12:53:37",
+        "app_updated_at": "2024-08-12T12:53:37",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "",
+        "axis_near_re": "",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "",
+        "cyl_near_re": "",
+        "follow_up_status": 0,
+        "latitude": "0.0",
+        "longitude": "0.0",
+        "partner_id": 37,
+        "screening_uuid": "202408121250360eab7bdc-39b5-4a19-bae0-65937989e063",
+        "spectacle_type": 99,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "+1.50",
+        "sph_near_re": "+1.50",
+        "sync_status": 0,
+        "uuid": "20240812125337d3581ff5-a1bf-4660-98c8-7958149e087f",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 92,
+        "va_near_re": 92,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:53:37hrs[
+    {
+        "app_created_at": "2024-08-12T12:53:37",
+        "app_updated_at": "2024-08-12T12:53:37",
+        "follow_up_status": 3,
+        "frame_code": 102,
+        "frame_size": 106,
+        "glass_collecting_location": 2,
+        "glass_prescription_uuid": "20240812125337d3581ff5-a1bf-4660-98c8-7958149e087f",
+        "has_the_glass_collected": 1,
+        "lens_type": 109,
+        "model_type": 0,
+        "partner_id": 37,
+        "r2c_eligible": 0,
+        "spectacle_name": "Near",
+        "spectacle_type": 99,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "2024081212533752d8e1a5-8a56-4278-9a27-367cd76479eb",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:53:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:53:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:53:38hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [
+        {
+            "uuid": "20240812125337d3581ff5-a1bf-4660-98c8-7958149e087f",
+            "screening_uuid": "202408121250360eab7bdc-39b5-4a19-bae0-65937989e063",
+            "SCO": "2024-08-12 07:23:37.879268+00:00",
+            "SMO": "2024-08-12 07:23:37.879294+00:00",
+            "sync_status": 2
+        }
+    ],
+    "spectacle_type": [
+        {
+            "uuid": "2024081212533752d8e1a5-8a56-4278-9a27-367cd76479eb",
+            "glass_prescription_uuid": "20240812125337d3581ff5-a1bf-4660-98c8-7958149e087f",
+            "SCO": "2024-08-12 07:23:37.901465+00:00",
+            "SMO": "2024-08-12 07:23:37.901491+00:00",
+            "sync_status": 2
+        }
+    ],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:24hrs[
+    {
+        "app_created_at": "2024-08-12T12:56:20",
+        "app_updated_at": "2024-08-12T12:56:20",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "",
+        "axis_near_re": "",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "",
+        "cyl_near_re": "",
+        "follow_up_status": 0,
+        "partner_id": 37,
+        "screening_uuid": "20240812124254fdc74265-f839-4731-aab6-fbe50ae96591",
+        "spectacle_type": 101,
+        "sph_distance_le": "+1.75",
+        "sph_distance_re": "+1.50",
+        "sph_near_le": "+2.00",
+        "sph_near_re": "+2.00",
+        "sync_status": 0,
+        "uuid": "2024081212562037aed7b9-d740-45e0-9621-af647a486706",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 0,
+        "va_near_re": 0,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:24hrs[
+    {
+        "app_created_at": "2024-08-12T12:56:20",
+        "app_updated_at": "2024-08-12T12:56:20",
+        "follow_up_status": 1,
+        "frame_code": 102,
+        "frame_size": 106,
+        "glass_collecting_location": 17,
+        "glass_prescription_uuid": "2024081212562037aed7b9-d740-45e0-9621-af647a486706",
+        "has_the_glass_collected": 2,
+        "lens_type": 237,
+        "model_type": 0,
+        "partner_id": 37,
+        "r2c_eligible": 0,
+        "spectacle_name": "Near",
+        "spectacle_type": 101,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20240812125620f6d3b753-f826-40ae-b2af-4d5ae3de3399",
+        "vision_center": 98
+    },
+    {
+        "app_created_at": "2024-08-12T12:56:20",
+        "app_updated_at": "2024-08-12T12:56:20",
+        "follow_up_status": 1,
+        "frame_code": 102,
+        "frame_size": 106,
+        "glass_collecting_location": 0,
+        "glass_prescription_uuid": "2024081212562037aed7b9-d740-45e0-9621-af647a486706",
+        "has_the_glass_collected": 2,
+        "lens_type": 233,
+        "model_type": 0,
+        "partner_id": 37,
+        "r2c_eligible": 0,
+        "spectacle_name": "Custom made",
+        "spectacle_type": 101,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20240812125620daefc732-5d89-4891-bb93-87e6cd3c976c",
+        "vision_center": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:24hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [
+        {
+            "uuid": "2024081212562037aed7b9-d740-45e0-9621-af647a486706",
+            "screening_uuid": "20240812124254fdc74265-f839-4731-aab6-fbe50ae96591",
+            "SCO": "2024-08-12 07:26:24.704997+00:00",
+            "SMO": "2024-08-12 07:26:24.705024+00:00",
+            "sync_status": 2
+        }
+    ],
+    "spectacle_type": [
+        {
+            "uuid": "20240812125620f6d3b753-f826-40ae-b2af-4d5ae3de3399",
+            "glass_prescription_uuid": "2024081212562037aed7b9-d740-45e0-9621-af647a486706",
+            "SCO": "2024-08-12 07:26:24.725125+00:00",
+            "SMO": "2024-08-12 07:26:24.725146+00:00",
+            "sync_status": 2
+        },
+        {
+            "uuid": "20240812125620daefc732-5d89-4891-bb93-87e6cd3c976c",
+            "glass_prescription_uuid": "2024081212562037aed7b9-d740-45e0-9621-af647a486706",
+            "SCO": "2024-08-12 07:26:24.792646+00:00",
+            "SMO": "2024-08-12 07:26:24.792666+00:00",
+            "sync_status": 2
+        }
+    ],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:55hrs[
+    {
+        "app_created_at": "2024-08-12T12:56:20",
+        "app_updated_at": "2024-08-12T12:56:20",
+        "follow_up_status": 3,
+        "frame_code": 102,
+        "frame_size": 106,
+        "glass_collecting_location": 17,
+        "glass_prescription_uuid": "2024081212562037aed7b9-d740-45e0-9621-af647a486706",
+        "has_the_glass_collected": 2,
+        "lens_type": 237,
+        "model_type": 0,
+        "partner_id": 37,
+        "r2c_eligible": 0,
+        "spectacle_name": "Near",
+        "spectacle_type": 101,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20240812125620f6d3b753-f826-40ae-b2af-4d5ae3de3399",
+        "vision_center": 98
+    },
+    {
+        "app_created_at": "2024-08-12T12:56:20",
+        "app_updated_at": "2024-08-12T12:56:20",
+        "follow_up_status": 3,
+        "frame_code": 102,
+        "frame_size": 106,
+        "glass_collecting_location": 0,
+        "glass_prescription_uuid": "2024081212562037aed7b9-d740-45e0-9621-af647a486706",
+        "has_the_glass_collected": 2,
+        "lens_type": 233,
+        "model_type": 0,
+        "partner_id": 37,
+        "r2c_eligible": 0,
+        "spectacle_name": "Custom made",
+        "spectacle_type": 101,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20240812125620daefc732-5d89-4891-bb93-87e6cd3c976c",
+        "vision_center": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:55hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:55hrs{
+    "csdate": "2024-08-12T12:29:24.899528+05:30",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-18T17:28:09.547272+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 121,
+    "vsdate": "2024-07-30T10:17:35.733229+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:55hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [
+        {
+            "uuid": "20240812125620f6d3b753-f826-40ae-b2af-4d5ae3de3399",
+            "glass_prescription_uuid": "2024081212562037aed7b9-d740-45e0-9621-af647a486706",
+            "SCO": "2024-08-12 07:26:24.725125+00:00",
+            "SMO": "2024-08-12 07:26:55.351246+00:00",
+            "sync_status": 2
+        },
+        {
+            "uuid": "20240812125620daefc732-5d89-4891-bb93-87e6cd3c976c",
+            "glass_prescription_uuid": "2024081212562037aed7b9-d740-45e0-9621-af647a486706",
+            "SCO": "2024-08-12 07:26:24.792646+00:00",
+            "SMO": "2024-08-12 07:26:55.450467+00:00",
+            "sync_status": 2
+        }
+    ],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:57hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/12/2024, 12:56:57hrs{
+    "user_id": 121
+}

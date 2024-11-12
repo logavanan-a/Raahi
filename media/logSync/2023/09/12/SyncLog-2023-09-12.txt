@@ -1,0 +1,89 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 09/12/2023, 12:37:26hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/12/2023, 12:37:26hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/12/2023, 13:10:59hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 25,
+        "app_created_at": "2023-09-12T13:10:59",
+        "app_updated_at": "2023-09-12T13:10:59",
+        "camp": 14,
+        "contact_no_1": "9611915431",
+        "contact_no_2": "",
+        "district": 4,
+        "donor": 3,
+        "drivers_license_no": "837488r",
+        "educational_qualification": 0,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 33,
+        "name": "demo",
+        "no_of_months_employed_in_a_year": "",
+        "partner_id": 13,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 0,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "test",
+        "user": 30,
+        "uuid": "20230912131059559b0356-9624-490f-941e-ea7823b45359",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/12/2023, 13:10:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/12/2023, 13:10:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/12/2023, 13:10:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/12/2023, 13:10:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/12/2023, 13:10:59hrs[]

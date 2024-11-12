@@ -1,0 +1,716 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block contents %}
+{% if not cataract_details.get_catract_questions or catract_call_group %}
+<div class="row align-items-center">
+    <div class="col-xl-12 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="table-responsive" >								
+                            <table  class="table  dt-responsive ">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th colspan="4">Tele- Calling for Spectacles ({{cataract_details.name|default_if_none:'-'}})</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Unique Id</th>
+                                        <td>{{cataract_details.unique_id}}</td>
+                                        <th>Name</th>
+                                        <td>{{cataract_details.name|default_if_none:'-'}}</td>   
+                                    </tr>
+                                    <tr> 
+                                        <th>Age</th>
+                                        <td>{{cataract_details.age|default_if_none:'-'}}</td>
+                                        <th>Gender</th>
+                                        <td>{{cataract_details.get_gender_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>   
+                                        <th>Contact No(+91)</th>
+                                        <td>{{cataract_details.contact_no_1|default_if_none:'-'}}</td>
+                                        <th>State</th>
+                                        <td>{{cataract_details.get_vision_center.partner.state|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Type of Job</th>
+                                        <td>{{cataract_details.type_of_job|default_if_none:'-'}}</td>
+                                        <th>Visual Acuity Refer for</th>
+                                        <td>{{visual_acuity.refer_for|default_if_none:'-'}} </td>
+                                    </tr>
+                                    <tr>
+                                        {% if cataract_details.camp %}
+                                        <th>Camp Name</th>
+                                        <td>{{cataract_details.camp|default_if_none:'-'}}</td>
+                                        <th>Camp Date</th>
+                                        <td>{{cataract_details.camp.date|default_if_none:'-'}} </td>
+                                        {% else %}
+                                        <th>Vision Center</th>
+                                        <td>{{cataract_details.get_vision_center|default_if_none:'-'}}</td>
+                                        <th>Screened Location</th>
+                                        <td>{% if cataract_details.camp %}{{cataract_details.camp.location|default_if_none:'-'}}{% else %}{{cataract_details.get_vision_center.address|default_if_none:'-'}}{% endif %}</td>
+                                        {% endif %}
+                                    </tr>
+                                    {% if cataract_details.camp %}
+                                    <tr>
+                                        <th>Screened Location</th>
+                                        <td>{% if cataract_details.camp %}{{cataract_details.camp.location|default_if_none:'-'}}{% else %}{{cataract_details.get_vision_center.address|default_if_none:'-'}}{% endif %}</td>
+                                    </tr>
+                                    {% endif %}
+                                    <td colspan="4"></td>
+                                </tbody>
+                            </table> 
+                        </div> 
+                    
+                        <div class="table-responsive">
+                            <table  class="table  dt-responsive ">
+                                <thead class="table-light">
+                                    <th>
+                                        Patient Feedback                            
+                                    </th>
+                                </thead>
+                            </table>
+                        </div>
+                        <form  id="myForm" method="POST" class="needs-validation" novalidate>
+                            {% csrf_token %}
+                            <div class='text-danger'>
+                                {{error}}
+                            </div> 
+                            <div class="mb-3">
+                                <label class="d-block mb-3">Whether you referred to the hospital for Cataract?</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="yes_no1" id="yes_radio" value="1" {% if telecalling.referred_to_hospital_for_cataract == 1 %} checked {% endif %}>
+                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="yes_no1" id="no_radio" value="2" {% if telecalling.referred_to_hospital_for_cataract == 2 %} checked {% endif %}>
+                                    <label class="form-check-label" for="inlineRadio2">No</label>
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please select Referred to Hospital.
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3" id="reason_for_cataract_no_div" style="display: none;">
+                                <label for="reason_for_cataract_no">If no, please enter reason :</label>
+                                <textarea type="text" name="reason_cataract" rows="4" cols="50" class="form-control" value="{{telecalling.reason_for_cataract_no}}"></textarea>
+                            </div>
+
+                            <div id="yes_radio1_next" style="display: none;">
+                                <div class="mb-3">
+                                    <label class="d-block mb-3">Have you visited the hospital ?</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="yes_no2" id="yes_radio1" value="1" {% if telecalling.visited_hospital == 1 %} checked {% endif %}>
+                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="yes_no2" id="no_radio1" value="2" {% if telecalling.visited_hospital == 2 %} checked {% endif %}>
+                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3" id="reason_for_cataract_no_div1" style="display: none;">
+                                    <label for="reason_for_cataract_no">If no, please enter reason:</label>
+                                    <textarea type="text" name= "reason_visited_hospital" rows="4" cols="50" class="form-control" value="{{telecalling.reason_for_visited_hospital_no}}"></textarea>         
+                                </div>
+
+                                <div id="yes_radio2_next" style="display: none;">
+                                        <div class="mb-3" >
+                                            <label class="d-block mb-3">Did the hospital recommend you to undergo the cataract surgery ?</label>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="yes_no3" id="yes_radio2" value="1" {% if telecalling.hospital_recomand_cataract_surgery == 1 %} checked {% endif %}>
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="yes_no3" id="no_radio2" value="2" {% if telecalling.hospital_recomand_cataract_surgery == 2 %} checked {% endif %}>
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                            </div>   
+                                        </div>
+                                        
+                                        <div class="mb-3" id="reason_for_cataract_no_div2" style="display: none;">
+                                            <label for="reason_for_cataract_no">If no, please enter reason:</label>
+                                            <textarea type="text" name= "reason_cataract_surgery" rows="4" cols="50" class="form-control" value="{{telecalling.reason_for_hospital_recomand_cataract_surgery_no}}"></textarea>         
+                                        </div>
+
+                                    <div id="yes_radio3_next" style="display: none;">
+                                        <div class="mb-3" >
+                                            <label class="d-block mb-3">Did you undergo the surgery?</label>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="yes_no4" id="yes_radio3" value="1" {% if telecalling.undergo_surgery == 1 %} checked {% endif %}>
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="yes_no4" id="no_radio3" value="2" {% if telecalling.undergo_surgery == 2 %} checked {% endif %}>
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3" id="reason_for_cataract_no_div3" style="display: none;">
+                                            <label for="reason_for_cataract_no">If no, please enter reason:</label>
+                                            <textarea type="text" name="reason_undergo_surgery" rows="4" cols="50" class="form-control" value="{{telecalling.reason_for_undergo_surgery_no}}"></textarea>
+                                        </div>
+                                        
+                                        <!-- place_cataract_surgery -->
+                                        <div class="mb-3" id="place_cataract_surgery_div">
+                                            <label for="place_cataract_surgery">Where you have done the cataract surgery? Mention the name of the hospital </label>
+                                            <input type="text" name="place_cataract_surgery" class="form-control" value="{{telecalling.ahmd_spectacles_received|default_if_none:'-'}}">
+                                        </div>
+
+                                        <!-- date_cataract_surgery -->
+                                        <div class="mb-3" id="date_cataract_surgery_div">
+                                            <label for="date_cataract_surgery">Please mention the date of cataract surgery conducted</label>
+                                            <input type="date" name="date_cataract_surgery" class="form-control">
+                                        </div>
+
+                                        <!-- treatment_free -->
+                                        <div class="mb-3" id="treatment_cost">
+                                            <label for="treatment_free">Was the treatment free or did you pay for it ?</label>
+                                            <select name="free_or_paid" onchange="free_sub()" class="form-select">
+                                                <option value="">Select Treatment Choice</option>
+                                                <option value="1">Free</option>
+                                                <option value="2">Subsidized</option>
+                                                <option value="3">Paid</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <!-- how_it_paid -->
+                                        <div class="mb-3" id="how_you_paid" style="display: none;">
+                                            <label for="how_it_paid">If it is paid, then how it is paid ?</label>
+                                            <select name="how_it_paid" class="form-select">
+                                                <option value="">Select an option</option>
+                                                <option value="1">Pocket</option>
+                                                <option value="2">Insurences</option>
+                                                <option value="3">Govt. Health Cards</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- improvement_vision -->
+                                        <div class="mb-3" id="vision_improved">
+                                            <label class="d-block mb-3">Do you see any improvement in your vision after the surgery</label>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="improvement_vision" value="1">
+                                                <label class="form-check-label" for="improvement_vision">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="improvement_vision" value="2">
+                                                <label class="form-check-label" for="improvement_vision">No</label>
+                                            </div>
+                                        </div>
+
+                                        <!-- helpful_for_driving -->
+                                        <div class="mb-3" id="glasses_helpful">
+                                            <label class="d-block mb-3">Is it helping you in your driving ?</label>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="helpful_for_driving" value="1">
+                                                <label class="form-check-label" for="helpful_for_driving">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="helpful_for_driving" value="2">
+                                                <label class="form-check-label" for="helpful_for_driving">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- beneficiary_feed_back -->
+                            <div class="mb-3">
+                                <label for="beneficiary_feed_back">Beneficiary feedback:</label>
+                                <textarea type="text" name= "beneficiary_feed_back" rows="4" cols="50" class="form-control" value="{{telecaller.beneficiary_feed_back}}"></textarea>         
+
+                            </div>
+
+                            <div class="table-responsive">
+                                <table  class="table  dt-responsive ">
+                                    <thead class="table-light">
+                                        <th>
+                                        Comment Area
+                                    </th>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="row md-4 mt-4">
+                                <label for="" class="col-md-2 col-form-label">Ad <span class="required-field"></span></label>
+                                <div class="col-md-4">
+                                    <textarea type="text" name= "ad" rows="4" cols="50" class="form-control" required placeholder="Enter Ad">{{ telecalling.ad }}</textarea>
+                                    <div class="invalid-feedback">
+                                        Please Enter Ad .
+                                    </div>
+                                </div>
+                                <label for="" class="col-md-2 col-form-label">Disposition Name<span class="required-field"></span></label>
+                                <div class="col-md-4">
+                                    <select name="disposition_name" class="form-select" required>
+                                        <option value=""  >Select Disposition Name</option>
+                                        {% for disposition in disposition_choices %}
+                                            <option value="{{ disposition.id }}" {% if disposition.id == telecalling.disposition_name.id %}selected{% endif %}>{{ disposition }}</option>
+                                        {% endfor %}
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please Enter Disposition Name.
+                                    </div>
+                                </div>           
+                            </div> 
+                            <div class="row md-4 mt-4">
+                                <label for="" class="col-md-2 col-form-label">Call Disposition Group<span class="required-field"></span></label>
+                                <div class="col-md-4">
+                                    <select name="call_disposition_group"  class="form-select" required>
+                                        <option value="" selected>Select Call Disposition Group</option>
+                                        <option value="1" {% if telecalling.call_disposition_group == 1 %}selected{% endif %}>Complaint</option>
+                                        <option value="2" {% if telecalling.call_disposition_group == 2 %}selected{% endif %}>Retry</option>
+                                        <option value="3" {% if telecalling.call_disposition_group == 3 %}selected{% endif %}>Successful</option>
+                                        <option value="4" {% if telecalling.call_disposition_group == 4 %}selected{% endif %}>UnSuccessful</option>
+                                        <option value="5" {% if telecalling.call_disposition_group == 5 %}selected{% endif %}>Spectacle out of stock</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please Enter Call Disposition Group.
+                                    </div>
+                                </div> 
+                                    <label for="" class="col-md-2 col-form-label">Comments<span class="required-field"></span></label>
+                                <div class="col-md-4">
+                                    <select name="comments" class="form-select" required>
+                                        <option value="" selected>Select Comments</option>
+                                        {% for comment in comments_choices %}
+                                            <option value="{{ comment.id }}" {% if comment.id == telecalling.comments.id %}selected{% endif %}>{{ comment }}</option>
+                                        {% endfor %}
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please Enter Comments .
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row md-4 mt-4">
+                                <label for="" class="col-md-2 col-form-label">Agent Comments</label>
+                                <div class="col-md-4">
+                                    <textarea type="text" name= "agent_comments" rows="4" cols="50" class="form-control"  placeholder="Enter Agent Comments" >{{ telecalling.agent_comments }}</textarea>
+                                </div>
+                            </div>
+                            
+                            <div class="gap-2" style="float:right;">
+                                <button type="reset"  onclick="location.href='javascript:history.back()'" class="btn btn-secondary waves-effect">
+                                    Cancel
+                                </button>
+                                <button type="submit" id="submitting" style="margin-left: 5px;" class="btn btn-primary w-md">Submit</button>
+                            </div>                        
+                        </form>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="row align-items-center">
+    <div class="col-xl-12 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="table-responsive" >								
+                            <table  class="table  dt-responsive ">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th colspan="4">Tele- Calling for Cataract ({{cataract_details.name|default_if_none:'-'}})</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Unique Id</th>
+                                        <td>{{cataract_details.unique_id}}</td>
+                                        <th>Name</th>
+                                        <td>{{cataract_details.name|default_if_none:'-'}}</td>   
+                                    </tr>
+                                    <tr> 
+                                        <th>Age</th>
+                                        <td>{{cataract_details.age|default_if_none:'-'}}</td>
+                                        <th>Gender</th>
+                                        <td>{{cataract_details.get_gender_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>   
+                                        <th>Contact No(+91)</th>
+                                        <td>{{cataract_details.contact_no_1|default_if_none:'-'}}</td>
+                                        <th>State</th>
+                                        <td>{{cataract_details.get_vision_center.partner.state|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Type of Job</th>
+                                        <td>{{cataract_details.type_of_job|default_if_none:'-'}}</td>
+                                        <th>Visual Acuity Refer for</th>
+                                        <td>{{visual_acuity.refer_for|default_if_none:'-'}} </td>
+                                    </tr>
+                                    <tr>
+                                        {% if cataract_details.camp %}
+                                        <th>Camp</th>
+                                        <td>{{cataract_details.camp|default_if_none:'-'}}</td>
+                                        <th>Camp Date</th>
+                                        <td>{{cataract_details.camp.date|default_if_none:'-'}} </td>
+                                        {% else %}
+                                        <th>Vision Center</th>
+                                        <td>{{cataract_details.get_vision_center|default_if_none:'-'}}</td>
+                                        <th>Screened Location</th>
+                                        <td>{% if cataract_details.camp %}{{cataract_details.camp.location|default_if_none:'-'}}{% else %}{{cataract_details.get_vision_center.address|default_if_none:'-'}}{% endif %}</td>
+                                        {% endif %}
+                                    </tr>
+                                    {% if cataract_details.camp %}
+                                    <tr>
+                                        <th>Screened Location</th>
+                                        <td>{% if cataract_details.camp %}{{cataract_details.camp.location|default_if_none:'-'}}{% else %}{{cataract_details.get_vision_center.address|default_if_none:'-'}}{% endif %}</td>
+                                    </tr>
+                                    {% endif %}
+                                    <td colspan="4"></td>
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th colspan="4">
+                                                Patient Feedback 
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th colspan="3">1. Whether you referred to the hospital for Cataract</th>
+                                        <td colspan="2">{{telecalling.get_referred_to_hospital_for_cataract_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <!-- <tr>
+                                        <th colspan="3">If no, please enter reason</th>
+                                        <td colspan="2">{{telecalling.reason_for_cataract_no|default_if_none:'-'}}</td>
+                                    </tr> -->
+                                    <tr>
+                                        <th colspan="3">2. If yes, have you visited the hospital </th>
+                                        <td colspan="2">{{telecalling.get_visited_hospital_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">If no, please enter reason</th>
+                                        <td colspan="2">{{telecalling.reason_for_visited_hospital_no|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">3. If yes Did the hospital recommend you to undergo the cataract surgery ? </th>
+                                        <td colspan="2">{{telecalling.get_hospital_recomand_cataract_surgery_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">If no, please enter reason</th>
+                                        <td colspan="2">{{telecalling.reason_for_hospital_recomand_cataract_surgery_no|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">4. If yes, did you undergo the surgery </th>
+                                        <td colspan="2">{{telecalling.get_undergo_surgery_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">If no, please enter reason</th>
+                                        <td colspan="2">{{telecalling.reason_for_undergo_surgery_no|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">5. Where you have done the cataract surgery? </th>
+                                        <td colspan="2">{{telecalling.place_cataract_surgery|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">6. Please mention the date of cataract surgery conducted </th>
+                                        <td colspan="2">{{telecalling.date_cataract_surgery|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">7. If you have not undergone cataract surgery, please mention the reasons </th>
+                                        <td colspan="2">{{telecalling.reason_for_notgone_cataract_surgery|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">8. Was the treatment free or did you pay for it ? </th>
+                                        <td colspan="2">{{telecalling.get_treatment_free_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">If it is paid, then how it is paid  </th>
+                                        <td colspan="2">{{telecalling.get_how_it_paid_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">9. Do you see any improvement in your vision after the surgery </th>
+                                        <td colspan="2">{{telecalling.get_improvement_vision_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">10. Is it helping you in your driving </th>
+                                        <td colspan="2">{{telecalling.get_helpful_for_driving_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">Beneficiary feed back </th>
+                                        <td colspan="2">{{telecalling.beneficiary_feed_back|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th colspan="4">
+                                                Comment Area
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th colspan="3">Ad</th>
+                                        <td colspan="2">{{telecalling.ad|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">Disposition Name</th>
+                                        <td colspan="2">{{telecalling.disposition_name|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">Call Disposition Group</th>
+                                        <td colspan="2">{{telecalling.get_call_disposition_group_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">Comments</th>
+                                        <td colspan="2">{{telecalling.comments|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">Agent Comments</th>
+                                        <td colspan="2">{{telecalling.agent_comments|default_if_none:'-'}}</td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+                        </div> 
+                    </div>  
+                </div>
+                <div class="gap-2">
+                    <button type="reset"  onclick="location.href='javascript:history.back()'" class="btn btn-secondary waves-effect">
+                        Back
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>
+{% endif %}
+
+<script>
+
+    function togglePlaceOfSurgeryField() {
+        var yesRadio3 = document.getElementById('yes_radio3');
+        var placeDiv = document.getElementById('place_cataract_surgery_div');
+        var reasonDiv3 = document.getElementById('reason_for_cataract_no_div3');
+        var dateDiv = document.getElementById('date_cataract_surgery_div');
+        var treatmentDiv = document.getElementById('treatment_cost');
+        var visionimprovedDiv = document.getElementById('vision_improved');
+        var glasseshelpfulDiv = document.getElementById('glasses_helpful');
+        var howyoupaidDiv = document.getElementById('how_you_paid');
+
+        if (yesRadio3.checked) {
+            placeDiv.style.display = 'block';
+            dateDiv.style.display = 'block';
+            treatmentDiv.style.display = 'block';
+            visionimprovedDiv.style.display = 'block';
+            glasseshelpfulDiv.style.display = 'block';
+            howyoupaidDiv.style.display = 'none';
+            reasonDiv3.style.display = 'none';
+        } else {
+            placeDiv.style.display = 'none';
+            dateDiv.style.display = 'none';
+            treatmentDiv.style.display = 'none';
+            visionimprovedDiv.style.display = 'none';
+            glasseshelpfulDiv.style.display = 'none';
+            howyoupaidDiv.style.display = 'none';
+            reasonDiv3.style.display = 'block';
+        }
+    }
+
+    var yesRadio3 = document.getElementById('yes_radio3');
+    var noRadio3 = document.getElementById('no_radio3');
+
+    yesRadio3.addEventListener('change', togglePlaceOfSurgeryField);
+    noRadio3.addEventListener('change', togglePlaceOfSurgeryField);
+
+    togglePlaceOfSurgeryField();
+
+
+
+    function free_sub() {
+        var selectElement = document.getElementsByName('free_or_paid')[0];
+        var selectedValue = selectElement.value;
+        var howyoupaidDiv = document.getElementById('how_you_paid');
+            howyoupaidDiv.style.display = 'none';
+
+        if (selectedValue === '3') {
+            howyoupaidDiv.style.display = 'block';
+        } else {
+            howyoupaidDiv.style.display = 'none';
+        }
+    }
+
+</script>
+
+
+<script>
+    function toggleSections() {
+        var yesRadio = document.getElementById('yes_radio');
+        var noRadio = document.getElementById('no_radio');
+        var reasonDiv = document.getElementById('reason_for_cataract_no_div');
+        
+        var yesRadio1 = document.getElementById('yes_radio1');
+        var noRadio1 = document.getElementById('no_radio1');
+        var visitedDiv = document.getElementById('yes_radio1_next');
+
+        if (yesRadio.checked) {
+            reasonDiv.style.display = 'none';
+            visitedDiv.style.display = 'block';
+        } else if (noRadio.checked) {
+            reasonDiv.style.display = 'none';
+            visitedDiv.style.display = 'none';
+        }
+    }
+
+    var yesRadio = document.getElementById('yes_radio');
+    var noRadio = document.getElementById('no_radio');
+
+    yesRadio.addEventListener('change', toggleSections);
+    noRadio.addEventListener('change', toggleSections);
+
+    toggleSections();
+
+    
+</script>
+
+<script>
+    function toggleSections() {
+        var yesRadio1 = document.getElementById('yes_radio1');
+        var noRadio1 = document.getElementById('no_radio1');
+        var reasonDiv1 = document.getElementById('reason_for_cataract_no_div1');
+        
+        var yesRadio2 = document.getElementById('yes_radio2');
+        var noRadio2 = document.getElementById('no_radio2');
+        var visitedDiv1 = document.getElementById('yes_radio2_next');
+
+        if (yesRadio1.checked) {
+            reasonDiv1.style.display = 'none';
+            visitedDiv1.style.display = 'block';
+        } else if (noRadio1.checked) {
+            reasonDiv1.style.display = 'block';
+            visitedDiv1.style.display = 'none';
+        }
+    }
+
+    var yesRadio1 = document.getElementById('yes_radio1');
+    var noRadio1 = document.getElementById('no_radio1');
+
+    yesRadio1.addEventListener('change', toggleSections);
+    noRadio1.addEventListener('change', toggleSections);
+
+    toggleSections();
+
+    
+</script>
+<script>
+    function toggleSections() {
+        var yesRadio2 = document.getElementById('yes_radio2');
+        var noRadio2 = document.getElementById('no_radio2');
+        var reasonDiv2 = document.getElementById('reason_for_cataract_no_div2');
+        
+        var yesRadio3 = document.getElementById('yes_radio3');
+        var noRadio3 = document.getElementById('no_radio3');
+        var visitedDiv2 = document.getElementById('yes_radio3_next');
+
+        if (yesRadio2.checked) {
+            reasonDiv2.style.display = 'none';
+            visitedDiv2.style.display = 'block';
+        } else if (noRadio2.checked) {
+            reasonDiv2.style.display = 'block';
+            visitedDiv2.style.display = 'none';
+        }
+    }
+
+    var yesRadio2 = document.getElementById('yes_radio2');
+    var noRadio2 = document.getElementById('no_radio2');
+
+    yesRadio2.addEventListener('change', toggleSections);
+    noRadio2.addEventListener('change', toggleSections);
+
+    toggleSections();
+
+    
+</script>
+
+
+<script>
+    function toggleSections() {
+        var yesRadio = document.getElementById('yes_radio');
+        var noRadio = document.getElementById('no_radio');
+        var reasonDiv = document.getElementById('reason_for_cataract_no_div');
+
+        var yesRadio1 = document.getElementById('yes_radio1');
+        var noRadio1 = document.getElementById('no_radio1');
+        var visitedDiv1 = document.getElementById('yes_radio1_next');
+
+        var yesRadio2 = document.getElementById('yes_radio2');
+        var noRadio2 = document.getElementById('no_radio2');
+        var recommendedDiv2 = document.getElementById('yes_radio2_next');
+        
+        var yesRadio3 = document.getElementById('yes_radio3');
+        var noRadio3 = document.getElementById('no_radio3');
+        var recommendedDiv3 = document.getElementById('yes_radio3_next');
+
+        if (yesRadio.checked) {
+            reasonDiv.style.display = 'none';
+            visitedDiv.style.display = 'block';
+            recommendedDiv1.style.display = 'none';
+        } else if (noRadio.checked) {
+            reasonDiv.style.display = 'none';
+            visitedDiv.style.display = 'none';
+            recommendedDiv1.style.display = 'none';
+        } else if (yesRadio1.checked) {
+            recommendedDiv2.style.display = 'block';
+        } else if (noRadio1.checked) {
+            recommendedDiv3.style.display = 'none';
+        }
+    }
+
+    var yesRadio = document.getElementById('yes_radio');
+    var noRadio = document.getElementById('no_radio');
+    var yesRadio1 = document.getElementById('yes_radio1');
+    var noRadio1 = document.getElementById('no_radio1');
+
+    yesRadio.addEventListener('change', toggleSections);
+    noRadio.addEventListener('change', toggleSections);
+    yesRadio1.addEventListener('change', toggleSections);
+    noRadio1.addEventListener('change', toggleSections);
+
+    toggleSections();
+</script>
+
+<script>
+    function toggleReasonForNotUndergo() {
+        var noRadio3 = document.getElementById('no_radio3');
+        var reasonDiv3 = document.getElementById('reason_for_cataract_no_div3');
+        
+        if (noRadio3.checked) {
+            reasonDiv3.style.display = 'block';
+        } else {
+            reasonDiv3.style.display = 'none';
+        }
+    }
+
+    var yesRadio3 = document.getElementById('yes_radio3');
+    var noRadio3 = document.getElementById('no_radio3');
+
+    yesRadio3.addEventListener('change', toggleReasonForNotUndergo);
+    noRadio3.addEventListener('change', toggleReasonForNotUndergo);
+
+    toggleReasonForNotUndergo();
+</script>
+
+<script>
+    function validateForm() {
+        var form = document.getElementById('myForm');
+
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+    }
+
+    document.getElementById('submitting').addEventListener('click', validateForm);
+ 
+</script>
+
+
+
+{% endblock %}
+
+
+
+
+
+

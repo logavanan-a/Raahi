@@ -1,0 +1,22 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 10/17/2023, 11:19:33hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 10/17/2023, 11:19:33hrs{
+    "unique_id": "7654345",
+    "contact_no_1": "",
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": "",
+    "stdate": "",
+    "fmdate": ""
+}

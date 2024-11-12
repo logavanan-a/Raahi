@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+
+<!-- DataTables -->
+<link href="{% static 'libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+<link href="{% static 'libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<!-- Responsive datatable examples -->
+<link href="{% static 'libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">{% endblock %}
+
+{% block contents %}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-body p-0">
+                    <form id="myForm" method='GET' class="needs-validation" autocomplete="off" novalidate>
+                        <div class="row justify-content-end">
+                            <div class="col-md-4">  
+                                <div class="input-group mb-3">
+                                    <input type="text" id="search" name="search" class="form-control" value="{{ search }}" placeholder="Name or Contact No or Unique ID">
+                                </div>   
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-success"><i class="fa fa-search" aria-hidden="true" title="Search"></i></button>
+                                {% if request.session.role_id == 4 %}
+                                <button id="order_status" class="btn btn-primary waves-effect ms-2" type="button" onclick="ConfirmBulk(2, 'Ready')">Ready</button>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="table-responsive mb-3" data-pattern="priority-columns">
+                            <table id="datatable-1" class="table table-striped dt-responsive mb-0 mt-2">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>SI No</th>
+                                        <th>Unique Id</th>
+                                        <th>Name</th>
+                                        <th>Age</th>
+                                        <th>Gender</th>
+                                        <th>Contact No(+91)</th>
+                                        <th>Registered Date</th>
+                                        <th>Spectacle Type</th>
+                                        <th>Camp/VC Name</th>
+                                        <th>Screened Location</th>
+                                        <th>Delivery Location</th>
+                                        <th>Spectacle Status</th>
+                                        {% if request.session.role_id == 4 %}
+                                        <th><input type="checkbox" onclick="toggle(this);" ></th>
+                                        {% endif %}
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for l in data %}
+                                    <tr>
+                                        <td>{{ forloop.counter0|add:data.start_index }}</td>
+                                        <td>{{ l.get_pnt_details.0.unique_id }}</td>
+                                        <td>{{ l.get_pnt_details.0.name|default_if_none:'-' }}</td>
+                                        <td>{{ l.get_pnt_details.0.age|default_if_none:'-' }}</td>
+                                        <td>{{ l.get_pnt_details.0.get_gender_display|default_if_none:'-' }}</td>
+                                        <td>{{ l.get_pnt_details.0.contact_no_1|default_if_none:'-' }}</td>
+                                        <td>{{ l.get_pnt_details.0.server_created_on|date:'d-m-Y' }}</td>
+                                        <td>{{ l.spectacle_type|default_if_none:'-' }}</td>
+                                        <td>{% if l.get_pnt_details.0.camp %}{{ l.get_pnt_details.0.camp|default_if_none:'-' }} {% else %}{{ l.get_pnt_details.0.get_vision_center|default_if_none:'-' }}{% endif %}</td>
+                                        <td>{% if l.get_pnt_details.0.camp %}{{ l.get_pnt_details.0.camp.location|default_if_none:'-' }}{% else %}{{ l.get_pnt_details.0.get_vision_center.address|default_if_none:'-' }}{% endif %}</td>
+                                        <td>{{ l.glass_collecting_location|default_if_none:'-' }}</td>
+                                        <td>{{ l.get_spectacle_status_display|default_if_none:'-' }}</td>
+                                        {% if request.session.role_id == 4 %}
+                                        <td><input type="checkbox" name="selected_ids" value="{{ l.id }}"></td>
+                                        {% endif %}
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+                         
+                    <nav aria-label="...">
+                        {% if data.has_other_pages %}
+                        <ul class="pagination justify-content-end ">
+                            {% if data.has_previous %}
+                            <li class="paginate_button page-item"><a class="page-link" href="?page=1&search={{search}}">First</a></li>
+                            {% else %}
+                            <li class="paginate_button page-item disabled"><span class="page-link">First</span></li>
+                            {% endif %}
+                            {% for i in display_page_range %}
+                                {% if data.number == i %}
+                                <li class="page-item active"><span class="page-link">{{ i }} <span class="sr-only">(current)</span></span></li>
+                                {% else %}
+                                <li class="paginate_button paginate_button page-item"><a class="page-link" href="?page={{ i }}&search={{search}}">{{ i }}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                            {% if data.has_next %}
+                                <li class="paginate_button page-item"><a class="page-link" href="?page={{ data.paginator.num_pages }}&search={{search}}">Last</a></li>
+                            {% else %}
+                                <li class="paginate_button page-item disabled"><span class="page-link">Last</span></li>
+                            {% endif %}
+                            </ul>
+                        {% endif %}
+                    </nav> 
+                </div> 
+            </div> 
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+{% block extra_javascript %}
+<script src="{% static 'libs/sweetalert2/dist/sweetalert2.min.js' %}"></script>
+
+<!-- Required datatable js -->
+<script src="{% static 'libs/datatables.net/js/jquery.dataTables.min.js' %}"></script>
+<!-- <script src="{% static 'libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js' %}"></script> -->
+<!-- Buttons examples -->
+<script src="{% static 'libs/datatables.net-buttons/js/dataTables.buttons.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-buttons/js/buttons.colVis.min.js' %}"></script>
+
+<!-- Responsive examples -->
+<script src="{% static 'libs/datatables.net-responsive/js/dataTables.responsive.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js' %}"></script>
+
+<!-- Datatable init js -->
+<script src="{% static 'js/pages/datatables.init.js' %}"></script>
+<script>
+    function ConfirmBulk(followup_status_id, title) {
+        var selectedIds = [];
+        var checkboxes = document.querySelectorAll('input[name="selected_ids"]:checked');
+        
+        checkboxes.forEach(function(checkbox) {
+            selectedIds.push(checkbox.value);
+        });
+
+        if (selectedIds.length === 0) {
+            Swal.fire({
+                title: "No items selected",
+                text: "Please select at least one item.",
+                icon: "warning",
+                confirmButtonColor: "#34c38f",
+            });
+            return;
+        }
+
+        Swal.fire({
+            title: "Are you sure!",
+            text: "You want to " + title + " for selected items?",
+            showCancelButton: true,
+            confirmButtonColor: "#34c38f",
+            cancelButtonColor: "#f46a6a",
+            confirmButtonText: "Yes",
+        }).then((result) => {
+            if (result.isConfirmed) {
+                var selectedIdsStr = selectedIds.join(',');
+                window.location.href = '/update_glass_followup_status/' + selectedIdsStr + '/' + followup_status_id + '/';
+            }
+        });
+    }
+
+</script>
+<script>
+    function toggle(source) {
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i] != source)
+            checkboxes[i].checked = source.checked;
+    }
+}
+</script>
+    
+{% endblock %}

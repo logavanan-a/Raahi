@@ -1,0 +1,227 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+
+<!-- DataTables -->
+<link href="{% static 'libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+<link href="{% static 'libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<!-- Responsive datatable examples -->
+<link href="{% static 'libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">{% endblock %}
+
+{% block contents %}
+<style>
+    #btn-outline-danger {
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+}
+</style>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-body p-0">
+                    <div class="table-responsive mb-3" data-pattern="priority-columns">
+                        <table id="datatable-buttons" class="table  dt-responsive mb-0 mt-3">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Code Description</th>   
+                                    <th>Blood Pressure</th>   
+                                    <th>Blood Sugar</th>   
+                                    <th>Weight</th>
+                                    <th>Height</th>
+                                    <th>Family Details</th> 
+                                    <th>Total Family Members</th> 
+                                    <th>Owner Holding Amount</th>
+                                    <th>Employed In Year</th>
+                                    <th>Non Working Months</th>
+                                    <th>Alter Employment</th>
+                                    <th>Learn Alter Livelihood Skill</th>
+                                    <th>Family Support Financially</th>
+                                    <th>Medical Checkup Past-1 Year</th>
+                                    <th>Diabetes</th>
+                                    <th>Hypertension</th>
+                                    <th>Smoke</th>
+                                    <th>Alcohol</th>
+                                    <th>Eye Examination</th>
+                                    <th>Seeing Distant Objects</th>
+                                    <th>Judging Distance While Driving</th>
+                                    <th>Traffic Colors</th>
+                                    <th>Seeing While Night Driving</th>
+                                    <th>Wear Glasses Ever</th>
+                                    <th>Wearing Glasses Currently</th>
+                                    <th>Nearby Hospital</th>
+                                    <th>Type Of Hospital</th>
+                                    <th>Accident While Driving Commercial Vehicle Before</th>
+                                    <th>Accident Vehicle In Last Twelve Months</th>
+                                    <th>First Aid Kit</th>
+                                    <th>You Happy With Your Profession</th>
+                                    <th>If You Are Happy Specify In What Way</th>   
+                                </tr>   
+                            </thead>
+                            <tbody>
+                                {% for l in data %}
+                                <tr>
+                                    <td>{{l.code_description}}</td>
+                                    <td>{{l.blood_pressure}}</td>
+                                    <td>{{l.blood_sugar}}</td>
+                                    <td>{{l.weight}}</td>
+                                    <td>{{l.height}}</td>
+                                    <td>{{l.family_details}}</td>
+                                    <td>{{l.total_family_members}}</td>
+                                    <td>{{l.owner_holding_amount}}</td>
+                                    <td>{{l.employed_in_year.all|join:', '}}</td>
+                                    <td>{{l.non_working_months}}</td>
+                                    <td>{{l.get_alter_employment_display}}</td>
+                                    <td>{{l.get_learn_alter_livelihood_skill_display}}</td>
+                                    <td>{{l.get_family_support_financially_display}}</td>
+                                    <td>{{l.get_medical_checkup_past_1_year_display}}</td>
+                                    <td>{{l.get_diabetes_display}}</td>
+                                    <td>{{l.get_hypertension_display}}</td>
+                                    <td>{{l.get_smoke_display}}</td>
+                                    <td>{{l.get_alcohol_display}}</td>
+                                    <td>{{l.get_eye_examination_display}}</td>
+                                    <td>{{l.get_seeing_distant_objects_display}}</td>
+                                    <td>{{l.get_judging_distance_while_driving_display}}</td>
+                                    <td>{{l.get_traffic_colors_display}}</td>
+                                    <td>{{l.get_seeing_while_night_driving_display}}</td>
+                                    <td>{{l.get_wear_glasses_ever_display}}</td>
+                                    <td>{{l.get_wearing_glasses_currently_display}}</td>
+                                    <td>{{l.get_nearby_hospital_display}}</td>
+                                    <td>{{l.type_of_hospital}}</td>
+                                    <td>{{l.get_accident_while_driving_commercial_vehicle_before_display}}</td>
+                                    <td>{{l.get_accident_vehicle_in_last_twelve_months_display}}</td>
+                                    <td>{{l.get_first_aid_kit_display}}</td>
+                                    <td>{{l.you_happy_with_your_profession}}</td>
+                                    <td>{{l.if_you_are_happy_specify_in_what_way}}</td>
+                                    <td></td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <nav aria-label="...">
+                        {% if data.has_other_pages %}
+                        <ul class="pagination justify-content-end ">
+                            {% if data.has_previous %}
+                            <li class="paginate_button page-item"><a class="page-link" href="?page=1">First</a></li>
+                            {% else %}
+                            <li class="paginate_button page-item disabled"><span class="page-link">First</span></li>
+                            {% endif %}
+                            {% for i in display_page_range %}
+                                {% if data.number == i %}
+                                <li class="page-item active"><span class="page-link">{{ i }} <span class="sr-only">(current)</span></span></li>
+                                {% else %}
+                                <li class="paginate_button paginate_button page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                            {% if data.has_next %}
+                                <li class="paginate_button page-item"><a class="page-link" href="?page={{ data.paginator.num_pages }}">Last</a></li>
+                            {% else %}
+                                <li class="paginate_button page-item disabled"><span class="page-link">Last</span></li>
+                            {% endif %}
+                            </ul>
+                        {% endif %}
+                    </nav> 
+                </div> 
+            </div>
+        </div> 
+    </div>                             
+</div>
+ 
+{% endblock %}
+{% block extra_javascript %}
+<script src="{% static 'libs/sweetalert2/dist/sweetalert2.min.js' %}"></script>
+
+<!-- Required datatable js -->
+<script src="{% static 'libs/datatables.net/js/jquery.dataTables.min.js' %}"></script>
+<!-- <script src="{% static 'libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js' %}"></script> -->
+<!-- Buttons examples -->
+<script src="{% static 'libs/datatables.net-buttons/js/dataTables.buttons.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-buttons/js/buttons.colVis.min.js' %}"></script>
+
+<!-- Responsive examples -->
+<script src="{% static 'libs/datatables.net-responsive/js/dataTables.responsive.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js' %}"></script>
+
+<!-- Datatable init js -->
+<script src="{% static 'js/pages/datatables.init.js' %}"></script>
+
+</script>
+<script type="text/javascript" >
+    function Confirm(id, title) {
+        Swal.fire({
+            title: "Are you sure!",
+            text:"You want to "+ title +"?",
+            showCancelButton: !0,
+            confirmButtonColor: "#34c38f",
+            cancelButtonColor: "#f46a6a",
+            confirmButtonText: "Yes, "+ title +" it!",
+        }).then((result) => {
+            if (result.isConfirmed){
+                window.location.href = '/'+id+'/delete_camp/';
+            };
+                
+        })
+    };
+
+</script>
+<script type="text/javascript">
+    $('#filter_reset').click(function() {
+        $('#state').val('');
+        $('#district').prop('selectedIndex', 0).change();
+        $('#search').val('');
+        
+        this.form.submit();
+  });
+
+    
+    document.addEventListener('DOMContentLoaded', function() {
+    $('#state').change(function() {
+        var optionSelected = $(this).find("option:selected");
+        var valueSelected = optionSelected.val();
+        
+        if (valueSelected === "") {
+            $("#district option").remove();
+            return; 
+        }
+
+        $.ajax({
+            type: "GET",
+            url: '/ajax/district/' + valueSelected + '/',
+            success: function(result) {
+                $("#district option").remove();
+                a = '<option selected value="">Choose District Name</option>';
+                $("#district").append(a);
+
+                if (JSON.parse(result) == 0) {
+                    $("#district option").remove();
+                    a = '<option selected value="">No district is mapped to this State</option>';
+                    console.log(a)
+                    $("#district").append(a);
+                } else {
+                    $.each(JSON.parse(result), function(key, value) {
+                        a = '<option value=' + value['id'] + '>' + value['name'] + '</option>';
+                        $("#district").append(a);
+                    });
+                }
+            }
+        });
+    });
+
+});
+
+
+    
+</script>
+{% endblock %}

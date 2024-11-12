@@ -1,0 +1,429 @@
+{% load static %}
+{% load report_tags %}
+{% block filters %}
+    {% if excluding_filters %}
+        <script>
+            document.getElementById('{{excluding_filters}}').style.display = 'none';
+        </script>
+    {% endif %}
+    <form action="/report/{{page_slug}}/" method="POST" id='filter_form'>
+        {% csrf_token %}
+        <style>
+            .btn-group, .btn-group-vertical {
+                margin-left: 0px;
+            }
+        </style>
+        <div class="row">
+            {% comment %} {{filter_values}} {% endcomment %}
+            {% for filter in filter_values %}
+                <!-- display all filter values based on the filters configured for the report -->
+                <!-- handled drop down/select filters-->
+                <!-- TODO: text search, date range, date filters yet to be configured -->
+                {% if filter.4 == 'select' %}
+                    <div class="col-lg-3 col-sm-3 col-md-3 mt-3">
+                        <label>{{filter.3}}</label>
+                        <select  style="width: 100%" class="select2 form-select {{filter.0}}" {% if user_role_id == 11 and filter.0 == 'donor_name' %} disabled {% else %} id='{{filter.0}}' name='{{filter.0}}' {% endif %}>
+                            {%if filter.2  == '' and filter.3 != 'Model Type' %}
+                                <option value='' selected >All </option>
+                            {% endif %}
+                            {% for filter_item in filter.1 %}
+                            <option value="{{filter_item.0}}" {% if filter_item.0|slugify == filter.2 %}selected{% endif %}>
+                                {{filter_item.1}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                {% elif filter.4 == 'multi-select' %}
+                    <div class="col-lg-3 col-sm-3 col-md-3 mt-3">
+                        <label>{{filter.3}}</label>
+                        <select  style="width: 100%" class="select2 form-select {{filter.0}}" multiple="multiple" {% if user_role_id == 4 and filter.0 == 'hospital_name' %}disabled {% else %} id='{{filter.0}}' name='{{filter.0}}' {% endif %}>
+                            
+                            {% for filter_item in filter.1 %}
+                            <option value="{{filter_item.0}}" {% if filter_item.0|slugify in filter.2 %} selected {% endif %}>
+                                {{filter_item.1}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                {% elif filter.4 == 'date' %}
+                    <div class="col-lg-3 col-sm-3 col-md-3 mt-3">
+                        <label>{{filter.3}}</label>
+                        <input type="date" name="{{filter.0}}" style='color: #545b62 !important;font-size: 14px !important;font-weight: 500 !important;' value="{{filter.2}}" class="form-control {{filter.0}}" onclick='this.type="date"; this.max=new Date(new Date().setDate(new Date().getDate()-1)).toISOString().split("T")[0]' 
+                            id="{{filter.0}}" placeholder='{{filter.3}}'>
+                    </div>
+                {% elif filter.4 == 'dates' %}
+                    <div class="col-lg-3 col-sm-3 col-md-3 mt-3">
+                        <label>{{filter.3}}</label>
+                        <input type="date" name="{{filter.0}}" style='color: #545b62 !important;font-size: 14px !important;font-weight: 500 !important;' value="{{filter.2}}" class="form-control {{filter.0}}" onclick='this.type="date"'
+                            id="{{filter.0}}" placeholder='{{filter.3}}' onfocus="this.max=new Date().toISOString().split('T')[0]">
+                    </div>                
+                {% elif filter.4 == 'mmyy_date' %}
+                    <div class="col-lg-3 col-sm-3 col-md-3 mt-3">
+                        <label>{{filter.3}}</label>
+                        <input type="month" name="{{filter.0}}" style='color: #545b62 !important;font-size: 14px !important;font-weight: 500 !important;' value="{{filter.2}}"  class="form-control {{filter.0}}" onclick='this.type="month"'
+                                id="{{filter.0}}" placeholder='{{filter.3}}'>
+                    </div>
+                {% endif %}
+                <input type="hidden" id="__hd__{{filter.0}}" name="__hd__{{filter.0}}" value="{{filter.2}}"/>                
+            {% endfor %}
+            <input type="hidden" id="more_id" name="more_name" />
+            {% if r_slug == 'patient-summary-report' or r_slug == 'end-of-day-report' or r_slug == 'individual-camp-register' %}
+            <div class="row border-space my-3">
+                <a href="javascript:;" id="SHSFilters_Title" title="Show more search filters" onclick="toggleMyDiv()">
+                    <span class="badge badge-info btn btn-primary">
+                        More &nbsp;<i class="fas fa-chevron-down" id="IconsSHSFilters" style="color: white;"></i>
+                    </span>
+                </a>
+            </div>
+            {% endif %}
+            <div id="mydiv" >
+                <div class="row">
+                    {% for filter in filter_values %}
+                        {% if filter.4 == 'hidden_text' %}
+                            <div class="col-md-4">  
+                                <div class="mb-3">
+                                    <label>{{filter.3}}</label>
+                                    <input type="text" name="{{filter.0}}" style='color: #545b62 !important;font-size: 14px !important;font-weight: 500 !important;' value="{{filter.2}}"  class="form-control {{filter.0}}" onclick='this.type="text"'
+                                            id="{{filter.0}}" placeholder='{{filter.3}}'>
+                                </div>   
+                            </div>
+                        {% elif filter.4 == 'hidden_select' %}
+                            <div class="col-md-4">  
+                                <div class="mb-3">
+                                    <label>{{filter.3}}</label>
+                                    <select  style="width: 100%" class="select2 form-select {{filter.0}}" id='{{filter.0}}' name='{{filter.0}}'>
+                                        {%if filter.1|dict_len != 1 and filter.3 != 'Model Type' %}
+                                            <option value='' selected>All</option>
+                                        {% endif %}
+                                        {% for filter_item in filter.1 %}
+                                        <option value="{{filter_item.0}}" {% if filter_item.0|slugify == filter.2 %}selected{% endif %}>
+                                            {{filter_item.1}}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                        {% elif filter.4 == 'hidden_multi-select' %}
+                        <div class="col-lg-3 col-sm-3 col-md-3 mt-3">
+                            <label>{{filter.3}}</label>
+                            <select  style="width: 100%" class="select2 form-select {{filter.0}}" id='{{filter.0}}' name='{{filter.0}}' multiple="multiple">
+                                {% for filter_item in filter.1 %}
+                                <option value="{{filter_item.0}}" {% if filter_item.0|slugify in filter.2 %}selected{% endif %}>
+                                    {{filter_item.1}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        {% elif filter.4 == 'hidden_date' %}
+                            <div class="col-md-4">  
+                                <div class="mb-3">
+                                    <label>{{filter.3}}</label>
+                                    <input type="date" name="{{filter.0}}" style='color: #545b62 !important;font-size: 14px !important;font-weight: 500 !important;' value="{{filter.2}}"  class="form-control {{filter.0}}" onclick='this.type="date"'
+                                            id="{{filter.0}}" placeholder='{{filter.3}}'>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {%endfor%}
+                </div>
+            </div>
+            <div id="mydiv" style="display: none;">
+                <!-- Content to show/hide -->
+                <!-- ... -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-auto mt-2 ">
+                <button type="submit" class="form-control btn btn-success waves-effect btn-xs float-right">Search</button>
+            </div>
+            <div class="col-auto mt-2 ">
+                <button type="reset" id="filter_reset"  class="form-control btn btn-warning waves-effect btn-xs float-right" value="True">Reset Filters</button>
+            </div>
+        </div>
+    </form>
+    {% comment %} <div class="row">     
+        <div class="col-md-12 col-lg-12 col-sm-12 mt-2">
+            <p class="text-info" style="font-size:.7rem !important">Note: Use the Focus button to review data in a single row without losing focus while scrolling back and forth. Click the focus button and select a row in the table. The selected row is highlighted and highlight is retained till you click the same row again or click on a different row.</p>
+        </div>
+    </div> {% endcomment %}
+    <div class="row" {% if show_filter == False %}style="visibility:hidden !important;display:none !important;" {%endif%}>
+        <div class="col-md-12 col-lg-12 col-sm-12 mt-2">
+            <p class="text-info" style="font-size:.7rem !important">Note: Use the Focus button to review data in a single row without losing focus while scrolling back and forth. Click the focus button and select a row in the table. The selected row is highlighted and highlight is retained till you click the same row again or click on a different row.</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //TODO: yet to test the onchange state/district
+        document.addEventListener('DOMContentLoaded', function() {
+            $('.hospital_name').select2({placeholder: "Select a Hospital",})
+            $('.camp_name').select2({placeholder: "Select a Camp",})
+            $('.vision_center').select2({placeholder: "Select a Vision Center",})
+            $("button[type='reset']").on("click", function(event){
+                $("#groupby option").remove();
+                {% for filter in filter_values %}
+                    {% if filter.4 == 'select' %}
+                        $('select.select2#{{filter.0}}').val('');
+                    {% elif filter.4 == 'multi-select' %}
+                    $('select.select2#{{filter.0}}').val('');
+                    {% elif filter.4 == 'date' %}
+                        $("#{{filter.0}}").val("");
+                    {% elif filter.4 == 'hidden_text' %}
+                        $("#{{filter.0}}").val("");
+                    {% elif filter.4 == 'hidden_select' %}
+                        $("#{{filter.0}}").val("");
+                    {% elif filter.4 == 'hidden_multi-select' %}
+                        $("#{{filter.0}}").val("");
+                    {% elif filter.4 == 'hidden_date' %}
+                        $("#{{filter.0}}").val("");
+                    {% endif %}
+                {% endfor %}
+                $('#filter_form').submit();
+    
+            });
+            $("#from_date").on("change", function(event){
+                document.getElementById("to_date").min=$("#from_date").val()
+            });
+            {% for filter in filter_values %}
+                {% if filter.0 == 'from_date' and filter.2 != '' %}
+                    document.getElementById("to_date").min='{{filter.2}}'
+                {% endif %}
+            {% endfor %}
+            $(document).ready(function () {
+                $('select#state').change(function () {
+                    var optionSelected = $(this).find("option:selected");
+                    var valueSelected = optionSelected.val();
+                        $("#hospital_name option").remove();
+                        $("#donor_name option").remove();
+                        $("#camp_name option").remove();
+                        debugger;
+                        data = {
+                            'selected_state': valueSelected,
+                            'selected_model_type': document.getElementById("model_type").value
+                        };
+                        $.ajax({
+                            type: "GET",
+                            url: '/ajax/report_donor/',
+                            data: data,
+                            success: function (result) {
+                                a = '<option value="">All</option>';
+                                $("#donor_name").append(a);
+                                if (JSON.parse(result) == 0) {
+                                    a ='<option selected disabled value="">No district mapped for this state</option>';
+                                    $("#donor_name").append(a);
+                                } else {
+                                    $.each(JSON.parse(result), function (key, value) {
+                                        a = '<option value=' + value['id'] + '>' +
+                                            value['name'] + '</option>';
+                                        $("#donor_name").append(a);
+                                    });
+                                }
+                            }
+                        });
+                        $.ajax({
+                            type: "GET",
+                            url: '/ajax/report_partner/',
+                            data: data,
+                            success: function (result) {
+                                if (JSON.parse(result) == 0) {
+                                    a ='<option selected disabled value="">No district mapped for this state</option>';
+                                    $("#hospital_name").append(a);
+                                } else {
+                                    $.each(JSON.parse(result), function (key, value) {
+                                        a = '<option value=' + value['id'] + '>' +
+                                            value['name'] + '</option>';
+                                        $("#hospital_name").append(a);
+                                    });
+                                }
+                            }
+                        });
+                        $.ajax({
+                            type: "GET",
+                            url: '/ajax/report_camp/',
+                            data: data,
+                            success: function (result) {
+                                if (JSON.parse(result) == 0) {
+                                    a ='<option selected disabled value="">No district mapped for this state</option>';
+                                    $("#camp_name").append(a);
+                                } else {
+                                    $.each(JSON.parse(result), function (key, value) {
+                                        a = '<option value=' + value['id'] + '>' +
+                                            value['name'] + '</option>';
+                                        $("#camp_name").append(a);
+                                    });
+                                }
+                            }
+                        });
+                        $.ajax({
+                            type: "GET",
+                            url: '/ajax/report_district/',
+                            data: data,
+                            success: function (result) {
+                                if (JSON.parse(result) == 0) {
+                                    a ='<option selected disabled value="">No district mapped for this state</option>';
+                                    $("#district").append(a);
+                                } else {
+                                    $.each(JSON.parse(result), function (key, value) {
+                                        a = '<option value=' + value['id'] + '>' +
+                                            value['name'] + '</option>';
+                                        $("#district").append(a);
+                                    });
+                                }
+                            }
+                        });
+
+                });
+            });
+            $(document).ready(function () {
+                $('select#donor_name').change(function () {
+                    var optionSelected = $(this).find("option:selected");
+                    var valueSelected = optionSelected.val();
+                    var model_type = document.getElementById("model_type");
+                    var state_id = document.getElementById("state");
+                    if(model_type){
+                        var model_type_value = document.getElementById("model_type").value
+                    }
+                    else{
+                        var model_type_value = "{{custom_model_type}}"
+                    }
+                    if(state_id){
+                        var state_value = document.getElementById("state").value
+                    }
+                    else{
+                        var state_value = ""
+                    }
+                        $("#hospital_name option").remove();
+                        $("#camp_name option").remove();
+                        data = {
+                            'selected_donor': valueSelected,
+                            'selected_state': state_value,
+                            'selected_model_type':model_type_value,
+                        };
+                        console.log(data,'---------------------')
+                        $.ajax({
+                            type: "GET",
+                            url: '/ajax/report_partner/',
+                            data: data,
+                            success: function (result) {
+                                $("#hospital_name option").remove();
+                                if (JSON.parse(result) == 0) {
+                                    $("#hospital_name option").remove();
+                                    a =
+                                    '<option selected disabled value="">No Hospital Mapped</option>';
+                                    $("#hospital_name").append(a);
+                                } else {
+                                    $.each(JSON.parse(result), function (key, value) {
+                                        a = '<option value=' + value['id'] + '>' +
+                                            value['name'] + '</option>';
+                                        $("#hospital_name").append(a);
+                                    });
+                                }
+                            }
+                        }); 
+                        $.ajax({
+                            type: "GET",
+                            url: '/ajax/report_camp/',
+                            data: data,
+                            success: function (result) {
+                                if (JSON.parse(result) == 0) {
+                                    a ='<option selected disabled value="">No district mapped for this state</option>';
+                                    $("#camp_name").append(a);
+                                } else {
+                                    $.each(JSON.parse(result), function (key, value) {
+                                        a = '<option value=' + value['id'] + '>' +
+                                            value['name'] + '</option>';
+                                        $("#camp_name").append(a);
+                                    });
+                                }
+                            }
+                        });             
+                });
+            });
+            $(document).ready(function () {
+                $('select#hospital_name').add('select#model_type').change(function () {
+                    var valueSelected =$(this).val();
+                    var model_type = document.getElementById("model_type");
+                    var state_id = document.getElementById("state");
+                    if(model_type){
+                        var model_type_value = document.getElementById("model_type").value
+                    }
+                    else{
+                        var model_type_value = "{{custom_model_type}}"
+                    }
+                    if(state_id){
+                        var state_value = document.getElementById("state").value
+                    }
+                    else{
+                        var state_value = ""
+                    }
+                    if (valueSelected == ''){
+                        $("#camp_name option").remove();
+                    }else{
+                        data = {
+                            'selected_hospital[]': $("#hospital_name").val(),
+                            'selected_model_type': model_type_value,
+                            'selected_state': state_value
+                        };
+                        $.ajax({
+                            type: "GET",
+                            url: '/ajax/report_camp/',
+                            data: data,
+                            success: function (result) {
+                                $("#camp_name option").remove();
+                                if (JSON.parse(result) == 0) {
+                                    $("#camp_name option").remove();
+                                    a =
+                                    '<option selected disabled value="" selected disabled>No Camp mapped for this hospital</option>';
+                                    $("#camp_name").append(a);
+                                } else {
+                                    $.each(JSON.parse(result), function (key, value) {
+                                        a = '<option value=' + value['id'] + '>' +
+                                            value['name'] + '</option>';
+                                        $("#camp_name").append(a);
+                                    });
+                                }
+                            }
+                        });
+                    }              
+                });
+            });
+        });
+
+</script>
+<script>
+
+    var mydiv = document.getElementById("mydiv");
+    var moreview = document.getElementById("more_id");
+
+    mydiv.style.display = "none";
+    hiddenview = '{{more_view}}'
+    if (hiddenview == 'true') {
+            mydiv.style.display = "block";
+            moreview.value = true
+            document.getElementById("IconsSHSFilters").classList.remove("fa-chevron-down");
+            document.getElementById("IconsSHSFilters").classList.add("fa-chevron-up");
+        } else {
+            mydiv.style.display = "none";
+            moreview.value = false
+            document.getElementById("IconsSHSFilters").classList.remove("fa-chevron-up");
+            document.getElementById("IconsSHSFilters").classList.add("fa-chevron-down");
+        }
+    function toggleMyDiv() {
+        if (mydiv.style.display === "none") {
+            mydiv.style.display = "block";
+            moreview.value = true
+            document.getElementById("IconsSHSFilters").classList.remove("fa-chevron-down");
+            document.getElementById("IconsSHSFilters").classList.add("fa-chevron-up");
+        } else {
+            mydiv.style.display = "none";
+            moreview.value = false
+            document.getElementById("IconsSHSFilters").classList.remove("fa-chevron-up");
+            document.getElementById("IconsSHSFilters").classList.add("fa-chevron-down");
+        }
+    }
+
+</script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+    var currentDate = new Date();
+
+    var currentYear = currentDate.getFullYear();
+    var currentMonth = ("0" + (currentDate.getMonth() + 1)).slice(-2); // Adding 1 because months are zero-based
+
+    $('input[type="month"]').attr('max', currentYear + '-' + currentMonth);
+</script>
+{% endblock  %}

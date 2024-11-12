@@ -1,0 +1,21 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 11/16/2023, 10:45:42hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 11/16/2023, 10:45:42hrs{
+    "user_id": 30,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": "",
+    "stdate": "",
+    "fmdate": ""
+}

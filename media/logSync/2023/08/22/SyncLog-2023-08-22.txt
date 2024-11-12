@@ -1,0 +1,356 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:06:09hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 40,
+        "app_created_at": "2023-08-22T13:06:07",
+        "app_updated_at": "2023-08-22T13:06:07",
+        "camp": 0,
+        "contact_no_1": "88615741235",
+        "contact_no_2": "",
+        "district": 7,
+        "donor": 4,
+        "drivers_license_no": "bdhdu383838",
+        "educational_qualification": 42,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 36,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 33,
+        "name": "Manisha",
+        "no_of_months_employed_in_a_year": "6",
+        "permanent_address": "",
+        "renewal_date": "2023-08-22",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "KA2961",
+        "user": 35,
+        "uuid": "202308221306076fe46875-db73-4403-a406-7cda08f8eba8",
+        "vehicle_insurance_policy": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:06:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:06:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:06:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:06:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:06:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:07:12hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:07:12hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 1,
+        "accident_while_driving_commercial_vehicle_before": 1,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-08-22T13:07:12",
+        "app_updated_at": "2023-08-22T13:07:12",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "180",
+        "blood_sugar_mg_dl": "180",
+        "code_description": 53,
+        "cough_for_more_than_two_weeks": 0,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 0.0,
+        "family_details": "",
+        "family_history_of_diabetes": 0,
+        "fever_for_more_than_2_weeks": 0,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "156",
+        "if_you_are_happy_specify_in_what_way": "good way",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "medication_hypertension": 0,
+        "night_sweats": 0,
+        "on_what_basis_your_salary_is_calculated": 58,
+        "owner_holding_any_amount_from_your_salary": "",
+        "patient_uuid": "202308221306076fe46875-db73-4403-a406-7cda08f8eba8",
+        "physical_activity": 0,
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 69,
+        "unexplained_weight_loss_or_loss_of_appetite": 0,
+        "uuid": "202308221307126e5dd191-6b4e-4eae-885a-13dd7fdb8588",
+        "waist_circumference": 0,
+        "weight_kg": "56",
+        "what_do_you_do_during_non_working_months": 0,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [
+            167
+        ],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 72,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:07:12hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:07:12hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:07:12hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:07:12hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:08:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:08:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:08:01hrs[
+    {
+        "aided_distance_le": 85,
+        "aided_distance_re": 84,
+        "aided_near_le": 93,
+        "aided_near_re": 93,
+        "app_created_at": "2023-08-22T13:07:59",
+        "app_updated_at": "2023-08-22T13:07:59",
+        "color_le": 116,
+        "color_re": 116,
+        "pinhole_distance_le": 83,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 93,
+        "refer_for": 123,
+        "referred_to": 135,
+        "screening_uuid": "202308221307126e5dd191-6b4e-4eae-885a-13dd7fdb8588",
+        "sync_status": 0,
+        "treatment_for_refraction": 121,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "20230822130759d86be404-16c5-4d26-aaaa-ad5c3d4846c0",
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:08:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:08:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:08:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:09:03hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:09:03hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:09:03hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:09:03hrs[
+    {
+        "app_created_at": "2023-08-22T13:09:03",
+        "app_updated_at": "2023-08-22T13:09:03",
+        "axis_distance_le": "H",
+        "axis_distance_re": "H",
+        "axis_near_le": "H",
+        "axis_near_re": "H",
+        "cyl_distance_le": "H",
+        "cyl_distance_re": "H",
+        "cyl_near_le": "H",
+        "cyl_near_re": "H",
+        "follow_up_status": 0,
+        "screening_uuid": "202308221307126e5dd191-6b4e-4eae-885a-13dd7fdb8588",
+        "spectacle_type": 100,
+        "sph_distance_le": "H",
+        "sph_distance_re": "H",
+        "sph_near_le": "H",
+        "sph_near_re": "H",
+        "sync_status": 0,
+        "uuid": "20230822130903f467edb1-d4e6-4f9d-ae2a-73f05eca62aa",
+        "va_distance_le": 85,
+        "va_distance_re": 86,
+        "va_near_le": 93,
+        "va_near_re": 94
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:09:03hrs[
+    {
+        "app_created_at": "2023-08-22T13:09:03",
+        "app_updated_at": "2023-08-22T13:09:03",
+        "follow_up_status": 3,
+        "frame_code": 102,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "20230822130903f467edb1-d4e6-4f9d-ae2a-73f05eca62aa",
+        "has_the_glass_collected": 1,
+        "lens_type": 108,
+        "model_type": 0,
+        "spectacle_name": "Near",
+        "spectacle_type": 100,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20230822130903b2decf8e-fe1d-4023-83c5-c9d18a049002",
+        "vision_center": 88
+    },
+    {
+        "app_created_at": "2023-08-22T13:09:03",
+        "app_updated_at": "2023-08-22T13:09:03",
+        "follow_up_status": 3,
+        "frame_code": 102,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "20230822130903f467edb1-d4e6-4f9d-ae2a-73f05eca62aa",
+        "has_the_glass_collected": 1,
+        "lens_type": 108,
+        "model_type": 0,
+        "spectacle_name": "R2C",
+        "spectacle_type": 100,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20230822130903a774639d-eaf0-4182-8b12-decbab220374",
+        "vision_center": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:09:03hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:46:08hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 13:46:08hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 17:32:03hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/22/2023, 17:32:03hrs{
+    "user_id": 35
+}

@@ -1,0 +1,489 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:08:50hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:08:50hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:08:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:08:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:08:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:08:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:08:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:08:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:22:15hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 56,
+        "app_created_at": "2023-08-10T16:52:02",
+        "app_updated_at": "2023-08-10T16:52:02",
+        "camp": 0,
+        "caste": 0,
+        "contact_no_1": "8861579413",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 3,
+        "drivers_license_no": "hshshsh88383",
+        "educational_qualification": 0,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 41,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 34,
+        "name": "barathnn",
+        "no_of_months_employed_in_a_year": "",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 0,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "barathn2",
+        "user": 35,
+        "uuid": "2023081016520207e2ed5d-f18b-4365-8d2a-6dc484ac1a78",
+        "vehicle_insurance_policy": 0
+    },
+    {
+        "aadhaar_pan_no": "",
+        "age": 56,
+        "app_created_at": "2023-08-17T11:22:15",
+        "app_updated_at": "2023-08-17T11:22:15",
+        "camp": 0,
+        "caste": 0,
+        "contact_no_1": "8861578441",
+        "contact_no_2": "",
+        "district": 6,
+        "donor": 3,
+        "drivers_license_no": "nsjd838383",
+        "educational_qualification": 0,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 36,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 33,
+        "name": "Vishal",
+        "no_of_months_employed_in_a_year": "",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 0,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "shhs8383",
+        "user": 35,
+        "uuid": "202308171122156aa8dd52-e79d-4e16-b769-a2c1498b25c3",
+        "vehicle_insurance_policy": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:22:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:22:45hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 1,
+        "accident_while_driving_commercial_vehicle_before": 1,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2023-08-17T11:22:45",
+        "app_updated_at": "2023-08-17T11:22:45",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "100",
+        "blood_sugar_mg_dl": "100",
+        "code_description": 54,
+        "do_you_consume_alcohol": 3,
+        "do_you_have_diabetes": 3,
+        "do_you_have_hypertension": 3,
+        "do_you_smoke": 2,
+        "family_details": "",
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "100",
+        "if_you_are_happy_specify_in_what_way": "",
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "patient_uuid": "202308171122156aa8dd52-e79d-4e16-b769-a2c1498b25c3",
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 0,
+        "uuid": "202308171122450743fd7e-5de8-485a-bf20-9de8f4242ae3",
+        "weight_kg": "100",
+        "what_do_you_do_during_non_working_months": 0,
+        "which_months_you_are_not_employed_in_a_year": [],
+        "you_able_to_identify_the_traffic_colors_easily": 3,
+        "you_equipped_with_any_alter_employment": 0,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 0,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:22:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:22:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:22:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:22:45hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:23:26hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:23:26hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:23:26hrs[
+    {
+        "aided_distance_le": 85,
+        "aided_distance_re": 84,
+        "aided_near_le": 95,
+        "aided_near_re": 93,
+        "app_created_at": "2023-08-17T11:23:26",
+        "app_updated_at": "2023-08-17T11:23:26",
+        "color_le": 116,
+        "color_re": 116,
+        "pinhole_distance_le": 86,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 94,
+        "pinhole_near_re": 94,
+        "refer_for": 127,
+        "referred_to": 135,
+        "screening_uuid": "202308171122450743fd7e-5de8-485a-bf20-9de8f4242ae3",
+        "sync_status": 0,
+        "treatment_for_refraction": 120,
+        "un_aided_distance_le": 84,
+        "un_aided_distance_re": 85,
+        "un_aided_near_le": 94,
+        "un_aided_near_re": 93,
+        "uuid": "20230817112326bbf83533-a683-4134-b8a9-4ea5ed353ce2",
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:23:26hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:23:26hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:23:26hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:27:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:27:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:27:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:27:00hrs[
+    {
+        "app_created_at": "2023-08-17T11:26:59",
+        "app_updated_at": "2023-08-17T11:26:59",
+        "axis_distance_le": "N",
+        "axis_distance_re": "J",
+        "axis_near_le": "N",
+        "axis_near_re": "B",
+        "cyl_distance_le": "J",
+        "cyl_distance_re": "H",
+        "cyl_near_le": "B",
+        "cyl_near_re": "N",
+        "follow_up_status": 0,
+        "screening_uuid": "202308171122450743fd7e-5de8-485a-bf20-9de8f4242ae3",
+        "spectacle_type": 101,
+        "sph_distance_le": "B",
+        "sph_distance_re": "R",
+        "sph_near_le": "H",
+        "sph_near_re": "G",
+        "sync_status": 0,
+        "uuid": "20230817112659ab07a626-ee52-492f-908a-f0c2858bbf65",
+        "va_distance_le": 86,
+        "va_distance_re": 86,
+        "va_near_le": 93,
+        "va_near_re": 94
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:27:00hrs[
+    {
+        "app_created_at": "2023-08-17T11:26:59",
+        "app_updated_at": "2023-08-17T11:26:59",
+        "follow_up_status": 0,
+        "frame_code": 102,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "20230817112659ab07a626-ee52-492f-908a-f0c2858bbf65",
+        "has_the_glass_collected": 2,
+        "lens_type": 108,
+        "model_type": 0,
+        "spectacle_name": "Near",
+        "spectacle_type": 101,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20230817112659700d1310-2257-4db4-b19d-d76335d47c50",
+        "vision_center": 88
+    },
+    {
+        "app_created_at": "2023-08-17T11:26:59",
+        "app_updated_at": "2023-08-17T11:26:59",
+        "follow_up_status": 1,
+        "frame_code": 102,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "20230817112659ab07a626-ee52-492f-908a-f0c2858bbf65",
+        "has_the_glass_collected": 2,
+        "lens_type": 108,
+        "model_type": 0,
+        "spectacle_name": "Custom made",
+        "spectacle_type": 101,
+        "sync_status": 0,
+        "type_of_coating": 0,
+        "uuid": "202308171126592fc5f00d-8fa7-4259-bf31-ee52e711e2db",
+        "vision_center": 80
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:27:00hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:31:56hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:31:56hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:31:56hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:31:56hrs[
+    {
+        "app_created_at": "2023-08-17T11:26:59",
+        "app_updated_at": "2023-08-17T11:31:55",
+        "axis_distance_le": "N",
+        "axis_distance_re": "J",
+        "axis_near_le": "N",
+        "axis_near_re": "B",
+        "cyl_distance_le": "J",
+        "cyl_distance_re": "H",
+        "cyl_near_le": "B",
+        "cyl_near_re": "N",
+        "follow_up_status": 0,
+        "screening_uuid": "202308171122450743fd7e-5de8-485a-bf20-9de8f4242ae3",
+        "spectacle_type": 101,
+        "sph_distance_le": "B",
+        "sph_distance_re": "R",
+        "sph_near_le": "H",
+        "sph_near_re": "G",
+        "sync_status": 0,
+        "uuid": "20230817112659ab07a626-ee52-492f-908a-f0c2858bbf65",
+        "va_distance_le": 86,
+        "va_distance_re": 86,
+        "va_near_le": 93,
+        "va_near_re": 94
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:31:56hrs[
+    {
+        "app_created_at": "2023-08-17T11:26:59",
+        "app_updated_at": "2023-08-17T11:31:55",
+        "follow_up_status": 0,
+        "frame_code": 102,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "20230817112659ab07a626-ee52-492f-908a-f0c2858bbf65",
+        "has_the_glass_collected": 2,
+        "lens_type": 108,
+        "model_type": 0,
+        "spectacle_name": "Near",
+        "spectacle_type": 101,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20230817112659700d1310-2257-4db4-b19d-d76335d47c50",
+        "vision_center": 88
+    },
+    {
+        "app_created_at": "2023-08-17T11:26:59",
+        "app_updated_at": "2023-08-17T11:31:55",
+        "follow_up_status": 1,
+        "frame_code": 102,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "20230817112659ab07a626-ee52-492f-908a-f0c2858bbf65",
+        "has_the_glass_collected": 2,
+        "lens_type": 108,
+        "model_type": 0,
+        "spectacle_name": "Custom made",
+        "spectacle_type": 101,
+        "sync_status": 0,
+        "type_of_coating": 0,
+        "uuid": "202308171126592fc5f00d-8fa7-4259-bf31-ee52e711e2db",
+        "vision_center": 80
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 11:31:56hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 13:16:25hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/17/2023, 13:16:25hrs{
+    "user_id": 30,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": "",
+    "stdate": "",
+    "fmdate": ""
+}

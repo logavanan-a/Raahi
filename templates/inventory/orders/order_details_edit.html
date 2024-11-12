@@ -1,0 +1,444 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contents %}
+
+<style>
+    .list-group-item+.list-group-item {
+        border-top-width: 1px;
+    }
+    
+</style>
+
+<div class="row align-items-center">
+    <div class="col-xl-12 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                <form method='POST' class="needs-validation" autocomplete="off" >
+                    {% csrf_token %}
+                    <div class='text-danger'>
+                        {{error}}
+                    </div> 
+                    <div class="row mb-4">
+                        <label for="" class="col-md-2 col-form-label"><b>Spectacles Type : </b><span class="required-field"></span></label>
+                        <div class="list-group col-md-4">
+                            <div class="row d-flex">    
+                                <div class="col-md-6 list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="table_selection" id="camps_radio" value="4" selected {%if prod_id == 4 %} checked {% endif %}>
+                                        <label class="form-check-label" for="camps_radio">Near</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="table_selection" id="partners_radio" value="3" selected {%if prod_id == 3 %} checked {% endif %}>
+                                        <label class="form-check-label" for="partners_radio">R2C</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <label for="" class="col-md-2 col-form-label"><b> Order for : </b><span class="required-field"></span></label>
+                        <div class="list-group col-md-4">
+                            <div class="row d-flex">    
+                                <div class="col-md-6 list-group-item mb-3">
+                                    <div class="form-check">
+                                        <input type="radio" name="table_choose" value="2" id="camp_radio" {% if order_obj.order_for == 2 %} checked {% endif %}>
+                                        <label for="" style="margin-right: 15%">Camp</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 list-group-item  mb-3">
+                                    <div class="form-check">
+                                        <input type="radio" name="table_choose" value="1" id="vision_center_radio" {% if order_obj.order_for == 1 %} checked {% endif %} >
+                                        <label for="vision_center_details">Vision Center</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-6" >
+                            <div class="row">
+                                <label for="" class="col-md-4 col-form-label"><b>Donor : </b><span class="required-field"></span></label>
+                                <div class="col-md-8">
+                                    <select id="donor" name="donor" class="form-select select2" required>
+                                        <option value="" >Select Donor</option>
+                                        {% for donor in donors %}
+                                            <option value="{{ donor.id }}" {% if donor.id == order_obj.donor.id %}selected{% endif %} >{{ donor }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="vision_orders">
+                            <div class="row" >
+                                <label for="vision_center" class="col-md-4 col-form-label"><b>Vision center: </b><span class="required-field"></span></label>
+                                <div class="col-md-8">
+                                    <select name="vision_center" id="vision_id" class="form-select select2" >
+                                        <option value=""  >Select Vision Center</option>
+                                        {% for vision_center in vision_centers %}
+                                            <option value="{{ vision_center.id }}" {% if vision_center.id == order_obj.vision_center.id %}selected{% endif %}>{{ vision_center }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <label for="" class="col-md-4 col-form-label"><b>District:</b><span class="required-field"></span></label>
+                                <div class="col-md-8">
+                                    <select id="district" name="district" class="form-select select2" required>
+                                        <option value="" selected>Select District</option>
+                                        {% for district in districts %}
+                                            <option value="{{ district.id }}" {% if district.id == order_obj.district.id %}selected{% endif %}>{{ district }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4 ">
+                        <div class="col-md-6" >
+                            <div class="row">
+                                <label for="" class="col-md-4 col-form-label"><b>Shipment Address:</b><span class="required-field"></span></label>
+                                <div class="list-group col-md-8">
+                                    <div class="list-group-item">
+                                        <div class="form-check">
+                                            <input type="radio" name="shippment_address" value="1" id="partner" {% if order_obj.shippment_address == 1 %} checked {% endif %}>
+                                            <label for="" style="margin-right: 10%">Partner</label>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item"  id="vision_Center">
+                                        <div class="form-check">
+                                            <input type="radio" name="shippment_address" value="4" id="vision_ce" {% if order_obj.shippment_address == 4 %} checked {% endif %}  >
+                                            <label for="" style="margin-right: 10%">Vision Center</label>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="form-check">
+                                            <input type="radio" name="shippment_address" value="3" id="other" {% if order_obj.shippment_address == 3 %} checked {% endif %}>
+                                            <label for="" style="margin-right: 10%">Other</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 " id="shippment">
+                            <div class="row">
+                                <label for="" class="col-md-4 col-form-label" id="address_label" ><b style="margin-left: 10px;">Address :</b><span class="required-field"></span></label>                        
+                                <div class="col-md-8">
+                                    <textarea class="form-control" id="address" rows="3" name="other_address">{{order_obj.other_address|default_if_none:''}}</textarea>
+                                </div>
+                            </div>
+                        </div>                   
+                    </div>  
+                    <div class="table-responsive" data-pattern="priority-columns">
+                        <table id="camps_table" class="table dt-responsive mb-0 mt-3">
+                            <thead class="table-light" >
+                                <tr class="text-center">
+                                    <th colspan="12"><h5 style="color: aliceblue;">Requisition for near vision spectacles</h5></th>
+                                </tr>
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Spectacles</th>   
+                                    <th>+1.0</th>
+                                    <th>+1.25</th>
+                                    <th>+1.50</th>
+                                    <th>+1.75</th>
+                                    <th>+2.0</th>
+                                    <th>+2.25</th>
+                                    <th>+2.50</th>
+                                    <th>+2.75</th>
+                                    <th>+3.0</th>
+                                </tr>   
+                            </thead>
+                            <tbody>
+                                <tr>                                    
+                                    <td>1</td>
+                                    <td>Number of Spectacles  </td>
+                                    <td>
+                                        <input type="number" class="form-control add_units" name='near1' id="no_of_units" value='{{quant_1}}'>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control add_units" name='near2' id="no_of_units" value='{{quant_2}}'>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control add_units" name='near3' id="no_of_units" value='{{quant_3}}'>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control add_units" name='near4' id="no_of_units" value='{{quant_4}}'>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control add_units" name='near5' id="no_of_units" value='{{quant_5}}'>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control add_units" name='near6' id="no_of_units" value='{{quant_6}}'>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control add_units" name='near7' id="no_of_units" value='{{quant_7}}'>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control add_units" name='near8' id="no_of_units" value='{{quant_8}}'>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control add_units" name='near9' id="no_of_units" value='{{quant_9}}'>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-responsive mb-3" data-pattern="priority-columns">
+                        <table id="partners_table" class="table dt-responsive mb-0 mt-3">
+                            <thead class="table-light" >
+                                <tr class="text-center">
+                                    <th colspan="14"><h5 style="color: aliceblue;">Requisition for R2C vision spectacles</h5></th>
+                                </tr>
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Spectacles</th> 
+                                    <th>-0.75</th>
+                                    <th>-1.0</th>
+                                    <th>-1.50</th>
+                                    <th>-2.0</th>
+                                    <th>-2.50</th>
+                                    <th>-3.0</th>
+                                    <th>-3.50</th>
+                                    <th>-3.75</th>
+                                </tr>   
+                            </thead>
+                            <tbody>
+                                <tr>                                    
+                                    <td>1</td>
+                                    <td>Number of Spectacles </td>
+                                    <td>
+                                        <input type="number" class="form-control add_units" name='r2c1' id="no_of_units" value='{{quant_11}}'>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control add_units" name='r2c2' id="no_of_units" value='{{quant_12}}'>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control add_units" name='r2c3' id="no_of_units" value='{{quant_13}}'>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control add_units" name='r2c4' id="no_of_units" value='{{quant_14}}'>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control add_units" name='r2c5' id="no_of_units" value='{{quant_15}}'>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control add_units" name='r2c6' id="no_of_units" value='{{quant_16}}'>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control add_units" name='r2c7' id="no_of_units" value='{{quant_17}}'>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control add_units" name='r2c8' id="no_of_units" value='{{quant_18}}'>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                    </div>
+                    <div id="frame_table" class="table-responsive mb-3" data-pattern="priority-columns">
+                        <table class="table dt-responsive mb-0 mt-3">
+                            <thead class="table-light" >
+                                <tr class="text-center">
+                                    <th>S.No</th>
+                                    <th>Spectacles</th> 
+                                    <th>R2CCM015</th>
+                                    <th>R2CCM021</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Number of Frames </td>                                    
+                                    <td>
+                                        <input type="number" class="form-control" name='R2CCM015' id="no_of_units" value={{frame_1}}>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" name='R2CCM021' id="no_of_units" value={{frame_2}}>
+                                    </td>                                   
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="gap-2" style="float: right;">
+                        <button type="reset" onclick="location.href='javascript:history.back()'" class="btn btn-secondary waves-effect">
+                            Cancel
+                        </button>
+                        <button type="submit" id="submitting" style="margin-left: 5px;" class="btn btn-primary w-md">Continue </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    const radioButtons = document.getElementsByName('table_selection');
+    const campsTable = document.getElementById('camps_table');
+    const partnersTable = document.getElementById('partners_table');
+    const frameTable = document.getElementById('frame_table');
+    partnersTable.style.display='none'
+    frameTable.style.display = 'none';
+    
+    // Function to clear input values in a table
+    function clearTableInputs(table) {
+        const inputFields = table.querySelectorAll('input[type="number"]');
+        inputFields.forEach((input) => {
+            input.value = ''; // Clear the input value
+        });
+    }
+
+    radioButtons.forEach((radio) => {
+        radio.addEventListener('change', function () {
+            if (this.value === '4') {
+                clearTableInputs(partnersTable); // Clear partnersTable input values
+                clearTableInputs(frameTable); // Clear frameTable input values
+                campsTable.style.display = 'block';
+                partnersTable.style.display = 'none';
+                frameTable.style.display = 'none';
+            } else if (this.value === '3') {
+                clearTableInputs(campsTable); // Clear campsTable input values
+                campsTable.style.display = 'none';
+                partnersTable.style.display = 'block';
+                frameTable.style.display = 'block';
+            }
+        });
+    });
+    const visionaddTable = document.getElementById('vision_orders');
+    
+
+    window.onload = function () {
+        value = '{{prod_id}}'
+        if (value === '4') {
+            campsTable.style.display = 'block';
+            partnersTable.style.display = 'none';
+            frameTable.style.display = 'none';
+        } else if (value === '3') {
+            campsTable.style.display = 'none';
+            partnersTable.style.display = 'block';
+            frameTable.style.display = 'block';
+
+
+        }
+        address = '{{order_obj.shippment_address}}';
+    
+        if (address === '3') {
+                partnerTable.style.display = 'block';
+            }
+        else if(address === '4'){
+            visionaddTable.style.display = 'block';
+        }
+        else {
+            partnerTable.style.display = 'none';
+        }  
+
+        order_for = '{{order_obj.order_for}}';
+
+        if (order_for === '1') {
+            visionaddTable.style.display = 'block';
+            campaddTable.style.display = 'none';
+        } else {
+            campaddTable.style.display = 'block';
+            visionaddTable.style.display = 'none';
+        }
+
+              
+    }
+   
+    
+    const shippmentButtons = document.getElementsByName('shippment_address');
+    const partnerTable = document.getElementById('shippment');
+    partnerTable.style.display = 'none';
+    visionaddTable.style.display = 'none';
+   
+    shippmentButtons.forEach((radio2) => {
+      radio2.addEventListener('change', function() {
+        if (this.value === '3') {
+            partnerTable.style.display = 'block';
+            // visionaddTable.style.display = 'none';
+            
+        }
+        else if(this.value === '4'){
+            visionaddTable.style.display = 'block';
+            partnerTable.style.display = 'none';
+
+            document.getElementById('vision_id').setAttribute('required','required')
+        }
+        else{
+            $('#address').val('');
+            partnerTable.style.display = 'none';
+            // visionaddTable.style.display = 'none';
+            
+        }
+        });
+    });
+
+    
+
+
+    const orderforButtons = document.getElementsByName('table_choose');
+    
+
+    document.getElementById('vision_id').setAttribute('required','required')
+    orderforButtons.forEach((radio3) => {
+      radio3.addEventListener('change', function() {
+        if (this.value === '1') {
+            $('#vision_id').prop('selectedIndex', 0).change();
+            visionaddTable.style.display = 'block';
+            document.getElementById('vision_id').setAttribute('required','required')
+               
+        }
+        else{
+            $('#camp_id').prop('selectedIndex', 0).change();
+            visionaddTable.style.display = 'none';
+            document.getElementById('vision_id').removeAttribute('required','required');
+               
+        }
+        });
+    });
+</script>
+<script>
+    const shipmentRadios = document.querySelectorAll('input[name="shippment_address"]');
+    const addressLabel = document.getElementById('address_label');
+    const addressField = document.getElementById('address');
+
+    shipmentRadios.forEach(radio => {
+        radio.addEventListener('change', () => {
+            if (radio.value === '3') { 
+                addressField.required = true;
+            } else {
+                addressField.required = false;
+            }
+        });
+    });
+</script>
+    
+<script>
+    $(document).ready(function() {
+        $('#donor').change(function() {
+            var donorId = $(this).val();
+            if (donorId) {
+                $.ajax({
+                    type: 'GET',
+                    url: '/ajax/donor_district/' + donorId + '/',
+                    success: function(data) {
+                        $('#district').empty();
+                        $('#district').append('<option value="" selected>Select District</option>');
+                        $.each(data, function(index, district) {
+                            $('#district').append('<option value="' + district.id + '">' + district.name + '</option>');
+                        });
+                    }
+                });
+            } else {
+                $('#district').empty();
+                $('#district').append('<option value="" selected>Select District</option>');
+            }
+        });
+    });
+</script>
+{% endblock %}
+
+

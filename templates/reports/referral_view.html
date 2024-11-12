@@ -1,0 +1,484 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css'%}" rel="stylesheet" type="text/css">
+
+<!-- DataTables -->
+<link href="{% static 'libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+<link href="{% static 'libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<!-- Responsive datatable examples -->
+<link href="{% static 'libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">{% endblock %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+
+{% block contents %}
+<style>
+#btn-outline-danger {
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+}
+
+ 
+  .disabled-link {
+    pointer-events: none; 
+    opacity: 0.5;
+}
+.datepicker {
+    margin-top: 5px;
+}
+.btn {
+   margin: 2px;
+}
+.btn-group, .btn-group-vertical {
+    margin-left: 0px;
+}
+.btn-group>.btn:not(:first-child) {
+    margin-left: 2px;
+}
+.rjt:hover {
+    color: #000000!important;
+}
+.rjt:focus {
+ box-shadow: none!important;
+}
+
+</style>
+{% load report_tags %}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-body p-0">
+                    <form class="needs-validation form-horizontal " {% if not month_year %}style="padding-bottom: 70vh;" {% endif %} autocomplete="off"  novalidate  method="GET" id="filters">
+                        <div class="row">
+                            <div class="col-md-4">  
+                                <label>Month-Year</label>
+                                <div class="position-relative" id="datepickerFrom">
+                                    <input type="text" class="form-control" value="{% if month_year %}{{month_year}}{% else %}{{current_month_year}}{% endif %}" name="month_year" id="month_year" data-date-container="#datepickerFrom" data-provide="datepicker"
+                                        data-date-format="MM yyyy" data-date-min-view-mode="1" data-date-autoclose="true">
+                                </div>
+                            </div>
+                            
+                            <div class="col-auto mt-4 ">
+                                <button type="submit" class="form-control btn btn-success waves-effect btn-xs float-right">Search</button>
+                            </div>
+                        </div>
+                    </form> 
+                </div>
+                <form method='get' id="submitting" class="needs-validation" autocomplete="off" >
+                    <div class="table-responsive mb-3 {% if month_year %}d-block{% else %}d-none{% endif%}" data-pattern="priority-columns">
+                        <table id="datatables" class="table table-striped dt-responsive mb-0 mt-3">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Month-Year</th>
+                                    <th>Partner User</th>
+                                    <th>Zone</th>
+                                    <th>Partner Sign-off</th>
+                                    <th>Zonal Coordinator</th>
+                                    <th>PPA</th>
+                                    <th>National Coordinator</th>
+                                    <th>Super Admin</th>
+                                </tr>   
+                            </thead>
+                            <tbody>
+                                {% for l in mpr_status_obj %}
+                                <tr>
+                                    <td>{{ l.month_year }}</td>
+                                    <td>{{l.patner_name}}</td>
+                                    <td>{{l.zone_name}}</td>
+                                    {% if l.partner_date and l.mpr_status_id != 3 %}
+                                    <td>submitted : {{l.partner_date}}</td>
+                                    {% else %}
+                                    <td>
+                                    {% if l.remark %}
+                                    Rejected by Zonal Coordinator : {{l.remark}} ({{l.zonal_coordinator_date}})</br>
+                                    {% if l.national_remark %}
+                                    Rejected by National Coordinator : {{l.national_remark}} ({{l.national_coordinator_date}})</br>
+                                    {% endif %}
+                                    {% if l.super_admin_remark %}
+                                    Rejected by Super Admin : {{l.super_admin_remark}} ({{l.super_admin_date}})
+                                    {% endif %}
+                                    {% else %} 
+                                    Pending 
+                                    {% endif %}</td>
+                                    {% endif %}
+                                    <td >
+                                        {% if request.session.role_id == 9 %}
+                                            {% if l.mpr_status_id == 1 or l.mpr_status_id == 7 %}
+                                            <div class="d-flex ">
+                                                <button type="button" class=" btn btn-secondary waves-effect w-100" onclick="Confirm('{{l.id}}',2,'Approve')"  >Approve</button>
+                                                <button  type="button" class=" btn btn-secondary waves-effect w-100" onclick="Confirm('{{l.id}}',3,'Reject')" >Reject</button>
+                                            </div>
+                                                {% if l.national_remark  %}
+                                                <div>
+                                                    <button type="button" class=" btn  rjt"  >
+                                                        <span>Rejected by National Coordinator : {{l.national_remark}} ({{l.national_coordinator_date}})</span></br>
+                                                        {% if l.super_admin_remark %}
+                                                        <span>Rejected by Super Admin : {{l.super_admin_remark}} ({{l.super_admin_date}})</span>
+                                                        {% endif %}
+                                                    </button>
+                                                </div>
+                                                {% endif %}
+                                            {% elif l.remark %}
+                                            Rejected : {{l.remark}} ({{l.zonal_coordinator_date}})</br>
+                                                {% if l.national_remark %}
+                                                Rejected by National Coordinator : {{l.national_remark}} ({{l.national_coordinator_date}})</br>
+                                                {% endif %}
+                                                {% if l.super_admin_remark %}
+                                                Rejected by Super Admin : {{l.super_admin_remark}} ({{l.super_admin_date}})
+                                                {% endif %}
+                                            {% elif l.zonal_coordinator_date %}
+                                            Approved : {{l.zonal_coordinator_date}}
+                                            {% else %}
+                                            <b>-</b>
+                                            {% endif%}
+                                        {% else %}
+                                            {% if l.zonal_coordinator_date %}
+                                                {% if l.mpr_status_id == 7 %}
+                                                Rejected by National Coordinator : {{l.national_remark}} ({{l.national_coordinator_date}})</br>
+                                                {% if l.super_admin_remark %}
+                                                Rejected by Super Admin : {{l.super_admin_remark}} ({{l.super_admin_date}})
+                                                {% endif %}
+                                                {% elif l.remark %}
+                                                Rejected : {{l.remark}} ({{l.zonal_coordinator_date}})</br>
+                                                {% if l.national_remark %}
+                                                Rejected by National Coordinator : {{l.national_remark}} ({{l.national_coordinator_date}})</br>
+                                                {% endif %}
+                                                {% if l.super_admin_remark %}
+                                                Rejected by Super Admin : {{l.super_admin_remark}} ({{l.super_admin_date}})
+                                                {% endif %}
+                                                {% else %}
+                                                Approved : {{l.zonal_coordinator_date}}
+                                                {% endif%}
+                                            {% else %}
+                                            <b>-</b>
+                                            {% endif%}
+                                        {% endif%}
+                                    </td>
+                                    {% if request.session.role_id == 8 %}
+                                        {% if mpr_status_obj|next:forloop.counter0 and l.zone_id and mpr_status_obj|next:forloop.counter0 != l.zone_id or forloop.counter0 == 0 %}
+                                            {% if mpr_status_obj|get_partner_by_zone:l.zone_id %}
+                                                {% if l.national_remark and l.mpr_status_id == 7 %}
+                                                <td rowspan="{{data|index:l.zone_id}}" >
+                                                    Rejected by National Coordinator : {{l.national_remark}} ({{l.national_coordinator_date}})</br>
+                                                    {% if l.super_admin_remark %}
+                                                    Rejected by Super Admin : {{l.super_admin_remark}} ({{l.super_admin_date}})
+                                                    {% endif %}
+                                                </td>
+                                                {% elif l.mpr_status_id == 4 and l.ppa_date %}
+                                                <td rowspan="{{data|index:l.zone_id}}" >Forwarded : {% if l.forward_nc_command %}{{l.forward_nc_command}} ({% endif %}{{l.ppa_date}}{% if l.forward_nc_command %}){% endif %}</td>
+                                                {% else %}
+                                                <td rowspan="{{data|index:l.zone_id}}" >
+                                                    {% if l.national_remark %}
+                                                    <div>
+                                                        {% if mpr_status_obj|get_partner_by_zone:l.zone_id and l.mpr_status_id == 4 %}
+                                                        <div class="text-center">
+                                                            <button type="button" class=" btn btn-secondary waves-effect " onclick="Conform('{{l.zone_id}}','Forward to NC')"  >Forward to NC </button>
+                                                        </div>
+                                                        {% endif %}
+                                                        <button type="button" class="btn rjt" >
+                                                            Rejected by National Coordinator : {{l.national_remark}} ({{l.national_coordinator_date}})</br>
+                                                            {% if l.super_admin_remark %}
+                                                            Rejected by Super Admin : {{l.super_admin_remark}} ({{l.super_admin_date}})
+                                                            {% endif %}
+                                                        </button>
+                                                    </div>
+                                                    {% else %}
+                                                        {% if mpr_status_obj|get_partner_by_zone:l.zone_id and l.mpr_status_id == 2 %}
+                                                        <div class="text-center">
+                                                            <button type="button" class=" btn btn-secondary waves-effect " onclick="Conform('{{l.zone_id}}','Forward to NC')"  >Forward to NC </button>
+                                                        </div>
+                                                        {% else %}
+                                                        <div>-</div>
+                                                        {% endif %}
+                                                    {% endif %}
+                                                </td>
+                                                {% endif %}
+                                            {% else %}
+                                                {% if l.national_remark  %}
+                                                <td rowspan="{{data|index:l.zone_id}}" >
+                                                    Rejected by National Coordinator : {{l.national_remark}} ({{l.national_coordinator_date}})</br>
+                                                    {% if l.super_admin_remark %}
+                                                    Rejected by Super Admin : {{l.super_admin_remark}} ({{l.super_admin_date}})
+                                                    {% endif %}
+                                                </td>
+                                                {% else %}
+                                                <td rowspan="{{data|index:l.zone_id}}" ><b>-</b></td>
+                                                {% endif %}
+                                            {% endif %}
+                                        {% endif %}
+                                    {% else %}
+                                        {% if mpr_status_obj|next:forloop.counter0 and l.zone_id and mpr_status_obj|next:forloop.counter0 != l.zone_id or forloop.counter0 == 0 %}
+                                            {% if l.ppa_date %}
+                                                {% if not l.mpr_status_id == 4 and l.national_remark %}
+                                                <td rowspan="{{data|index:l.zone_id}}">
+                                                    Rejected by National Coordinator : {{l.national_remark}} ({{l.national_coordinator_date}})</br>
+                                                    {% if l.super_admin_remark %}
+                                                    Rejected by Super Admin : {{l.super_admin_remark}} ({{l.super_admin_date}})
+                                                    {% endif %}
+                                                </td>
+                                                {% else %}
+                                                <td rowspan="{{data|index:l.zone_id}}" >Forwarded : {% if l.forward_nc_command %}{{l.forward_nc_command}} ({% endif %}{{l.ppa_date}}{% if l.forward_nc_command %}){% endif %}</td>
+                                                {% endif %}
+                                            {% else %}
+                                            <td rowspan="{{data|index:l.zone_id}}" ><b>-</b></td>
+                                            {% endif %}
+                                        {% endif %}
+                                    {% endif %}
+                                    {% if request.session.role_id == 3 %}
+                                        {% if mpr_status_obj|next:forloop.counter0 and l.zone_id and mpr_status_obj|next:forloop.counter0 != l.zone_id or forloop.counter0 == 0 %}
+                                            {% if mpr_status_obj|get_zone_by_ppa:l.zone_id %}
+                                                {% if l.national_coordinator_date %}
+                                                    {% if l.super_admin_remark and l.mpr_status_id == 4 or l.mpr_status_id == 9 %}
+                                                    <td rowspan="{{data|index:l.zone_id}}">
+                                                        <div class="d-flex">
+                                                            <button type="button" class=" btn btn-secondary waves-effect w-50" onclick="ApproveToConfirm(6,'{{l.zone_id}}','Approve & Forward to Super Admin')"  >Approve & Forward to Super Admin</button>
+                                                            <button type="button" class=" btn btn-secondary waves-effect w-50" onclick="ApproveToConfirm(7,'{{l.zone_id}}','Reject')"  >Reject</button>
+                                                        </div>
+                                                        <div>
+                                                            <button type="button" class=" btn rjt w-100">
+                                                                Rejected by Super Admin: {{l.super_admin_remark}} ({{l.super_admin_date}})
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                    {% elif l.national_remark %}
+                                                    <td rowspan="{{data|index:l.zone_id}}">
+                                                        {% if l.mpr_status_id == 4 %}
+                                                            <button type="button" class=" btn btn-secondary waves-effect w-100" onclick="ApproveToConfirm(6,'{{l.zone_id}}','Approve & Forward to Super Admin')"  >Approve & Forward to Super Admin</button>
+                                                            <button type="button" class=" btn btn-secondary waves-effect w-100" onclick="ApproveToConfirm(7,'{{l.zone_id}}','Reject')"  >Reject</button>
+                                                        {% endif %}
+                                                        Rejected : {{l.national_remark}} ({{l.national_coordinator_date}})
+                                                        {% if l.super_admin_remark %}
+                                                        Rejected by Super Admin : {{l.super_admin_remark}} ({{l.super_admin_date}})
+                                                        {% endif %}
+                                                    </td>
+                                                    {% else %}
+                                                    <td rowspan="{{data|index:l.zone_id}}">Approved and Forwarded on : {{l.national_coordinator_date}}</td>
+                                                    {% endif %}
+                                                {% else %}
+                                                <td rowspan="{{data|index:l.zone_id}}">
+                                                    <button type="button" class=" btn btn-secondary waves-effect w-100" onclick="ApproveToConfirm(6,'{{l.zone_id}}','Approve & Forward to Super Admin')"  >Approve & Forward to Super Admin</button>
+                                                    <button type="button" class=" btn btn-secondary waves-effect w-100" onclick="ApproveToConfirm(7,'{{l.zone_id}}','Reject')"  >Reject</button>
+                                                </td>
+                                                {% endif %}
+                                            {% else %}
+                                                {% if l.national_coordinator_date %}
+                                                <td rowspan="{{data|index:l.zone_id}}">
+                                                    Rejected : {{l.remark}} ({{l.national_coordinator_date}})
+                                                    {% if l.super_admin_remark %}
+                                                    Rejected by Super Admin : {{l.super_admin_remark}} ({{l.super_admin_date}})
+                                                    {% endif %}
+                                                </td>
+                                                {% else %}
+                                                <td rowspan="{{data|index:l.zone_id}}"><b>-</b></td>
+                                                {% endif %}
+                                            {% endif %}
+                                        {% endif %}
+                                    {% else %}
+                                        {% if mpr_status_obj|next:forloop.counter0 and l.zone_id and mpr_status_obj|next:forloop.counter0 != l.zone_id or forloop.counter0 == 0 %}
+                                            {% if mpr_status_obj|get_partner_by_zone:l.zone_id %}        
+                                                {% if l.national_coordinator_date %}
+                                                    {% if l.national_remark %}
+                                                    <td rowspan="{{data|index:l.zone_id}}">
+                                                        Rejected : {{l.national_remark}} ({{l.national_coordinator_date}})</br>
+                                                        {% if super_admin_remark %}
+                                                        Rejected by Super Admin : {{l.super_admin_remark}} ({{l.super_admin_date}})
+                                                        {% endif %}
+                                                    </td>
+                                                    {% else %}
+                                                        <td rowspan="{{data|index:l.zone_id}}">
+                                                            {% if l.super_admin_remark %}
+                                                            Rejected by Super Admin : {{l.super_admin_remark}} ({{l.super_admin_date}})
+                                                            {% else %}
+                                                            Approved and Forwarded on : {{l.national_coordinator_date}}
+                                                            {% endif %}
+                                                        </td>
+                                                    {% endif %}
+                                                {% else %}
+                                                <td rowspan="{{data|index:l.zone_id}}"><b>-</b></td>
+                                                {% endif %}
+                                            {% else %}
+                                                <td rowspan="{{data|index:l.zone_id}}"><b>-</b></td>
+                                            {% endif %}
+                                        {% endif %}
+                                    {% endif %}
+                                    {% if mpr_status_obj|next:forloop.counter0 and l.zone_id and mpr_status_obj|next:forloop.counter0 != l.zone_id or forloop.counter0 == 0 %}
+                                        {% if mpr_status_obj|get_partner_by_zone:l.zone_id %}
+                                            {% if l.super_admin_date %}
+                                                {% if l.mpr_status_id == 6 and request.session.role_id == 12 %}
+                                                <td rowspan="{{data|index:l.zone_id}}">
+                                                    <button type="button" class=" btn btn-secondary waves-effect w-100" onclick="ApproveToConfirm(9,'{{l.zone_id}}','Reject')" >Reject</button>
+                                                </td>
+                                                {% elif l.super_admin_remark %}
+                                                <td rowspan="{{data|index:l.zone_id}}">Rejected : {{l.super_admin_remark}} ({{l.super_admin_date}})</td>
+                                                {% else %}
+                                                <td rowspan="{{data|index:l.zone_id}}">
+                                                    Synced on : {{l.super_admin_date}}
+                                                </td>
+                                                {% endif %}
+                                            {% else %}
+                                                {% if l.mpr_status_id == 6 and request.session.role_id == 12 %}
+                                                <td rowspan="{{data|index:l.zone_id}}">
+                                                    <button type="button" class=" btn btn-secondary waves-effect w-100" onclick="ApproveToConfirm(9,'{{l.zone_id}}','Reject')" >Reject</button>
+                                                </td>
+                                                {% else %}
+                                                <td rowspan="{{data|index:l.zone_id}}"><b>-</b></td>
+                                                {% endif %}
+                                            {% endif %}
+                                        {% else %}
+                                        <td rowspan="{{data|index:l.zone_id}}"><b>-</b></td>
+                                        {% endif %}
+                                    {% endif %}
+                                </tr> 
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% if month_year %}
+                        {% if approve_all_count and mpr_status_obj and request.session.role_id == 9 %}
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class=" btn btn-secondary waves-effect" style="width: 20%;" onclick="ApproveAll(1, 'Approve for all')" >Approve for all</button>
+                        </div>
+                        {% elif forward_all_count and mpr_status_obj and request.session.role_id == 3 %}
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class=" btn btn-secondary waves-effect" style="width: 20%;" onclick="ApproveAll(2, 'Approve & Forward to Super Admin for all')" >Approve & Forward to Super Admin for all</button>
+                        </div>
+                        {% elif syn_all_count and mpr_status_obj and request.session.role_id == 12 %}
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class=" btn btn-secondary waves-effect" style="width: 20%;" onclick="ApproveAll(3, 'Sync to SS MIS')" >Sync to SS MIS</button>
+                        </div>
+                        {% endif %}
+                    {% endif %}
+                </form>
+            </div>
+        </div>
+    </div>
+</div>       
+{% endblock %}
+{% block extra_javascript %}
+<script src="{% static 'libs/sweetalert2/dist/sweetalert2.min.js' %}"></script>
+
+<script src="{% static 'libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js'%}"></script>
+<!-- Required datatable js -->
+<script src="{% static 'libs/datatables.net/js/jquery.dataTables.min.js' %}"></script>
+<!-- <script src="{% static 'libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js' %}"></script> -->
+<!-- Buttons examples -->
+<script src="{% static 'libs/sweetalert2/dist/sweetalert2.min.js' %}"></script>
+
+<script src="{% static 'libs/datatables.net-buttons/js/dataTables.buttons.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-buttons/js/buttons.colVis.min.js' %}"></script>
+<script src="{% static 'js/pages/form-advanced.init.js'%}"></script>   <!--cause console issue  -->
+<script src="{% static 'js/pages/datatables.init.js' %}"></script>      <!--cause console issue  -->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#month_year').datepicker({endDate: '{{current_month_year}}' });
+    });
+    var month_year = $('#month_year').val()
+    console.log(month_year)
+    function ApproveAll(key ,title){
+        Swal.fire({
+            title: "Are you sure!",
+            text: "You want to " + title + "?",
+            showCancelButton: true,
+            confirmButtonColor: "#34c38f",
+            cancelButtonColor: "#f46a6a",
+            confirmButtonText: "Yes",
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = '/approve-all/'+key+'/'+month_year+ '/';
+            }
+        });
+    }
+    function ApproveToConfirm(status_id, zone_id,title){
+        if (status_id == 6 || status_id == 8){
+            Swal.fire({
+                title: "Are you sure!",
+                text: "You want to " + title + "?",
+                showCancelButton: true,
+                confirmButtonColor: "#34c38f",
+                cancelButtonColor: "#f46a6a",
+                confirmButtonText: "Yes",
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    console.log('month_year=',month_year)
+                    window.location.href = '/national_status_approve/'+status_id+'/'+month_year+ '/'+ zone_id +'/?month_year='+month_year;
+                }
+            });
+        }else{
+            Swal.fire({
+                title: 'Please Enter Reason For MPR Data ' + title,
+                input: 'textarea',
+                showCancelButton: true,
+                confirmButtonText: 'Yes',
+                inputValidator: function (value) {
+                    return !value && 'You need to write something!';
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = '/national_status_reject/' + status_id + '/' +month_year+'/' + result.value+'/'+zone_id+'/';
+                }
+            });
+        } 
+    }
+    function Confirm(id, status_id, title) {
+        var form_submit = document.getElementById("submitting");
+        if (status_id == 3) {
+            Swal.fire({
+                title: 'Please Enter Reason For MPR Data ' + title,
+                input: 'textarea',
+                showCancelButton: true,
+                confirmButtonText: 'Yes',
+                inputValidator: function (value) {
+                    return !value && 'You need to write something!';
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = '/mpr_status_reject/' + status_id + '/' +id+'/' + result.value+'/?month_year='+month_year;
+                }
+            });
+        } else {
+            Swal.fire({
+                title: "Are you sure!",
+                text: "You want to " + title + "?",
+                showCancelButton: true,
+                confirmButtonColor: "#34c38f",
+                cancelButtonColor: "#f46a6a",
+                confirmButtonText: "Yes",
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = '/mpr_status_approve/' + status_id + '/'+id+ '/?month_year=' + month_year;
+                }
+            });
+        }
+    }
+
+    function Conform(zone_id,title) {
+        Swal.fire({
+            title: 'Please Enter Reason For MPR Data ' + title,
+            input: 'textarea',
+            showCancelButton: true,
+            confirmButtonText: 'Yes',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                if (result.value){
+                    forward_nc_command = result.value
+                }else{
+                    forward_nc_command = 0
+                }
+                window.location.href = '/ppa_mpr_status_update/' +zone_id+ '/' +month_year+ '/'+ forward_nc_command +'/';
+                // window.location.href = '/mpr_status_reject/' + status_id + '/' +id+'/' + result.value+'/';
+            }
+        });
+    }
+</script>
+{% endblock %}

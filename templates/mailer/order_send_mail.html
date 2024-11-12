@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Raahi form Responses</title>
+     <style>
+th, td{padding: 4px;}
+    </style>
+</head>
+<body>
+    <div style="border:1px solid #222d32;padding:0px;margin:0px">
+        <div style="background:#fff;color:#fff;padding:15px; border-bottom: 1px solid #222d32;">
+            <img src="https://raahistaging.mahiti.org/static/images/new_raahi_sightsaver_india_logo.png" alt="raahi logo" class="CToWUd" style="height: 90px;">
+        </div>
+        <div style="padding: 10px;">
+            {% comment %} <img src="cid:image1" alt="Raahi_logo" height="60"> {% endcomment %}
+            {% if dear %}
+            <p>{{dear}}</p></b>
+            <p>{{body}}</p></b>
+            {% endif %}
+            <div class="table-responsive">
+                <table border=1 style="border-collapse: collapse;  width: 100%;" class="table">
+                    <thead class="bg-white">
+                        <tr>             
+                            <td><b>Partner name & address :</b></td>
+                            <td> {% if ptr_vlu.name %} {{ptr_vlu.name}} {% endif %}{% if ptr_vlu.address %}| {{ptr_vlu.address|default_if_none:'-' }} {% endif %}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Project target location(as per PFA) :</b></td>
+                            <td>{{donor_dist|default_if_none:'-' }} </td>
+                        </tr>
+                        <tr>
+                            <td><b>Donor Name :</b></td>
+                            <td>{{order.donor| default_if_none:'-' }} </td>
+                        </tr>
+                        <tr>                                   
+                            <td><b>Shipment address : </b></td>
+                                <td>
+                                {% if order.shippment_address == 1 %} 
+                                    {% if order.vision_center.partner.address %}{{order.vision_center.partner.address|default_if_none:'-' }}{% endif %}
+                                    {% if order.vision_center.partner.state.name %},{{order.vision_center.partner.state.name}} {% endif %}
+                                {% elif order.shippment_address == 4 %} 
+                                    {% if order.vision_center.address %}{{order.vision_center.address|default_if_none:'-'}}{% endif%}
+                                    {% if order.vision_center.state.name %}{{order.vision_center.state.name}}{% endif %} 
+                                {% else %} 
+                                    {{order.other_address|default_if_none:'-'}} 
+                                {% endif %}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Contact person name and contact number :</b></td>
+                            <td>{{request.user.first_name}} | {{order.vision_center.partner.contact_no}}</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            {% if prod_id == 4 %}
+            <div class="table-responsive">
+                <table border=1 style="border-collapse: collapse; margin-top: 25px;  width: 100%;" class="table">
+                    <thead class="table-light" >
+                        <tr>
+                            <th colspan="11"><h3>Requisition for near vision spectacles</h3></th>
+                        </tr>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Spectacles</th>   
+                            <th>+1.0</th>
+                            <th>+1.25</th>
+                            <th>+1.50</th>
+                            <th>+1.75</th>
+                            <th>+2.0</th>
+                            <th>+2.25</th>
+                            <th>+2.50</th>
+                            <th>+2.75</th>
+                            <th>+3.0</th>
+                        </tr>   
+                    </thead>
+                    <tbody>
+                        <tr>                                    
+                            <td>1</td>
+                            <td>Number of Spectacles  </td>
+                            <td>{{quant_1}}</td>
+                            <td>{{quant_2}} </td>
+                            <td>{{quant_3}} </td>
+                            <td>{{quant_4}} </td>
+                            <td>{{quant_5}}</td>
+                            <td>{{quant_6}} </td>
+                            <td>{{quant_7}} </td>
+                            <td>{{quant_8}} </td>
+                            <td>{{quant_9}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            {% endif %}
+            {% if prod_id == 3 %}
+
+            <div class="table-responsive">
+                <table border=1 style="border-collapse: collapse;  margin-top: 25px;  width: 100%;" class="table">
+                    <thead class="table-light" >
+                        <tr>
+                        <th colspan="10"><h3>Requisition for R2C vision spectacles</h3></th>
+                        </tr>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Spectacles</th> 
+                            <th>-0.75</th>
+                            <th>-1.0</th>
+                            <th>-1.50</th>
+                            <th>-2.0</th>
+                            <th>-2.50</th>
+                            <th>-3.0</th>
+                            <th>-3.50</th>
+                            <th>-3.75</th>
+                        </tr>   
+                    </thead>
+                    <tbody>
+                        <tr>                                    
+                            <td>1</td>
+                            <td>Number of Spectacles </td>
+                            <td>{{quant_11}}</td>
+                            <td>{{quant_12}}</td>
+                            <td>{{quant_13}}</td>
+                            <td>{{quant_14}}</td>
+                            <td>{{quant_15}}</td>
+                            <td>{{quant_16}}</td>
+                            <td>{{quant_17}}</td>
+                            <td>{{quant_18}}</td>
+                        
+                        </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-responsive">
+                <table border=1 style="border-collapse: collapse;  margin-top: 25px; width: 100%;" class="table">
+                    <thead class="table-light" >
+                        <tr>
+                            <th>S.No</th>
+                            <th>Spectacles</th> 
+                            <th>R2CCM015</th>
+                            <th>R2CCM021</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Number of Frames </td>                                    
+                            <td>{{frame_1}}</td>
+                            <td>{{frame_2}}</td>                                   
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            {% endif %}
+            {% comment %} {% if order.order_status == 4 %}
+            <p><span><b>Rejected Reason : </b></span>{{order.remark}}</p></b>
+            {% endif %} {% endcomment %}
+        </div>
+        <div style="background:#222d32;color:#fff;padding:15px;margin:0px">
+            <p><strong>Regards,</strong></p>
+            <p>Team <span class="gmail_default" style="font-family:verdana,sans-serif"></span>R<span class="gmail_default" style="font-family:verdana,sans-serif">aahi</span></p>
+        </div>
+    </div>
+</body>
+</html>
+<!-- {% if frame_type %}  {% endif %}  removed in number of frames -->

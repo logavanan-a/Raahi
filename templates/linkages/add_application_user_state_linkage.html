@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contents %}
+<style>
+    .btn-check:focus+.btn-primary, .btn-primary:focus {
+        background-color: #403A60;
+        border-color: #403A60;
+    }
+</style>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <form method='POST' class="needs-validation repeater" autocomplete="off" enctype="multipart/form-data" id="zone_state_form">
+                    {% csrf_token %}
+                    <div class='text-danger'>
+                        {{error_message}}
+                    </div>
+                    <div class="row">
+                        <label for="zone" class="col-md-2 col-form-label mb-4">Zone<span class="required-field"></span></label>
+                        <div class="col-md-4 mb-4">
+                            <select id="id_zone" class="form-select" name='role' required>
+                                <option selected="" value=''>Choose Zone...</option>
+                                {% for zone in zone_obj %}
+                                    <option value='{{ zone.id }}' {% if zone.id == zone_vlu %}selected{% endif %}>{{ zone.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <label for="state" class="col-md-2 col-form-label mb-4">State<span class="required-field"></span></label>
+                        <div class="col-md-4 mb-4">
+                            <select  id="id_state" class="select2 form-control select2-multiple" name='state' multiple="multiple" data-placeholder="Select state .." required>
+                              {% for state in state_obj %}
+                                  <option value='{{ state.id }}' {% if state.id in state_vlu %}selected{% endif %}>{{ state.name }}</option>
+                              {% endfor %}
+                          </select>
+                        </div>
+                    </div>
+                    
+                    <div class="gap-2">
+                        <button type="reset" onclick="location.href='/application-user-state-linkage/list/{{user_id}}/'" class="btn btn-secondary waves-effect">
+                            Cancel
+                        </button>
+                        <button type="submit" id="submitting" style="margin-left: 5px;" class="btn btn-primary w-md">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% block extra_javascript %}
+<script>
+    $(document).ready(function() {
+        $('#id_zone').change(function() {
+            var optionSelected = $(this).find("option:selected");
+            var valueSelected = optionSelected.val();
+        
+            $('#id_state').prop('readonly', false);
+        
+            if (valueSelected === "") {
+            $('#id_state').prop('readonly', true);
+            $("#id_state option").remove();
+            } else {
+            $.ajax({
+                type: "GET",
+                url: '/ajax/state/' + valueSelected + '/',
+                success: function(result) {
+                $("#id_state option").remove();
+                a = '<option value="">Choose State Name</option>';
+                $("#id_state").append(a);
+        
+                if (JSON.parse(result) == 0) {
+                    $("#id_state option").remove();
+                    a = '<option selected value="">No state is mapped to this zone </option>';
+                    console.log(a)
+                    $("#id_state").append(a);
+                } else {
+                    $.each(JSON.parse(result), function(key, value) {
+                    a = '<option value=' + value['id'] + '>' + value['name'] + '</option>';
+                    $("#id_state").append(a);
+                    });
+                }
+                }
+            });
+            }
+        });
+        // $('#id_state').trigger('change');
+    
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,391 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:30:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:30:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:30:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:30:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:30:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:30:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:30:23hrs[
+    {
+        "address": "",
+        "block": "",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 153,
+        "date": "2024-10-22",
+        "delay_reason": "",
+        "district": 703,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "50",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "jorhat",
+        "modified_by": 153,
+        "name": "Harry camp",
+        "partner": 37,
+        "uuid": "2024102215301752788055-5d06-45b9-808e-52319c5773cd",
+        "village": "",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:30:23hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "2024102215301752788055-5d06-45b9-808e-52319c5773cd",
+            "id": 1518,
+            "code": 9045,
+            "SCO": "2024-10-22 10:00:23.205902+00:00",
+            "SMO": "2024-10-22 10:00:23.205927+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:31:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:31:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:31:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:31:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:31:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:31:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:31:32hrs[
+    {
+        "address": "",
+        "block": "",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 153,
+        "date": "2024-10-22",
+        "delay_reason": "",
+        "district": 703,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "50",
+        "expected_glass_prescription": "50",
+        "expected_refer_surgeries": "",
+        "location": "jorhat",
+        "modified_by": 153,
+        "name": "Harry camp",
+        "partner": 37,
+        "uuid": "2024102215301752788055-5d06-45b9-808e-52319c5773cd",
+        "village": "",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:31:32hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "2024102215301752788055-5d06-45b9-808e-52319c5773cd",
+            "id": 1518,
+            "code": 9046,
+            "SCO": "2024-10-22 10:00:23.205902+00:00",
+            "SMO": "2024-10-22 10:01:32.150488+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:39:02hrs[
+    {
+        "aadhaar_pan_no": "ffgy123",
+        "age": 55,
+        "app_created_at": "2024-10-22T15:39:01",
+        "app_updated_at": "2024-10-22T15:39:01",
+        "camp": 1518,
+        "contact_no_1": "6652380974",
+        "contact_no_2": "",
+        "district": 703,
+        "donor": 4,
+        "drivers_license_no": "try4567",
+        "educational_qualification": 44,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 41,
+        "id": 0,
+        "language": 1,
+        "latitude": "26.510456666666663",
+        "life_insurance_policy": 1,
+        "longitude": "93.97018000000001",
+        "monthly_income": 35,
+        "name": "S",
+        "no_of_months_employed_in_a_year": "6",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 25,
+        "type_of_vehicle": 19,
+        "unique_id": "1",
+        "user": 121,
+        "uuid": "20241022153901b9764e4b-0d9b-4579-8048-98a62134d44d",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:39:06hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:39:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:39:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:39:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:39:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:39:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:39:07hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "20241022153901b9764e4b-0d9b-4579-8048-98a62134d44d",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:49:18hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 48,
+        "app_created_at": "2024-09-03T15:30:25",
+        "app_updated_at": "2024-10-22T15:49:17",
+        "camp": 192,
+        "contact_no_1": "9101839564",
+        "contact_no_2": "",
+        "district": 705,
+        "donor": 4,
+        "drivers_license_no": "prfh356876",
+        "educational_qualification": 43,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 36,
+        "id": 0,
+        "language": 6,
+        "life_insurance_policy": 1,
+        "monthly_income": 229,
+        "name": "Aditya Borah",
+        "no_of_months_employed_in_a_year": "10",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 25,
+        "type_of_vehicle": 19,
+        "unique_id": "AP-37AK-29152",
+        "user": 121,
+        "uuid": "20240903153025f0354223-45ab-4ab9-bd68-dc2e5d8b710e",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:49:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:49:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:49:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:49:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:49:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:49:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/22/2024, 15:49:22hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "20240903153025f0354223-45ab-4ab9-bd68-dc2e5d8b710e",
+            "unique_id": "AP-37AK-29152",
+            "SCO": "2024-10-22 10:19:21.734113+00:00",
+            "SMO": "2024-10-22 10:19:21.734135+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}

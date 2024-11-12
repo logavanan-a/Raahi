@@ -1,0 +1,91 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 08/18/2024, 21:58:33hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/18/2024, 21:58:33hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/18/2024, 21:58:33hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/18/2024, 21:58:33hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/18/2024, 21:58:33hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/18/2024, 21:58:33hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/18/2024, 21:58:33hrs[
+    {
+        "address": "Opp.HPCL North Gate",
+        "block": "",
+        "coordinator_mobile_no": "7799222269",
+        "coordinator_name": "E Sai Krishna Kumar",
+        "created_by": 153,
+        "date": "2024-01-24",
+        "delay_reason": "",
+        "district": 744,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "100",
+        "expected_glass_prescription": "65",
+        "expected_refer_surgeries": "?",
+        "location": "Port Exim Park Area",
+        "modified_by": 153,
+        "name": "Port Exim Park Area",
+        "partner": 37,
+        "uuid": "20240124093932b6abf783-0bb7-476f-a414-5bb58cf4f03e",
+        "village": "Visakhapatnam",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/18/2024, 21:58:33hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "20240124093932b6abf783-0bb7-476f-a414-5bb58cf4f03e",
+            "id": 108,
+            "code": 183,
+            "SCO": "2024-01-24 04:09:34.966272+00:00",
+            "SMO": "2024-08-18 16:28:33.804139+00:00",
+            "sync_status": 2
+        }
+    ]
+}

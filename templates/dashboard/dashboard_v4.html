@@ -1,0 +1,234 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+
+<!-- DataTables -->
+<link href="{% static 'libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"
+  type="text/css" />
+<link href="{% static 'libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet"
+  type="text/css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- Responsive datatable examples -->
+<link href="{% static 'libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet"
+  type="text/css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock %}
+
+{% block contents %}
+{% include "dashboard/google_charts.html" %}
+
+<style>
+.card_count{
+    width: 140px;
+    height: 140px;
+    margin: 2em;
+    display:flex;
+	
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    transition: all 1s;
+}
+.card_count h3,
+.card_count h1{
+	color: black!important;
+}
+.card_count h1{
+  font-size:2rem;
+  text-align: center;
+
+}
+.card_count h3{
+  font-size:1.2rem;
+  text-align: center;
+}
+.card_count:hover h3,.card_count:hover h1{
+    color:white!important;
+
+}
+
+.card_count::before, .card_count::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+	  box-shadow: 0 0.75rem 1.5rem;
+    z-index: -1;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+.card_count::after{
+    background: #a30b56;
+    color: #ffffff;
+	  box-shadow: 0 0.75rem 1.5rem;
+    transform-origin: right bottom;
+    transform : translate(10%,10%) scale(0.3);
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+.card_count:hover::after{
+    transform: translate(0) scale(1);
+    border-radius: 0;
+    border-radius: 10px;
+}
+
+.card_count:hover::before{
+    transform-origin: right bottom;
+    transform: translate(10%,10%) scale(0.3);
+    border-radius: 50%;
+    z-index: 99;
+}
+{% for ct in data_html.chart %}
+{% if ct.chart_type == 'CARDCHART' %}
+{% for citem in ct.datas %}
+
+.{{citem.0|slugify}}::after {
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110px;
+    background-image: url('/static/images/{{citem.0|slugify}}.png');
+}
+.{{citem.0|slugify}}:hover::after {
+    content: '';
+    background-repeat: none;
+    background-position: auto;
+    background-size: 0px;
+    background-image: none;
+}
+.{{citem.0|slugify}}:hover::before {
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110px;
+    background-image: url('/static/images/{{citem.0|slugify}}_1.png');
+}
+.{{citem.0|slugify}}::before {
+    content: '';
+    background-repeat: none;
+    background-position: auto;
+    background-size: 0px;
+    background-image: none;
+}
+{% endfor %}
+{% endif %}
+{% endfor %}
+@media only screen   and (min-width: 1030px)  and (max-width: 1366px)   {
+  .card_count{ 
+    width: 130px;
+    height: 130px;
+    margin: 1.4em;
+  }
+  .card_count h1{
+    font-size:1.6rem
+
+  }
+  .card_count h3{
+    font-size:1rem
+  }
+}
+@media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px)  {
+  .card_count{ 
+    width: 115px;
+    height: 115px;
+    margin: 1.2em;
+  }
+  .card_count h1{
+    font-size:1.4rem
+
+  }
+  .card_count h3{
+    font-size:0.8rem
+  }
+}
+</style>
+{% load report_tags %}
+<!--************Chart Script Part*********-->
+
+<!--**************************************-->
+<div class="content-overlay"></div>
+<div class="header-navbar-shadow"></div>
+<div class="content-wrapper">
+  <div class="content-body">
+    <section id="advanced-search-datatable">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            {% include "dashboard/dropdown_filter.html" %}
+          </div>
+        </div>           
+      </div>
+      <div class="row">
+        {% for param,value in chcl_dict.items %}
+        <input type="hidden" id="{{param}}" name="{{param}}" value="{{value}}" />
+        {% endfor %}
+        {% for ct in data_html.chart %}
+        {% if ct.chart_type == 'CARDCHART' %}
+        <div class="col-md-12 col-lg-12 col-sm-12 col-12 mb-3">
+          <div class="row" style="background: #FFBB22; position: relative; z-index: 1; padding: 0px; margin: 0 ; border-radius: 0.25rem;">
+            {% for citem in ct.datas %}
+            <div class="col-md-2 d-flex justify-content-center">
+              <div data-aos="zoom-out-down">
+              <div class="card_count {{citem.0|slugify}}">
+                <h1 class="" id = "{{citem.1}}" >{{citem.1}}</h1>
+                <h3 class="" id = "{{citem.0}}"  onload="incEltNbr('{{citem.0}}')">{{citem.0}}</h3>
+              </div>
+            </div>
+          </div>
+            {% endfor %}
+          </div>             
+        </div>                  
+        {% elif ct.chart_type != 'CARDCHART' %}
+        <div class="{{ct.div}}" {% if forloop.counter != 2 and forloop.counter != 3  %}{% if forloop.counter|divisibleby:2 %}data-aos="fade-right"{% else %}data-aos="fade-left"{% endif %} data-aos-offset="100"
+     data-aos-easing="ease-in-sine"{% endif %}>
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">
+                {% comment %} <i class="fa fa-info-circle" data-html="true" data-toggle="tooltip" data-placement="top"
+                  title="{{ct.tooltip}}" data-original-title=""></i> {% endcomment %}
+                <h5>{{ct.chart_title}} {% if ct.tooltip %}<i class="fa fa-info-circle" data-bs-toggle="tooltip"
+                    data-bs-placement="top" title="" data-bs-original-title="{{ct.tooltip}}"></i>{% endif %}</h5>
+              </div>
+              <div class="row">
+                <div class="col-12" style="width: 100%; height: {{ct.chart_height}};">
+                  {% if ct.chart_type == 'GEOCHART' %}
+                  <div id="container" style="width: 100%; height: {{ct.chart_height}};"></div>
+
+                  {% comment %} <div id="{{ct.chart_name}}" style="width: 100%; height: {{ct.chart_height}};"></div> {% endcomment %}
+                  {% else %}
+                  <canvas id="{{ct.chart_name}}" class="name" ></canvas>
+                  {% endif %}
+                </div>
+                <span style="display:inline-block; margin-left: 20px;">{{ct.chart_note|safe}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>  
+    </section>
+  </div>
+</div>
+
+{% endblock %}
+{% block extra_javascript %}
+
+{% include "dashboard/chart_js_v4.html" %} 
+{% include "dashboard/geo_chart_india.html" %} 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+{% endblock %}

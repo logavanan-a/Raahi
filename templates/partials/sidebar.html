@@ -1,0 +1,221 @@
+{% load static %} {% block sidebar %}
+<!-- ========== Left Sidebar Start ========== -->
+<style>
+ .vertical-collpsed .vertical-menu #sidebar-menu>ul>li{
+  white-space: normal;
+ }
+ body[data-sidebar=dark] #sidebar-menu ul li ul.sub-menu li a {
+    font-size: 14px;
+}
+</style> 
+<div class="vertical-menu">
+  <div data-simplebar class="h-100">
+    <!--- Sidemenu -->
+    <div id="sidebar-menu">
+      <!-- Left Menu Start -->
+      <ul class="metismenu list-unstyled" id="side-menu">
+        {% if request.session.role_id != 6 and request.session.role_id != 7 and request.session.role_id != 13 and request.session.role_id != 14 %}
+        <li>
+          <a href="/dashboard/ " class="waves-effect">
+            <i class="bx bxs-dashboard"></i>
+            <span key="t-chat">Dashboard</span>
+          </a>
+        </li>
+        {% if request.session.role_id != 2 and request.session.role_id != 9 and request.session.role_id != 10 and request.session.role_id != 8 and request.session.role_id != 11 %}
+        <li>
+          <a href="/patient_list/ " class="waves-effect">
+            <i class="fas fa-address-card"></i>
+            <span key="t-chat">Patient List</span>
+          </a>
+        </li>
+        <li>
+          <a href="/camp_list/ " class="waves-effect">
+            <i class="dripicons-document"></i>
+            <span key="t-chat">Camp</span>
+          </a>
+        </li>
+        <!-- <li>
+          <a href="/glass-list-pending/ " class="waves-effect">
+            <i class="fas fa-glasses"></i>
+            <span key="t-chat">Glass Details</span>
+          </a>
+        </li> -->
+        <li> 
+          <a href="javascript: void(0);" class="has-arrow waves-effect">
+            <i class="fas fa-glasses"></i>
+            <span key="t-tasks">Glass Details</span>
+          </a>
+          <ul class="sub-menu mm-collapse" aria-expanded="false">
+            <li class="waves-effect"><a href="/glass-list-pending/" key="t-task-list"><i class="fas fa-glasses"></i>Pending </a></li>
+            <li class="waves-effect"><a href="/glass-list-ready/" key="t-task-list"><i class="fas fa-glasses"></i>Ready </a></li>
+            <li class="waves-effect"><a href="/glass-list-delivered/" key="t-task-list"><i class="fas fa-glasses"></i>Delivered </a></li>
+          </ul>
+        </li>
+        {% endif %}
+        
+        {% if request.session.role_id != 2 and request.session.role_id != 4 and request.session.role_id != 9 and request.session.role_id != 10 and request.session.role_id != 11 and request.session.role_id != 3 and request.session.role_id != 8 %}
+        <li>
+          <a href="javascript: void(0);" class="has-arrow waves-effect " aria-expanded="true">
+            <i class="bx bx-cog"></i>
+        
+        <span key="t-ui-elements">Configuration </span>
+          </a>
+          <ul class="sub-menu" aria-expanded="false">
+            <li class='{% if heading == "userprofile" %}mm-active{% endif %}' >
+              <a href="/list/userprofile/" class="waves-effect ">
+                <span key="t-dashboards "><i class="bx bx-cog"></i>User Profile</span>
+              </a>
+            </li>
+            <li class='{% if heading == "zone" %}mm-active{% endif %}' >
+              <a href="/list/zone/" class="waves-effect ">
+                <span key="t-dashboards "><i class="bx bx-cog"></i>Zone</span>
+              </a>
+            </li>
+            <li class='{% if heading == "state" %}mm-active{% endif %}' >
+              <a href="/list/state/" class="waves-effect ">
+                <span key="t-dashboards "><i class="bx bx-cog"></i>State</span>
+              </a>
+            </li>
+            <li class='{% if heading == "district" %}mm-active{% endif %}' >
+              <a href="/list/district/" class="waves-effect ">
+                <span key="t-dashboards "><i class="bx bx-cog"></i>District</span>
+              </a>
+            </li>
+            <li class='{% if heading == "partner" %}mm-active{% endif %}' >
+              <a href="/list/partner/" class="waves-effect ">
+                <span key="t-dashboards "><i class="bx bx-cog"></i>Partner</span>
+              </a>
+            </li> 
+            <li class='{% if heading == "visioncenter" %}mm-active{% endif %}' >
+              <a href="/list/visioncenter/" class="waves-effect ">
+                <span key="t-dashboards "><i class="bx bx-cog"></i>Vision Center</span>
+              </a>
+            </li>
+            <li class='{% if heading == "donor" %}mm-active{% endif %}' >
+              <a href="/list/donor/" class="waves-effect ">
+                <span key="t-dashboards "><i class="bx bx-cog"></i>Donor</span>
+              </a>
+            </li>
+            <li class='{% if heading == "vendor" %}mm-active{% endif %}' >
+              <a href="/list/vendor/" class="waves-effect ">
+                <span key="t-dashboards "><i class="bx bx-cog"></i>Vendor</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        {% endif %} 
+        {% endif %} 
+        {% if request.session.role_id != 2 and request.session.role_id != 7 and request.session.role_id != 11 and request.session.role_id != 8  and request.session.role_id != 13 and request.session.role_id != 14 %}
+
+        <li>
+          <a href="javascript: void(0);" class="has-arrow waves-effect">
+            <i class="bx bx-tone"></i>
+            <span key="t-tasks">Inventory</span>
+          </a>
+          <ul class="sub-menu mm-collapse" aria-expanded="false">
+            <li class="waves-effect"><a href="/orders/" key="t-task-list"><i class="bx bx-tone"></i>Orders </a></li>
+            {% if request.session.role_id != 6 %}
+            <li class="waves-effect"><a href="/orderdelivery_list/" key="t-task-list"><i class="bx bx-tone"></i>Order Receipt </a></li>
+            
+            {% endif %}
+            {% if request.session.role_id == 4 %}
+            <li class="waves-effect"><a href="/custom-order-request/" key="t-task-list"><i class="bx bx-tone"></i>Custom made Orders Request </a></li>
+            {% endif %}
+           
+          </ul>
+        </li>
+        {% endif %}
+
+        {% if request.session.role_id != 6 and request.session.role_id != 9 and request.session.role_id != 10 and request.session.role_id != 11 %}
+        {% if request.session.role_id == 12 or request.session.role_id == 3 or request.session.role_id == 7 %}
+        <li>
+          <a href="javascript: void(0);" class="has-arrow waves-effect">
+            <i class="bx bx-phone-call"></i>
+            <span key="t-tasks">Tele Calling</span>
+          </a>
+          <ul class="sub-menu mm-collapse" aria-expanded="false">
+            <li class="waves-effect"><a href="/spectacle-list/" key="t-task-list"><i class="bx bx-phone-call"></i>Spectacle </a></li>
+            <li class="waves-effect"><a href="/cataract-list/" key="t-task-list"><i class="bx bx-phone-call"></i>Cataract </a></li>
+          </ul>
+        </li>
+        {% endif %}
+        {% endif %}
+        {% if request.session.role_id == 4  %}
+        
+        <li>
+          <a href="/qr-code/" class="waves-effect">
+            <i class="mdi mdi-qrcode"></i>
+            <span key="t-chat">QR Code Generations</span>
+          </a>
+        </li>
+        {% endif %}
+        {% if request.session.role_id == 2 or request.session.role_id == 12 or request.session.role_id == 3 or request.session.role_id == 4 or request.session.role_id == 9 or request.session.role_id == 10 or request.session.role_id == 11 or request.session.role_id == 8 or request.session.role_id == 13 or request.session.role_id == 14 %}
+        <li>
+          <a href="javascript: void(0);" class="has-arrow waves-effect">
+              <i class="bx bxs-report"></i>
+              <span key="t-tasks">Reports</span>
+          </a>
+          <ul class="sub-menu mm-collapse" aria-expanded="false">
+              {% if request.session.role_id == 11 or request.session.role_id == 13 %}
+              <li class="waves-effect"><a href="/report/camp-summary/" key="t-task-list"><i class="bx bxs-report"></i> Camp Summary</a></li>
+              <li class="waves-effect"><a href="/report/patient-summary-report-donor/" key="t-task-list"><i class="bx bxs-report"></i> Patient summary report</a></li>
+              <li class="waves-effect"><a href="/report/static-centre-summary/" key="t-task-list"><i class="bx bxs-report"></i> Static centre summary</a></li>
+              {% elif request.session.role_id == 14 %}
+              <li class="waves-effect"><a href="/report/patient-summary-report/" key="t-task-list"><i class="bx bxs-report"></i> Patient summary report</a></li>
+              <li class="waves-effect"><a href="/report/spectacle-dispense-report/" key="t-task-list"><i class="bx bxs-report"></i> Spectacle dispense report</a></li>
+              {% elif request.session.role_id == 2 %}
+              <li class="waves-effect"><a href="/report/camp-summary/" key="t-task-list"><i class="bx bxs-report"></i> Camp Summary</a></li>
+              <li class="waves-effect"><a href="/report/static-centre-summary/" key="t-task-list"><i class="bx bxs-report"></i> Static centre summary</a></li>
+              <li class="waves-effect"><a href="/report/truc-month-report/month/" key="t-task-list"><i class="bx bxs-report"></i> Truckers monthly report</a></li>
+              {% elif request.session.role_id == 8 %}
+              <li class="waves-effect"><a href="/report/camp-summary/" key="t-task-list"><i class="bx bxs-report"></i> Camp Summary</a></li>
+              <li class="waves-effect"><a href="/report/static-centre-summary/" key="t-task-list"><i class="bx bxs-report"></i> Static centre summary</a></li>
+              <li class="waves-effect"><a href="/report/patient-summary-report-donor/" key="t-task-list"><i class="bx bxs-report"></i> Patient summary report</a></li>
+              <li class="waves-effect"><a href="/report/truc-month-report/month/" key="t-task-list"><i class="bx bxs-report"></i> Truckers monthly report</a></li>
+              {% else %}
+              <li class="waves-effect"><a href="/report/camp-summary/" key="t-task-list"><i class="bx bxs-report"></i> Camp Summary</a></li>
+              <li class="waves-effect"><a href="/report/static-centre-summary/" key="t-task-list"><i class="bx bxs-report"></i> Static centre summary</a></li>
+              <li class="waves-effect"><a href="/report/end-of-day-report/" key="t-task-list"><i class="bx bxs-report"></i> End of Day Report</a></li>
+              <li class="waves-effect"><a href="/report/individual-camp-register/" key="t-task-list"><i class="bx bxs-report"></i> Individual camp register report</a></li>
+              <li class="waves-effect"><a href="/report/patient-summary-report/" key="t-task-list"><i class="bx bxs-report"></i> Patient summary report</a></li>
+              <!-- <li class="waves-effect"><a href="#" key="t-task-list"><i class="bx bxs-report"></i> SMS Summary</a></li> -->
+              <li class="waves-effect"><a href="/report/stock-summary/" key="t-task-list"><i class="bx bxs-report"></i> Spectacle Stock report</a></li>
+              {% if request.session.role_id != 4 %}
+              <li class="waves-effect"><a href="/report/donor-report/" key="t-task-list"><i class="bx bxs-report"></i> Donor Report</a></li>
+              <li class="waves-effect"><a href="/report/duplicated-code-list/" key="t-task-list"><i class="bx bxs-report"></i> Duplicated QR Code List</a></li>
+              <li class="waves-effect"><a href="/report/spectacle-dispense-report/" key="t-task-list"><i class="bx bxs-report"></i> Spectacle dispense report</a></li>
+              {% if request.session.role_id == 3 or request.session.role_id == 12 %}
+              <li class="waves-effect"><a href="/report/spectacle-monthly-admin/" key="t-task-list"><i class="bx bxs-report"></i> Spectacle monthly report</a></li>
+              {% else %}
+              <li class="waves-effect"><a href="/report/spectacle-monthly/" key="t-task-list"><i class="bx bxs-report"></i> Spectacle monthly report</a></li>
+              {% endif %}
+              <li class="waves-effect"><a href="/report/tele-calling-cataract/" key="t-task-list"><i class="bx bxs-report"></i> Tele Calling - Cataract feedback</a></li>
+              <li class="waves-effect"><a href="/report/tele-calling-spectacle/" key="t-task-list"><i class="bx bxs-report"></i> Tele calling - Spectacle feedback</a></li>
+              {% endif %}
+              <li class="waves-effect"><a href="/report/r2c-spectacle/" key="t-task-list"><i class="bx bxs-report"></i> R2C Spectacle report</a></li>
+              <li class="waves-effect"><a href="/report/near-spectacle/" key="t-task-list"><i class="bx bxs-report"></i> Near Spectacle report</a></li>
+              <li class="waves-effect"><a href="/report/truc-month-report/month/" key="t-task-list"><i class="bx bxs-report"></i> Truckers monthly report</a></li>
+              {% endif %}
+              {% if request.session.role_id == 12 %}
+              <li class="waves-effect"><a href="/report/app-user-login-report/" key="t-task-list"><i class="bx bxs-report"></i> App User Login Report</a></li>
+              {% endif %}
+              {% if request.session.role_id != 4 and request.session.role_id != 13 and request.session.role_id != 14 and request.session.role_id != 11 and request.session.role_id != 10 and request.session.role_id != 6 and request.session.role_id != 2 %}
+              <li class="waves-effect"><a href="/mpr/report/mpr-review/" key="t-task-list"><i class="bx bxs-report"></i> MPR Review</a></li>
+              {% endif %}
+            </ul>
+      </li>
+        {% endif %}
+        {% if request.session.role_id == 10 or request.session.role_id == 9 %}
+        <li>
+          <a href="/data-freeze/ " class="waves-effect">
+            <i class="dripicons-document"></i>
+            <span key="t-chat">Data Freeze</span>
+          </a>
+        </li>
+        {% endif %}
+      </ul>        
+    </div>
+  </div>
+</div>
+<!-- Left Sidebar End -->
+{% endblock %}

@@ -1,0 +1,29 @@
+Python 3.10.12 (main, Sep 11 2024, 15:47:36) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+# Shell Plus Model Imports
+from dashboard.models import ChartMeta, DashboardWidgetSummaryLog
+from django.contrib.admin.models import LogEntry
+from django.contrib.auth.models import Group, Permission, User
+from django.contrib.contenttypes.models import ContentType
+from django.contrib.sessions.models import Session
+from master_data.models import ApplicationUserStateLinkage, Config, CronJobSummaryLog, DailyRecordsCalculation, District, Donor, DonorPartnerLinkage, Language, MasterLookup, OtpVerificationDetails, Partner, PartnerVendorLinkage, Role, State, TeleCalling, UserDonorLinkage, UserPartnerLinkage, UserProfile, UserVendorLinkage, UserVisionCenterLinkage, Vendor, VersionUpdate, VisionCenter, Zone
+from reports.models import MprIndicator, MprStatusUpdate, ReportExport, ReportMeta, ReportTracket, TruckerMpr, TruckerMprData
+from send_mail.models import MailData, MailTemplate
+from sims.models import Camp, CataractQuestions, DataFreeze, FamilyMember, GlassPrescription, OrderDeliveryDetails, OrderRequest, OrderRequestDetails, Patient, Product, QrCodeGeneration, ReceivedSMS, Screening, SpectacleType, TellicallingQuestionsAndAnswers, VisualAcuity
+# Shell Plus Django Imports
+from django.core.cache import cache
+from django.conf import settings
+from django.contrib.auth import get_user_model
+from django.db import transaction
+from django.db.models import Avg, Case, Count, F, Max, Min, Prefetch, Q, Sum, When
+from django.utils import timezone
+from django.urls import reverse
+from django.db.models import Exists, OuterRef, Subquery
+>>> >>> /home/mahiti/raahi_venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1595: RuntimeWarning: DateTimeField CronJobSummaryLog.last_successful_update received a naive datetime (2024-11-01 07:08:03.684419) while time zone support is active.
+  warnings.warn(
+/home/mahiti/raahi_venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1595: RuntimeWarning: DateTimeField CronJobSummaryLog.most_recent_update received a naive datetime (2024-11-01 07:08:03.714795) while time zone support is active.
+  warnings.warn(
+ TRUCKERS MPR NOT GENERATED 
+>>> 
+now exiting InteractiveConsole...

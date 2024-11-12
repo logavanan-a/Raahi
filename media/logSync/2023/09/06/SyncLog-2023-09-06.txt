@@ -1,0 +1,6111 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 09:52:27hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 09:52:27hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 09:54:05hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 09:54:05hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 2,
+        "accident_while_driving_commercial_vehicle_before": 1,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2023-09-06T09:53:55",
+        "app_updated_at": "2023-09-06T09:53:55",
+        "are_you_aware_of_any_nearby_hospital": 3,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "code_description": 56,
+        "cough_for_more_than_two_weeks": 0,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 0.0,
+        "family_history_of_diabetes": 0,
+        "fever_for_more_than_2_weeks": 0,
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 3,
+        "have_you_attended_awarness_training": 0,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 3,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "medication_hypertension": 0,
+        "night_sweats": 0,
+        "on_what_basis_your_salary_is_calculated": 59,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 23,
+        "patient_uuid": "202309051830006800dcfe-bf58-4618-9c27-864c990c34ed",
+        "physical_activity": 0,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 0,
+        "uuid": "20230906095355b544588b-9b75-457d-87dc-b1168e9458fc",
+        "vision_center_id": 88,
+        "waist_circumference": 0,
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 2,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 09:54:05hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 09:54:05hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 09:54:05hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 09:54:05hrs[
+    {
+        "age": 50,
+        "app_created_at": "2023-09-06T09:53:55",
+        "app_updated_at": "2023-09-06T09:53:55",
+        "educational_qualification": 206,
+        "monthly_average_income": 222,
+        "name": "test",
+        "occupation": 213,
+        "patient_uuid": "202309051830006800dcfe-bf58-4618-9c27-864c990c34ed",
+        "relationship_to_respondent": 196,
+        "screening_uuid": "20230906095355b544588b-9b75-457d-87dc-b1168e9458fc",
+        "sex": 3,
+        "sync_status": 0,
+        "uuid": "20230906095355d95d75c1-3c75-48bc-95a2-109cfe0162f9"
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:02:32hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:02:32hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:10:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:10:01hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 2,
+        "accident_while_driving_commercial_vehicle_before": 2,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2023-09-06T10:09:53",
+        "app_updated_at": "2023-09-06T10:09:53",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "100",
+        "blood_sugar_mg_dl": "100",
+        "code_description": 57,
+        "cough_for_more_than_two_weeks": 0,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 0.0,
+        "family_history_of_diabetes": 0,
+        "fever_for_more_than_2_weeks": 0,
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_attended_awarness_training": 0,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "100",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "medication_hypertension": 0,
+        "night_sweats": 0,
+        "on_what_basis_your_salary_is_calculated": 59,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 23,
+        "patient_uuid": "202309051830006800dcfe-bf58-4618-9c27-864c990c34ed",
+        "physical_activity": 0,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 0,
+        "uuid": "202309061009536c43fe21-5f15-498d-9070-e1d3d77412a3",
+        "vision_center_id": 88,
+        "waist_circumference": 0,
+        "weight_kg": "100",
+        "what_do_you_do_during_non_working_months": 0,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 2,
+        "you_willing_to_learn_alter_livelihood_skill": 1,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:10:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:10:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:10:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:10:01hrs[
+    {
+        "age": 26,
+        "app_created_at": "2023-09-06T10:09:53",
+        "app_updated_at": "2023-09-06T10:09:53",
+        "educational_qualification": 208,
+        "monthly_average_income": 220,
+        "name": "test",
+        "occupation": 212,
+        "partner_id": 23,
+        "patient_uuid": "202309051830006800dcfe-bf58-4618-9c27-864c990c34ed",
+        "relationship_to_respondent": 197,
+        "screening_uuid": "202309061009536c43fe21-5f15-498d-9070-e1d3d77412a3",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "20230906100953f60b15fa-bfe6-4251-a23e-ab7d9487e53e",
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:11:18hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:11:18hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:46:10hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:46:10hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:47:10hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 30,
+        "app_created_at": "2023-09-06T10:47:01",
+        "app_updated_at": "2023-09-06T10:47:01",
+        "camp": 0,
+        "contact_no_1": "63828325566",
+        "contact_no_2": "",
+        "district": 10,
+        "donor": 4,
+        "drivers_license_no": "tedhhgfhfhfhhfghhggh",
+        "educational_qualification": 45,
+        "feedback": "test",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 35,
+        "name": "testing",
+        "no_of_months_employed_in_a_year": "50",
+        "partner_id": 13,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "testing",
+        "user": 30,
+        "uuid": "2023090610470142fb520a-2290-47d7-b645-046f8a302291",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:47:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:47:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:47:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:47:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:47:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:49:14hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 30,
+        "app_created_at": "2023-09-06T10:47:01",
+        "app_updated_at": "2023-09-06T10:49:06",
+        "camp": 0,
+        "contact_no_1": "63828325566",
+        "contact_no_2": "",
+        "district": 10,
+        "donor": 4,
+        "drivers_license_no": "tedhhgfhfhfhhfghhggh",
+        "educational_qualification": 45,
+        "feedback": "testhf",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 35,
+        "name": "testing",
+        "no_of_months_employed_in_a_year": "50",
+        "partner_id": 13,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "testing",
+        "user": 30,
+        "uuid": "2023090610470142fb520a-2290-47d7-b645-046f8a302291",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:49:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:49:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:49:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:49:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:49:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:50:31hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 10:50:31hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:28:19hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:28:19hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:28:57hrs[
+    {
+        "aadhaar_pan_no": "123412341234",
+        "age": 56,
+        "app_created_at": "2023-09-05T18:30:00+05:30",
+        "app_updated_at": "2023-09-06T11:28:54",
+        "camp": 0,
+        "contact_no_1": "8861575941",
+        "contact_no_2": "",
+        "district": 4,
+        "donor": 4,
+        "drivers_license_no": "nsjdjjd838384",
+        "educational_qualification": 42,
+        "feedback": "Good",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 36,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 33,
+        "name": "Shivani Sb",
+        "no_of_months_employed_in_a_year": "8",
+        "partner_id": 23,
+        "permanent_address": "",
+        "renewal_date": "2023-09-30",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "5",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "Tuesday123",
+        "user": 35,
+        "uuid": "202309051830006800dcfe-bf58-4618-9c27-864c990c34ed",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:28:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:28:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:28:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:28:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:28:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:29:13hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:29:13hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:32:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:32:01hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 1,
+        "accident_while_driving_commercial_vehicle_before": 1,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-06T11:31:59",
+        "app_updated_at": "2023-09-06T11:31:59",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "100",
+        "blood_sugar_mg_dl": "100",
+        "code_description": 54,
+        "cough_for_more_than_two_weeks": 1,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 50,
+        "duration_since_last_meal": 3.0,
+        "family_history_of_diabetes": 187,
+        "fever_for_more_than_2_weeks": 1,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "155",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 175,
+        "medication_hypertension": 1,
+        "night_sweats": 1,
+        "on_what_basis_your_salary_is_calculated": 59,
+        "owner_holding_any_amount_from_your_salary": "5000",
+        "partner_id": 23,
+        "patient_uuid": "202309051830006800dcfe-bf58-4618-9c27-864c990c34ed",
+        "physical_activity": 183,
+        "sync_status": 0,
+        "total_family_members": "2",
+        "type_of_hospital": 69,
+        "unexplained_weight_loss_or_loss_of_appetite": 1,
+        "uuid": "2023090611315961b516b7-76d4-44e1-ae47-1f42c0763be0",
+        "vision_center_id": 88,
+        "waist_circumference": 178,
+        "weight_kg": "100",
+        "what_do_you_do_during_non_working_months": 66,
+        "when_was_it_diagnosed_number_of_years": 2000,
+        "when_was_it_diagnosed_years": 2000,
+        "which_months_you_are_not_employed_in_a_year": [
+            65,
+            167
+        ],
+        "which_training": 224,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 74,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:32:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:32:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:32:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:32:02hrs[
+    {
+        "age": 14,
+        "app_created_at": "2023-09-06T11:31:59",
+        "app_updated_at": "2023-09-06T11:31:59",
+        "educational_qualification": 207,
+        "monthly_average_income": 0,
+        "name": "Akash",
+        "occupation": 215,
+        "partner_id": 23,
+        "patient_uuid": "202309051830006800dcfe-bf58-4618-9c27-864c990c34ed",
+        "relationship_to_respondent": 192,
+        "screening_uuid": "2023090611315961b516b7-76d4-44e1-ae47-1f42c0763be0",
+        "sex": 1,
+        "sync_status": 0,
+        "uuid": "20230906113159a07ce66d-0efc-4949-bd2e-477e3c5037e4",
+        "vision_center_id": 88
+    },
+    {
+        "age": 48,
+        "app_created_at": "2023-09-06T11:31:59",
+        "app_updated_at": "2023-09-06T11:31:59",
+        "educational_qualification": 206,
+        "monthly_average_income": 221,
+        "name": "Sunita",
+        "occupation": 215,
+        "partner_id": 23,
+        "patient_uuid": "202309051830006800dcfe-bf58-4618-9c27-864c990c34ed",
+        "relationship_to_respondent": 195,
+        "screening_uuid": "2023090611315961b516b7-76d4-44e1-ae47-1f42c0763be0",
+        "sex": 1,
+        "sync_status": 0,
+        "uuid": "20230906113159f8b2fea9-3036-464b-be80-13f57b787a09",
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:32:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:32:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:32:25hrs[
+    {
+        "aided_distance_le": 83,
+        "aided_distance_re": 83,
+        "aided_near_le": 92,
+        "aided_near_re": 92,
+        "app_created_at": "2023-09-06T11:32:23",
+        "app_updated_at": "2023-09-06T11:32:23",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 23,
+        "pinhole_distance_le": 83,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 92,
+        "refer_for": 127,
+        "referred_to": 135,
+        "screening_uuid": "2023090611315961b516b7-76d4-44e1-ae47-1f42c0763be0",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "2023090611322313a87bdb-5a84-46ee-bbe2-6d69a1ce67f7",
+        "vision_center_id": 88,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:32:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:32:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:32:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:35:42hrs[
+    {
+        "aadhaar_pan_no": "123442341234",
+        "age": 56,
+        "app_created_at": "2023-09-06T11:35:38",
+        "app_updated_at": "2023-09-06T11:35:38",
+        "camp": 0,
+        "contact_no_1": "8861579741",
+        "contact_no_2": "9663381854",
+        "district": 4,
+        "donor": 4,
+        "drivers_license_no": "Jeiri3938",
+        "educational_qualification": 42,
+        "feedback": "good",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 36,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 34,
+        "name": "Asha",
+        "no_of_months_employed_in_a_year": "5",
+        "partner_id": 23,
+        "permanent_address": "Banglore",
+        "renewal_date": "2023-09-30",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "5",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 20,
+        "unique_id": "Asha123",
+        "user": 35,
+        "uuid": "202309061135384031e887-fc1d-4ebb-a2e7-0e8d510d5910",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:35:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:35:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:35:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:35:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:35:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:37:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:37:32hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 1,
+        "accident_while_driving_commercial_vehicle_before": 1,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-06T11:37:30",
+        "app_updated_at": "2023-09-06T11:37:30",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "100",
+        "blood_sugar_mg_dl": "100",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 1,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 25,
+        "duration_since_last_meal": 5.0,
+        "family_history_of_diabetes": 187,
+        "fever_for_more_than_2_weeks": 1,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "156",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 175,
+        "medication_hypertension": 1,
+        "night_sweats": 1,
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "13",
+        "partner_id": 23,
+        "patient_uuid": "202309061135384031e887-fc1d-4ebb-a2e7-0e8d510d5910",
+        "physical_activity": 182,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 69,
+        "unexplained_weight_loss_or_loss_of_appetite": 1,
+        "uuid": "20230906113730cdbb79a0-9ce4-4791-9a66-ece80211f6c0",
+        "vision_center_id": 88,
+        "waist_circumference": 179,
+        "weight_kg": "100",
+        "what_do_you_do_during_non_working_months": 67,
+        "when_was_it_diagnosed_number_of_years": 2000,
+        "when_was_it_diagnosed_years": 2000,
+        "which_months_you_are_not_employed_in_a_year": [
+            65
+        ],
+        "which_training": 224,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 74,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:37:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:37:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:37:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:37:32hrs[
+    {
+        "age": 25,
+        "app_created_at": "2023-09-06T11:37:30",
+        "app_updated_at": "2023-09-06T11:37:30",
+        "educational_qualification": 204,
+        "monthly_average_income": 220,
+        "name": "savita",
+        "occupation": 213,
+        "partner_id": 23,
+        "patient_uuid": "202309061135384031e887-fc1d-4ebb-a2e7-0e8d510d5910",
+        "relationship_to_respondent": 193,
+        "screening_uuid": "20230906113730cdbb79a0-9ce4-4791-9a66-ece80211f6c0",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "2023090611373053bb2fef-1186-4540-b38d-e095a98fc167",
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:41:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:41:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:41:24hrs[
+    {
+        "aided_distance_le": 84,
+        "aided_distance_re": 84,
+        "aided_near_le": 93,
+        "aided_near_re": 93,
+        "app_created_at": "2023-09-06T11:41:22",
+        "app_updated_at": "2023-09-06T11:41:22",
+        "color_le": 117,
+        "color_re": 117,
+        "partner_id": 23,
+        "pinhole_distance_le": 85,
+        "pinhole_distance_re": 85,
+        "pinhole_near_le": 94,
+        "pinhole_near_re": 94,
+        "refer_for": 126,
+        "referred_to": 135,
+        "screening_uuid": "20230906113730cdbb79a0-9ce4-4791-9a66-ece80211f6c0",
+        "sync_status": 0,
+        "treatment_for_refraction": 120,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "20230906114122c93326ed-c06f-4187-9e7e-0c9aed4de8a8",
+        "vision_center_id": 88,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:41:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:41:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:41:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:42:51hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:42:51hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 2,
+        "accident_while_driving_commercial_vehicle_before": 1,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-06T11:42:51",
+        "app_updated_at": "2023-09-06T11:42:51",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "80/120",
+        "blood_sugar_mg_dl": "89",
+        "code_description": 54,
+        "cough_for_more_than_two_weeks": 1,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 2,
+        "duration_since_last_meal": 3.0,
+        "family_history_of_diabetes": 187,
+        "fever_for_more_than_2_weeks": 1,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "155",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 175,
+        "medication_hypertension": 1,
+        "night_sweats": 1,
+        "on_what_basis_your_salary_is_calculated": 58,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 13,
+        "patient_uuid": "202309051630506563e77f-67ba-4634-9247-b9a611ef6af2",
+        "physical_activity": 182,
+        "sync_status": 0,
+        "total_family_members": "2",
+        "type_of_hospital": 70,
+        "unexplained_weight_loss_or_loss_of_appetite": 1,
+        "uuid": "202309061142514a602bfd-6267-49c4-8d9c-50fd869780c4",
+        "vision_center_id": 85,
+        "waist_circumference": 178,
+        "weight_kg": "56",
+        "what_do_you_do_during_non_working_months": 66,
+        "when_was_it_diagnosed_number_of_years": 25,
+        "when_was_it_diagnosed_years": 2005,
+        "which_months_you_are_not_employed_in_a_year": [
+            63,
+            64
+        ],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 2,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:42:51hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:42:51hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:42:51hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:42:51hrs[
+    {
+        "age": 26,
+        "app_created_at": "2023-09-06T11:42:51",
+        "app_updated_at": "2023-09-06T11:42:51",
+        "educational_qualification": 209,
+        "monthly_average_income": 221,
+        "name": "Saritha",
+        "occupation": 212,
+        "partner_id": 13,
+        "patient_uuid": "202309051630506563e77f-67ba-4634-9247-b9a611ef6af2",
+        "relationship_to_respondent": 191,
+        "screening_uuid": "202309061142514a602bfd-6267-49c4-8d9c-50fd869780c4",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "2023090611425138d7a340-a534-4ec6-a5d7-ad1cd2fc85f6",
+        "vision_center_id": 85
+    },
+    {
+        "age": 10,
+        "app_created_at": "2023-09-06T11:42:51",
+        "app_updated_at": "2023-09-06T11:42:51",
+        "educational_qualification": 206,
+        "monthly_average_income": 0,
+        "name": "Sarath",
+        "occupation": 0,
+        "partner_id": 13,
+        "patient_uuid": "202309051630506563e77f-67ba-4634-9247-b9a611ef6af2",
+        "relationship_to_respondent": 0,
+        "screening_uuid": "202309061142514a602bfd-6267-49c4-8d9c-50fd869780c4",
+        "sex": 1,
+        "sync_status": 0,
+        "uuid": "20230906114251bcee5d86-e085-40a4-9529-2787ee9dac68",
+        "vision_center_id": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:44:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:44:17hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 2,
+        "accident_while_driving_commercial_vehicle_before": 1,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-06T11:42:51",
+        "app_updated_at": "2023-09-06T11:44:16",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "80/120",
+        "blood_sugar_mg_dl": "89",
+        "code_description": 54,
+        "cough_for_more_than_two_weeks": 1,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 2,
+        "duration_since_last_meal": 3.0,
+        "family_history_of_diabetes": 187,
+        "fever_for_more_than_2_weeks": 1,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "155",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "medication_hypertension": 1,
+        "night_sweats": 1,
+        "on_what_basis_your_salary_is_calculated": 58,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 13,
+        "patient_uuid": "202309051630506563e77f-67ba-4634-9247-b9a611ef6af2",
+        "physical_activity": 182,
+        "sync_status": 0,
+        "total_family_members": "2",
+        "type_of_hospital": 70,
+        "unexplained_weight_loss_or_loss_of_appetite": 1,
+        "uuid": "202309061142514a602bfd-6267-49c4-8d9c-50fd869780c4",
+        "vision_center_id": 85,
+        "waist_circumference": 178,
+        "weight_kg": "56",
+        "what_do_you_do_during_non_working_months": 66,
+        "when_was_it_diagnosed_number_of_years": 25,
+        "when_was_it_diagnosed_years": 2005,
+        "which_months_you_are_not_employed_in_a_year": [
+            63,
+            64
+        ],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 2,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:44:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:44:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:44:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:44:17hrs[
+    {
+        "age": 26,
+        "app_created_at": "2023-09-06T11:42:51",
+        "app_updated_at": "2023-09-06T11:44:16",
+        "educational_qualification": 209,
+        "monthly_average_income": 221,
+        "name": "Saritha",
+        "occupation": 212,
+        "partner_id": 13,
+        "patient_uuid": "202309051630506563e77f-67ba-4634-9247-b9a611ef6af2",
+        "relationship_to_respondent": 191,
+        "screening_uuid": "202309061142514a602bfd-6267-49c4-8d9c-50fd869780c4",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "2023090611425138d7a340-a534-4ec6-a5d7-ad1cd2fc85f6",
+        "vision_center_id": 85
+    },
+    {
+        "age": 10,
+        "app_created_at": "2023-09-06T11:42:51",
+        "app_updated_at": "2023-09-06T11:44:16",
+        "educational_qualification": 206,
+        "monthly_average_income": 0,
+        "name": "Sarath",
+        "occupation": 0,
+        "partner_id": 13,
+        "patient_uuid": "202309051630506563e77f-67ba-4634-9247-b9a611ef6af2",
+        "relationship_to_respondent": 192,
+        "screening_uuid": "202309061142514a602bfd-6267-49c4-8d9c-50fd869780c4",
+        "sex": 1,
+        "sync_status": 0,
+        "uuid": "20230906114251bcee5d86-e085-40a4-9529-2787ee9dac68",
+        "vision_center_id": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:48:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:48:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:48:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:48:14hrs[
+    {
+        "app_created_at": "2023-09-06T11:48:13",
+        "app_updated_at": "2023-09-06T11:48:13",
+        "axis_distance_le": "5",
+        "axis_distance_re": "5",
+        "axis_near_le": "",
+        "axis_near_re": "",
+        "cyl_distance_le": "5",
+        "cyl_distance_re": "5",
+        "cyl_near_le": "",
+        "cyl_near_re": "",
+        "follow_up_status": 0,
+        "partner_id": 23,
+        "screening_uuid": "20230906113730cdbb79a0-9ce4-4791-9a66-ece80211f6c0",
+        "spectacle_type": 227,
+        "sph_distance_le": "5",
+        "sph_distance_re": "5",
+        "sph_near_le": "",
+        "sph_near_re": "",
+        "sync_status": 0,
+        "uuid": "2023090611481366a44e85-46fd-4fc8-a536-4d32d87a0d2a",
+        "va_distance_le": 0,
+        "va_distance_re": 86,
+        "va_near_le": 0,
+        "va_near_re": 0,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:48:14hrs[
+    {
+        "app_created_at": "2023-09-06T11:48:13",
+        "app_updated_at": "2023-09-06T11:48:13",
+        "follow_up_status": 0,
+        "frame_code": 102,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "2023090611481366a44e85-46fd-4fc8-a536-4d32d87a0d2a",
+        "has_the_glass_collected": 2,
+        "lens_type": 108,
+        "model_type": 0,
+        "partner_id": 23,
+        "spectacle_name": "R2C",
+        "spectacle_type": 227,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "202309061148139a9fef4f-1e33-43e5-ab97-bf237f698025",
+        "vision_center": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:48:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:52:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:52:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:52:17hrs[
+    {
+        "aided_distance_le": 88,
+        "aided_distance_re": 88,
+        "aided_near_le": 94,
+        "aided_near_re": 95,
+        "app_created_at": "2023-09-06T11:52:15",
+        "app_updated_at": "2023-09-06T11:52:15",
+        "color_le": 116,
+        "color_re": 117,
+        "partner_id": 13,
+        "pinhole_distance_le": 86,
+        "pinhole_distance_re": 86,
+        "pinhole_near_le": 95,
+        "pinhole_near_re": 95,
+        "refer_for": 123,
+        "referred_to": 135,
+        "screening_uuid": "202309061142514a602bfd-6267-49c4-8d9c-50fd869780c4",
+        "sync_status": 0,
+        "treatment_for_refraction": 121,
+        "un_aided_distance_le": 85,
+        "un_aided_distance_re": 85,
+        "un_aided_near_le": 93,
+        "un_aided_near_re": 94,
+        "uuid": "202309061152151b44cf1b-8110-4701-b6eb-f53f5aa3d599",
+        "vision_center_id": 85,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:52:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:52:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 11:52:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 12:19:01hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 12:19:01hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 12:25:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 12:25:45hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 2,
+        "accident_while_driving_commercial_vehicle_before": 1,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-06T12:25:42",
+        "app_updated_at": "2023-09-06T12:25:42",
+        "are_you_aware_of_any_nearby_hospital": 3,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 2,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 5.0,
+        "family_history_of_diabetes": 187,
+        "fever_for_more_than_2_weeks": 2,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 3,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "medication_hypertension": 0,
+        "night_sweats": 2,
+        "on_what_basis_your_salary_is_calculated": 59,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 13,
+        "patient_uuid": "2023090610470142fb520a-2290-47d7-b645-046f8a302291",
+        "physical_activity": 0,
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 2,
+        "uuid": "20230906122542afa659d6-fdd1-4221-9613-84c059a9de02",
+        "vision_center_id": 85,
+        "waist_circumference": 0,
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 2000,
+        "when_was_it_diagnosed_years": 2005,
+        "which_months_you_are_not_employed_in_a_year": [
+            65,
+            165
+        ],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 12:25:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 12:25:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 12:25:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 12:25:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 12:54:32hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 12:54:32hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 12:59:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 12:59:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 12:59:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 12:59:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 12:59:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 12:59:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 13:04:09hrs[
+    {
+        "aadhaar_pan_no": "123442341234",
+        "age": 56,
+        "app_created_at": "2023-09-06T11:35:38",
+        "app_updated_at": "2023-09-06T13:04:07",
+        "camp": 0,
+        "contact_no_1": "8861579741",
+        "contact_no_2": "9663381854",
+        "district": 4,
+        "donor": 4,
+        "drivers_license_no": "Jeiri3938",
+        "educational_qualification": 42,
+        "feedback": "good",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 36,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 34,
+        "name": "Asha",
+        "no_of_months_employed_in_a_year": "5",
+        "partner_id": 23,
+        "permanent_address": "Banglore",
+        "renewal_date": "2023-09-30",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "5",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 20,
+        "unique_id": "KA2963",
+        "user": 35,
+        "uuid": "202309061135384031e887-fc1d-4ebb-a2e7-0e8d510d5910",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 13:04:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 13:04:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 13:04:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 13:04:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 13:04:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 14:15:45hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 14:15:45hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 14:29:48hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 14:29:48hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 14:31:52hrs[
+    {
+        "aadhaar_pan_no": "123442341234",
+        "age": 56,
+        "app_created_at": "2023-09-06T11:35:38+05:30",
+        "app_updated_at": "2023-09-06T14:31:50",
+        "camp": 0,
+        "contact_no_1": "8861579741",
+        "contact_no_2": "9663381854",
+        "district": 4,
+        "donor": 4,
+        "drivers_license_no": "Jeiri3938",
+        "educational_qualification": 42,
+        "feedback": "good",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 36,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 34,
+        "name": "Asha",
+        "no_of_months_employed_in_a_year": "5",
+        "partner_id": 23,
+        "permanent_address": "Banglore",
+        "renewal_date": "2023-09-30",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "5",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 20,
+        "unique_id": "KA2963",
+        "user": 35,
+        "uuid": "202309061135384031e887-fc1d-4ebb-a2e7-0e8d510d5910",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 14:31:52hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 14:31:52hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 14:31:52hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 14:31:52hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 14:31:52hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 14:35:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 14:35:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 14:35:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 14:35:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 14:35:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 14:35:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:01:54hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:01:54hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 1,
+        "accident_while_driving_commercial_vehicle_before": 1,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-06T11:37:30+05:30",
+        "app_updated_at": "2023-09-06T15:01:52",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "100",
+        "blood_sugar_mg_dl": "100",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 1,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 25,
+        "duration_since_last_meal": 5.0,
+        "family_history_of_diabetes": 187,
+        "fever_for_more_than_2_weeks": 1,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "156",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "medication_hypertension": 1,
+        "night_sweats": 1,
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "13",
+        "partner_id": 23,
+        "patient_uuid": "202309061135384031e887-fc1d-4ebb-a2e7-0e8d510d5910",
+        "physical_activity": 182,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 69,
+        "unexplained_weight_loss_or_loss_of_appetite": 1,
+        "uuid": "20230906113730cdbb79a0-9ce4-4791-9a66-ece80211f6c0",
+        "vision_center_id": 88,
+        "waist_circumference": 179,
+        "weight_kg": "100",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 2000,
+        "when_was_it_diagnosed_years": 2000,
+        "which_months_you_are_not_employed_in_a_year": [
+            65
+        ],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 74,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:01:54hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:01:54hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:01:54hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:01:54hrs[
+    {
+        "age": 25,
+        "app_created_at": "2023-09-06T11:37:30+05:30",
+        "app_updated_at": "2023-09-06T15:01:52",
+        "educational_qualification": 204,
+        "monthly_average_income": 220,
+        "name": "savita",
+        "occupation": 213,
+        "partner_id": 23,
+        "patient_uuid": "202309061135384031e887-fc1d-4ebb-a2e7-0e8d510d5910",
+        "relationship_to_respondent": 193,
+        "screening_uuid": "20230906113730cdbb79a0-9ce4-4791-9a66-ece80211f6c0",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "2023090611373053bb2fef-1186-4540-b38d-e095a98fc167",
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:40:49hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 25,
+        "app_created_at": "2023-09-06T15:40:50",
+        "app_updated_at": "2023-09-06T15:40:50",
+        "camp": 0,
+        "contact_no_1": "99887744556",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 4,
+        "drivers_license_no": "vhvjvj",
+        "educational_qualification": 45,
+        "feedback": "good ",
+        "gender": 2,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 34,
+        "name": "patient one",
+        "no_of_months_employed_in_a_year": "2",
+        "partner_id": 23,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "p123",
+        "user": 35,
+        "uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:40:49hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2023-09-05T18:29:05",
+        "app_updated_at": "2023-09-05T18:29:05",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "200",
+        "blood_sugar_mg_dl": "200",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 2,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 3,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 2.0,
+        "family_history_of_diabetes": 188,
+        "fever_for_more_than_2_weeks": 2,
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_attended_awarness_training": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "158",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "medication_hypertension": 0,
+        "night_sweats": 2,
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "2",
+        "partner_id": 23,
+        "patient_uuid": "202309051826574097aead-c5ca-4537-b2c7-c89ba7551dc2",
+        "physical_activity": 183,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 2,
+        "uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "vision_center_id": 88,
+        "waist_circumference": 178,
+        "weight_kg": "20",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [
+            64
+        ],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 2,
+        "your_family_members_support_you_financially": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:40:49hrs[
+    {
+        "aided_distance_le": 84,
+        "aided_distance_re": 83,
+        "aided_near_le": 93,
+        "aided_near_re": 92,
+        "app_created_at": "2023-09-05T18:30:48",
+        "app_updated_at": "2023-09-05T18:36:52",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 23,
+        "pinhole_distance_le": 85,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 92,
+        "refer_for": 126,
+        "referred_to": 135,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "202309051830489cc38896-d136-4a58-9a2e-158e690546ac",
+        "vision_center_id": 88,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:40:49hrs[
+    {
+        "app_created_at": "2023-09-05T18:37:18",
+        "app_updated_at": "2023-09-05T18:37:18",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "ch",
+        "axis_near_re": "h c",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "vv",
+        "cyl_near_re": "hvv",
+        "follow_up_status": 0,
+        "partner_id": 23,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "spectacle_type": 99,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "c ",
+        "sph_near_re": "cc",
+        "sync_status": 0,
+        "uuid": "20230905183718f2375606-9e2f-48a9-8d7d-2be0e9a505fc",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 95,
+        "va_near_re": 95,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:40:49hrs[
+    {
+        "app_created_at": "2023-09-05T18:37:18",
+        "app_updated_at": "2023-09-05T18:37:18",
+        "follow_up_status": 3,
+        "frame_code": 104,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "20230905183718f2375606-9e2f-48a9-8d7d-2be0e9a505fc",
+        "has_the_glass_collected": 1,
+        "lens_type": 108,
+        "model_type": 0,
+        "partner_id": 23,
+        "spectacle_name": "Near",
+        "spectacle_type": 99,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "2023090518371864f2a62b-8132-4f43-bd5a-d8120ba7d377",
+        "vision_center": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:40:49hrs[
+    {
+        "age": 25,
+        "app_created_at": "2023-09-05T18:29:05",
+        "app_updated_at": "2023-09-05T18:29:05",
+        "educational_qualification": 206,
+        "monthly_average_income": 220,
+        "name": "test name ",
+        "occupation": 213,
+        "patient_uuid": "202309051826574097aead-c5ca-4537-b2c7-c89ba7551dc2",
+        "relationship_to_respondent": 194,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "202309051829056d0b70c2-6d8b-421a-b3e7-0dbf6698260e"
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:42:41hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 25,
+        "app_created_at": "2023-09-06T15:40:50",
+        "app_updated_at": "2023-09-06T15:40:50",
+        "camp": 0,
+        "contact_no_1": "99887744556",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 4,
+        "drivers_license_no": "vhvjvj",
+        "educational_qualification": 45,
+        "feedback": "good ",
+        "gender": 2,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 34,
+        "name": "patient one",
+        "no_of_months_employed_in_a_year": "2",
+        "partner_id": 23,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "p123",
+        "user": 35,
+        "uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:42:41hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2023-09-05T18:29:05",
+        "app_updated_at": "2023-09-05T18:29:05",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "200",
+        "blood_sugar_mg_dl": "200",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 2,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 3,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 2.0,
+        "family_history_of_diabetes": 188,
+        "fever_for_more_than_2_weeks": 2,
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_attended_awarness_training": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "158",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "medication_hypertension": 0,
+        "night_sweats": 2,
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "2",
+        "partner_id": 23,
+        "patient_uuid": "202309051826574097aead-c5ca-4537-b2c7-c89ba7551dc2",
+        "physical_activity": 183,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 2,
+        "uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "vision_center_id": 88,
+        "waist_circumference": 178,
+        "weight_kg": "20",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [
+            64
+        ],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 2,
+        "your_family_members_support_you_financially": 2
+    },
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-06T15:42:42",
+        "app_updated_at": "2023-09-06T15:42:42",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "120",
+        "blood_sugar_mg_dl": "120",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 1,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 5,
+        "duration_since_last_meal": 25.0,
+        "family_history_of_diabetes": 188,
+        "fever_for_more_than_2_weeks": 1,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "90",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 175,
+        "medication_hypertension": 1,
+        "night_sweats": 1,
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "2",
+        "partner_id": 23,
+        "patient_uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "physical_activity": 184,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 69,
+        "unexplained_weight_loss_or_loss_of_appetite": 1,
+        "uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "vision_center_id": 88,
+        "waist_circumference": 178,
+        "weight_kg": "50",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 1988,
+        "when_was_it_diagnosed_years": 1988,
+        "which_months_you_are_not_employed_in_a_year": [
+            64,
+            65
+        ],
+        "which_training": 224,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 3,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:42:41hrs[
+    {
+        "aided_distance_le": 84,
+        "aided_distance_re": 83,
+        "aided_near_le": 93,
+        "aided_near_re": 92,
+        "app_created_at": "2023-09-05T18:30:48",
+        "app_updated_at": "2023-09-05T18:36:52",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 23,
+        "pinhole_distance_le": 85,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 92,
+        "refer_for": 126,
+        "referred_to": 135,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "202309051830489cc38896-d136-4a58-9a2e-158e690546ac",
+        "vision_center_id": 88,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:42:41hrs[
+    {
+        "app_created_at": "2023-09-05T18:37:18",
+        "app_updated_at": "2023-09-05T18:37:18",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "ch",
+        "axis_near_re": "h c",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "vv",
+        "cyl_near_re": "hvv",
+        "follow_up_status": 0,
+        "partner_id": 23,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "spectacle_type": 99,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "c ",
+        "sph_near_re": "cc",
+        "sync_status": 0,
+        "uuid": "20230905183718f2375606-9e2f-48a9-8d7d-2be0e9a505fc",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 95,
+        "va_near_re": 95,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:42:41hrs[
+    {
+        "app_created_at": "2023-09-05T18:37:18",
+        "app_updated_at": "2023-09-05T18:37:18",
+        "follow_up_status": 3,
+        "frame_code": 104,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "20230905183718f2375606-9e2f-48a9-8d7d-2be0e9a505fc",
+        "has_the_glass_collected": 1,
+        "lens_type": 108,
+        "model_type": 0,
+        "partner_id": 23,
+        "spectacle_name": "Near",
+        "spectacle_type": 99,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "2023090518371864f2a62b-8132-4f43-bd5a-d8120ba7d377",
+        "vision_center": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:42:41hrs[
+    {
+        "age": 25,
+        "app_created_at": "2023-09-05T18:29:05",
+        "app_updated_at": "2023-09-05T18:29:05",
+        "educational_qualification": 206,
+        "monthly_average_income": 220,
+        "name": "test name ",
+        "occupation": 213,
+        "patient_uuid": "202309051826574097aead-c5ca-4537-b2c7-c89ba7551dc2",
+        "relationship_to_respondent": 194,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "202309051829056d0b70c2-6d8b-421a-b3e7-0dbf6698260e"
+    },
+    {
+        "age": 25,
+        "app_created_at": "2023-09-06T15:42:42",
+        "app_updated_at": "2023-09-06T15:42:42",
+        "educational_qualification": 206,
+        "monthly_average_income": 220,
+        "name": "test members ",
+        "occupation": 214,
+        "patient_uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "relationship_to_respondent": 196,
+        "screening_uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "20230906154242d8c4bcb6-c20f-4261-8f82-7780b41bcd0b"
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:43:18hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 25,
+        "app_created_at": "2023-09-06T15:40:50",
+        "app_updated_at": "2023-09-06T15:40:50",
+        "camp": 0,
+        "contact_no_1": "99887744556",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 4,
+        "drivers_license_no": "vhvjvj",
+        "educational_qualification": 45,
+        "feedback": "good ",
+        "gender": 2,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 34,
+        "name": "patient one",
+        "no_of_months_employed_in_a_year": "2",
+        "partner_id": 23,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "p123",
+        "user": 35,
+        "uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:43:18hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2023-09-05T18:29:05",
+        "app_updated_at": "2023-09-05T18:29:05",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "200",
+        "blood_sugar_mg_dl": "200",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 2,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 3,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 2.0,
+        "family_history_of_diabetes": 188,
+        "fever_for_more_than_2_weeks": 2,
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_attended_awarness_training": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "158",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "medication_hypertension": 0,
+        "night_sweats": 2,
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "2",
+        "partner_id": 23,
+        "patient_uuid": "202309051826574097aead-c5ca-4537-b2c7-c89ba7551dc2",
+        "physical_activity": 183,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 2,
+        "uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "vision_center_id": 88,
+        "waist_circumference": 178,
+        "weight_kg": "20",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [
+            64
+        ],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 2,
+        "your_family_members_support_you_financially": 2
+    },
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-06T15:42:42",
+        "app_updated_at": "2023-09-06T15:42:42",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "120",
+        "blood_sugar_mg_dl": "120",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 1,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 5,
+        "duration_since_last_meal": 25.0,
+        "family_history_of_diabetes": 188,
+        "fever_for_more_than_2_weeks": 1,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "90",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 175,
+        "medication_hypertension": 1,
+        "night_sweats": 1,
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "2",
+        "partner_id": 23,
+        "patient_uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "physical_activity": 184,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 69,
+        "unexplained_weight_loss_or_loss_of_appetite": 1,
+        "uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "vision_center_id": 88,
+        "waist_circumference": 178,
+        "weight_kg": "50",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 1988,
+        "when_was_it_diagnosed_years": 1988,
+        "which_months_you_are_not_employed_in_a_year": [
+            64,
+            65
+        ],
+        "which_training": 224,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 3,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:43:18hrs[
+    {
+        "aided_distance_le": 84,
+        "aided_distance_re": 83,
+        "aided_near_le": 93,
+        "aided_near_re": 92,
+        "app_created_at": "2023-09-05T18:30:48",
+        "app_updated_at": "2023-09-05T18:36:52",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 23,
+        "pinhole_distance_le": 85,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 92,
+        "refer_for": 126,
+        "referred_to": 135,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "202309051830489cc38896-d136-4a58-9a2e-158e690546ac",
+        "vision_center_id": 88,
+        "want_to_refer": 1
+    },
+    {
+        "aided_distance_le": 83,
+        "aided_distance_re": 83,
+        "aided_near_le": 92,
+        "aided_near_re": 92,
+        "app_created_at": "2023-09-06T15:43:18",
+        "app_updated_at": "2023-09-06T15:43:18",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 23,
+        "pinhole_distance_le": 83,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 92,
+        "refer_for": 126,
+        "referred_to": 135,
+        "screening_uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "202309061543186d8fca61-2a6e-47d8-8c74-3c0633ce70a7",
+        "vision_center_id": 88,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:43:18hrs[
+    {
+        "app_created_at": "2023-09-05T18:37:18",
+        "app_updated_at": "2023-09-05T18:37:18",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "ch",
+        "axis_near_re": "h c",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "vv",
+        "cyl_near_re": "hvv",
+        "follow_up_status": 0,
+        "partner_id": 23,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "spectacle_type": 99,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "c ",
+        "sph_near_re": "cc",
+        "sync_status": 0,
+        "uuid": "20230905183718f2375606-9e2f-48a9-8d7d-2be0e9a505fc",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 95,
+        "va_near_re": 95,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:43:18hrs[
+    {
+        "app_created_at": "2023-09-05T18:37:18",
+        "app_updated_at": "2023-09-05T18:37:18",
+        "follow_up_status": 3,
+        "frame_code": 104,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "20230905183718f2375606-9e2f-48a9-8d7d-2be0e9a505fc",
+        "has_the_glass_collected": 1,
+        "lens_type": 108,
+        "model_type": 0,
+        "partner_id": 23,
+        "spectacle_name": "Near",
+        "spectacle_type": 99,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "2023090518371864f2a62b-8132-4f43-bd5a-d8120ba7d377",
+        "vision_center": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:43:18hrs[
+    {
+        "age": 25,
+        "app_created_at": "2023-09-05T18:29:05",
+        "app_updated_at": "2023-09-05T18:29:05",
+        "educational_qualification": 206,
+        "monthly_average_income": 220,
+        "name": "test name ",
+        "occupation": 213,
+        "patient_uuid": "202309051826574097aead-c5ca-4537-b2c7-c89ba7551dc2",
+        "relationship_to_respondent": 194,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "202309051829056d0b70c2-6d8b-421a-b3e7-0dbf6698260e"
+    },
+    {
+        "age": 25,
+        "app_created_at": "2023-09-06T15:42:42",
+        "app_updated_at": "2023-09-06T15:42:42",
+        "educational_qualification": 206,
+        "monthly_average_income": 220,
+        "name": "test members ",
+        "occupation": 214,
+        "patient_uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "relationship_to_respondent": 196,
+        "screening_uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "20230906154242d8c4bcb6-c20f-4261-8f82-7780b41bcd0b"
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:43:33hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 25,
+        "app_created_at": "2023-09-06T15:40:50",
+        "app_updated_at": "2023-09-06T15:40:50",
+        "camp": 0,
+        "contact_no_1": "99887744556",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 4,
+        "drivers_license_no": "vhvjvj",
+        "educational_qualification": 45,
+        "feedback": "good ",
+        "gender": 2,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 34,
+        "name": "patient one",
+        "no_of_months_employed_in_a_year": "2",
+        "partner_id": 23,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "p123",
+        "user": 35,
+        "uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:43:33hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2023-09-05T18:29:05",
+        "app_updated_at": "2023-09-05T18:29:05",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "200",
+        "blood_sugar_mg_dl": "200",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 2,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 3,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 2.0,
+        "family_history_of_diabetes": 188,
+        "fever_for_more_than_2_weeks": 2,
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_attended_awarness_training": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "158",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "medication_hypertension": 0,
+        "night_sweats": 2,
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "2",
+        "partner_id": 23,
+        "patient_uuid": "202309051826574097aead-c5ca-4537-b2c7-c89ba7551dc2",
+        "physical_activity": 183,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 2,
+        "uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "vision_center_id": 88,
+        "waist_circumference": 178,
+        "weight_kg": "20",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [
+            64
+        ],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 2,
+        "your_family_members_support_you_financially": 2
+    },
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-06T15:42:42",
+        "app_updated_at": "2023-09-06T15:42:42",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "120",
+        "blood_sugar_mg_dl": "120",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 1,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 5,
+        "duration_since_last_meal": 25.0,
+        "family_history_of_diabetes": 188,
+        "fever_for_more_than_2_weeks": 1,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "90",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 175,
+        "medication_hypertension": 1,
+        "night_sweats": 1,
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "2",
+        "partner_id": 23,
+        "patient_uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "physical_activity": 184,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 69,
+        "unexplained_weight_loss_or_loss_of_appetite": 1,
+        "uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "vision_center_id": 88,
+        "waist_circumference": 178,
+        "weight_kg": "50",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 1988,
+        "when_was_it_diagnosed_years": 1988,
+        "which_months_you_are_not_employed_in_a_year": [
+            64,
+            65
+        ],
+        "which_training": 224,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 3,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:43:33hrs[
+    {
+        "aided_distance_le": 84,
+        "aided_distance_re": 83,
+        "aided_near_le": 93,
+        "aided_near_re": 92,
+        "app_created_at": "2023-09-05T18:30:48",
+        "app_updated_at": "2023-09-05T18:36:52",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 23,
+        "pinhole_distance_le": 85,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 92,
+        "refer_for": 126,
+        "referred_to": 135,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "202309051830489cc38896-d136-4a58-9a2e-158e690546ac",
+        "vision_center_id": 88,
+        "want_to_refer": 1
+    },
+    {
+        "aided_distance_le": 83,
+        "aided_distance_re": 83,
+        "aided_near_le": 92,
+        "aided_near_re": 92,
+        "app_created_at": "2023-09-06T15:43:18",
+        "app_updated_at": "2023-09-06T15:43:34",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 23,
+        "pinhole_distance_le": 83,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 92,
+        "refer_for": 126,
+        "referred_to": 135,
+        "screening_uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "202309061543186d8fca61-2a6e-47d8-8c74-3c0633ce70a7",
+        "vision_center_id": 88,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:43:33hrs[
+    {
+        "app_created_at": "2023-09-05T18:37:18",
+        "app_updated_at": "2023-09-05T18:37:18",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "ch",
+        "axis_near_re": "h c",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "vv",
+        "cyl_near_re": "hvv",
+        "follow_up_status": 0,
+        "partner_id": 23,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "spectacle_type": 99,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "c ",
+        "sph_near_re": "cc",
+        "sync_status": 0,
+        "uuid": "20230905183718f2375606-9e2f-48a9-8d7d-2be0e9a505fc",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 95,
+        "va_near_re": 95,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:43:33hrs[
+    {
+        "app_created_at": "2023-09-05T18:37:18",
+        "app_updated_at": "2023-09-05T18:37:18",
+        "follow_up_status": 3,
+        "frame_code": 104,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "20230905183718f2375606-9e2f-48a9-8d7d-2be0e9a505fc",
+        "has_the_glass_collected": 1,
+        "lens_type": 108,
+        "model_type": 0,
+        "partner_id": 23,
+        "spectacle_name": "Near",
+        "spectacle_type": 99,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "2023090518371864f2a62b-8132-4f43-bd5a-d8120ba7d377",
+        "vision_center": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:43:33hrs[
+    {
+        "age": 25,
+        "app_created_at": "2023-09-05T18:29:05",
+        "app_updated_at": "2023-09-05T18:29:05",
+        "educational_qualification": 206,
+        "monthly_average_income": 220,
+        "name": "test name ",
+        "occupation": 213,
+        "patient_uuid": "202309051826574097aead-c5ca-4537-b2c7-c89ba7551dc2",
+        "relationship_to_respondent": 194,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "202309051829056d0b70c2-6d8b-421a-b3e7-0dbf6698260e"
+    },
+    {
+        "age": 25,
+        "app_created_at": "2023-09-06T15:42:42",
+        "app_updated_at": "2023-09-06T15:42:42",
+        "educational_qualification": 206,
+        "monthly_average_income": 220,
+        "name": "test members ",
+        "occupation": 214,
+        "patient_uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "relationship_to_respondent": 196,
+        "screening_uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "20230906154242d8c4bcb6-c20f-4261-8f82-7780b41bcd0b"
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:44:50hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 25,
+        "app_created_at": "2023-09-06T15:40:50",
+        "app_updated_at": "2023-09-06T15:40:50",
+        "camp": 0,
+        "contact_no_1": "99887744556",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 4,
+        "drivers_license_no": "vhvjvj",
+        "educational_qualification": 45,
+        "feedback": "good ",
+        "gender": 2,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 34,
+        "name": "patient one",
+        "no_of_months_employed_in_a_year": "2",
+        "partner_id": 23,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "p123",
+        "user": 35,
+        "uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:44:50hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2023-09-05T18:29:05",
+        "app_updated_at": "2023-09-05T18:29:05",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "200",
+        "blood_sugar_mg_dl": "200",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 2,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 3,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 2.0,
+        "family_history_of_diabetes": 188,
+        "fever_for_more_than_2_weeks": 2,
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_attended_awarness_training": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "158",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "medication_hypertension": 0,
+        "night_sweats": 2,
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "2",
+        "partner_id": 23,
+        "patient_uuid": "202309051826574097aead-c5ca-4537-b2c7-c89ba7551dc2",
+        "physical_activity": 183,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 2,
+        "uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "vision_center_id": 88,
+        "waist_circumference": 178,
+        "weight_kg": "20",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [
+            64
+        ],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 2,
+        "your_family_members_support_you_financially": 2
+    },
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-06T15:42:42",
+        "app_updated_at": "2023-09-06T15:42:42",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "120",
+        "blood_sugar_mg_dl": "120",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 1,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 5,
+        "duration_since_last_meal": 25.0,
+        "family_history_of_diabetes": 188,
+        "fever_for_more_than_2_weeks": 1,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "90",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 175,
+        "medication_hypertension": 1,
+        "night_sweats": 1,
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "2",
+        "partner_id": 23,
+        "patient_uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "physical_activity": 184,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 69,
+        "unexplained_weight_loss_or_loss_of_appetite": 1,
+        "uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "vision_center_id": 88,
+        "waist_circumference": 178,
+        "weight_kg": "50",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 1988,
+        "when_was_it_diagnosed_years": 1988,
+        "which_months_you_are_not_employed_in_a_year": [
+            64,
+            65
+        ],
+        "which_training": 224,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 3,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:44:50hrs[
+    {
+        "aided_distance_le": 84,
+        "aided_distance_re": 83,
+        "aided_near_le": 93,
+        "aided_near_re": 92,
+        "app_created_at": "2023-09-05T18:30:48",
+        "app_updated_at": "2023-09-05T18:36:52",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 23,
+        "pinhole_distance_le": 85,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 92,
+        "refer_for": 126,
+        "referred_to": 135,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "202309051830489cc38896-d136-4a58-9a2e-158e690546ac",
+        "vision_center_id": 88,
+        "want_to_refer": 1
+    },
+    {
+        "aided_distance_le": 83,
+        "aided_distance_re": 83,
+        "aided_near_le": 92,
+        "aided_near_re": 92,
+        "app_created_at": "2023-09-06T15:43:18",
+        "app_updated_at": "2023-09-06T15:43:34",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 23,
+        "pinhole_distance_le": 83,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 92,
+        "refer_for": 126,
+        "referred_to": 135,
+        "screening_uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "202309061543186d8fca61-2a6e-47d8-8c74-3c0633ce70a7",
+        "vision_center_id": 88,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:44:50hrs[
+    {
+        "app_created_at": "2023-09-05T18:37:18",
+        "app_updated_at": "2023-09-05T18:37:18",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "ch",
+        "axis_near_re": "h c",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "vv",
+        "cyl_near_re": "hvv",
+        "follow_up_status": 0,
+        "partner_id": 23,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "spectacle_type": 99,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "c ",
+        "sph_near_re": "cc",
+        "sync_status": 0,
+        "uuid": "20230905183718f2375606-9e2f-48a9-8d7d-2be0e9a505fc",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 95,
+        "va_near_re": 95,
+        "vision_center_id": 88
+    },
+    {
+        "app_created_at": "2023-09-06T15:44:51",
+        "app_updated_at": "2023-09-06T15:44:51",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "vv",
+        "axis_near_re": "gh",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "hh",
+        "cyl_near_re": "vg",
+        "follow_up_status": 0,
+        "partner_id": 23,
+        "screening_uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "spectacle_type": 99,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "bb",
+        "sph_near_re": "vc",
+        "sync_status": 0,
+        "uuid": "20230906154451efd2b52b-1309-4ada-9fd5-333dfb3b5bfc",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 95,
+        "va_near_re": 95,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:44:50hrs[
+    {
+        "app_created_at": "2023-09-05T18:37:18",
+        "app_updated_at": "2023-09-05T18:37:18",
+        "follow_up_status": 3,
+        "frame_code": 104,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "20230905183718f2375606-9e2f-48a9-8d7d-2be0e9a505fc",
+        "has_the_glass_collected": 1,
+        "lens_type": 108,
+        "model_type": 0,
+        "partner_id": 23,
+        "spectacle_name": "Near",
+        "spectacle_type": 99,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "2023090518371864f2a62b-8132-4f43-bd5a-d8120ba7d377",
+        "vision_center": 88
+    },
+    {
+        "app_created_at": "2023-09-06T15:44:51",
+        "app_updated_at": "2023-09-06T15:44:51",
+        "follow_up_status": 0,
+        "frame_code": 104,
+        "frame_size": 106,
+        "glass_collecting_location": 12,
+        "glass_prescription_uuid": "20230906154451efd2b52b-1309-4ada-9fd5-333dfb3b5bfc",
+        "has_the_glass_collected": 2,
+        "lens_type": 108,
+        "model_type": 0,
+        "partner_id": 23,
+        "spectacle_name": "Near",
+        "spectacle_type": 99,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20230906154451f0c7afe5-5bfd-4e0d-972f-967ee0e2dbbd",
+        "vision_center": 84
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:44:50hrs[
+    {
+        "age": 25,
+        "app_created_at": "2023-09-05T18:29:05",
+        "app_updated_at": "2023-09-05T18:29:05",
+        "educational_qualification": 206,
+        "monthly_average_income": 220,
+        "name": "test name ",
+        "occupation": 213,
+        "patient_uuid": "202309051826574097aead-c5ca-4537-b2c7-c89ba7551dc2",
+        "relationship_to_respondent": 194,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "202309051829056d0b70c2-6d8b-421a-b3e7-0dbf6698260e"
+    },
+    {
+        "age": 25,
+        "app_created_at": "2023-09-06T15:42:42",
+        "app_updated_at": "2023-09-06T15:42:42",
+        "educational_qualification": 206,
+        "monthly_average_income": 220,
+        "name": "test members ",
+        "occupation": 214,
+        "patient_uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "relationship_to_respondent": 196,
+        "screening_uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "20230906154242d8c4bcb6-c20f-4261-8f82-7780b41bcd0b"
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:45:12hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 25,
+        "app_created_at": "2023-09-06T15:40:50",
+        "app_updated_at": "2023-09-06T15:40:50",
+        "camp": 0,
+        "contact_no_1": "99887744556",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 4,
+        "drivers_license_no": "vhvjvj",
+        "educational_qualification": 45,
+        "feedback": "good ",
+        "gender": 2,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 34,
+        "name": "patient one",
+        "no_of_months_employed_in_a_year": "2",
+        "partner_id": 23,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "p123",
+        "user": 35,
+        "uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:45:12hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2023-09-05T18:29:05",
+        "app_updated_at": "2023-09-05T18:29:05",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "200",
+        "blood_sugar_mg_dl": "200",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 2,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 3,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 2.0,
+        "family_history_of_diabetes": 188,
+        "fever_for_more_than_2_weeks": 2,
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_attended_awarness_training": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "158",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "medication_hypertension": 0,
+        "night_sweats": 2,
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "2",
+        "partner_id": 23,
+        "patient_uuid": "202309051826574097aead-c5ca-4537-b2c7-c89ba7551dc2",
+        "physical_activity": 183,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 2,
+        "uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "vision_center_id": 88,
+        "waist_circumference": 178,
+        "weight_kg": "20",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [
+            64
+        ],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 2,
+        "your_family_members_support_you_financially": 2
+    },
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-06T15:42:42",
+        "app_updated_at": "2023-09-06T15:42:42",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "120",
+        "blood_sugar_mg_dl": "120",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 1,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 5,
+        "duration_since_last_meal": 25.0,
+        "family_history_of_diabetes": 188,
+        "fever_for_more_than_2_weeks": 1,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "90",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 175,
+        "medication_hypertension": 1,
+        "night_sweats": 1,
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "2",
+        "partner_id": 23,
+        "patient_uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "physical_activity": 184,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 69,
+        "unexplained_weight_loss_or_loss_of_appetite": 1,
+        "uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "vision_center_id": 88,
+        "waist_circumference": 178,
+        "weight_kg": "50",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 1988,
+        "when_was_it_diagnosed_years": 1988,
+        "which_months_you_are_not_employed_in_a_year": [
+            64,
+            65
+        ],
+        "which_training": 224,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 3,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:45:12hrs[
+    {
+        "aided_distance_le": 84,
+        "aided_distance_re": 83,
+        "aided_near_le": 93,
+        "aided_near_re": 92,
+        "app_created_at": "2023-09-05T18:30:48",
+        "app_updated_at": "2023-09-05T18:36:52",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 23,
+        "pinhole_distance_le": 85,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 92,
+        "refer_for": 126,
+        "referred_to": 135,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "202309051830489cc38896-d136-4a58-9a2e-158e690546ac",
+        "vision_center_id": 88,
+        "want_to_refer": 1
+    },
+    {
+        "aided_distance_le": 83,
+        "aided_distance_re": 83,
+        "aided_near_le": 92,
+        "aided_near_re": 92,
+        "app_created_at": "2023-09-06T15:43:18",
+        "app_updated_at": "2023-09-06T15:43:34",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 23,
+        "pinhole_distance_le": 83,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 92,
+        "refer_for": 126,
+        "referred_to": 135,
+        "screening_uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "202309061543186d8fca61-2a6e-47d8-8c74-3c0633ce70a7",
+        "vision_center_id": 88,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:45:12hrs[
+    {
+        "app_created_at": "2023-09-05T18:37:18",
+        "app_updated_at": "2023-09-05T18:37:18",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "ch",
+        "axis_near_re": "h c",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "vv",
+        "cyl_near_re": "hvv",
+        "follow_up_status": 0,
+        "partner_id": 23,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "spectacle_type": 99,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "c ",
+        "sph_near_re": "cc",
+        "sync_status": 0,
+        "uuid": "20230905183718f2375606-9e2f-48a9-8d7d-2be0e9a505fc",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 95,
+        "va_near_re": 95,
+        "vision_center_id": 88
+    },
+    {
+        "app_created_at": "2023-09-06T15:44:51",
+        "app_updated_at": "2023-09-06T15:45:13",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "vv",
+        "axis_near_re": "gh",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "hh",
+        "cyl_near_re": "vg",
+        "follow_up_status": 0,
+        "partner_id": 23,
+        "screening_uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "spectacle_type": 99,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "bb",
+        "sph_near_re": "vc",
+        "sync_status": 0,
+        "uuid": "20230906154451efd2b52b-1309-4ada-9fd5-333dfb3b5bfc",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 95,
+        "va_near_re": 95,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:45:13hrs[
+    {
+        "app_created_at": "2023-09-05T18:37:18",
+        "app_updated_at": "2023-09-05T18:37:18",
+        "follow_up_status": 3,
+        "frame_code": 104,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "20230905183718f2375606-9e2f-48a9-8d7d-2be0e9a505fc",
+        "has_the_glass_collected": 1,
+        "lens_type": 108,
+        "model_type": 0,
+        "partner_id": 23,
+        "spectacle_name": "Near",
+        "spectacle_type": 99,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "2023090518371864f2a62b-8132-4f43-bd5a-d8120ba7d377",
+        "vision_center": 88
+    },
+    {
+        "app_created_at": "2023-09-06T15:44:51",
+        "app_updated_at": "2023-09-06T15:45:13",
+        "follow_up_status": 0,
+        "frame_code": 104,
+        "frame_size": 106,
+        "glass_collecting_location": 12,
+        "glass_prescription_uuid": "20230906154451efd2b52b-1309-4ada-9fd5-333dfb3b5bfc",
+        "has_the_glass_collected": 2,
+        "lens_type": 108,
+        "model_type": 0,
+        "partner_id": 23,
+        "spectacle_name": "Near",
+        "spectacle_type": 99,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20230906154451f0c7afe5-5bfd-4e0d-972f-967ee0e2dbbd",
+        "vision_center": 84
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:45:13hrs[
+    {
+        "age": 25,
+        "app_created_at": "2023-09-05T18:29:05",
+        "app_updated_at": "2023-09-05T18:29:05",
+        "educational_qualification": 206,
+        "monthly_average_income": 220,
+        "name": "test name ",
+        "occupation": 213,
+        "patient_uuid": "202309051826574097aead-c5ca-4537-b2c7-c89ba7551dc2",
+        "relationship_to_respondent": 194,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "202309051829056d0b70c2-6d8b-421a-b3e7-0dbf6698260e"
+    },
+    {
+        "age": 25,
+        "app_created_at": "2023-09-06T15:42:42",
+        "app_updated_at": "2023-09-06T15:42:42",
+        "educational_qualification": 206,
+        "monthly_average_income": 220,
+        "name": "test members ",
+        "occupation": 214,
+        "patient_uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "relationship_to_respondent": 196,
+        "screening_uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "20230906154242d8c4bcb6-c20f-4261-8f82-7780b41bcd0b"
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:45:19hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 25,
+        "app_created_at": "2023-09-06T15:40:50",
+        "app_updated_at": "2023-09-06T15:40:50",
+        "camp": 0,
+        "contact_no_1": "99887744556",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 4,
+        "drivers_license_no": "vhvjvj",
+        "educational_qualification": 45,
+        "feedback": "good ",
+        "gender": 2,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 34,
+        "name": "patient one",
+        "no_of_months_employed_in_a_year": "2",
+        "partner_id": 23,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "p123",
+        "user": 35,
+        "uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:45:19hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2023-09-05T18:29:05",
+        "app_updated_at": "2023-09-05T18:29:05",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "200",
+        "blood_sugar_mg_dl": "200",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 2,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 3,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 2.0,
+        "family_history_of_diabetes": 188,
+        "fever_for_more_than_2_weeks": 2,
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_attended_awarness_training": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "158",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "medication_hypertension": 0,
+        "night_sweats": 2,
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "2",
+        "partner_id": 23,
+        "patient_uuid": "202309051826574097aead-c5ca-4537-b2c7-c89ba7551dc2",
+        "physical_activity": 183,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 2,
+        "uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "vision_center_id": 88,
+        "waist_circumference": 178,
+        "weight_kg": "20",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [
+            64
+        ],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 2,
+        "your_family_members_support_you_financially": 2
+    },
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-06T15:42:42",
+        "app_updated_at": "2023-09-06T15:42:42",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "120",
+        "blood_sugar_mg_dl": "120",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 1,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 5,
+        "duration_since_last_meal": 25.0,
+        "family_history_of_diabetes": 188,
+        "fever_for_more_than_2_weeks": 1,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "90",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 175,
+        "medication_hypertension": 1,
+        "night_sweats": 1,
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "2",
+        "partner_id": 23,
+        "patient_uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "physical_activity": 184,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 69,
+        "unexplained_weight_loss_or_loss_of_appetite": 1,
+        "uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "vision_center_id": 88,
+        "waist_circumference": 178,
+        "weight_kg": "50",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 1988,
+        "when_was_it_diagnosed_years": 1988,
+        "which_months_you_are_not_employed_in_a_year": [
+            64,
+            65
+        ],
+        "which_training": 224,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 3,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:45:19hrs[
+    {
+        "aided_distance_le": 84,
+        "aided_distance_re": 83,
+        "aided_near_le": 93,
+        "aided_near_re": 92,
+        "app_created_at": "2023-09-05T18:30:48",
+        "app_updated_at": "2023-09-05T18:36:52",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 23,
+        "pinhole_distance_le": 85,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 92,
+        "refer_for": 126,
+        "referred_to": 135,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "202309051830489cc38896-d136-4a58-9a2e-158e690546ac",
+        "vision_center_id": 88,
+        "want_to_refer": 1
+    },
+    {
+        "aided_distance_le": 83,
+        "aided_distance_re": 83,
+        "aided_near_le": 92,
+        "aided_near_re": 92,
+        "app_created_at": "2023-09-06T15:43:18",
+        "app_updated_at": "2023-09-06T15:43:34",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 23,
+        "pinhole_distance_le": 83,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 92,
+        "refer_for": 126,
+        "referred_to": 135,
+        "screening_uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "202309061543186d8fca61-2a6e-47d8-8c74-3c0633ce70a7",
+        "vision_center_id": 88,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:45:19hrs[
+    {
+        "app_created_at": "2023-09-05T18:37:18",
+        "app_updated_at": "2023-09-05T18:37:18",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "ch",
+        "axis_near_re": "h c",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "vv",
+        "cyl_near_re": "hvv",
+        "follow_up_status": 0,
+        "partner_id": 23,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "spectacle_type": 99,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "c ",
+        "sph_near_re": "cc",
+        "sync_status": 0,
+        "uuid": "20230905183718f2375606-9e2f-48a9-8d7d-2be0e9a505fc",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 95,
+        "va_near_re": 95,
+        "vision_center_id": 88
+    },
+    {
+        "app_created_at": "2023-09-06T15:44:51",
+        "app_updated_at": "2023-09-06T15:45:13",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "vv",
+        "axis_near_re": "gh",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "hh",
+        "cyl_near_re": "vg",
+        "follow_up_status": 0,
+        "partner_id": 23,
+        "screening_uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "spectacle_type": 99,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "bb",
+        "sph_near_re": "vc",
+        "sync_status": 0,
+        "uuid": "20230906154451efd2b52b-1309-4ada-9fd5-333dfb3b5bfc",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 95,
+        "va_near_re": 95,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:45:19hrs[
+    {
+        "app_created_at": "2023-09-05T18:37:18",
+        "app_updated_at": "2023-09-05T18:37:18",
+        "follow_up_status": 3,
+        "frame_code": 104,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "20230905183718f2375606-9e2f-48a9-8d7d-2be0e9a505fc",
+        "has_the_glass_collected": 1,
+        "lens_type": 108,
+        "model_type": 0,
+        "partner_id": 23,
+        "spectacle_name": "Near",
+        "spectacle_type": 99,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "2023090518371864f2a62b-8132-4f43-bd5a-d8120ba7d377",
+        "vision_center": 88
+    },
+    {
+        "app_created_at": "2023-09-06T15:44:51",
+        "app_updated_at": "2023-09-06T15:45:13",
+        "follow_up_status": 0,
+        "frame_code": 104,
+        "frame_size": 106,
+        "glass_collecting_location": 12,
+        "glass_prescription_uuid": "20230906154451efd2b52b-1309-4ada-9fd5-333dfb3b5bfc",
+        "has_the_glass_collected": 2,
+        "lens_type": 108,
+        "model_type": 0,
+        "partner_id": 23,
+        "spectacle_name": "Near",
+        "spectacle_type": 99,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20230906154451f0c7afe5-5bfd-4e0d-972f-967ee0e2dbbd",
+        "vision_center": 84
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:45:19hrs[
+    {
+        "age": 25,
+        "app_created_at": "2023-09-05T18:29:05",
+        "app_updated_at": "2023-09-05T18:29:05",
+        "educational_qualification": 206,
+        "monthly_average_income": 220,
+        "name": "test name ",
+        "occupation": 213,
+        "patient_uuid": "202309051826574097aead-c5ca-4537-b2c7-c89ba7551dc2",
+        "relationship_to_respondent": 194,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "202309051829056d0b70c2-6d8b-421a-b3e7-0dbf6698260e"
+    },
+    {
+        "age": 25,
+        "app_created_at": "2023-09-06T15:42:42",
+        "app_updated_at": "2023-09-06T15:42:42",
+        "educational_qualification": 206,
+        "monthly_average_income": 220,
+        "name": "test members ",
+        "occupation": 214,
+        "patient_uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "relationship_to_respondent": 196,
+        "screening_uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "20230906154242d8c4bcb6-c20f-4261-8f82-7780b41bcd0b"
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:49:03hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 25,
+        "app_created_at": "2023-09-06T15:40:50",
+        "app_updated_at": "2023-09-06T15:40:50",
+        "camp": 0,
+        "contact_no_1": "99887744556",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 4,
+        "drivers_license_no": "vhvjvj",
+        "educational_qualification": 45,
+        "feedback": "good ",
+        "gender": 2,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 34,
+        "name": "patient one",
+        "no_of_months_employed_in_a_year": "2",
+        "partner_id": 23,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "p123",
+        "user": 35,
+        "uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:49:03hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2023-09-05T18:29:05",
+        "app_updated_at": "2023-09-05T18:29:05",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "200",
+        "blood_sugar_mg_dl": "200",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 2,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 3,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 2.0,
+        "family_history_of_diabetes": 188,
+        "fever_for_more_than_2_weeks": 2,
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_attended_awarness_training": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "158",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "medication_hypertension": 0,
+        "night_sweats": 2,
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "2",
+        "partner_id": 23,
+        "patient_uuid": "202309051826574097aead-c5ca-4537-b2c7-c89ba7551dc2",
+        "physical_activity": 183,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 2,
+        "uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "vision_center_id": 88,
+        "waist_circumference": 178,
+        "weight_kg": "20",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [
+            64
+        ],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 2,
+        "your_family_members_support_you_financially": 2
+    },
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-06T15:42:42",
+        "app_updated_at": "2023-09-06T15:42:42",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "120",
+        "blood_sugar_mg_dl": "120",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 1,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 5,
+        "duration_since_last_meal": 25.0,
+        "family_history_of_diabetes": 188,
+        "fever_for_more_than_2_weeks": 1,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "90",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 175,
+        "medication_hypertension": 1,
+        "night_sweats": 1,
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "2",
+        "partner_id": 23,
+        "patient_uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "physical_activity": 184,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 69,
+        "unexplained_weight_loss_or_loss_of_appetite": 1,
+        "uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "vision_center_id": 88,
+        "waist_circumference": 178,
+        "weight_kg": "50",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 1988,
+        "when_was_it_diagnosed_years": 1988,
+        "which_months_you_are_not_employed_in_a_year": [
+            64,
+            65
+        ],
+        "which_training": 224,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 3,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:49:03hrs[
+    {
+        "aided_distance_le": 84,
+        "aided_distance_re": 83,
+        "aided_near_le": 93,
+        "aided_near_re": 92,
+        "app_created_at": "2023-09-05T18:30:48",
+        "app_updated_at": "2023-09-05T18:36:52",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 23,
+        "pinhole_distance_le": 85,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 92,
+        "refer_for": 126,
+        "referred_to": 135,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "202309051830489cc38896-d136-4a58-9a2e-158e690546ac",
+        "vision_center_id": 88,
+        "want_to_refer": 1
+    },
+    {
+        "aided_distance_le": 83,
+        "aided_distance_re": 83,
+        "aided_near_le": 92,
+        "aided_near_re": 92,
+        "app_created_at": "2023-09-06T15:43:18",
+        "app_updated_at": "2023-09-06T15:43:34",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 23,
+        "pinhole_distance_le": 83,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 92,
+        "refer_for": 126,
+        "referred_to": 135,
+        "screening_uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "202309061543186d8fca61-2a6e-47d8-8c74-3c0633ce70a7",
+        "vision_center_id": 88,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:49:03hrs[
+    {
+        "app_created_at": "2023-09-05T18:37:18",
+        "app_updated_at": "2023-09-05T18:37:18",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "ch",
+        "axis_near_re": "h c",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "vv",
+        "cyl_near_re": "hvv",
+        "follow_up_status": 0,
+        "partner_id": 23,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "spectacle_type": 99,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "c ",
+        "sph_near_re": "cc",
+        "sync_status": 0,
+        "uuid": "20230905183718f2375606-9e2f-48a9-8d7d-2be0e9a505fc",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 95,
+        "va_near_re": 95,
+        "vision_center_id": 88
+    },
+    {
+        "app_created_at": "2023-09-06T15:44:51",
+        "app_updated_at": "2023-09-06T15:45:13",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "vv",
+        "axis_near_re": "gh",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "hh",
+        "cyl_near_re": "vg",
+        "follow_up_status": 0,
+        "partner_id": 23,
+        "screening_uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "spectacle_type": 99,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "bb",
+        "sph_near_re": "vc",
+        "sync_status": 0,
+        "uuid": "20230906154451efd2b52b-1309-4ada-9fd5-333dfb3b5bfc",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 95,
+        "va_near_re": 95,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:49:03hrs[
+    {
+        "app_created_at": "2023-09-05T18:37:18",
+        "app_updated_at": "2023-09-05T18:37:18",
+        "follow_up_status": 3,
+        "frame_code": 104,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "20230905183718f2375606-9e2f-48a9-8d7d-2be0e9a505fc",
+        "has_the_glass_collected": 1,
+        "lens_type": 108,
+        "model_type": 0,
+        "partner_id": 23,
+        "spectacle_name": "Near",
+        "spectacle_type": 99,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "2023090518371864f2a62b-8132-4f43-bd5a-d8120ba7d377",
+        "vision_center": 88
+    },
+    {
+        "app_created_at": "2023-09-06T15:44:51",
+        "app_updated_at": "2023-09-06T15:45:13",
+        "follow_up_status": 0,
+        "frame_code": 104,
+        "frame_size": 106,
+        "glass_collecting_location": 12,
+        "glass_prescription_uuid": "20230906154451efd2b52b-1309-4ada-9fd5-333dfb3b5bfc",
+        "has_the_glass_collected": 2,
+        "lens_type": 108,
+        "model_type": 0,
+        "partner_id": 23,
+        "spectacle_name": "Near",
+        "spectacle_type": 99,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20230906154451f0c7afe5-5bfd-4e0d-972f-967ee0e2dbbd",
+        "vision_center": 84
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 15:49:03hrs[
+    {
+        "age": 25,
+        "app_created_at": "2023-09-05T18:29:05",
+        "app_updated_at": "2023-09-05T18:29:05",
+        "educational_qualification": 206,
+        "monthly_average_income": 220,
+        "name": "test name ",
+        "occupation": 213,
+        "patient_uuid": "202309051826574097aead-c5ca-4537-b2c7-c89ba7551dc2",
+        "relationship_to_respondent": 194,
+        "screening_uuid": "2023090518290573f57ccd-5829-4924-b3ef-840747c310e2",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "202309051829056d0b70c2-6d8b-421a-b3e7-0dbf6698260e"
+    },
+    {
+        "age": 25,
+        "app_created_at": "2023-09-06T15:42:42",
+        "app_updated_at": "2023-09-06T15:42:42",
+        "educational_qualification": 206,
+        "monthly_average_income": 220,
+        "name": "test members ",
+        "occupation": 214,
+        "patient_uuid": "202309061540501856ebab-67a8-4a6d-82f9-04ba4ebafd5f",
+        "relationship_to_respondent": 196,
+        "screening_uuid": "2023090615424234a34d58-9092-4468-8976-066335047f16",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "20230906154242d8c4bcb6-c20f-4261-8f82-7780b41bcd0b"
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:01:47hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:01:47hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:05:49hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 25,
+        "app_created_at": "2023-09-06T16:05:50",
+        "app_updated_at": "2023-09-06T16:05:50",
+        "camp": 12,
+        "contact_no_1": "99887766500",
+        "contact_no_2": "",
+        "district": 6,
+        "donor": 4,
+        "drivers_license_no": "ccuguv",
+        "educational_qualification": 45,
+        "feedback": "good",
+        "gender": 2,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 38,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 34,
+        "name": "patient one",
+        "no_of_months_employed_in_a_year": "2",
+        "partner_id": 23,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "pt1234",
+        "user": 35,
+        "uuid": "20230906160550a37a5cf7-8310-4fb7-bd3b-1f52f355a247",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:05:49hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:05:49hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:05:49hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:05:49hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:05:49hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:07:26hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:07:26hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-06T16:07:27",
+        "app_updated_at": "2023-09-06T16:07:27",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "120",
+        "blood_sugar_mg_dl": "120",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 1,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 25.0,
+        "family_history_of_diabetes": 0,
+        "fever_for_more_than_2_weeks": 1,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "50",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "medication_hypertension": 1,
+        "night_sweats": 1,
+        "on_what_basis_your_salary_is_calculated": 59,
+        "owner_holding_any_amount_from_your_salary": "25",
+        "partner_id": 23,
+        "patient_uuid": "20230906160550a37a5cf7-8310-4fb7-bd3b-1f52f355a247",
+        "physical_activity": 182,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 69,
+        "unexplained_weight_loss_or_loss_of_appetite": 1,
+        "uuid": "20230906160727ab544da9-9069-4364-99ad-cdacb5bdffe0",
+        "vision_center_id": 88,
+        "waist_circumference": 178,
+        "weight_kg": "50",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [
+            64
+        ],
+        "which_training": 224,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 2,
+        "your_family_members_support_you_financially": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:07:26hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:07:26hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:07:26hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:07:26hrs[
+    {
+        "age": 25,
+        "app_created_at": "2023-09-06T16:07:27",
+        "app_updated_at": "2023-09-06T16:07:27",
+        "educational_qualification": 206,
+        "monthly_average_income": 219,
+        "name": "test name ",
+        "occupation": 214,
+        "partner_id": 23,
+        "patient_uuid": "20230906160550a37a5cf7-8310-4fb7-bd3b-1f52f355a247",
+        "relationship_to_respondent": 196,
+        "screening_uuid": "20230906160727ab544da9-9069-4364-99ad-cdacb5bdffe0",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "202309061607270338dcf7-02cd-4faa-8576-4d6380cd2fef",
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:08:40hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:08:40hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:08:40hrs[
+    {
+        "aided_distance_le": 85,
+        "aided_distance_re": 83,
+        "aided_near_le": 92,
+        "aided_near_re": 92,
+        "app_created_at": "2023-09-06T16:08:40",
+        "app_updated_at": "2023-09-06T16:08:40",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 23,
+        "pinhole_distance_le": 83,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 92,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "20230906160727ab544da9-9069-4364-99ad-cdacb5bdffe0",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "2023090616084042443a0f-2edd-4e10-8ccf-758b94026d93",
+        "vision_center_id": 88,
+        "want_to_refer": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:08:40hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:08:40hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:08:40hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:09:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:09:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:09:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:09:39hrs[
+    {
+        "app_created_at": "2023-09-06T16:09:40",
+        "app_updated_at": "2023-09-06T16:09:40",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "fcvg",
+        "axis_near_re": "vvc",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "hhg",
+        "cyl_near_re": "gvv",
+        "follow_up_status": 0,
+        "partner_id": 23,
+        "screening_uuid": "20230906160727ab544da9-9069-4364-99ad-cdacb5bdffe0",
+        "spectacle_type": 99,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "vg",
+        "sph_near_re": "23",
+        "sync_status": 0,
+        "uuid": "20230906160940eec025e6-3167-4c8a-a235-1bd81e5c7e34",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 95,
+        "va_near_re": 95,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:09:39hrs[
+    {
+        "app_created_at": "2023-09-06T16:09:40",
+        "app_updated_at": "2023-09-06T16:09:40",
+        "follow_up_status": 3,
+        "frame_code": 104,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "20230906160940eec025e6-3167-4c8a-a235-1bd81e5c7e34",
+        "has_the_glass_collected": 1,
+        "lens_type": 108,
+        "model_type": 0,
+        "partner_id": 23,
+        "spectacle_name": "Near",
+        "spectacle_type": 99,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20230906160940d59663d8-a58d-41dc-afd3-47bd6aaa11b5",
+        "vision_center": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:09:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:33:49hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:33:49hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-06T16:07:27",
+        "app_updated_at": "2023-09-06T16:33:48",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "120",
+        "blood_sugar_mg_dl": "120",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 1,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 25.0,
+        "family_history_of_diabetes": 0,
+        "fever_for_more_than_2_weeks": 1,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "50",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "medication_hypertension": 1,
+        "night_sweats": 1,
+        "on_what_basis_your_salary_is_calculated": 59,
+        "owner_holding_any_amount_from_your_salary": "25",
+        "partner_id": 23,
+        "patient_uuid": "20230906160550a37a5cf7-8310-4fb7-bd3b-1f52f355a247",
+        "physical_activity": 182,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 69,
+        "unexplained_weight_loss_or_loss_of_appetite": 1,
+        "uuid": "20230906160727ab544da9-9069-4364-99ad-cdacb5bdffe0",
+        "vision_center_id": 88,
+        "waist_circumference": 178,
+        "weight_kg": "50",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [
+            64
+        ],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 2,
+        "your_family_members_support_you_financially": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:33:49hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:33:49hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:33:49hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:33:49hrs[
+    {
+        "age": 25,
+        "app_created_at": "2023-09-06T16:07:27",
+        "app_updated_at": "2023-09-06T16:33:48",
+        "educational_qualification": 206,
+        "monthly_average_income": 219,
+        "name": "test name ",
+        "occupation": 214,
+        "partner_id": 23,
+        "patient_uuid": "20230906160550a37a5cf7-8310-4fb7-bd3b-1f52f355a247",
+        "relationship_to_respondent": 196,
+        "screening_uuid": "20230906160727ab544da9-9069-4364-99ad-cdacb5bdffe0",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "202309061607270338dcf7-02cd-4faa-8576-4d6380cd2fef",
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:34:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:34:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:34:25hrs[
+    {
+        "aided_distance_le": 85,
+        "aided_distance_re": 83,
+        "aided_near_le": 92,
+        "aided_near_re": 92,
+        "app_created_at": "2023-09-06T16:08:40",
+        "app_updated_at": "2023-09-06T16:34:25",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 23,
+        "pinhole_distance_le": 83,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 92,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "20230906160727ab544da9-9069-4364-99ad-cdacb5bdffe0",
+        "sync_status": 0,
+        "treatment_for_refraction": 120,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "2023090616084042443a0f-2edd-4e10-8ccf-758b94026d93",
+        "vision_center_id": 88,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:34:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:34:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 16:34:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:02:20hrs[
+    {
+        "aadhaar_pan_no": "chchvjv",
+        "age": 25,
+        "app_created_at": "2023-09-06T17:02:21",
+        "app_updated_at": "2023-09-06T17:02:21",
+        "camp": 12,
+        "contact_no_1": "99887766666",
+        "contact_no_2": "",
+        "district": 10,
+        "donor": 4,
+        "drivers_license_no": "hchchvjvc",
+        "educational_qualification": 44,
+        "feedback": "good ",
+        "gender": 2,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 38,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 34,
+        "name": "patient two",
+        "no_of_months_employed_in_a_year": "6",
+        "partner_id": 23,
+        "permanent_address": "",
+        "renewal_date": "2023-09-06",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 27,
+        "type_of_vehicle": 21,
+        "unique_id": "pat2",
+        "user": 35,
+        "uuid": "20230906170221c53c84ce-81f2-4962-8a43-6472a38898e3",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:02:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:02:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:02:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:02:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:02:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:05:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:05:47hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-06T17:05:48",
+        "app_updated_at": "2023-09-06T17:05:48",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "120",
+        "blood_sugar_mg_dl": "120",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 1,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 858,
+        "duration_since_last_meal": 2.0,
+        "family_history_of_diabetes": 188,
+        "fever_for_more_than_2_weeks": 1,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "60",
+        "if_you_are_happy_specify_in_what_way": "vhv",
+        "insulin_dependent_or_non_insulin_dependent": 175,
+        "medication_hypertension": 1,
+        "night_sweats": 1,
+        "on_what_basis_your_salary_is_calculated": 59,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 23,
+        "patient_uuid": "20230906170221c53c84ce-81f2-4962-8a43-6472a38898e3",
+        "physical_activity": 183,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 70,
+        "unexplained_weight_loss_or_loss_of_appetite": 1,
+        "uuid": "20230906170548553c0aaf-2399-43b3-b2ed-6eefb75fa561",
+        "vision_center_id": 88,
+        "waist_circumference": 178,
+        "weight_kg": "50",
+        "what_do_you_do_during_non_working_months": 67,
+        "when_was_it_diagnosed_number_of_years": 2000,
+        "when_was_it_diagnosed_years": 2023,
+        "which_months_you_are_not_employed_in_a_year": [
+            63
+        ],
+        "which_training": 224,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 74,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:05:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:05:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:05:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:05:47hrs[
+    {
+        "age": 0,
+        "app_created_at": "2023-09-06T17:05:48",
+        "app_updated_at": "2023-09-06T17:05:48",
+        "educational_qualification": 0,
+        "monthly_average_income": 0,
+        "name": "cchv",
+        "occupation": 0,
+        "partner_id": 23,
+        "patient_uuid": "20230906170221c53c84ce-81f2-4962-8a43-6472a38898e3",
+        "relationship_to_respondent": 196,
+        "screening_uuid": "20230906170548553c0aaf-2399-43b3-b2ed-6eefb75fa561",
+        "sex": 0,
+        "sync_status": 0,
+        "uuid": "20230906170548a9ace5df-789e-416d-b30e-6139a145beea",
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:05:53hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:05:53hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 1,
+        "accident_while_driving_commercial_vehicle_before": 1,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-06T11:37:30+05:30",
+        "app_updated_at": "2023-09-06T17:05:53",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "100",
+        "blood_sugar_mg_dl": "100",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 1,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 25,
+        "duration_since_last_meal": 5.0,
+        "family_history_of_diabetes": 187,
+        "fever_for_more_than_2_weeks": 1,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "156",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "medication_hypertension": 1,
+        "night_sweats": 1,
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "13",
+        "partner_id": 23,
+        "patient_uuid": "202309061135384031e887-fc1d-4ebb-a2e7-0e8d510d5910",
+        "physical_activity": 182,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 69,
+        "unexplained_weight_loss_or_loss_of_appetite": 1,
+        "uuid": "20230906113730cdbb79a0-9ce4-4791-9a66-ece80211f6c0",
+        "vision_center_id": 88,
+        "waist_circumference": 179,
+        "weight_kg": "100",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 2000,
+        "when_was_it_diagnosed_years": 2000,
+        "which_months_you_are_not_employed_in_a_year": [
+            65
+        ],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 74,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:05:53hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:05:53hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:05:53hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:05:53hrs[
+    {
+        "age": 25,
+        "app_created_at": "2023-09-06T11:37:30+05:30",
+        "app_updated_at": "2023-09-06T17:05:53",
+        "educational_qualification": 204,
+        "monthly_average_income": 220,
+        "name": "savita",
+        "occupation": 213,
+        "partner_id": 23,
+        "patient_uuid": "202309061135384031e887-fc1d-4ebb-a2e7-0e8d510d5910",
+        "relationship_to_respondent": 193,
+        "screening_uuid": "20230906113730cdbb79a0-9ce4-4791-9a66-ece80211f6c0",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "2023090611373053bb2fef-1186-4540-b38d-e095a98fc167",
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:06:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:06:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:06:18hrs[
+    {
+        "aided_distance_le": 84,
+        "aided_distance_re": 86,
+        "aided_near_le": 92,
+        "aided_near_re": 94,
+        "app_created_at": "2023-09-06T17:06:19",
+        "app_updated_at": "2023-09-06T17:06:19",
+        "color_le": 117,
+        "color_re": 117,
+        "partner_id": 23,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 92,
+        "refer_for": 126,
+        "referred_to": 135,
+        "screening_uuid": "20230906170548553c0aaf-2399-43b3-b2ed-6eefb75fa561",
+        "sync_status": 0,
+        "treatment_for_refraction": 120,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "20230906170619698fbc07-c324-42a3-9b7a-96511c6798c8",
+        "vision_center_id": 88,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:06:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:06:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:06:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:07:03hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:07:03hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:07:03hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:07:03hrs[
+    {
+        "app_created_at": "2023-09-06T17:07:04",
+        "app_updated_at": "2023-09-06T17:07:04",
+        "axis_distance_le": "hvvv gc",
+        "axis_distance_re": " b b ",
+        "axis_near_le": "",
+        "axis_near_re": "",
+        "cyl_distance_le": " b ",
+        "cyl_distance_re": "vhv",
+        "cyl_near_le": "",
+        "cyl_near_re": "",
+        "follow_up_status": 0,
+        "partner_id": 23,
+        "screening_uuid": "20230906170548553c0aaf-2399-43b3-b2ed-6eefb75fa561",
+        "spectacle_type": 227,
+        "sph_distance_le": "xghc",
+        "sph_distance_re": "chc",
+        "sph_near_le": "",
+        "sph_near_re": "",
+        "sync_status": 0,
+        "uuid": "202309061707047bbd3ed6-61c6-45f5-b900-090a92a4badb",
+        "va_distance_le": 87,
+        "va_distance_re": 87,
+        "va_near_le": 0,
+        "va_near_re": 0,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:07:03hrs[
+    {
+        "app_created_at": "2023-09-06T17:07:04",
+        "app_updated_at": "2023-09-06T17:07:04",
+        "follow_up_status": 3,
+        "frame_code": 104,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "202309061707047bbd3ed6-61c6-45f5-b900-090a92a4badb",
+        "has_the_glass_collected": 1,
+        "lens_type": 108,
+        "model_type": 0,
+        "partner_id": 23,
+        "spectacle_name": "R2C",
+        "spectacle_type": 227,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "2023090617070445208833-6821-4057-a1e0-90b220d21217",
+        "vision_center": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:07:03hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:08:39hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 25,
+        "app_created_at": "2023-09-06T17:08:40",
+        "app_updated_at": "2023-09-06T17:08:40",
+        "camp": 12,
+        "contact_no_1": "98877666666",
+        "contact_no_2": "",
+        "district": 10,
+        "donor": 4,
+        "drivers_license_no": "chchc",
+        "educational_qualification": 45,
+        "feedback": "good ",
+        "gender": 2,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 34,
+        "name": "patient three ",
+        "no_of_months_employed_in_a_year": "1900",
+        "partner_id": 23,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 27,
+        "type_of_vehicle": 21,
+        "unique_id": "pat1234",
+        "user": 35,
+        "uuid": "20230906170840ec7ead3d-f6e5-4935-a83a-5df744cb4be6",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:08:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:08:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:08:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:08:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:08:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:10:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:10:21hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-06T17:10:22",
+        "app_updated_at": "2023-09-06T17:10:22",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "120",
+        "blood_sugar_mg_dl": "120",
+        "code_description": 52,
+        "cough_for_more_than_two_weeks": 1,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 2000,
+        "duration_since_last_meal": 1988.0,
+        "family_history_of_diabetes": 189,
+        "fever_for_more_than_2_weeks": 1,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "50",
+        "if_you_are_happy_specify_in_what_way": "tvvbb",
+        "insulin_dependent_or_non_insulin_dependent": 175,
+        "medication_hypertension": 1,
+        "night_sweats": 1,
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "25",
+        "partner_id": 23,
+        "patient_uuid": "20230906170840ec7ead3d-f6e5-4935-a83a-5df744cb4be6",
+        "physical_activity": 184,
+        "sync_status": 0,
+        "total_family_members": "1",
+        "type_of_hospital": 69,
+        "unexplained_weight_loss_or_loss_of_appetite": 1,
+        "uuid": "20230906171022c30d0718-c2a5-4491-8651-133eeb8a050f",
+        "vision_center_id": 88,
+        "waist_circumference": 179,
+        "weight_kg": "50",
+        "what_do_you_do_during_non_working_months": 66,
+        "when_was_it_diagnosed_number_of_years": 1988,
+        "when_was_it_diagnosed_years": 1988,
+        "which_months_you_are_not_employed_in_a_year": [
+            64
+        ],
+        "which_training": 224,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 72,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:10:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:10:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:10:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:10:21hrs[
+    {
+        "age": 25,
+        "app_created_at": "2023-09-06T17:10:22",
+        "app_updated_at": "2023-09-06T17:10:22",
+        "educational_qualification": 206,
+        "monthly_average_income": 221,
+        "name": "xhchc",
+        "occupation": 214,
+        "partner_id": 23,
+        "patient_uuid": "20230906170840ec7ead3d-f6e5-4935-a83a-5df744cb4be6",
+        "relationship_to_respondent": 196,
+        "screening_uuid": "20230906171022c30d0718-c2a5-4491-8651-133eeb8a050f",
+        "sex": 2,
+        "sync_status": 0,
+        "uuid": "202309061710224a4d951c-7406-4caa-b689-6f1531ba3b7f",
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:10:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:10:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:10:45hrs[
+    {
+        "aided_distance_le": 84,
+        "aided_distance_re": 83,
+        "aided_near_le": 92,
+        "aided_near_re": 92,
+        "app_created_at": "2023-09-06T17:10:46",
+        "app_updated_at": "2023-09-06T17:10:46",
+        "color_le": 116,
+        "color_re": 116,
+        "partner_id": 23,
+        "pinhole_distance_le": 83,
+        "pinhole_distance_re": 83,
+        "pinhole_near_le": 92,
+        "pinhole_near_re": 92,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "20230906171022c30d0718-c2a5-4491-8651-133eeb8a050f",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 83,
+        "un_aided_distance_re": 84,
+        "un_aided_near_le": 92,
+        "un_aided_near_re": 92,
+        "uuid": "20230906171046c67fff73-85e9-4b9e-9827-0abec7046d3b",
+        "vision_center_id": 88,
+        "want_to_refer": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:10:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:10:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:10:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:11:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:11:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:11:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:11:22hrs[
+    {
+        "app_created_at": "2023-09-06T17:11:23",
+        "app_updated_at": "2023-09-06T17:11:23",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "vh ",
+        "axis_near_re": "ch ",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "hcg",
+        "cyl_near_re": "chc",
+        "follow_up_status": 0,
+        "partner_id": 23,
+        "screening_uuid": "20230906171022c30d0718-c2a5-4491-8651-133eeb8a050f",
+        "spectacle_type": 99,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "chc",
+        "sph_near_re": "fc",
+        "sync_status": 0,
+        "uuid": "20230906171123810382fc-8b67-4b85-8777-4fbf71ccac27",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 96,
+        "va_near_re": 95,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:11:22hrs[
+    {
+        "app_created_at": "2023-09-06T17:11:23",
+        "app_updated_at": "2023-09-06T17:11:23",
+        "follow_up_status": 3,
+        "frame_code": 105,
+        "frame_size": 107,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "20230906171123810382fc-8b67-4b85-8777-4fbf71ccac27",
+        "has_the_glass_collected": 1,
+        "lens_type": 108,
+        "model_type": 0,
+        "partner_id": 23,
+        "spectacle_name": "Near",
+        "spectacle_type": 99,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "202309061711230eab3671-a9fa-4615-af27-7b2c68e02c52",
+        "vision_center": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:11:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:17:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:17:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:17:37hrs[
+    {
+        "aided_distance_le": 88,
+        "aided_distance_re": 88,
+        "aided_near_le": 94,
+        "aided_near_re": 95,
+        "app_created_at": "2023-09-06T11:52:15+05:30",
+        "app_updated_at": "2023-09-06T17:17:33",
+        "color_le": 116,
+        "color_re": 117,
+        "partner_id": 13,
+        "pinhole_distance_le": 86,
+        "pinhole_distance_re": 86,
+        "pinhole_near_le": 95,
+        "pinhole_near_re": 95,
+        "refer_for": 123,
+        "referred_to": 135,
+        "screening_uuid": "202309061142514a602bfd-6267-49c4-8d9c-50fd869780c4",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 85,
+        "un_aided_distance_re": 85,
+        "un_aided_near_le": 93,
+        "un_aided_near_re": 94,
+        "uuid": "202309061152151b44cf1b-8110-4701-b6eb-f53f5aa3d599",
+        "vision_center_id": 85,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:17:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:17:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:17:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:18:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:18:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:18:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:18:09hrs[
+    {
+        "app_created_at": "2023-09-06T17:18:09",
+        "app_updated_at": "2023-09-06T17:18:09",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "8",
+        "axis_near_re": "6",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "3",
+        "cyl_near_re": "2",
+        "follow_up_status": 0,
+        "partner_id": 13,
+        "screening_uuid": "202309061142514a602bfd-6267-49c4-8d9c-50fd869780c4",
+        "spectacle_type": 99,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "6",
+        "sph_near_re": "6",
+        "sync_status": 0,
+        "uuid": "2023090617180900e88103-1198-45f0-9e1d-b1c18d7e4b7f",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 96,
+        "va_near_re": 95,
+        "vision_center_id": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:18:09hrs[
+    {
+        "app_created_at": "2023-09-06T17:18:09",
+        "app_updated_at": "2023-09-06T17:18:09",
+        "follow_up_status": 3,
+        "frame_code": 102,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "2023090617180900e88103-1198-45f0-9e1d-b1c18d7e4b7f",
+        "has_the_glass_collected": 1,
+        "lens_type": 109,
+        "model_type": 0,
+        "partner_id": 13,
+        "spectacle_name": "Near",
+        "spectacle_type": 99,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20230906171809a0fc2e3a-f49f-45cc-972c-57e0b936d127",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:18:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:31:57hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 56,
+        "app_created_at": "2023-09-06T17:31:56",
+        "app_updated_at": "2023-09-06T17:31:56",
+        "camp": 0,
+        "contact_no_1": "8861579744",
+        "contact_no_2": "",
+        "district": 3,
+        "donor": 3,
+        "drivers_license_no": "fhyhy4677i",
+        "educational_qualification": 0,
+        "feedback": "Good",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 36,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 33,
+        "name": "Prakash",
+        "no_of_months_employed_in_a_year": "",
+        "partner_id": 23,
+        "permanent_address": "",
+        "renewal_date": "2023-09-30",
+        "residence_type": 0,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "6",
+        "type_of_job": 15,
+        "type_of_route": 25,
+        "type_of_vehicle": 19,
+        "unique_id": "prakash123",
+        "user": 35,
+        "uuid": "2023090617315696274708-630a-4395-af54-ec4053dadb72",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:31:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:31:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:31:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:31:57hrs[
+    {
+        "app_created_at": "2023-09-06T11:48:13+05:30",
+        "app_updated_at": "2023-09-06T11:48:13+05:30",
+        "follow_up_status": 2,
+        "frame_code": 102,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "2023090611481366a44e85-46fd-4fc8-a536-4d32d87a0d2a",
+        "has_the_glass_collected": 2,
+        "lens_type": 108,
+        "model_type": 0,
+        "partner_id": 23,
+        "spectacle_name": "R2C",
+        "spectacle_type": 227,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "202309061148139a9fef4f-1e33-43e5-ab97-bf237f698025",
+        "vision_center": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 17:31:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 23:51:27hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/06/2023, 23:51:27hrs{
+    "user_id": 30
+}

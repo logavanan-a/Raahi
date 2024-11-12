@@ -1,0 +1,95 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 12/15/2023, 11:13:04hrs[
+    {
+        "aadhaar_pan_no": "1234",
+        "age": 25,
+        "app_created_at": "2023-12-15T11:13:02",
+        "app_updated_at": "2023-12-15T11:13:02",
+        "camp": 0,
+        "contact_no_1": "9999999999",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 4,
+        "drivers_license_no": "uetets",
+        "educational_qualification": 238,
+        "feedback": "testing the feedback",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 40,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 229,
+        "name": "shyam",
+        "no_of_months_employed_in_a_year": "2",
+        "partner_id": 13,
+        "permanent_address": "",
+        "renewal_date": "2023-12-15",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "2023",
+        "type_of_job": 15,
+        "type_of_route": 25,
+        "type_of_vehicle": 19,
+        "unique_id": "527262",
+        "user": 30,
+        "uuid": "2023121511130218f9dcaf-ce0c-41c9-8bb5-d058edfbc492",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 12/15/2023, 11:13:04hrs{
+    "Text": "T",
+    "Number": "919999999999",
+    "SenderId": "RCSBSS",
+    "DRNotifyUrl": "https://raahistaging.mahiti.org/otp-sms/",
+    "DRNotifyHttpMethod": "POST",
+    "Message": "Accepted",
+    "Tool": "API"
+}
+
+
+==================================================
+
+
+Log Date & Time : 12/15/2023, 11:13:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/15/2023, 11:13:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/15/2023, 11:13:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/15/2023, 11:13:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/15/2023, 11:13:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/15/2023, 11:13:04hrs[]

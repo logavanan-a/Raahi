@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css'%}" rel="stylesheet"
+    type="text/css">
+
+<!-- DataTables -->
+<link href="{% static 'libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+<link href="{% static 'libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<!-- Responsive datatable examples -->
+<link href="{% static 'libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{%endblock %}
+
+{% block contents %}
+<style>
+    #btn-outline-danger {
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .datepicker {
+        display: inline-flex;
+        position: relative;
+        padding: 0px;
+        overflow: clip;
+        margin-top: 8px;
+        border: 0px;
+    }
+
+    .datepicker:focus-within {
+        outline: black auto 2px;
+    }
+
+    .datepicker>input[type=date] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .datepicker>input[type=date]::-webkit-calendar-picker-indicator {
+        position: absolute;
+        top: -150%;
+        left: -150%;
+        width: 300%;
+        height: 300%;
+        cursor: pointer;
+    }
+
+    /* .input-group>.form-control{
+    -webkit-box-flex: 0;
+    flex: 0;
+    padding: 0px!important;
+    height: 0px;
+} */
+    .btn {
+        margin: 2px;
+    }
+
+    .btn-group,
+    .btn-group-vertical {
+        margin-left: 0px;
+    }
+
+    .btn-group>.btn:not(:first-child) {
+        margin-left: 2px;
+    }
+</style>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-body pb-0">
+                    <form method='POST' class="needs-validation" autocomplete="off" >
+                        {% csrf_token %}
+                        <div class="row mb-4">
+                            <label class="col-md-2 col-form-label">Approved By<span class="required-field"></span></label>
+                            <div class="col-md-4">
+                                <input type="text" name="approved_by" class="form-control" value="{{request.user}}" placeholder="Enter Approved By" required readonly />
+                                <div class="invalid-feedback">
+                                    Please enter Approved By.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <label class="col-md-2 col-form-label">Approved Date<span class="required-field"></span></label>
+                            <div class="col-md-4">
+                                <input type="date" name= "date"  class="form-control" value="{{date|default_if_none:'-'|date:'Y-m-d'}}" readonly>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <label class="col-md-2 col-form-label">Remarks<span></span></label>
+                            <div class="col-md-4">
+                                <textarea class="form-control" id="remarks" rows="4" name="remarks" placeholder="Enter Address" ></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="col-auto p-2" style="float:right;">
+                            <button type="reset" onclick="window.location.href='/data-freeze/'"
+                                class="btn btn-secondary waves-effect">Cancel</button>
+                            <button type="submitting" class="btn btn-success waves-effect ">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- {% if orderrequestdetails.order_request.order_status == 1 %}<button class='btn btn-danger' onclick="Confirm('{{l.id}}', '{{model}}', 'pending')">pending</button>{% else %}<button class='btn btn-success' onclick="Confirm('{{l.id}}', '{{model}}', 'Submit for approval')">Submit for approval</button>{% endif %} -->
+</div>
+
+</div>
+
+{% endblock %}
+{% block extra_javascript %}
+<script src="{% static 'libs/sweetalert2/dist/sweetalert2.min.js' %}"></script>
+<script src="{% static 'libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js'%}"></script>
+<!-- Required datatable js -->
+<script src="{% static 'libs/datatables.net/js/jquery.dataTables.min.js' %}"></script>
+<!-- <script src="{% static 'libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js' %}"></script> -->
+<!-- Buttons examples -->
+<script src="{% static 'libs/datatables.net-buttons/js/dataTables.buttons.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-buttons/js/buttons.colVis.min.js' %}"></script>
+
+<!-- Responsive examples -->
+<script src="{% static 'libs/datatables.net-responsive/js/dataTables.responsive.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js' %}"></script>
+
+<!-- Datatable init js -->
+<script src="{% static 'js/pages/datatables.init.js' %}"></script>
+
+<script type="text/javascript">
+    function OnSeletDate(capid, date, title) {
+        Swal.fire({
+            title: 'Please Enter Reason For Delay?',
+            input: 'textarea',
+            showCancelButton: true,
+            confirmButtonText: 'Yes',
+            inputValidator: function (value) {
+                return !value && 'You need to write something!'
+            }
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = '/camp_date_update/' + capid + '/' + date.value + '/' + result.value + '/';
+            };
+        })
+    }
+    function openSelect(file, date) {
+        $(file).datepicker('show');
+    }
+
+
+    function validateForm() {
+        var form = document.getElementById('myForm');
+
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+    }
+
+    document.getElementById('submitting').addEventListener('click', validateForm);
+ 
+</script>
+
+{% endblock %}

@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load static %}
+{% block contents %}
+
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+
+<style>
+    #container {
+        height: 500px;
+        min-width: 310px;
+        max-width: 500px;
+        margin-left: 0 auto;
+    }
+    
+    .loading {
+        margin-top: 10em;
+        text-align: left;
+        color: gray;
+    }
+</style>
+<div id="container"></div>
+<script>
+    data_india = [];
+
+    datas = {{ data|safe }};
+
+    for (data in datas.chart) {
+        var value = datas.chart[data];
+        var chart_type = value.chart_type;
+        if (chart_type == 'GEOCHART') {
+            data_india.push(value.datas);
+        }
+    }
+
+    (async () => {
+        const topology = await fetch(
+            'https://code.highcharts.com/mapdata/countries/in/custom/in-all-disputed.topo.json'
+        ).then(response => response.json());
+
+        Highcharts.mapChart('container', {
+            chart: {
+                map: topology
+            },
+
+            title: {
+                text: 'Patients-Screening segregation by State '
+            },
+
+            subtitle: {
+                text: 'Source map: <a href="http://code.highcharts.com/mapdata/countries/in/custom/in-all-disputed.topo.json">India with disputed territories</a>'
+            },
+
+            mapNavigation: {
+                enabled: true,
+                buttonOptions: {
+                    verticalAlign: 'bottom'
+                }
+            },
+
+            colorAxis: {
+                min: 0
+            },
+
+            series: [{
+                data: data_india[0],
+                name: 'Random data',
+                states: {
+                    hover: {
+                        color: '#BADA55'
+                    }
+                },
+                tooltip: {
+                    headerFormat: "<b>{point.name}</b><br/>",
+                    pointFormatter: function() {
+                        var stateName = this.name.toUpperCase();
+                        var dataPoint = data_india[0].find(item => item[0].toUpperCase() === stateName);
+                        if (dataPoint) {
+                            return `<b>${stateName}</b><br/><b> Screening</b> - ${dataPoint[1]}<br/><b> Spec issued </b> - ${dataPoint[2]}`;
+                        } else {
+                            return `<b>${stateName}</b><br/>Data not available`;
+                        }
+                    }
+                },
+
+                dataLabels: {
+                    enabled: false // Disable data labels
+                }
+            }]
+        });
+    })();
+</script>
+{% endblock %}

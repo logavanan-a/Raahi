@@ -1,0 +1,347 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 14:59:11hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 14:59:11hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 15:07:21hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 15:07:21hrs{
+    "user_id": 93
+}
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 15:31:40hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 15:31:40hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 15:31:40hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 15:31:40hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 15:31:40hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 15:31:40hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 15:31:40hrs[
+    {
+        "address": "",
+        "block": "",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 61,
+        "date": "2024-03-15",
+        "delay_reason": "",
+        "district": 648,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "bangalore",
+        "modified_by": 61,
+        "name": "future camp",
+        "partner": 13,
+        "uuid": "202403071531383b715a38-4ba7-4116-b7dc-77e933e3e4d2",
+        "village": "",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 15:31:40hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "202403071531383b715a38-4ba7-4116-b7dc-77e933e3e4d2",
+            "id": 167,
+            "code": 137,
+            "SCO": "2024-03-07 10:01:40.604492+00:00",
+            "SMO": "2024-03-07 10:01:40.604529+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 15:32:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 15:32:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 15:32:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 15:32:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 15:32:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 15:32:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 15:32:30hrs[
+    {
+        "address": "",
+        "block": "",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 61,
+        "date": "2024-03-30",
+        "delay_reason": "",
+        "district": 12,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "nelamangala",
+        "modified_by": 61,
+        "name": "new future camp",
+        "partner": 13,
+        "uuid": "20240307153227ff695910-cd07-4b81-bcb2-d96b76d4b7a5",
+        "village": "",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 15:32:30hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "20240307153227ff695910-cd07-4b81-bcb2-d96b76d4b7a5",
+            "id": 168,
+            "code": 138,
+            "SCO": "2024-03-07 10:02:30.233034+00:00",
+            "SMO": "2024-03-07 10:02:30.233075+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 16:34:02hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 16:34:02hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 16:35:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 16:35:31hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2024-03-07T16:35:29",
+        "app_updated_at": "2024-03-07T16:35:29",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "cough_for_more_than_two_weeks": 0,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 0.0,
+        "family_history_of_diabetes": 0,
+        "fever_for_more_than_2_weeks": 0,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_attended_awarness_training": 0,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "latitude": "13.011633333333334",
+        "longitude": "77.66013333333333",
+        "medication_hypertension": 0,
+        "night_sweats": 0,
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 13,
+        "patient_uuid": "202403061436239b3cc72b-3381-4ad8-8dac-39ee4bea5934",
+        "physical_activity": 0,
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 71,
+        "unexplained_weight_loss_or_loss_of_appetite": 0,
+        "uuid": "20240307163529a8f8f520-b3ec-4402-8ad7-363fe569e942",
+        "vision_center_id": 85,
+        "waist_circumference": 0,
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 16:35:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 16:35:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 16:35:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 16:35:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 16:35:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 03/07/2024, 16:35:31hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [
+        {
+            "uuid": "20240307163529a8f8f520-b3ec-4402-8ad7-363fe569e942",
+            "patient_uuid": "202403061436239b3cc72b-3381-4ad8-8dac-39ee4bea5934",
+            "SCO": "2024-03-07 11:05:31.244979+00:00",
+            "SMO": "2024-03-07 11:05:31.267518+00:00",
+            "sync_status": 2
+        }
+    ],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}

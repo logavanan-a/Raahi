@@ -1,0 +1,903 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:31:54hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:31:54hrs{
+    "user_id": 105
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:32:03hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:32:03hrs{
+    "user_id": 105
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:36:56hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 59,
+        "app_created_at": "2024-07-25T15:36:15",
+        "app_updated_at": "2024-07-25T15:36:15",
+        "camp": 0,
+        "contact_no_1": "6382832556",
+        "contact_no_2": "",
+        "district": 648,
+        "donor": 4,
+        "drivers_license_no": "",
+        "educational_qualification": 238,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 40,
+        "id": 0,
+        "language": 10,
+        "latitude": "12.613894999999998",
+        "life_insurance_policy": 1,
+        "longitude": "79.78572666666668",
+        "monthly_income": 34,
+        "name": "hgxhgf",
+        "no_of_months_employed_in_a_year": "2",
+        "partner_id": 43,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "hfxhgx",
+        "user": 105,
+        "uuid": "20240725153615a3afe322-f7dc-4298-bb42-cb64730c0687",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 106
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:36:56hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:36:56hrs{
+    "csdate": "2024-01-27T17:17:21.562085+05:30",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-18T17:28:09.547272+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 105,
+    "vsdate": "2024-03-25T10:59:16.818773+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:36:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:36:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:36:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:36:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:36:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:36:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:36:57hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "20240725153615a3afe322-f7dc-4298-bb42-cb64730c0687",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:36:59hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:36:59hrs{
+    "user_id": 105
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:37hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:37hrs{
+    "csdate": "2024-01-27T17:17:21.562085+05:30",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-18T17:28:09.547272+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 105,
+    "vsdate": "2024-03-25T10:59:16.818773+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:37hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 59,
+        "app_created_at": "2024-07-25T15:36:15",
+        "app_updated_at": "2024-07-25T15:36:15",
+        "camp": 0,
+        "contact_no_1": "6382832556",
+        "contact_no_2": "",
+        "district": 648,
+        "donor": 4,
+        "drivers_license_no": "",
+        "educational_qualification": 238,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 40,
+        "id": 0,
+        "language": 10,
+        "latitude": "12.613894999999998",
+        "life_insurance_policy": 1,
+        "longitude": "79.78572666666668",
+        "monthly_income": 34,
+        "name": "hgxhgf",
+        "no_of_months_employed_in_a_year": "2",
+        "partner_id": 43,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "hfxhgx",
+        "user": 105,
+        "uuid": "20240725153615a3afe322-f7dc-4298-bb42-cb64730c0687",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 106
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:38hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "20240725153615a3afe322-f7dc-4298-bb42-cb64730c0687",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:39hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:39hrs{
+    "user_id": 105
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:45hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:45hrs{
+    "csdate": "2024-01-27T17:17:21.562085+05:30",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-18T17:28:09.547272+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 105,
+    "vsdate": "2024-03-25T10:59:16.818773+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:46hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 59,
+        "app_created_at": "2024-07-25T15:36:15",
+        "app_updated_at": "2024-07-25T15:36:15",
+        "camp": 0,
+        "contact_no_1": "6382832556",
+        "contact_no_2": "",
+        "district": 648,
+        "donor": 4,
+        "drivers_license_no": "",
+        "educational_qualification": 238,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 40,
+        "id": 0,
+        "language": 10,
+        "latitude": "12.613894999999998",
+        "life_insurance_policy": 1,
+        "longitude": "79.78572666666668",
+        "monthly_income": 34,
+        "name": "hgxhgf",
+        "no_of_months_employed_in_a_year": "2",
+        "partner_id": 43,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "hfxhgx",
+        "user": 105,
+        "uuid": "20240725153615a3afe322-f7dc-4298-bb42-cb64730c0687",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 106
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:46hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:46hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:46hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:46hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:46hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:46hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:46hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "20240725153615a3afe322-f7dc-4298-bb42-cb64730c0687",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:47hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:37:47hrs{
+    "user_id": 105
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:38:52hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:38:52hrs{
+    "user_id": 105
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:39:03hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:39:03hrs{
+    "user_id": 105
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:39:45hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 39,
+        "app_created_at": "2024-01-29T10:42:26",
+        "app_updated_at": "2024-07-25T15:39:14",
+        "camp": 0,
+        "contact_no_1": "9673801718",
+        "contact_no_2": "",
+        "district": 364,
+        "donor": 4,
+        "drivers_license_no": "MH04-20090029645",
+        "educational_qualification": 42,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "language": 12,
+        "latitude": "12.613894999999998",
+        "life_insurance_policy": 2,
+        "longitude": "79.78572666666668",
+        "monthly_income": 229,
+        "name": "subhash pawar",
+        "no_of_months_employed_in_a_year": "11",
+        "partner_id": 43,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "MH-27-25031",
+        "user": 105,
+        "uuid": "202401291042263729a431-4695-467e-85fa-7c3c4e2c6689",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 106
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:39:45hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:39:45hrs{
+    "csdate": "2024-01-27T17:17:21.562085+05:30",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-18T17:28:09.547272+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 105,
+    "vsdate": "2024-03-25T10:59:16.818773+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:39:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:39:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:39:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:39:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:39:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:39:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:39:45hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202401291042263729a431-4695-467e-85fa-7c3c4e2c6689",
+            "unique_id": "MH-27-25031",
+            "SCO": "2024-01-29 05:12:26.858977+00:00",
+            "SMO": "2024-07-25 10:09:45.702504+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:39:47hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:39:47hrs{
+    "user_id": 105
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:52:30hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:52:30hrs{
+    "csdate": "2024-01-27T17:17:21.562085+05:30",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-18T17:28:09.547272+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 105,
+    "vsdate": "2024-03-25T10:59:16.818773+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:52:30hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 39,
+        "app_created_at": "2024-01-29T10:42:26",
+        "app_updated_at": "2024-07-25T15:41:45",
+        "camp": 0,
+        "contact_no_1": "9673801718",
+        "contact_no_2": "",
+        "district": 364,
+        "donor": 4,
+        "drivers_license_no": "MH04-20090029645",
+        "educational_qualification": 42,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "language": 12,
+        "latitude": "12.613894999999998",
+        "life_insurance_policy": 2,
+        "longitude": "79.78572666666668",
+        "monthly_income": 229,
+        "name": "subhash pawar",
+        "no_of_months_employed_in_a_year": "11",
+        "partner_id": 43,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "MH-27-25031",
+        "user": 105,
+        "uuid": "202401291042263729a431-4695-467e-85fa-7c3c4e2c6689",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 106
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:52:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:52:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:52:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:52:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:52:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:52:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:52:30hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202401291042263729a431-4695-467e-85fa-7c3c4e2c6689",
+            "unique_id": "MH-27-25031",
+            "SCO": "2024-01-29 05:12:26.858977+00:00",
+            "SMO": "2024-07-25 10:22:30.239081+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:52:32hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:52:32hrs{
+    "user_id": 105
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:53:45hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:53:45hrs{
+    "csdate": "2024-01-27T17:17:21.562085+05:30",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-18T17:28:09.547272+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 105,
+    "vsdate": "2024-03-25T10:59:16.818773+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:53:45hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 39,
+        "app_created_at": "2024-01-29T10:42:26",
+        "app_updated_at": "2024-07-25T15:52:50",
+        "camp": 0,
+        "contact_no_1": "9673801718",
+        "contact_no_2": "",
+        "district": 364,
+        "donor": 4,
+        "drivers_license_no": "MH04-20090029645",
+        "educational_qualification": 42,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "language": 12,
+        "latitude": "12.613894999999998",
+        "life_insurance_policy": 2,
+        "longitude": "79.78572666666668",
+        "monthly_income": 229,
+        "name": "subhash pawar",
+        "no_of_months_employed_in_a_year": "11",
+        "partner_id": 43,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "MH-27-25031",
+        "user": 105,
+        "uuid": "202401291042263729a431-4695-467e-85fa-7c3c4e2c6689",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 106
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:53:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:53:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:53:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:53:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:53:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:53:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:53:45hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202401291042263729a431-4695-467e-85fa-7c3c4e2c6689",
+            "unique_id": "MH-27-25031",
+            "SCO": "2024-01-29 05:12:26.858977+00:00",
+            "SMO": "2024-07-25 10:23:45.484096+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:53:47hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/25/2024, 15:53:47hrs{
+    "user_id": 105
+}

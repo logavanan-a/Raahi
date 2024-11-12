@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+
+<!-- DataTables -->
+<link href="{% static 'libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+<link href="{% static 'libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<!-- Responsive datatable examples -->
+<link href="{% static 'libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+{% endblock %}
+
+{% block contents %}
+{% csrf_token %}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <form action="" method="get" class="mb-3">
+                    <div class="row justify-content-end">
+                        <div class="col-lg-3 mt-3">
+                            <input type="search" name="search" class='form-control' value='{{search}}' placeholder='Search...'>
+                        </div>
+                        <div class="col-auto mt-3 ">
+                            <button type="submit" class="form-control btn btn-outline-success waves-effect btn-xs float-right"><i class="fas fa-search" title="Search"></i></button>
+                        </div>
+                       
+                    </div>
+                </form> 
+                <div class="table-responsive mb-3" data-pattern="priority-columns">
+                    <table id="datatable-buttons" class="table  table-striped dt-responsive mb-0 mt-3">
+                        <thead class="table-light" >
+                            <tr>
+                                <th> Order Id</th>
+                                <th>Created By</th>   
+                                <th>Created On</th>
+                                <th>Product</th>
+                                <th>Order For</th>
+                                <th>Shippment Address</th>
+                                <th>Order Status</th>
+                            </tr>   
+                        
+                        </thead>
+                        <tbody>
+                            {% for l in data %}
+                            <tr>                                    
+                                <td><a href="/edit_order_receipt/{{l.id}}/"> {{l.id}}</a></td>
+                                <td>{{l.created_by}}</td>
+                                <td>{{l.server_created_on|date:"Y-m-d"}} </td>
+                                <td>{{l.get_product.product|default_if_none:'-'}}</td>
+                                <td>{{l.get_order_for_display|default_if_none:'-' }}</td>
+                                <td>{{l.get_shippment_address_display|default_if_none:'-'}}</td>
+                                <td>{{l.get_order_status_display}}</td>
+                                
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <nav aria-label="...">
+                    {% if data.has_other_pages %}
+                    <ul class="pagination justify-content-end " >
+                        {% if data.has_previous %}
+                        <li class="paginate_button page-item"><a class="page-link" href="?page=1">First</a></li>
+                        {% else %}
+                        <li class="paginate_button page-item disabled"><span class="page-link">First</span></li>
+                        {% endif %}
+                        {% for i in display_page_range %}
+                            {% if data.number == i %}
+                            <li class="page-item active" ><span class="page-link">{{ i }} <span class="sr-only">(current)</span></span></li>
+                            {% else %}
+                            <li class="paginate_button paginate_button page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                        {% if data.has_next %}
+                            <li class="paginate_button page-item"><a class="page-link" href="?page={{ data.paginator.num_pages }}">Last</a></li>
+                        {% else %}
+                            <li class="paginate_button page-item disabled"><span class="page-link">Last</span></li>
+                        {% endif %}
+                        </ul>
+                    {% endif %}
+                </nav> 
+            </div> 
+        </div> 
+    </div>
+</div> 
+{% endblock %}
+{% block extra_javascript %}
+<script src="{% static 'libs/sweetalert2/dist/sweetalert2.min.js' %}"></script>
+
+<!-- Required datatable js -->
+<script src="{% static 'libs/datatables.net/js/jquery.dataTables.min.js' %}"></script>
+<!-- <script src="{% static 'libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js' %}"></script> -->
+<!-- Buttons examples -->
+<script src="{% static 'libs/datatables.net-buttons/js/dataTables.buttons.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-buttons/js/buttons.colVis.min.js' %}"></script>
+
+<!-- Responsive examples -->
+<script src="{% static 'libs/datatables.net-responsive/js/dataTables.responsive.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js' %}"></script>
+
+<!-- Datatable init js -->
+<script src="{% static 'js/pages/datatables.init.js' %}"></script>
+
+</script>
+<script type="text/javascript" >
+    function Confirm(id, model,title) {
+        Swal.fire({
+            title: "Are you sure!",
+            text:"You want to "+ title +"?",
+            showCancelButton: !0,
+            confirmButtonColor: "#34c38f",
+            cancelButtonColor: "#f46a6a",
+            confirmButtonText: "Yes, "+ title +" it!",
+        }).then((result) => {
+            if (result.isConfirmed){
+                // window.location.href = '/'+model+'/'+id+'/delete/';
+                window.location.href = '/update_status/';
+            };
+                
+        })
+    };
+
+</script>
+{% endblock %}

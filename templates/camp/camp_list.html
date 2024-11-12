@@ -1,0 +1,317 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css'%}" rel="stylesheet" type="text/css">
+
+<!-- DataTables -->
+<link href="{% static 'libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+<link href="{% static 'libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<!-- Responsive datatable examples -->
+<link href="{% static 'libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">{% endblock %}
+
+{% block contents %}
+<style>
+    #btn-outline-danger {
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+}
+.datepicker{
+    display: inline-flex;
+    position: relative;
+    padding: 0px;
+    overflow: clip;
+    margin-top: 8px;
+    border: 0px;
+  }
+  .datepicker:focus-within {
+      outline: black auto 2px;
+  }
+  .datepicker > input[type=date] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    opacity: 0;
+      cursor:pointer;
+  }
+  .datepicker > input[type=date]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: -150%;
+    left: -150%;
+    width: 300%;
+    height: 300%;
+    cursor: pointer;
+  }
+/* .input-group>.form-control{
+    -webkit-box-flex: 0;
+    flex: 0;
+    padding: 0px!important;
+    height: 0px;
+} */
+.btn {
+   margin: 2px;
+}
+.btn-group, .btn-group-vertical {
+    margin-left: 0px;
+}
+.btn-group>.btn:not(:first-child) {
+    margin-left: 2px;
+}
+</style>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-body p-0">
+                    <form action="" class="needs-validation form-horizontal" autocomplete="off" enctype="multipart/form-data" novalidate  method="GET" id="filters">
+                        <div class="row">
+                            <div class="col-md-4">  
+                                <div class="mb-3">
+                                    <label for="state">State:</label>
+                                    <select  class="form-select select2"  aria-label="Floating label select example" 
+                                    placeholder="Choose State" id="state" name='state_name' >      
+                                        <option selected value="">Choose state</option>
+                                        {% for states in state %}
+                                            <option value="{{states.id}}" {% if states.id == state_names %}selected{% endif %}>{{states.name}}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>   
+                            </div>
+                            <div class="col-md-4">  
+                                <div class="mb-3">
+                                    <label for="district">District :</label>
+                                    <select  class="form-select select2"  aria-label="Floating label select example" placeholder="Choose District" id="district" name='district_name' >      
+                                        <option selected value="">Choose District</option>
+                                        {% for districts in district_obj %}
+                                        <option value="{{districts.id}}" {% if districts.id == district_names %}selected{% endif %}>{{districts.name}}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>   
+                            </div>
+                            <div class="col-md-4">  
+                                <div class="mb-3">
+                                    <label for="search">Name :</label>
+                                    <input type="text" id= "search" name="search" class='form-control' value='{{search}}' placeholder='Search...'>
+                                </div>   
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between" style="margin-right: 0;">
+                            <div class="">
+                                {% if state_names or district_names or search %}
+                                    <button type="button" class="btn btn-outline-dark waves-effect btn-xs" onclick="location.href='/camp_list/?export=true&state_name={{ state_names }}&district_name={{ district_names }}&search={{ search }}'"><i class="fa fa-download" title="Export"></i></button>
+                                {% else %}
+                                    <button type="button" class="btn btn-outline-dark waves-effect btn-xs" onclick="location.href='/camp_list/?export=true'"><i class="fa fa-download" title="Export"></i></button>
+                                {% endif %}
+                            </div>                            
+                            <div class="">
+                                <button type="submit" class="btn btn-outline-success waves-effect btn-xs float-right"><i class="fas fa-filter" title="Filter"></i></button>
+                                <button type="reset" id="filter_reset"  class=" btn btn-outline-warning waves-effect btn-xs float-right" ><i class="fas fa-refresh" title="Reset Filter"></i></button>
+                                {% if request.session.role_id == 4 %}
+                                <button type="button" class="btn btn-outline-primary waves-effect btn-xs float-right" onclick="location.href='/add_camp/'"><i class="bx bx-plus-medical" title="Add New"></i></button>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </form> 
+                </div>
+                <div class="table-responsive mb-3" data-pattern="priority-columns">
+                    <table id="datatables" class="table table-striped dt-responsive mb-0 mt-3">
+                        <thead class="table-light">
+                            <tr>
+                                <th>SI No</th>
+                                <th>Name</th>
+                                <th>Code</th>   
+                                <th>Date</th>
+                                <th>Start Time</th>   
+                                <th>End Time</th>
+                                <th>State</th>
+                                <th>District</th>   
+                                <th>Location</th>
+                                <th>Donor</th> 
+                                <th>VC Camp</th> 
+                                <th>Partner</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                                
+                            </tr>   
+                           
+                        </thead>
+                        <tbody>
+                            {% for l in data %}
+                            <tr>
+                                <td>{{ forloop.counter0|add:data.start_index }}</td>
+                                <td>{{l.name}}</td>
+                                <td>{{l.code}}</td>
+                                <td>{{l.date|date:"d-m-Y"}}</td>
+                                <td>{{l.start_time|default_if_none:'-'}}</td>
+                                <td>{{l.end_time|default_if_none:'-'}}</td>
+                                <td>{{l.district.state.name}}</th>
+                                <td>{{l.district}}</th>                                    
+                                <td>{{l.location}}</td>
+                                <td>{{l.donor}}</td>
+                                <td>{{l.vision_center|default_if_none:'-'}}</td>
+                                <td>{{l.partner|default_if_none:'-'}}</td>
+                                <td>{% if l.status == 2 %}Active {% else %}Inactive{% endif %}</td>
+                                <td>
+                                    <div class="btn-group flex-row align-items-center">
+                                        <a href="/edit_camp/{{l.id}}" class="btn btn-outline-secondary  edit" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                                        {% if l.status == 2 %}<button class='btn btn-outline-danger' onclick="Confirm('{{l.id}}', 'Deactivate')"><i class="mdi mdi-close-thick"  title="Deactivate"></i></button>{% else %}<button class='btn btn-outline-success' onclick="Confirm('{{l.id}}', 'Activate')"><i class="fas fa-check" title="Activate"></i></button>{% endif %}
+                                        <label class="datepicker">
+                                            <button class='btn btn-outline-success' onclick="openSelect('#camp_date{{l.id}}')"><i class="bx bx-calendar-event"  title="Calendar"></i>
+                                            </button>
+                                            {% if request.session.role_id == 4 %}
+                                            <input type="date" name = "camp_date" min='{{l.date|date:"Y-m-d"}}' onchange="OnSeletDate('{{l.id}}', this, 'date')" />  
+                                            {% endif %}
+                                        </label>
+                                    </div>
+                                </td>
+                                
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <nav aria-label="...">
+                    {% if data.has_other_pages %}
+                    <ul class="pagination justify-content-end "> 
+                        {% if data.has_previous %}
+                        <li class="paginate_button page-item"><a class="page-link" href="?page=1&state_name={{state_names}}&district_name={{district_names}}&search={{search}}">First</a></li>
+                        {% else %}
+                        <li class="paginate_button page-item disabled"><span class="page-link">First</span></li>
+                        {% endif %}
+                        {% for i in display_page_range %}
+                            {% if data.number == i %}
+                            <li class="page-item active"><span class="page-link">{{ i }} <span class="sr-only">(current)</span></span></li>
+                            {% else %}
+                            <li class="paginate_button paginate_button page-item"><a class="page-link" href="?page={{ i }}&state_name={{state_names}}&district_name={{district_names}}&search={{search}}">{{ i }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                        {% if data.has_next %}
+                            <li class="paginate_button page-item"><a class="page-link" href="?page={{ data.paginator.num_pages }}&state_name={{state_names}}&district_name={{district_names}}&search={{search}}">Last</a></li>
+                        {% else %}
+                            <li class="paginate_button page-item disabled"><span class="page-link">Last</span></li>
+                        {% endif %}
+                        </ul>
+                    {% endif %}
+                </nav> 
+            </div> 
+        </div> 
+        <!-- {% if orderrequestdetails.order_request.order_status == 1 %}<button class='btn btn-danger' onclick="Confirm('{{l.id}}', '{{model}}', 'pending')">pending</button>{% else %}<button class='btn btn-success' onclick="Confirm('{{l.id}}', '{{model}}', 'Submit for approval')">Submit for approval</button>{% endif %} -->
+    </div>
+</div> 
+
+{% endblock %}
+{% block extra_javascript %}
+<script src="{% static 'libs/sweetalert2/dist/sweetalert2.min.js' %}"></script>
+<script src="{% static 'libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js'%}"></script>
+<!-- Required datatable js -->
+<script src="{% static 'libs/datatables.net/js/jquery.dataTables.min.js' %}"></script>
+<!-- <script src="{% static 'libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js' %}"></script> -->
+<!-- Buttons examples -->
+<script src="{% static 'libs/datatables.net-buttons/js/dataTables.buttons.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-buttons/js/buttons.colVis.min.js' %}"></script>
+
+<!-- Responsive examples -->
+<script src="{% static 'libs/datatables.net-responsive/js/dataTables.responsive.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js' %}"></script>
+
+<!-- Datatable init js -->
+<script src="{% static 'js/pages/datatables.init.js' %}"></script>
+
+<script type="text/javascript" >
+    function OnSeletDate(capid, date, title) {
+        Swal.fire({
+            title: 'Please Enter Reason For Delay?',
+            input: 'textarea',
+            showCancelButton: true,
+            confirmButtonText: 'Yes',
+            inputValidator: function (value) {
+                return !value && 'You need to write something!'
+            }
+        }).then((result) => {
+            if (result.isConfirmed){
+                window.location.href = '/camp_date_update/'+capid+'/'+date.value+'/'+result.value +'/';
+            };
+        })
+    }
+    function openSelect(file, date){
+        $(file).datepicker('show');
+      }
+
+    function Confirm(id, title) {
+        Swal.fire({
+            title: "Are you sure!",
+            text:"You want to "+ title +"?",
+            showCancelButton: !0,
+            confirmButtonColor: "#34c38f",
+            cancelButtonColor: "#f46a6a",
+            confirmButtonText: "Yes, "+ title +" it!",
+        }).then((result) => {
+            if (result.isConfirmed){
+                window.location.href = '/'+id+'/delete_camp/';
+            };
+                
+        })
+    };
+
+</script>
+<script type="text/javascript">
+    $('#filter_reset').click(function() {
+        $('#state').val('');
+        $('#district').prop('selectedIndex', 0).change();
+        $('#search').val('');
+        
+        this.form.submit();
+  });
+
+    
+    document.addEventListener('DOMContentLoaded', function() {
+    $('#state').change(function() {
+        var optionSelected = $(this).find("option:selected");
+        var valueSelected = optionSelected.val();
+        
+        if (valueSelected === "") {
+            $("#district option").remove();
+            return; 
+        }
+
+        $.ajax({
+            type: "GET",
+            url: '/ajax/district/' + valueSelected + '/',
+            success: function(result) {
+                $("#district option").remove();
+                a = '<option selected value="">Choose District Name</option>';
+                $("#district").append(a);
+
+                if (JSON.parse(result) == 0) {
+                    $("#district option").remove();
+                    a = '<option selected value="">No district is mapped to this State</option>';
+                    console.log(a)
+                    $("#district").append(a);
+                } else {
+                    $.each(JSON.parse(result), function(key, value) {
+                        a = '<option value=' + value['id'] + '>' + value['name'] + '</option>';
+                        $("#district").append(a);
+                    });
+                }
+            }
+        });
+    });
+
+});
+
+
+    
+</script>
+{% endblock %}

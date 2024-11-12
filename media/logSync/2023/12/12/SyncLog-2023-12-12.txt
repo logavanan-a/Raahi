@@ -1,0 +1,191 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 12/12/2023, 11:03:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/12/2023, 11:03:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/12/2023, 11:03:39hrs[
+    {
+        "aided_distance_le": 87,
+        "aided_distance_re": 88,
+        "aided_near_le": 96,
+        "aided_near_re": 94,
+        "app_created_at": "2023-12-11T22:18:05",
+        "app_updated_at": "2023-12-12T11:03:36",
+        "color_le": 117,
+        "color_re": 116,
+        "partner_id": 13,
+        "pinhole_distance_le": 87,
+        "pinhole_distance_re": 85,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "20231211221732d8425bfe-d6fe-4027-9279-756b9f40dc2c",
+        "sync_status": 0,
+        "treatment_for_refraction": 120,
+        "un_aided_distance_le": 85,
+        "un_aided_distance_re": 85,
+        "un_aided_near_le": 93,
+        "un_aided_near_re": 95,
+        "uuid": "20231211221805802d8b14-1088-41e3-95c3-259d8a4b1d49",
+        "vision_center_id": 85,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 12/12/2023, 11:03:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/12/2023, 11:03:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/12/2023, 11:03:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/12/2023, 11:03:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/12/2023, 18:11:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/12/2023, 18:11:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/12/2023, 18:11:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/12/2023, 18:11:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/12/2023, 18:11:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/12/2023, 18:11:55hrs[
+    {
+        "id": 78,
+        "app_created_at": "2023-10-17T12:56:04",
+        "app_updated_at": "2023-10-17T12:56:04",
+        "status": 2,
+        "server_created_on": "2023-10-17T12:56:05.176075+05:30",
+        "server_modified_on": "2023-10-17T12:56:05.176103+05:30",
+        "uuid": "20231017125604735ea5e9-4adf-4145-b591-0a01690777b1",
+        "screening_uuid": "202310171256046b2ca839-ca74-4876-8ab7-0508d1ae1576",
+        "patient_uuid": "20231017125413c9e97fe0-9e9c-49f3-a214-b926005a4abbb",
+        "partner_id": 23,
+        "vision_center_id": 88,
+        "name": "",
+        "sex": 2,
+        "age": 25,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "relationship_to_respondent": 195,
+        "educational_qualification": 206,
+        "occupation": 216,
+        "monthly_average_income": 220
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 12/12/2023, 18:11:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/12/2023, 18:11:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/12/2023, 18:11:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/12/2023, 18:11:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/12/2023, 18:11:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/12/2023, 18:11:57hrs[
+    {
+        "id": 78,
+        "app_created_at": "2023-10-17T12:56:04",
+        "app_updated_at": "2023-10-17T12:56:04",
+        "status": 2,
+        "server_created_on": "2023-10-17T12:56:05.176075+05:30",
+        "server_modified_on": "2023-10-17T12:56:05.176103+05:30",
+        "uuid": "20231017125604735ea5e9-4adf-4145-b591-0a01690777b1",
+        "screening_uuid": "202310171256046b2ca839-ca74-4876-8ab7-0508d1ae1576",
+        "patient_uuid": "20231017125413c9e97fe0-9e9c-49f3-a214-b926005a4abbb",
+        "partner_id": 23,
+        "vision_center_id": 88,
+        "name": "",
+        "sex": 2,
+        "age": 25,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "relationship_to_respondent": 195,
+        "educational_qualification": 206,
+        "occupation": 216,
+        "monthly_average_income": 220
+    }
+]

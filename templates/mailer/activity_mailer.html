@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Raahi form Responses</title>
+    <style>
+        th,td {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <p>Dear Admin Team,</p></b>
+    <p>The following are the details on the form responses:</p></b>
+    {% if not cron_content %}
+    {% if content %}
+    <div class="table-responsive">
+        <table border=1 style="border-collapse: collapse;" class="table">
+            <thead>
+                <tr>
+                    <th rowspan="2">Form</th>
+                    <th colspan="2">Yesterday's Responses</th>
+                    <th colspan="2">Current Week Response</th>
+                    <th colspan="2">Current Month Response</th>
+                    <th rowspan="2">Total Responses</th>
+                </tr>
+                <tr>
+                    <th>Created</th>
+                    <th>Modified</th>
+                    <th>Created</th>
+                    <th>Modified</th>
+                    <th>Created</th>
+                    <th>Modified</th>
+                <tr>
+            </thead>
+            <tbody>
+                {{ content|safe }}
+            </tbody>
+        </table>
+    </div>
+    {% endif %}
+    <div style="margin-top: 10px;">
+        {% if push_content %}
+        {% if content %}<h3><u>Sync Status :-</u></h3> {% endif %}
+        <table border=1 style="border-collapse: collapse;" class="table">
+            <thead>
+                <tr>
+                    <th>Syn Push List</th>
+                    <th>Total number of empty push Input</th>
+                    <th>Total number of NON EMPTY push Input</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ push_content|safe }}
+            </tbody>
+        </table>
+        <div>
+            {{ error_syn_content|safe }}
+        </div>
+        {% else %}
+        <p>Thanks for regards</p>
+        {% endif %}
+    </div>
+    {% endif %}
+    {% if cron_content %}
+    <div style="margin-top: 10px;">
+        <table border=1 style="border-collapse: collapse;" class="table">
+            <thead>
+                <tr>
+                    <th>Script</th>
+                    <th>Recent Refresh</th>
+                    <th>Last Successful Refresh</th>
+                    <th>Time</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ cron_content|safe }}
+            </tbody>
+        </table>
+    <div>
+    {% endif %}
+</body>
+</html>

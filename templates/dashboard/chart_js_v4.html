@@ -1,0 +1,440 @@
+{% load static %}
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script type="text/javascript">
+  var datas = {};
+  var chartsRef = { "stay_since_adoption_inquiry": "", "last_review_by_cwc": "", "visitation": "", "categories_in_cci": "", "recommended_adoption_view": "", "classification_visitation": "", "orphaned_unfit_guardians": "", "stay_in_cci": "", "children_with_unfit_parents": "", "children_cases_being_worked_on": "", "child_adpotion_status": "", "stages_cases_being_worked_on": "" };
+
+  var chartsFunctionname = {};
+
+  var chartsDefaultPointer = {};
+
+  var chartsHandPointer = {};
+
+  {% for ct in data_html.chart %}
+  {% if ct.click_url_template != "" %}
+  window.{ { ct.chart_name } } _click_handler = function () {
+    var selectedChart = chartsRef['{{ct.chart_name}}'];
+    var selection = selectedChart.getSelection();
+    var click_url_template = '{{ct.click_url_template}}';
+    {%if ct.chart_row_id_value %}
+    var chart_row_id_value = {{ ct.chart_row_id_value }};
+    {% else %}
+    var chart_row_id_value = [];
+    {% endif %}
+    var url = click_url_template.replaceAll("&amp;", "&");
+    url = url.replace('chcl_state=&', 'chcl_state=' + $('#chcl_state').val() + '&');
+    url = url.replace('chcl_district=&', 'chcl_district=' + $('#chcl_district').val() + '&');
+    url = url.replace('chcl_shelter=&', 'chcl_shelter=' + $('#chcl_shelter').val() + '&');
+    var row_id = -1;
+    for (var i = 0; i < selection.length; i++) {
+      if (selection[i].row != null) {
+        url = url.replace('chcl_chart_row=&', 'chcl_chart_row=' + selection[i].row + "&");
+        row_id = selection[i].row;
+        if (chart_row_id_value.length > 0) {
+          url = url.replace('chcl_chart_data_id=', 'chcl_chart_data_id=' + chart_row_id_value[selection[i].row]);
+        }
+        if (selection[i].column != null) {
+          url = url.replace('chcl_chart_col=&', 'chcl_chart_col=' + selection[i].column + "&");
+        }
+        break;
+      }
+    }
+    if (url.length > 0 && row_id != -1) {
+      url = url.replaceAll("&amp;", "&");
+      window.open(url, '{{ct.chart_name}} - Report');
+    }
+  }          
+
+  window.displayDefaultPointer_{ { ct.chart_name } } = function() {
+    $('#{{ct.chart_name}}').css('cursor', 'default');
+  }
+  window.displayHandPointer_{ { ct.chart_name } } = function() {
+    $('#{{ct.chart_name}}').css('cursor', 'pointer')
+  }
+  chartsFunctionname['{{ct.chart_name}}'] = window.{ { ct.chart_name } } _click_handler;
+  chartsDefaultPointer['{{ct.chart_name}}'] = window.displayDefaultPointer_{ { ct.chart_name } };
+  chartsHandPointer['{{ct.chart_name}}'] = window.displayHandPointer_{ { ct.chart_name } };
+  {% endif %}
+  {% endfor %}
+
+
+  datas = {{ data | safe }};
+  var chart;
+
+  for (data in datas.chart) {
+    var value = datas.chart[data];
+    if (value.chart_type == 'CARDCHART') {
+      chartsRef[value.chart_name] = chart;
+      continue;
+    }
+    const colours = value.colours
+    if (colours != undefined) {
+      for (var i = 0; i < value['datas'].length; i++) {
+        value['datas'][i].push(colours[i])
+      }
+    }
+    
+
+    var options = value.options;
+    var on_click_url_template = value.click_url_template;
+    var chart_type = value.chart_type;
+    var containerID = value.chart_name;
+
+    if (value.datas.length == 0) {
+      document.getElementById(containerID).append("Data Not Available");
+    }
+    else {
+      if (chart_type == 'COLUMNCHART') {
+        // if all values are empty display "Data Not Available" instead of empty chart
+        var arrayColumn = (arr, n) => arr.map(x => x[n]);
+        var second_column = arrayColumn(value.datas, 1);
+        var slice_first_row = second_column.slice(1, second_column.length);
+        var all_array_value = slice_first_row.filter(x => x > 0).length >= 1;
+        if (all_array_value == true) {
+          document.getElementById(containerID).append("Data Not Available");
+
+        }
+        else {
+          document.getElementById(containerID).append("Data Not Available");
+        }
+      }
+      else if (chart_type == 'PIECHART') {
+        var arrayColumn = (arr, n) => arr.map(x => x[n]);
+        var second_column = arrayColumn(value.datas, 1);
+        var slice_first_row = second_column.slice(1, second_column.length);
+        var all_array_value = slice_first_row.filter(x => x > 0).length >= 1;
+        if (all_array_value == true) {
+          const pieChartData = {
+            labels: value.label,
+            datasets: [{
+              label: '',
+              backgroundColor: options.colors,
+              data: second_column, // Adjust the count as needed
+            }],
+          };
+          const pieChartConfig = {
+              type: 'pie',
+              data: pieChartData,
+              options: {
+                  ...options.options,
+                  plugins: {
+                      ...options.options.plugins,
+                      tooltip: {
+                          callbacks: {
+                              label: function(context) {
+                                  var label = context.label || '';
+                                  var value = context.raw || 0;
+                                  var percent = context.dataIndex !== undefined ? (pieChartData.datasets[0].data[context.dataIndex] / pieChartData.datasets[0].data.reduce((a, b) => a + b, 0) * 100).toFixed(2) + '%' : '';
+                                  return label + ': ' + value + ' (' + percent + ')';
+                              }
+                          }
+                      }
+                  }
+              }
+          };
+          const ctx = document.getElementById(containerID).getContext('2d');
+          const myPieChart = new Chart(ctx, pieChartConfig);
+        }
+        else {
+          document.getElementById(containerID).append("Data Not Available");
+        }
+      }
+
+
+
+      else if(chart_type == 'PROGRESSIVEBARCHART' )
+        {
+          const data = [];
+          const data2 = [];
+          let prev = parseInt(value.datas[0][0]);
+          let prev2 = parseInt(value.datas[0][1]);
+          var biggerNumber = Math.max(prev, prev2);
+          console.log(biggerNumber)
+          for (let i = 0; i < biggerNumber; i++) {
+            data.push({x: i, y: prev});
+            data2.push({x: i, y: prev2});
+          }
+
+          const config = {
+            type: 'line',
+            data: {
+              datasets: [{
+                borderColor: 'red',
+                borderWidth: 1,
+                radius: 0,
+                data: data,
+              },
+              {
+                borderColor: 'blue',
+                borderWidth: 1,
+                radius: 0,
+                data: data2,
+              }]
+            },
+            options: {
+              animation: {
+                x: {
+                  type: 'number',
+                  easing: 'linear',
+                  duration: (ctx) => ctx.index / data.length * 5000 / data.length,
+                  from: NaN,
+                  delay(ctx) {
+                    if (ctx.type !== 'data' || ctx.xStarted) {
+                      return 0;
+                    }
+                    ctx.xStarted = true;
+                    return ctx.index / data.length * 5000;
+                  }
+                },
+                y: {
+                  type: 'number',
+                  easing: 'linear',
+                  duration: (ctx) => ctx.index / data.length * 5000 / data.length,
+                  from: (ctx) => ctx.index === 0 ? ctx.chart.scales.y.getPixelForValue(100) : ctx.chart.getDatasetMeta(ctx.datasetIndex).data[ctx.index - 1].getProps(['y'], true).y,
+                  delay(ctx) {
+                    if (ctx.type !== 'data' || ctx.yStarted) {
+                      return 0;
+                    }
+                    ctx.yStarted = true;
+                    return ctx.index / data.length * 5000;
+                  }
+                }
+              },
+              interaction: {
+                intersect: false,
+              },
+              plugins: {
+                legend: false,
+              },
+              scales: {
+                x: {
+                  type: 'linear',
+                },
+              },
+            },
+          };
+
+          const ctx = document.getElementById(containerID).getContext('2d');
+          const myLineChart = new Chart(ctx, config);
+        }
+      else if(chart_type == 'LINECHART' )
+        {
+          // if all values are empty display "Data Not Available" instead of empty chart
+          var arrayColumn = (arr, n) => arr.map(x => x[n]);
+          var second_column = arrayColumn(value.datas, 1);
+          var slice_first_row = second_column.slice(1, second_column.length);
+          var all_array_value = slice_first_row.filter(x => x > 0).length >= 1;
+          const data_line = {
+            labels: value.datas,
+            datasets: [
+              {
+                label: 'Screening',
+                data: value.datas2,
+                borderColor: 'rgba(75, 192, 192, 1)',
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderWidth: 2,
+                borderRadius: Number.MAX_VALUE,
+                borderSkipped: false,
+              }
+            ]
+          };
+
+          const config_line = {
+            type: 'line',
+            data: data_line,
+            options: {
+              ...options.options,
+            }
+          };
+          const ctx_line = document.getElementById(containerID).getContext('2d');
+          const myLine2Chart = new Chart(ctx_line, config_line);
+        }
+      else if (chart_type == 'BARCHART') {
+        var arrayColumn = (arr, n) => arr.map(x => x[n]);
+        var second_column = arrayColumn([["", "", { "role": "style" }], ["Shelter14", 1, "#FFAA00"]], 1);
+        var slice_first_row = second_column.slice(1, second_column.length);
+        var all_array_value = slice_first_row.filter(x => x > 0).length >= 1;
+        datasets_list = []
+        for (var fruit of value.datas.slice(1)) {
+          datasets_list.push(parseInt(fruit[1]))
+        }
+        if (all_array_value == true) {
+          const barChartData = {
+            labels: value.label,
+            datasets: [{
+                label: value.label_1,
+                data: datasets_list,
+                backgroundColor: options.colors,  // Background color of bars
+                borderColor: options.bordercolor,  // Background color of bars
+                borderWidth: options.borderwidth,
+                borderRadius: 0,
+                borderSkipped: false,  // Background color of bars
+            }]
+          };
+          const barChartConfig = {
+            type: 'bar',
+            data: barChartData,
+            options: {
+                  ...options.options,
+                  plugins: {
+                      ...options.options.plugins,
+                      tooltip: {
+                          callbacks: {
+                              label: function(context) {
+                                  var label = context.label || '';
+                                  var value = context.raw || 0;
+                                  var percent = context.dataIndex !== undefined ? (barChartData.datasets[0].data[context.dataIndex] / barChartData.datasets[0].data.reduce((a, b) => a + b, 0) * 100).toFixed(2) + '%' : '';
+                                  return label + ': ' + value + ' (' + percent + ')';
+                              }
+                          }
+                      }
+                  }
+              }
+          };
+          const ctx = document.getElementById(containerID).getContext('2d');
+          const mybarChart = new Chart(ctx, barChartConfig);
+
+        }
+        else {
+          document.getElementById(containerID).append("Data Not Available");
+
+        }
+      }
+      else if (chart_type == 'AREALINECHART') {
+        const Utils = {
+          CHART_COLORS: {
+            "red": "rgb(255, 99, 132)",
+            "blue": "rgb(54, 162, 235)"
+            // Add more colors if needed
+          },
+          transparentize: function(color) {
+            // Implement transparentize logic if needed
+            return color;
+          },
+          months: function(options) {
+            // Implement months logic if needed
+            return [];
+          },
+          numbers: function(inputs) {
+            // Implement numbers logic if needed
+            return [];
+          },
+          srand: function(seed) {
+            // Implement srand logic if needed
+          }
+        };
+        const inputs = {
+          min: -100,
+          max: 100,
+          count: 8,
+          decimals: 2,
+          continuity: 1
+        };
+
+        const generateLabels = () => {
+          return Utils.months({count: inputs.count});
+        };
+
+        Utils.srand(3);
+        const generateData = () => (Utils.numbers(inputs));
+        
+
+        const data = {
+          labels: value.datas,
+          datasets: [
+            {
+              label: value.label_1,
+              data: value.datas2,
+              borderColor: Utils.CHART_COLORS.red,
+              backgroundColor: Utils.CHART_COLORS.red,
+              fill: true
+            },
+            {
+              label: value.label_2,
+              data: value.datas3,
+              borderColor: Utils.CHART_COLORS.blue,
+              backgroundColor: Utils.transparentize(Utils.CHART_COLORS.blue),
+              // changed `fill` propery from `true` to `false`
+              fill: false
+            }
+          ]
+        };
+        const config = {
+          type: 'line',
+          data: data,
+          options: {
+            plugins: {
+              filler: {
+                propagate: false,
+                // added `drawTime` property here
+                drawTime: "beforeDraw",
+              },
+              title: {
+                display: false,
+                text: (ctx) => 'drawTime: ' + ctx.chart.options.plugins.filler.drawTime
+              }
+            },
+            pointBackgroundColor: '#fff',
+            radius: 10,
+            interaction: {
+              intersect: false,
+            }
+          },
+        };
+        var ctx = document.getElementById(containerID).getContext('2d');
+        ctx.canvas.style.marginTop = '85px';
+        new Chart(ctx, config);
+      }
+      else if (chart_type == 'DOUGHNUT') {
+        const DataDoughnutChart = {
+          labels: value.datas,
+          datasets: [
+            {
+              label: '',
+              data: value.datas2,
+              backgroundColor: [
+                'rgba(255, 99, 132, 0.5)',
+                'rgba(255, 159, 64, 0.5)',
+                'rgba(255, 205, 86, 0.5)',
+                'rgba(75, 192, 192, 0.5)',
+                'rgba(54, 162, 235, 0.5)'
+              ],
+              borderColor: [
+                'rgb(255, 99, 132)',
+                'rgb(255, 159, 64)',
+                'rgb(255, 205, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(54, 162, 235)'
+              ],
+              borderWidth: 1
+            }
+          ]
+        };
+
+        const configDoughnutChart = {
+          type: 'doughnut',
+          data: DataDoughnutChart,
+          options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                position: 'right',
+              },
+              
+            }
+          }
+        };
+
+        const ctxDoughnutChart = document.getElementById(containerID).getContext('2d');
+        const myDoughnutChart = new Chart(ctxDoughnutChart, configDoughnutChart);
+
+      }
+    }
+    chartsRef[value.chart_name] = chart;
+  }
+
+</script>
+
+

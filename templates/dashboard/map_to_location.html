@@ -1,0 +1,186 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contents %}
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<style>
+    #map {
+        height: 100%;
+    }
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .list-group-item {
+        padding: 0.50rem 1.25rem;
+    }
+    .map-button {
+            background-color: #4c447d;; 
+            color: #fff; 
+            padding: 8px 11px;      
+    }
+    .list-group-item+.list-group-item {
+        border-top-width: 1px;
+    }
+.btn-check:focus+.btn, .btn:focus {
+    box-shadow: none;
+}
+</style>
+<div class="col-12">
+    <div class="card">
+        <div class="card-body">
+            <form action="" method="get" class="mb-3">
+                <div class="row justify-content-start">
+                    <div class="col-md-5 mt-3">
+                        <div class="row">
+                            <label for="" class="col-md-4 col-form-label"><b>View By : </b><span class="required-field"></span></label>
+                            <div class="list-group col-md-8">
+                                <div class="row d-flex">    
+                                    <div class="col-md-6 list-group-item">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="view_by" id="partners_radio" value="1" {%if view_by == "1" %} checked {% endif %} required >
+                                            <label class="form-check-label" for="camps_radio">Partner</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 list-group-item">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="view_by" id="vision_radio" value="2" {%if view_by|slugify == "2" %} checked {% endif %} required >
+                                            <label class="form-check-label" for="partners_radio">Vision Center</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-lg-5 mt-3" id="partner_hide">
+                        <select  class="form-select select2"  aria-label="Floating label select example" 
+                         id="partner" name='partner' >      
+                            <option selected value="">Select Partner </option>
+                            {% for partner in partner_dropdown %}
+                                <option value="{{partner.id}}" {% if partner.id|slugify == partner_id %}selected{% endif %}>{{partner.name}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    
+                    
+                    <div class="col-lg-2 mt-3  ">
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="form-control btn btn-success waves-effect btn-xs float-right">Search</button>
+                            <button type="reset" id="filter_reset" class="form-control btn btn-warning waves-effect btn-xs float-right">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+    <div class="card">
+        <div class="card-body">
+            <div id="map" style="width: 100%; height: 65vh;"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_javascript %}
+
+<script>
+    console.log()
+    let map;
+    const locations = {{hos_lalu|safe}}
+    // const locations = [{ "lat": 13.011057641416775, "lng": 77.6744928820286, "name": 'Spandana hospital and Hcc' }, { "lat": 13.020674574140116, "lng": 77.6760807497829, "name": 'KOSHYS MULTISPECIALITY HOSPITAL' }, { "lat": 13.037185405354155, "lng": 77.59206756961966, "name": 'Dattatreya Multispeciality Clinic' }, , { "lat": 13.00639235674736, "lng": 77.70043551969266, "name": 'Sri NMPC Hospital' }, { "lat": 12.912527621500807, "lng": 77.57306826146537, "name": 'Bharath Nursing Home' }, { "lat": 12.912109319995256, "lng": 77.59298098141107, "name": 'Divakars Speciality Hospital' }, { "lat": 12.89018934208794, "lng": 77.58190882247575, "name": 'Neighbourhood Hospital' }, { "lat": 12.90970415921018, "lng": 77.47820423939193, "name": 'H.K. HOSPITAL' }, { "lat": 12.935303167408764, "lng": 77.48781727660712, "name": 'Chirayu Multi Speciality Clinic' }, { "lat": 12.976595088434424, "lng": 77.64676679624436, "name": 'The Life Plus Hospital' }, { "lat": 12.971911275334824, "lng": 77.63685335161621, "name": 'ESI Hospital' }, { "lat": 12.986380627457251, "lng": 77.64428483472068, "name": 'Epidemic Diseases Hospital' }, { "lat": 13.056172564238485, "lng": 77.5071501747364, "name": 'Prakriya Hospitals' }, { "lat": 13.028884726191833, "lng": 77.5430514061545, "name": 'SPARSH Hospital Yeshwanthpur' }, { "lat": 13.036880774084334, "lng": 77.58912254124729, "name": 'Baptist Hospital' }, { "lat": 13.025623481521142, "lng": 77.53386752238644, "name": 'Search Hospital' }, { "lat": 12.976657134168653, "lng": 77.52328522845175, "name": 'Manasa Hospital' }, { "lat": 12.991209410414543, "lng": 77.60126404918813, "name": 'Church of South India Hospital' }, { "lat": 12.982088217630606, "lng": 77.60791288696745, "name": 'Lakkatura Tea Estate Hospital' }, { "lat": 13.010214505915044, "lng": 77.49851013471643, "name": 'Shushruti hospital' }, { "lat": 12.916612105688698, "lng": 77.63740984285775, "name": 'Narayana Multispeciality Clinic' }, { "lat": 12.924977851949835, "lng": 77.64753786420945, "name": 'SAI THUNGA MULTISPECIALITY HOSPITALS' }, { "lat": 13.01873700682338, "lng": 77.71454856338833, "name": 'Vitals mother and child hospital' }, { "lat": 13.021571859837724, "lng": 77.71284004786008, "name": 'Sathya Sai Orthopaedic and Multi-specialty Hospital' },
+    // { "lat": 12.9716, "lng": 77.5946, "name": "SOCIAL BYTES", "details": "8-125/255,Tinfactory,Banglore, Banglore, KA" },
+    // { "lat": 13.0106, "lng": 77.5603, "name": "Location 2", "details": "8-125/255,Tinfactory,Banglore, Banglore, KA" },
+    // { "lat": 12.9841, "lng": 77.6013, "name": "Location 3", "details": "Details 3" },
+    // ];
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: { "lat": 12.9716, "lng": 77.5946 },
+            // zoom: 10,
+        });
+
+        const infowindows = [];
+        const bounds = new google.maps.LatLngBounds();
+
+        const customIcon = {
+            url: 'https://cdn-icons-png.flaticon.com/128/3459/3459109.png', // Replace with your custom icon image URL
+            scaledSize: new google.maps.Size(40, 40), // Adjust the size as needed
+        };
+        locations.forEach(location => {
+            const marker = new google.maps.Marker({
+                position: { "lat": location.lat, "lng": location.lng },
+                map,
+            });
+
+            bounds.extend(marker.getPosition());
+            const infowindow = new google.maps.InfoWindow({
+                content: `
+                  <h3>${location.name}</h3>
+                  <p>${location.details || ''}</p>
+                  <div class="info-window-popup">
+                        <div class="info-window-header">
+                        <img src="">
+                        </div>
+                        <div class="info-window-content">
+                        
+                        <div class="info-window-item"></div>
+                        <div class="outlet-actions">
+                        <a class="btn btn-map" href="https://www.google.com/maps?q=${location.lat},${location.lng}" target="_blank">
+                        <button class="map-button">
+                            Map
+                        </button>
+                        </a>
+                        </div>
+                        </div>
+                  </div>
+              `,
+            });
+
+            marker.addListener("click", () => {
+                // Close any other open info windows
+                infowindows.forEach(iw => iw.close());
+
+                // Open the clicked marker's info window
+                infowindow.open(map, marker);
+                infowindows.push(infowindow);
+            });
+        });
+        map.fitBounds(bounds);
+    }
+
+</script>
+<script>
+    var view_by = '{{view_by}}'
+    if(view_by == '2'){
+        document.getElementById('partner_hide').style.display = "block"
+    }else{
+        document.getElementById('partner_hide').style.display = "none"
+    }
+
+    const radioButtons = document.getElementsByName('view_by');
+    radioButtons.forEach((radio) => {
+        radio.addEventListener('change', function () {
+            if (this.value === '2') {
+                document.getElementById('partner_hide').style.display = "block"
+            }else{
+                $('#partner').prop('selectedIndex', 0).change();
+                document.getElementById('partner_hide').style.display = "none"
+            }
+        });
+    });
+    $("#filter_reset").click(function() {
+        console.log('oipppppp')
+        $('#partner').prop('selectedIndex', 0).change();
+        $('#partners_radio').prop('checked',true);
+        $('#vision_radio').prop('checked',false);
+        this.form.submit();
+    });
+</script>
+<script src="https://maps.google.com/maps/api/js?key={{key}}&callback=initMap"></script>
+
+{% endblock %}

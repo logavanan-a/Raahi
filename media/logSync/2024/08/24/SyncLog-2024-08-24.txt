@@ -1,0 +1,91 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 08/24/2024, 10:31:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/24/2024, 10:31:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/24/2024, 10:31:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/24/2024, 10:31:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/24/2024, 10:31:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/24/2024, 10:31:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/24/2024, 10:31:45hrs[
+    {
+        "address": "",
+        "block": "",
+        "coordinator_mobile_no": "9954132465",
+        "coordinator_name": "BISWAJIT NATH SAMAJPATI",
+        "created_by": 153,
+        "date": "2024-08-25",
+        "delay_reason": "",
+        "district": 714,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "SsILCHAR",
+        "modified_by": 153,
+        "name": "ISBT, RAMNAGAR",
+        "partner": 37,
+        "uuid": "202408241031372f41c54d-2d09-4413-96f9-67d07b9f7c13",
+        "village": "",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/24/2024, 10:31:45hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "202408241031372f41c54d-2d09-4413-96f9-67d07b9f7c13",
+            "id": 191,
+            "code": 185,
+            "SCO": "2024-08-24 05:01:45.840523+00:00",
+            "SMO": "2024-08-24 05:01:45.840673+00:00",
+            "sync_status": 2
+        }
+    ]
+}

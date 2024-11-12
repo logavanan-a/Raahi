@@ -1,0 +1,209 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 16:22:28hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 16:22:28hrs{
+    "user_id": 119
+}
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 16:24:58hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 16:24:58hrs{
+    "user_id": 119
+}
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 16:38:32hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 16:38:32hrs{
+    "user_id": 119
+}
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 16:40:06hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 16:40:06hrs{
+    "user_id": 119
+}
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 19:03:27hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 19:03:27hrs{
+    "user_id": 127
+}
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 19:05:36hrs[
+    {
+        "aadhaar_pan_no": "183848484775",
+        "age": 56,
+        "app_created_at": "2024-02-07T19:05:34",
+        "app_updated_at": "2024-02-07T19:05:34",
+        "camp": 0,
+        "contact_no_1": "7946833864",
+        "contact_no_2": "",
+        "district": 512,
+        "donor": 1,
+        "drivers_license_no": "",
+        "educational_qualification": 238,
+        "feedback": "Good",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 40,
+        "id": 0,
+        "language": 1,
+        "latitude": "13.011521198786795",
+        "life_insurance_policy": 1,
+        "longitude": "77.66018385998905",
+        "monthly_income": 33,
+        "name": "Shikar",
+        "no_of_months_employed_in_a_year": "",
+        "partner_id": 57,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 0,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "JH-20-365562",
+        "user": 127,
+        "uuid": "20240207190534e4635cf1-5ace-413d-b9e1-624f7aec9887",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 110
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 19:05:36hrs{
+    "Text": "Thank you for participating in VisionCenterJha & Jharkhnad-Sightsavers National Truckers Programme. Your registration ID is JH-20-365562. We wish you a safe and happy journey. Sightsavers : : ROYAL COMMONWEALTH SOCIETY FOR THE BLIND.",
+    "Number": "917946833864",
+    "SenderId": "RCSBSS",
+    "DRNotifyUrl": "https://raahistaging.mahiti.org/otp-sms/",
+    "DRNotifyHttpMethod": "POST",
+    "Message": "Accepted",
+    "Tool": "API"
+}
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 19:05:36hrs{
+    "ApiId": "a65a2b03-5929-4ab8-b4b5-693de97af48f",
+    "MessageUUID": "260d5183-8757-48e8-9ce4-383e7f194a92",
+    "Message": "Messages Queued",
+    "Success": "True"
+}
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 19:05:36hrs"<Response [202]>"
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 19:05:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 19:05:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 19:05:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 19:05:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 19:05:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 19:05:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 02/07/2024, 19:05:36hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "20240207190534e4635cf1-5ace-413d-b9e1-624f7aec9887",
+            "patient_id": null,
+            "SCO": "2024-02-07 13:35:36.527759+00:00",
+            "SMO": "2024-02-07 13:35:36.527798+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}

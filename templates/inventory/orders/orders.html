@@ -1,0 +1,262 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+
+<!-- DataTables -->
+<link href="{% static 'libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+<link href="{% static 'libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<!-- Responsive datatable examples -->
+<link href="{% static 'libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+{% comment %} <link href="{% static 'libs/admin-resources/rwd-table/rwd-table.min.css' %}" rel="stylesheet" type="text/css" /> {% endcomment %}
+
+{% endblock %}
+
+{% block contents %}
+{% csrf_token %}
+<style>
+    #btn-outline-danger {
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+}
+</style>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <form action="" method="get" class="mb-2">
+                    <div class="row">
+                        <div class="col-md-4">  
+                            <div class="mb-3">
+                                <label for="product">Product:</label>
+                                <select class="form-select select2" placeholder="Choose Product" id="product" name='product_name'>      
+                                    <option value="">Choose Product</option>
+                                    {% for product in products %}
+                                        <option value="{{ product.id }}" {% if product.id|slugify == product_names %}selected{% endif %}>{{ product.name }}</option>
+                                    {% endfor %}
+                                </select>
+
+                            </div>   
+                        </div>
+                        <div class="col-md-4">  
+                            <div class="mb-3">
+                                <label for="order_status">Order Status :</label>
+                                <select  class="form-select select2"  placeholder="Choose Order Status" id="order_status" name='order' >      
+                                    <option value="">Choose Order Status</option>
+                                    {% if request.session.role_id == 6 %}
+                                    <option value="3" {% if request.GET.order == '3' %}selected{% endif %}>Approved</option>
+                                    <option value="5" {% if request.GET.order == '5' %}selected{% endif %}>Shipped</option>
+                                    {% else %}
+                                    {% if request.session.role_id == 4 %}
+                                    <option value="1" {% if request.GET.order == '1' %}selected{% endif %}>Pending</option>
+                                    {% endif %}
+                                    <option value="2" {% if request.GET.order == '2' %}selected{% endif %}>Submited for Approval</option>
+                                    <option value="3" {% if request.GET.order == '3' %}selected{% endif %}>Approved</option>
+                                    <option value="4" {% if request.GET.order == '4' %}selected{% endif %}>Rejected</option>
+                                    {% endif %}
+                                </select>
+                            </div>   
+                        </div>
+                        <div class="col-md-4">  
+                            <div class="mb-3">
+                                <label for="search">Search :</label>
+                                <input type="text" id= "search" name="search" class='form-control' value='{{search}}' placeholder='Created by or ID'>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="start_filter">Start date:</label>
+                            <input type="date" class="form-control" name='start_filter' value="{{start_filter}}" id="start_filter" onfocus="this.max=new Date().toISOString().split('T')[0]" onchange="updateEndDateMin()">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="end_filter">End date:</label>
+                            <input type="date" class="form-control" name='end_filter' value="{{end_filter}}" id="end_filter" onfocus="this.max=new Date().toISOString().split('T')[0]" onchange="updateStartDateMax()">
+                        </div>
+                    </div>
+                    <div class="row justify-content-end " style="margin-right:0px ;">
+                        <div class="col-auto p-2">
+                            <button type="submit" class="btn btn-outline-success waves-effect btn-xs float-right"><i class="fas fa-filter" title="Filter"></i></button>
+                        </div>
+                        <div class="col-auto p-2">
+                            <button type="reset" id="filter_reset"  class=" btn btn-outline-warning waves-effect btn-xs float-right" ><i class="mdi mdi-refresh" title="Reset Filter"></i></button>
+                        </div>
+                        {% if role == 4 %}  
+                        <div class="col-auto p-2 ">
+                            <button type="button" class="form-control btn btn-outline-primary waves-effect btn-xs float-right" onclick="location.href='/add_orders/'"><i class="bx bx-plus-medical" title="Add New"></i></button>
+                        </div>  
+                        {% endif %}
+                    </div>
+                </form> 
+                    
+                <div class="table-rep-plugin ">
+                    <div class="table-responsive mb-3" data-pattern="priority-columns">
+                        <table id="datatable-buttons"  class="table table-striped  dt-responsive mb-0 mt-2">
+                            <thead class="table-light">
+                                <tr>
+                                    <th data-priority="1"> Order Id</th>
+                                    <th data-priority="3">Created By</th>   
+                                    <th data-priority="1">Created On</th>
+                                    <th data-priority="3">Product</th>
+                                    <th data-priority="3">Order For</th>
+                                    <!-- <th data-priority="3">Ordered Vision Center</th> -->
+                                    <th data-priority="6">Shipment Address</th>
+                                    <th data-priority="6">Order Status</th>
+                                    {% if request.session.role_id != 6 %}
+                                    <th data-priority="6">Reason for Rejection</th>
+                                    {% endif %}
+                                </tr>   
+                            
+                            </thead>
+                            <tbody>
+                                {% for l in data %}
+                                <tr>
+                                    <td>
+                                        {% if l.get_product.product.id != 5 %}                                    
+                                        <a href="/edit_orders_new/{{l.id}}/"> {{l.id}}</a>
+                                        {% else %}
+                                        <a href="/edit_orders_custom/{{l.id}}/"> {{l.id}}</a>
+                                        {% endif %}
+                                    </td>
+                                    <!-- <td>{% if l.vision_center %}{{l.vision_center.partner}}{% else %}{{l.camp.partner}}{% endif %}</td> -->
+                                    <td>{{l.created_by}}</td>
+                                    <td>{{l.server_created_on|date:"d-m-Y"}} </td>
+                                    <td>{{l.get_product.product|default_if_none:'-'}}</td>
+                                    <td>{{l.get_order_for_display|default_if_none:'-' }}</td>
+                                    <!-- <td>{% if l.order_for == 1 %} {{l.vision_center|default_if_none:'-' }}{% else %}{{'-'}}{% endif %}</td> -->
+                                    <!-- <td>{{l.get_shippment_address_display|default_if_none:'-'}}</td> -->
+                                    <td>{% if l.shippment_address == 1 %} {{l.get_address.address|default_if_none:'-' }}
+                                            {%if l.get_address.state.get_district_value %},{% endif %}{{l.get_address.state.get_district_value|default_if_none:' '}}
+                                            {% if l.get_address.state %},{% endif %}{{l.get_address.state|default_if_none:'-'}} 
+                                        {% elif l.shippment_address == 4 %}
+                                            {% if l.order_for == 2 %}
+                                                {{l.get_address.address|default_if_none:'-' }}
+                                                {%if l.get_address.state.get_district_value %},{% endif %}{{l.get_address.state.get_district_value|default_if_none:' '}}
+                                                {% if l.get_address.state %},{% endif %}{{l.get_address.state|default_if_none:'-'}}
+                                            {% else %}
+                                                {{l.vision_center.address|default_if_none:'-'}}
+                                                {% if l.vision_center.partner.state.get_district_value %},{% endif %}
+                                                {{l.vision_center.partner.state.get_district_value|default_if_none:' '}}
+                                                {% if l.vision_center.partner.state %},{% endif %}{{l.vision_center.partner.state}}
+                                            {% endif %} 
+                                        {% else %} {{l.other_address|default_if_none:'-'}} {% endif %}
+                                    </td>
+                                    <td>{{l.get_order_status_display}}</td>
+                                    {% if request.session.role_id != 6 %}
+                                    <td>{{l.remark|default_if_none:'-'}}</td>
+                                    {% endif %}
+                                 
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div> 
+                <nav aria-label="...">
+                    {% if data.has_other_pages %}
+                    <ul class="pagination justify-content-end " >
+                        {% if data.has_previous %}
+                        <li class="paginate_button page-item"><a class="page-link" href="?page=1&product_name={{product_names}}&order={{request.GET.order}}&search=&search={{search}}&start_filter={{start_filter}}&end_filter={{end_filter}}">First</a></li>
+                        {% else %}
+                        <li class="paginate_button page-item disabled"><span class="page-link">First</span></li>
+                        {% endif %}
+                        {% for i in display_page_range %}
+                            {% if data.number == i %}
+                            <li class="page-item active" ><span class="page-link">{{ i }} <span class="sr-only">(current)</span></span></li>
+                            {% else %}
+                            <li class="paginate_button paginate_button page-item"><a class="page-link" href="?page={{ i }}&product_name={{product_names}}&order={{request.GET.order}}&search={{search}}&start_filter={{start_filter}}&end_filter={{end_filter}}">{{ i }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                        {% if data.has_next %}
+                            <li class="paginate_button page-item"><a class="page-link" href="?page={{ data.paginator.num_pages }}&product_name={{product_names}}&order={{request.GET.order}}&search={{search}}&start_filter={{start_filter}}&end_filter={{end_filter}}">Last</a></li>
+                        {% else %}
+                            <li class="paginate_button page-item disabled"><span class="page-link">Last</span></li>
+                        {% endif %}
+                        </ul>
+                    {% endif %}
+                </nav> 
+            </div>
+        </div> 
+    </div>
+</div> 
+{% endblock %}
+{% block extra_javascript %}
+<script src="{% static 'libs/sweetalert2/dist/sweetalert2.min.js' %}"></script>
+
+<!-- Required datatable js -->
+<script src="{% static 'libs/datatables.net/js/jquery.dataTables.min.js' %}"></script>
+<!-- <script src="{% static 'libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js' %}"></script> -->
+<!-- Buttons examples -->
+<script src="{% static 'libs/datatables.net-buttons/js/dataTables.buttons.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-buttons/js/buttons.colVis.min.js' %}"></script>
+
+<!-- Responsive examples -->
+<script src="{% static 'libs/datatables.net-responsive/js/dataTables.responsive.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js' %}"></script>
+
+<!-- Datatable init js -->
+<script src="{% static 'js/pages/datatables.init.js' %}"></script>
+
+ <!-- Responsive Table js -->
+ {% comment %} <script src="{% static 'libs/admin-resources/rwd-table/rwd-table.min.js' %}"></script> {% endcomment %}
+
+ <!-- Init js -->
+ <script src="{% static 'js/pages/table-responsive.init.js' %}"></script>
+
+</script>
+<script type="text/javascript" >
+    function Confirm(id, model,title) {
+        Swal.fire({
+            title: "Are you sure!",
+            text:"You want to "+ title +"?",
+            showCancelButton: !0,
+            confirmButtonColor: "#34c38f",
+            cancelButtonColor: "#f46a6a",
+            confirmButtonText: "Yes, "+ title +" it!",
+        }).then((result) => {
+            if (result.isConfirmed){
+                // window.location.href = '/'+model+'/'+id+'/delete/';
+                window.location.href = '/update_status/';
+            };
+                
+        })
+    };
+
+</script>
+<script type="text/javascript">
+    $('#filter_reset').click(function() {
+        $('#state').val('');
+        $('#product').val('');
+        $('#order_status').val('');
+        $('#search').val('');
+        $('#start_filter').val('');
+        $('#end_filter').val('');
+        
+        this.form.submit();
+  });
+    
+</script>
+<script>
+    function updateEndDateMin() {
+        var startDateValue = document.getElementById('start_filter').value;
+    
+        document.getElementById('end_filter').min = startDateValue;
+    }
+    
+    function updateStartDateMax() {
+        var endDateValue = document.getElementById('end_filter').value;
+    
+        document.getElementById('start_filter').max = endDateValue;
+    }
+    document.getElementById('end_filter').min = document.getElementById('start_filter').value;
+    document.getElementById('start_filter').max = document.getElementById('end_filter').value;
+
+</script>
+{% endblock %}

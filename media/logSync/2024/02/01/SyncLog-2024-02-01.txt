@@ -1,0 +1,291 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:08:53hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:08:53hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:10:49hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 32,
+        "app_created_at": "2024-02-01T15:10:48",
+        "app_updated_at": "2024-02-01T15:10:48",
+        "camp": 0,
+        "contact_no_1": "6634166162",
+        "contact_no_2": "",
+        "district": 561,
+        "donor": 4,
+        "drivers_license_no": "",
+        "educational_qualification": 44,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 37,
+        "id": 0,
+        "language": 1,
+        "latitude": "13.011445887386799",
+        "life_insurance_policy": 2,
+        "longitude": "77.66008101403713",
+        "monthly_income": 34,
+        "name": "ganesh",
+        "no_of_months_employed_in_a_year": "6",
+        "partner_id": 13,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 228,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "KA-29-365557",
+        "user": 30,
+        "uuid": "202402011510488538e9f9-eee4-43a2-9d54-79b1816f3545",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:10:49hrs{
+    "Text": "Thank you for participating in Partner six vision center one & This is a test address-Sightsavers National Truckers Programme. Your registration ID is KA-29-365557. We wish you a safe and happy journey. Sightsavers : : ROYAL COMMONWEALTH SOCIETY FOR THE BLIND.",
+    "Number": "916634166162",
+    "SenderId": "RCSBSS",
+    "DRNotifyUrl": "https://raahistaging.mahiti.org/otp-sms/",
+    "DRNotifyHttpMethod": "POST",
+    "Message": "Accepted",
+    "Tool": "API"
+}
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:10:50hrs{
+    "ApiId": "aeee0a01-893a-4516-b032-91fd55fb8eb4",
+    "MessageUUID": "b781e3b8-5cd2-4698-99e4-e7d30d818317",
+    "Message": "Messages Queued",
+    "Success": "True"
+}
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:10:50hrs"<Response [202]>"
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:10:50hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:10:50hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:10:50hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:10:50hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:10:50hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:10:50hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:10:50hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202402011510488538e9f9-eee4-43a2-9d54-79b1816f3545",
+            "patient_id": null,
+            "SCO": "2024-02-01 09:40:49.763869+00:00",
+            "SMO": "2024-02-01 09:40:49.763922+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:12:11hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 32,
+        "app_created_at": "2024-02-01T15:12:10",
+        "app_updated_at": "2024-02-01T15:12:10",
+        "camp": 0,
+        "contact_no_1": "9652518181",
+        "contact_no_2": "",
+        "district": 560,
+        "donor": 4,
+        "drivers_license_no": "",
+        "educational_qualification": 44,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 37,
+        "id": 0,
+        "language": 1,
+        "latitude": "13.011547685600817",
+        "life_insurance_policy": 2,
+        "longitude": "77.66009844839573",
+        "monthly_income": 34,
+        "name": "nithin",
+        "no_of_months_employed_in_a_year": "8",
+        "partner_id": 13,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 228,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "KA-29-365331",
+        "user": 30,
+        "uuid": "20240201151210f5530e0a-1ca0-4df2-ae3d-cfe5eaa11236",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:12:11hrs{
+    "Text": "Thank you for participating in Partner six vision center one & This is a test address-Sightsavers National Truckers Programme. Your registration ID is KA-29-365331. We wish you a safe and happy journey. Sightsavers : : ROYAL COMMONWEALTH SOCIETY FOR THE BLIND.",
+    "Number": "919652518181",
+    "SenderId": "RCSBSS",
+    "DRNotifyUrl": "https://raahistaging.mahiti.org/otp-sms/",
+    "DRNotifyHttpMethod": "POST",
+    "Message": "Accepted",
+    "Tool": "API"
+}
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:12:11hrs{
+    "ApiId": "d4ca59c1-ed67-4ef2-aa94-fcf53ffaef62",
+    "MessageUUID": "3291e374-91bf-4192-b4c9-e9c4b85ca9f7",
+    "Message": "Messages Queued",
+    "Success": "True"
+}
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:12:11hrs"<Response [202]>"
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:12:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:12:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:12:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:12:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:12:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:12:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 02/01/2024, 15:12:11hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "20240201151210f5530e0a-1ca0-4df2-ae3d-cfe5eaa11236",
+            "patient_id": null,
+            "SCO": "2024-02-01 09:42:11.585507+00:00",
+            "SMO": "2024-02-01 09:42:11.585537+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}

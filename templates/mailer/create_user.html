@@ -1,0 +1,23 @@
+<div style="border:1px solid #222d32;padding:0px;margin:0px">
+    <div style="background:#fff;color:#fff;padding:15px; border-bottom: 1px solid #222d32;">
+        <img src="https://raahistaging.mahiti.org/static/images/new_raahi_sightsaver_india_logo.png" alt="raahi logo" class="CToWUd" style="height: 90px;">
+    </div>
+    <br>
+    
+    <div style="padding:15px 40px">{{dear}} {{username}},
+        <p>Congratulations. You are successfully registered as a {{user_profile.role}} of Raahi. Few details for you to access your account are as below:</p>
+        <h3>User Details:-</h3>
+        {% if user_profile.role.id != 5 %}
+        <p><b>Web URL   : </b>{{mail_web}}</p>
+        {% endif %}
+        <p><b>User Name : </b>{{username|lower}}</p>
+        <p><b>Password  :</b>{{password}}</p>
+
+        
+    </div>
+    <div style="background:#222d32;color:#fff;padding:15px;margin:0px">
+        <p><strong>Regards,</strong></p>
+        <p>Team <span class="gmail_default" style="font-family:verdana,sans-serif"></span>R<span class="gmail_default" style="font-family:verdana,sans-serif">aahi</span></p>
+    </div>
+</div>
+

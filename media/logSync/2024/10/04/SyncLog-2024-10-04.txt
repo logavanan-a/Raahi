@@ -1,0 +1,215 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 10/04/2024, 16:28:05hrs[
+    {
+        "aadhaar_pan_no": "896856696695",
+        "age": 51,
+        "app_created_at": "2024-01-24T17:48:27",
+        "app_updated_at": "2024-10-04T16:30:17",
+        "camp": 108,
+        "contact_no_1": "9395552233",
+        "contact_no_2": "",
+        "district": 744,
+        "donor": 4,
+        "drivers_license_no": "AP03119965033479",
+        "educational_qualification": 44,
+        "feedback": "good",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 40,
+        "id": 0,
+        "language": 9,
+        "latitude": "28.59759172",
+        "life_insurance_policy": 1,
+        "longitude": "77.37231864",
+        "monthly_income": 35,
+        "name": "P Srinivasa Rao",
+        "no_of_months_employed_in_a_year": "12",
+        "partner_id": 37,
+        "permanent_address": "Lorry operators welfare association",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 25,
+        "type_of_vehicle": 19,
+        "unique_id": "AP-37-21847",
+        "user": 121,
+        "uuid": "202401241748275079dcf8-6d85-4f9a-b2d0-c296266e1c90",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 10/04/2024, 16:28:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/04/2024, 16:28:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/04/2024, 16:28:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/04/2024, 16:28:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/04/2024, 16:28:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/04/2024, 16:28:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/04/2024, 16:28:11hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202401241748275079dcf8-6d85-4f9a-b2d0-c296266e1c90",
+            "unique_id": "AP-37-21847",
+            "SCO": "2024-01-24 12:18:27.876000+00:00",
+            "SMO": "2024-10-04 10:58:09.246490+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 10/04/2024, 16:28:31hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 54,
+        "app_created_at": "2024-01-24T17:41:09",
+        "app_updated_at": "2024-10-04T16:30:43",
+        "camp": 108,
+        "contact_no_1": "7386391020",
+        "contact_no_2": "",
+        "district": 744,
+        "donor": 4,
+        "drivers_license_no": "1816SEC1981OD",
+        "educational_qualification": 42,
+        "feedback": "good",
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "language": 9,
+        "latitude": "28.55201741",
+        "life_insurance_policy": 2,
+        "longitude": "77.27102636",
+        "monthly_income": 35,
+        "name": "A Ramana",
+        "no_of_months_employed_in_a_year": "12",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 25,
+        "type_of_vehicle": 19,
+        "unique_id": "AP-37-21859",
+        "user": 121,
+        "uuid": "20240124174109e2361719-ec71-4c94-8e02-b266f09ed24c",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 10/04/2024, 16:28:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/04/2024, 16:28:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/04/2024, 16:28:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/04/2024, 16:28:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/04/2024, 16:28:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/04/2024, 16:28:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 10/04/2024, 16:28:36hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "20240124174109e2361719-ec71-4c94-8e02-b266f09ed24c",
+            "unique_id": "AP-37-21859",
+            "SCO": "2024-01-24 12:11:09.986023+00:00",
+            "SMO": "2024-10-04 10:58:35.178362+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Raahi form Responses</title>
+     <style>
+        th, td{padding: 4px;}
+    </style>
+</head>
+<body>
+    <div style="border:1px solid #222d32;padding:0px;margin:0px">
+        <div style="background:#fff;color:#fff;padding:15px;">
+            <img src="https://raahistaging.mahiti.org/static/images/new_raahi_sightsaver_india_logo.png" alt="raahi logo" class="CToWUd" style="height: 90px;">
+        </div>
+        <div style="padding: 10px;">
+            <p>{{dear}}</p></b>
+            <p>{{body}}</p></b>
+            <div class="table-responsive">
+                <table border=1 style="border-collapse: collapse;  width: 100%;" class="table">
+                    <thead class="bg-white">
+                        <tr>             
+                            <td><b>Partner name & address :</b></td>
+                            <td>{% if ptr_vlu.name %} {{ptr_vlu.name}} {% endif %}{% if ptr_vlu.address %}| {{ptr_vlu.address|default_if_none:'-' }} {% endif %}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Project target location(as per PFA) :</b></td>
+                            <td>{{donor_dist|default_if_none:'-' }} </td>
+                        </tr>
+                        <tr>
+                            <td><b>Donor Name :</b></td>
+                            <td>{{order.donor| default_if_none:'-' }} </td>
+                        </tr>
+                        <tr>                                   
+                            <td><b>Shipment address : </b></td>
+                            <td> 
+                                {% if order.shippment_address == 1 %} 
+                                    {% if partner_contact.address %}{{partner_contact.address|default_if_none:'-' }}{% endif %}
+                                    {% if partner_contact.state.get_district_value %} , {% endif %}{{partner_contact.state.get_district_value|default_if_none:' '}}{% if partner_contact.state %},{% endif %}{{partner_contact.state}}
+                                {% elif order.shippment_address == 4 %} 
+                                    {% if order.vision_center.address %}{{order.vision_center.address|default_if_none:'-'}}{% endif%}
+                                    {% if order.vision_center.state.get_district_value %}{{order.vision_center.state.get_district_value|default_if_none:' '}}{% endif %} 
+                                    {% if order.vision_center.state %}{{order.vision_center.state|default_if_none:'-'}}{% endif %} 
+                                {% else %} 
+                                    {{order.other_address|default_if_none:'-'}} 
+                                {% endif %}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Contact person name and contact number :</b></td>
+                            <td>{{order.created_by.first_name}}{% if partner_contact.contact_no %} | {% endif %} {{partner_contact.contact_no}}</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            {% if prod_id == 4 %}
+            <div class="table-responsive">
+                <table border=1 style="border-collapse: collapse; margin-top: 25px;  width: 100%;" class="table">
+                    <thead class="table-light" >
+                        <tr>
+                            <th colspan="11"><h3>Requisition for near vision spectacles</h3></th>
+                        </tr>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Spectacles</th>   
+                            <th>+1.0</th>
+                            <th>+1.25</th>
+                            <th>+1.50</th>
+                            <th>+1.75</th>
+                            <th>+2.0</th>
+                            <th>+2.25</th>
+                            <th>+2.50</th>
+                            <th>+2.75</th>
+                            <th>+3.0</th>
+                        </tr>   
+                    </thead>
+                    <tbody>
+                        <tr>                                    
+                            <td>1</td>
+                            <td>Ordered Quantity</td>
+                            <td>{{quant_1}}</td>
+                            <td>{{quant_2}} </td>
+                            <td>{{quant_3}} </td>
+                            <td>{{quant_4}} </td>
+                            <td>{{quant_5}}</td>
+                            <td>{{quant_6}} </td>
+                            <td>{{quant_7}} </td>
+                            <td>{{quant_8}} </td>
+                            <td>{{quant_9}}</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Received Quantity</td>
+                            <td>{{near_value.0.1.0}}</td>
+                            <td>{{near_value.1.2.0}}</td>
+                            <td>{{near_value.2.3.0}}</td>
+                            <td>{{near_value.3.4.0}}</td>
+                            <td>{{near_value.4.5.0}}</td>
+                            <td>{{near_value.5.6.0}}</td>
+                            <td>{{near_value.6.7.0}}</td>
+                            <td>{{near_value.7.8.0}}</td>
+                            <td>{{near_value.8.9.0}}</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Damaged Quantity</td>
+                            <td>{{near_value.0.1.1}}</td>
+                            <td>{{near_value.1.2.1}}</td>
+                            <td>{{near_value.2.3.1}}</td>
+                            <td>{{near_value.3.4.1}}</td>
+                            <td>{{near_value.4.5.1}}</td>
+                            <td>{{near_value.5.6.1}}</td>
+                            <td>{{near_value.6.7.1}}</td>
+                            <td>{{near_value.7.8.1}}</td>
+                            <td>{{near_value.8.9.1}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            {% endif %}
+            {% if prod_id == 3 %}
+            <div class="table-responsive">
+                <table border=1 style="border-collapse: collapse;  margin-top: 25px;  width: 100%;" class="table">
+                    <thead class="table-light" >
+                        <tr>
+                            <th colspan="10"><h3>Requisition for R2C vision spectacles</h3></th>
+                        </tr>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Spectacles</th> 
+                            <th>-0.75</th>
+                            <th>-1.0</th>
+                            <th>-1.50</th>
+                            <th>-2.0</th>
+                            <th>-2.50</th>
+                            <th>-3.0</th>
+                            <th>-3.50</th>
+                            <th>-3.75</th>
+                        </tr>   
+                    </thead>
+                    <tbody>
+                        <tr>                                    
+                            <td>1</td>
+                            <td>Ordered Quantity </td>
+                            <td>{{quant_11}}</td>
+                            <td>{{quant_12}}</td>
+                            <td>{{quant_13}}</td>
+                            <td>{{quant_14}}</td>
+                            <td>{{quant_15}}</td>
+                            <td>{{quant_16}}</td>
+                            <td>{{quant_17}}</td>
+                            <td>{{quant_18}}</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Received Quantity </td>
+                            <td>{{r2c_value.0.11.0}}</td>
+                            <td>{{r2c_value.1.12.0}}</td>
+                            <td>{{r2c_value.2.13.0}}</td>
+                            <td>{{r2c_value.3.14.0}}</td>
+                            <td>{{r2c_value.4.15.0}}</td>
+                            <td>{{r2c_value.5.16.0}}</td>
+                            <td>{{r2c_value.6.17.0}}</td>
+                            <td>{{r2c_value.7.18.0}}</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Damaged Quantity </td>
+                            <td>{{r2c_value.0.11.1}}</td>
+                            <td>{{r2c_value.1.12.1}}</td>
+                            <td>{{r2c_value.2.13.1}}</td>
+                            <td>{{r2c_value.3.14.1}}</td>
+                            <td>{{r2c_value.4.15.1}}</td>
+                            <td>{{r2c_value.5.16.1}}</td>
+                            <td>{{r2c_value.6.17.1}}</td>
+                            <td>{{r2c_value.7.18.1}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-responsive">
+                <table border=1 style="border-collapse: collapse;  margin-top: 25px; width: 100%;" class="table">
+                    <thead class="table-light" >
+                        <tr>
+                            <th>S.No</th>
+                            <th>Spectacles</th> 
+                            <th>R2CCM015</th>
+                            <th>R2CCM021</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Ordered Frames  </td>                                    
+                            <td>{{frame_1}}</td>
+                            <td>{{frame_2}}</td>                                   
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Received Frames </td>                                    
+                            <td>{{frame_value.0.1.0}}</td>
+                            <td>{{frame_value.1.2.0}}</td>                                  
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Damaged Frames </td>                                    
+                            <td>{{frame_value.0.1.1}}</td>
+                            <td>{{frame_value.1.2.1}}</td>                                     
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            {% endif %}
+        </div>
+        <div style="background:#222d32;color:#fff;padding:15px;margin:0px">
+            <p><strong>Regards,</strong></p>
+            <p>Team <span class="gmail_default" style="font-family:verdana,sans-serif"></span>R<span class="gmail_default" style="font-family:verdana,sans-serif">aahi</span></p>
+        </div>
+    </div>
+</body>
+</html>
+<!-- {% if frame_type %} {% endif %}  removed in number of frames -->

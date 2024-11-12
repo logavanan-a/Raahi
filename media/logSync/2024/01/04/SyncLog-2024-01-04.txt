@@ -1,0 +1,2984 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:29:34hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:29:34hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:30:43hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:30:43hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:30:43hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:30:43hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:30:43hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:30:43hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:30:43hrs[
+    {
+        "address": "",
+        "block": "",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 61,
+        "date": "2024-01-04",
+        "delay_reason": "",
+        "district": 12,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "data",
+        "modified_by": 0,
+        "name": "test percin",
+        "partner": 13,
+        "uuid": "20240104103041dce0cced-c5c1-4b44-9d1f-6fe091770540",
+        "village": "",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:30:43hrs{
+    "status": 0,
+    "message": "Cannot assign \"61\": \"Camp.created_by\" must be a \"User\" instance.",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:31:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:31:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:31:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:31:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:31:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:31:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:31:32hrs[
+    {
+        "address": "",
+        "block": "",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 61,
+        "date": "2024-01-04",
+        "delay_reason": "",
+        "district": 12,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "data",
+        "modified_by": 61,
+        "name": "test percin",
+        "partner": 13,
+        "uuid": "20240104103041dce0cced-c5c1-4b44-9d1f-6fe091770540",
+        "village": "",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:31:32hrs{
+    "status": 0,
+    "message": "Cannot assign \"61\": \"Camp.created_by\" must be a \"User\" instance.",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:43:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:43:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:43:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:43:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:43:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:43:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:43:38hrs[
+    {
+        "address": "",
+        "block": "",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 61,
+        "date": "2024-01-04",
+        "delay_reason": "",
+        "district": 12,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "data",
+        "modified_by": 61,
+        "name": "test pervin",
+        "partner": 13,
+        "uuid": "20240104103041dce0cced-c5c1-4b44-9d1f-6fe091770540",
+        "village": "",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 10:43:38hrs{
+    "status": 0,
+    "message": "Cannot assign \"61\": \"Camp.created_by\" must be a \"User\" instance.",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 11:23:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 11:23:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 11:23:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 11:23:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 11:23:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 11:23:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 11:23:21hrs[
+    {
+        "address": "",
+        "block": "",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 61,
+        "date": "2024-01-04",
+        "delay_reason": "",
+        "district": 12,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "data",
+        "modified_by": 61,
+        "name": "test pervin",
+        "partner": 13,
+        "uuid": "20240104103041dce0cced-c5c1-4b44-9d1f-6fe091770540",
+        "village": "",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 11:23:21hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "20240104103041dce0cced-c5c1-4b44-9d1f-6fe091770540",
+            "id": 30,
+            "code": 30,
+            "SCO": "2024-01-04 05:53:21.857488+00:00",
+            "SMO": "2024-01-04 05:53:21.857534+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 11:23:42hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 11:23:42hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:21:38hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:21:38hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:22:55hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:22:55hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:26:56hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:26:56hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:33:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:33:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:33:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:33:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:33:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:33:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:33:07hrs[
+    {
+        "address": "",
+        "block": "",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 61,
+        "date": "2024-01-04",
+        "delay_reason": "",
+        "district": 714,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "test",
+        "modified_by": 61,
+        "name": "04-01-2024 test",
+        "partner": 13,
+        "uuid": "20240104133304b208f6ed-aff2-4c64-bc12-c55be4a9786a",
+        "village": "",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:33:07hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "20240104133304b208f6ed-aff2-4c64-bc12-c55be4a9786a",
+            "id": 31,
+            "code": 31,
+            "SCO": "2024-01-04 08:03:07.098739+00:00",
+            "SMO": "2024-01-04 08:03:07.098782+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:33:48hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:33:48hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:33:48hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:33:48hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:33:48hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:33:48hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:33:48hrs[
+    {
+        "address": "test",
+        "block": "",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 61,
+        "date": "2024-01-04",
+        "delay_reason": "",
+        "district": 714,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "test",
+        "modified_by": 61,
+        "name": "04-01-2024 test",
+        "partner": 13,
+        "uuid": "20240104133304b208f6ed-aff2-4c64-bc12-c55be4a9786a",
+        "village": "",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:33:48hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "20240104133304b208f6ed-aff2-4c64-bc12-c55be4a9786a",
+            "id": 31,
+            "code": 32,
+            "SCO": "2024-01-04 08:03:07.098739+00:00",
+            "SMO": "2024-01-04 08:03:48.890551+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:40:55hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:40:55hrs{
+    "user_id": 4
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:45:50hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 13:45:50hrs{
+    "user_id": 4
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:06:37hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:06:37hrs{
+    "user_id": 29
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:08:55hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:08:55hrs{
+    "user_id": 36
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:21:38hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:21:38hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:25:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:25:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:25:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:25:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:25:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:25:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:25:41hrs[
+    {
+        "address": "hebbal",
+        "block": "hebbal banglore Thursday ",
+        "coordinator_mobile_no": "7896541233",
+        "coordinator_name": "vijay",
+        "created_by": 60,
+        "date": "2023-10-03",
+        "delay_reason": "",
+        "district": 326,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "100",
+        "expected_glass_prescription": "102",
+        "expected_refer_surgeries": "45",
+        "location": "hebbal",
+        "modified_by": 61,
+        "name": "HEB74125",
+        "partner": 13,
+        "uuid": "20231003161604503344-3d859627-cb72-48f7-b420-c54abacd117f",
+        "village": "hebbal",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:25:42hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "20231003161604503344-3d859627-cb72-48f7-b420-c54abacd117f",
+            "id": 21,
+            "code": 32,
+            "SCO": "2023-10-03 10:46:04.503949+00:00",
+            "SMO": "2024-01-04 08:55:41.993977+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:35:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:35:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:35:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:35:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:35:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:35:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:35:21hrs[
+    {
+        "address": "None",
+        "block": "None",
+        "coordinator_mobile_no": "None",
+        "coordinator_name": "None",
+        "created_by": 0,
+        "date": "2024-01-06",
+        "delay_reason": "",
+        "district": 683,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "None",
+        "expected_glass_prescription": "None",
+        "expected_refer_surgeries": "None",
+        "location": "bihar",
+        "modified_by": 61,
+        "name": "BIH763525",
+        "partner": 13,
+        "uuid": "20231211181757244e0dad-c1d4-47a6-b679-715de2c681f8",
+        "village": "None",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:35:21hrs{
+    "status": 0,
+    "message": "insert or update on table \"sims_camp\" violates foreign key constraint \"sims_camp_created_by_id_4ed53168_fk_auth_user_id\"\nDETAIL:  Key (created_by_id)=(0) is not present in table \"auth_user\".\n",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:35:53hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:35:53hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:35:53hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:35:53hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:35:53hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:35:53hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:35:53hrs[
+    {
+        "address": "hebbal",
+        "block": "hebbal banglore Thursday ",
+        "coordinator_mobile_no": "7896541233",
+        "coordinator_name": "vijay",
+        "created_by": 60,
+        "date": "2024-01-10",
+        "delay_reason": "",
+        "district": 326,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "100",
+        "expected_glass_prescription": "102",
+        "expected_refer_surgeries": "45",
+        "location": "hebbal",
+        "modified_by": 61,
+        "name": "HEB74125",
+        "partner": 13,
+        "uuid": "20231003161604503344-3d859627-cb72-48f7-b420-c54abacd117f",
+        "village": "hebbal",
+        "vision_center": 85
+    },
+    {
+        "address": "None",
+        "block": "None",
+        "coordinator_mobile_no": "None",
+        "coordinator_name": "None",
+        "created_by": 0,
+        "date": "2024-01-06",
+        "delay_reason": "",
+        "district": 683,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "None",
+        "expected_glass_prescription": "None",
+        "expected_refer_surgeries": "None",
+        "location": "bihar",
+        "modified_by": 61,
+        "name": "BIH763525",
+        "partner": 13,
+        "uuid": "20231211181757244e0dad-c1d4-47a6-b679-715de2c681f8",
+        "village": "None",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:35:53hrs{
+    "status": 0,
+    "message": "insert or update on table \"sims_camp\" violates foreign key constraint \"sims_camp_created_by_id_4ed53168_fk_auth_user_id\"\nDETAIL:  Key (created_by_id)=(0) is not present in table \"auth_user\".\n",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:36:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:36:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:36:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:36:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:36:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:36:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:36:22hrs[
+    {
+        "address": "hebbal",
+        "block": "hebbal banglore Thursday ",
+        "coordinator_mobile_no": "7896541233",
+        "coordinator_name": "vijay",
+        "created_by": 60,
+        "date": "2024-01-10",
+        "delay_reason": "",
+        "district": 326,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "100",
+        "expected_glass_prescription": "102",
+        "expected_refer_surgeries": "45",
+        "location": "hebbal",
+        "modified_by": 61,
+        "name": "HEB74125",
+        "partner": 13,
+        "uuid": "20231003161604503344-3d859627-cb72-48f7-b420-c54abacd117f",
+        "village": "hebbal",
+        "vision_center": 85
+    },
+    {
+        "address": "None",
+        "block": "None",
+        "coordinator_mobile_no": "None",
+        "coordinator_name": "None",
+        "created_by": 0,
+        "date": "2024-01-06",
+        "delay_reason": "",
+        "district": 683,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "None",
+        "expected_glass_prescription": "None",
+        "expected_refer_surgeries": "None",
+        "location": "bihar",
+        "modified_by": 61,
+        "name": "BIH763525",
+        "partner": 13,
+        "uuid": "20231211181757244e0dad-c1d4-47a6-b679-715de2c681f8",
+        "village": "None",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:36:22hrs{
+    "status": 0,
+    "message": "insert or update on table \"sims_camp\" violates foreign key constraint \"sims_camp_created_by_id_4ed53168_fk_auth_user_id\"\nDETAIL:  Key (created_by_id)=(0) is not present in table \"auth_user\".\n",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:36:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:36:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:36:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:36:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:36:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:36:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:36:38hrs[
+    {
+        "address": "hebbal",
+        "block": "hebbal banglore Thursday ",
+        "coordinator_mobile_no": "7896522222",
+        "coordinator_name": "vijay",
+        "created_by": 60,
+        "date": "2024-01-10",
+        "delay_reason": "",
+        "district": 326,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "100",
+        "expected_glass_prescription": "102",
+        "expected_refer_surgeries": "45",
+        "location": "hebbal",
+        "modified_by": 61,
+        "name": "HEB74125",
+        "partner": 13,
+        "uuid": "20231003161604503344-3d859627-cb72-48f7-b420-c54abacd117f",
+        "village": "hebbal",
+        "vision_center": 85
+    },
+    {
+        "address": "None",
+        "block": "None",
+        "coordinator_mobile_no": "None",
+        "coordinator_name": "None",
+        "created_by": 0,
+        "date": "2024-01-06",
+        "delay_reason": "",
+        "district": 683,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "None",
+        "expected_glass_prescription": "None",
+        "expected_refer_surgeries": "None",
+        "location": "bihar",
+        "modified_by": 61,
+        "name": "BIH763525",
+        "partner": 13,
+        "uuid": "20231211181757244e0dad-c1d4-47a6-b679-715de2c681f8",
+        "village": "None",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 14:36:38hrs{
+    "status": 0,
+    "message": "insert or update on table \"sims_camp\" violates foreign key constraint \"sims_camp_created_by_id_4ed53168_fk_auth_user_id\"\nDETAIL:  Key (created_by_id)=(0) is not present in table \"auth_user\".\n",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:31:53hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:31:53hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:34:04hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 25,
+        "app_created_at": "2024-01-04T17:34:04",
+        "app_updated_at": "2024-01-04T17:34:04",
+        "camp": 0,
+        "contact_no_1": "9999999999",
+        "contact_no_2": "",
+        "district": 609,
+        "donor": 4,
+        "drivers_license_no": "",
+        "educational_qualification": 47,
+        "feedback": "test",
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 38,
+        "id": 0,
+        "language": 1,
+        "latitude": "13.011818333333334",
+        "life_insurance_policy": 2,
+        "longitude": "77.65989833333333",
+        "monthly_income": 34,
+        "name": "testabc test",
+        "no_of_months_employed_in_a_year": "12",
+        "partner_id": 13,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 228,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "KA-29-158",
+        "user": 30,
+        "uuid": "20240104173404296a4ca6-b39e-4a14-90bd-0380d280068c",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:34:04hrs{
+    "Text": "Thank you for participating in Partner six vision center one & This is a test address-Sightsavers National Truckers Programme. Your registration ID is KA-29-158. We wish you a safe and happy journey. Sightsavers : : ROYAL COMMONWEALTH SOCIETY FOR THE BLIND.",
+    "Number": "919999999999",
+    "SenderId": "RCSBSS",
+    "DRNotifyUrl": "https://raahistaging.mahiti.org/otp-sms/",
+    "DRNotifyHttpMethod": "POST",
+    "Message": "Accepted",
+    "Tool": "API"
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:34:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:34:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:34:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:34:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:34:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:34:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:34:04hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "20240104173404296a4ca6-b39e-4a14-90bd-0380d280068c",
+            "patient_id": null,
+            "SCO": "2024-01-04 12:04:04.661491+00:00",
+            "SMO": "2024-01-04 12:04:04.661521+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:43:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:43:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:43:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:43:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:43:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:43:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:43:59hrs[
+    {
+        "address": "hebbal",
+        "block": "hebbal banglore Thursday ",
+        "coordinator_mobile_no": "7896522222",
+        "coordinator_name": "vijay",
+        "created_by": 60,
+        "date": "2024-01-10",
+        "delay_reason": "",
+        "district": 326,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "100",
+        "expected_glass_prescription": "102",
+        "expected_refer_surgeries": "45",
+        "location": "hebbal",
+        "modified_by": 61,
+        "name": "HEB74125",
+        "partner": 13,
+        "uuid": "20231003161604503344-3d859627-cb72-48f7-b420-c54abacd117f",
+        "village": "hebbal",
+        "vision_center": 85
+    },
+    {
+        "address": "None",
+        "block": "None",
+        "coordinator_mobile_no": "None",
+        "coordinator_name": "None",
+        "created_by": 0,
+        "date": "2024-01-06",
+        "delay_reason": "",
+        "district": 683,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "None",
+        "expected_glass_prescription": "None",
+        "expected_refer_surgeries": "None",
+        "location": "bihar 04",
+        "modified_by": 61,
+        "name": "BIH763525",
+        "partner": 13,
+        "uuid": "20231211181757244e0dad-c1d4-47a6-b679-715de2c681f8",
+        "village": "None",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:43:59hrs{
+    "status": 0,
+    "message": "insert or update on table \"sims_camp\" violates foreign key constraint \"sims_camp_created_by_id_4ed53168_fk_auth_user_id\"\nDETAIL:  Key (created_by_id)=(0) is not present in table \"auth_user\".\n",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:44:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:44:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:44:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:44:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:44:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:44:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:44:02hrs[
+    {
+        "address": "hebbal",
+        "block": "hebbal banglore Thursday ",
+        "coordinator_mobile_no": "7896522222",
+        "coordinator_name": "vijay",
+        "created_by": 60,
+        "date": "2024-01-10",
+        "delay_reason": "",
+        "district": 326,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "100",
+        "expected_glass_prescription": "102",
+        "expected_refer_surgeries": "45",
+        "location": "hebbal",
+        "modified_by": 61,
+        "name": "HEB74125",
+        "partner": 13,
+        "uuid": "20231003161604503344-3d859627-cb72-48f7-b420-c54abacd117f",
+        "village": "hebbal",
+        "vision_center": 85
+    },
+    {
+        "address": "None",
+        "block": "None",
+        "coordinator_mobile_no": "None",
+        "coordinator_name": "None",
+        "created_by": 0,
+        "date": "2024-01-06",
+        "delay_reason": "",
+        "district": 683,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "None",
+        "expected_glass_prescription": "None",
+        "expected_refer_surgeries": "None",
+        "location": "bihar 04",
+        "modified_by": 61,
+        "name": "BIH763525",
+        "partner": 13,
+        "uuid": "20231211181757244e0dad-c1d4-47a6-b679-715de2c681f8",
+        "village": "None",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:44:02hrs{
+    "status": 0,
+    "message": "insert or update on table \"sims_camp\" violates foreign key constraint \"sims_camp_created_by_id_4ed53168_fk_auth_user_id\"\nDETAIL:  Key (created_by_id)=(0) is not present in table \"auth_user\".\n",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:45:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:45:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:45:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:45:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:45:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:45:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:45:38hrs[
+    {
+        "address": "hebbal",
+        "block": "hebbal banglore Friday ",
+        "coordinator_mobile_no": "7896522222",
+        "coordinator_name": "vijay",
+        "created_by": 60,
+        "date": "2024-01-10",
+        "delay_reason": "",
+        "district": 326,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "100",
+        "expected_glass_prescription": "102",
+        "expected_refer_surgeries": "45",
+        "location": "hebbal",
+        "modified_by": 61,
+        "name": "HEB74125",
+        "partner": 13,
+        "uuid": "20231003161604503344-3d859627-cb72-48f7-b420-c54abacd117f",
+        "village": "hebbal",
+        "vision_center": 85
+    },
+    {
+        "address": "None",
+        "block": "None",
+        "coordinator_mobile_no": "None",
+        "coordinator_name": "None",
+        "created_by": 0,
+        "date": "2024-01-06",
+        "delay_reason": "",
+        "district": 683,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "None",
+        "expected_glass_prescription": "None",
+        "expected_refer_surgeries": "None",
+        "location": "bihar 04",
+        "modified_by": 61,
+        "name": "BIH763525",
+        "partner": 13,
+        "uuid": "20231211181757244e0dad-c1d4-47a6-b679-715de2c681f8",
+        "village": "None",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:45:38hrs{
+    "status": 0,
+    "message": "insert or update on table \"sims_camp\" violates foreign key constraint \"sims_camp_created_by_id_4ed53168_fk_auth_user_id\"\nDETAIL:  Key (created_by_id)=(0) is not present in table \"auth_user\".\n",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:46:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:46:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:46:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:46:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:46:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:46:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:46:14hrs[
+    {
+        "address": "hebbal",
+        "block": "hebbal banglore Friday ",
+        "coordinator_mobile_no": "7896522222",
+        "coordinator_name": "vijay",
+        "created_by": 60,
+        "date": "2024-01-10",
+        "delay_reason": "",
+        "district": 326,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "100",
+        "expected_glass_prescription": "102",
+        "expected_refer_surgeries": "45",
+        "location": "hebbal",
+        "modified_by": 61,
+        "name": "HEB74125",
+        "partner": 13,
+        "uuid": "20231003161604503344-3d859627-cb72-48f7-b420-c54abacd117f",
+        "village": "hebbal",
+        "vision_center": 85
+    },
+    {
+        "address": "None",
+        "block": "None",
+        "coordinator_mobile_no": "None",
+        "coordinator_name": "None",
+        "created_by": 0,
+        "date": "2024-01-06",
+        "delay_reason": "",
+        "district": 683,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "None",
+        "expected_glass_prescription": "None",
+        "expected_refer_surgeries": "None",
+        "location": "bihar 04",
+        "modified_by": 61,
+        "name": "BIH763525",
+        "partner": 13,
+        "uuid": "20231211181757244e0dad-c1d4-47a6-b679-715de2c681f8",
+        "village": "None",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:46:14hrs{
+    "status": 0,
+    "message": "insert or update on table \"sims_camp\" violates foreign key constraint \"sims_camp_created_by_id_4ed53168_fk_auth_user_id\"\nDETAIL:  Key (created_by_id)=(0) is not present in table \"auth_user\".\n",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:46:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:46:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:46:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:46:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:46:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:46:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:46:47hrs[
+    {
+        "address": "hebbal",
+        "block": "hebbal banglore Friday ",
+        "coordinator_mobile_no": "7896522222",
+        "coordinator_name": "vijay",
+        "created_by": 60,
+        "date": "2024-01-10",
+        "delay_reason": "",
+        "district": 326,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "100",
+        "expected_glass_prescription": "102",
+        "expected_refer_surgeries": "45",
+        "location": "hebbal",
+        "modified_by": 61,
+        "name": "HEB74125",
+        "partner": 13,
+        "uuid": "20231003161604503344-3d859627-cb72-48f7-b420-c54abacd117f",
+        "village": "hebbal",
+        "vision_center": 85
+    },
+    {
+        "address": "None",
+        "block": "None",
+        "coordinator_mobile_no": "None",
+        "coordinator_name": "None",
+        "created_by": 0,
+        "date": "2024-01-06",
+        "delay_reason": "",
+        "district": 683,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "None",
+        "expected_glass_prescription": "None",
+        "expected_refer_surgeries": "None",
+        "location": "bihar 04",
+        "modified_by": 61,
+        "name": "BIH763525",
+        "partner": 13,
+        "uuid": "20231211181757244e0dad-c1d4-47a6-b679-715de2c681f8",
+        "village": "None",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:46:47hrs{
+    "status": 0,
+    "message": "insert or update on table \"sims_camp\" violates foreign key constraint \"sims_camp_created_by_id_4ed53168_fk_auth_user_id\"\nDETAIL:  Key (created_by_id)=(0) is not present in table \"auth_user\".\n",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:47:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:47:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:47:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:47:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:47:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:47:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:47:00hrs[
+    {
+        "address": "hebbal",
+        "block": "hebbal banglore Friday ",
+        "coordinator_mobile_no": "7896522222",
+        "coordinator_name": "vijay",
+        "created_by": 60,
+        "date": "2024-01-10",
+        "delay_reason": "",
+        "district": 326,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "100",
+        "expected_glass_prescription": "102",
+        "expected_refer_surgeries": "45",
+        "location": "hebbal",
+        "modified_by": 61,
+        "name": "HEB74125",
+        "partner": 13,
+        "uuid": "20231003161604503344-3d859627-cb72-48f7-b420-c54abacd117f",
+        "village": "hebbal",
+        "vision_center": 85
+    },
+    {
+        "address": "None",
+        "block": "None",
+        "coordinator_mobile_no": "None",
+        "coordinator_name": "None",
+        "created_by": 0,
+        "date": "2024-01-06",
+        "delay_reason": "",
+        "district": 683,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "None",
+        "expected_glass_prescription": "None",
+        "expected_refer_surgeries": "None",
+        "location": "bihar 04",
+        "modified_by": 61,
+        "name": "BIH763525",
+        "partner": 13,
+        "uuid": "20231211181757244e0dad-c1d4-47a6-b679-715de2c681f8",
+        "village": "None",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:47:00hrs{
+    "status": 0,
+    "message": "insert or update on table \"sims_camp\" violates foreign key constraint \"sims_camp_created_by_id_4ed53168_fk_auth_user_id\"\nDETAIL:  Key (created_by_id)=(0) is not present in table \"auth_user\".\n",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:47:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:47:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:47:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:47:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:47:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:47:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:47:39hrs[
+    {
+        "address": "hebbal",
+        "block": "hebbal banglore Friday ",
+        "coordinator_mobile_no": "7896522222",
+        "coordinator_name": "vijay",
+        "created_by": 60,
+        "date": "2024-01-10",
+        "delay_reason": "",
+        "district": 326,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "100",
+        "expected_glass_prescription": "102",
+        "expected_refer_surgeries": "45",
+        "location": "hebbal",
+        "modified_by": 61,
+        "name": "HEB74125",
+        "partner": 13,
+        "uuid": "20231003161604503344-3d859627-cb72-48f7-b420-c54abacd117f",
+        "village": "hebbal",
+        "vision_center": 85
+    },
+    {
+        "address": "None",
+        "block": "None",
+        "coordinator_mobile_no": "None",
+        "coordinator_name": "None",
+        "created_by": 0,
+        "date": "2024-01-06",
+        "delay_reason": "",
+        "district": 683,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "None",
+        "expected_glass_prescription": "None",
+        "expected_refer_surgeries": "None",
+        "location": "bihar 04",
+        "modified_by": 61,
+        "name": "BIH763525",
+        "partner": 13,
+        "uuid": "20231211181757244e0dad-c1d4-47a6-b679-715de2c681f8",
+        "village": "None",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:47:39hrs{
+    "status": 0,
+    "message": "insert or update on table \"sims_camp\" violates foreign key constraint \"sims_camp_created_by_id_4ed53168_fk_auth_user_id\"\nDETAIL:  Key (created_by_id)=(0) is not present in table \"auth_user\".\n",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:48:29hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:48:29hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:48:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:48:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:48:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:48:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:48:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:48:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:48:58hrs[
+    {
+        "address": "hebbal",
+        "block": "hebbal banglore Friday ",
+        "coordinator_mobile_no": "7896541233",
+        "coordinator_name": "vijay",
+        "created_by": 60,
+        "date": "2023-10-03",
+        "delay_reason": "",
+        "district": 326,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "100",
+        "expected_glass_prescription": "102",
+        "expected_refer_surgeries": "45",
+        "location": "hebbal",
+        "modified_by": 61,
+        "name": "HEB74125",
+        "partner": 13,
+        "uuid": "20231003161604503344-3d859627-cb72-48f7-b420-c54abacd117f",
+        "village": "hebbal",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:48:58hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "20231003161604503344-3d859627-cb72-48f7-b420-c54abacd117f",
+            "id": 21,
+            "code": 32,
+            "SCO": "2023-10-03 10:46:04.503949+00:00",
+            "SMO": "2024-01-04 12:18:58.585607+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:50:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:50:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:50:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:50:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:50:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:50:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:50:35hrs[
+    {
+        "address": "test",
+        "block": "",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 61,
+        "date": "2024-01-04",
+        "delay_reason": "",
+        "district": 714,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "test test ",
+        "modified_by": 61,
+        "name": "04-01-2024 test",
+        "partner": 13,
+        "uuid": "20240104133304b208f6ed-aff2-4c64-bc12-c55be4a9786a",
+        "village": "",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:50:35hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "20240104133304b208f6ed-aff2-4c64-bc12-c55be4a9786a",
+            "id": 31,
+            "code": 32,
+            "SCO": "2024-01-04 08:03:07.098739+00:00",
+            "SMO": "2024-01-04 12:20:35.779042+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:50:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:50:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:50:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:50:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:50:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:50:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:50:59hrs[
+    {
+        "address": "hebbal",
+        "block": "hebbal banglore Friday ",
+        "coordinator_mobile_no": "7896541233",
+        "coordinator_name": "vijay",
+        "created_by": 60,
+        "date": "2024-01-08",
+        "delay_reason": "",
+        "district": 326,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "100",
+        "expected_glass_prescription": "102",
+        "expected_refer_surgeries": "45",
+        "location": "hebbal",
+        "modified_by": 61,
+        "name": "HEB74125",
+        "partner": 13,
+        "uuid": "20231003161604503344-3d859627-cb72-48f7-b420-c54abacd117f",
+        "village": "hebbal",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:50:59hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "20231003161604503344-3d859627-cb72-48f7-b420-c54abacd117f",
+            "id": 21,
+            "code": 32,
+            "SCO": "2023-10-03 10:46:04.503949+00:00",
+            "SMO": "2024-01-04 12:20:59.898283+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:53:16hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:53:16hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:53:16hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:53:16hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:53:16hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:53:16hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:53:16hrs[
+    {
+        "address": "",
+        "block": "",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 61,
+        "date": "2024-01-04",
+        "delay_reason": "",
+        "district": 12,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "data",
+        "modified_by": 61,
+        "name": "test Vishwanath ",
+        "partner": 13,
+        "uuid": "20240104103041dce0cced-c5c1-4b44-9d1f-6fe091770540",
+        "village": "",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:53:16hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "20240104103041dce0cced-c5c1-4b44-9d1f-6fe091770540",
+            "id": 30,
+            "code": 32,
+            "SCO": "2024-01-04 05:53:21.857488+00:00",
+            "SMO": "2024-01-04 12:23:16.049671+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:55:36hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:55:36hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:56:30hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:56:30hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:57:06hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 17:57:06hrs{
+    "user_id": 36
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:01:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:01:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:01:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:01:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:01:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:01:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:01:25hrs[
+    {
+        "address": "Banglore",
+        "block": "B",
+        "coordinator_mobile_no": "7943826464",
+        "coordinator_name": "Fazal",
+        "created_by": 67,
+        "date": "2024-01-31",
+        "delay_reason": "",
+        "district": 12,
+        "donor": 4,
+        "exclusive_camp": 1,
+        "expected_camp_OPD": "40",
+        "expected_glass_prescription": "50",
+        "expected_refer_surgeries": "50",
+        "location": "Banglore",
+        "modified_by": 67,
+        "name": "Thursday camp",
+        "partner": 23,
+        "uuid": "20240104180125345b5d38-d8fa-433a-bb65-5ed4a42e24af",
+        "village": "Banglore",
+        "vision_center": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:01:25hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "20240104180125345b5d38-d8fa-433a-bb65-5ed4a42e24af",
+            "id": 32,
+            "code": 32,
+            "SCO": "2024-01-04 12:31:25.701214+00:00",
+            "SMO": "2024-01-04 12:31:25.701237+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:02:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:02:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:02:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:02:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:02:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:02:32hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:02:32hrs[
+    {
+        "address": "Banglore ",
+        "block": "G by",
+        "coordinator_mobile_no": "50",
+        "coordinator_name": "50",
+        "created_by": 67,
+        "date": "2024-01-04",
+        "delay_reason": "",
+        "district": 12,
+        "donor": 4,
+        "exclusive_camp": 1,
+        "expected_camp_OPD": "50",
+        "expected_glass_prescription": "50",
+        "expected_refer_surgeries": "50",
+        "location": "Banglore",
+        "modified_by": 67,
+        "name": "Kamal camp",
+        "partner": 23,
+        "uuid": "20240104180231f52ade6c-2547-4905-890f-ddc1fefff17c",
+        "village": "Tin factory ",
+        "vision_center": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:02:32hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "20240104180231f52ade6c-2547-4905-890f-ddc1fefff17c",
+            "id": 33,
+            "code": 33,
+            "SCO": "2024-01-04 12:32:32.331741+00:00",
+            "SMO": "2024-01-04 12:32:32.331770+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:10:13hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:10:13hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:12:02hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:12:02hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:14:20hrs[
+    {
+        "aadhaar_pan_no": "192334388383",
+        "age": 56,
+        "app_created_at": "2024-01-04T18:14:20",
+        "app_updated_at": "2024-01-04T18:14:20",
+        "camp": 0,
+        "contact_no_1": "7946135353",
+        "contact_no_2": "8876431335",
+        "district": 768,
+        "donor": 3,
+        "drivers_license_no": "",
+        "educational_qualification": 238,
+        "feedback": "Good",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 41,
+        "id": 0,
+        "language": 1,
+        "latitude": "13.01152853295207",
+        "life_insurance_policy": 1,
+        "longitude": "77.66008797101676",
+        "monthly_income": 33,
+        "name": "Shashi",
+        "no_of_months_employed_in_a_year": "",
+        "partner_id": 23,
+        "permanent_address": "Vanilla",
+        "renewal_date": "2024-01-31",
+        "residence_type": 0,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "2000",
+        "type_of_job": 16,
+        "type_of_route": 26,
+        "type_of_vehicle": 22,
+        "unique_id": "WB-19-161",
+        "user": 35,
+        "uuid": "20240104181420303c2a1b-7c20-40eb-b7f2-f9cfdc84557b",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:14:20hrs{
+    "status": 0,
+    "message": "local variable 'obj' referenced before assignment",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:15:15hrs[
+    {
+        "aadhaar_pan_no": "192334388383",
+        "age": 56,
+        "app_created_at": "2024-01-04T18:14:20",
+        "app_updated_at": "2024-01-04T18:14:20",
+        "camp": 0,
+        "contact_no_1": "7946135353",
+        "contact_no_2": "8876431335",
+        "district": 768,
+        "donor": 3,
+        "drivers_license_no": "",
+        "educational_qualification": 238,
+        "feedback": "Good",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 41,
+        "id": 0,
+        "language": 1,
+        "latitude": "13.01152853295207",
+        "life_insurance_policy": 1,
+        "longitude": "77.66008797101676",
+        "monthly_income": 33,
+        "name": "Shashi",
+        "no_of_months_employed_in_a_year": "",
+        "partner_id": 23,
+        "permanent_address": "Vanilla",
+        "renewal_date": "2024-01-31",
+        "residence_type": 0,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "2000",
+        "type_of_job": 16,
+        "type_of_route": 26,
+        "type_of_vehicle": 22,
+        "unique_id": "WB-19-161",
+        "user": 35,
+        "uuid": "20240104181420303c2a1b-7c20-40eb-b7f2-f9cfdc84557b",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:15:15hrs{
+    "status": 0,
+    "message": "local variable 'obj' referenced before assignment",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:15:25hrs[
+    {
+        "aadhaar_pan_no": "192334388383",
+        "age": 56,
+        "app_created_at": "2024-01-04T18:14:20",
+        "app_updated_at": "2024-01-04T18:14:20",
+        "camp": 0,
+        "contact_no_1": "7946135353",
+        "contact_no_2": "8876431335",
+        "district": 768,
+        "donor": 3,
+        "drivers_license_no": "",
+        "educational_qualification": 238,
+        "feedback": "Good",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 41,
+        "id": 0,
+        "language": 1,
+        "latitude": "13.01152853295207",
+        "life_insurance_policy": 1,
+        "longitude": "77.66008797101676",
+        "monthly_income": 33,
+        "name": "Shashi",
+        "no_of_months_employed_in_a_year": "",
+        "partner_id": 23,
+        "permanent_address": "Vanilla",
+        "renewal_date": "2024-01-31",
+        "residence_type": 0,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "2000",
+        "type_of_job": 16,
+        "type_of_route": 26,
+        "type_of_vehicle": 22,
+        "unique_id": "WB-19-161",
+        "user": 35,
+        "uuid": "20240104181420303c2a1b-7c20-40eb-b7f2-f9cfdc84557b",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:15:25hrs{
+    "status": 0,
+    "message": "local variable 'obj' referenced before assignment",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:25:29hrs[
+    {
+        "aadhaar_pan_no": "192334388383",
+        "age": 56,
+        "app_created_at": "2024-01-04T18:14:20",
+        "app_updated_at": "2024-01-04T18:14:20",
+        "camp": 0,
+        "contact_no_1": "7946135353",
+        "contact_no_2": "8876431335",
+        "district": 768,
+        "donor": 3,
+        "drivers_license_no": "",
+        "educational_qualification": 238,
+        "feedback": "Good",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 41,
+        "id": 0,
+        "language": 1,
+        "latitude": "13.01152853295207",
+        "life_insurance_policy": 1,
+        "longitude": "77.66008797101676",
+        "monthly_income": 33,
+        "name": "Shashi",
+        "no_of_months_employed_in_a_year": "",
+        "partner_id": 23,
+        "permanent_address": "Vanilla",
+        "renewal_date": "2024-01-31",
+        "residence_type": 0,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "2000",
+        "type_of_job": 16,
+        "type_of_route": 26,
+        "type_of_vehicle": 22,
+        "unique_id": "WB-19-161",
+        "user": 35,
+        "uuid": "20240104181420303c2a1b-7c20-40eb-b7f2-f9cfdc84557b",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:25:29hrs{
+    "status": 0,
+    "message": "local variable 'obj' referenced before assignment",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:25:49hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:25:49hrs{
+    "user_id": 36
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:30:14hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:30:14hrs{
+    "user_id": 36
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:38:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:38:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:38:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:38:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:38:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:38:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:38:25hrs[
+    {
+        "address": "Banglore",
+        "block": "G",
+        "coordinator_mobile_no": "6613438998",
+        "coordinator_name": "Sunil",
+        "created_by": 67,
+        "date": "2024-01-04",
+        "delay_reason": "",
+        "district": 12,
+        "donor": 4,
+        "exclusive_camp": 1,
+        "expected_camp_OPD": "70",
+        "expected_glass_prescription": "50",
+        "expected_refer_surgeries": "60",
+        "location": "Banglore",
+        "modified_by": 67,
+        "name": "Evening camp",
+        "partner": 23,
+        "uuid": "20240104183825e4c7790f-aa8a-46f4-9393-47ffec6a2c81",
+        "village": "Banglore",
+        "vision_center": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/04/2024, 18:38:25hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "20240104183825e4c7790f-aa8a-46f4-9393-47ffec6a2c81",
+            "id": 34,
+            "code": 34,
+            "SCO": "2024-01-04 13:08:25.022558+00:00",
+            "SMO": "2024-01-04 13:08:25.022581+00:00",
+            "sync_status": 2
+        }
+    ]
+}

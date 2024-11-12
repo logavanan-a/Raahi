@@ -1,0 +1,261 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block contents %}
+<div class="row align-items-center">
+    <div class="col-xl-12 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                <!-- <form method='POST' class="needs-validation" autocomplete="off" oninput='password2.setCustomValidity(password2.value != password.value ? "Passwords do not match." : "")'> -->
+                <form id="myForm" method='POST' class="needs-validation" autocomplete="off"  novalidate>
+                    {% csrf_token %}
+                    <div class='text-danger'>
+                        {{error}}
+                    </div> 
+                    <div class="row mb-4">
+                        <label class="col-md-2 col-form-label">Name<span class="required-field"></span></label>
+                        <div class="col-md-4"> 
+                            <input type="text"  name= "name" class="form-control" placeholder="Enter Name" required />
+                            <div class="invalid-feedback">
+                                Please enter name.
+                            </div>
+                        </div>
+                        <label class="col-md-2 col-form-label">Code<span class="required-field"></span></label>
+                        <div class="col-md-4">
+                            <input type="text"  name= "code" class="form-control" value="{{camp_code}}" required placeholder="Enter Code" readonly/>
+                            <div class="invalid-feedback">
+                                Please enter code.
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="row mb-4">
+                        <label class="col-md-2 col-form-label">Date<span class="required-field"></span></label>
+                        <div class="col-md-4">
+                            <!-- <input type="date"  name= "date" class="form-control" required placeholder="Enter Date" onfocus="this.max=new Date().toISOString().split('T')[0]"/> -->
+                            <input type="date" name= "date"  class="form-control" required id="myDateInput"  onfocus="setMinDate()">
+                            <div class="invalid-feedback">
+                                Please choose date.
+                            </div>
+                        </div>
+                        <label class="col-md-2 col-form-label">Donor<span class="required-field"></span></label>
+                        <div class="col-md-4">
+                            <select name="donor" class="form-select select2" required>
+                                <option value="" disabled selected>Select Donor</option>
+                                {% for donor in donors %}
+                                    <option value="{{ donor.id }}">{{ donor }}</option>
+                                {% endfor %}
+                            </select> 
+                            <div class="invalid-feedback">
+                                Please select donor.
+                            </div>                       
+                        </div> 
+                    </div>
+                    <div class="row mb-4">
+                        <label class="col-md-2 col-form-label">Location<span class="required-field"></span></label>
+                        <div class="col-md-4">
+                            <input type="text"  name= "location" class="form-control" required placeholder="Enter Location" />
+                            <div class="invalid-feedback">
+                                Please enter location.
+                            </div>
+                        </div>
+                        <label class="col-md-2 col-form-label">Address<span></span></label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="" name='address' placeholder="Enter Address">
+                        </div>
+                    </div>  
+                    <div class="row mb-4">
+                        <label class="col-md-2 col-form-label">Village<span></span></label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="" name='village' placeholder="Enter Village"  >
+                        </div>
+                        <label class="col-md-2 col-form-label">Block<span></span></label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="" name='block' placeholder="Enter Block"  >
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <label class="col-md-2 col-form-label">State<span class="required-field"></span></label>
+                        <div class="col-md-4">
+                            <select name="state" id="id_state" class="form-select select2" required>
+                                <option value="" selected>Select State</option>
+                                {% for state in states %}
+                                    <option value="{{state.id}}">{{ state }}</option>
+                                {% endfor %}
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select state.
+                            </div>
+                        </div> 
+                        <label class="col-md-2 col-form-label">District<span class="required-field"></span></label>
+                        <div class="col-md-4">
+                            <select name="district" id="id_district" class="form-select select2" required>
+                                <option value="" disabled selected>Select District</option>
+                                {% for district in districts %}
+                                    <option value="{{district.id}}">{{ district }}</option>
+                                {% endfor %}
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select district.
+                            </div>
+                        </div>                          
+                    </div>
+                    <div class="row mb-4">
+                        <label class="col-md-2 col-form-label">Expected Glass Prescription<span></span></label>
+                        <div class="col-md-4">
+                            <input type="text"  name= "expected_glass_prescription" class="form-control"  placeholder="Enter Expected Glass Prescription" />
+                        </div>
+                        <label class="col-md-2 col-form-label">Expected Refer Surgeries<span></span></label>
+                        <div class="col-md-4">
+                            <input type="text"  name= "expected_refer_surgeries" class="form-control"  placeholder="Enter Expected Refer Surgeries" />
+                        </div>
+                    </div>  
+                    <div class="row mb-4">
+                        <label class="col-md-2 col-form-label">Expected Camp OPD<span ></span></label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="" name='expected_camp_OPD' placeholder="Enter Expected Camp OPD"  >
+                        </div>
+                       
+                        <label class="col-md-2 col-form-label">Coordinator Name<span ></span></label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="" name='coordinator_name' placeholder="Enter Coordinator Name"  >
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <label class="col-md-2 col-form-label">Coordinator Mobile No<span></span></label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" minlength="10" maxlength="10"  id="" name='coordinator_mobile_no' placeholder="Enter Coordinator Mobile No"  >
+                        </div>
+                        <label class="col-md-2 col-form-label">Exclusive Camp<span class="required-field"></span></label>
+                        <div class="col-md-4" style="padding: 10px;">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input p-0" type="radio" name="exclusive_camp" value="1" checked>
+                                <label class="form-check-label" for="campYes">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input p-0" type="radio" name="exclusive_camp" value="2">
+                                <label class="form-check-label" for="campNo">No</label>
+                            </div>
+                        </div>  
+                    </div> 
+                    
+                    <div class="row mb-4" id="visionCenterContainer">
+                        <label class="col-md-2 col-form-label">VC Camp<span class="required-field"></span></label>
+                        <div class="col-md-4">
+                            <select name="visioncenter" id="visioncenter" class="form-select select2">
+                                <option value="" disabled selected>Select VC Camp</option>
+                                {% for vision_center in vision_centers %}
+                                    <option value="{{ vision_center.id }}">{{ vision_center }}</option>
+                                {% endfor %}
+                            </select> 
+                            <div class="invalid-feedback">
+                                Please select a vision center.
+                            </div>                        
+                        </div>    
+                    </div>                                               
+                    <div class="gap-2" style="float:right;">
+                        <button type="reset"  onclick="window.location.href='/camp_list/'" class="btn btn-secondary waves-effect">
+                            Cancel
+                        </button>
+
+                        <button type="submit" id="submitting" style="margin-left: 5px;" class="btn btn-primary w-md">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/pages/form-validation.init.js' %}"></script>
+
+<script src="{% static 'libs/jquery/dist/jquery.min.js' %}"></script>
+<script>
+    $(document).ready(function() {
+        // Initially hide the Vision Center container
+        $("#visionCenterContainer").hide();
+
+        // Listen for changes in the radio button selection
+        $("input[name='exclusive_camp']").change(function() {
+            $("#visioncenter").prop('selectedIndex', 0).change();
+            if (this.value === "2") { // If "No" is selected
+                $("#visionCenterContainer").show();
+                $("select[name='visioncenter']").prop('required', true);
+            } else {
+                $("#visionCenterContainer").hide();
+                $("select[name='visioncenter']").prop('required', false);
+
+            }
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('select').addClass('form-control')
+        $('input').addClass('form-control')
+
+    });
+    
+    $("#filter_reset").click(function() {
+        $('#id_state').prop('selectedIndex', 0).change();
+        this.form.submit();
+    });
+    $(document).ready(function() {
+  $('#id_district').prop('readonly', true);
+
+  $("#filter_reset").click(function() {
+    $('#id_state').prop('selectedIndex', 0).change();
+    this.form.submit();
+  });
+
+  $('#id_state').change(function() {
+    var optionSelected = $(this).find("option:selected");
+    var valueSelected = optionSelected.val();
+
+    $('#id_district').prop('readonly', false);
+
+    if (valueSelected === "") {
+      $('#id_district').prop('readonly', true);
+      $("#id_district option").remove();
+    } else {
+      $.ajax({
+        type: "GET",
+        url: '/ajax/district/' + valueSelected + '/',
+        success: function(result) {
+          $("#id_district option").remove();
+          a = '<option selected value="">Choose district Name</option>';
+          $("#id_district").append(a);
+
+          if (JSON.parse(result) == 0) {
+            $("#id_district option").remove();
+            a = '<option selected value="">No district is mapped to this state </option>';
+            console.log(a)
+            $("#id_district").append(a);
+          } else {
+            $.each(JSON.parse(result), function(key, value) {
+              a = '<option value=' + value['id'] + '>' + value['name'] + '</option>';
+              $("#id_district").append(a);
+            });
+          }
+        }
+      });
+    }
+  });
+  $('#id_state').trigger('change');
+
+});
+
+function setMinDate() {
+  var today = new Date().toISOString().split('T')[0];
+  document.getElementById("myDateInput").min = today;
+}
+
+
+
+ 
+</script>
+    
+{% endblock %}
+
+

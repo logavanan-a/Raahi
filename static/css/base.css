@@ -1,0 +1,30 @@
+.required-field:before{
+    content: "*";
+    color: red;
+    padding-left: 2px;
+}
+.select2-container {
+    display: block!important;
+    width: 100%!important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+    border-color: #adb5bd transparent transparent transparent!important;
+    border-width: 6px 6px 0 6px!important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    width: 34px!important;
+    height: 34px!important;
+    right: 3px!important;
+}
+.select2-container .select2-selection--single{
+    height: 36px!important;
+}
+.select2-container--default .select2-selection--single{
+    border: 1px solid #ced4da!important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 34px!important;
+}
+.select2-container .select2-selection--single .select2-selection__rendered{
+    padding-left: 12px!important;
+}

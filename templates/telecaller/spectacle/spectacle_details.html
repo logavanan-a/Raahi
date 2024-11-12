@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block contents %}
+<div class="row align-items-center">
+    <div class="col-xl-12 mx-auto">
+        <div class="card">
+            <div class="card-body">  
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="table-responsive" >								
+                            <table  class="table  dt-responsive ">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th colspan="4">Patient Info - ({{spectacle_details.name|default_if_none:'-'}})</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Unique Id</th>
+                                        <td>{{spectacle_details.unique_id}}</td>
+                                        <th>Name</th>
+                                        <td>{{spectacle_details.name|default_if_none:'-'}}</td>   
+                                    </tr>
+                                    <tr> 
+                                        <th>Occupation</th>
+                                        <td>{{spectacle_details.type_of_job|default_if_none:'-'}}</td>   
+                                        <th>Age</th>
+                                        <td>{{spectacle_details.age|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>   
+                                        <th>Sex</th>
+                                        <td>{{spectacle_details.get_gender_display|default_if_none:'-'}}</td>
+                                        <th>Contact No</th>
+                                        <td>{{spectacle_details.contact_no_1|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        {% if spectacle_details.camp %}
+                                        <th>Camp Name</th>
+                                        <td>{{spectacle_details.camp|default_if_none:'-'}}</td>
+                                        <th>Camp Date</th>
+                                        <td>{{spectacle_details.camp.date|default_if_none:'-'}} </td>
+                                        {% else %}
+                                        <th>Vision Center</th>
+                                        <td>{{spectacle_details.get_vision_center|default_if_none:'-'}}</td>
+                                        <th>Hospital Name</th>
+                                        <td>{{spectacle_details.get_vision_center.partner.name|default_if_none:'-'}} </td>
+                                    
+                                        {% endif %}
+                                    </tr>
+                                    <tr>
+                                        <th>Glass Status</th>
+                                        <td>{{spectacles.get_spectacle_status_display|default_if_none:'-'}}</td> 
+                                        <th>Screened Location</th>
+                                        <td>{{spectacle_details.camp.location|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Delivery By</th>
+                                        <td>{{spectacle_details.user|default_if_none:'-'}} </td>
+                                        <th>Type of Refractive </br> Error Identified </th>
+                                        <td>{{visual_acuity.treatment_for_refraction|default_if_none:'-'}} </td>
+                                    </tr>
+                                    <tr>
+                                        <th>R2C Remarks</th>
+                                        <td>{{spectacle_details.drivers_license_no|default_if_none:'-'}} </td>
+                                        <th>Spectacle Type</th>
+                                        <td>{{glass_pres.spectacle_type|default_if_none:'-'}}</td>
+                                    </tr>
+                                    {% if spectacle_details.camp %}
+                                    <tr>
+                                        <th>Hospital Name</th>
+                                        <td>{{screening_detail.type_of_hospital|default_if_none:'-'}} </td>
+                                    </tr>
+                                    {% endif %}
+                                    <td colspan="4" ></td>
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th colspan="4" >Patient Feedback</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th colspan="2">Have you receive your Spectacles ?</th>
+                                        <td colspan="2">{{telecalling.get_receive_your_spectacles_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">If no, please provide reason</th>
+                                        <td colspan="2">{{telecalling.receiver_spectacles_reason|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">After how many days of screening you received spectacles and where </th>
+                                        <td colspan="2">{{telecalling.ahmd_spectacles_received|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">Are you currently using the spectacles </th>
+                                        <td colspan="2">{{telecalling.get_currently_using_spectacles_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">Are you satisfied with the quality of spectacle provided </th>
+                                        <td colspan="2">{{telecalling.get_satisfied_with_spectacle_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">Any problems raised before after receiving spectacles or in centre</th>
+                                        <td colspan="2">{{telecalling.get_any_problems_raised_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">Are you satisfied with our service</th>
+                                        <td colspan="2">{{telecalling.get_satisfied_with_our_service_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">Was there any charges while collecting the spectacles</th>
+                                        <td colspan="2">{{telecalling.get_any_charges_while_collecting_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">How much would you rate our services (Beale out of 1-5) </th>
+                                        <td colspan="2">{{telecalling.get_rate_our_services_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <td colspan="4"></td>
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th colspan="4">
+                                                Comment Area
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th colspan="2">Ad</th>
+                                        <td colspan="2">{{telecalling.ad|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">Disposition Name</th>
+                                        <td colspan="2">{{telecalling.disposition_name|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">Call Disposition Group</th>
+                                        <td colspan="2">{{telecalling.get_call_disposition_group_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">Comments</th>
+                                        <td colspan="2">{{telecalling.comments|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">Agent Comments</th>
+                                        <td colspan="2">{{telecalling.agent_comments|default_if_none:'-'}}</td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+                        </div> 
+                    </div>   
+                </div>
+                <div class="gap-2">
+                    <button type="reset"  onclick="window.location.href='/spectacle-list/'" class="btn btn-secondary waves-effect">
+                        Back
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   
+
+{% endblock %}

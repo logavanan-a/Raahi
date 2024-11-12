@@ -1,0 +1,303 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+
+<!-- DataTables -->
+<link href="{% static 'libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+<link href="{% static 'libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<!-- Responsive datatable examples -->
+<link href="{% static 'libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+{% endblock %}
+
+{% block contents %}
+{% csrf_token %}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-rep-plugin">                       
+                    <div class="table-responsive mb-0" data-pattern="priority-columns">
+                        <table id="tech-companies-1" class="table  dt-responsive mb-0 mt-3">
+                            <thead class="bg-white">
+                                <tr>             
+                                    <td><span><b>Partner name & address :</b></span> {% if order.camp %} {{order.camp.vision_center.partner}} | {{order.camp.vision_center.partner.address}} {% elif order.vision_center %} {{order.vision_center.partner.name}} | {{order.vision_center.partner.address|default_if_none:'-' }} {% endif %}</td>
+                                </tr>
+                                <tr>
+                                    <td><span><b>Project target location(as per PFA) :</b></span> {{partner.partner.address|default_if_none:'-' }} </td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td><span><b>Donor Name :</b></span> {{order.donor|default_if_none:'-' }} </td>
+                                </tr>
+                                <tr>                                   
+                                    <td><span><b>Shipment address : </b></span> {% if order.shippment_address == 1 %} {{order.vision_center.partner.address|default_if_none:'-' }},{{order.vision_center.partner.district.name}},{{order.vision_center.partner.district.state.name}} {% elif order.shippment_address == 4 %} {{order.vision_center.address|default_if_none:'-'}},{{order.vision_center.district.name}},{{order.vision_center.district.state.name}} {% else %} {{order.other_address|default_if_none:'-'}} {% endif %}</td>
+                                </tr>
+                                <tr>
+                                    <td><span><b>Contact person name and contact number :</b></span> {{request.user.first_name}} | {{order.vision_center.partner.contact_no}}</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-rep-plugin">
+                    <div class="table-responsive" data-pattern="priority-columns">
+                        <table id="camps_table" class="table  dt-responsive mb-0 mt-3">
+                            <thead class="table-light" >
+                                <tr class="text-center">
+                                    <th colspan="12"><h5>Requisition for near vision spectacles</h5></th>
+                                </tr>
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Spectacles</th>   
+                                    <th>+1.0</th>
+                                    <th>+1.25</th>
+                                    <th>+1.50</th>
+                                    <th>+1.75</th>
+                                    <th>+2.0</th>
+                                    <th>+2.25</th>
+                                    <th>+2.50</th>
+                                    <th>+2.75</th>
+                                    <th>+3.0</th>
+                                </tr>   
+                            </thead>
+                            <tbody>
+                                <tr>                                    
+                                    <td>1</td>
+                                    <td>Ordered Quantity</td>
+                                    <td>{{quant_1}}</td>
+                                    <td>{{quant_2}}</td>
+                                    <td>{{quant_3}}</td>
+                                    <td>{{quant_4}}</td>
+                                    <td>{{quant_5}}</td>
+                                    <td>{{quant_6}}</td>
+                                    <td>{{quant_7}}</td>
+                                    <td>{{quant_8}}</td>
+                                    <td>{{quant_9}}</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Received Quantity</td>
+                                    <td>{{rec_quant_1}}</td>
+                                    <td>{{rec_quant_2}}</td>
+                                    <td>{{rec_quant_3}}</td>
+                                    <td>{{rec_quant_4}}</td>
+                                    <td>{{rec_quant_5}}</td>
+                                    <td>{{rec_quant_6}}</td>
+                                    <td>{{rec_quant_7}}</td>
+                                    <td>{{rec_quant_8}}</td>
+                                    <td>{{rec_quant_9}}</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Damaged Quantity</td>
+                                    <td>{{dem_quant_1}}</td>
+                                    <td>{{dem_quant_2}}</td>
+                                    <td>{{dem_quant_3}}</td>
+                                    <td>{{dem_quant_4}}</td>
+                                    <td>{{dem_quant_5}}</td>
+                                    <td>{{dem_quant_6}}</td>
+                                    <td>{{dem_quant_7}}</td>
+                                    <td>{{dem_quant_8}}</td>
+                                    <td>{{dem_quant_9}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-responsive mb-3" data-pattern="priority-columns">
+                        <table id="partners_table" class="table  dt-responsive mb-0 mt-3">
+                            <thead class="table-light" >
+                                <tr class="text-center">
+                                   <th colspan="14"><h5>Requisition for R2C vision spectacles</h5></th>
+                                </tr>
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Spectacles</th> 
+                                    <th>-0.75</th>
+                                    <th>-1.0</th>
+                                    <th>-1.25</th>
+                                    <th>-1.50</th>
+                                    <th>-1.75</th>
+                                    <th>-2.0</th>
+                                    <th>-2.25</th>
+                                    <th>-2.50</th>
+                                    <th>-2.75</th>
+                                    <th>-3.0</th>
+                                </tr>   
+                            </thead>
+                            <tbody>
+                                <tr>                                    
+                                    <td>1</td>
+                                    <td>Ordered Quantity </td>
+                                    <td>{{quant_11}}</td>
+                                    <td>{{quant_12}}</td>
+                                    <td>{{quant_13}}</td>
+                                    <td>{{quant_14}}</td>
+                                    <td>{{quant_15}}</td>
+                                    <td>{{quant_16}}</td>
+                                    <td>{{quant_17}}</td>
+                                    <td>{{quant_18}}</td>
+                                    <td>{{quant_19}}</td>
+                                    <td>{{quant_20}}</td>
+                                
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Received Quantity </td>
+                                    <td>{{rec_quant_11}}</td>
+                                    <td>{{rec_quant_12}}</td>
+                                    <td>{{rec_quant_13}}</td>
+                                    <td>{{rec_quant_14}}</td>
+                                    <td>{{rec_quant_15}}</td>
+                                    <td>{{rec_quant_16}}</td>
+                                    <td>{{rec_quant_17}}</td>
+                                    <td>{{rec_quant_18}}</td>
+                                    <td>{{rec_quant_19}}</td>
+                                    <td>{{rec_quant_20}}</td>
+                            
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Damaged Quantity </td>
+                                    <td>{{dem_quant_11}}</td>
+                                    <td>{{dem_quant_12}}</td>
+                                    <td>{{dem_quant_13}}</td>
+                                    <td>{{dem_quant_14}}</td>
+                                    <td>{{dem_quant_15}}</td>
+                                    <td>{{dem_quant_16}}</td>
+                                    <td>{{dem_quant_17}}</td>
+                                    <td>{{dem_quant_18}}</td>
+                                    <td>{{dem_quant_19}}</td>
+                                    <td>{{dem_quant_20}}</td>
+                            
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div> 
+                    <div class="table-responsive mb-3" data-pattern="priority-columns">
+                        <table id="frame_table" class="table  dt-responsive mb-0 mt-3">
+                            <thead class="table-light" >
+                                <tr class="text-center">
+                                    <th>S.No</th>
+                                    <th>Frames</th> 
+                                    <th>R2CCM015</th>
+                                    <th>R2CCM021</th>
+        
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Ordered Frames </td>                                    
+                                    <td>{{frame_1}}</td>
+                                    <td>{{frame_2}}</td>                                   
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Received Frames </td>                                    
+                                    <td>{{rec_frame_1}}</td>
+                                    <td>{{rec_frame_2}}</td>                                     
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Damaged Frames </td>                                    
+                                    <td>{{dem_frame_1}}</td>
+                                    <td>{{dem_frame_2}}</td>                                     
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="gap-2" style="float: right;">
+                    <button type="reset" onclick="location.href='/orderdelivery_list/'" class="btn btn-secondary waves-effect">
+                        Cancel
+                    </button>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ 
+        
+
+
+{% endblock %}
+
+{% block extra_javascript %}
+<script src="{% static 'js/pages/form-advanced.init.js'%}"></script>   <!--cause console issue  -->
+
+<script src="{% static 'libs/sweetalert2/dist/sweetalert2.min.js' %}"></script>
+<script src="{% static 'js/pages/datatables.init.js' %}"></script>      <!--cause console issue  -->
+<script type="text/javascript" >
+     const radioButtons = document.getElementsByName('table_selection');
+    const campsTable = document.getElementById('camps_table');
+    const partnersTable = document.getElementById('partners_table');
+    const frameTable = document.getElementById('frame_table');
+    partnersTable.style.display='none'
+    frameTable.style.display = 'none';
+    
+    radioButtons.forEach((radio) => {
+      radio.addEventListener('change', function() {
+        if (this.value === '4') {
+          campsTable.style.display = 'table';
+          partnersTable.style.display = 'none';
+          frameTable.style.display = 'none';
+        } else if (this.value === '3') {
+          campsTable.style.display = 'none';
+          partnersTable.style.display = 'table';
+          frameTable.style.display = 'table';
+
+        } 
+      });
+      
+    });
+    
+
+    window.onload = function () {
+        value = '{{prod_id}}'
+        if (value === '4') {
+            campsTable.style.display = 'table';
+            partnersTable.style.display = 'none';
+            frameTable.style.display = 'none';
+        } else if (value === '3') {
+            campsTable.style.display = 'none';
+            partnersTable.style.display = 'table';
+            frameTable.style.display = 'table';
+
+
+        }
+        order_for = '{{order_obj.order_for}}';
+
+        if (order_for === '1') {
+            visionaddTable.style.display = 'table';
+            campaddTable.style.display = 'none';
+        } else {
+            visionaddTable.style.display = 'none';
+            campaddTable.style.display = 'table';
+        }
+
+        
+    }
+   
+    
+    
+
+    
+</script>
+{% endblock %}

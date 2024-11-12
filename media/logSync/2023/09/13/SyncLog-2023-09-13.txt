@@ -1,0 +1,1002 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 10:17:05hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 10:17:05hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:07:29hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:07:29hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:09:39hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 28,
+        "app_created_at": "2023-09-13T11:09:39",
+        "app_updated_at": "2023-09-13T11:09:39",
+        "camp": 0,
+        "contact_no_1": "9948512211",
+        "contact_no_2": "",
+        "district": 4,
+        "donor": 5,
+        "drivers_license_no": "654t77666",
+        "educational_qualification": 45,
+        "feedback": "testing",
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 40,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 33,
+        "name": "Ramachandra",
+        "no_of_months_employed_in_a_year": "",
+        "partner_id": 13,
+        "permanent_address": "",
+        "renewal_date": "2026-09-13",
+        "residence_type": 0,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "2005",
+        "type_of_job": 15,
+        "type_of_route": 25,
+        "type_of_vehicle": 19,
+        "unique_id": "test12345",
+        "user": 30,
+        "uuid": "20230913110939b8876c5e-90b6-47b4-83c7-4d07810cd6fd",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:09:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:09:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:09:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:09:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:09:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:11:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:11:31hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 2,
+        "accident_while_driving_commercial_vehicle_before": 2,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-13T11:11:31",
+        "app_updated_at": "2023-09-13T11:11:31",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "90/120",
+        "blood_sugar_mg_dl": "98",
+        "code_description": 53,
+        "cough_for_more_than_two_weeks": 0,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 0.0,
+        "family_history_of_diabetes": 187,
+        "fever_for_more_than_2_weeks": 0,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 0,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "156",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 175,
+        "medication_hypertension": 1,
+        "night_sweats": 0,
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 13,
+        "patient_uuid": "20230913110939b8876c5e-90b6-47b4-83c7-4d07810cd6fd",
+        "physical_activity": 182,
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 69,
+        "unexplained_weight_loss_or_loss_of_appetite": 0,
+        "uuid": "202309131111311fcd69c5-f80d-4bd6-b2cd-9f9bd6de4c08",
+        "vision_center_id": 85,
+        "waist_circumference": 178,
+        "weight_kg": "56",
+        "what_do_you_do_during_non_working_months": 0,
+        "when_was_it_diagnosed_number_of_years": 2005,
+        "when_was_it_diagnosed_years": 125,
+        "which_months_you_are_not_employed_in_a_year": [],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 0,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 0,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:11:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:11:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:11:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:11:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:11:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:11:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:11:58hrs[
+    {
+        "aided_distance_le": 0,
+        "aided_distance_re": 0,
+        "aided_near_le": 0,
+        "aided_near_re": 0,
+        "app_created_at": "2023-09-13T11:11:56",
+        "app_updated_at": "2023-09-13T11:11:56",
+        "color_le": 0,
+        "color_re": 0,
+        "partner_id": 13,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 127,
+        "referred_to": 135,
+        "screening_uuid": "202309131111311fcd69c5-f80d-4bd6-b2cd-9f9bd6de4c08",
+        "sync_status": 0,
+        "treatment_for_refraction": 120,
+        "un_aided_distance_le": 0,
+        "un_aided_distance_re": 0,
+        "un_aided_near_le": 0,
+        "un_aided_near_re": 0,
+        "uuid": "20230913111156ff655c6e-afcf-4933-8f62-547cf877f275",
+        "vision_center_id": 85,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:11:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:11:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 11:11:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 14:48:48hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 14:48:49hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 14:50:10hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 14:50:11hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 14:50:11hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 14:50:39hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 14:56:38hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 14:56:38hrs{
+    "user_id": "30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 14:56:55hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 14:56:55hrs{}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 14:57:38hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 14:57:38hrs{}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 14:58:47hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 14:58:47hrs{
+    "unique_id": "test"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 14:58:49hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 14:58:49hrs{
+    "unique_id": "test"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:01:00hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:01:00hrs{
+    "user_id": "30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:01:10hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:01:10hrs{}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:01:18hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:01:18hrs{
+    "user_id": "30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:01:24hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:01:41hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:01:53hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:01:59hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:01:59hrs{
+    "user_id": "31"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:12:39hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:12:39hrs{
+    "user_id": "31"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:12:52hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:12:52hrs{}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:15:49hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:16:05hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:16:05hrs{
+    "unique_id": "test",
+    "contact_no_1": "9611915431"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:16:17hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:16:17hrs{
+    "unique_id": " test",
+    "contact_no_1": " 9611915431"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:16:25hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:18:29hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:18:29hrs{
+    "unique_id": "Govind123",
+    "contact_no_1": "88615794155"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:18:39hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:18:39hrs{
+    "unique_id": "   Govind123",
+    "contact_no_1": "    88615794155"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:18:42hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:18:42hrs{
+    "unique_id": "   Govind123",
+    "contact_no_1": "    88615794155"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:18:51hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:19:20hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:19:23hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:19:26hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:25:46hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:25:46hrs{
+    "unique_id": "jejd123",
+    "contact_no_1": "9611915431"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:28:01hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:28:01hrs{
+    "patient_verification_id:": "jejd123"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:28:07hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:28:07hrs{
+    "patient_verification_id:": "jejd123"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:28:43hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:28:43hrs{
+    "patient_verification_id": "jejd123"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:30:10hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:30:10hrs{
+    "patient_verification_id": "9611915431"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:32:15hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:32:33hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:32:33hrs{
+    "patient_verification_id": "demo"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:32:43hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:32:43hrs{
+    "patient_verification_id": "test"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:33:04hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:33:04hrs{
+    "patient_verification_id": "9611915431"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:33:18hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:33:18hrs{
+    "patient_verification_id": "9611915432"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:33:31hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:33:31hrs{
+    "patient_verification_id": "9611915438"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:34:50hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:34:50hrs{
+    "patient_verification_id": "ka295656"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:34:56hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:34:56hrs{
+    "patient_verification_id": "ka295656"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:35:05hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:35:05hrs{
+    "patient_verification_id": "ka4295656"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:35:13hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:35:13hrs{
+    "patient_verification_id": "ka295656"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:39:02hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:39:02hrs{
+    "patient_verification_id": "ka4295656"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:39:16hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:47:19hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:47:19hrs{}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:47:59hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:47:59hrs{
+    "patient_verification_id": "9611915434"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:50:57hrs"https://raahidev.mahiti.org/patient-details-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 15:50:57hrs{
+    "patient_verification_id": "jejd123"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:07:52hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:07:52hrs{
+    "unique_id": "30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:08:04hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:08:04hrs{
+    "unique_id": "31"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:26:09hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:26:09hrs{
+    "unique_id": "30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:26:52hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:26:52hrs{
+    "user_id": "30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:27:29hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:27:29hrs{
+    "user_id": "31"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:27:57hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:27:57hrs{
+    "user_id": "32"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:28:06hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:28:06hrs{
+    "user_id": "33"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:28:29hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:28:29hrs{
+    "user_id": "43"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:28:42hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:28:42hrs{
+    "user_id": "40"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:28:49hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:28:49hrs{
+    "user_id": "30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:29:08hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:29:08hrs{
+    "user_id": "29"
+}
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:29:16hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/13/2023, 17:29:16hrs{
+    "user_id": "30"
+}

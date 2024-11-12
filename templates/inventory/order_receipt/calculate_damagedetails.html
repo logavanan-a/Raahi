@@ -1,0 +1,444 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+
+<!-- DataTables -->
+<link href="{% static 'libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+<link href="{% static 'libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<!-- Responsive datatable examples -->
+<link href="{% static 'libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+{% endblock %}
+
+{% block contents %}
+{% csrf_token %}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-rep-plugin">                       
+                    <div class="table-responsive mb-0" data-pattern="priority-columns">
+                        <table id="tech-companies-1" class="table  dt-responsive mb-0 mt-3">
+                            <thead class="bg-white">
+                                <tr>             
+                                    <td  style="width: 35%;"><b>Partner name & address :</b></td><td>  {% if ptr_vlu.name %} {{ptr_vlu.name}} {% endif %}{% if ptr_vlu.address %}| {{ptr_vlu.address|default_if_none:'-' }} {% endif %}</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Project target location(as per PFA) :</b></td><td> {{donor_dist|default_if_none:'-' }} </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Donor Name :</b></td><td> {{order.donor| default_if_none:'-' }} </td>
+                                </tr>
+                                <tr>                                   
+                                    <td><b>Shipment address : </b></td>
+                                    <td>
+                                        {% if order.shippment_address == 1 %} 
+                                        {% if partner_contact.address %}{{partner_contact.address|default_if_none:'-' }}{% endif %}
+                                        {% if partner_contact.state.get_district_value %} , {% endif %}{{partner_contact.state.get_district_value|default_if_none:' '}}{% if partner_contact.state %},{% endif %}{{partner_contact.state}}
+                                    {% elif order.shippment_address == 4 %} 
+                                        {% if order.vision_center.address %}{{order.vision_center.address|default_if_none:'-'}}{% endif%}
+                                        {% if order.vision_center.state.get_district_value %}{{order.vision_center.state.get_district_value|default_if_none:' '}}{% endif %} 
+                                        {% if order.vision_center.state %}{{order.vision_center.state|default_if_none:'-'}}{% endif %} 
+                                    {% else %} 
+                                        {{order.other_address|default_if_none:'-'}} 
+                                    {% endif %}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Contact person name and contact number :</b></td>
+                                    <td> {{order.created_by.first_name}} | {{partner_contact.contact_no}}</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-rep-plugin">
+                    <form method='POST' id="submitting" class="needs-validation" autocomplete="off" >
+                        {% csrf_token %}
+                        <div class='text-danger'>
+                            {{error}}
+                        </div>
+                        <div class="table-responsive" data-pattern="priority-columns">
+                            <table id="camps_table" class="table  dt-responsive mb-0 mt-3">
+                                <thead class="table-light" >
+                                    <tr class="text-center">
+                                        <th colspan="12"><h5 style="color: aliceblue;">Requisition for near vision spectacles</h5></th>
+                                    </tr>
+                                    <tr>
+                                        <th>S.No</th>
+                                        <th>Spectacles</th>   
+                                        <th>+1.0</th>
+                                        <th>+1.25</th>
+                                        <th>+1.50</th>
+                                        <th>+1.75</th>
+                                        <th>+2.0</th>
+                                        <th>+2.25</th>
+                                        <th>+2.50</th>
+                                        <th>+2.75</th>
+                                        <th>+3.0</th>
+                                    </tr>   
+                                </thead>
+                                <tbody>
+                                    <tr>                                    
+                                        <td>1</td>
+                                        <td>Ordered Quantity</td>
+                                        <td>{{quant_1}}</td>
+                                        <td>{{quant_2}} </td>
+                                        <td>{{quant_3}} </td>
+                                        <td>{{quant_4}} </td>
+                                        <td>{{quant_5}}</td>
+                                        <td>{{quant_6}} </td>
+                                        <td>{{quant_7}} </td>
+                                        <td>{{quant_8}} </td>
+                                        <td>{{quant_9}}</td>
+                                    </tr>
+                                    {% if not details_received %}
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Received Quantity</td>
+                                        <td>
+                                            <input type="number" class="form-control add_units" name='near1' id="no_of_units" value='{{rec_quant_1}}' {% if not quant_1 %} readonly {% endif %} max="{{quant_1}}" oninput="validity.valid||(value='');">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control add_units" name='near2' id="no_of_units" value='{{rec_quant_2}}' {% if not quant_2 %} readonly {% endif %} max="{{quant_2}}" oninput="validity.valid||(value='');">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control add_units" name='near3' id="no_of_units" value='{{rec_quant_3}}' {% if not quant_3 %} readonly {% endif %} max="{{quant_3}}" oninput="validity.valid||(value='');">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control add_units" name='near4' id="no_of_units" value='{{rec_quant_4}}' {% if not quant_4 %} readonly {% endif %} max="{{quant_4}}" oninput="validity.valid||(value='');">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control add_units" name='near5' id="no_of_units" value='{{rec_quant_5}}' {% if not quant_5 %} readonly {% endif %} max="{{quant_5}}" oninput="validity.valid||(value='');">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control add_units" name='near6' id="no_of_units" value='{{rec_quant_6}}' {% if not quant_6 %} readonly {% endif %} max="{{quant_6}}" oninput="validity.valid||(value='');">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control add_units" name='near7' id="no_of_units" value='{{rec_quant_7}}' {% if not quant_7 %} readonly {% endif %} max="{{quant_7}}" oninput="validity.valid||(value='');">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control add_units" name='near8' id="no_of_units" value='{{rec_quant_8}}' {% if not quant_8 %} readonly {% endif %} max="{{quant_8}}" oninput="validity.valid||(value='');">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control add_units" name='near9' id="no_of_units" value='{{rec_quant_9}}' {% if not quant_9 %} readonly {% endif %} max="{{quant_9}}" oninput="validity.valid||(value='');">
+                                        </td> 
+                                    </tr>
+                                    {% else %}
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Received Quantity</td>
+                                        <td>{{rec_quant_1}}</td>
+                                        <td>{{rec_quant_2}}</td>
+                                        <td>{{rec_quant_3}}</td>
+                                        <td>{{rec_quant_4}}</td>
+                                        <td>{{rec_quant_5}}</td>
+                                        <td>{{rec_quant_6}}</td>
+                                        <td>{{rec_quant_7}}</td>
+                                        <td>{{rec_quant_8}}</td>
+                                        <td>{{rec_quant_9}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Damage/ Missing quantity</td>
+                                        <td>{{dem_quant_1}}</td>
+                                        <td>{{dem_quant_2}}</td>
+                                        <td>{{dem_quant_3}}</td>
+                                        <td>{{dem_quant_4}}</td>
+                                        <td>{{dem_quant_5}}</td>
+                                        <td>{{dem_quant_6}}</td>
+                                        <td>{{dem_quant_7}}</td>
+                                        <td>{{dem_quant_8}}</td>
+                                        <td>{{dem_quant_9}}</td>
+                                    </tr>
+                                    {% endif %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-responsive mb-3" data-pattern="priority-columns">
+                            <table id="partners_table" class="table  dt-responsive mb-0 mt-3">
+                                <thead class="table-light" >
+                                    <tr class="text-center">
+                                        <th colspan="14"><h5 style="color: aliceblue;">Requisition for R2C vision spectacles</h5></th>
+                                    </tr>
+                                    <tr>
+                                        <th>S.No</th>
+                                        <th>Spectacles</th> 
+                                        <th>-0.75</th>
+                                        <th>-1.0</th>
+                                        <th>-1.50</th>
+                                        <th>-2.0</th>
+                                        <th>-2.50</th>
+                                        <th>-3.0</th>
+                                        <th>-3.50</th>
+                                        <th>-3.75</th>
+                                    </tr>   
+                                </thead>
+                                <tbody>
+                                    <tr>                                    
+                                        <td>1</td>
+                                        <td>Ordered Quantity </td>
+                                        <td>{{quant_11}}</td>
+                                        <td>{{quant_12}}</td>
+                                        <td>{{quant_13}}</td>
+                                        <td>{{quant_14}}</td>
+                                        <td>{{quant_15}}</td>
+                                        <td>{{quant_16}}</td>
+                                        <td>{{quant_17}}</td>
+                                        <td>{{quant_18}}</td>
+                                        
+                                    </tr>
+                                    {% if not details_received %}
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Received Quantity </td>
+                                        <td>
+                                            <input type="number" class="form-control add_units" name='r2c1' id="no_of_units" value='{{rec_quant_11}}' {% if not quant_11 %} readonly {% endif %} max="{{quant_11}}" oninput="validity.valid||(value='');">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control add_units" name='r2c2' id="no_of_units" value='{{rec_quant_12}}' {% if not quant_12 %} readonly {% endif %} max="{{quant_12}}" oninput="validity.valid||(value='');">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control add_units" name='r2c3' id="no_of_units" value='{{rec_quant_13}}' {% if not quant_13 %} readonly {% endif %} max="{{quant_13}}" oninput="validity.valid||(value='');">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control add_units" name='r2c4' id="no_of_units" value='{{rec_quant_14}}' {% if not quant_14 %} readonly {% endif %} max="{{quant_14}}" oninput="validity.valid||(value='');">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control add_units" name='r2c5' id="no_of_units" value='{{rec_quant_15}}' {% if not quant_15 %} readonly {% endif %} max="{{quant_15}}" oninput="validity.valid||(value='');">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control add_units" name='r2c6' id="no_of_units" value='{{rec_quant_16}}' {% if not quant_16 %} readonly {% endif %} max="{{quant_16}}" oninput="validity.valid||(value='');">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control add_units" name='r2c7' id="no_of_units" value='{{rec_quant_17}}' {% if not quant_17 %} readonly {% endif %} max="{{quant_17}}" oninput="validity.valid||(value='');">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control add_units" name='r2c8' id="no_of_units" value='{{rec_quant_18}}' {% if not quant_18 %} readonly {% endif %} max="{{quant_18}}" oninput="validity.valid||(value='');">
+                                        </td>
+                                    </tr>
+                                    {% else %}
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Received Quantity</td>
+                                        <td>{{rec_quant_11}}</td>
+                                        <td>{{rec_quant_12}}</td>
+                                        <td>{{rec_quant_13}}</td>
+                                        <td>{{rec_quant_14}}</td>
+                                        <td>{{rec_quant_15}}</td>
+                                        <td>{{rec_quant_16}}</td>
+                                        <td>{{rec_quant_17}}</td>
+                                        <td>{{rec_quant_18}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Damage/ Missing quantity </td>
+                                        <td>{{dem_quant_11}}</td>
+                                        <td>{{dem_quant_12}}</td>
+                                        <td>{{dem_quant_13}}</td>
+                                        <td>{{dem_quant_14}}</td>
+                                        <td>{{dem_quant_15}}</td>
+                                        <td>{{dem_quant_16}}</td>
+                                        <td>{{dem_quant_17}}</td>
+                                        <td>{{dem_quant_18}}</td>
+                                        
+                                    </tr>
+                                    {% endif %}
+                                </tbody>
+                            </table>
+                        </div> 
+                        <div class="table-responsive mb-3" data-pattern="priority-columns">
+                            <table id="frame_table" class="table  dt-responsive mb-0 mt-3">
+                                <thead class="table-light" >
+                                    <tr class="text-center">
+                                        <th>S.No</th>
+                                        <th>Spectacles</th> 
+                                        <th>R2CCM015</th>
+                                        <th>R2CCM021</th>
+            
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Ordered Frames  </td>                                    
+                                        <td>{{frame_1}}</td>
+                                        <td>{{frame_2}}</td>                                   
+                                    </tr>
+                                    {% if not details_received %}
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Received Frames </td>                                    
+                                        <td>
+                                            <input type="number" class="form-control add_units" name='R2CCM015' id="no_of_units" value='{{rec_frame_1}}' {% if not frame_1 %} readonly {% endif %} max="{{frame_1}}" oninput="validity.valid||(value='');">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control add_units" name='R2CCM021' id="no_of_units" value='{{rec_frame_2}}' {% if not frame_2 %} readonly {% endif %} max="{{frame_2}}" oninput="validity.valid||(value='');">
+                                        </td>                                   
+                                    </tr>
+                                    {% else %}
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Received Frames </td>                                    
+                                        <td>{{rec_frame_1}}</td>
+                                        <td>{{rec_frame_2}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Damage/ Missing Frames </td>                                    
+                                        <td>{{dem_frame_1}}</td>
+                                        <td>{{dem_frame_2}}</td>                                     
+                                    </tr>
+                                    {% endif %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    {% if order.order_status == 6 or 5 %}
+                    <div class="table-responsive mb-4" data-pattern="priority-columns">
+                        <table id="tech-companies-1" class="table  dt-responsive mb-0 mt-3">
+                            <thead class="table-light" >
+                                <tr class="text-center">
+                                    <th>Invoice Date</th> 
+                                    <th>Invoice Number</th> 
+                                    <th>Invoice Value</th>
+                                    <th>Courier Name</th>
+                                    <th>AWB Number</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><center>{{order.invoice_date|date:"Y-m-d"}}</center></td>
+                                    <td><center>{{order.invoice_no|default_if_none:'-'}}</center></td>
+                                    <td><center>{{order.invoice_value|default_if_none:'-'}}</center></td>
+                                    <td><center>{{order.courier_name|default_if_none:'-'}}</center></td>
+                                    <td><center>{{order.awb_no|default_if_none:'-'}}</center></td>                                                                       
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    {% endif %}
+                    <div class="d-flex justify-content-between">
+                        <div class="gap-2">
+                            <button type="reset" onclick="location.href='/orderdelivery_list/'" class="btn btn-secondary waves-effect">
+                                Back
+                            </button>
+                        </div>
+                        {% if not details_received %}
+                        <div class="gap-2 ">
+                            <button type="button" class="btn btn-primary w-md" onclick="Confirm('Submit')">Submit </button>
+                        </div>
+                        {% endif %}               
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_javascript %}
+<script src="{% static 'js/pages/form-advanced.init.js'%}"></script>   <!--cause console issue  -->
+
+<script src="{% static 'libs/sweetalert2/dist/sweetalert2.min.js' %}"></script>
+<script src="{% static 'js/pages/datatables.init.js' %}"></script>      <!--cause console issue  -->
+<script type="text/javascript" >
+    const radioButtons = document.getElementsByName('table_selection');
+    const campsTable = document.getElementById('camps_table');
+    const partnersTable = document.getElementById('partners_table');
+    const frameTable = document.getElementById('frame_table');
+    partnersTable.style.display='none'
+    frameTable.style.display = 'none';
+    
+    radioButtons.forEach((radio) => {
+      radio.addEventListener('change', function() {
+        if (this.value === '4') {
+          campsTable.style.display = 'table';
+          partnersTable.style.display = 'none';
+          frameTable.style.display = 'none';
+        } else if (this.value === '3') {
+          campsTable.style.display = 'none';
+          partnersTable.style.display = 'table';
+          frameTable.style.display = 'table';
+        } 
+      });
+      
+    });
+    
+
+    window.onload = function () {
+        value = '{{prod_id}}'
+        if (value === '4') {
+            campsTable.style.display = 'table';
+            partnersTable.style.display = 'none';
+            frameTable.style.display = 'none';
+        } else if (value === '3') {
+            campsTable.style.display = 'none';
+            partnersTable.style.display = 'table';
+            frameTable.style.display = 'table';
+
+
+        }
+        order_for = '{{order_obj.order_for}}';
+
+        if (order_for === '1') {
+            visionaddTable.style.display = 'table';
+            campaddTable.style.display = 'none';
+        } else {
+            campaddTable.style.display = 'table';
+        }
+
+        
+    }
+   
+    
+    
+    function Confirm(title){
+        var values = false
+        $( ".add_units" ).each(function() {
+            if($(this).val() != ''){
+                values = true
+            }
+        })
+        if (values){
+            var form_sumbit = document.getElementById('submitting');
+            Swal.fire({
+            title: 'Are you sure you want to '+ title +' ?',
+            showCancelButton: true,
+            confirmButtonText: 'Yes',
+            cancelButtonText: 'No',
+            icon: 'success',
+        }).then((result) => {
+            if (result.isConfirmed){
+                form_sumbit.submit();
+            }
+        });
+        }else{     
+        Swal.fire({
+                icon: 'warning',
+                title: 'Please provide a valid add quantity',
+                showCancelButton: true,
+                showConfirmButton:false,
+            });
+        }
+    }
+    
+
+
+</script>
+{% endblock %}

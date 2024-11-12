@@ -1,0 +1,1239 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 00:00:44hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 00:00:44hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 00:02:15hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 00:02:15hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 00:06:24hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 00:06:24hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 00:09:34hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 00:09:34hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 00:11:15hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 00:11:15hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 00:13:23hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 00:13:23hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 00:14:12hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 00:14:12hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 00:17:01hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 00:17:01hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 00:19:14hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 00:19:14hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 01:05:54hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 01:05:54hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 01:10:36hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 01:10:36hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 10:10:58hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 10:10:58hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 10:12:29hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 10:12:29hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2023-07-28T10:12:27",
+        "app_updated_at": "2023-07-28T10:12:27",
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "code_description": 55,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 2,
+        "family_details": "",
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 3,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "",
+        "patient_uuid": "20230726115436880ed392-3c68-4d79-9d2c-9dc4957c80ac",
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": -1,
+        "uuid": "20230728101227b378311a-c0e2-4515-8e5f-67a320e14553",
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "which_months_you_are_not_employed_in_a_year": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 74,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 10:12:29hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 10:12:29hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 10:16:09hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 10:16:09hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 10:16:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 10:16:45hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2023-07-28T10:16:43",
+        "app_updated_at": "2023-07-28T10:16:43",
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "code_description": 56,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 1,
+        "family_details": "",
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "",
+        "patient_uuid": "20230726115436880ed392-3c68-4d79-9d2c-9dc4957c80ac",
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 0,
+        "uuid": "202307281016437b61b313-2837-4ec4-b554-6a7ab753f591",
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "which_months_you_are_not_employed_in_a_year": 65,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 74,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 10:16:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 10:16:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:36:21hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:36:21hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:37:38hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 89,
+        "app_created_at": "2023-07-28T12:37:37",
+        "app_updated_at": "2023-07-28T12:37:37",
+        "camp": 0,
+        "caste": 0,
+        "contact_no_1": "95856865885",
+        "contact_no_2": "",
+        "district": 10,
+        "donor": 4,
+        "drivers_license_no": "fgxhrxhtfjyxhtciyvkh",
+        "educational_qualification": 47,
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 38,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 35,
+        "name": "driver ",
+        "no_of_months_employed_in_a_year": "1",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "driver",
+        "user": 9,
+        "uuid": "202307281237374e8e22e6-aa04-4416-81ed-d50e162a7362",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:37:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:37:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:37:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:39:08hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:39:08hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 2,
+        "accident_while_driving_commercial_vehicle_before": 2,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-07-28T12:39:07",
+        "app_updated_at": "2023-07-28T12:39:07",
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "code_description": 55,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 1,
+        "family_details": "",
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "on_what_basis_your_salary_is_calculated": 59,
+        "owner_holding_any_amount_from_your_salary": "",
+        "patient_uuid": "202307281237374e8e22e6-aa04-4416-81ed-d50e162a7362",
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 0,
+        "uuid": "20230728123907e57b0972-ace9-4b4f-99ac-81bd62d90cae",
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "which_months_you_are_not_employed_in_a_year": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 2,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:49:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:49:07hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 2,
+        "accident_while_driving_commercial_vehicle_before": 2,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-07-28T12:39:07",
+        "app_updated_at": "2023-07-28T12:39:07",
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "code_description": 55,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 1,
+        "family_details": "",
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "on_what_basis_your_salary_is_calculated": 59,
+        "owner_holding_any_amount_from_your_salary": "",
+        "patient_uuid": "202307281237374e8e22e6-aa04-4416-81ed-d50e162a7362",
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 0,
+        "uuid": "20230728123907e57b0972-ace9-4b4f-99ac-81bd62d90cae",
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "which_months_you_are_not_employed_in_a_year": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 2,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 2
+    },
+    {
+        "accident_vehicle_in_last_twelve_months": 1,
+        "accident_while_driving_commercial_vehicle_before": 1,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2023-07-28T12:49:04",
+        "app_updated_at": "2023-07-28T12:49:04",
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "code_description": 50,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "family_details": "",
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "test",
+        "on_what_basis_your_salary_is_calculated": 59,
+        "owner_holding_any_amount_from_your_salary": "",
+        "patient_uuid": "202307281237374e8e22e6-aa04-4416-81ed-d50e162a7362",
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 69,
+        "uuid": "2023072812490466286159-f279-4432-a69a-8cae41a418c0",
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "which_months_you_are_not_employed_in_a_year": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 72,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:49:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:49:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:50:53hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 25,
+        "app_created_at": "2023-07-28T12:50:51",
+        "app_updated_at": "2023-07-28T12:50:51",
+        "camp": 0,
+        "caste": 0,
+        "contact_no_1": "96859859895",
+        "contact_no_2": "",
+        "district": 10,
+        "donor": 1,
+        "drivers_license_no": "bfxbgxhgxhgfjgcjgctj",
+        "educational_qualification": 0,
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 34,
+        "name": "other",
+        "no_of_months_employed_in_a_year": "",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 0,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 18,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "other",
+        "user": 9,
+        "uuid": "202307281250519cf7378d-e206-4685-b811-781c0a3d1977",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:50:53hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:50:53hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:50:53hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:51:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:51:36hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 2,
+        "accident_while_driving_commercial_vehicle_before": 2,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-07-28T12:39:07",
+        "app_updated_at": "2023-07-28T12:39:07",
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "code_description": 55,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 1,
+        "family_details": "",
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "on_what_basis_your_salary_is_calculated": 59,
+        "owner_holding_any_amount_from_your_salary": "",
+        "patient_uuid": "202307281237374e8e22e6-aa04-4416-81ed-d50e162a7362",
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 0,
+        "uuid": "20230728123907e57b0972-ace9-4b4f-99ac-81bd62d90cae",
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "which_months_you_are_not_employed_in_a_year": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 2,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 2
+    },
+    {
+        "accident_vehicle_in_last_twelve_months": 1,
+        "accident_while_driving_commercial_vehicle_before": 1,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2023-07-28T12:49:04",
+        "app_updated_at": "2023-07-28T12:49:04",
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "code_description": 50,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "family_details": "",
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "test",
+        "on_what_basis_your_salary_is_calculated": 59,
+        "owner_holding_any_amount_from_your_salary": "",
+        "patient_uuid": "202307281237374e8e22e6-aa04-4416-81ed-d50e162a7362",
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 69,
+        "uuid": "2023072812490466286159-f279-4432-a69a-8cae41a418c0",
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "which_months_you_are_not_employed_in_a_year": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 72,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    },
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-07-28T12:51:34",
+        "app_updated_at": "2023-07-28T12:51:34",
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "code_description": 55,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "family_details": "",
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "patient_uuid": "202307281250519cf7378d-e206-4685-b811-781c0a3d1977",
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 0,
+        "uuid": "2023072812513484c29204-33be-417f-a2dc-147974fc225e",
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "which_months_you_are_not_employed_in_a_year": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 0,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 0,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:51:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:51:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:58:19hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:58:19hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 2,
+        "accident_while_driving_commercial_vehicle_before": 2,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-07-28T12:39:07",
+        "app_updated_at": "2023-07-28T12:39:07",
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "code_description": 55,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 1,
+        "family_details": "",
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "on_what_basis_your_salary_is_calculated": 59,
+        "owner_holding_any_amount_from_your_salary": "",
+        "patient_uuid": "202307281237374e8e22e6-aa04-4416-81ed-d50e162a7362",
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 0,
+        "uuid": "20230728123907e57b0972-ace9-4b4f-99ac-81bd62d90cae",
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "which_months_you_are_not_employed_in_a_year": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 2,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 2
+    },
+    {
+        "accident_vehicle_in_last_twelve_months": 1,
+        "accident_while_driving_commercial_vehicle_before": 1,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2023-07-28T12:49:04",
+        "app_updated_at": "2023-07-28T12:49:04",
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "code_description": 50,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "family_details": "",
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "test",
+        "on_what_basis_your_salary_is_calculated": 59,
+        "owner_holding_any_amount_from_your_salary": "",
+        "patient_uuid": "202307281237374e8e22e6-aa04-4416-81ed-d50e162a7362",
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 69,
+        "uuid": "2023072812490466286159-f279-4432-a69a-8cae41a418c0",
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "which_months_you_are_not_employed_in_a_year": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 72,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    },
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-07-28T12:51:34",
+        "app_updated_at": "2023-07-28T12:51:34",
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "code_description": 55,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "family_details": "",
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "patient_uuid": "202307281250519cf7378d-e206-4685-b811-781c0a3d1977",
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 0,
+        "uuid": "2023072812513484c29204-33be-417f-a2dc-147974fc225e",
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "which_months_you_are_not_employed_in_a_year": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 0,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 0,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 0
+    },
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-07-28T12:58:18",
+        "app_updated_at": "2023-07-28T12:58:18",
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "code_description": 50,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 2,
+        "family_details": "",
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "patient_uuid": "202307281250519cf7378d-e206-4685-b811-781c0a3d1977",
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 69,
+        "uuid": "2023072812581829639f79-1bca-4e4a-81e4-e49661ca0ad3",
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "which_months_you_are_not_employed_in_a_year": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 0,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 0,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:58:19hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 12:58:19hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 13:00:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 13:00:00hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 1,
+        "accident_while_driving_commercial_vehicle_before": 1,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2023-07-28T12:59:59",
+        "app_updated_at": "2023-07-28T12:59:59",
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "120",
+        "blood_sugar_mg_dl": "90",
+        "code_description": 56,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "family_details": "",
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "126",
+        "if_you_are_happy_specify_in_what_way": "",
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "",
+        "patient_uuid": "202307281237374e8e22e6-aa04-4416-81ed-d50e162a7362",
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 0,
+        "uuid": "202307281259591c01e4fc-8a7a-4737-8ad5-4b3f1e795f5b",
+        "weight_kg": "50",
+        "what_do_you_do_during_non_working_months": 0,
+        "which_months_you_are_not_employed_in_a_year": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 74,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 13:00:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 13:00:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 13:14:04hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 13:14:04hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 13:18:38hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 25,
+        "app_created_at": "2023-07-28T13:18:38",
+        "app_updated_at": "2023-07-28T13:18:38",
+        "camp": 0,
+        "caste": 29,
+        "contact_no_1": "9611915434",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 4,
+        "drivers_license_no": "55555666667777777777",
+        "educational_qualification": 44,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 35,
+        "name": "pradeep",
+        "no_of_months_employed_in_a_year": "6",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "2023-08-31",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "2001",
+        "type_of_job": 15,
+        "type_of_route": 25,
+        "type_of_vehicle": 19,
+        "unique_id": "test123",
+        "user": 30,
+        "uuid": "202307281318383817859c-28af-41aa-a8f9-9fd85ddf4c96",
+        "vehicle_insurance_policy": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 13:18:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 13:18:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 13:18:38hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 14:04:03hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 14:04:03hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 2,
+        "accident_while_driving_commercial_vehicle_before": 1,
+        "any_difficulty_in_judging_distance_while_driving": 3,
+        "app_created_at": "2023-07-28T14:04:02",
+        "app_updated_at": "2023-07-28T14:04:02",
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 3,
+        "blood_pressure_mmhg": "45",
+        "blood_sugar_mg_dl": "98",
+        "code_description": 50,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "family_details": "family details",
+        "have_any_difficulty_in_seeing_distant_objects": 3,
+        "have_any_difficulty_in_seeing_while_night_driving": 3,
+        "have_you_been_advised_to_wear_glasses_ever": 3,
+        "have_you_ever_had_eye_examination": 3,
+        "height_cm": "150",
+        "if_you_are_happy_specify_in_what_way": "testing",
+        "on_what_basis_your_salary_is_calculated": 60,
+        "owner_holding_any_amount_from_your_salary": "",
+        "patient_uuid": "202307281318383817859c-28af-41aa-a8f9-9fd85ddf4c96",
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 0,
+        "uuid": "20230728140402e2119633-4f01-44a4-bb5a-7e90740e82af",
+        "weight_kg": "76",
+        "what_do_you_do_during_non_working_months": 66,
+        "which_months_you_are_not_employed_in_a_year": 63,
+        "you_able_to_identify_the_traffic_colors_easily": 3,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 72,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 1,
+        "your_family_members_support_you_financially": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 14:04:03hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 14:04:03hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 14:49:06hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 14:49:06hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 14:50:14hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 22,
+        "app_created_at": "2023-07-28T14:50:19",
+        "app_updated_at": "2023-07-28T14:50:19",
+        "camp": 0,
+        "caste": 0,
+        "contact_no_1": "9663381852",
+        "contact_no_2": "",
+        "district": 2,
+        "donor": 1,
+        "drivers_license_no": "dkkrdj83838383833838",
+        "educational_qualification": 0,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 37,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 33,
+        "name": "jjdd",
+        "no_of_months_employed_in_a_year": "",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 0,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "sjj",
+        "user": 30,
+        "uuid": "20230728145019d1c5fcaf-efc4-49bd-81df-c07c7cc88b2f",
+        "vehicle_insurance_policy": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 14:50:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 14:50:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 14:50:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 16:22:11hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/28/2023, 16:22:11hrs{
+    "user_id": 9,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": ""
+}
