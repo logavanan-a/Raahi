@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block contents %}
+
+<style>
+    .btn{
+        padding: 5px 10px;
+        margin-right: 10px;
+    }
+</style>
+<div class="row align-items-center">
+    <div class="col-xl-12 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-end mb-3">
+                    <button type="button" id="usermapping" class="btn btn-primary w-md" onclick="window.location.href='/vendor_partner_user_mapping/{{id}}/{{model}}/'">{% if user_prop %} View Userprofile{% else %}Create Userprofile{% endif %}</button>
+                    {% if heading == 'partner' %}
+                    <button type="button" id="donormapping" class="btn btn-primary w-md"  onclick="window.location.href='/donor-location-listing/{{id}}/'">{% if donor_val %}View Donor{% else %}Link Donor{% endif %}</button>
+                    {% endif %}
+                </div>
+                <table  class="table  dt-responsive ">
+                    <thead class="table-light">
+                        <tr>
+                            <th colspan="6" class="text-capitalize">{{model}} - Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Name</th>
+                            <td>{{obj.name}}</td>
+                            <th>Contact No</th>
+                            <td>{% if heading == 'donor' %}{{obj.mobile_number|default_if_none:'-'}}{% else %}{{obj.contact_no|default_if_none:'-'}}{% endif %}</td>   
+                            {% if heading == 'partner' or heading == 'donor' %}
+                            <th>Email</th>
+                            <td>{{obj.email_id|default_if_none:'-'}}</td>
+                            {% elif heading == 'visioncenter' %}
+                            <th>Partner</th>
+                            <td>{{obj.partner|default_if_none:'-'}}</td>
+                            {% elif heading == 'vendor' %}
+                            <th>State</th>
+                            <td>{{obj.state|default_if_none:'-'}}</td>
+                            
+                            {% endif %}
+                        </tr>
+                        <tr> 
+                            {% if heading == 'partner' %}
+                            <th>State</th>
+                            <td>{{obj.state|default_if_none:'-'}}</td>
+                            <th>Zone</th>
+                            <td>{{obj.state.zone|default_if_none:'-'}}</td>
+                            <th>Address</th>
+                            <td>{{obj.address|default_if_none:'-'}}</td>
+                            {% elif heading == 'vendor' %}
+                            <th>Zone</th>
+                            <td>{{obj.district.state.zone|default_if_none:'-'}}</td>
+                            <th>State</th>
+                            <td>{{obj.district.state|default_if_none:'-'}}</td>
+                            <th>District</th>
+                            <td>{{obj.district.state|default_if_none:'-'}}</td>
+                            {% endif %}
+                        </tr>
+                        <tr>   
+                            {% if heading == 'vendor' %}
+                            <th>Address</th>
+                            <td>{{obj.address|default_if_none:'-'}}</td>
+                            {% endif %}
+                            <th>Status</th>
+                            <td>{{obj.get_status_display|default_if_none:'-'}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>     
+        </div>
+    </div> 
+</div> 
+{% endblock %}

@@ -1,0 +1,216 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 11:36:49hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 56,
+        "app_created_at": "2023-07-31T11:36:53",
+        "app_updated_at": "2023-07-31T11:36:53",
+        "camp": 0,
+        "caste": 0,
+        "contact_no_1": "8861579740",
+        "contact_no_2": "",
+        "district": 3,
+        "donor": 4,
+        "drivers_license_no": "abcdefgh122456677889",
+        "educational_qualification": 45,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 34,
+        "name": "Suraj",
+        "no_of_months_employed_in_a_year": "5",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "AA123",
+        "user": 30,
+        "uuid": "20230731113653ac9bc8af-b73f-47f2-8cd6-e1c821e49a1f",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 11:36:49hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 11:36:49hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 11:36:49hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 11:41:31hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 11:41:31hrs{
+    "user_id": 9,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 12:10:43hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 12:10:43hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 12:39:18hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 12:39:18hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 16:32:23hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 16:32:23hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-07-31T16:32:26",
+        "app_updated_at": "2023-07-31T16:32:26",
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "180",
+        "blood_sugar_mg_dl": "70",
+        "code_description": 54,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 1,
+        "family_details": "gbgvbhj",
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "154",
+        "if_you_are_happy_specify_in_what_way": "cool",
+        "on_what_basis_your_salary_is_calculated": 58,
+        "owner_holding_any_amount_from_your_salary": "",
+        "patient_uuid": "20230731113653ac9bc8af-b73f-47f2-8cd6-e1c821e49a1f",
+        "sync_status": 0,
+        "total_family_members": "5",
+        "type_of_hospital": 69,
+        "uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "weight_kg": "56",
+        "what_do_you_do_during_non_working_months": 66,
+        "which_months_you_are_not_employed_in_a_year": 63,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 72,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 1,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 16:32:23hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 16:32:23hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 18:12:01hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 18:12:01hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 18:15:10hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 18:15:10hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 18:22:32hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/31/2023, 18:22:32hrs{
+    "user_id": 30
+}

@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block contents %}
+<div class="row align-items-center">
+    <div class="col-xl-12 mx-auto">
+        <div class="card">
+            <div class="card-body ">
+                <form method='POST'  id="sumbit-form" class="needs-validation m-3" autocomplete="off" target="_blank">
+                    {% csrf_token %}
+                    <div class="row ">
+                        <div class="col-md-9">
+                            <div class="d-flex justify-content-between">
+                                <div class="me-2">
+                                    <label for="prefix">Prefix<span class="required-field"></span></label>
+                                </div>
+                                <div class="me-2">
+                                <input type="text" id="prefix" class="form-control"  value="{{code}}" name="prefix" readonly>
+                                </div>
+                                <div class="me-2">
+                                    <label for="">Range From<span class="required-field" ></span></label>
+                                </div>
+                                <div class="me-2">
+                                    <input type="text" class="form-control"  value="{{range_to_value}}" name="range_from" id="range_from"  readonly>
+                                </div>
+                                <div class="me-2">
+                                    <label for="">Range To<span class="required-field"></span></label>
+                                </div>
+                                <div class="me-2">
+                                    <input type="text" class="form-control" name="range_to" id="range_to" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class="float-end">
+                                <button type="button" id="submitting" class="btn btn-success">Generate as PDF</button>
+                                <button type="reset" id="clear" class="btn btn-primary">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <p><b>Last Generated QR Code is :</b> {{last_qr_code_value}}</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+{% block extra_javascript %}
+<script src="{% static 'libs/sweetalert2/dist/sweetalert2.min.js' %}"></script>
+<script type="text/javascript">
+   
+        $("#submitting").click(function() {
+            var range_to = $('#range_to').val()
+            var range_from = $('#range_from').val();
+            
+            if (parseInt(range_to)){
+                var range_to_vlu = parseInt(range_to)
+                var range_from_vlu = parseInt(range_from)
+                if(range_to_vlu >= range_from_vlu){
+                    document.getElementById('sumbit-form').submit();
+                }else{
+                    Swal.fire({
+                        icon: 'warning',
+                        title: 'Range TO value should be greater than Range From',
+                        showCancelButton: true,
+                        showConfirmButton:false,
+                    });
+                }
+            }else{
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Please, Provide valid number',
+                    showCancelButton: true,
+                    showConfirmButton:false,
+                });
+            }
+
+        });
+        
+    $("#clear").click(function() {
+        $('#range_to').val('');
+    });
+</script>
+
+{% endblock %}

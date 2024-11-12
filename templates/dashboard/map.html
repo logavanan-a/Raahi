@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contents %}
+<style>
+    .gmaps,
+    .gmaps-panaroma {
+        height: 500px !important;
+    }
+</style>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                {% comment %}
+                <form action="" method="get" class="mb-3">
+                    <div class="row justify-content-start">
+                        <div class="col-lg-3 mt-3">
+                            <select class="form-select select2" aria-label="Floating label select example" id="district"
+                                name='district'>
+                                <option selected value="">Select District</option>
+                                {% for district in district_obj %}
+                                <option value="{{district.id}}" {% if district.id|slugify==district_id %}selected{%
+                                    endif %}>{{district.name}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="col-lg-3 mt-3">
+                            <select class="form-select select2" aria-label="Floating label select example" id="block"
+                                name='block'>
+                                <option selected value="">Select Block</option>
+                                {% for block in block_obj %}
+                                <option value="{{block.id}}" {% if block.id|slugify==block_id %}selected{% endif %}>
+                                    {{block.name}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="col-lg-3 mt-3">
+                            <select class="form-select select2" aria-label="Floating label select example"
+                                placeholder="Choose Module Name" id="grama_panchayat" name='grama_panchayat'>
+                                <option selected value="">Select Grama Panchayat</option>
+                                {% for grama_panchayat in grama_panchayat_obj %}
+                                <option value="{{grama_panchayat.id}}" {% if
+                                    grama_panchayat.id|slugify==grama_panchayat_id %}selected{% endif %}>
+                                    {{grama_panchayat.name}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="col-lg-3 mt-3  ">
+                            <div class="d-flex gap-2">
+                                <button type="submit"
+                                    class="form-control btn btn-success waves-effect btn-xs float-right">Search</button>
+                                <button type="reset" id="filter_reset"
+                                    class="form-control btn btn-warning waves-effect btn-xs float-right">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                {% endcomment %}
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Markers {{key}}</h4>
+                <p class="card-title-dsec">Example of google maps.</p>
+                <div id="gmaps-markers" class="gmaps"></div>
+            </div>
+        </div>
+    </div> <!-- end col -->
+</div> <!-- end row -->
+
+
+
+{% endblock %}
+
+{% block extra_javascript %}
+
+<!-- google maps api -->
+<script src="https://maps.google.com/maps/api/js?key={{key}}&callback=initMap"></script>
+
+<!-- Gmaps file -->
+<script src="{% static 'libs/gmaps/gmaps.min.js' %}"></script>
+
+<!-- demo codes -->
+<script>
+    var map;
+
+    function initializeMap() {
+        map = new GMaps({
+            div: "#gmaps-markers",
+            lat: 12.972442,
+            lng: 77.580643
+        });
+
+        if (map) {
+            var locations = [{ 'lat': '13.011057641416775', 'lng': '77.6744928820286', 'name': 'Spandana hospital and Hcc' }, { 'lat': '13.020674574140116', 'lng': '77.6760807497829', 'name': 'KOSHYS MULTISPECIALITY HOSPITAL' }, { 'lat': '13.037185405354155', 'lng': '77.59206756961966', 'name': 'Dattatreya Multispeciality Clinic' }, { 'lat': '13.010490129060138', 'lng': '77.69262492695533', 'name': 'GENERAL HOSPITAL' }, { 'lat': '13.00639235674736', 'lng': '77.70043551969266', 'name': 'Sri NMPC Hospital' }, { 'lat': '12.912527621500807', 'lng': '77.57306826146537', 'name': 'Bharath Nursing Home' }, { 'lat': '12.912109319995256', 'lng': '77.59298098141107', 'name': 'Divakars Speciality Hospital' }, { 'lat': '12.89018934208794', 'lng': '77.58190882247575', 'name': 'Neighbourhood Hospital' }, { 'lat': '12.90970415921018', 'lng': '77.47820423939193', 'name': 'H.K. HOSPITAL' }, { 'lat': '12.935303167408764', 'lng': '77.48781727660712', 'name': 'Chirayu Multi Speciality Clinic' }, { 'lat': '12.976595088434424', 'lng': '77.64676679624436', 'name': 'The Life Plus Hospital' }, { 'lat': '12.971911275334824', 'lng': '77.63685335161621', 'name': 'ESI Hospital' }, { 'lat': '12.986380627457251', 'lng': '77.64428483472068', 'name': 'Epidemic Diseases Hospital' }, { 'lat': '13.056172564238485', 'lng': '77.5071501747364', 'name': 'Prakriya Hospitals' }, { 'lat': '13.028884726191833', 'lng': '77.5430514061545', 'name': 'SPARSH Hospital Yeshwanthpur' }, { 'lat': '13.036880774084334', 'lng': '77.58912254124729', 'name': 'Baptist Hospital' }, { 'lat': '13.025623481521142', 'lng': '77.53386752238644', 'name': 'Search Hospital' }, { 'lat': '12.976657134168653', 'lng': '77.52328522845175', 'name': 'Manasa Hospital' }, { 'lat': '12.991209410414543', 'lng': '77.60126404918813', 'name': 'Church of South India Hospital' }, { 'lat': '12.982088217630606', 'lng': '77.60791288696745', 'name': 'Lakkatura Tea Estate Hospital' }, { 'lat': '13.010214505915044', 'lng': '77.49851013471643', 'name': 'Shushruti hospital' }, { 'lat': '12.916612105688698', 'lng': '77.63740984285775', 'name': 'Narayana Multispeciality Clinic' }, { 'lat': '12.924977851949835', 'lng': '77.64753786420945', 'name': 'SAI THUNGA MULTISPECIALITY HOSPITALS' }, { 'lat': '13.01873700682338', 'lng': '77.71454856338833', 'name': 'Vitals mother and child hospital' }, { 'lat': '13.021571859837724', 'lng': '77.71284004786008', 'name': 'Sathya Sai Orthopaedic and Multi-specialty Hospital' }];
+
+            for (var i = 0; i < locations.length; i++) {
+                addMarkerWithInfo(locations[i]);
+            }
+        }
+    }
+
+    function addMarkerWithInfo(location) {
+        if (map) {
+            map.addMarker({
+                lat: location.lat,
+                lng: location.lng,
+                mouseover: function (e) {
+                    map.showInfoWindow({
+                        lat: e.latLng.lat(),
+                        lng: e.latLng.lng(),
+                        content: "Location Name: " + location.name
+                    });
+                }
+            });
+        }
+    }
+
+    $(document).ready(function () {
+        if ($("#gmaps-markers").length > 0) {
+            initializeMap();
+        }
+        if (map) {
+            map.fitZoom();
+        }
+    });
+
+</script>
+
+<script>
+    $("#filter_reset").click(function () {
+        $('#district').prop('selectedIndex', 0).change();
+        $('#block').prop('selectedIndex', 0).change();
+        $('#grama_panchayat').prop('selectedIndex', 0).change();
+
+        this.form.submit();
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        $('#district').change(function () {
+            var optionSelected = $(this).find("option:selected");
+            var valueSelected = optionSelected.val();
+            $.ajax({
+                type: "GET",
+                url: '/ajax/block/' + valueSelected + '/',
+                success: function (result) {
+                    $("#block option").remove();
+                    a = '<option selected value="">Choose Block Name</option>';
+                    $("#block").append(a);
+                    if (JSON.parse(result) == 0) {
+                        $("#block option").remove();
+                        a = '<option selected value="">No Block is mapped to this module</option>';
+                        console.log(a)
+                        $("#block").append(a);
+                    }
+                    else {
+                        $.each(JSON.parse(result), function (key, value) {
+                            a = '<option value=' + value['id'] + '>' + value['name'] + '</option>';
+                            $("#block").append(a);
+                        });
+                    }
+                }
+            });
+        });
+        $('#block').change(function () {
+            var optionSelected = $(this).find("option:selected");
+            var valueSelected = optionSelected.val();
+            $.ajax({
+                type: "GET",
+                url: '/ajax/panchayat/' + valueSelected + '/',
+                success: function (result) {
+                    $("#grama_panchayat option").remove();
+                    a = '<option selected value="">Choose Grama Panchayat Name</option>';
+                    $("#grama_panchayat").append(a);
+                    if (JSON.parse(result) == 0) {
+                        $("#grama_panchayat option").remove();
+                        a = '<option selected value="">No Grama Panchayat is mapped to this module</option>';
+                        console.log(a)
+                        $("#grama_panchayat").append(a);
+                    }
+                    else {
+                        $.each(JSON.parse(result), function (key, value) {
+                            a = '<option value=' + value['id'] + '>' + value['name'] + '</option>';
+                            $("#grama_panchayat").append(a);
+                        });
+                    }
+                }
+            });
+        });
+    })
+</script>
+{% endblock %}

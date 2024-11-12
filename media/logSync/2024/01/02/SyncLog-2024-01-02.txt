@@ -1,0 +1,775 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 10:16:49hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 10:16:49hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 10:16:49hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 10:16:49hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 10:16:49hrs[
+    {
+        "id": 143,
+        "app_created_at": "2023-12-21T15:41:09",
+        "app_updated_at": "2023-12-21T15:41:09",
+        "follow_up_status": 3,
+        "status": 2,
+        "server_created_on": "2023-12-21T15:41:08.335541+05:30",
+        "server_modified_on": "2023-12-21T15:41:08.335561+05:30",
+        "uuid": "20231221154109dce3029d-88a7-4026-be71-568506fc55",
+        "glass_prescription_uuid": "202312211541092bbb8062-6f51-4d29-b467-71392100bc05",
+        "partner_id": 23,
+        "spectacle_name": "R2C",
+        "has_the_glass_collected": 1,
+        "order_id": 0,
+        "r2c_eligible": 1,
+        "r2c_remark": "",
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "spectacle_type": 227,
+        "glass_collecting_location": 56,
+        "vision_center": 88,
+        "frame_code": 104,
+        "frame_size": 106,
+        "lens_type": 108,
+        "type_of_coating": 110,
+        "model_type": 88,
+        "data_freeze_status": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 10:16:49hrs{
+    "Text": "Thank you for participating in Vishuvc & test address-Sightsavers National Truckers Programme. Your registration ID is WB-19-148. Your spectacles have been delivered to you. We wish you a safe and happy journey. Sightsavers : ROYAL COMMONWEALTH SOCIETY FOR THE BLIND.",
+    "Number": "918110855521",
+    "SenderId": "RCSBSS",
+    "DRNotifyUrl": "https://raahistaging.mahiti.org/otp-sms/",
+    "DRNotifyHttpMethod": "POST",
+    "Message": "Accepted",
+    "Tool": "API"
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 10:16:49hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 10:16:49hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 10:16:49hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [
+        {
+            "uuid": "20231221154109dce3029d-88a7-4026-be71-568506fc55",
+            "glass_prescription_uuid": "202312211541092bbb8062-6f51-4d29-b467-71392100bc05",
+            "SCO": "2023-12-29 07:21:29.884970+00:00",
+            "SMO": "2024-01-02 04:46:49.424905+00:00",
+            "sync_status": 2
+        }
+    ],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 10:19:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 10:19:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 10:19:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 10:19:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 10:19:13hrs[
+    {
+        "id": 143,
+        "app_created_at": "2023-12-21T15:41:09",
+        "app_updated_at": "2023-12-21T15:41:09",
+        "follow_up_status": 3,
+        "status": 2,
+        "server_created_on": "2023-12-21T15:41:08.335541+05:30",
+        "server_modified_on": "2023-12-21T15:41:08.335561+05:30",
+        "uuid": "20231221154109dce3029d-88a7-4026-be71-568506fc55",
+        "glass_prescription_uuid": "202312211541092bbb8062-6f51-4d29-b467-71392100bc05",
+        "partner_id": 23,
+        "spectacle_name": "R2C",
+        "has_the_glass_collected": 1,
+        "order_id": 0,
+        "r2c_eligible": 1,
+        "r2c_remark": "",
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "spectacle_type": 227,
+        "glass_collecting_location": 56,
+        "vision_center": 88,
+        "frame_code": 104,
+        "frame_size": 106,
+        "lens_type": 108,
+        "type_of_coating": 110,
+        "model_type": 88,
+        "data_freeze_status": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 10:19:13hrs{
+    "Text": "Thank you for participating in Vishuvc & test address-Sightsavers National Truckers Programme. Your registration ID is WB-19-148. Your spectacles have been delivered to you. We wish you a safe and happy journey. Sightsavers : ROYAL COMMONWEALTH SOCIETY FOR THE BLIND.",
+    "Number": "918110855521",
+    "SenderId": "RCSBSS",
+    "DRNotifyUrl": "https://raahistaging.mahiti.org/otp-sms/",
+    "DRNotifyHttpMethod": "POST",
+    "Message": "Accepted",
+    "Tool": "API"
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 10:19:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 10:19:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 10:19:13hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [
+        {
+            "uuid": "20231221154109dce3029d-88a7-4026-be71-568506fc55",
+            "glass_prescription_uuid": "202312211541092bbb8062-6f51-4d29-b467-71392100bc05",
+            "SCO": "2023-12-29 07:21:29.884970+00:00",
+            "SMO": "2024-01-02 04:49:13.513901+00:00",
+            "sync_status": 2
+        }
+    ],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 11:27:09hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 11:27:09hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 11:27:46hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 11:27:46hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 12:34:42hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 12:34:42hrs{
+    "user_id": 29
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:00:35hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:00:35hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:03:14hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:03:14hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:13:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:13:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:13:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:13:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:13:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:13:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:13:25hrs[
+    {
+        "address": "None",
+        "block": "None",
+        "coordinator_mobile_no": "None",
+        "coordinator_name": "None",
+        "date": "2023-12-11",
+        "delay_reason": "",
+        "district": 683,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "None",
+        "expected_glass_prescription": "None",
+        "expected_refer_surgeries": "None",
+        "location": "bihar",
+        "name": "BIH763525",
+        "partner": 13,
+        "uuid": "20231211181757244e0dad-c1d4-47a6-b679-715de2c681f8",
+        "village": "None",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:13:25hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "20231211181757244e0dad-c1d4-47a6-b679-715de2c681f8",
+            "id": 25,
+            "code": 29,
+            "SCO": "2023-12-11 12:47:59.212386+00:00",
+            "SMO": "2024-01-02 08:43:25.605706+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:14:32hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:14:32hrs{
+    "user_id": 30,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": "",
+    "stdate": "",
+    "fmdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:15:21hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:15:21hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:16:56hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:16:56hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:17:36hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:17:36hrs{
+    "user_id": 29
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:27:14hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:27:14hrs{
+    "user_id": 29
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:38:06hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:38:06hrs{
+    "user_id": 29
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:46:17hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 14:46:17hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:24:01hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:24:01hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:24:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:24:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:24:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:24:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:24:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:24:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:24:25hrs[
+    {
+        "address": "None",
+        "block": "None",
+        "coordinator_mobile_no": "None",
+        "coordinator_name": "None",
+        "date": "2023-12-11",
+        "delay_reason": "",
+        "district": 683,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "None",
+        "expected_glass_prescription": "None",
+        "expected_refer_surgeries": "None",
+        "location": "bihar",
+        "name": "BIH763525",
+        "partner": 13,
+        "uuid": "20231211181757244e0dad-c1d4-47a6-b679-715de2c681f8",
+        "village": "None",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:24:25hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "20231211181757244e0dad-c1d4-47a6-b679-715de2c681f8",
+            "id": 25,
+            "code": 30,
+            "SCO": "2023-12-11 12:47:59.212386+00:00",
+            "SMO": "2024-01-02 09:54:25.930033+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:25:24hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:25:24hrs{
+    "user_id": 29
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:31:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:31:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:31:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:31:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:31:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:31:55hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:31:55hrs[
+    {
+        "address": "None",
+        "block": "None",
+        "coordinator_mobile_no": "None",
+        "coordinator_name": "None",
+        "created_by": 0,
+        "date": "2023-12-11",
+        "delay_reason": "",
+        "district": 683,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "None",
+        "expected_glass_prescription": "None",
+        "expected_refer_surgeries": "None",
+        "location": "bihar",
+        "modified_by": 61,
+        "name": "BIH763525",
+        "partner": 13,
+        "uuid": "20231211181757244e0dad-c1d4-47a6-b679-715de2c681f8",
+        "village": "None",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:31:55hrs{
+    "status": 0,
+    "message": "Cannot assign \"0\": \"Camp.created_by\" must be a \"User\" instance.",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:34:39hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:34:39hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:34:48hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:34:48hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:34:48hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:34:48hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:34:48hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:34:48hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:34:48hrs[
+    {
+        "address": "None",
+        "block": "None",
+        "coordinator_mobile_no": "None",
+        "coordinator_name": "None",
+        "created_by": 0,
+        "date": "2023-12-11",
+        "delay_reason": "",
+        "district": 683,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "None",
+        "expected_glass_prescription": "None",
+        "expected_refer_surgeries": "None",
+        "location": "bihar",
+        "modified_by": 61,
+        "name": "BIH763525",
+        "partner": 13,
+        "uuid": "20231211181757244e0dad-c1d4-47a6-b679-715de2c681f8",
+        "village": "None",
+        "vision_center": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/02/2024, 15:34:48hrs{
+    "status": 0,
+    "message": "Cannot assign \"0\": \"Camp.created_by\" must be a \"User\" instance.",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}

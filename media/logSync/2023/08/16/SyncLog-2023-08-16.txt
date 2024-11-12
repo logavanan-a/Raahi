@@ -1,0 +1,205 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 11:08:43hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 11:08:43hrs{
+    "user_id": 30,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": "",
+    "stdate": "",
+    "fmdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 11:43:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 11:43:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 11:43:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 11:43:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 11:43:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 11:43:47hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 11:44:48hrs[
+    {
+        "aadhaar_pan_no": "fjkgjgcjygjy",
+        "age": 56,
+        "app_created_at": "2023-08-08T11:03:01",
+        "app_updated_at": "2023-08-08T11:03:01",
+        "camp": 0,
+        "caste": 30,
+        "contact_no_1": "99686565656",
+        "contact_no_2": "65656868656",
+        "district": 10,
+        "donor": 4,
+        "drivers_license_no": "hfynfgnxbgchckccjhvh",
+        "educational_qualification": 44,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 38,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 35,
+        "name": "testing val",
+        "no_of_months_employed_in_a_year": "g",
+        "others": "",
+        "permanent_address": "testing",
+        "renewal_date": "2023-08-08",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "hfjgjfhgfh",
+        "time_since_driving": "fhhfgjjgjvnnv",
+        "type_of_job": 15,
+        "type_of_route": 25,
+        "type_of_vehicle": 19,
+        "unique_id": "987654322",
+        "user": 30,
+        "uuid": "20230808110301431a3b18-4f44-49c8-9cbd-d64df9480370",
+        "vehicle_insurance_policy": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 11:48:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 11:48:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 11:48:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 11:48:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 11:48:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 11:48:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 11:57:39hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 11:57:39hrs{
+    "user_id": 30,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": "",
+    "stdate": "",
+    "fmdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 11:58:59hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 11:58:59hrs{
+    "user_id": 30,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": "",
+    "stdate": "",
+    "fmdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 12:58:42hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 12:58:42hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 13:51:36hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/16/2023, 13:51:36hrs{
+    "user_id": 35
+}

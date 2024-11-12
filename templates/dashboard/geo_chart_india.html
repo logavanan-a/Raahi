@@ -1,0 +1,81 @@
+
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<style>
+    .highcharts-credits{
+        display: none;
+    }
+</style>
+<script>
+    data_india = [];
+
+    datas = {{ data|safe }};
+
+    for (data in datas.chart) {
+        var value = datas.chart[data];
+        var chart_type = value.chart_type;
+        if (chart_type == 'GEOCHART') {
+            data_india.push(value.datas);
+        }
+    }
+
+    (async () => {
+        const topology = await fetch(
+            'https://code.highcharts.com/mapdata/countries/in/custom/in-all-disputed.topo.json'
+        ).then(response => response.json());
+
+        Highcharts.mapChart('container', {
+            chart: {
+                map: topology
+            },
+
+            title: {
+                text: ''
+            },
+
+            subtitle: {
+                text: ''
+            },
+
+            mapNavigation: {
+                enabled: true,
+                buttonOptions: {
+                    verticalAlign: 'bottom'
+                }
+            },
+
+            colorAxis: {
+                min: 0,
+                minColor: '#C8E6C9', // Light green
+                maxColor:  '#58B057', // Dark green
+            },//4f9e4e  58b057  2E7D32
+
+            series: [{
+                data: data_india[0],
+                name: 'Random data',
+                states: {
+                    hover: {
+                        color: ''
+                    }
+                },
+                tooltip: {
+                    headerFormat: "<b>{point.name}</b><br/>",
+                    pointFormatter: function() {
+                        var stateName = this.name.toUpperCase();
+                        var dataPoint = data_india[0].find(item => item[0].toUpperCase() === stateName);
+                        if (dataPoint) {
+                            return `<b>${stateName}</b><br/><b> Screening</b> - ${dataPoint[1]}<br/><b> Spec issued </b> - ${dataPoint[2]}<br/><b> 
+                            Districts</b> - ${dataPoint[3]}`;
+                        } else {
+                            return `<b>${stateName}</b><br/>Data not available`;
+                        }
+                    }
+                },
+
+                dataLabels: {
+                    enabled: false // Disable data labels
+                }
+            }]
+        });
+    })();
+</script>

@@ -1,0 +1,242 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load report_tags %}
+
+
+{% block extra_css %}
+<!-- DataTables -->
+<link href="{% static 'libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+<link href="{% static 'libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+<!-- Responsive Table css -->
+<link href="{% static 'libs/admin-resources/rwd-table/rwd-table.min.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+{% endblock %}
+{% block contents %}
+<div class="row">
+    <div class="col-12">
+        {% for sub_title in section_title %}
+        {%if forloop.counter0 > 0 %}
+                <div class="row justify-content-left" style="margin-top:25px;">
+                    <h4>{{sub_title|capfirst}}</h4>
+                </div>
+        {% endif %}
+        <div class="card">
+            <div class="card-body font-size-15">
+                {% include 'partials/report_filters.html' %}
+                <br>
+                <!-- Sort Section. Has to be different for each report in the page -->              
+                {%if forloop.counter0 == 0 %}
+                        <!-- This text and the export button is shown only on the first table in the report page -->
+                        <div class="col-lg-1 col-sm-1 col-md-1 mb-2 float-end"> 
+                            <form id = 'export_form' action="/report/{{page_slug}}/" method="POST">
+                                {% csrf_token %}
+                                {% for filter in filter_values %}
+                                {% if filter.4 != 'multi-select' %}
+                                    <input type="hidden" id="__hd1__{{filter.0}}" name='{{filter.0}}' value="{{filter.2}}"/>
+                                {% else %}
+                                <select style="display: none;" id="__hd1__{{filter.0}}" name='{{filter.0}}' multiple="multiple">
+                                    {% for filter_item in filter.1 %}
+                                    <option value="{{filter_item.0}}" {% if filter_item.0|slugify in filter.2 %}selected{% endif %}>
+                                        {{filter_item.1}}</option>
+                                    {% endfor %}
+                                </select>
+                                {% endif %}
+                                {% endfor %}
+                                <button type="submit" name='export' class="form-control btn btn-success waves-effect btn-xs float-right" value="True">Export</button>
+                            </form>
+                        </div>
+                {% endif %}
+                <!-- Report Table  -->
+                <div id="div_data_{{forloop.counter0}}" >
+                    <div class="table-rep-plugin ">
+                        <input type="hidden" id="sort_order_hd_{{forloop.counter0}}" name="sort_order_hd_{{forloop.counter0}}" value="{{user_sort_order|index:forloop.counter0}}"/>
+                        <input type="hidden" id="sort_field_hd_{{forloop.counter0}}" name="sort_field_hd_{{forloop.counter0}}" value="{{user_sort_field|index:forloop.counter0}}"/>
+                        <input type="hidden" id="page_hd_{{forloop.counter0}}" name="page_hd_{{forloop.counter0}}" value="1"/>
+                        <input type="hidden" id="rec_count_hd_{{forloop.counter0}}" name="rec_count_hd_{{forloop.counter0}}" value="{{page_info|index:forloop.counter0|get_item:'rec_count'}}"/>
+                        <div class="table-responsive mb-0" data-pattern="priority-columns" id="tb_resp_{{forloop.counter0}}" >
+                            <table id="report_data_{{forloop.counter0}}" class="table  report_table ">
+                                <thead style='background-color: #777777;color: white;'>
+                                    <!-- Report Header - multiple level headers  -->
+                                    {% for header in table_header|index:forloop.counter0%}
+                                        <tr>
+                                        {%for hrow in header %}
+                                            <!-- header defined with label, colspan and rowspan  -->
+                                            <!-- TODO: handling of variable location levels - state, district and shelterhome  -->
+                                            <th {%if hrow|get_item:'colspan' > 1 %} style="text-align:center;word-wrap: break-word;"{%endif%}{%if hrow|get_item:'colspan' > 0 %} colspan="{{hrow|get_item:'colspan'}}" {% endif %} {%if hrow|get_item:'rowspan' > 0 %} rowspan="{{hrow|get_item:'rowspan'}}" {% endif %} >
+                                                {{hrow|get_item:'label'|safe}}
+                                            </th>
+                                            <!-- <th {%if hrow|get_item:'colspan' > 1 %} style="text-align:center;word-wrap: break-word;"{%endif%}{%if hrow|get_item:'colspan' > 0 %} colspan="{{hrow|get_item:'colspan'}}" {% endif %} {%if hrow|get_item:'rowspan' > 0 %} rowspan="{{hrow|get_item:'rowspan'}}" {% endif %} data-priority="{{hrow|get_item:'priority'|default:1}}">
+                                                {{hrow|get_item:'label'|safe}}
+                                            </th> -->
+                                        {% endfor %}
+                                        </tr>
+                                    {% endfor %}
+                                </thead>
+                                <tbody>
+                                    {%if data|index:forloop.counter0|dict_len == 0 %}
+                                        <tr>
+                                            <td colspan="{{total_header_cols|index:forloop.counter0}}"> No records found</td>
+                                        </tr>
+                                    {% endif %}
+                                    {% for row in data|index:forloop.counter0 %}
+                                        <tr>
+                                            <td>{{forloop.counter|default_if_none:'-'}}</td>
+                                        {% for item in row %}
+                                                <td>{{item|safe}}</td>
+                                             
+                                        {% endfor %}
+                                        </tr>
+                                    {% endfor %}
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Pagination Section -->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12" style="margin-top:5px;">
+                            {% if page_info|index:forloop.counter0|get_item:'num_pages' > 1 %}
+                            <ul class="pagination justify-content-end ">
+                                {% if page_info|index:forloop.counter0|get_item:'current_page' > 1 %}
+                                    <li class="paginate_button page-item"><a href="" class="page-link data_reload{{forloop.counter0}}" id="pg_{{forloop.counter0}}_1">First</a></li>
+                                    {%comment%}<li class="paginate_button page-item"><a href="" class="page-link data_reload{{forloop.counter0}}" id="pg_{{forloop.counter0}}_x">>Previous</a></li> {% endcomment %}
+                                {% else %}
+                                    <li class="paginate_button page-item disabled"><span class="page-link">First</span></li>
+                                    {% comment %} <li class="paginate_button page-item disabled"><span class="page-link">Previous</span></li> {% endcomment %}
+                                {% endif %}
+                                {% for i in pagination_range %}
+                                    {% if page_info|index:forloop.parentloop.counter0|get_item:'current_page' == i %}
+                                        <li class="page-item active"><span class="page-link">{{ i }} <span class="sr-only">(current)</span></span></li>
+                                    {% else %}
+                                        <li class="paginate_button paginate_button page-item"><a href="" class="page-link data_reload{{forloop.parentloop.counter0}}" id="pg_{{forloop.parentloop.counter0}}_{{i}}">{{ i }}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+                                {% if page_info|index:forloop.counter0|get_item:'current_page' < page_info|index:forloop.counter0|get_item:'num_pages' %}
+                                    {% comment %} <li class="paginate_button page-item"><a href="" class="page-link data_reload{{forloop.counter0}}" id="pg_{{forloop.counter0}}_y">Next</a></li> {% endcomment %}
+                                    <li class="paginate_button page-item"><a href="" class="page-link data_reload{{forloop.counter0}}" id="pg_{{forloop.counter0}}_{{page_info|index:forloop.counter0|get_item:'num_pages'}}">Last</a></li>
+                                {% else %}
+                                    {% comment %} <li class="paginate_button page-item disabled"><span class="page-link">Next</span></li> {% endcomment %}
+                                    <li class="paginate_button page-item disabled"><span class="page-link">Last</span></li>
+                                {% endif %}
+                                </ul>
+                            {% endif %}
+                        </div>  
+                    </div>
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+
+                    //Each report will have a on click defined for handling the sorrt and pagination ajax reload
+                    $(document).on("click", ".data_reload{{forloop.counter0}}", function(e){
+                        //Prevent default action of click of sort button and pagination links
+                        e.preventDefault();
+                        // console.log($(this).attr("id"));
+                        // console.log(e);
+                        //Get data from hidden fields to get the sort details and total count and current page
+                        //- hidden fields stored on page load or on ajax reload of report data
+                        var new_sort_field = $("#sort_field_hd_{{forloop.counter0}}").val();
+                        var new_sort_order = $("#sort_order_hd_{{forloop.counter0}}").val();
+                        var rec_count = $("#rec_count_hd_{{forloop.counter0}}").val();
+                        var new_page_num = $("#page_hd_{{forloop.counter0}}").val();
+                        //get the new sort values on click of sort button
+                        debugger;
+                        if(($(this).attr("id")).startsWith('sort_'))
+                        {
+                            new_sort_field = $('select[name="sort_field_{{forloop.counter0}}"] option:selected').val();
+                            new_sort_order = $('select[name="sort_order_{{forloop.counter0}}"] option:selected').val();
+                        }
+                        else 
+                        {
+                            //get the new page number onclick of the pagination links
+                            new_page_num = ($(this).attr("id")).replace('pg_{{forloop.counter0}}_','');
+                        }
+                        var url = '/ajax/custom_report_reload/{{page_slug}}/{{report_slug_list|index:forloop.counter0}}/';
+                        var data = {
+                            'groupby': $('#groupby').val(),
+                            'group_by_month': $('#group_by_month').val(),
+                            //get all filter values for the report
+                            {% for filter in filter_values %}
+                            {% if filter.4 != 'multi-select' %}
+                            '{{filter.0}}': $('#__hd__{{filter.0}}').val(),
+                            {% else %}
+                            '{{filter.0}}': $('#__hd__{{filter.0}}').val(),
+                            {% endif %}
+                            {% endfor %}
+                            'sort_field_{{forloop.counter0}}':new_sort_field,
+                            'sort_order_{{forloop.counter0}}':new_sort_order,
+                            'page_{{forloop.counter0}}':new_page_num,
+                            'rec_count_{{forloop.counter0}}':rec_count,
+                            //csfr token set for the ajax call
+                            'csrfmiddlewaretoken':$('input[name="csrfmiddlewaretoken"]').val()
+                        };
+                        //console.log(new_sort_field + " : " + new_page_num + " : " + rec_count);
+                        $.ajax({
+                            type: "POST",
+                            url: url,
+                            data: data,
+                            success: function (result,status,xhr) {
+                                console.log(xhr);
+                                //alert('status:'+xhr.status);
+                                if (xhr.status == 200 && result.includes("check_session_valid")){
+                                    // replace the ajax reponse to the report table
+                                    $('#div_data_{{forloop.counter0}}').html(result);
+                                    // re-initialize the responsive table after ajax data load
+                                    $('.table-responsive').responsiveTable({
+                                        //addDisplayAllBtn: 'btn btn-secondary',
+                                        addDisplayAllBtn:false,
+                                        addFocusBtn:false,
+                                    });
+                                    $('.btn-toolbar [data-toggle=dropdown]').attr('data-bs-toggle', "dropdown");
+                                }else{
+                                    location.reload();
+                                }
+                            }
+                            //TODO: add the complete, failure functions 
+                        });
+                        return false;
+                    });
+                });
+
+                </script>            
+                {% endfor %}
+            </div> 
+            
+        </div>
+    </div> <!-- end col -->
+</div> <!-- end row -->
+
+<style>
+    .report_table {
+        border: 1px solid #616161 !important;
+    }
+    
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        $(document).ready(function () {
+            $("i").tooltip({
+                'selector': '',
+                'placement': 'top',
+                'container':'body'
+            });
+            
+        });
+    });
+    
+
+</script>
+{% endblock %}
+{% block extra_javascript %}
+        <!-- Responsive Table js -->
+        <script src="{% static 'libs/admin-resources/rwd-table/rwd-table.min.js' %}"></script>
+
+        <!-- Init js -->
+        <script src="{% static 'js/pages/table-responsive.init.js' %}"></script>
+        
+{% endblock %}

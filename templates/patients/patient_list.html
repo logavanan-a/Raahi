@@ -1,0 +1,483 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+
+<!--
+<link href="{% static 'libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+<link href="{% static 'libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<link href="{% static 'libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" /> -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">{% endblock %}
+
+{% block contents %}
+<style>
+    #btn-outline-danger {
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+}
+
+</style>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-body p-0">
+                    <form action="" class="needs-validation form-horizontal" autocomplete="off" enctype="multipart/form-data" novalidate  method="GET" id="filters">
+                        <div class="row">
+                            <div class="col-md-4">  
+                                <div class="mb-3">
+                                    <label for="state">State:</label>
+                                    <select  class="form-select select2"  aria-label="Floating label select example" placeholder="Choose State" id="state" name='state_name' >      
+                                        <option selected value="">Choose state</option>
+                                        {% if request.session.role_id == 4 %}
+                                            {% with default_state=state.first %}
+                                                <option value="{{ default_state.id }}" selected>{{ default_state }}</option>
+                                            {% endwith %}
+                                        {% else %}
+
+                                            {% for states in state %}
+                                                <option value="{{states.id}}" {% if states.id == state_names %}selected{% endif %}>{{states.name}}</option>
+                                            {% endfor %}
+                                        {% endif %}
+                                    </select>
+                                </div>   
+                            </div>
+                            <div class="col-md-4">  
+                                <div class="mb-3">
+                                    <label for="partner">Partner :</label>
+                                    <select class="form-select select2" aria-label="Floating label select example" placeholder="Choose Partner" id="partner" name='partner_name'>      
+                                        <option selected value="">Choose Partner</option>
+                                        {% if request.session.role_id == 4 %}
+                                            {% with default_partner=partners.first %}
+                                                <option value="{{ default_partner.id }}" selected>{{ default_partner }}</option>
+                                            {% endwith %}
+                                        {% else %}
+                                            {% for partner in partners %}
+                                            <option value="{{ partner.id }}" {% if partner.id == partner_names %}selected{% endif %}>{{ partner }}</option>
+                                            {% endfor %}
+                                        {% endif %}
+                                    </select>
+                                </div>   
+                            </div>
+                            <div class="col-md-4">  
+                                <div class="mb-3">
+                                    <label for="donor">Donor :</label>
+                                    <select  class="form-select select2"  aria-label="Floating label select example" placeholder="Choose Donor" id="donor" name='donor_name' >      
+                                        <option selected value="" >Choose Donor</option>
+                                        {% for donors in donors %}
+                                        <option value="{{ donors.id }}" {% if donors.id == donor_names %}selected{% endif %}>{{ donors }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>   
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="start_filter">Start date:</label>
+                                    <input type="date" class="form-control" name="start_filter" value="{{start_filter}}" id="start_filter" onfocus="this.max=new Date().toISOString().split('T')[0]" onchange="updateEndDateMin()">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="end_filter">End date:</label>
+                                    <input type="date" class="form-control" name="end_filter" value="{{end_filter}}" id="end_filter" onfocus="this.max=new Date().toISOString().split('T')[0]" onchange="updateStartDateMax()">
+                                </div>
+                                <div class="col-md-4">  
+                                    <div class="mb-3">
+                                        <label for="search">Name :</label>
+                                        <input type="text" id="search" name="search" class="form-control" value="{{search}}" placeholder="Name or Contact No or Unique ID">
+                                    </div>   
+                                </div>
+                            </div>                            
+                            <div class="col-md-4">  
+                                <div class="mb-3">
+                                    <label for="spokeid">Model Type</label>
+                                    <select  class="select2 form-select"  aria-label="Floating label select example" placeholder="Choose Hub/Spoke" id="spokeid" name='spoke'  onchange="handleModelTypeChange(this)">      
+                                        <option value="0" {% if request.GET.spoke == '0' %}selected{% endif %}>Choose Hub/Spoke</option>
+                                        <option value="1" {% if request.GET.spoke == '1' %}selected{% endif %}>Both</option>
+                                        <option value="2" {% if request.GET.spoke == '2' %}selected{% endif %}>Camp</option>
+                                        <option value="3" {% if request.GET.spoke == '3' %}selected{% endif %}>Static Centre</option>
+                                    </select>
+                                </div>   
+                            </div>
+
+                            <div class="col-md-4" id="camp_id">  
+                                <div class="mb-3">
+                                    <label for="campid">Hub/Spoke :</label>
+                                    <select  class="form-select select2"  aria-label="Floating label select example" placeholder="Choose camp" id="campid" name='camp'>      
+                                        <option selected value="" {% if not camp_obj %}selected{% endif %}>Choose camp</option>
+                                        {% for camp_ob in camp_obj %}
+                                        <option value="{{camp_ob.id}}" {% if camp_ob.id == camps %}selected{% endif %}>{{camp_ob}}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>   
+                            </div>
+                            <div class="col-md-4" id="static_center_id">  
+                                <div class="mb-3">
+                                    <label for="static_centerid">Hub/Spoke :</label>
+                                    <select  class="form-select select2"  aria-label="Floating label select example" placeholder="Choose static center" id="static_centerid" name='static_center'>      
+                                        <option selected value="" {% if not vision_centers %}selected{% endif %}>Choose static center</option>
+                                        {% for vision_center in vision_centers %}
+                                        <option value="{{vision_center.id}}" {% if vision_center.id == static_centers %}selected{% endif %}>{{vision_center}}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>   
+                            </div>
+                            <div class="col-md-4" id="both_id">  
+                                <div class="mb-3">
+                                    <label for="bothid">Hub/Spoke :</label>
+                                    <select class="form-select select2" aria-label="Floating label select example" placeholder="Choose static center" id="bothid" name='both'>      
+                                        <option value="" {% if not boths %}selected{% endif %}>Choose Hub/Spoke :</option>
+                                        {% for vision_center in both_obj %}
+                                            <option value="{{vision_center.id}}" {% if vision_center.id == boths %}selected{% endif %}>{{vision_center}}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>   
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between " style="margin-right:0px ;">
+                            <div class="p-2">
+                                <select  class="form-select"  aria-label="Floating label select example" placeholder="Choose camp" id="paginate_length" name="page_length">      
+                                    <option value="10" {% if page_length == "10" %}selected{% endif %}>10</option>
+                                    <option value="25" {% if page_length == "25" %}selected{% endif %}>25</option>
+                                    <option value="50" {% if page_length == "50" %}selected{% endif %}>50</option>
+                                    <option value="100" {% if page_length == "100" %}selected{% endif %}>100</option>
+                                </select>
+                            </div>
+                            <div class="d-flex">
+                                <div class="col-auto p-2">
+                                    <button type="submit" class="btn btn-outline-success waves-effect btn-xs float-right"><i class="fas fa-filter" title="Filter"></i></button>
+                                </div>
+                                <div class="col-auto p-2">
+                                    <button type="reset" id="filter_reset"  class=" btn btn-outline-warning waves-effect btn-xs float-right" ><i class="fas fa-refresh" title="Reset Filter"></i></button>
+                                </div>
+                            </div>
+                            <!-- {% if request.session.role_id == 4 %}
+                            <div class="col-auto p-2" style="float: right; ">
+                                <button type="button" class="form-control btn btn-outline-primary waves-effect btn-xs float-right" onclick="location.href='/add_camp/'"><i class="bx bx-plus-medical" title="Add New"></i></button>
+                            </div>
+                            {% endif %} -->
+                        </div>
+                    </form> 
+                    <div class="table-responsive mb-3" data-pattern="priority-columns">
+                        <table id="datatables" class="table table-striped dt-responsive mb-0 ">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>SI No</th>
+                                    <th>Unique Id</th>   
+                                    <th>Patient Name</th>   
+                                    <th>Age</th>
+                                    <th>Gender</th>
+                                    <th>State</th>   
+                                    <!-- <th>Camp/VC Name</th>  -->
+                                    <th>Hub/Spoke</th>
+                                    <th>Partner</th>
+                                    <th>Donor</th> 
+                                    <th>Contact No(+91)</th> 
+                                    <th>Date of registration</th>
+                                    <th>Language</th>
+                                    <th>Address</th>
+                                </tr>   
+                            </thead>
+                            <tbody>
+                               
+                                {% for l in data %}
+                                <tr>
+                                    <td>{{ forloop.counter0|add:data.start_index }}</td>
+                                    <td><a href="/patient-details/{{l.patient_uuid}}/"> {{l.patient_unique_id}}</a></td>
+                                    <td>{{l.name|default_if_none:'-'}}</td>
+                                    <td>{{l.age|default_if_none:'-'}}</td>
+                                    <td>{{l.gender|default_if_none:'-'}}</td>
+                                    <td>{{l.state_name|default_if_none:'-'}}</td>
+                                    <td>{{l.hub_spoke|default_if_none:'-' }}</td>
+                                    <td>{{l.partner_name|default_if_none:'-' }}</td>
+                                    <td>{{l.donar_name|default_if_none:'-'}}</td>
+                                    <td>{{l.contact_1|default_if_none:'-'}}</td>
+                                    <td>{{l.formatted_registered_date|default_if_none:'-'}}</td>
+                                    <td>{{l.languages|default_if_none:'-'}}</td>
+                                    <td>{{l.address|default_if_none:'-'}}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <nav aria-label="...">
+                        {% if data.has_other_pages %}
+                        <ul class="pagination justify-content-end ">
+                            {% if data.has_previous %}
+                            <li class="paginate_button page-item"><a class="page-link" href="?page=1&page_length={{page_length}}&state_name={{state_names}}&district_name={{district_names}}&donor_name={{donor_names}}&partner_name={{partner_names}}&spoke={{request.GET.spoke}}&camp={{camps}}&static_center={{static_centers}}&both={{boths}}&search={{search}}&start_filter={{start_filter}}&end_filter={{end_filter}}">First</a></li>
+                            {% else %}
+                            <li class="paginate_button page-item disabled"><span class="page-link">First</span></li>
+                            {% endif %}
+                            {% for i in display_page_range %}
+                                {% if data.number == i %}
+                                <li class="page-item active"><span class="page-link">{{ i }} <span class="sr-only">(current)</span></span></li>
+                                {% else %}
+                                <li class="paginate_button paginate_button page-item"><a class="page-link" href="?page={{ i }}&page_length={{page_length}}&state_name={{state_names}}&district_name={{district_names}}&donor_name={{donor_names}}&partner_name={{partner_names}}&spoke={{request.GET.spoke}}&camp={{camps}}&static_center={{static_centers}}&both={{boths}}&search={{search}}&start_filter={{start_filter}}&end_filter={{end_filter}}">{{ i }}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                            {% if data.has_next %}
+                                <li class="paginate_button page-item"><a class="page-link" href="?page={{ data.paginator.num_pages }}&page_length={{page_length}}&state_name={{state_names}}&district_name={{district_names}}&donor_name={{donor_names}}&partner_name={{partner_names}}&spoke={{request.GET.spoke}}&camp={{camps}}&static_center={{static_centers}}&both={{boths}}&search={{search}}&start_filter={{start_filter}}&end_filter={{end_filter}}">Last</a></li>
+                            {% else %}
+                                <li class="paginate_button page-item disabled"><span class="page-link">Last</span></li>
+                            {% endif %}
+                            </ul>
+                        {% endif %}
+                    </nav> 
+                </div> 
+            </div> 
+        </div>
+    </div>                        
+</div>
+
+{% endblock %}
+{% block extra_javascript %}
+
+<script src="{% static 'libs/sweetalert2/dist/sweetalert2.min.js' %}"></script>
+<!-- 
+<script src="{% static 'libs/datatables.net/js/jquery.dataTables.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-buttons/js/dataTables.buttons.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-buttons/js/buttons.colVis.min.js' %}"></script>
+
+<script src="{% static 'libs/datatables.net-responsive/js/dataTables.responsive.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js' %}"></script>
+
+<script src="{% static 'js/pages/datatables.init.js' %}"></script> -->
+
+</script>
+
+<script type="text/javascript" >
+    function Confirm(id, title) {
+        Swal.fire({
+            title: "Are you sure!",
+            text:"You want to "+ title +"?",
+            showCancelButton: !0,
+            confirmButtonColor: "#34c38f",
+            cancelButtonColor: "#f46a6a",
+            confirmButtonText: "Yes, "+ title +" it!",
+        }).then((result) => {
+            if (result.isConfirmed){
+                window.location.href = '/'+id+'/delete_camp/';
+            };
+                
+        })
+    };
+
+</script>
+<script type="text/javascript">
+    $('#filter_reset').click(function() {
+        $('#state').val('');
+        {% comment %} $('#district').prop('selectedIndex', 0).change(); {% endcomment %}
+        $('#search').val('');
+        $('#donor').val('');
+        $('#start_filter').val('');
+        $('#end_filter').val('');
+        $('#partner').val('');
+        $('#spokeid').val('');
+        $('#campid').val('');
+        $('#static_centerid').val('');
+        $('#bothid').val('');
+        
+        this.form.submit();
+  });
+
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        $('#paginate_length').change(function() {
+            var url = `/patient_list/?page=1&page_length=${$(this).val()}&state_name={{state_names}}&district_name={{district_names}}&donor_name={{donor_names}}&spoke={{request.GET.spoke}}&camp={{camps}}&static_center={{static_centers}}&both={{boths}}&search={{search}}`
+            window.location.href=url;
+        })
+    
+    $('#state').change(function() {
+        var optionSelected = $(this).find("option:selected");
+        var valueSelected = optionSelected.val();
+        
+        if (valueSelected === "") {
+            $("#partner option").remove();
+            return; 
+        }
+
+        $.ajax({
+            type: "GET",
+            url: '/ajax/partner_state/' + valueSelected + '/',
+            success: function(result) {
+                $("#partner option").remove();
+                a = '<option selected value="">Choose partner Name</option>';
+                $("#partner").append(a);
+
+                if (JSON.parse(result) == 0) {
+                    $("#partner option").remove();
+                    a = '<option selected value="">No partner is mapped to this State</option>';
+                    console.log(a)
+                    $("#partner").append(a);
+                } else {
+                    $.each(JSON.parse(result), function(key, value) {
+                        a = '<option value=' + value['id'] + '>' + value['name'] + '</option>';
+                        $("#partner").append(a);
+                    });
+                }
+
+                {% comment %} $("#partner").append(a); {% endcomment %}
+            }
+        });
+    });
+    $('#partner').change(function() {
+        var optionSelected = $(this).find("option:selected");
+        var valueSelected = optionSelected.val();
+        
+        if (valueSelected === "") {
+            $("#donor option").remove();
+            return; 
+        }
+
+        $.ajax({
+            type: "GET",
+            url: '/ajax/donor/' + valueSelected + '/',
+            success: function(result) {
+                $("#donor option").remove();
+                var a = '<option selected value="">Choose Donor Name</option>';
+
+                if (JSON.parse(result) == 0) {
+                    a = '<option selected value="">No Donor is mapped to this Partner</option>';
+                    console.log(a);
+                } else {
+                    $.each(JSON.parse(result), function(key, value) {
+                        a += '<option value=' + value['id'] + '>' + value['name'] + '</option>';
+                    });
+                }
+
+                $("#donor").append(a);
+            }
+        });
+    });
+
+
+});
+
+
+    
+</script>
+<!-- <script>
+    var campFilter = document.getElementById('camp_id');
+    var staticCenterFilter = document.getElementById('static_center_id');
+    var bothFilter = document.getElementById('both_id');
+    campFilter.style.display = 'none';
+    staticCenterFilter.style.display = 'none';
+    bothFilter.style.display = 'none';
+
+    selectedValue='{{spoke}}'
+    if (selectedValue === '2') {
+            campFilter.style.display = 'block';
+            staticCenterFilter.style.display = 'none';
+            bothFilter.style.display = 'none';
+        } else if (selectedValue === '3') {
+            campFilter.style.display = 'none';
+            staticCenterFilter.style.display = 'block';
+            bothFilter.style.display = 'none';
+        } else if (selectedValue === '1'){
+            campFilter.style.display = 'none';
+            staticCenterFilter.style.display = 'none';
+            bothFilter.style.display = 'block';
+        }
+    console.log(selectedValue,typeof(selectedValue))
+    function handleModelTypeChange(selectElement) {
+        var selectedValue = selectElement.value;
+        
+        if (selectedValue === '2') {
+            campFilter.style.display = 'block';
+            staticCenterFilter.style.display = 'none';
+            bothFilter.style.display = 'none';
+        } else if (selectedValue === '3') {
+            campFilter.style.display = 'none';
+            staticCenterFilter.style.display = 'block';
+            bothFilter.style.display = 'none';
+        } else if (selectedValue === '1'){
+            campFilter.style.display = 'none';
+            staticCenterFilter.style.display = 'none';
+            bothFilter.style.display = 'block';
+        }
+    }
+</script> -->
+<script>
+    var campFilter = document.getElementById('camp_id');
+    var staticCenterFilter = document.getElementById('static_center_id');
+    var bothFilter = document.getElementById('both_id');
+    campFilter.style.display = 'none';
+    staticCenterFilter.style.display = 'none';
+    bothFilter.style.display = 'none';
+
+    selectedValue='{{spoke}}'
+    if (selectedValue === '2') {
+        campFilter.style.display = 'block';
+        staticCenterFilter.style.display = 'none';
+        bothFilter.style.display = 'none';
+    } else if (selectedValue === '3') {
+        campFilter.style.display = 'none';
+        staticCenterFilter.style.display = 'block';
+        bothFilter.style.display = 'none';
+    } else if (selectedValue === '1'){
+        campFilter.style.display = 'none';
+        staticCenterFilter.style.display = 'none';
+        bothFilter.style.display = 'block';
+    }
+
+
+    function handleModelTypeChange(selectElement) {
+        const selectedValue = selectElement.value;
+        
+        // Hide all filter options initially
+        document.getElementById("camp_id").style.display = "none";
+        document.getElementById("static_center_id").style.display = "none";
+        document.getElementById("both_id").style.display = "none";
+
+        // Reset the other filter options
+        document.getElementById("campid").selectedIndex = 0;
+        document.getElementById("static_centerid").selectedIndex = 0;
+        document.getElementById("bothid").selectedIndex = 0;
+
+        // Show the selected filter option
+        if (selectedValue === "2") {
+            document.getElementById("camp_id").style.display = "block";
+        } else if (selectedValue === "3") {
+            document.getElementById("static_center_id").style.display = "block";
+        } else if (selectedValue === "1") {
+            document.getElementById("both_id").style.display = "block";
+        }
+    }
+    
+</script>
+<script>
+    $(document).ready(function() {
+        // Remove "Choose Hub/Spoke :" when an option is selected
+        $('#campid, #static_centerid, #bothid').on('change', function() {
+            var select = $(this);
+            select.find('option[value=""]').remove();
+        });
+    });
+
+    function updateEndDateMin() {
+        var startDateValue = document.getElementById('start_filter').value;
+    
+        document.getElementById('end_filter').min = startDateValue;
+    }
+    
+    function updateStartDateMax() {
+        var endDateValue = document.getElementById('end_filter').value;
+    
+        document.getElementById('start_filter').max = endDateValue;
+    }
+    document.getElementById('end_filter').min = document.getElementById('start_filter').value;
+    document.getElementById('start_filter').max = document.getElementById('end_filter').value;
+
+</script>
+
+
+{% endblock %}

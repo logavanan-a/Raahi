@@ -1,0 +1,438 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 12:51:57hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 12:51:57hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 12:52:02hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 12:52:02hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 13:03:19hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 13:03:19hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 13:03:19hrs[
+    {
+        "aided_distance_le": 86,
+        "aided_distance_re": 85,
+        "aided_near_le": 0,
+        "aided_near_re": 0,
+        "app_created_at": "2024-04-18T15:00:24",
+        "app_updated_at": "2024-06-13T13:03:18",
+        "color_le": 116,
+        "color_re": 116,
+        "latitude": "13.011599999999998",
+        "longitude": "77.66011499999999",
+        "partner_id": 13,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 85,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 124,
+        "referred_to": 135,
+        "screening_uuid": "20240418145956fe055866-6b4b-416b-ac91-74e748b09d51",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 0,
+        "un_aided_distance_re": 0,
+        "un_aided_near_le": 0,
+        "un_aided_near_re": 0,
+        "uuid": "20240418150024ad6698bc-717e-48f3-8557-6f0178f5c1ae",
+        "vision_center_id": 85,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 13:03:19hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 13:03:19hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 13:03:19hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 13:03:19hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 13:03:19hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "20240418150024ad6698bc-717e-48f3-8557-6f0178f5c1ae",
+            "screening_uuid": "20240418145956fe055866-6b4b-416b-ac91-74e748b09d51",
+            "SCO": "2024-04-18 09:30:27.054275+00:00",
+            "SMO": "2024-06-13 07:33:19.810570+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 17:28:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 17:28:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 17:28:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 17:28:00hrs[
+    {
+        "app_created_at": "2024-06-13T17:27:58",
+        "app_updated_at": "2024-06-13T17:27:58",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "",
+        "axis_near_re": "",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "",
+        "cyl_near_re": "",
+        "follow_up_status": 0,
+        "latitude": "13.011586666666668",
+        "longitude": "77.66013166666667",
+        "partner_id": 13,
+        "screening_uuid": "202404021242292c50a048-3155-4eab-97e7-5e2670dc1054",
+        "spectacle_type": 226,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "",
+        "sph_near_re": "",
+        "sync_status": 0,
+        "uuid": "20240613172758717bbf8c-09e7-4846-baf7-f3079efd08cf",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 0,
+        "va_near_re": 0,
+        "vision_center_id": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 17:28:00hrs[
+    {
+        "app_created_at": "2024-06-13T17:27:58",
+        "app_updated_at": "2024-06-13T17:27:58",
+        "follow_up_status": 1,
+        "frame_code": 250,
+        "frame_size": 106,
+        "glass_collecting_location": 143,
+        "glass_prescription_uuid": "20240613172758717bbf8c-09e7-4846-baf7-f3079efd08cf",
+        "has_the_glass_collected": 2,
+        "lens_type": 233,
+        "model_type": 0,
+        "partner_id": 13,
+        "r2c_eligible": 0,
+        "spectacle_name": "Custom made",
+        "spectacle_type": 226,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20240613172758a3dfd574-4940-47bb-bac9-e108a653e354",
+        "vision_center": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 17:28:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 17:28:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 17:28:00hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [
+        {
+            "uuid": "20240613172758717bbf8c-09e7-4846-baf7-f3079efd08cf",
+            "screening_uuid": "202404021242292c50a048-3155-4eab-97e7-5e2670dc1054",
+            "SCO": "2024-06-13 11:58:00.179433+00:00",
+            "SMO": "2024-06-13 11:58:00.179459+00:00",
+            "sync_status": 2
+        }
+    ],
+    "spectacle_type": [
+        {
+            "uuid": "20240613172758a3dfd574-4940-47bb-bac9-e108a653e354",
+            "glass_prescription_uuid": "20240613172758717bbf8c-09e7-4846-baf7-f3079efd08cf",
+            "SCO": "2024-06-13 11:58:00.216972+00:00",
+            "SMO": "2024-06-13 11:58:00.217013+00:00",
+            "sync_status": 2
+        }
+    ],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 18:02:51hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 18:02:51hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 18:02:51hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 18:02:51hrs[
+    {
+        "app_created_at": "2024-06-13T18:02:49",
+        "app_updated_at": "2024-06-13T18:02:49",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "",
+        "axis_near_re": "",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "",
+        "cyl_near_re": "",
+        "follow_up_status": 0,
+        "latitude": "13.011621666666667",
+        "longitude": "77.66004333333333",
+        "partner_id": 13,
+        "screening_uuid": "202404021242292c50a048-3155-4eab-97e7-5e2670dc1054",
+        "spectacle_type": 226,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "",
+        "sph_near_re": "",
+        "sync_status": 0,
+        "uuid": "20240613180249f761f744-ef2d-45a2-a7ba-b11e2599f5cb",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 0,
+        "va_near_re": 0,
+        "vision_center_id": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 18:02:51hrs[
+    {
+        "app_created_at": "2024-06-13T18:02:49",
+        "app_updated_at": "2024-06-13T18:02:49",
+        "follow_up_status": 1,
+        "frame_code": 250,
+        "frame_size": 106,
+        "glass_collecting_location": 0,
+        "glass_prescription_uuid": "20240613180249f761f744-ef2d-45a2-a7ba-b11e2599f5cb",
+        "has_the_glass_collected": 2,
+        "lens_type": 233,
+        "model_type": 0,
+        "partner_id": 13,
+        "r2c_eligible": 0,
+        "spectacle_name": "Custom made",
+        "spectacle_type": 226,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20240613180249b2fb15e5-7452-4711-89ed-a4cc925a5fce",
+        "vision_center": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 18:02:51hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 18:02:51hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 18:02:51hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [
+        {
+            "uuid": "20240613180249f761f744-ef2d-45a2-a7ba-b11e2599f5cb",
+            "screening_uuid": "202404021242292c50a048-3155-4eab-97e7-5e2670dc1054",
+            "SCO": "2024-06-13 12:32:51.138998+00:00",
+            "SMO": "2024-06-13 12:32:51.139020+00:00",
+            "sync_status": 2
+        }
+    ],
+    "spectacle_type": [
+        {
+            "uuid": "20240613180249b2fb15e5-7452-4711-89ed-a4cc925a5fce",
+            "glass_prescription_uuid": "20240613180249f761f744-ef2d-45a2-a7ba-b11e2599f5cb",
+            "SCO": "2024-06-13 12:32:51.162390+00:00",
+            "SMO": "2024-06-13 12:32:51.162410+00:00",
+            "sync_status": 2
+        }
+    ],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 18:18:26hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 18:18:26hrs{
+    "csdate": "2024-04-25T09:26:42.644587+05:30",
+    "dnrsdate": "2024-03-21T11:07:41.119161+05:30",
+    "dsdate": "2024-02-29T17:43:05.876769+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-05-15T15:11:17.190835+05:30",
+    "ssdate": "2024-05-15T15:34:22.569851+05:30",
+    "user_id": 105,
+    "vsdate": "2024-05-09T10:09:38.129965+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 18:18:28hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 18:18:28hrs{
+    "user_id": 105
+}
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 18:22:20hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 18:22:20hrs{
+    "user_id": 105
+}
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 18:22:30hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 06/13/2024, 18:22:30hrs{
+    "user_id": 105
+}

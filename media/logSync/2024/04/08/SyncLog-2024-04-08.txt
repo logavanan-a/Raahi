@@ -1,0 +1,295 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 14:44:27hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 14:44:27hrs{
+    "unique_id": "7654345",
+    "contact_no_1": "",
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": "",
+    "stdate": "",
+    "fmdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 14:45:33hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 14:45:33hrs{
+    "unique_id": "KA-29M-1364424",
+    "contact_no_1": "",
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": "",
+    "stdate": "",
+    "fmdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 14:45:35hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 14:45:35hrs{
+    "unique_id": "KA-29M-1364424",
+    "contact_no_1": "",
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": "",
+    "stdate": "",
+    "fmdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 14:45:36hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 14:45:36hrs{
+    "unique_id": "KA-29M-1364424",
+    "contact_no_1": "",
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": "",
+    "stdate": "",
+    "fmdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 14:45:38hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 14:45:38hrs{
+    "unique_id": "KA-29M-1364424",
+    "contact_no_1": "",
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": "",
+    "stdate": "",
+    "fmdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 15:46:32hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 20,
+        "app_created_at": "2024-04-03T22:08:46",
+        "app_updated_at": "2024-04-03T22:08:46",
+        "camp": 0,
+        "contact_no_1": "6382832556",
+        "contact_no_2": "",
+        "district": 199,
+        "donor": 4,
+        "drivers_license_no": "",
+        "educational_qualification": 46,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 36,
+        "id": 0,
+        "language": 1,
+        "latitude": "0.0",
+        "life_insurance_policy": 1,
+        "longitude": "0.0",
+        "monthly_income": 33,
+        "name": "testing mar",
+        "no_of_months_employed_in_a_year": "2",
+        "partner_id": 8,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "testing",
+        "user": 110,
+        "uuid": "2024040322084631af7616-796a-4acb-a72c-d5e813b17ca8",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 93
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 15:46:33hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 15:46:33hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 15:46:33hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 15:46:33hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 15:46:33hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 15:46:33hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 15:46:33hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "2024040322084631af7616-796a-4acb-a72c-d5e813b17ca8",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 15:46:35hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 15:46:35hrs{
+    "user_id": 110
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 16:09:28hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 16:09:28hrs{
+    "csdate": "2024-04-05T05:27:27.101Z",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-02T16:30:04.495645+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 110,
+    "vsdate": "2024-03-25T10:59:16.818773+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 16:09:31hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 16:09:31hrs{
+    "user_id": 110
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 16:09:55hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 16:09:55hrs{
+    "csdate": "2024-04-05T10:57:27.101234+05:30",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-02T16:30:04.495645+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 110,
+    "vsdate": "2024-03-25T10:59:16.818773+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 16:09:56hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 04/08/2024, 16:09:56hrs{
+    "user_id": 110
+}

@@ -1,0 +1,1765 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load report_tags %}
+
+
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+
+<!-- DataTables -->
+<link href="{% static 'libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+<link href="{% static 'libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<!-- Responsive Table css -->
+<link href="{% static 'libs/admin-resources/rwd-table/rwd-table.min.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block contents %}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body font-size-15">
+                {% include 'partials/report_monthly_filter.html' %}
+                                
+                {% if no_data != True %}
+                <div class="row justify-content-end">
+                    <div class="col-auto p-2">
+                        <button type="submit" class="btn btn-secondary float-right" onclick="exportToExcel()">Export </button>
+                    </div> 
+                </div>
+                {% comment %} <button onclick="exportToExcel()">Export to Excel</button> {% endcomment %}
+                <div class="row border-space">
+                    <div class="table-scrollable" style="overflow: auto; white-space: nowrap;" id="maindiv">
+                        <!-- w332`1r4r  <button onclick="exportToExcel()">Export to Excel</button> -->
+                        <table width="100%" cellspacing="0" border="1" id="maintable">
+                            <tbody>
+                                <tr>
+                                    <td colspan="9" align="center"
+                                        style="background-color: rgb(197, 90, 18); color: rgb(255, 255, 255); font-weight: bold; padding-left: 5px;">
+                                        TRUCKERS PROGRAMME
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="9" align="center"
+                                        style="background-color: rgb(197, 90, 18); color: rgb(255, 255, 255); font-weight: bold; padding-left: 5px;">
+                                        Monthly Partner Reporting Format
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: rgb(248, 203, 172); padding-left: 5px;">
+                                        Organisation Name:
+                                    </td>
+                                    <td style="text-align: center; padding-left: 5px;" colspan="5" id="SightSavers_1">
+                                        {{mpr_filter_values.partner_name}}
+                                    </td>
+            
+                                    <td colspan="2" style="background-color: rgb(248, 203, 172); padding-left: 5px;">
+                                        State:
+                                    </td>
+                                    <td style="text-align: center; padding-left: 5px;" colspan="1" id="SightSavers_1">
+                                        {{mpr_filter_values.state_name}}
+                                    </td>
+            
+            
+                                </tr>
+                                <tr>
+                                    <td style="background-color: rgb(248, 203, 172); padding-left: 5px;">
+                                        District/City:
+                                    </td>
+                                    <td style="text-align: center; padding-left: 5px;" colspan="1">
+                                        All Districts
+                                    </td>
+                                    <td colspan="2" style="background-color: rgb(248, 203, 172); padding-left: 5px;">
+                                        Reporting Month:
+                                    </td>
+                                    <td style="text-align: center; padding-left: 5px;" colspan="2">
+                                        {{mpr_month_name}}
+                                    </td>
+                                    <td colspan="2" style="background-color: rgb(248, 203, 172); padding-left: 5px;">
+                                        Reporting Year:
+                                    </td>
+                                    <td style="text-align: center; padding-left: 5px;" colspan="1">
+                                        {{mpr_year}}
+                                    </td>
+                                </tr>
+            
+                                <tr>
+                                    <td colspan="6" style="background-color:#C55A12;color:#FFFFFF;font-weight:bold;padding-left: 5px;">
+                                        1. CAMP AND VISION CENTRE
+                                    </td>
+                                    <td style="background-color:#C55A12;color:#FFFFFF;font-weight:bold;padding-left: 5px;">
+                                        Yearly Targets
+                                    </td>
+                                    <td colspan="2" style="padding-left: 5px;">
+            
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6" style="padding-left: 5px;">
+                                        1a. Total number of Camps conducted during the month
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_target_mpr_data target_mpr_value 1 1 as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;" colspan="2">
+                                        {% get_mpr_data mpr_value 0 "Total number of Camps conducted during the month-1" "monthly_total" as value %}
+                                        {{value}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7" style="padding-left: 5px;">
+                                        1b. Total number of days the Vision Centre was open during the reporting month
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;" colspan="2">
+                                        {% get_mpr_data mpr_value 1 "1b. Total number of days the Vision Centre was open during the reporting month- 2 " "monthly_total" as value %}
+                                        {{value}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4"
+                                        style="background-color: rgb(197, 90, 18); color: rgb(255, 255, 255); font-weight: bold; padding-left: 5px;">
+                                        2. SCREENING
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(197, 90, 18); color: rgb(255, 255, 255); font-weight: bold; padding-left: 5px;">
+                                        Yearly Targets
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(197, 90, 18); color: rgb(255, 255, 255); font-weight: bold; padding-left: 5px;">
+                                        This Month
+                                    </td>
+                                    <td rowspan="3"
+                                        style="background-color: rgb(248, 203, 172); font-weight: bold; padding-left: 5px;">
+                                        Year To Date
+                                    </td>
+                                </tr>
+                                <tr style="font-weight: bold;">
+                                    <td colspan="4" rowspan="2" style="background-color: rgb(248, 203, 172); padding-left: 5px;">
+                                        2a. Category of persons screened
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Adult
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Adult
+                                    </td>
+                                </tr>
+                                <tr style="font-weight: bold;">
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" style="background-color:#FBE4D5;font-weight: bold;padding-left: 5px;">&nbsp;&nbsp;Total number of Persons screened (mention
+                                        only total target and not category wise)</td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        0
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        0
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 2 "Category of persons screened - Total number of Persons screened (mention only total target and not category wise)- 3 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 2 "Category of persons screened - Total number of Persons screened (mention only total target and not category wise)- 3 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 2 "Category of persons screened - Total number of Persons screened (mention only total target and not category wise)- 3 " "till_month_total" as value %}
+                                        {{value}}
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td colspan="4" style="background-color:#FBE4D5;font-weight: bold;padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;Total number of persons screened at camps
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        0
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        0
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 3 "2a. Categor2a. Category of persons screened - Total number of persons screened at camps y of persons screened - Total number of persons screened at camps- 4 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 3 "2a. Categor2a. Category of persons screened - Total number of persons screened at camps y of persons screened - Total number of persons screened at camps- 4 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 3 "2a. Categor2a. Category of persons screened - Total number of persons screened at camps y of persons screened - Total number of persons screened at camps- 4 " "till_month_total" as value %}
+                                        {{value}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" style="padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Driver
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_target_mpr_data target_mpr_value 5 1 as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_target_mpr_data target_mpr_value 5 2 as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 4 "2a. Category of persons screened - Total number of persons screened at camps - Driver- 5 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 4 "2a. Category of persons screened - Total number of persons screened at camps - Driver- 5 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 4 "2a. Category of persons screened - Total number of persons screened at camps - Driver- 5 " "till_month_total" as value %}
+                                        {{value}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" style="padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cleaner
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_target_mpr_data target_mpr_value 6 1 as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_target_mpr_data target_mpr_value 6 2 as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 5 "2a. Category of persons screened - Total number of persons screened at camps - Cleaner- 6 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 5 "2a. Category of persons screened - Total number of persons screened at camps - Cleaner- 6 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 5 "2a. Category of persons screened - Total number of persons screened at camps - Cleaner- 6 " "till_month_total" as value %}
+                                        {{value}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" style="padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mechanic
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_target_mpr_data target_mpr_value 7 1 as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_target_mpr_data target_mpr_value 7 2 as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 6 "2a. Category of persons screened - Total number of persons screened at camps - Mechanics- 7 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 6 "2a. Category of persons screened - Total number of persons screened at camps - Mechanics- 7 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 6 "2a. Category of persons screened - Total number of persons screened at camps - Mechanics- 7 " "till_month_total" as value %}
+                                        {{value}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" style="padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Others
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_target_mpr_data target_mpr_value 8 1 as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_target_mpr_data target_mpr_value 8 2 as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 7 "2a. Category of persons screened - Total number of persons screened at camps - Others- 8 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 7 "2a. Category of persons screened - Total number of persons screened at camps - Others- 8 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 7 "2a. Category of persons screened - Total number of persons screened at camps - Others- 8 " "till_month_total" as value %}
+                                        {{value}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" style="background-color:#FBE4D5;font-weight: bold;padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;Total number of persons screened at the Static Centre
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        0
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        0
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 8 "2a. Category of persons screened - Total number of persons screened at static centers- 9 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 8 "2a. Category of persons screened - Total number of persons screened at static centers- 9 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 8 "2a. Category of persons screened - Total number of persons screened at static centers- 9 " "till_month_total" as value %}
+                                        {{value}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" style="padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Driver
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_target_mpr_data target_mpr_value 10 1 as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_target_mpr_data target_mpr_value 10 2 as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 9 "2a. Category of persons screened - Total number of persons screened at static centers - Driver- 10 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 9 "2a. Category of persons screened - Total number of persons screened at static centers - Driver- 10 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 9 "2a. Category of persons screened - Total number of persons screened at static centers - Driver- 10 " "till_month_total" as value %}
+                                        {{value}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" style="padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cleaner
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_target_mpr_data target_mpr_value 11 1 as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_target_mpr_data target_mpr_value 11 2 as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 10 "2a. Category of persons screened - Total number of persons screened at static centers - Cleaner- 11 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 10 "2a. Category of persons screened - Total number of persons screened at static centers - Cleaner- 11 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 10 "2a. Category of persons screened - Total number of persons screened at static centers - Cleaner- 11 " "till_month_total" as value %}
+                                        {{value}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" style="padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mechanic
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_target_mpr_data target_mpr_value 12 1 as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_target_mpr_data target_mpr_value 12 2 as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 11 "2a. Category of persons screened - Total number of persons screened at static centers - Mechanics- 12 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 11 "2a. Category of persons screened - Total number of persons screened at static centers - Mechanics- 12 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 11 "2a. Category of persons screened - Total number of persons screened at static centers - Mechanics- 12 " "till_month_total" as value %}
+                                        {{value}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" style="padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Others
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_target_mpr_data target_mpr_value 13 1 as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_target_mpr_data target_mpr_value 13 2 as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 12 "2a. Category of persons screened - Total number of persons screened at static centers - Others- 13 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 12 "2a. Category of persons screened - Total number of persons screened at static centers - Others- 13 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 12 "2a. Category of persons screened - Total number of persons screened at static centers - Others- 13 " "till_month_total" as value %}
+                                        {{value}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" rowspan="2" style="background-color: rgb(248, 203, 172); padding-left: 5px;font-weight: bold;">
+                                        2b. Screening Details
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;font-weight: bold;">
+                                        Total
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;font-weight: bold;">
+                                        Drivers
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;font-weight: bold;">
+                                        Others
+                                    </td>
+                                    <td rowspan="2"
+                                        style="background-color: rgb(248, 203, 172); font-weight: bold; padding-left: 5px;">
+                                        Year To Date
+                                    </td>
+                                </tr>
+                                <tr style="font-weight: bold;">
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 5px;">
+                                        No of people with Distance Vision problem
+                                    </td>
+                                    <td style="padding-left: 5px;">
+                                        Category C+G
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 13 "2b. Screening Details - No of people with Distance Vision problem (Category C+G) - Totals- 14 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 13 "2b. Screening Details - No of people with Distance Vision problem (Category C+G) - Totals- 14 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 17 "2b. Screening Details - No of people with Distance Vision problem (Category C+G) - Driver- 18 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 17 "2b. Screening Details - No of people with Distance Vision problem (Category C+G) - Driver- 18 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 18 "2b. Screening Details - No of people with Distance Vision problem (Category C+G) - Others- 19 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 18 "2b. Screening Details - No of people with Distance Vision problem (Category C+G) - Others- 19 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 13 "2b. Screening Details - No of people with Distance Vision problem (Category C+G) - Totals- 14 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 17 "2b. Screening Details - No of people with Distance Vision problem (Category C+G) - Driver- 18 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 18 "2b. Screening Details - No of people with Distance Vision problem (Category C+G) - Others- 19 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 5px;">
+                                        No of people with Near Vision problem
+                                    </td>
+                                    <td style="padding-left: 5px;">
+                                        Category D+ H
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 14 "2b. Screening Details - No of people with Near Vision problem(Category D+ H) - Total- 15 " "male" as value %}
+                                        {{value}}
+                                    </td> 
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 14 "2b. Screening Details - No of people with Near Vision problem(Category D+ H) - Total- 15 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 19 "2b. Screening Details - No of people with Near Vision problem(Category D+ H) - Driver- 20 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 19 "2b. Screening Details - No of people with Near Vision problem(Category D+ H) - Driver- 20 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 20 "2b. Screening Details - No of people with Near Vision problem(Category D+ H) - Others- 21 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        
+                                        {% get_mpr_data mpr_value 20 "2b. Screening Details - No of people with Near Vision problem(Category D+ H) - Others- 21 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 14 "2b. Screening Details - No of people with Near Vision problem(Category D+ H) - Total- 15 " "male" as till_month_total %}
+                                        {% get_mpr_data mpr_value 19 "2b. Screening Details - No of people with Near Vision problem(Category D+ H) - Driver- 20 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 20 "2b. Screening Details - No of people with Near Vision problem(Category D+ H) - Others- 21 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 5px;">
+                                        No of people with both Near &amp; Distance Vision problem
+                                    </td>
+                                    <td style="padding-left: 5px;">
+                                        Category F
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 15 "2b. Screening Details - No of people with both Near & Distance Vision problem(Category F) - Total- 16 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 15 "2b. Screening Details - No of people with both Near & Distance Vision problem(Category F) - Total- 16 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 21 "2b. Screening Details - No of people with both Near & Distance Vision problem(Category F) - Driver- 22 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 21 "2b. Screening Details - No of people with both Near & Distance Vision problem(Category F) - Driver- 22 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 22 "2b. Screening Details - No of people with both Near & Distance Vision problem(Category F) - Others- 23 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 22 "2b. Screening Details - No of people with both Near & Distance Vision problem(Category F) - Others- 23 " "female" as value %}
+                                        {{value}} 
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 21 "2b. Screening Details - No of people with both Near & Distance Vision problem(Category F) - Driver- 22 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 15 "2b. Screening Details - No of people with both Near & Distance Vision problem(Category F) - Total- 16 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 22 "2b. Screening Details - No of people with both Near & Distance Vision problem(Category F) - Others- 23 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }} 
+                                    </td>
+            
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 5px;">
+                                        No of people with Colour Vision problem
+                                    </td>
+                                    <td style="padding-left: 5px;">
+                                        Category E+G+H
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 16 "2b. Screening Details - No of people with Colour Vision problem(Category E+G+H) - Total- 17 " "male" as value %}
+                                        {{value}} 
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 16 "2b. Screening Details - No of people with Colour Vision problem(Category E+G+H) - Total- 17 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 23 "2b. Screening Details - No of people with Colour Vision problem(Category E+G+H) - Driver- 24 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 23 "2b. Screening Details - No of people with Colour Vision problem(Category E+G+H) - Driver- 24 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 24 "2b. Screening Details - No of people with Colour Vision problem(Category E+G+H) - Others- 25 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 24 "2b. Screening Details - No of people with Colour Vision problem(Category E+G+H) - Others- 25 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 16 "2b. Screening Details - No of people with Colour Vision problem(Category E+G+H) - Total- 17 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 23 "2b. Screening Details - No of people with Colour Vision problem(Category E+G+H) - Driver- 24 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 24 "2b. Screening Details - No of people with Colour Vision problem(Category E+G+H) - Others- 25 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="9"
+                                        style="background-color: rgb(197, 90, 18); color: rgb(255, 255, 255); font-weight: bold; padding-left: 5px;">
+                                        3. REFRACTION
+                                    </td>
+                                </tr>
+                                <tr style="font-weight: bold;">
+                                    <td colspan="2" rowspan="2" style="background-color: rgb(248, 203, 172); padding-left: 5px;">
+                                        Visual Impairment identified (No of people identified with any VI (Distance))
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Total
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Drivers
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Others
+                                    </td>
+                                    <td rowspan="2" style="background-color: rgb(248, 203, 172); font-weight: bold; padding-left: 5px;">
+                                        Year To Date
+                                    </td>
+                                </tr>
+                                <tr style="font-weight: bold;">
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 5px;">
+                                        Early VI (6/12-6/18)
+                                    </td>
+                                    <td style="padding-left: 5px;">
+                                        Better eye PV
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 25 "Visual Impairment identified (No of people identified with any VI (Distance)) - Early VI (6/12-6/18) (Better eye PV) - Total- 26 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 25 "Visual Impairment identified (No of people identified with any VI (Distance)) - Early VI (6/12-6/18) (Better eye PV) - Total- 26 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 29 "Visual Impairment identified (No of people identified with any VI (Distance)) - Early VI (6/12-6/18) (Better eye PV) - Driver- 30 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 29 "Visual Impairment identified (No of people identified with any VI (Distance)) - Early VI (6/12-6/18) (Better eye PV) - Driver- 30 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 33 "Visual Impairment identified (No of people identified with any VI (Distance)) - Early VI (6/12-6/18) (Better eye PV) - Others- 34 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 33 "Visual Impairment identified (No of people identified with any VI (Distance)) - Early VI (6/12-6/18) (Better eye PV) - Others- 34 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 29 "Visual Impairment identified (No of people identified with any VI (Distance)) - Early VI (6/12-6/18) (Better eye PV) - Driver- 30 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 25 "Visual Impairment identified (No of people identified with any VI (Distance)) - Early VI (6/12-6/18) (Better eye PV) - Total- 26 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 33 "Visual Impairment identified (No of people identified with any VI (Distance)) - Early VI (6/12-6/18) (Better eye PV) - Others- 34 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 5px;">
+                                        Moderate VI (6/18-6/60)
+                                    </td>
+                                    <td style="padding-left: 5px;">
+                                        Better eye PV
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 26 "Visual Impairment identified (No of people identified with any VI (Distance)) - Moderate VI (6/18-6/60) (Better eye PV) - Total- 27 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 26 "Visual Impairment identified (No of people identified with any VI (Distance)) - Moderate VI (6/18-6/60) (Better eye PV) - Total- 27 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 30 "Visual Impairment identified (No of people identified with any VI (Distance)) - Moderate VI (6/18-6/60) (Better eye PV) - Driver- 31 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 30 "Visual Impairment identified (No of people identified with any VI (Distance)) - Moderate VI (6/18-6/60) (Better eye PV) - Driver- 31 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 34 "Visual Impairment identified (No of people identified with any VI (Distance)) - Moderate VI (6/18-6/60) (Better eye PV) - Others- 35 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 34 "Visual Impairment identified (No of people identified with any VI (Distance)) - Moderate VI (6/18-6/60) (Better eye PV) - Others- 35 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 26 "Visual Impairment identified (No of people identified with any VI (Distance)) - Moderate VI (6/18-6/60) (Better eye PV) - Total- 27 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 30 "Visual Impairment identified (No of people identified with any VI (Distance)) - Moderate VI (6/18-6/60) (Better eye PV) - Driver- 31 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 34 "Visual Impairment identified (No of people identified with any VI (Distance)) - Moderate VI (6/18-6/60) (Better eye PV) - Others- 35 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 5px;">
+                                        Severe VI (6/60-3/60)
+                                    </td>
+                                    <td style="padding-left: 5px;">
+                                        Better eye PV
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 27 "Visual Impairment identified (No of people identified with any VI (Distance)) - Severe VI (6/60-3/60) (Better eye PV) - Total- 28 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 27 "Visual Impairment identified (No of people identified with any VI (Distance)) - Severe VI (6/60-3/60) (Better eye PV) - Total- 28 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 31 "Visual Impairment identified (No of people identified with any VI (Distance)) - Severe VI (6/60-3/60) (Better eye PV) - Driver- 32 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 31 "Visual Impairment identified (No of people identified with any VI (Distance)) - Severe VI (6/60-3/60) (Better eye PV) - Driver- 32 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 35 "Visual Impairment identified (No of people identified with any VI (Distance)) - Severe VI (6/60-3/60) (Better eye PV) - Others- 36 " "male" as value %}
+                                        {{value}} 
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 35 "Visual Impairment identified (No of people identified with any VI (Distance)) - Severe VI (6/60-3/60) (Better eye PV) - Others- 36 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 27 "Visual Impairment identified (No of people identified with any VI (Distance)) - Severe VI (6/60-3/60) (Better eye PV) - Total- 28 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 31 "Visual Impairment identified (No of people identified with any VI (Distance)) - Severe VI (6/60-3/60) (Better eye PV) - Driver- 32 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 35 "Visual Impairment identified (No of people identified with any VI (Distance)) - Severe VI (6/60-3/60) (Better eye PV) - Others- 36 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 5px;">
+                                        Blind (less than 3/60)
+                                    </td>
+                                    <td style="padding-left: 5px;">
+                                        Better eye PV
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 28 "Visual Impairment identified (No of people identified with any VI (Distance)) - Blind (less than 3/60) (Better eye PV) - Total- 29 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 28 "Visual Impairment identified (No of people identified with any VI (Distance)) - Blind (less than 3/60) (Better eye PV) - Total- 29 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 32 "Visual Impairment identified (No of people identified with any VI (Distance)) - Blind (less than 3/60) (Better eye PV) - Driver- 33 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 32 "Visual Impairment identified (No of people identified with any VI (Distance)) - Blind (less than 3/60) (Better eye PV) - Driver- 33 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 36 "Visual Impairment identified (No of people identified with any VI (Distance)) - Blind (less than 3/60) (Better eye PV) - Others- 37 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 36 "Visual Impairment identified (No of people identified with any VI (Distance)) - Blind (less than 3/60) (Better eye PV) - Others- 37 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 28 "Visual Impairment identified (No of people identified with any VI (Distance)) - Blind (less than 3/60) (Better eye PV) - Total- 29 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 32 "Visual Impairment identified (No of people identified with any VI (Distance)) - Blind (less than 3/60) (Better eye PV) - Driver- 33 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 36 "Visual Impairment identified (No of people identified with any VI (Distance)) - Blind (less than 3/60) (Better eye PV) - Others- 37 " "till_month_total" as value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="9"
+                                        style="background-color: rgb(197, 90, 18); color: rgb(255, 255, 255); font-weight: bold; padding-left: 5px;">
+                                        4. SPECTACLES
+                                    </td>
+                                </tr>
+                                <tr style="font-weight: bold;">
+                                    <td colspan="2" rowspan="2" style="background-color: rgb(248, 203, 172); padding-left: 5px;"
+                                        id="Td_GlassPrescription">Glass Prescription</td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Total
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Drivers
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Others
+                                    </td>
+                                    <td rowspan="2"
+                                        style="background-color: rgb(248, 203, 172); font-weight: bold; padding-left: 5px;">
+                                        Year To Date
+                                    </td>
+                                </tr>
+            
+                                <tr style="font-weight: bold;">
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="background-color:#F8CBAC;font-weight: bold;padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;Total number of people prescribed glasses
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 37 "Glass prescription - Total number of people prescribed glasses - Total- 38 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 37 "Glass prescription - Total number of people prescribed glasses - Total- 38 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 41 "Glass prescription - Total number of people prescribed glasses - Driver- 42 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 41 "Glass prescription - Total number of people prescribed glasses - Driver- 42 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 45 "Glass prescription - Total number of people prescribed glasses - Others- 46 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 45 "Glass prescription - Total number of people prescribed glasses - Others- 46 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 37 "Glass prescription - Total number of people prescribed glasses - Total- 38 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 41 "Glass prescription - Total number of people prescribed glasses - Driver- 42 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 45 "Glass prescription - Total number of people prescribed glasses - Others- 46 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Distance vision glasses
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 38 "Glass prescription - Distance vision glasses - Total- 39 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 38 "Glass prescription - Distance vision glasses - Total- 39 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 42 "Glass prescription - Distance vision glasses - Driver- 43 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 42 "Glass prescription - Distance vision glasses - Driver- 43 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 46 "Glass prescription - Distance vision glasses - Others- 47 " "male" as value %}
+                                        {{value}} 
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 46 "Glass prescription - Distance vision glasses - Others- 47 " "female" as value %}
+                                        {{value}} 
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 38 "Glass prescription - Distance vision glasses - Total- 39 " "till_month_total" as value %}
+                                        {% get_mpr_data mpr_value 42 "Glass prescription - Distance vision glasses - Driver- 43 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 46 "Glass prescription - Distance vision glasses - Others- 47 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Near vision glasses
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 39 "Glass prescription - Near vision glasses - Total       - 40 " "male" as value %}
+                                        {{value}} 
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 39 "Glass prescription - Near vision glasses - Total       - 40 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 43 "Glass prescription - Near vision glasses - Driver       - 44 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 43 "Glass prescription - Near vision glasses - Driver       - 44 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 47 "Glass prescription - Near vision glasses - Others       - 48 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 47 "Glass prescription - Near vision glasses - Others       - 48 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 39 "Glass prescription - Near vision glasses - Total       - 40 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 43 "Glass prescription - Near vision glasses - Driver       - 44 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 47 "Glass prescription - Near vision glasses - Others       - 48 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bifocals
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 40 "Glass prescription - Bifocals - Total- 41 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 40 "Glass prescription - Bifocals - Total- 41 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 44 "Glass prescription - Bifocals - Driver- 45 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 44 "Glass prescription - Bifocals - Driver- 45 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 48 "Glass prescription - Bifocals - Others- 49 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 48 "Glass prescription - Bifocals - Others- 49 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 40 "Glass prescription - Bifocals - Total- 41 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 44 "Glass prescription - Bifocals - Driver- 45 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 48 "Glass prescription - Bifocals - Others- 49 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr>
+            
+            
+                                <tr style="font-weight: bold;">
+                                    <td colspan="2" rowspan="2" style="background-color: rgb(248, 203, 172); padding-left: 5px;"
+                                        id="Td_GlassDispensed">Glass Dispensed</td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Total
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Drivers
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Others
+                                    </td>
+                                    <td rowspan="2"
+                                        style="background-color: rgb(248, 203, 172); font-weight: bold; padding-left: 5px;">
+                                        Year To Date
+                                    </td>
+                                </tr>
+            
+                                <tr style="font-weight: bold;">
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                </tr>
+            
+            
+                                <tr>
+                                    <td colspan="2" style="background-color:#F8CBAC;font-weight: bold;padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp; Total number of glasses dispensed
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 49 "Glass Dispensed - Total number of glasses dispensed - Total- 50 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 49 "Glass Dispensed - Total number of glasses dispensed - Total- 50 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 50 "Glass Dispensed - Total number of glasses dispensed - Driver- 51 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 50 "Glass Dispensed - Total number of glasses dispensed - Driver- 51 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 51 "Glass Dispensed - Total number of glasses dispensed - Others- 52 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 51 "Glass Dispensed - Total number of glasses dispensed - Others- 52 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 49 "Glass Dispensed - Total number of glasses dispensed - Total- 50 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 50 "Glass Dispensed - Total number of glasses dispensed - Driver- 51 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 51 "Glass Dispensed - Total number of glasses dispensed - Others- 52 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ready made glasses
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 52 "Glass Dispensed - Total number of glasses dispensed - Ready made glasses - Total- 53 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 52 "Glass Dispensed - Total number of glasses dispensed - Ready made glasses - Total- 53 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 53 "Glass Dispensed - Total number of glasses dispensed - Ready made glasses - Driver- 54 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 53 "Glass Dispensed - Total number of glasses dispensed - Ready made glasses - Driver- 54 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 54 "Glass Dispensed - Total number of glasses dispensed - Ready made glasses - Others- 55 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 54 "Glass Dispensed - Total number of glasses dispensed - Ready made glasses - Others- 55 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 52 "Glass Dispensed - Total number of glasses dispensed - Ready made glasses - Total- 53 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 53 "Glass Dispensed - Total number of glasses dispensed - Ready made glasses - Driver- 54 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 54 "Glass Dispensed - Total number of glasses dispensed - Ready made glasses - Others- 55 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr>
+                                {% comment %}
+                                <!-- <tr>
+                                    <td colspan="2" style="padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R2C glasses
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 76 "Glass Dispensed - Total number of glasses dispensed - R2C glasses - Total- 77 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 76 "Glass Dispensed - Total number of glasses dispensed - R2C glasses - Total- 77 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 77 "Glass Dispensed - Total number of glasses dispensed - R2C glasses - Driver- 78 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 77 "Glass Dispensed - Total number of glasses dispensed - R2C glasses - Driver- 78 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 78 "Glass Dispensed - Total number of glasses dispensed - R2C glasses - Others- 79 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;"> {% get_mpr_data mpr_value 78 "Glass Dispensed - Total number of glasses dispensed - R2C glasses - Others- 79 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 76 "Glass Dispensed - Total number of glasses dispensed - R2C glasses - Total- 77 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 77 "Glass Dispensed - Total number of glasses dispensed - R2C glasses - Driver- 78 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 78 "Glass Dispensed - Total number of glasses dispensed - R2C glasses - Others- 79 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr> -->
+                                {% endcomment %}
+                                <tr>
+                                    <td colspan="2" style="padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Custom made glasses
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 55 "Glass Dispensed - Total number of glasses dispensed - Custom made glasses - Total- 56 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 55 "Glass Dispensed - Total number of glasses dispensed - Custom made glasses - Total- 56 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 56 "Glass Dispensed - Total number of glasses dispensed - Custom made glasses - Driver- 57 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 56 "Glass Dispensed - Total number of glasses dispensed - Custom made glasses - Driver- 57 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 57 "Glass Dispensed - Total number of glasses dispensed - Custom made glasses - Others- 58 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 57 "Glass Dispensed - Total number of glasses dispensed - Custom made glasses - Others- 58 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 55 "Glass Dispensed - Total number of glasses dispensed - Custom made glasses - Total- 56 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 56 "Glass Dispensed - Total number of glasses dispensed - Custom made glasses - Driver- 57 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 57 "Glass Dispensed - Total number of glasses dispensed - Custom made glasses - Others- 58 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr>
+            
+            
+            
+                                <tr>
+                                    <td colspan="2" style="background-color:#F8CBAC;font-weight: bold;padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp; Total number of glasses pending for delivery
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 58 "Glass Dispensed - Total number of glasses pending for delivery - Total- 59 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 58 "Glass Dispensed - Total number of glasses pending for delivery - Total- 59 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 59 "Glass Dispensed - Total number of glasses pending for delivery - Driver- 60 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 59 "Glass Dispensed - Total number of glasses pending for delivery - Driver- 60 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 60 "Glass Dispensed - Total number of glasses pending for delivery - Others- 61 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 60 "Glass Dispensed - Total number of glasses pending for delivery - Others- 61 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 58 "Glass Dispensed - Total number of glasses pending for delivery - Total- 59 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 59 "Glass Dispensed - Total number of glasses pending for delivery - Driver- 60 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 60 "Glass Dispensed - Total number of glasses pending for delivery - Others- 61 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr>
+            
+                                <tr>
+                                    <td colspan="2" style="padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Glasses with status In-process
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 61 "Glass Dispensed - Total number of glasses pending for delivery - Glasses with status In-process - Total- 62 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 61 "Glass Dispensed - Total number of glasses pending for delivery - Glasses with status In-process - Total- 62 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 62 "Glass Dispensed - Total number of glasses pending for delivery - Glasses with status In-process - Driver- 63 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 62 "Glass Dispensed - Total number of glasses pending for delivery - Glasses with status In-process - Driver- 63 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 63 "Glass Dispensed - Total number of glasses pending for delivery - Glasses with status In-process - Others- 64 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 63 "Glass Dispensed - Total number of glasses pending for delivery - Glasses with status In-process - Others- 64 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 61 "Glass Dispensed - Total number of glasses pending for delivery - Glasses with status In-process - Total- 62 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 62 "Glass Dispensed - Total number of glasses pending for delivery - Glasses with status In-process - Driver- 63 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 63 "Glass Dispensed - Total number of glasses pending for delivery - Glasses with status In-process - Others- 64 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr>
+            
+                                <tr>
+                                    <td colspan="2" style="padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Glasses with status Ready
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 64 "Glass Dispensed - Total number of glasses pending for delivery - Glasses with status Ready - Total- 65 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 64 "Glass Dispensed - Total number of glasses pending for delivery - Glasses with status Ready - Total- 65 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 65 "Glass Dispensed - Total number of glasses pending for delivery - Glasses with status Ready - Driver- 66 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 65 "Glass Dispensed - Total number of glasses pending for delivery - Glasses with status Ready - Driver- 66 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 66 "Glass Dispensed - Total number of glasses pending for delivery - Glasses with status Ready - Others- 67 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 66 "Glass Dispensed - Total number of glasses pending for delivery - Glasses with status Ready - Others- 67 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 64 "Glass Dispensed - Total number of glasses pending for delivery - Glasses with status Ready - Total- 65 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 65 "Glass Dispensed - Total number of glasses pending for delivery - Glasses with status Ready - Driver- 66 " "female" as d_value %}
+                                        {% get_mpr_data mpr_value 66 "Glass Dispensed - Total number of glasses pending for delivery - Glasses with status Ready - Others- 67 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr>
+                                <tr style="display:none;">
+                                    <td colspan="2" rowspan="2" style="background-color: rgb(248, 203, 172); padding-left: 5px;">
+                                        Glasses Discrepancy
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Total
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Drivers
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Others
+                                    </td>
+                                    <td rowspan="2"
+                                        style="background-color: rgb(248, 203, 172); font-weight: bold; padding-left: 5px;">
+                                        Year To Date
+                                    </td>
+                                </tr>
+            
+                                <tr style="display:none;">
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                </tr>
+                                <tr style="display:none;">
+                                    <td colspan="2" style="padding-left: 5px;">
+                                        Refraction not done but glass provided
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        0
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        0
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">0
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">0
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">0
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">0
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">0
+                                    </td>
+                                </tr>
+                                <tr style="display:none;">
+                                    <td colspan="2" style="padding-left: 5px;">
+                                        Refraction (Distance, Near &amp; Bi-focal) but glass not given
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        0
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        0
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">0
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">0
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">0
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">0
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="9"
+                                        style="background-color: rgb(197, 90, 18); color: rgb(255, 255, 255); font-weight: bold; padding-left: 5px;">
+                                        5. REFERRALS
+                                    </td>
+                                </tr>
+                                <tr style="font-weight: bold;">
+                                    <td colspan="2" rowspan="2" style="background-color: rgb(248, 203, 172); padding-left: 5px;">
+                                        Referral
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Total
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Drivers
+                                    </td>
+                                    <td colspan="2"
+                                        style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Others
+                                    </td>
+                                    <td rowspan="2"
+                                        style="background-color: rgb(248, 203, 172); font-weight: bold; padding-left: 5px;">
+                                        Year To Date
+                                    </td>
+                                </tr>
+                                <tr style="font-weight: bold;">
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Male
+                                    </td>
+                                    <td style="background-color: rgb(248, 203, 172); text-align: center; padding-left: 5px;">
+                                        Female
+                                    </td>
+                                </tr>
+            
+                                <tr>
+                                    <td colspan="2" style="background-color:#F8CBAC;font-weight: bold;padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp; Total number of referrals made
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 67 "Referral - Total number of referrals made - Total- 68 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 67 "Referral - Total number of referrals made - Total- 68 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 68 "Referral - Total number of referrals made - Driver- 69 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 68 "Referral - Total number of referrals made - Driver- 69 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 69 "Referral - Total number of referrals made - Others- 70 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 69 "Referral - Total number of referrals made - Others- 70 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 67 "Referral - Total number of referrals made - Total- 68 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 68 "Referral - Total number of referrals made - Driver- 69 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 69 "Referral - Total number of referrals made - Others- 70 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr>
+            
+                                <tr>
+                                    <td colspan="2" style="padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cataract
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 70 "Referral - Cataract - Total- 71 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 70 "Referral - Cataract - Total- 71 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 71 "Referral - Cataract - Driver- 72 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 71 "Referral - Cataract - Driver- 72 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 72 "Referral - Cataract - Others- 73 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 72 "Referral - Cataract - Others- 73 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 70 "Referral - Cataract - Total- 71 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 71 "Referral - Cataract - Driver- 72 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 72 "Referral - Cataract - Others- 73 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="padding-left: 5px;">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Others
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 73 "Referral - Others - Total- 74 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td
+                                        style="background-color: rgb(248, 203, 172); text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 73 "Referral - Others - Total- 74 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 74 "Referral - Others - Driver- 75 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 74 "Referral - Others - Driver- 75 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 75 "Referral - Others - Others- 76 " "male" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 75 "Referral - Others - Others- 76 " "female" as value %}
+                                        {{value}}
+                                    </td>
+                                    <td style="text-align: right; padding-right: 15px; padding-left: 5px;">
+                                        {% get_mpr_data mpr_value 73 "Referral - Others - Total- 74 " "till_month_total" as t_value %}
+                                        {% get_mpr_data mpr_value 74 "Referral - Others - Driver- 75 " "till_month_total" as d_value %}
+                                        {% get_mpr_data mpr_value 75 "Referral - Others - Others- 76 " "till_month_total" as o_value %}
+                                        {{ t_value|default:"0"|add:d_value|default:"0"|add:o_value|default:"0" }}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    {% if request.session.role_id == 4 %}
+                        {% for mpr in  mpr_order %}
+                            {% if mpr.mpr_status_id == 0 or mpr.mpr_status_id == 3 %}
+                                <div class="gap-2 d-flex justify-content-end mt-3" style="float:right;">
+                                    <button id="order_status" class=" btn btn-success waves-effect" onclick="Confirm(1,'{{ mpr.month_year }}','submit')">Submit</button>
+                                </div>
+                            {% else %}
+                                <div class="table mt-4" data-pattern="priority-columns">
+                                    <table id="datatables" class="table table-striped dt-responsive mb-0">
+                                        <thead style="background-color: rgb(197, 90, 18); color: rgb(255, 255, 255); font-weight: bold; padding-right: 0px;">
+                                            <tr>
+                                                <th>Month Year</th>
+                                                <th>Partner Name</th>
+                                                <th>Partner Date</th>
+                                            </tr>   
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>{{ mpr.month_year }}</td> 
+                                                <td>{{ mpr.patner_name }}</td>
+                                                <td>Submitted : {{ mpr.partner_date }}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                {% endif %}
+            </div> 
+        </div>
+    </div> <!-- end col -->
+</div> <!-- end row -->
+{% for mpr in  mpr_order %}
+{% if mpr.mpr_status_id == 3 %}
+<div class="row" id="fpos-17">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="">
+                    <h4 class="card-title text-capitalize"> <i class="mdi mdi-account-circle bx-sm bx-fw me-1"></i>{{mpr.zrj_username}} - <span class="fw-normal">{{mpr.zonal_coordinator_date}}</span></h4>
+                    <p class="ms-5">{{mpr.remark}}</p>
+                </div>
+                {% if mpr.national_remark %}
+                <div class="">
+                    <h4 class="card-title text-capitalize"> <i class="mdi mdi-account-circle bx-sm bx-fw me-1"></i>{{mpr.nrj_username}} - <span class="fw-normal">{{mpr.national_coordinator_date}}</span></h4>
+                    <p class="ms-5">{{mpr.national_remark}}</p>
+                </div>
+                {% endif %}
+                {% if mpr.super_admin_remark %}
+                <div class="">
+                    <h4 class="card-title text-capitalize"> <i class="mdi mdi-account-circle bx-sm bx-fw me-1"></i>{{mpr.srj_username}} - <span class="fw-normal">{{mpr.super_admin_date}}</span></h4>
+                    <p class="ms-5">{{mpr.super_admin_remark}}</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div> 
+</div>
+    
+{% endif %}
+{% endfor %}
+<style>
+    .report_table {
+        border: 1px solid #616161 !important;
+    }
+    
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        $(document).ready(function () {
+            $("i").tooltip({
+                'selector': '',
+                'placement': 'top',
+                'container':'body'
+            });
+            
+        });
+    });
+    
+
+</script>
+<!-- Use a CDN link for the TableToExcel library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/TableToExcel/1.0.0/tableToExcel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+<script src="https://cdn.rawgit.com/rainabba/jquery-table2excel/1.1.0/dist/jquery.table2excel.min.js"></script>
+<script>
+    function exportToExcel() {
+        console.log('------------------------------');
+        $("#maintable").table2excel({
+            exclude: ".noExl",
+            name: "Sheet 1",
+            filename: "export.xlsx",
+            preserveColors: true
+        });
+        console.log('-------------export-----------------');
+    }
+</script>
+
+<script>
+    function Confirm(status_id, month_year, title) {
+        var order_id = '{{ user_id }}'; 
+        Swal.fire({
+            title: "Are you sure!",
+            text: "You want to " + title + "?",
+            showCancelButton: true,
+            confirmButtonColor: "#34c38f",
+            cancelButtonColor: "#f46a6a",
+            confirmButtonText: "Yes"
+        }).then((result) => {
+            if (result.isConfirmed){
+                window.location.href = '/mpr_status_update/' + status_id + '/'+ month_year +'/';
+            };
+        });
+    }
+
+</script>
+<script>
+
+function exportToExcel() {
+    // Get table
+    var table = document.getElementById("maintable");
+
+    // Create empty Excel file
+    var excelData = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8"><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>Sheet 1</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--><style>table { border-collapse: collapse; } td { border: 1px solid #000; padding: 8px; }</style></head><body>';
+
+    // Add table HTML
+    excelData += table.outerHTML;
+
+    // Close HTML
+    excelData += '</body></html>';
+
+    // Create download link
+    var link = document.createElement("a");
+    link.href = 'data:application/vnd.ms-excel;charset=utf-8,' + encodeURIComponent(excelData);
+    link.download = "MPR_Monthly_Report_{{mpr_month_name}}_{{mpr_year}}";
+
+    // Append link to the body
+    document.body.appendChild(link);
+
+    // Trigger the download
+    link.click();
+
+    // Remove the link
+    document.body.removeChild(link);
+}
+
+    </script>
+{% endblock %}
+{% block extra_javascript %}
+        <script src="{% static 'js/pages/form-advanced.init.js'%}"></script>   <!--cause console issue  -->
+        <script src="{% static 'libs/sweetalert2/dist/sweetalert2.min.js' %}"></script>
+        <script src="{% static 'js/pages/datatables.init.js' %}"></script>      <!--cause console issue  -->
+
+        <!-- Responsive Table js -->
+        <script src="{% static 'libs/admin-resources/rwd-table/rwd-table.min.js' %}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/TableToExcel/1.0.0/tableToExcel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+        <script src="https://cdn.rawgit.com/rainabba/jquery-table2excel/1.1.0/dist/jquery.table2excel.min.js"></script>
+        <!-- Init js -->
+        <script src="{% static 'js/pages/table-responsive.init.js' %}"></script>
+        
+{% endblock %}

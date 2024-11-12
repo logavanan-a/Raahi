@@ -1,0 +1,195 @@
+{% load static %}
+<div class="card-body">
+    <div class="card position-relative">
+        <p class="text-right position-absolute top-0 end-0 text-muted">Data as on {{mat_view_last_updated|date:'d/m/Y g:iA'}}</p>
+    </div> 
+	<form action="{{form_url}}" class="form-horizontal" method="POST" id="filters" autocomplete="off">
+        {%csrf_token%}
+        <div class="row">
+            <div class="col-lg-4 mt-3">
+                <select class="select2 form-select zone" id='zone' name='zone' {% if user_role == 8 or user_role == 9 or user_role == 10 %} disabled {% endif %}>
+                    <option value='' selected disabled>All zone</option>
+                    {% for select_zone in zones %}
+                    <option value="{{select_zone.id}}" {% if select_zone.id|slugify == user_filter_data.0  %}selected{% endif %}>
+                        {{select_zone.name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+			<div class="col-lg-4 mt-3">
+                <select class="select2 form-select state" id='state' name='state'>
+                    <option value='' selected disabled>All state</option>
+                    {% for select_state in states %}
+                    <option value="{{select_state.id}}" {% if select_state.id|slugify == user_filter_data.1  %}selected{% endif %}>
+                        {{select_state.name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            {% comment %}
+            <div class="col-lg-4 mt-3">
+                <select class="select2 form-select district" id='district' name='district'>
+                    <option value='' selected disabled>All District </option>
+                    {% for district in districts%}
+                        <option value="{{district.id}}" {% if district.id|slugify == user_filter_data.2 %}selected {% endif %}>{{district.name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            {% endcomment %}
+            <div class="col-lg-4 mt-3">
+                <select class="select2 form-select partner" id='partner' name='partner' {% if user_role == 4 %} disabled {% endif %}>
+                    <option value='' selected disabled>All Partner</option>
+                    {% for p in partners%}
+                        <option value="{{p.id}}" {% if p.id|slugify == user_filter_data.3 %} selected {% endif %}>{{p.name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-lg-4 mt-3">
+                <select class="select2 form-select donor" id='donor' name='donor'>
+                    <option value='' selected disabled>All Donor</option>
+                    {% for d in donors%}
+                        <option value="{{d.id}}" {% if d.id|slugify == user_filter_data.4 %}selected {% endif %}>{{d.name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-lg-4 mt-3">
+                <input type="{%if user_filter_data.5 != ''%}date{%else%}text{%endif%}" name="from_date" style='color: #0e0f0f !important;font-size: 14px !important;font-weight: 500 !important;' value="{{user_filter_data.5}}"  class="form-control start_date"
+                            onclick='if(this.type == "text") {this.type="date";}' id="from_date" pattern="dd/mm/yyyy" max='{{today|date:"Y-m-d"}}' placeholder='Created From' onfocus="this.max=new Date().toISOString().split('T')[0]">
+            </div>
+            <div class="col-lg-4 mt-3">
+                <input type="{%if user_filter_data.6 != ''%}date{%else%}text{%endif%}" name="to_date" style='color: #0e0f0f !important;font-size: 14px !important;font-weight: 500 !important;' value="{{user_filter_data.6}}"  class="form-control end_date"
+                            onclick='if(this.type == "text") {this.type="date";}' id="to_date" pattern="dd/mm/yyyy" max='{{today|date:"Y-m-d"}}' placeholder='Created To' onfocus="this.max=new Date().toISOString().split('T')[0]">
+            </div>
+            <div class="col-lg-4 mt-3">
+                <button type="submit" class="btn btn-square btn-primary float-right">Submit</button>
+                <button id="reset" class="btn btn-square btn-warning float-right">Reset</button>
+            </div>
+        </div>
+        
+	</form>
+	
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript">
+    //TODO: yet to test the onchange state/district
+    document.addEventListener('DOMContentLoaded', function() {
+        $("button[id='reset']").on("click", function(event){
+            $('#zone').val('');
+            $('#state').val('');
+            $('#district').prop('selectedIndex', 0).change();
+            $('#partner').val('');
+            $('#donor').val('');
+            $('#from_date').val('');
+            $('#to_date').val('');
+            $('#filter_form').submit();
+        });
+        $("#from_date").on("change", function(event){
+            document.getElementById("to_date").min=$("#from_date").val()
+        });
+    }); 
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    $('#zone').change(function() {
+        var optionSelected = $(this).find("option:selected");
+        var valueSelected = optionSelected.val();
+        
+        if (valueSelected === "") {
+            $("#state option").remove();
+            return; 
+        }
+
+        $.ajax({
+            type: "GET",
+            url: '/ajax/state/' + valueSelected + '/',
+            success: function(result) {
+                $("#state option").remove();
+                a = '<option selected value="">Choose State Name</option>';
+                $("#state").append(a);
+
+                if (JSON.parse(result) == 0) {
+                    $("#state option").remove();
+                    a = '<option selected value="">No state is mapped to this Zone</option>';
+                    console.log(a)
+                    $("#state").append(a);
+                } else {
+                    $.each(JSON.parse(result), function(key, value) {
+                        a = '<option value=' + value['id'] + '>' + value['name'] + '</option>';
+                        $("#state").append(a);
+                    });
+                }
+            }
+        });
+    });
+
+});
+ document.addEventListener('DOMContentLoaded', function() {
+    $('#state').change(function() {
+        console.log('---------------------')
+        var optionSelected = $(this).find("option:selected");
+        var valueSelected = optionSelected.val();
+        
+        if (valueSelected === "") {
+            $("#district option").remove();
+            return; 
+        }
+
+        $.ajax({
+            type: "GET",
+            url: '/ajax/district/' + valueSelected + '/',
+            success: function(result) {
+                $("#district option").remove();
+                a = '<option selected value="">Choose District Name</option>';
+                $("#district").append(a);
+
+                if (JSON.parse(result) == 0) {
+                    $("#district option").remove();
+                    a = '<option selected value="">No district is mapped to this State</option>';
+                    console.log(a)
+                    $("#district").append(a);
+                } else {
+                    $.each(JSON.parse(result), function(key, value) {
+                        a = '<option value=' + value['id'] + '>' + value['name'] + '</option>';
+                        $("#district").append(a);
+                    });
+                }
+            }
+        });
+    });
+
+});
+document.addEventListener('DOMContentLoaded', function() {
+                $('select#partner').change(function () {
+                    var optionSelected = $(this).find("option:selected");
+                    var valueSelected = optionSelected.val();
+                    if (valueSelected == ''){
+                    }else{
+                        data = {
+                            'selected_hospital': JSON.parse("[" + valueSelected + "]")
+                        };
+                        console.log(data,'---------------------')
+                        $.ajax({
+                            type: "GET",
+                            url: '/ajax/report_donor/',
+                            data: data,
+                            success: function (result) {
+                                $("#donor option").remove();
+                                a = '<option selected value="0">All</option>';
+                                $("#donor").append(a);
+                                if (JSON.parse(result) == 0) {
+                                    $("#donor option").remove();
+                                    a =
+                                    '<option selected disabled value="0">No Camp mapped for this district</option>';
+                                    $("#donor").append(a);
+                                } else {
+                                    $.each(JSON.parse(result), function (key, value) {
+                                        a = '<option value=' + value['id'] + '>' +
+                                            value['name'] + '</option>';
+                                        $("#donor").append(a);
+                                    });
+                                }
+                            }
+                        });  
+                    }              
+                });
+            });
+</script>

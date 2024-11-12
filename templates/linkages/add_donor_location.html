@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contents %}
+<style>
+    .btn-check:focus+.btn-primary, .btn-primary:focus {
+        background-color: #403A60;
+        border-color: #403A60;
+    }
+</style>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <form method='POST' class="needs-validation repeater" autocomplete="off" enctype="multipart/form-data" id="donor_form">
+                    {% csrf_token %}
+                    <div class='text-danger'>
+                        {{error_message}}
+                    </div>
+                    <div class="d-flex justify-content-end mb-3">
+                        <input data-repeater-create type="button" class="btn btn-primary mt-3 mt-lg-0 add_val" id="add_val" value="Add"/>
+                    </div>
+                    
+                    <div data-repeater-list="group-a">
+                        <div data-repeater-item class="row row2">
+                            <div  class="mb-3 col-md-5">
+                                <div class="row">
+                                    <label for="district" class="col-md-4 col-form-label"><b>District :</b><span class="required-field"></span></label>
+                                    <div class="col-md-8">
+                                        <select name="district" id="id_district" class="form-select select2 district"  required>
+                                            <option value="" selected>Select District</option>
+                                            {% for district in district_obj %}
+                                                <option value="{{district.id}}">{{ district }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div  class="mb-3 col-md-5">
+                                <div class="row">
+                                    <label for="donor" class="col-md-4 col-form-label"><b>Donor :</b><span class="required-field"></span></label>
+                                    <div class="col-md-8">
+                                        <select  name='donor' id="donor" class="form-select select2 district donor"  required>
+                                            <option value="" selected>Select Donor</option>
+                                            {% for donor in donor_obj %}
+                                                <option value="{{donor.id}}" >{{donor.name}}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3 align-self-center">
+                                <div class="d-grid">
+                                    <input data-repeater-delete type="button" class="btn btn-danger" value="Remove"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gap-2">
+                        <button type="reset" onclick="location.href='/list/partner/'" class="btn btn-secondary waves-effect">
+                            Cancel
+                        </button>
+                        <button type="submit" id="submitting" style="margin-left: 5px;" class="btn btn-primary w-md">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% block extra_javascript %}
+        <script>
+             $(document).ready(function () {
+                var my_repeater  = $('.repeater').repeater({
+                    show: function () {
+                        $(this).slideDown();
+                    },
+                    hide: function (deleteElement) {
+                        if(confirm('Are you sure you want to delete this element?')) {
+                            $(this).slideUp(deleteElement);
+		                }
+		            },
+                });
+                $("#donor_form").submit(function(e) {
+                    $('<input>').attr('type','hidden').attr('name','donor_index').val($('.repeater').find('.row2').length).appendTo('#donor_form')
+                });
+             });
+                // $(document).ready(function () {
+                //     $('.add_val').click(function() {
+                //         $( ".district" ).each(function(index) {
+                //             var dist_val = $(this).val();
+                //             console.log('Button clicked');
+                //             console.log(dist_val,'-----------dist_val')
+
+                //             // Add your desired functionality here
+                //         });
+                //         console.log(dist_val,'-----------dist_val2222')
+
+                //     });
+                // });
+
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#id_district').change(function() {
+                    var districtId = $(this).val();
+                    if (districtId) {
+                        $.ajax({
+                            type: 'GET',
+                            url: '/ajax/get_district_donor/' + districtId + '/{{partner_id}}/',
+                            success: function(data) {
+                                $('#donor').empty();
+                                $('#donor').append('<option value="" selected>Select Donor</option>');
+                                $.each(data, function(index, donor) {
+                                    $('#donor').append('<option value="' + donor.id + '">' + donor.name + '</option>');
+                                });
+                            }
+                        });
+                    } else {
+                        $('#donor').empty();
+                        $('#donor').append('<option value="" selected>Select Donor</option>');
+                    }
+                });
+            });
+        </script>
+        <script src="{% static 'libs/jquery.repeater/jquery.repeater.min.js' %}"></script>
+{% endblock %}
+<!-- var selectedValues = $('.district').map(function() {
+    $(this).find('option[value="' +$(this).val() + '"]').remove();
+}).get(); -->

@@ -1,0 +1,181 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 01/29/2024, 16:20:18hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/29/2024, 16:20:18hrs{
+    "user_id": 111
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/29/2024, 16:20:50hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/29/2024, 16:20:50hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/29/2024, 18:22:14hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 01/29/2024, 18:22:14hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/29/2024, 18:24:03hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 32,
+        "app_created_at": "2024-01-29T18:24:03",
+        "app_updated_at": "2024-01-29T18:24:03",
+        "camp": 0,
+        "contact_no_1": "9703377233",
+        "contact_no_2": "",
+        "district": 531,
+        "donor": 4,
+        "drivers_license_no": "",
+        "educational_qualification": 43,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 37,
+        "id": 0,
+        "language": 1,
+        "latitude": "13.011602576428057",
+        "life_insurance_policy": 2,
+        "longitude": "77.66008414612355",
+        "monthly_income": 35,
+        "name": "vinay ",
+        "no_of_months_employed_in_a_year": "3",
+        "partner_id": 13,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 228,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "KA-29-365305",
+        "user": 30,
+        "uuid": "20240129182403a062e6e1-5780-4f98-a4dc-7be3aaad7e61",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 01/29/2024, 18:24:04hrs{
+    "Text": "Thank you for participating in Partner six vision center one & This is a test address-Sightsavers National Truckers Programme. Your registration ID is KA-29-365305. We wish you a safe and happy journey. Sightsavers : : ROYAL COMMONWEALTH SOCIETY FOR THE BLIND.",
+    "Number": "919703377233",
+    "SenderId": "RCSBSS",
+    "DRNotifyUrl": "https://raahistaging.mahiti.org/otp-sms/",
+    "DRNotifyHttpMethod": "POST",
+    "Message": "Accepted",
+    "Tool": "API"
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/29/2024, 18:24:04hrs{
+    "ApiId": "dbb848fc-ac3a-4e37-b43a-d0275da5fbe9",
+    "MessageUUID": "4ec91952-8637-4a02-98e2-dbe87045b5c4",
+    "Message": "Messages Queued",
+    "Success": "True"
+}
+
+
+==================================================
+
+
+Log Date & Time : 01/29/2024, 18:24:04hrs"<Response [202]>"
+
+
+==================================================
+
+
+Log Date & Time : 01/29/2024, 18:24:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/29/2024, 18:24:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/29/2024, 18:24:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/29/2024, 18:24:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/29/2024, 18:24:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/29/2024, 18:24:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 01/29/2024, 18:24:04hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "20240129182403a062e6e1-5780-4f98-a4dc-7be3aaad7e61",
+            "patient_id": null,
+            "SCO": "2024-01-29 12:54:04.003062+00:00",
+            "SMO": "2024-01-29 12:54:04.003098+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}

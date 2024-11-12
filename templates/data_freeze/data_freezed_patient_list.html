@@ -1,0 +1,518 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block contents %}
+<div class="row align-items-center">
+    <div class="col-xl-12 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-between">
+                            <div>
+                                <button type="reset" onclick="window.location.href='/data-freeze/'"
+                                    class="btn btn-secondary waves-effect float-left">
+                                    Back
+                                </button>
+                            </div>
+                            <div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a  class="nav-link active" id="patient-tab" data-bs-toggle="tab" data-bs-target="#patient" type="button" role="tab" aria-controls="patient" aria-selected="true">
+                                            <span class="d-none d-sm-block">Patient Info</span>
+                                            <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="screening-tab" data-bs-toggle="tab" data-bs-target="#screening" type="button" role="tab" aria-controls="screening" aria-selected="false">
+                                            <span class="d-none d-sm-block">Screening Info</span>
+                                            <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="family-tab" data-bs-toggle="tab" data-bs-target="#family" type="button" role="tab" aria-controls="family" aria-selected="false">
+                                            <span class="d-none d-sm-block">Family Member Info</span>
+                                            <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="visual-tab" data-bs-toggle="tab" data-bs-target="#visual" type="button" role="tab" aria-controls="visual" aria-selected="false">
+                                            <span class="d-none d-sm-block">Visual Acuity Info</span>
+                                            <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="glass-tab" data-bs-toggle="tab" data-bs-target="#glass" type="button" role="tab" aria-controls="glass" aria-selected="false">
+                                            <span class="d-none d-sm-block">Glass Prescription Info</span>
+                                            <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="spectacle-tab" data-bs-toggle="tab" data-bs-target="#spectacle" type="button" role="tab" aria-controls="spectacle" aria-selected="false">
+                                            <span class="d-none d-sm-block">Spectacle Type Info</span>
+                                            <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="patient" role="tabpanel" aria-labelledby="patient-tab">
+                        <div class="table-responsive">
+                            <table id="datatables" class="table table-striped dt-responsive mb-0 mt-3">
+                                <thead class="table-light">
+                                    <tr>
+                                        <!-- <th>patient</th> -->
+                                        <th>SI.No</th>
+                                        <th>Unique Id</th>
+                                        <th>Patient Name</th>
+                                        <th>Age</th>
+                                        <th>Gender</th>
+                                        <th>Partner</th>
+                                        <th>Vision Center</th>
+                                        <th>Donor</th>
+                                        <th>District</th>
+                                        <th>User</th>
+                                        <th>Camp</th>
+                                        <th>Contact No1</th>
+                                        <th>Contact No2</th>
+                                        <th>Permanent Address</th>
+                                        <th>Aadhaar Pan No</th>
+                                        <th>Drivers License No</th>
+                                        <th>Renewal Date</th>
+                                        <th>Type Of Job</th>
+                                        <th>Time Since Driving</th>
+                                        <th>Type Of Vehicle</th>
+                                        <th>Type Of Route</th>
+                                        <th>Monthly Income</th>
+                                        <th>Life Insurance Policy</th>
+                                        <th>Vehicle Insurance Policy</th>
+                                        <th>Health Insurance Policy</th>
+                                        <th>How Do You Know About Camp</th>
+                                        <th>Educational Qualification</th>
+                                        <th>No Of Months Employed In A Year</th>
+                                        <th>Residence Type</th>
+                                        <th>Feedback</th>
+                                        <th>Registered Date</th>
+                                        <th>Synced Date</th>
+                                        <th>Status</th>
+                                        <th>QR Code</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    {% for l in patients %}
+                                    <tr>
+                                        <td>{{forloop.counter}}</td>
+                                        <td>{{l.unique_id}}</a></td>
+                                        <td>{{l.name|default_if_none:'-'}}</td>
+                                        <td>{{l.age|default_if_none:'-'}}</td>
+                                        <td>{{l.get_gender_display|default_if_none:'-'}}</td>
+                                        <td>{{l.get_vision_center.partner}}</td>
+                                        <td>{{l.get_vision_center}}</td>
+                                        <td>{{l.donor|default_if_none:'-'}}</td>
+                                        <td>{{l.district|default_if_none:'-'}}</td>
+                                        <td>{{l.user|default_if_none:'-'}}</td>
+                                        <td>{{l.camp|default_if_none:'-'}}</td>
+                                        <td>{{l.contact_no_1|default_if_none:'-'}}</td>
+                                        <td>{{l.contact_no_2|default_if_none:'-'}}</td>
+                                        <td>{{l.permanent_address|default_if_none:'-'}}</td>
+                                        <td>{{l.aadhaar_pan_no|default_if_none:'-'}}</td>
+                                        <td>{{l.drivers_license_no|default_if_none:'-'}}</td>
+                                        <td>{{l.renewal_date|default_if_none:'-'}}</td>
+                                        <td>{{l.type_of_job|default_if_none:'-'}}</td>
+                                        <td>{{l.time_since_driving|default_if_none:'-'}}</td>
+                                        <td>{{l.type_of_vehicle|default_if_none:'-'}}</td>
+                                        <td>{{l.type_of_route|default_if_none:'-'}}</td>
+                                        <td>{{l.monthly_income|default_if_none:'-'}}</td>
+                                        <td>{{l.get_life_insurance_policy_display|default_if_none:'-'}}</td>
+                                        <td>{{l.get_vehicle_insurance_policy_display|default_if_none:'-'}}</td>
+                                        <td>{{l.get_health_insurance_policy_display|default_if_none:'-'}}</td>
+                                        <td>{{l.how_do_you_know_about_camp|default_if_none:'-'}}</td>
+                                        <td>{{l.educational_qualification}}</td>
+                                        <td>{{l.no_of_months_employed_in_a_year|default_if_none:'-'}}</td>
+                                        <td>{{l.residence_type|default_if_none:'-'}}</td>
+                                        <td>{{l.feedback|default_if_none:'-'}}</td>
+                                        <td>{{start_date}}</td>
+                                        <td>{{end_date}}</td>
+                                        <td><span style="color: red;">{{l.get_status_display}}</span></td>
+                                        <td>{{l.qr_code|default_if_none:'-'}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="screening" role="tabpanel" aria-labelledby="screening-tab">
+                        <div class="tab-pane fade show active" id="patient" role="tabpanel" aria-labelledby="patient-tab">
+                            <div class="table-responsive">
+                                <table id="datatables" class="table table-striped dt-responsive mb-0 mt-3">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>SI.No</th>
+                                            <th>Unique Id</th>
+                                            <th>Patient Name</th>
+                                            <th>Blood Preasure</th>
+                                            <th>Blood sugar</th>
+                                            <th>Weight</th>
+                                            <th>Height</th>
+                                            <th>Family Details</th>
+                                            <th>Total Family Members</th>
+                                            <th>Salary Calculated</th>
+                                            <th>Owner Holding Amount</th>
+                                            <th>Employed In Year</th>
+                                            <th>Non Working Months</th>
+                                            <th>Alter Employment</th>
+                                            <th>Diabetes</th>
+                                            <th>When Was It Diagnosed Number Of Years</th>
+                                            <th>Hypertension</th>
+                                            <th>When Was It Diagnosed Years</th>
+                                            <th>Smoke</th>
+                                            <th>Alcohol</th>
+                                            <th>Eye Examination</th>
+                                            <th>Seeing Distant Objects</th>
+                                            <th>Judging Distance While Driving</th>
+                                            <th>Traffic Colors</th>
+                                            <th>Seeing While Night Driving</th>
+                                            <th>Wear Glasses Ever</th>
+                                            <th>Wearing Glasses Currently</th>
+                                            <th>Nearby Hospital</th>
+                                            <th>Type Of Hospital</th>
+                                            <th>Accident While Driving Commercial_vehicle_before</th>
+                                            <th>Accident vehicle In Last Twelve Months</th>
+                                            <th>First Aid Kit</th>
+                                            <th>You Happy With Your Profession</th>
+                                            <th>If You are Happy Specify In What Way</th>
+                                            <th>Insulin Dependent or Non Insulin Dependent</th>
+                                            <th>Waist Circumference</th>
+                                            <th>Physical Activity</th>
+                                            <th>Family History of Diabetes</th>
+                                            <th>Which Training</th>
+                                            <th>Medication Hypertension</th>
+                                            <th>Cough For More Than Two Weeks</th>
+                                            <th>Night Sweats</th>
+                                            <th>Fever For More Than 2 Weeks</th>
+                                            <th>Unexplained Weight Loss or Loss of Appetite</th>
+                                            <th>Have You Attended Awarness Training</th>
+                                            <th>Dosage Of Insulin</th>
+                                            <th>Duration Since Last Meal</th>
+                                            <th>Registered Date</th>
+                                            <th>Synced Date</th>
+                                            <th>Status</th>
+                                            <th>QR Code</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for l in screening %}
+                                        <tr>
+                                            <td>{{ forloop.counter }}</td>
+                                            <td>{{l.get_ps_details.unique_id}}</a></td>
+                                            <td>{{l.get_ps_details.name|default_if_none:'-'}}</td>
+                                            <td>{{l.blood_pressure|default_if_none:'-'}}</td>
+                                            <td>{{l.blood_sugar|default_if_none:'-'}}</td>
+                                            <td>{{l.weight|default_if_none:'-'}}</td>
+                                            <td>{{l.height|default_if_none:'-'}}</td>
+                                            <td>{{l.family_details|default_if_none:'-'}}</td>
+                                            <td>{{l.total_family_members|default_if_none:'-'}}</td>
+                                            <td>{{l.salary_calculated|default_if_none:'-'}}</td>
+                                            <td>{{l.owner_holding_amount|default_if_none:'-'}}</td>
+                                            <td>{% for i in l.employed_in_year.all %}{{i.name|default_if_none:'-'}} , {% endfor %}</td>
+                                            <td>{{l.non_working_months|default_if_none:'-'}}</td>
+                                            <td>{{l.get_alter_employment_display|default_if_none:'-'}}</td>
+                                            <td>{{l.get_diabetes_display|default_if_none:'-'}}</td>
+                                            <td>{{l.when_was_it_diagnosed_number_of_years|default_if_none:'-'}}</td>
+                                            <td>{{l.get_hypertension_display|default_if_none:'-'}}</td>
+                                            <td>{{l.when_was_it_diagnosed_years|default_if_none:'-'}}</td>
+                                            <td>{{l.get_smoke_display|default_if_none:'-'}}</td>
+                                            <td>{{l.get_alcohol_display|default_if_none:'-'}}</td>
+                                            <td>{{l.get_eye_examination_display|default_if_none:'-'}}</td>
+                                            <td>{{l.get_seeing_distant_objects_display|default_if_none:'-'}}</td>
+                                            <td>{{l.get_judging_distance_while_driving_display|default_if_none:'-'}}</td>
+                                            <td>{{l.get_traffic_colors_display|default_if_none:'-'}}</td>
+                                            <td>{{l.get_seeing_while_night_driving_display|default_if_none:'-'}}</td>
+                                            <td>{{l.get_wear_glasses_ever_display|default_if_none:'-'}}</td>
+                                            <td>{{l.get_wearing_glasses_currently_display|default_if_none:'-'}}</td>
+                                            <td>{{l.get_nearby_hospital_display|default_if_none:'-'}}</td>
+                                            <td>{{l.type_of_hospital|default_if_none:'-'}}</td>
+                                            <td>{{l.get_accident_while_driving_commercial_vehicle_before_display|default_if_none:'-'}}</td>
+                                            <td>{{l.get_accident_vehicle_in_last_twelve_months_display|default_if_none:'-'}}</td>
+                                            <td>{{l.get_first_aid_kit_display|default_if_none:'-'}}</td>
+                                            <td>{{l.you_happy_with_your_profession|default_if_none:'-'}}</td>
+                                            <td>{{l.if_you_are_happy_specify_in_what_way|default_if_none:'-'}}</td>
+                                            <td>{{l.insulin_dependent_or_non_insulin_dependent|default_if_none:'-'}}</td>
+                                            <td>{{l.waist_circumference|default_if_none:'-'}}</td>
+                                            <td>{{l.physical_activity|default_if_none:'-'}}</td>
+                                            <td>{{l.family_history_of_diabetes|default_if_none:'-'}}</td>
+                                            <td>{{l.which_training|default_if_none:'-'}}</td>
+                                            <td>{{l.medication_hypertension|default_if_none:'-'}}</td>
+                                            <td>{{l.get_cough_for_more_than_two_weeks_display|default_if_none:'-'}}</td>
+                                            <td>{{l.get_night_sweats_display|default_if_none:'-'}}</td>
+                                            <td>{{l.get_fever_for_more_than_2_weeks_display|default_if_none:'-'}}</td>
+                                            <td>{{l.get_unexplained_weight_loss_or_loss_of_appetite_display|default_if_none:'-'}}</td>
+                                            <td>{{l.get_have_you_attended_awarness_training_display|default_if_none:'-'}}</td>
+                                            <td>{{l.dosage_of_insulin|default_if_none:'-'}}</td>
+                                            <td>{{l.duration_since_last_meal|default_if_none:'-'}}</td>
+                                            <td>{{start_date}}</td>
+                                            <td>{{end_date}}</td>
+                                            <td><span style="color: red;">{{l.get_status_display}}</span></td>
+                                            <td>{{l.get_ps_details.qr_code}}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="family" role="tabpanel" aria-labelledby="family-tab">
+                        <div class="tab-pane fade show active" id="patient" role="tabpanel" aria-labelledby="patient-tab">
+                            <div class="table-responsive">
+                                <table id="datatables" class="table table-striped dt-responsive mb-0 mt-3">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>SI.No</th>
+                                            <!-- <th>patient</th> -->
+                                            <th>Unique Id</th>
+                                            <th>Patient Name</th>
+                                            <th>Name</th>
+                                            <th>Sex</th>
+                                            <th>Age</th>
+                                            <th>Relationship To Respondent</th>
+                                            <th>Educational Qualification</th>
+                                            <th>Occupation</th>
+                                            <th>Monthly Average Income</th>
+                                            <th>Registered Date</th>
+                                            <th>Synced Date</th>
+                                            <th>Status</th>
+                                            <th>QR Code</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+    
+                                        {% for l in family_member %}
+                                        <tr>
+                                            <td>{{ forloop.counter }}</td>
+                                            <td>{{l.get_psf_details.unique_id}}</td>
+                                            <td>{{l.get_psf_details.name|default_if_none:'-'}}</td>
+                                            <td>{{l.name|default_if_none:'-'}}</td>
+                                            <td>{{l.get_sex_display|default_if_none:'-'}}</td>
+                                            <td>{{l.age|default_if_none:'-'}}</td>
+                                            <td>{{l.relationship_to_respondent|default_if_none:'-'}}</td>
+                                            <td>{{l.educational_qualification|default_if_none:'-'}}</td>
+                                            <td>{{l.occupation|default_if_none:'-'}}</td>
+                                            <td>{{l.monthly_average_income|default_if_none:'-'}}</td>
+                                            <td>{{ l.app_created_at }}</td>
+                                            <td>{{l.server_created_on|default_if_none:'-'}}</td>
+                                            <td><span style="color: red;">{{l.get_status_display}}</span></td>
+                                            <td>{{'-'}}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="visual" role="tabpanel" aria-labelledby="visual-tab">
+                        <div class="tab-pane fade show active" id="patient" role="tabpanel" aria-labelledby="patient-tab">
+                            <div class="table-responsive">
+                                <table id="datatables" class="table table-striped dt-responsive mb-0 mt-3">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>SI.No</th>
+                                            <!-- <th>patient</th> -->
+                                            <th>Unique Id</th>
+                                            <th>Patient Name</th>
+                                            <th>Aided Near RE</th>
+                                            <th>Aided Near LE</th>
+                                            <th>Aided Distance RE</th>
+                                            <th>Aided Distance LE</th>
+                                            <th>Pinhole Distance_RE</th>
+                                            <th>Pinhole Distance_LE</th>
+                                            <th>Pinhole Near_RE</th>
+                                            <th>Pinhole Near_LE</th>
+                                            <th>Color RE</th>
+                                            <th>Color LE</th>
+                                            <th>Unaided Distance RE</th>
+                                            <th>Unaided Distance LE</th>
+                                            <th>Unaided Near RE</th>
+                                            <th>Unaided Near LE</th>
+                                            <th>Treatment For Refraction</th>
+                                            <th>Do You Want To Refer</th>
+                                            <th>Refer For</th>
+                                            <th>Refer To</th>
+                                            <th>Registered Date</th>
+                                            <th>Synced Date</th>
+                                            <th>Status</th>
+                                            <th>QR Code</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+    
+                                        {% for l in visual_acuity %}
+                                        <tr>
+                                            <td>{{ forloop.counter }}</td>
+                                            <td> {{l.get_psv_details.unique_id}}</a></td>
+                                            <td>{{l.get_psv_details.name|default_if_none:'-'}}</td>
+                                            <td>{{l.aided_near_re|default_if_none:'-'}}</td>
+                                            <td>{{l.aided_near_le|default_if_none:'-'}}</td>
+                                            <td>{{l.aided_distance_re|default_if_none:'-'}}</td>
+                                            <td>{{l.aided_distance_le|default_if_none:'-'}}</td>
+                                            <td>{{l.pinhole_distance_re|default_if_none:'-'}}</td>
+                                            <td>{{l.pinhole_distance_le|default_if_none:'-'}}</td>
+                                            <td>{{l.pinhole_near_re|default_if_none:'-'}}</td>
+                                            <td>{{l.pinhole_near_le|default_if_none:'-'}}</td>
+                                            <td>{{l.color_re|default_if_none:'-'}}</td>
+                                            <td>{{l.color_le|default_if_none:'-'}}</td>
+                                            <td>{{l.unaided_distance_re|default_if_none:'-'}}</td>
+                                            <td>{{l.unaided_distance_le|default_if_none:'-'}}</td>
+                                            <td>{{l.unaided_near_re|default_if_none:'-'}}</td>
+                                            <td>{{l.unaided_near_le|default_if_none:'-'}}</td>
+                                            <td>{{l.treatment_for_refraction|default_if_none:'-'}}</td>
+                                            <td>{{l.get_do_you_want_to_refer_display|default_if_none:'-'}}</td>
+                                            <td>{{l.refer_for|default_if_none:'-'}}</td>
+                                            <td>{{l.refer_to|default_if_none:'-'}}</td>
+                                            <td>{{ l.app_created_at }}</td>
+                                            <td>{{l.server_created_on|default_if_none:'-'}}</td>
+                                            <td><span style="color: red;"></span>{{l.get_status_display}}</td>
+                                            <td>{{'-'}}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="glass" role="tabpanel" aria-labelledby="glass-tab">
+                        <div class="tab-pane fade show active" id="patient" role="tabpanel" aria-labelledby="patient-tab">
+                            <div class="table-responsive">
+                                <table id="datatables" class="table table-striped dt-responsive mb-0 mt-3">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>SI.No</th>
+                                            <!-- <th>patient</th> -->
+                                            <th>Unique Id</th>
+                                            <th>Patient Name</th>
+                                            <th>Spectacle Type</th>
+                                            <th>sph_distance_re</th>
+                                            <th>sph_distance_le</th>
+                                            <th>cyl_distance_re</th>
+                                            <th>cyl_distance_le</th>
+                                            <th>axis_distance_re</th>
+                                            <th>axis_distance_le</th>
+                                            <th>va_distance_re</th>
+                                            <th>va_distance_le</th>
+                                            <th>sph_near_re</th>
+                                            <th>sph_near_le</th>
+                                            <th>cyl_near_re</th>
+                                            <th>cyl_near_le</th>
+                                            <th>axis_near_re</th>
+                                            <th>axis_near_le</th>
+                                            <th>va_near_re</th>
+                                            <th>va_near_le</th>
+                                            <th>Registered Date</th>
+                                            <th>Synced Date</th>
+                                            <th>Status</th>
+                                            <th>QR Code</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+    
+                                        {% for l in glass_prescription %}
+                                        <tr>
+                                            <td>{{ forloop.counter }}</td>
+                                            <td>{{l.get_psg_details.unique_id}}</td>
+                                            <td>{{l.get_psg_details.name|default_if_none:'-'}}</td>
+                                            <td>{{ l.spectacle_type|default_if_none:'-' }}</td>
+                                            <td>{{ l.sph_distance_re|default_if_none:'-' }}</td>
+                                            <td>{{ l.sph_distance_le|default_if_none:'-' }}</td>
+                                            <td>{{ l.cyl_distance_re|default_if_none:'-' }}</td>
+                                            <td>{{ l.cyl_distance_le|default_if_none:'-' }}</td>
+                                            <td>{{ l.axis_distance_re|default_if_none:'-' }}</td>
+                                            <td>{{ l.axis_distance_le|default_if_none:'-' }}</td>
+                                            <td>{{ l.va_distance_re|default_if_none:'-' }}</td>
+                                            <td>{{ l.va_distance_le|default_if_none:'-' }}</td>
+                                            <td>{{ l.sph_near_re|default_if_none:'-' }}</td>
+                                            <td>{{ l.sph_near_le|default_if_none:'-' }}</td>
+                                            <td>{{ l.cyl_near_re|default_if_none:'-' }}</td>
+                                            <td>{{ l.cyl_near_le|default_if_none:'-' }}</td>
+                                            <td>{{ l.axis_near_re|default_if_none:'-' }}</td>
+                                            <td>{{ l.axis_near_le|default_if_none:'-' }}</td>
+                                            <td>{{ l.va_near_re|default_if_none:'-' }}</td>
+                                            <td>{{ l.va_near_le|default_if_none:'-' }}</td>
+                                            <td>{{start_date}}</td>
+                                            <td>{{end_date}}</td>
+                                            <td><span style="color: red;"></span>{{l.get_status_display}}</td>
+                                            <td>{{l.get_pnt_details.0.qr_code|default_if_none:'-'}}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="spectacle" role="tabpanel" aria-labelledby="spectacle-tab"><div class="tab-pane fade show active" id="patient" role="tabpanel" aria-labelledby="patient-tab">
+                        <div class="table-responsive">
+                            <table id="datatables" class="table table-striped dt-responsive mb-0 mt-3">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>SI.No</th>
+                                        <!-- <th>patient</th> -->
+                                        <th>Unique Id</th>
+                                        <th>Patient Name</th>
+                                        <th>Vision Center</th>
+                                        <th>Glass Collecting Location</th>
+                                        <th>Glass Collected</th>
+                                        <th>Spectacle Name</th>
+                                        <th>Type of coating</th>
+                                        <th>Lens Type</th>
+                                        <th>Model Type</th>
+                                        <th>Frame Code</th>
+                                        <th>Frame Size</th>
+                                        <th>Eligible</th>
+                                        <th>Remarks</th>
+                                        <th>Spectacle Status</th>
+                                        <th>Registered Date</th>
+                                        <th>Synced Date</th>
+                                        <th>Status</th>
+                                        <th>QR Code</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    {% for l in spectacle_type %}
+                                    <tr>
+                                        <td>{{forloop.counter}}</td>
+                                        <td>{{ l.get_pnt_details.0.unique_id|default_if_none:'-' }}</td>
+                                        <td>{{ l.get_pnt_details.0.name|default_if_none:'-' }}</td>
+                                        <td>{{ l.vision_center|default_if_none:'-' }}</td>
+                                        <td>{{ l.glass_collecting_location|default_if_none:'-' }}</td>
+                                        <td>{{ l.get_has_the_glass_collected_display|default_if_none:'-' }}</td>
+                                        <td>{{l.spectacle_name|default_if_none:'-'}}</td>
+                                        <td>{{l.type_of_coating|default_if_none:'-'}}</td>
+                                        <td>{{l.lens_type|default_if_none:'-'}}</td>
+                                        <td>{{l.model_type|default_if_none:'-'}}</td>
+                                        <td>{{l.frame_code|default_if_none:'-'}}</td>
+                                        <td>{{l.frame_size|default_if_none:'-'}}</td>
+                                        <td>{{l.get_r2c_eligible_display|default_if_none:'-'}}</td>
+                                        <td>{{l.r2c_remark|default_if_none:'-'}}</td>
+                                        <td>{{l.get_spectacle_status_display|default_if_none:'-'}}</td>
+                                        <td>{{start_date}}</td>
+                                        <td>{{end_date}}</td>
+                                        <td><span style="color: red;"></span>{{l.get_status_display}}</td>
+                                        <td>{{l.get_pnt_details.0.qr_code|default_if_none:'-'}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+{% endblock %}

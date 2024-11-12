@@ -1,0 +1,245 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+
+<!-- DataTables -->
+<link href="{% static 'libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+<link href="{% static 'libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<!-- Responsive datatable examples -->
+<link href="{% static 'libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+{% endblock %}
+
+{% block contents %}
+{% csrf_token %}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-rep-plugin">                       
+                        
+                    <div class="table-responsive mb-0" data-pattern="priority-columns">
+                        <table id="tech-companies-1" class="table  dt-responsive mb-0 mt-3">
+                           
+                            <thead class="bg-white">
+                                <tr>             
+                                    <td><span><b>Partner name & address :</b></span>  {% if ptr_vlu.name %} {{ptr_vlu.name}} {% endif %}{% if ptr_vlu.address %}| {{ptr_vlu.address|default_if_none:'-' }} {% endif %}</td>
+                                </tr>
+                                <tr>
+                                    <td><span><b>Project target location(as per PFA) :</b></span> {{donor_dist|default_if_none:'-' }} </td>
+                                </tr>
+                                <tr>
+                                    <td><span><b>Donor Name :</b></span> {{order.donor| default_if_none:'-' }} </td>
+                                </tr>
+                                <tr>                                   
+                                    <td>
+                                        <span><b>Shipment address : </b></span> 
+                                        {% if order.shippment_address == 1 %} 
+                                            {% if order.vision_center.partner.address %}{{order.vision_center.partner.address|default_if_none:'-' }}{% endif %}
+                                            {% if order.vision_center.partner.state.name %},{{order.vision_center.partner.state.name}} {% endif %}
+                                        {% elif order.shippment_address == 4 %} 
+                                            {% if order.vision_center.address %}{{order.vision_center.address|default_if_none:'-'}}{% endif%}
+                                            {% if order.vision_center.state.name %}{{order.vision_center.state.name}}{% endif %} 
+                                        {% else %} 
+                                            {{order.other_address|default_if_none:'-'}} 
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span><b>Contact person name and contact number :</b></span> {{request.user}} & {{order.camp.coordinator_mobile_no}}</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-rep-plugin">
+                        <div class="table-responsive" data-pattern="priority-columns">
+                            <table id="camps_table" class="table  dt-responsive mb-0 mt-3">
+                                <thead class="table-light" >
+                                    <tr class="text-center">
+                                        <th colspan="12"><h5>Requisition for near vision spectacles</h5></th>
+                                    </tr>
+                                    <tr>
+                                        <th>S.No</th>
+                                        <th>Spectacles</th>   
+                                        <th>+1.0</th>
+                                        <th>+1.25</th>
+                                        <th>+1.50</th>
+                                        <th>+1.75</th>
+                                        <th>+2.0</th>
+                                        <th>+2.25</th>
+                                        <th>+2.50</th>
+                                        <th>+2.75</th>
+                                        <th>+3.0</th>
+                                    </tr>   
+                                </thead>
+                                <tbody>
+                                    <tr>                                    
+                                        <td>1</td>
+                                        <td>Number of Spectacles  </td>
+                                        <td>{{quant_1}}</td>
+                                        <td>{{quant_2}} </td>
+                                        <td>{{quant_3}} </td>
+                                        <td>{{quant_4}} </td>
+                                        <td>{{quant_5}}</td>
+                                        <td>{{quant_6}} </td>
+                                        <td>{{quant_7}} </td>
+                                        <td>{{quant_8}} </td>
+                                        <td>{{quant_9}}</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-responsive mb-3" data-pattern="priority-columns">
+                            <table id="partners_table" class="table  dt-responsive mb-0 mt-3">
+                                <thead class="table-light" >
+                                    <tr class="text-center">
+                                       <th colspan="14"><h5>Requisition for R2C vision spectacles</h5></th>
+                                    </tr>
+                                    <tr>
+                                        <th>S.No</th>
+                                        <th>Spectacles</th> 
+                                        <th>-0.75</th>
+                                        <th>-1.0</th>
+                                        <th>-1.50</th>
+                                        <th>-2.0</th>
+                                        <th>-2.50</th>
+                                        <th>-3.0</th>
+                                        <th>-3.50</th>
+                                        <th>-3.75</th>
+                                    </tr>   
+                                </thead>
+                                <tbody>
+                                    <tr>                                    
+                                        <td>1</td>
+                                        <td>Number of Spectacles </td>
+                                        <td>{{quant_11}}</td>
+                                        <td>{{quant_12}}</td>
+                                        <td>{{quant_13}}</td>
+                                        <td>{{quant_14}}</td>
+                                        <td>{{quant_15}}</td>
+                                        <td>{{quant_16}}</td>
+                                        <td>{{quant_17}}</td>
+                                        <td>{{quant_18}}</td>
+                                    </tr>
+                                
+                                </tbody>
+                            </table>
+                        </div> 
+                        <div class="table-responsive mb-3" data-pattern="priority-columns">
+                            <table id="frame_table" class="table  dt-responsive mb-0 mt-3">
+                                <thead class="table-light" >
+                                    <tr class="text-center">
+                                        <th>S.No</th>
+                                        <th>Spectacles</th> 
+                                        <th>R2CCM015</th>
+                                        <th>R2CCM021</th>
+            
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Number of Frames </td>                                    
+                                        <td>{{frame_1}}</td>
+                                        <td>{{frame_2}}</td>                                   
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <button type="reset" onclick="location.href='/order_receipt/'" class="btn btn-secondary waves-effect">
+                        Back
+                    </button>  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+        
+
+
+{% endblock %}
+
+{% block extra_javascript %}
+<script src="{% static 'js/pages/form-advanced.init.js'%}"></script>   <!--cause console issue  -->
+
+<script src="{% static 'libs/sweetalert2/dist/sweetalert2.min.js' %}"></script>
+<script src="{% static 'js/pages/datatables.init.js' %}"></script>      <!--cause console issue  -->
+<script type="text/javascript" >
+    const radioButtons = document.getElementsByName('table_selection');
+    const campsTable = document.getElementById('camps_table');
+    const partnersTable = document.getElementById('partners_table');
+    const frameTable = document.getElementById('frame_table');
+   
+
+    window.onload = function () {
+        value = '{{prod_id}}'
+        console.log(value,'-------')
+        if (value === '4') {
+            campsTable.style.display = 'table';
+             partnersTable.style.display = 'none';
+            frameTable.style.display = 'none';
+        } else if (value === '3') {
+            campsTable.style.display = 'none';
+            partnersTable.style.display = 'table';
+            frameTable.style.display = 'table';
+
+
+        }
+    }
+   
+    function Confirm(status_id,title) {
+        var order_id = '{{order.id}}'
+        console.log(order_id, 'order_id')
+        Swal.fire({
+            title: "Are you sure!",
+            text:"You want to "+ title +"?",
+            showCancelButton: !0,
+            confirmButtonColor: "#34c38f",
+            cancelButtonColor: "#f46a6a",
+            confirmButtonText: "Yes, "+ title +" it!",
+        }).then((result) => {
+            if (result.isConfirmed){
+                window.location.href = '/update_order_status/'+order_id+'/'+status_id+'/';
+            };
+                
+        })
+    }
+    
+    function remove(order_id,title) {
+        
+        Swal.fire({
+            title: "Are you sure!",
+            text:"You want to "+ title +"?",
+            showCancelButton: !0,
+            confirmButtonColor: "#34c38f",
+            cancelButtonColor: "#f46a6a",
+            confirmButtonText: "Yes, "+ title +" it!",
+        }).then((result) => {
+            if (result.isConfirmed){
+                window.location.href = '/delete_orders/'+order_id+'/';
+            };
+                
+        })
+    }
+
+
+</script>
+{% endblock %}

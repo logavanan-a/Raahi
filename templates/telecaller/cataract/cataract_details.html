@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block contents %}
+<div class="row align-items-center">
+    <div class="col-xl-12 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="table-responsive" >								
+                            <table  class="table  dt-responsive ">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th colspan="4">Tele- Calling for Cataract ({{cataract_details.name|default_if_none:'-'}})</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Unique Id</th>
+                                        <td>{{cataract_details.unique_id}}</td>
+                                        <th>Name</th>
+                                        <td>{{cataract_details.name|default_if_none:'-'}}</td>   
+                                    </tr>
+                                    <tr> 
+                                        <th>Age</th>
+                                        <td>{{cataract_details.age|default_if_none:'-'}}</td>
+                                        <th>Gender</th>
+                                        <td>{{cataract_details.get_gender_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>   
+                                        <th>Contact No(+91)</th>
+                                        <td>{{cataract_details.contact_no_1|default_if_none:'-'}}</td>
+                                        <th>State</th>
+                                        <td>{{cataract_details.get_vision_center.partner.state|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Type of Job</th>
+                                        <td>{{cataract_details.type_of_job|default_if_none:'-'}}</td>
+                                        <th>Visual Acuity Refer for</th>
+                                        <td>{{visual_acuity.refer_for|default_if_none:'-'}} </td>
+                                    </tr>
+                                    {% if cataract_details.camp %}
+                                        <th>Camp Name</th>
+                                        <td>{{cataract_details.camp|default_if_none:'-'}}</td>
+                                        <th>Camp Date</th>
+                                        <td>{{cataract_details.camp.date|default_if_none:'-'}} </td>
+                                        {% else %}
+                                        <th>Vision Center</th>
+                                        <td>{{cataract_details.get_vision_center|default_if_none:'-'}}</td>
+                                        <th>Screened Location</th>
+                                        <td>{% if cataract_details.camp %}{{cataract_details.camp.location|default_if_none:'-'}}{% else %}{{cataract_details.get_vision_center.address|default_if_none:'-'}}{% endif %}</td>
+                                        {% endif %}
+                                    </tr>
+                                    {% if cataract_details.camp %}
+                                    <tr>
+                                        <th>Screened Location</th>
+                                        <td>{% if cataract_details.camp %}{{cataract_details.camp.location|default_if_none:'-'}}{% else %}{{cataract_details.get_vision_center.address|default_if_none:'-'}}{% endif %}</td>
+                                    </tr>
+                                    {% endif %}
+                                    <td colspan="4"></td>
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th colspan="4">
+                                                Patient Feedback 
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th colspan="3">1. Whether you referred to the hospital for Cataract</th>
+                                        <td colspan="2">{{telecalling.get_referred_to_hospital_for_cataract_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <!-- <tr>
+                                        <th colspan="3">If no, please enter reason</th>
+                                        <td colspan="2">{{telecalling.reason_for_cataract_no|default_if_none:'-'}}</td>
+                                    </tr> -->
+                                    <tr>
+                                        <th colspan="3">2. If yes, have you visited the hospital </th>
+                                        <td colspan="2">{{telecalling.get_visited_hospital_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">If no, please enter reason</th>
+                                        <td colspan="2">{{telecalling.get_reason_for_visited_hospital_no_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">3. If yes Did the hospital recommend you to undergo the cataract surgery ? </th>
+                                        <td colspan="2">{{telecalling.get_hospital_recomand_cataract_surgery_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">If no, please enter reason</th>
+                                        <td colspan="2">{{telecalling.reason_for_hospital_recomand_cataract_surgery_no|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">4. If yes, did you undergo the surgery </th>
+                                        <td colspan="2">{{telecalling.get_undergo_surgery_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">If no, please enter reason</th>
+                                        <td colspan="2">{{telecalling.reason_for_undergo_surgery_no|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">5. Where you have done the cataract surgery? </th>
+                                        <td colspan="2">{{telecalling.place_cataract_surgery|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">6. Please mention the date of cataract surgery conducted </th>
+                                        <td colspan="2">{{telecalling.date_cataract_surgery|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">7. If you have not undergone cataract surgery, please mention the reasons </th>
+                                        <td colspan="2">{{telecalling.reason_for_notgone_cataract_surgery|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">8. Was the treatment free or did you pay for it ? </th>
+                                        <td colspan="2">{{telecalling.get_treatment_free_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">If it is paid, then how it is paid  </th>
+                                        <td colspan="2">{{telecalling.get_how_it_paid_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">9. Do you see any improvement in your vision after the surgery </th>
+                                        <td colspan="2">{{telecalling.get_improvement_vision_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">10. Is it helping you in your driving </th>
+                                        <td colspan="2">{{telecalling.get_helpful_for_driving_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">Beneficiary feed back </th>
+                                        <td colspan="2">{{telecalling.beneficiary_feed_back|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th colspan="4">
+                                                Comment Area
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th colspan="3">Ad</th>
+                                        <td colspan="2">{{telecalling.ad|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">Disposition Name</th>
+                                        <td colspan="2">{{telecalling.disposition_name|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">Call Disposition Group</th>
+                                        <td colspan="2">{{telecalling.get_call_disposition_group_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">Comments</th>
+                                        <td colspan="2">{{telecalling.comments|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">Agent Comments</th>
+                                        <td colspan="2">{{telecalling.agent_comments|default_if_none:'-'}}</td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+                        </div> 
+                    </div>  
+                </div>
+                <div class="gap-2">
+                    <button type="reset"  onclick="window.location.href='/cataract-list/'" class="btn btn-secondary waves-effect">
+                        Back
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>
+
+{% endblock %}

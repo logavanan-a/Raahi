@@ -1,0 +1,1066 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 11:59:17hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 11:59:17hrs{
+    "user_id": 9,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 12:48:01hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 12:48:01hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 12:51:15hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 12:51:15hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 12:54:22hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 12:54:22hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 12:57:32hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 12:57:32hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 12:58:18hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 50,
+        "app_created_at": "2023-07-27T12:58:13",
+        "app_updated_at": "",
+        "camp": 0,
+        "caste": 0,
+        "contact_no_1": "135700",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 1,
+        "drivers_license_no": "24578",
+        "educational_qualification": 45,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 35,
+        "name": "hfh",
+        "no_of_months_employed_in_a_year": "1",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "235799",
+        "user": 9,
+        "uuid": "20230727125813ea1af9a4-98ba-462a-a5c5-ac6d13c88230",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 12:59:50hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 12:59:50hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 13:00:45hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 5,
+        "app_created_at": "2023-07-27T13:00:41",
+        "app_updated_at": "2023-07-27T13:00:41",
+        "camp": 0,
+        "caste": 0,
+        "contact_no_1": "2468",
+        "contact_no_2": "",
+        "district": 14,
+        "donor": 1,
+        "drivers_license_no": "4577655",
+        "educational_qualification": 45,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 38,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 35,
+        "name": "hffh",
+        "no_of_months_employed_in_a_year": "1",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "256",
+        "user": 9,
+        "uuid": "2023072713004161e0697b-1efb-4541-b693-b0c4d1088584",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 13:31:17hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 13:31:17hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:10:44hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:10:44hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:13:54hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:13:54hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:14:57hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 56,
+        "app_created_at": "2023-07-27T14:14:52",
+        "app_updated_at": "2023-07-27T14:14:52",
+        "camp": 0,
+        "caste": 0,
+        "contact_no_1": "95765765865",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 1,
+        "drivers_license_no": "bggncnhcjxghxjhchncn",
+        "educational_qualification": 46,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 37,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 35,
+        "name": "nhfujfjhfhj",
+        "no_of_months_employed_in_a_year": "1",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "hgxhxghgff",
+        "user": 9,
+        "uuid": "2023072714145204bf6470-f341-4cff-bf59-043ec8edb7c1",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:15:52hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:15:52hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:16:35hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 59,
+        "app_created_at": "2023-07-27T14:16:31",
+        "app_updated_at": "2023-07-27T14:16:31",
+        "camp": 0,
+        "caste": 0,
+        "contact_no_1": "98099869896",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 1,
+        "drivers_license_no": "thfyjcjhchfgzrdjhfjg",
+        "educational_qualification": 44,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 34,
+        "name": "nhcngcgc",
+        "no_of_months_employed_in_a_year": "1",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "fhdghcg",
+        "time_since_driving": "",
+        "type_of_job": 18,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "ngxgncng",
+        "user": 9,
+        "uuid": "20230727141631dea1cccb-3022-468d-93d5-4779a28cc3b3",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:16:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:16:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:16:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:17:09hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:17:09hrs{
+    "user_id": 9,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:27:18hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:27:18hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:40:05hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:40:05hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:49:16hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:49:16hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:50:18hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 14:50:18hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 15:08:27hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 96,
+        "app_created_at": "2023-07-27T15:08:21",
+        "app_updated_at": "2023-07-27T15:08:21",
+        "camp": 0,
+        "caste": 0,
+        "contact_no_1": "96866856865",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 1,
+        "drivers_license_no": "hgcghcjgcjyfjyfyjfjy",
+        "educational_qualification": 46,
+        "gender": 2,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 38,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 34,
+        "name": "gncngc",
+        "no_of_months_employed_in_a_year": "2",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "jyfjyf",
+        "user": 9,
+        "uuid": "20230727150821b6021b57-b021-4761-a192-d42721c0336a",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 15:17:18hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 15:17:18hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 15:18:51hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 15:18:51hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 15:31:09hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 15:31:09hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:00:15hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:00:15hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:08:05hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 96,
+        "app_created_at": "2023-07-27T15:08:21",
+        "app_updated_at": "2023-07-27T15:08:21",
+        "camp": 0,
+        "caste": 0,
+        "contact_no_1": "96866856865",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 1,
+        "drivers_license_no": "hgcghcjgcjyfjyfyjfjy",
+        "educational_qualification": 46,
+        "gender": 2,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 38,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 34,
+        "name": "gncngc",
+        "no_of_months_employed_in_a_year": "2",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "jyfjyf",
+        "user": 9,
+        "uuid": "20230727150821b6021b57-b021-4761-a192-d42721c0336a",
+        "vehicle_insurance_policy": 0
+    },
+    {
+        "aadhaar_pan_no": "",
+        "age": 59,
+        "app_created_at": "2023-07-27T17:08:00",
+        "app_updated_at": "2023-07-27T17:08:00",
+        "camp": 0,
+        "caste": 0,
+        "contact_no_1": "36268628625",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 1,
+        "drivers_license_no": "bfxfhxhgchgdhgfjtdjg",
+        "educational_qualification": 0,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 40,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 33,
+        "name": "barathbarath",
+        "no_of_months_employed_in_a_year": "",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 0,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "barathnarath",
+        "user": 9,
+        "uuid": "202307271708004987f413-1f60-4983-9f2b-70468a8e307a",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:08:05hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:08:05hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:08:05hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:08:59hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:08:59hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:09:52hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 25,
+        "app_created_at": "2023-07-27T17:09:47",
+        "app_updated_at": "2023-07-27T17:09:47",
+        "camp": 0,
+        "caste": 0,
+        "contact_no_1": "62426526552",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 1,
+        "drivers_license_no": "htxthxthdthdthdhtfht",
+        "educational_qualification": 0,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 35,
+        "name": "gbcync",
+        "no_of_months_employed_in_a_year": "",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 0,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "bgxthx",
+        "user": 9,
+        "uuid": "20230727170947098ef7bd-c403-4ee2-8006-3a320ec78994",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:09:52hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:09:52hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:09:52hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:21:18hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:21:18hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:33:02hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 28,
+        "app_created_at": "2023-07-27T17:32:50",
+        "app_updated_at": "2023-07-27T17:32:50",
+        "camp": 0,
+        "caste": 0,
+        "contact_no_1": "65895856865",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 1,
+        "drivers_license_no": "gjcgjcgjc",
+        "educational_qualification": 0,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 40,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 35,
+        "name": "ghhgchgfgh",
+        "no_of_months_employed_in_a_year": "",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 0,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "jgcjgcjgfjgfyj",
+        "user": 9,
+        "uuid": "2023072717325021ea995d-9810-450e-8c32-04f3450185d0",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:33:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:33:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:33:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:33:42hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:33:42hrs{
+    "user_id": 9,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:36:57hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 28,
+        "app_created_at": "2023-07-27T17:36:52",
+        "app_updated_at": "2023-07-27T17:36:52",
+        "camp": 0,
+        "caste": 0,
+        "contact_no_1": "26862562562",
+        "contact_no_2": "",
+        "district": 14,
+        "donor": 4,
+        "drivers_license_no": "yrsyrdhrdthdthdthdht",
+        "educational_qualification": 46,
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 35,
+        "name": "gncbgcngcjgcj",
+        "no_of_months_employed_in_a_year": "1",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "utdyjfjyfjyfyjf",
+        "user": 9,
+        "uuid": "202307271736527e5dc9d7-ce0b-4ef9-b7fa-5484cc5cfc5e",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:36:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:36:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:36:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:38:04hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 28,
+        "app_created_at": "2023-07-27T17:38:00",
+        "app_updated_at": "2023-07-27T17:38:00",
+        "camp": 6,
+        "caste": 0,
+        "contact_no_1": "65862856862",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 4,
+        "drivers_license_no": "fbxhrxhtcjtfgjfgnchy",
+        "educational_qualification": 46,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 40,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 35,
+        "name": "bc bgchg",
+        "no_of_months_employed_in_a_year": "1",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "uyfyjfyjfyjf",
+        "user": 9,
+        "uuid": "20230727173800a34b99f3-2e42-4a0b-9404-31732b7e68b7",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:38:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:38:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:38:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:46:00hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:46:00hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:57:11hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:57:11hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:57:58hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 17:57:58hrs{
+    "user_id": 9,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 18:01:32hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 18:01:32hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 18:04:25hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 18:04:25hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 18:07:30hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 18:07:30hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 18:08:14hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 18:08:14hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 18:14:07hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 68,
+        "app_created_at": "2023-07-27T18:14:02",
+        "app_updated_at": "2023-07-27T18:14:02",
+        "camp": 0,
+        "caste": 0,
+        "contact_no_1": "69869869869",
+        "contact_no_2": "",
+        "district": 10,
+        "donor": 1,
+        "drivers_license_no": "jyfyjfyjfyjfgjfgncjg",
+        "educational_qualification": 0,
+        "gender": 2,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 35,
+        "name": "bg ngc",
+        "no_of_months_employed_in_a_year": "",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "gjcgncnhvnhvhn",
+        "residence_type": 0,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "kycjhcjyc",
+        "user": 9,
+        "uuid": "202307271814027bc41a22-03bd-42c1-8f54-0aaed47bbceb",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 23:56:01hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/27/2023, 23:56:01hrs{
+    "user_id": 9
+}

@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+
+<!-- DataTables -->
+<link href="{% static 'libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+<link href="{% static 'libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<!-- Responsive datatable examples -->
+<link href="{% static 'libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+{% endblock %}
+
+{% block contents %}
+{% csrf_token %}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                {% if spectacletype_obj %}
+                <div class="d-flex justify-content-end mb-2">
+                    <button type="button" class="btn btn-primary waves-effect btn-xs float-right" onclick="location.href='/generate-order-details/'">Generate the Orders</button>
+                </div>
+                {% endif %}
+                <div class="table-responsive mb-3" data-pattern="priority-columns">
+                    <table id="datatable-buttons" class="table  dt-responsive mb-0 mt-3">
+                        <thead class="table-light" >
+                            <tr>
+                                <th>Created By</th>   
+                                <th>Created On</th>
+                                <th>Product</th>
+                                <th>Order For</th>
+                                <th>Shippment Address</th>
+                            </tr>   
+                        </thead>
+                        <tbody>
+                            {% for l in data %}
+                            <tr>                                    
+                                <td>{{l.get_partner_shippment_address.0.partner}}</td>
+                                <td>{{l.server_created_on|date:"Y-m-d"}} </td>
+                                <td>{{l.spectacle_name|default_if_none:'-'}}</td>
+                                <td>{% if l.get_pnt_details.0.camp %}Camp{% else %}Vision Center{% endif %}</td>
+                                <td>{{l.get_partner_shippment_address.0.partner.address|default_if_none:'-'}}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <nav aria-label="...">
+                    {% if data.has_other_pages %}
+                    <ul class="pagination justify-content-end " >
+                        {% if data.has_previous %}
+                        <li class="paginate_button page-item"><a class="page-link" href="?page=1">First</a></li>
+                        {% else %}
+                        <li class="paginate_button page-item disabled"><span class="page-link">First</span></li>
+                        {% endif %}
+                        {% for i in display_page_range %}
+                            {% if data.number == i %}
+                            <li class="page-item active" ><span class="page-link">{{ i }} <span class="sr-only">(current)</span></span></li>
+                            {% else %}
+                            <li class="paginate_button paginate_button page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                        {% if data.has_next %}
+                            <li class="paginate_button page-item"><a class="page-link" href="?page={{ data.paginator.num_pages }}">Last</a></li>
+                        {% else %}
+                            <li class="paginate_button page-item disabled"><span class="page-link">Last</span></li>
+                        {% endif %}
+                        </ul>
+                    {% endif %}
+                </nav> 
+            </div> 
+        </div> 
+    </div>
+</div> 
+{% endblock %}
+{% block extra_javascript %}
+<script src="{% static 'libs/sweetalert2/dist/sweetalert2.min.js' %}"></script>
+
+<!-- Required datatable js -->
+<script src="{% static 'libs/datatables.net/js/jquery.dataTables.min.js' %}"></script>
+<!-- <script src="{% static 'libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js' %}"></script> -->
+<!-- Buttons examples -->
+<script src="{% static 'libs/datatables.net-buttons/js/dataTables.buttons.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-buttons/js/buttons.colVis.min.js' %}"></script>
+
+<!-- Responsive examples -->
+<script src="{% static 'libs/datatables.net-responsive/js/dataTables.responsive.min.js' %}"></script>
+<script src="{% static 'libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js' %}"></script>
+
+<!-- Datatable init js -->
+<script src="{% static 'js/pages/datatables.init.js' %}"></script>
+
+
+{% endblock %}

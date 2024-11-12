@@ -1,0 +1,107 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 12/07/2023, 17:42:47hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 12/07/2023, 17:42:47hrs{
+    "user_id": 35
+}
+
+
+==================================================
+
+
+Log Date & Time : 12/07/2023, 17:44:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/07/2023, 17:44:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/07/2023, 17:44:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/07/2023, 17:44:41hrs[
+    {
+        "app_created_at": "2023-12-07T17:44:40",
+        "app_updated_at": "2023-12-07T17:44:40",
+        "axis_distance_le": "-0.2",
+        "axis_distance_re": "-1.0",
+        "axis_near_le": "",
+        "axis_near_re": "",
+        "cyl_distance_le": "-0.5",
+        "cyl_distance_re": "-1.0",
+        "cyl_near_le": "",
+        "cyl_near_re": "",
+        "follow_up_status": 0,
+        "partner_id": 23,
+        "screening_uuid": "2023120515225521a9f45e-acc3-417e-ad62-8f51a69d60eb",
+        "spectacle_type": 227,
+        "sph_distance_le": "-0.5",
+        "sph_distance_re": "-1.0",
+        "sph_near_le": "",
+        "sph_near_re": "",
+        "sync_status": 0,
+        "uuid": "202312071744408fcf1466-d26d-405a-8ce2-bde3d1e7f33a",
+        "va_distance_le": 85,
+        "va_distance_re": 85,
+        "va_near_le": 0,
+        "va_near_re": 0,
+        "vision_center_id": 88
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 12/07/2023, 17:44:41hrs[
+    {
+        "app_created_at": "2023-12-07T17:44:40",
+        "app_updated_at": "2023-12-07T17:44:40",
+        "follow_up_status": 1,
+        "frame_code": 104,
+        "frame_size": 106,
+        "glass_collecting_location": 1,
+        "glass_prescription_uuid": "202312071744408fcf1466-d26d-405a-8ce2-bde3d1e7f33a",
+        "has_the_glass_collected": 2,
+        "lens_type": 237,
+        "model_type": 0,
+        "partner_id": 23,
+        "r2c_eligible": 1,
+        "r2c_remark": "",
+        "spectacle_name": "R2C",
+        "spectacle_type": 227,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20231207174440ebe84774-35af-4293-8db2-ae47e71ef61c",
+        "vision_center": 89
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 12/07/2023, 17:44:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 12/07/2023, 17:44:42hrs[]

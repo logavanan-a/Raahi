@@ -1,0 +1,392 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+
+<!-- DataTables -->
+<link href="{% static 'libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+<link href="{% static 'libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<!-- Responsive datatable examples -->
+<link href="{% static 'libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+{% endblock %}
+
+{% block contents %}
+{% csrf_token %}
+<style>
+    .invalid-feedback {
+        display: none;
+    }
+</style>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-rep-plugin">                       
+                    <div class="table-responsive mb-0" data-pattern="priority-columns">
+                        <table id="tech-companies-1" class="table  dt-responsive mb-0 mt-3">
+                            <thead class="bg-white">
+                                <tr>             
+                                    <td style="width: 35%;"><b>Partner name & address :-</b></td>
+                                    <td>{% if ptr_vlu.name %} {{ptr_vlu.name}} {% endif %}{% if ptr_vlu.address %} {% if ptr_vlu.address %} | {% endif %} {{ptr_vlu.address|default_if_none:'-' }} {% endif %}</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Project target location(as per PFA) :-</b></td>
+                                    <td>{{donor_dist|default_if_none:'-' }} </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Donor Name :-</b></td>
+                                    <td>{{order.donor|default_if_none:'-' }} </td>
+                                </tr>
+                                <tr>                                   
+                                    <td><b>Shipment address :- </b></td>
+                                    <td> 
+                                        {% if order.shippment_address == 1 %} 
+                                            {% if partner_contact.address %}{{partner_contact.address|default_if_none:'-' }}{% endif %}
+                                            {% if partner_contact.state.get_district_value %} , {% endif %}{{partner_contact.state.get_district_value|default_if_none:' '}}{% if partner_contact.state %},{% endif %}{{partner_contact.state}}
+                                        {% elif order.shippment_address == 4 %} 
+                                            {% if order.vision_center.address %}{{order.vision_center.address|default_if_none:'-'}}{% endif%}
+                                            {% if order.vision_center.state.get_district_value %}{{order.vision_center.state.get_district_value|default_if_none:' '}}{% endif %} 
+                                            {% if order.vision_center.state %}{{order.vision_center.state|default_if_none:'-'}}{% endif %} 
+                                        {% else %} 
+                                            {{order.other_address|default_if_none:'-'}} 
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Contact person name and contact number :-</b></td>
+                                    <!-- <td>{{order.vision_center.partner.name}}{% if order.vision_center.partner.contact_no %} | {% endif %} {{order.vision_center.partner.contact_no}}</td> -->
+                                    <td>{{order.created_by.first_name}}{% if partner_contact.contact_no %} | {% endif %} {{partner_contact.contact_no}}</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-rep-plugin">
+                    <div class="table-responsive" data-pattern="priority-columns">
+                        <table id="camps_table" class="table  dt-responsive mb-0 mt-3">
+                            <thead class="table-light" >
+                                <tr class="text-center">
+                                    <th colspan="12"><h5 style="color: aliceblue;">Requisition for near vision spectacles</h5></th>
+                                </tr>
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Spectacles</th>   
+                                    <th>+1.0</th>
+                                    <th>+1.25</th>
+                                    <th>+1.50</th>
+                                    <th>+1.75</th>
+                                    <th>+2.0</th>
+                                    <th>+2.25</th>
+                                    <th>+2.50</th>
+                                    <th>+2.75</th>
+                                    <th>+3.0</th>
+                                </tr>   
+                            </thead>
+                            <tbody>
+                                <tr>                                    
+                                    <td>1</td>
+                                    <td>Number of Spectacles  </td>
+                                    <td>{{quant_1}}</td>
+                                    <td>{{quant_2}} </td>
+                                    <td>{{quant_3}} </td>
+                                    <td>{{quant_4}} </td>
+                                    <td>{{quant_5}}</td>
+                                    <td>{{quant_6}} </td>
+                                    <td>{{quant_7}} </td>
+                                    <td>{{quant_8}} </td>
+                                    <td>{{quant_9}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-responsive mb-3" data-pattern="priority-columns">
+                        <table id="partners_table" class="table  dt-responsive mb-0 mt-3">
+                            <thead class="table-light" >
+                                <tr class="text-center">
+                                    <th colspan="14"><h5 style="color: aliceblue;">Requisition for R2C vision spectacles</h5></th>
+                                </tr>
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Spectacles</th> 
+                                    <th>-0.75</th>
+                                    <th>-1.0</th>
+                                    <th>-1.50</th>
+                                    <th>-2.0</th>
+                                    <th>-2.50</th>
+                                    <th>-3.0</th>
+                                    <th>-3.50</th>
+                                    <th>-3.75</th>
+                                </tr>   
+                            </thead>
+                            <tbody>
+                                <tr>                                    
+                                    <td>1</td>
+                                    <td>Number of Spectacles </td>
+                                    <td>{{quant_11}}</td>
+                                    <td>{{quant_12}}</td>
+                                    <td>{{quant_13}}</td>
+                                    <td>{{quant_14}}</td>
+                                    <td>{{quant_15}}</td>
+                                    <td>{{quant_16}}</td>
+                                    <td>{{quant_17}}</td>
+                                    <td>{{quant_18}}</td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+                    </div> 
+                    <div class="table-responsive" data-pattern="priority-columns">
+                        <table id="frame_table" class="table  dt-responsive mb-3 mt-3">
+                            <thead class="table-light" >
+                                <tr class="text-center">
+                                    <th>S.No</th>
+                                    <th>Spectacles</th> 
+                                    <th>R2CCM015</th>
+                                    <th>R2CCM021</th>
+        
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Number of Frames </td>                                    
+                                    <td>{{frame_1}}</td>
+                                    <td>{{frame_2}}</td>                                   
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                {% comment %} {% if not order.invoice_no and not order.awb_no %} {% endcomment %}
+                {% if request.session.role_id == 6 %}
+                <form method='POST' class="needs-validation" id="sumbit-form">  
+                    {% csrf_token %}
+                    <div class="table-responsive mb-4" data-pattern="priority-columns">
+                        <table id="tech-companies-1" class="table  dt-responsive mb-0 mt-3">
+                            <thead class="table-light" >
+                                <tr class="text-center">
+                                    <th>Invoice Date</th> 
+                                    <th>Invoice Number</th> 
+                                    <th>Invoice Value</th>
+                                    <th>Courier Name</th>
+                                    <th>AWB Number</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="date" name= "invoice_date" class="form-control" placeholder="Enter Invoice Date" id="invoice_date" {% if order.invoice_date %} value="{{order.invoice_date|date:'Y-m-d'|default_if_none:''}}" {% else %} value="{{date_field}}" {% endif %} >
+                                    </td>
+                                    <td>
+                                        <input type="text" name= "invoice_number" class="form-control" placeholder="Enter Invoice Number" id="invoice_no" value="{{order.invoice_no|default_if_none:''}}" >
+                                    </td>
+                                    <td>
+                                        <input type="text" name= "invoice_value" class="form-control" id="invoice_value" placeholder="Enter Invoice Value" value="{{order.invoice_value|default_if_none:''}}" >
+                                    </td>
+                                    <td>
+                                        <input type="text" name= "courier_name" class="form-control" id="courier_name" placeholder="Enter Courier Name" value="{{order.courier_name|default_if_none:''}}" >
+                                    </td>
+                                    <td>
+                                        <input type="text" name= "awb_number" class="form-control" id="awb_no" placeholder="Enter AWB Number" value="{{order.awb_no|default_if_none:''}}" >
+                                    </td>                                                                       
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+                {% endif %}
+                {% comment %} {% endif %} {% endcomment %}
+                {% if request.session.role_id != 6 %}
+                {% if order.invoice_date %}
+                <div class="table-responsive mb-4" data-pattern="priority-columns">
+                    <table id="tech-companies-1" class="table  dt-responsive mb-0 mt-3">
+                        <thead class="table-light" >
+                            <tr class="text-center">
+                                <th>Invoice Date</th> 
+                                <th>Invoice Number</th> 
+                                <th>Invoice Value</th>
+                                <th>Courier Name</th>
+                                <th>AWB Number</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><center>{{order.invoice_date|date:"Y-m-d"|default_if_none:'-'}}</center></td>
+                                <td><center>{{order.invoice_no|default_if_none:'-'}}</center></td>
+                                <td><center>{{order.invoice_value|default_if_none:'-'}}</center></td>
+                                <td><center>{{order.courier_name|default_if_none:'-'}}</center></td>
+                                <td><center>{{order.awb_no|default_if_none:'-'}}</center></td>                                                                       
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                {% endif %}
+                {% endif %}
+                {% if request.session.role_id == 3 or request.session.role_id == 10 or request.session.role_id == 9 %}
+                <div class="gap-2 d-flex justify-content-end" style="float: right;">
+                    {% if order.order_status != 3 %}
+                    {% if order.order_status != 4 %}
+                    <button id="order_status" class=" btn btn-success waves-effect" onclick="Confirm(3,'Approve')"  >Approve</button>
+                    <button id="order_status" class=" btn btn-primary w-md" onclick="ConfirmNeed('{{order.id}}','Rejection')" >Reject</button>
+                    {% endif %}
+                    {% endif %}
+                </div>
+                {% endif %}
+                <!-- <button type="reset" onclick="location.href='javascript:history.back()'" class="btn btn-secondary waves-effect">
+                    Back
+                </button> -->
+                
+                <button type="reset" onclick="location.href='/orders/'" class="btn btn-secondary waves-effect mt-2">
+                    Back
+                </button>
+                <div class="gap-2 d-flex justify-content-end" style="float: right;">
+                    {% if request.session.role_id == 6 %}
+                    {% if order.order_status != 5 %}
+                        <button  id="order_status" class=" btn btn-primary w-md" onclick="ConfirmShipped('ship')" >Ship Order</button>
+                    {% else %}
+                        <button  id="order_status" class=" btn btn-primary w-md" onclick="ConfirmShipped('update')" >Update Ship Details</button>
+                    {% endif %}
+                    {% endif %}
+                </div>
+                <div class="gap-2" style="float: right;">
+                    <div class="gap-2 d-flex justify-content-end" style="float: right;">
+
+                        {% if order.order_status == 1 %}
+                            <button type="submit" class="btn btn-danger waves-effect"  id="delete"  onclick="remove('{{id}}','Delete')"   >
+                                Delete       
+                            </button>
+                            <button type="reset" onclick="location.href='/order_details_edit/{{id}}/'" class="btn btn-success waves-effect">
+                                Edit
+                            </button>
+                            <button   id="order_status" class=" btn btn-primary waves-effect" onclick="Confirm(2,'Submit for approval')"  >Submit for Approval</button>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block extra_javascript %}
+<script src="{% static 'js/pages/form-advanced.init.js'%}"></script>   <!--cause console issue  -->
+
+<script src="{% static 'libs/sweetalert2/dist/sweetalert2.min.js' %}"></script>
+<script src="{% static 'js/pages/datatables.init.js' %}"></script>      <!--cause console issue  -->
+<script type="text/javascript" >
+    const radioButtons = document.getElementsByName('table_selection');
+    const campsTable = document.getElementById('camps_table');
+    const partnersTable = document.getElementById('partners_table');
+    const frameTable = document.getElementById('frame_table');
+   
+
+    window.onload = function () {
+        value = '{{prod_id}}'
+        console.log(value,'-------')
+        if (value === '4') {
+            campsTable.style.display = 'table';
+             partnersTable.style.display = 'none';
+            frameTable.style.display = 'none';
+        } else if (value === '3') {
+            campsTable.style.display = 'none';
+            partnersTable.style.display = 'table';
+            frameTable.style.display = 'table';
+
+
+        }
+    }
+   
+    function Confirm(status_id,title) {
+    var order_id = '{{order.id}}'
+    Swal.fire({
+        title: "Are you sure!",
+        text:"You want to "+ title +"?",
+        showCancelButton: !0,
+        confirmButtonColor: "#34c38f",
+        cancelButtonColor: "#f46a6a",
+        confirmButtonText: "Yes",
+    }).then((result) => {
+        if (result.isConfirmed){
+            window.location.href = '/update_order_status/'+order_id+'/'+status_id+'/';
+        };
+            
+    })
+    }
+        
+    function remove(order_id,title) {
+        Swal.fire({
+            title: "Are you sure!",
+            text:"You want to "+ title +"?",
+            showCancelButton: !0,
+            confirmButtonColor: "#34c38f",
+            cancelButtonColor: "#f46a6a",
+            confirmButtonText: "Yes, "+ title +" it!",
+        }).then((result) => {
+            if (result.isConfirmed){
+                window.location.href = '/delete_orders/'+order_id+'/';
+            };
+                
+        })
+        }
+        
+        function ConfirmNeed(reject_id,title){
+            Swal.fire({
+            title: 'Please Enter Reason For Order '+ title ,
+            input: 'textarea',
+            showCancelButton: true,
+            confirmButtonText: 'Yes',
+            inputValidator: function (value) {
+                return !value && 'You need to write something!'
+            }
+            }).then((result) => {
+                if (result.isConfirmed){
+                    window.location.href = '/ajax-reject/'+reject_id+'/'+result.value;
+                }
+            });
+        }
+
+
+    function ConfirmShipped(title) {
+        var invoice_no = document.getElementById('invoice_no').value || ' ';
+        var awb_no = document.getElementById('awb_no').value || ' ';
+        var invoice_date = document.getElementById('invoice_date').value || ' ';
+        var invoice_value = document.getElementById('invoice_value').value || ' ';
+        var courier_name = document.getElementById('courier_name').value || ' ';
+
+        var order_id = '{{order.id}}'
+        var form_sumbit = document.getElementById('sumbit-form');
+        Swal.fire({
+            title: "Are you sure!",
+            text:"You want to "+ title +"?",
+            showCancelButton: !0,
+            confirmButtonColor: "#34c38f",
+            cancelButtonColor: "#f46a6a",
+            confirmButtonText: "Yes",
+        }).then((result) => {
+            if (result.isConfirmed){
+                form_sumbit.submit();
+                window.location.href = '/add_invoice_awb_no/'+order_id+'/'+invoice_no+'/'+awb_no+ '/'+invoice_date+'/'+invoice_value+'/'+courier_name+'/';
+            }; 
+        })
+    } 
+    
+</script>
+
+
+{% endblock %}

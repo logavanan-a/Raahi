@@ -1,0 +1,1653 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 00:13:49hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 00:13:49hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:10:39hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:10:39hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:12:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:12:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:12:31hrs[
+    {
+        "aided_distance_le": 86,
+        "aided_distance_re": 85,
+        "aided_near_le": 95,
+        "aided_near_re": 94,
+        "app_created_at": "2023-08-02T10:12:22",
+        "app_updated_at": "2023-08-02T10:12:22",
+        "color_le": 117,
+        "color_re": 92,
+        "pinhole_distance_le": 88,
+        "pinhole_distance_re": 86,
+        "pinhole_near_le": 97,
+        "pinhole_near_re": 96,
+        "refer_for": 131,
+        "referred_to": 135,
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 84,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 93,
+        "un_aided_near_re": 92,
+        "uuid": "20230802101222dc31f112-33df-4ff8-8ded-4fde3b0d0313",
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:16:57hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:16:57hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:17:33hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:17:33hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:17:33hrs[
+    {
+        "aided_distance_le": 86,
+        "aided_distance_re": 85,
+        "aided_near_le": 94,
+        "aided_near_re": 95,
+        "app_created_at": "2023-08-02T10:17:23",
+        "app_updated_at": "2023-08-02T10:17:23",
+        "color_le": 117,
+        "color_re": 92,
+        "pinhole_distance_le": 85,
+        "pinhole_distance_re": 86,
+        "pinhole_near_le": 93,
+        "pinhole_near_re": 94,
+        "refer_for": 129,
+        "referred_to": 135,
+        "sync_status": 0,
+        "treatment_for_refraction": 120,
+        "un_aided_distance_le": 85,
+        "un_aided_distance_re": 84,
+        "un_aided_near_le": 95,
+        "un_aided_near_re": 94,
+        "uuid": "20230802101723199086c2-a0d9-4cca-9e3e-d47dcad0d711",
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:22:48hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:22:48hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:24:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:24:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:24:02hrs[
+    {
+        "aided_distance_le": 85,
+        "aided_distance_re": 85,
+        "aided_near_le": 94,
+        "aided_near_re": 95,
+        "app_created_at": "2023-08-02T10:23:54",
+        "app_updated_at": "2023-08-02T10:23:54",
+        "color_le": 116,
+        "color_re": 93,
+        "pinhole_distance_le": 85,
+        "pinhole_distance_re": 85,
+        "pinhole_near_le": 94,
+        "pinhole_near_re": 94,
+        "refer_for": 128,
+        "referred_to": 135,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "sync_status": 0,
+        "treatment_for_refraction": 120,
+        "un_aided_distance_le": 86,
+        "un_aided_distance_re": 86,
+        "un_aided_near_le": 95,
+        "un_aided_near_re": 95,
+        "uuid": "202308021023549328d240-d14e-416f-8a03-d1ac12944281",
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:24:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:24:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:28:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:28:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:28:27hrs[
+    {
+        "aided_distance_le": 85,
+        "aided_distance_re": 85,
+        "aided_near_le": 94,
+        "aided_near_re": 95,
+        "app_created_at": "2023-08-02T10:23:54",
+        "app_updated_at": "2023-08-02T10:23:54",
+        "color_le": 116,
+        "color_re": 93,
+        "pinhole_distance_le": 85,
+        "pinhole_distance_re": 85,
+        "pinhole_near_le": 94,
+        "pinhole_near_re": 94,
+        "refer_for": 128,
+        "referred_to": 135,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "sync_status": 0,
+        "treatment_for_refraction": 120,
+        "un_aided_distance_le": 86,
+        "un_aided_distance_re": 86,
+        "un_aided_near_le": 95,
+        "un_aided_near_re": 95,
+        "uuid": "202308021023549328d240-d14e-416f-8a03-d1ac12944281",
+        "want_to_refer": 1
+    },
+    {
+        "aided_distance_le": 0,
+        "aided_distance_re": 0,
+        "aided_near_le": 0,
+        "aided_near_re": 0,
+        "app_created_at": "2023-08-02T10:28:11",
+        "app_updated_at": "2023-08-02T10:28:11",
+        "color_le": 0,
+        "color_re": 0,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "sync_status": 0,
+        "treatment_for_refraction": 0,
+        "un_aided_distance_le": 0,
+        "un_aided_distance_re": 0,
+        "un_aided_near_le": 0,
+        "un_aided_near_re": 0,
+        "uuid": "2023080210281162be0b0e-f77c-4ada-ab89-9eef4e9a1a73",
+        "want_to_refer": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:28:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:28:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:30:49hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:30:49hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:47:35hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 10:47:35hrs{
+    "user_id": 9,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 11:08:36hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 11:08:36hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 11:13:34hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 11:13:34hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 11:25:08hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 11:25:08hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 11:26:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 11:26:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 11:26:10hrs[
+    {
+        "aided_distance_le": 86,
+        "aided_distance_re": 85,
+        "aided_near_le": 95,
+        "aided_near_re": 94,
+        "app_created_at": "2023-08-02T11:26:01",
+        "app_updated_at": "2023-08-02T11:26:01",
+        "color_le": 117,
+        "color_re": 116,
+        "pinhole_distance_le": 88,
+        "pinhole_distance_re": 87,
+        "pinhole_near_le": 97,
+        "pinhole_near_re": 96,
+        "refer_for": 131,
+        "referred_to": 135,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "sync_status": 0,
+        "treatment_for_refraction": 121,
+        "un_aided_distance_le": 84,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 93,
+        "un_aided_near_re": 92,
+        "uuid": "202308021126018926423b-42e1-403a-9782-3445017c6b9e",
+        "want_to_refer": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 11:26:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 11:26:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 11:29:44hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 11:29:44hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 11:31:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 11:31:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 11:31:13hrs[
+    {
+        "aided_distance_le": 86,
+        "aided_distance_re": 85,
+        "aided_near_le": 95,
+        "aided_near_re": 94,
+        "app_created_at": "2023-08-02T11:31:05",
+        "app_updated_at": "2023-08-02T11:31:05",
+        "color_le": 117,
+        "color_re": 116,
+        "pinhole_distance_le": 88,
+        "pinhole_distance_re": 87,
+        "pinhole_near_le": 97,
+        "pinhole_near_re": 96,
+        "refer_for": 131,
+        "referred_to": 135,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "sync_status": 0,
+        "treatment_for_refraction": 120,
+        "un_aided_distance_le": 84,
+        "un_aided_distance_re": 83,
+        "un_aided_near_le": 93,
+        "un_aided_near_re": 92,
+        "uuid": "20230802113105f2f005cd-8f37-49a6-a3c2-befabba833ac",
+        "want_to_refer": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 11:31:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 11:31:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 14:20:19hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 14:20:19hrs{}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 14:21:09hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 14:21:09hrs{}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 14:21:34hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 14:21:34hrs{}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 15:33:34hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 15:33:34hrs{
+    "user_id": "30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 15:35:29hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 15:36:44hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 15:36:54hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 15:36:54hrs{
+    "user_id": "30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 15:43:14hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 15:43:14hrs{
+    "user_id": "30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 15:44:35hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 16:36:24hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 16:36:24hrs{
+    "user_id": "30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 16:48:27hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 16:48:27hrs{
+    "user_id": 29
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 17:51:52hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 17:51:52hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 17:51:52hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 17:51:52hrs[
+    {
+        "app_created_at": "2023-08-02T17:51:42",
+        "app_updated_at": "2023-08-02T17:51:42",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "",
+        "axis_near_re": "",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "",
+        "cyl_near_re": "",
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 0,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "",
+        "sph_near_re": "",
+        "sync_status": 0,
+        "uuid": "20230802175142887311e3-c10e-4449-8d5b-866e145dd0d9",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 0,
+        "va_near_re": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 17:53:27hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 17:53:27hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 17:54:55hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 17:54:55hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 17:55:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 17:55:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 17:55:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 17:55:58hrs[
+    {
+        "app_created_at": "2023-08-02T17:55:49",
+        "app_updated_at": "2023-08-02T17:55:49",
+        "axis_distance_le": "h",
+        "axis_distance_re": "g",
+        "axis_near_le": "h",
+        "axis_near_re": "t",
+        "cyl_distance_le": "g",
+        "cyl_distance_re": "h",
+        "cyl_near_le": "h",
+        "cyl_near_re": "t",
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 99,
+        "sph_distance_le": "g",
+        "sph_distance_re": "g",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "202308021755491dd0d7c2-6ca5-46b4-825e-4744a4df84be",
+        "va_distance_le": 88,
+        "va_distance_re": 88,
+        "va_near_le": 97,
+        "va_near_re": 94
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 17:59:30hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 17:59:30hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:51:50hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:51:50hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:52:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:52:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:52:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:52:37hrs[
+    {
+        "app_created_at": "2023-08-02T18:52:28",
+        "app_updated_at": "2023-08-02T18:52:28",
+        "axis_distance_le": "j",
+        "axis_distance_re": "g",
+        "axis_near_le": "h",
+        "axis_near_re": "g",
+        "cyl_distance_le": "h",
+        "cyl_distance_re": "v",
+        "cyl_near_le": "h",
+        "cyl_near_re": "g",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 0,
+        "sph_distance_le": "h",
+        "sph_distance_re": "g",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "20230802185228602379c5-044d-4b44-9351-b0d62ae01baf",
+        "va_distance_le": 88,
+        "va_distance_re": 88,
+        "va_near_le": 96,
+        "va_near_re": 96
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:52:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:52:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:52:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:52:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:52:37hrs[
+    {
+        "app_created_at": "2023-08-02T18:52:28",
+        "app_updated_at": "2023-08-02T18:52:28",
+        "axis_distance_le": "j",
+        "axis_distance_re": "g",
+        "axis_near_le": "h",
+        "axis_near_re": "g",
+        "cyl_distance_le": "h",
+        "cyl_distance_re": "v",
+        "cyl_near_le": "h",
+        "cyl_near_re": "g",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 0,
+        "sph_distance_le": "h",
+        "sph_distance_re": "g",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "20230802185228602379c5-044d-4b44-9351-b0d62ae01baf",
+        "va_distance_le": 88,
+        "va_distance_re": 88,
+        "va_near_le": 96,
+        "va_near_re": 96
+    },
+    {
+        "app_created_at": "2023-08-02T18:52:29",
+        "app_updated_at": "2023-08-02T18:52:29",
+        "axis_distance_le": "j",
+        "axis_distance_re": "g",
+        "axis_near_le": "h",
+        "axis_near_re": "g",
+        "cyl_distance_le": "h",
+        "cyl_distance_re": "v",
+        "cyl_near_le": "h",
+        "cyl_near_re": "g",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 0,
+        "sph_distance_le": "h",
+        "sph_distance_re": "g",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "202308021852296dc745a3-f8db-41aa-948c-157bada70d8b",
+        "va_distance_le": 88,
+        "va_distance_re": 88,
+        "va_near_le": 96,
+        "va_near_re": 96
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:52:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:52:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:52:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:52:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:52:39hrs[
+    {
+        "app_created_at": "2023-08-02T18:52:28",
+        "app_updated_at": "2023-08-02T18:52:28",
+        "axis_distance_le": "j",
+        "axis_distance_re": "g",
+        "axis_near_le": "h",
+        "axis_near_re": "g",
+        "cyl_distance_le": "h",
+        "cyl_distance_re": "v",
+        "cyl_near_le": "h",
+        "cyl_near_re": "g",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 0,
+        "sph_distance_le": "h",
+        "sph_distance_re": "g",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "20230802185228602379c5-044d-4b44-9351-b0d62ae01baf",
+        "va_distance_le": 88,
+        "va_distance_re": 88,
+        "va_near_le": 96,
+        "va_near_re": 96
+    },
+    {
+        "app_created_at": "2023-08-02T18:52:29",
+        "app_updated_at": "2023-08-02T18:52:29",
+        "axis_distance_le": "j",
+        "axis_distance_re": "g",
+        "axis_near_le": "h",
+        "axis_near_re": "g",
+        "cyl_distance_le": "h",
+        "cyl_distance_re": "v",
+        "cyl_near_le": "h",
+        "cyl_near_re": "g",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 0,
+        "sph_distance_le": "h",
+        "sph_distance_re": "g",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "202308021852296dc745a3-f8db-41aa-948c-157bada70d8b",
+        "va_distance_le": 88,
+        "va_distance_re": 88,
+        "va_near_le": 96,
+        "va_near_re": 96
+    },
+    {
+        "app_created_at": "2023-08-02T18:52:30",
+        "app_updated_at": "2023-08-02T18:52:30",
+        "axis_distance_le": "j",
+        "axis_distance_re": "g",
+        "axis_near_le": "h",
+        "axis_near_re": "g",
+        "cyl_distance_le": "h",
+        "cyl_distance_re": "v",
+        "cyl_near_le": "h",
+        "cyl_near_re": "g",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 0,
+        "sph_distance_le": "h",
+        "sph_distance_re": "g",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "20230802185230a6f24f71-2911-4e86-ad43-de17afb76276",
+        "va_distance_le": 88,
+        "va_distance_re": 88,
+        "va_near_le": 96,
+        "va_near_re": 96
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:52:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:53:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:53:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:53:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:53:17hrs[
+    {
+        "app_created_at": "2023-08-02T18:52:28",
+        "app_updated_at": "2023-08-02T18:52:28",
+        "axis_distance_le": "j",
+        "axis_distance_re": "g",
+        "axis_near_le": "h",
+        "axis_near_re": "g",
+        "cyl_distance_le": "h",
+        "cyl_distance_re": "v",
+        "cyl_near_le": "h",
+        "cyl_near_re": "g",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 0,
+        "sph_distance_le": "h",
+        "sph_distance_re": "g",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "20230802185228602379c5-044d-4b44-9351-b0d62ae01baf",
+        "va_distance_le": 88,
+        "va_distance_re": 88,
+        "va_near_le": 96,
+        "va_near_re": 96
+    },
+    {
+        "app_created_at": "2023-08-02T18:52:29",
+        "app_updated_at": "2023-08-02T18:52:29",
+        "axis_distance_le": "j",
+        "axis_distance_re": "g",
+        "axis_near_le": "h",
+        "axis_near_re": "g",
+        "cyl_distance_le": "h",
+        "cyl_distance_re": "v",
+        "cyl_near_le": "h",
+        "cyl_near_re": "g",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 0,
+        "sph_distance_le": "h",
+        "sph_distance_re": "g",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "202308021852296dc745a3-f8db-41aa-948c-157bada70d8b",
+        "va_distance_le": 88,
+        "va_distance_re": 88,
+        "va_near_le": 96,
+        "va_near_re": 96
+    },
+    {
+        "app_created_at": "2023-08-02T18:52:30",
+        "app_updated_at": "2023-08-02T18:52:30",
+        "axis_distance_le": "j",
+        "axis_distance_re": "g",
+        "axis_near_le": "h",
+        "axis_near_re": "g",
+        "cyl_distance_le": "h",
+        "cyl_distance_re": "v",
+        "cyl_near_le": "h",
+        "cyl_near_re": "g",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 0,
+        "sph_distance_le": "h",
+        "sph_distance_re": "g",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "20230802185230a6f24f71-2911-4e86-ad43-de17afb76276",
+        "va_distance_le": 88,
+        "va_distance_re": 88,
+        "va_near_le": 96,
+        "va_near_re": 96
+    },
+    {
+        "app_created_at": "2023-08-02T18:53:07",
+        "app_updated_at": "2023-08-02T18:53:07",
+        "axis_distance_le": "j",
+        "axis_distance_re": "g",
+        "axis_near_le": "h",
+        "axis_near_re": "g",
+        "cyl_distance_le": "h",
+        "cyl_distance_re": "v",
+        "cyl_near_le": "h",
+        "cyl_near_re": "g",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 99,
+        "sph_distance_le": "h",
+        "sph_distance_re": "g",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "20230802185307b6959f1d-348c-4954-8bc9-633ad055a8d7",
+        "va_distance_le": 88,
+        "va_distance_re": 88,
+        "va_near_le": 96,
+        "va_near_re": 96
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:53:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:53:34hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:53:34hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:53:34hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:53:34hrs[
+    {
+        "app_created_at": "2023-08-02T18:52:28",
+        "app_updated_at": "2023-08-02T18:52:28",
+        "axis_distance_le": "j",
+        "axis_distance_re": "g",
+        "axis_near_le": "h",
+        "axis_near_re": "g",
+        "cyl_distance_le": "h",
+        "cyl_distance_re": "v",
+        "cyl_near_le": "h",
+        "cyl_near_re": "g",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 0,
+        "sph_distance_le": "h",
+        "sph_distance_re": "g",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "20230802185228602379c5-044d-4b44-9351-b0d62ae01baf",
+        "va_distance_le": 88,
+        "va_distance_re": 88,
+        "va_near_le": 96,
+        "va_near_re": 96
+    },
+    {
+        "app_created_at": "2023-08-02T18:52:29",
+        "app_updated_at": "2023-08-02T18:52:29",
+        "axis_distance_le": "j",
+        "axis_distance_re": "g",
+        "axis_near_le": "h",
+        "axis_near_re": "g",
+        "cyl_distance_le": "h",
+        "cyl_distance_re": "v",
+        "cyl_near_le": "h",
+        "cyl_near_re": "g",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 0,
+        "sph_distance_le": "h",
+        "sph_distance_re": "g",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "202308021852296dc745a3-f8db-41aa-948c-157bada70d8b",
+        "va_distance_le": 88,
+        "va_distance_re": 88,
+        "va_near_le": 96,
+        "va_near_re": 96
+    },
+    {
+        "app_created_at": "2023-08-02T18:52:30",
+        "app_updated_at": "2023-08-02T18:52:30",
+        "axis_distance_le": "j",
+        "axis_distance_re": "g",
+        "axis_near_le": "h",
+        "axis_near_re": "g",
+        "cyl_distance_le": "h",
+        "cyl_distance_re": "v",
+        "cyl_near_le": "h",
+        "cyl_near_re": "g",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 0,
+        "sph_distance_le": "h",
+        "sph_distance_re": "g",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "20230802185230a6f24f71-2911-4e86-ad43-de17afb76276",
+        "va_distance_le": 88,
+        "va_distance_re": 88,
+        "va_near_le": 96,
+        "va_near_re": 96
+    },
+    {
+        "app_created_at": "2023-08-02T18:53:07",
+        "app_updated_at": "2023-08-02T18:53:07",
+        "axis_distance_le": "j",
+        "axis_distance_re": "g",
+        "axis_near_le": "h",
+        "axis_near_re": "g",
+        "cyl_distance_le": "h",
+        "cyl_distance_re": "v",
+        "cyl_near_le": "h",
+        "cyl_near_re": "g",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 99,
+        "sph_distance_le": "h",
+        "sph_distance_re": "g",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "20230802185307b6959f1d-348c-4954-8bc9-633ad055a8d7",
+        "va_distance_le": 88,
+        "va_distance_re": 88,
+        "va_near_le": 96,
+        "va_near_re": 96
+    },
+    {
+        "app_created_at": "2023-08-02T18:53:25",
+        "app_updated_at": "2023-08-02T18:53:25",
+        "axis_distance_le": "j ",
+        "axis_distance_re": "g",
+        "axis_near_le": "h",
+        "axis_near_re": "g",
+        "cyl_distance_le": "h",
+        "cyl_distance_re": "v",
+        "cyl_near_le": "h",
+        "cyl_near_re": "g",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 99,
+        "sph_distance_le": "h",
+        "sph_distance_re": "g",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "20230802185325dfdcee32-e301-4b8e-8820-7f39777b7701",
+        "va_distance_le": 88,
+        "va_distance_re": 88,
+        "va_near_le": 96,
+        "va_near_re": 96
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:53:34hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:54:44hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:54:44hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:55:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:55:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:55:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:55:17hrs[
+    {
+        "app_created_at": "2023-08-02T18:55:09",
+        "app_updated_at": "2023-08-02T18:55:09",
+        "axis_distance_le": "j",
+        "axis_distance_re": "g",
+        "axis_near_le": "j",
+        "axis_near_re": "g",
+        "cyl_distance_le": "j",
+        "cyl_distance_re": "g",
+        "cyl_near_le": "j",
+        "cyl_near_re": "v",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 99,
+        "sph_distance_le": "j",
+        "sph_distance_re": "bc",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "20230802185509ce7184fe-05a8-4f01-b719-ed521432aaf3",
+        "va_distance_le": 88,
+        "va_distance_re": 88,
+        "va_near_le": 96,
+        "va_near_re": 96
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:55:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:56:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:56:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:56:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:56:59hrs[
+    {
+        "app_created_at": "2023-08-02T18:55:09",
+        "app_updated_at": "2023-08-02T18:55:09",
+        "axis_distance_le": "j",
+        "axis_distance_re": "g",
+        "axis_near_le": "j",
+        "axis_near_re": "g",
+        "cyl_distance_le": "j",
+        "cyl_distance_re": "g",
+        "cyl_near_le": "j",
+        "cyl_near_re": "v",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 99,
+        "sph_distance_le": "j",
+        "sph_distance_re": "bc",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "20230802185509ce7184fe-05a8-4f01-b719-ed521432aaf3",
+        "va_distance_le": 88,
+        "va_distance_re": 88,
+        "va_near_le": 96,
+        "va_near_re": 96
+    },
+    {
+        "app_created_at": "2023-08-02T18:56:51",
+        "app_updated_at": "2023-08-02T18:56:51",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "",
+        "axis_near_re": "",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "",
+        "cyl_near_re": "",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 99,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "",
+        "sph_near_re": "",
+        "sync_status": 0,
+        "uuid": "20230802185651e9d84fdc-8d54-43b2-b2e9-63a66ec25139",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 0,
+        "va_near_re": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 18:56:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 19:27:55hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 19:27:55hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 19:28:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 19:28:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 19:28:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 19:28:59hrs[
+    {
+        "app_created_at": "2023-08-02T19:28:50",
+        "app_updated_at": "2023-08-02T19:28:50",
+        "axis_distance_le": "b",
+        "axis_distance_re": "f",
+        "axis_near_le": "h",
+        "axis_near_re": "g",
+        "cyl_distance_le": "h",
+        "cyl_distance_re": "f",
+        "cyl_near_le": "b",
+        "cyl_near_re": "f",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 99,
+        "sph_distance_le": "g",
+        "sph_distance_re": "v",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "2023080219285076953504-e6ac-4a1f-9dab-0330a3b574b3",
+        "va_distance_le": 88,
+        "va_distance_re": 88,
+        "va_near_le": 96,
+        "va_near_re": 94
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 19:28:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 19:40:46hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 19:40:46hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 19:41:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 19:41:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 19:41:31hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 19:41:31hrs[
+    {
+        "app_created_at": "2023-08-02T19:41:22",
+        "app_updated_at": "2023-08-02T19:41:22",
+        "axis_distance_le": "b",
+        "axis_distance_re": "b",
+        "axis_near_le": "j",
+        "axis_near_re": "b",
+        "cyl_distance_le": "h",
+        "cyl_distance_re": "b",
+        "cyl_near_le": "j",
+        "cyl_near_re": "v",
+        "follow_up_status": 1,
+        "screening_uuid": "2023073116322625b71847-e8d7-4620-b524-1fcff82fe324",
+        "spectacle_type": 99,
+        "sph_distance_le": "h",
+        "sph_distance_re": "v",
+        "sph_near_le": "h",
+        "sph_near_re": "g",
+        "sync_status": 0,
+        "uuid": "20230802194122103ed5bf-6de6-4969-b088-211b0a221677",
+        "va_distance_le": 85,
+        "va_distance_re": 86,
+        "va_near_le": 95,
+        "va_near_re": 96
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 19:41:31hrs[
+    {
+        "app_created_at": "2023-08-02T19:41:22",
+        "app_updated_at": "2023-08-02T19:41:22",
+        "frame_code": 103,
+        "frame_size": 106,
+        "glass_collecting_location": 12,
+        "glass_prescription_uuid": "20230802194122103ed5bf-6de6-4969-b088-211b0a221677",
+        "has_the_glass_collected": 2,
+        "lens_type": 108,
+        "model_type": 112,
+        "spectacle_name": "Near only",
+        "spectacle_type": 99,
+        "sync_status": 0,
+        "type_of_coating": 110,
+        "uuid": "20230802194122b514a518-2b8f-4509-8ea2-6631c8bfb94a",
+        "vision_center": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 22:17:23hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 22:17:23hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 23:09:25hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 23:09:25hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 23:16:55hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 23:16:55hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 23:19:30hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/02/2023, 23:19:30hrs{
+    "user_id": 30
+}

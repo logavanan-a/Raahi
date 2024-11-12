@@ -1,0 +1,2408 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:14:27hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 28,
+        "app_created_at": "2024-04-01T14:14:25",
+        "app_updated_at": "2024-04-01T14:14:25",
+        "camp": 0,
+        "contact_no_1": "9999999999",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 4,
+        "drivers_license_no": "",
+        "educational_qualification": 43,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "language": 1,
+        "latitude": "13.011524999999999",
+        "life_insurance_policy": 1,
+        "longitude": "77.66003333333333",
+        "monthly_income": 33,
+        "name": "rajendra",
+        "no_of_months_employed_in_a_year": "12",
+        "partner_id": 13,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 228,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "KA-29M-1364420",
+        "user": 30,
+        "uuid": "20240401141425754ab5a1-9c22-42f6-adb3-5a6ddf90ea0a",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:14:28hrs{
+    "Text": "Thank you for participating in Partner six vision center one & This is a test address-Sightsavers National Truckers Programme. Your registration ID is KA-29M-1364420. We wish you a safe and happy journey. Sightsavers : : ROYAL COMMONWEALTH SOCIETY FOR THE BLIND.",
+    "Number": "919999999999",
+    "SenderId": "RCSBSS",
+    "DRNotifyUrl": "https://raahistaging.mahiti.org/otp-sms/",
+    "DRNotifyHttpMethod": "POST",
+    "Message": "Accepted",
+    "Tool": "API"
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:14:28hrs{
+    "ApiId": "5c1ffd3f-75a1-4bf0-a64e-f3bbb67ebe4c",
+    "MessageUUID": "ad8614c7-fce9-4726-90da-a73430b532d5",
+    "Message": "Insufficient funds",
+    "Success": "False"
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:14:28hrs"<Response [400]>"
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:14:28hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:14:28hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:14:28hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:14:28hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:14:28hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:14:28hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:14:28hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "20240401141425754ab5a1-9c22-42f6-adb3-5a6ddf90ea0a",
+            "patient_id": null,
+            "SCO": "2024-04-01 08:44:28.234828+00:00",
+            "SMO": "2024-04-01 08:44:28.234857+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:15:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:15:30hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2024-04-01T14:15:30",
+        "app_updated_at": "2024-04-01T14:15:30",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "cough_for_more_than_two_weeks": 0,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 0.0,
+        "family_history_of_diabetes": 0,
+        "fever_for_more_than_2_weeks": 0,
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_attended_awarness_training": 0,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "latitude": "13.011524999999999",
+        "longitude": "77.66003333333333",
+        "medication_hypertension": 0,
+        "night_sweats": 0,
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 13,
+        "patient_uuid": "20240401141425754ab5a1-9c22-42f6-adb3-5a6ddf90ea0a",
+        "physical_activity": 0,
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 0,
+        "uuid": "202404011415307f9a8fd8-de2a-4a56-b73b-f6782b1b5622",
+        "vision_center_id": 85,
+        "waist_circumference": 0,
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:15:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:15:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:15:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:15:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:15:30hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:15:30hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [
+        {
+            "uuid": "202404011415307f9a8fd8-de2a-4a56-b73b-f6782b1b5622",
+            "patient_uuid": "20240401141425754ab5a1-9c22-42f6-adb3-5a6ddf90ea0a",
+            "SCO": "2024-04-01 08:45:30.859258+00:00",
+            "SMO": "2024-04-01 08:45:30.884671+00:00",
+            "sync_status": 2
+        }
+    ],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:15:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:15:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:15:41hrs[
+    {
+        "aided_distance_le": 0,
+        "aided_distance_re": 0,
+        "aided_near_le": 0,
+        "aided_near_re": 0,
+        "app_created_at": "2024-04-01T14:15:41",
+        "app_updated_at": "2024-04-01T14:15:41",
+        "color_le": 0,
+        "color_re": 0,
+        "latitude": "13.011524999999999",
+        "longitude": "77.66003333333333",
+        "partner_id": 13,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "202404011415307f9a8fd8-de2a-4a56-b73b-f6782b1b5622",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 0,
+        "un_aided_distance_re": 0,
+        "un_aided_near_le": 0,
+        "un_aided_near_re": 0,
+        "uuid": "20240401141541d083be01-a2a3-4213-b6fc-5eba9cc652c1",
+        "vision_center_id": 85,
+        "want_to_refer": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:15:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:15:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:15:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:15:41hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:15:41hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "20240401141541d083be01-a2a3-4213-b6fc-5eba9cc652c1",
+            "screening_uuid": "202404011415307f9a8fd8-de2a-4a56-b73b-f6782b1b5622",
+            "SCO": "2024-04-01 08:45:41.134188+00:00",
+            "SMO": "2024-04-01 08:45:41.134225+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:40:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:40:02hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2024-04-01T14:39:59",
+        "app_updated_at": "2024-04-01T14:39:59",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "cough_for_more_than_two_weeks": 0,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 0.0,
+        "family_history_of_diabetes": 0,
+        "fever_for_more_than_2_weeks": 0,
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "latitude": "13.011620505674628",
+        "longitude": "77.66040516501454",
+        "medication_hypertension": 0,
+        "night_sweats": 0,
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 13,
+        "patient_uuid": "20240327144145b2a4419a-1980-4b21-9d19-cd69086b68d7",
+        "physical_activity": 0,
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 0,
+        "uuid": "202404011439597aab9a17-59a2-4528-86f0-8842fbc29eaa",
+        "vision_center_id": 85,
+        "waist_circumference": 0,
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:40:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:40:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:40:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:40:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:40:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:40:02hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [
+        {
+            "uuid": "202404011439597aab9a17-59a2-4528-86f0-8842fbc29eaa",
+            "patient_uuid": "20240327144145b2a4419a-1980-4b21-9d19-cd69086b68d7",
+            "SCO": "2024-04-01 09:10:02.894492+00:00",
+            "SMO": "2024-04-01 09:10:02.905430+00:00",
+            "sync_status": 2
+        }
+    ],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:40:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:40:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:40:36hrs[
+    {
+        "aided_distance_le": 0,
+        "aided_distance_re": 85,
+        "aided_near_le": 93,
+        "aided_near_re": 93,
+        "app_created_at": "2024-04-01T14:40:35",
+        "app_updated_at": "2024-04-01T14:40:35",
+        "color_le": 116,
+        "color_re": 116,
+        "latitude": "13.0116029",
+        "longitude": "77.660109",
+        "partner_id": 13,
+        "pinhole_distance_le": 87,
+        "pinhole_distance_re": 87,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "202404011439597aab9a17-59a2-4528-86f0-8842fbc29eaa",
+        "sync_status": 0,
+        "treatment_for_refraction": 121,
+        "un_aided_distance_le": 85,
+        "un_aided_distance_re": 86,
+        "un_aided_near_le": 0,
+        "un_aided_near_re": 92,
+        "uuid": "20240401144035bad0f868-baba-45c1-9153-f17f6d0b3173",
+        "vision_center_id": 85,
+        "want_to_refer": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:40:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:40:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:40:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:40:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:40:36hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "20240401144035bad0f868-baba-45c1-9153-f17f6d0b3173",
+            "screening_uuid": "202404011439597aab9a17-59a2-4528-86f0-8842fbc29eaa",
+            "SCO": "2024-04-01 09:10:36.452581+00:00",
+            "SMO": "2024-04-01 09:10:36.452603+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:47:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:47:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:47:27hrs[
+    {
+        "aided_distance_le": 85,
+        "aided_distance_re": 85,
+        "aided_near_le": 93,
+        "aided_near_re": 93,
+        "app_created_at": "2024-04-01T14:40:35",
+        "app_updated_at": "2024-04-01T14:47:23",
+        "color_le": 117,
+        "color_re": 117,
+        "latitude": "13.0116112",
+        "longitude": "77.6600729",
+        "partner_id": 13,
+        "pinhole_distance_le": 87,
+        "pinhole_distance_re": 87,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "202404011439597aab9a17-59a2-4528-86f0-8842fbc29eaa",
+        "sync_status": 0,
+        "treatment_for_refraction": 121,
+        "un_aided_distance_le": 85,
+        "un_aided_distance_re": 86,
+        "un_aided_near_le": 0,
+        "un_aided_near_re": 92,
+        "uuid": "20240401144035bad0f868-baba-45c1-9153-f17f6d0b3173",
+        "vision_center_id": 85,
+        "want_to_refer": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:47:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:47:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:47:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:47:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:47:27hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "20240401144035bad0f868-baba-45c1-9153-f17f6d0b3173",
+            "screening_uuid": "202404011439597aab9a17-59a2-4528-86f0-8842fbc29eaa",
+            "SCO": "2024-04-01 09:10:36.452581+00:00",
+            "SMO": "2024-04-01 09:17:27.588510+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:09hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 52,
+        "app_created_at": "2024-04-01T14:56:05",
+        "app_updated_at": "2024-04-01T14:56:05",
+        "camp": 0,
+        "contact_no_1": "9632580451",
+        "contact_no_2": "",
+        "district": 681,
+        "donor": 4,
+        "drivers_license_no": "",
+        "educational_qualification": 44,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 40,
+        "id": 0,
+        "language": 1,
+        "latitude": "13.0115742",
+        "life_insurance_policy": 2,
+        "longitude": "77.6601107",
+        "monthly_income": 34,
+        "name": "ashok kumar ",
+        "no_of_months_employed_in_a_year": "3",
+        "partner_id": 13,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 228,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "KA-29M-1364421",
+        "user": 30,
+        "uuid": "202404011456050f5c6173-98df-4b82-a6cb-785706ac16ce",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 85
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:09hrs{
+    "Text": "Thank you for participating in Partner six vision center one & This is a test address-Sightsavers National Truckers Programme. Your registration ID is KA-29M-1364421. We wish you a safe and happy journey. Sightsavers : : ROYAL COMMONWEALTH SOCIETY FOR THE BLIND.",
+    "Number": "919632580451",
+    "SenderId": "RCSBSS",
+    "DRNotifyUrl": "https://raahistaging.mahiti.org/otp-sms/",
+    "DRNotifyHttpMethod": "POST",
+    "Message": "Accepted",
+    "Tool": "API"
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:09hrs{
+    "ApiId": "fe3427bc-4cba-49b6-9653-2e4efcb5d3d7",
+    "MessageUUID": "eb7d5a04-cea1-4709-8d74-5a530812a93d",
+    "Message": "Insufficient funds",
+    "Success": "False"
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:09hrs"<Response [400]>"
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:09hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202404011456050f5c6173-98df-4b82-a6cb-785706ac16ce",
+            "patient_id": null,
+            "SCO": "2024-04-01 09:26:09.262177+00:00",
+            "SMO": "2024-04-01 09:26:09.262209+00:00",
+            "sync_status": 2
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:39hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2024-04-01T14:56:37",
+        "app_updated_at": "2024-04-01T14:56:37",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "cough_for_more_than_two_weeks": 0,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 0.0,
+        "family_history_of_diabetes": 0,
+        "fever_for_more_than_2_weeks": 0,
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_attended_awarness_training": 0,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "latitude": "13.0115811",
+        "longitude": "77.6601026",
+        "medication_hypertension": 0,
+        "night_sweats": 0,
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 13,
+        "patient_uuid": "202404011456050f5c6173-98df-4b82-a6cb-785706ac16ce",
+        "physical_activity": 0,
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 0,
+        "uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+        "vision_center_id": 85,
+        "waist_circumference": 0,
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:39hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [
+        {
+            "uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+            "patient_uuid": "202404011456050f5c6173-98df-4b82-a6cb-785706ac16ce",
+            "SCO": "2024-04-01 09:26:39.128011+00:00",
+            "SMO": "2024-04-01 09:26:39.135057+00:00",
+            "sync_status": 2
+        }
+    ],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:56hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:56hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:56hrs[
+    {
+        "aided_distance_le": 0,
+        "aided_distance_re": 0,
+        "aided_near_le": 0,
+        "aided_near_re": 0,
+        "app_created_at": "2024-04-01T14:56:55",
+        "app_updated_at": "2024-04-01T14:56:55",
+        "color_le": 0,
+        "color_re": 0,
+        "latitude": "13.0115811",
+        "longitude": "77.6601026",
+        "partner_id": 13,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+        "sync_status": 0,
+        "treatment_for_refraction": 242,
+        "un_aided_distance_le": 0,
+        "un_aided_distance_re": 0,
+        "un_aided_near_le": 0,
+        "un_aided_near_re": 0,
+        "uuid": "2024040114565594644ac0-c4e4-4e5e-a398-e363b8f88707",
+        "vision_center_id": 85,
+        "want_to_refer": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:56hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:56hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:56hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:56hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:56:56hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "2024040114565594644ac0-c4e4-4e5e-a398-e363b8f88707",
+            "screening_uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+            "SCO": "2024-04-01 09:26:56.813865+00:00",
+            "SMO": "2024-04-01 09:26:56.813886+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:59:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:59:36hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2024-04-01T14:56:37",
+        "app_updated_at": "2024-04-01T14:59:35",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "cough_for_more_than_two_weeks": 0,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 0.0,
+        "family_history_of_diabetes": 0,
+        "fever_for_more_than_2_weeks": 0,
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "latitude": "13.011581",
+        "longitude": "77.6600769",
+        "medication_hypertension": 0,
+        "night_sweats": 0,
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 13,
+        "patient_uuid": "202404011456050f5c6173-98df-4b82-a6cb-785706ac16ce",
+        "physical_activity": 0,
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 69,
+        "unexplained_weight_loss_or_loss_of_appetite": 0,
+        "uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+        "vision_center_id": 85,
+        "waist_circumference": 0,
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [],
+        "which_training": 224,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:59:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:59:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:59:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:59:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:59:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:59:37hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [
+        {
+            "uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+            "patient_uuid": "202404011456050f5c6173-98df-4b82-a6cb-785706ac16ce",
+            "SCO": "2024-04-01 09:26:39.128011+00:00",
+            "SMO": "2024-04-01 09:29:36.981140+00:00",
+            "sync_status": 2
+        }
+    ],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:59:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:59:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:59:42hrs[
+    {
+        "aided_distance_le": 0,
+        "aided_distance_re": 0,
+        "aided_near_le": 0,
+        "aided_near_re": 0,
+        "app_created_at": "2024-04-01T14:56:55",
+        "app_updated_at": "2024-04-01T14:59:41",
+        "color_le": 0,
+        "color_re": 0,
+        "latitude": "13.011581",
+        "longitude": "77.6600769",
+        "partner_id": 13,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 123,
+        "referred_to": 135,
+        "screening_uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+        "sync_status": 0,
+        "treatment_for_refraction": 242,
+        "un_aided_distance_le": 0,
+        "un_aided_distance_re": 0,
+        "un_aided_near_le": 0,
+        "un_aided_near_re": 0,
+        "uuid": "2024040114565594644ac0-c4e4-4e5e-a398-e363b8f88707",
+        "vision_center_id": 85,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:59:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:59:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:59:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:59:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 14:59:42hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "2024040114565594644ac0-c4e4-4e5e-a398-e363b8f88707",
+            "screening_uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+            "SCO": "2024-04-01 09:26:56.813865+00:00",
+            "SMO": "2024-04-01 09:29:42.821490+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:00:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:00:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:00:09hrs[
+    {
+        "aided_distance_le": 84,
+        "aided_distance_re": 84,
+        "aided_near_le": 98,
+        "aided_near_re": 97,
+        "app_created_at": "2024-04-01T14:56:55",
+        "app_updated_at": "2024-04-01T15:00:05",
+        "color_le": 116,
+        "color_re": 116,
+        "latitude": "13.011581",
+        "longitude": "77.6600769",
+        "partner_id": 13,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 123,
+        "referred_to": 135,
+        "screening_uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+        "sync_status": 0,
+        "treatment_for_refraction": 121,
+        "un_aided_distance_le": 87,
+        "un_aided_distance_re": 85,
+        "un_aided_near_le": 95,
+        "un_aided_near_re": 93,
+        "uuid": "2024040114565594644ac0-c4e4-4e5e-a398-e363b8f88707",
+        "vision_center_id": 85,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:00:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:00:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:00:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:00:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:00:09hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "2024040114565594644ac0-c4e4-4e5e-a398-e363b8f88707",
+            "screening_uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+            "SCO": "2024-04-01 09:26:56.813865+00:00",
+            "SMO": "2024-04-01 09:30:09.219511+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:07hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2024-04-01T14:56:37",
+        "app_updated_at": "2024-04-01T15:01:06",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "54",
+        "blood_sugar_mg_dl": "25",
+        "cough_for_more_than_two_weeks": 0,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 0.0,
+        "family_history_of_diabetes": 0,
+        "fever_for_more_than_2_weeks": 0,
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "156",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "latitude": "13.0115978",
+        "longitude": "77.6601124",
+        "medication_hypertension": 0,
+        "night_sweats": 0,
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 13,
+        "patient_uuid": "202404011456050f5c6173-98df-4b82-a6cb-785706ac16ce",
+        "physical_activity": 0,
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 69,
+        "unexplained_weight_loss_or_loss_of_appetite": 0,
+        "uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+        "vision_center_id": 85,
+        "waist_circumference": 0,
+        "weight_kg": "65",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [
+            65,
+            64,
+            165,
+            166
+        ],
+        "which_training": 224,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:07hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:07hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [
+        {
+            "uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+            "patient_uuid": "202404011456050f5c6173-98df-4b82-a6cb-785706ac16ce",
+            "SCO": "2024-04-01 09:26:39.128011+00:00",
+            "SMO": "2024-04-01 09:31:07.608253+00:00",
+            "sync_status": 2
+        }
+    ],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:17hrs[
+    {
+        "aided_distance_le": 84,
+        "aided_distance_re": 84,
+        "aided_near_le": 98,
+        "aided_near_re": 97,
+        "app_created_at": "2024-04-01T14:56:55",
+        "app_updated_at": "2024-04-01T15:01:15",
+        "color_le": 116,
+        "color_re": 116,
+        "latitude": "13.0115978",
+        "longitude": "77.6601124",
+        "partner_id": 13,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 123,
+        "referred_to": 135,
+        "screening_uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+        "sync_status": 0,
+        "treatment_for_refraction": 120,
+        "un_aided_distance_le": 87,
+        "un_aided_distance_re": 85,
+        "un_aided_near_le": 95,
+        "un_aided_near_re": 93,
+        "uuid": "2024040114565594644ac0-c4e4-4e5e-a398-e363b8f88707",
+        "vision_center_id": 85,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:17hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:17hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "2024040114565594644ac0-c4e4-4e5e-a398-e363b8f88707",
+            "screening_uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+            "SCO": "2024-04-01 09:26:56.813865+00:00",
+            "SMO": "2024-04-01 09:31:17.045261+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:36hrs[
+    {
+        "aided_distance_le": 84,
+        "aided_distance_re": 84,
+        "aided_near_le": 98,
+        "aided_near_re": 97,
+        "app_created_at": "2024-04-01T14:56:55",
+        "app_updated_at": "2024-04-01T15:01:35",
+        "color_le": 116,
+        "color_re": 116,
+        "latitude": "13.0115742",
+        "longitude": "77.6601093",
+        "partner_id": 13,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 123,
+        "referred_to": 135,
+        "screening_uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+        "sync_status": 0,
+        "treatment_for_refraction": 242,
+        "un_aided_distance_le": 87,
+        "un_aided_distance_re": 85,
+        "un_aided_near_le": 95,
+        "un_aided_near_re": 93,
+        "uuid": "2024040114565594644ac0-c4e4-4e5e-a398-e363b8f88707",
+        "vision_center_id": 85,
+        "want_to_refer": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:36hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "2024040114565594644ac0-c4e4-4e5e-a398-e363b8f88707",
+            "screening_uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+            "SCO": "2024-04-01 09:26:56.813865+00:00",
+            "SMO": "2024-04-01 09:31:36.613233+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:46hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:46hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:46hrs[
+    {
+        "aided_distance_le": 0,
+        "aided_distance_re": 0,
+        "aided_near_le": 0,
+        "aided_near_re": 0,
+        "app_created_at": "2024-04-01T14:56:55",
+        "app_updated_at": "2024-04-01T15:01:45",
+        "color_le": 0,
+        "color_re": 0,
+        "latitude": "13.0115742",
+        "longitude": "77.6601093",
+        "partner_id": 13,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+        "sync_status": 0,
+        "treatment_for_refraction": 242,
+        "un_aided_distance_le": 0,
+        "un_aided_distance_re": 0,
+        "un_aided_near_le": 0,
+        "un_aided_near_re": 0,
+        "uuid": "2024040114565594644ac0-c4e4-4e5e-a398-e363b8f88707",
+        "vision_center_id": 85,
+        "want_to_refer": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:46hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:46hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:46hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:46hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:46hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "2024040114565594644ac0-c4e4-4e5e-a398-e363b8f88707",
+            "screening_uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+            "SCO": "2024-04-01 09:26:56.813865+00:00",
+            "SMO": "2024-04-01 09:31:46.605590+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:57hrs[
+    {
+        "aided_distance_le": 0,
+        "aided_distance_re": 0,
+        "aided_near_le": 0,
+        "aided_near_re": 0,
+        "app_created_at": "2024-04-01T14:56:55",
+        "app_updated_at": "2024-04-01T15:01:55",
+        "color_le": 0,
+        "color_re": 0,
+        "latitude": "13.0115742",
+        "longitude": "77.6601093",
+        "partner_id": 13,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 88,
+        "un_aided_distance_re": 85,
+        "un_aided_near_le": 0,
+        "un_aided_near_re": 93,
+        "uuid": "2024040114565594644ac0-c4e4-4e5e-a398-e363b8f88707",
+        "vision_center_id": 85,
+        "want_to_refer": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:57hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:01:57hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "2024040114565594644ac0-c4e4-4e5e-a398-e363b8f88707",
+            "screening_uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+            "SCO": "2024-04-01 09:26:56.813865+00:00",
+            "SMO": "2024-04-01 09:31:57.075168+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:02:34hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:02:34hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:02:34hrs[
+    {
+        "aided_distance_le": 0,
+        "aided_distance_re": 0,
+        "aided_near_le": 0,
+        "aided_near_re": 0,
+        "app_created_at": "2024-04-01T14:56:55",
+        "app_updated_at": "2024-04-01T15:02:32",
+        "color_le": 0,
+        "color_re": 0,
+        "latitude": "13.0115742",
+        "longitude": "77.6601093",
+        "partner_id": 13,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 88,
+        "un_aided_distance_re": 85,
+        "un_aided_near_le": 0,
+        "un_aided_near_re": 93,
+        "uuid": "2024040114565594644ac0-c4e4-4e5e-a398-e363b8f88707",
+        "vision_center_id": 85,
+        "want_to_refer": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:02:34hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:02:34hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:02:34hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:02:34hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:02:34hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "2024040114565594644ac0-c4e4-4e5e-a398-e363b8f88707",
+            "screening_uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+            "SCO": "2024-04-01 09:26:56.813865+00:00",
+            "SMO": "2024-04-01 09:32:34.208571+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:03:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:03:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:03:00hrs[
+    {
+        "aided_distance_le": 0,
+        "aided_distance_re": 0,
+        "aided_near_le": 0,
+        "aided_near_re": 0,
+        "app_created_at": "2024-04-01T14:56:55",
+        "app_updated_at": "2024-04-01T15:02:59",
+        "color_le": 0,
+        "color_re": 0,
+        "latitude": "13.0115915",
+        "longitude": "77.6601012",
+        "partner_id": 13,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 0,
+        "referred_to": 0,
+        "screening_uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 88,
+        "un_aided_distance_re": 85,
+        "un_aided_near_le": 0,
+        "un_aided_near_re": 93,
+        "uuid": "2024040114565594644ac0-c4e4-4e5e-a398-e363b8f88707",
+        "vision_center_id": 85,
+        "want_to_refer": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:03:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:03:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:03:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:03:00hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:03:00hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "2024040114565594644ac0-c4e4-4e5e-a398-e363b8f88707",
+            "screening_uuid": "20240401145637127aa1a4-06ea-4627-b141-38e083e69e55",
+            "SCO": "2024-04-01 09:26:56.813865+00:00",
+            "SMO": "2024-04-01 09:33:00.309973+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:14:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:14:02hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2024-04-01T15:13:26",
+        "app_updated_at": "2024-04-01T15:13:26",
+        "are_you_aware_of_any_nearby_hospital": 2,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "",
+        "blood_sugar_mg_dl": "",
+        "cough_for_more_than_two_weeks": 0,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 0,
+        "duration_since_last_meal": 0.0,
+        "family_history_of_diabetes": 0,
+        "fever_for_more_than_2_weeks": 0,
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_attended_awarness_training": 0,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "",
+        "if_you_are_happy_specify_in_what_way": "",
+        "insulin_dependent_or_non_insulin_dependent": 0,
+        "latitude": "13.0115885",
+        "longitude": "77.6601379",
+        "medication_hypertension": 0,
+        "night_sweats": 0,
+        "on_what_basis_your_salary_is_calculated": 0,
+        "owner_holding_any_amount_from_your_salary": "",
+        "partner_id": 13,
+        "patient_uuid": "20240311184038814b36b1-2245-421c-95f5-0ac87c506e1d",
+        "physical_activity": 0,
+        "sync_status": 0,
+        "total_family_members": "",
+        "type_of_hospital": 0,
+        "unexplained_weight_loss_or_loss_of_appetite": 0,
+        "uuid": "2024040115132651a951c8-5fda-4cb5-b7e9-3c5043a6418b",
+        "vision_center_id": 85,
+        "waist_circumference": 0,
+        "weight_kg": "",
+        "what_do_you_do_during_non_working_months": 0,
+        "when_was_it_diagnosed_number_of_years": 0,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [],
+        "which_training": 0,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 73,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 0,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:14:02hrs[
+    {
+        "aided_distance_le": 89,
+        "aided_distance_re": 89,
+        "aided_near_le": 97,
+        "aided_near_re": 98,
+        "app_created_at": "2024-04-01T15:13:54",
+        "app_updated_at": "2024-04-01T15:13:54",
+        "color_le": 117,
+        "color_re": 116,
+        "latitude": "13.0115885",
+        "longitude": "77.6601379",
+        "partner_id": 13,
+        "pinhole_distance_le": 87,
+        "pinhole_distance_re": 88,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 123,
+        "referred_to": 135,
+        "screening_uuid": "2024040115132651a951c8-5fda-4cb5-b7e9-3c5043a6418b",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 86,
+        "un_aided_distance_re": 85,
+        "un_aided_near_le": 94,
+        "un_aided_near_re": 93,
+        "uuid": "20240401151354b2d73bea-988a-4288-bee5-150d0a5b002a",
+        "vision_center_id": 85,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:14:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:14:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:14:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:14:02hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:14:02hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [
+        {
+            "uuid": "2024040115132651a951c8-5fda-4cb5-b7e9-3c5043a6418b",
+            "patient_uuid": "20240311184038814b36b1-2245-421c-95f5-0ac87c506e1d",
+            "SCO": "2024-04-01 09:44:02.856103+00:00",
+            "SMO": "2024-04-01 09:44:02.866252+00:00",
+            "sync_status": 2
+        }
+    ],
+    "visual_acuity": [
+        {
+            "uuid": "20240401151354b2d73bea-988a-4288-bee5-150d0a5b002a",
+            "screening_uuid": "2024040115132651a951c8-5fda-4cb5-b7e9-3c5043a6418b",
+            "SCO": "2024-04-01 09:44:02.896493+00:00",
+            "SMO": "2024-04-01 09:44:02.896524+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:15:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:15:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:15:59hrs[
+    {
+        "aided_distance_le": 89,
+        "aided_distance_re": 89,
+        "aided_near_le": 97,
+        "aided_near_re": 98,
+        "app_created_at": "2024-04-01T15:13:54",
+        "app_updated_at": "2024-04-01T15:15:54",
+        "color_le": 117,
+        "color_re": 116,
+        "latitude": "13.0116053",
+        "longitude": "77.6600913",
+        "partner_id": 13,
+        "pinhole_distance_le": 87,
+        "pinhole_distance_re": 88,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 123,
+        "referred_to": 135,
+        "screening_uuid": "2024040115132651a951c8-5fda-4cb5-b7e9-3c5043a6418b",
+        "sync_status": 0,
+        "treatment_for_refraction": 119,
+        "un_aided_distance_le": 87,
+        "un_aided_distance_re": 86,
+        "un_aided_near_le": 93,
+        "un_aided_near_re": 92,
+        "uuid": "20240401151354b2d73bea-988a-4288-bee5-150d0a5b002a",
+        "vision_center_id": 85,
+        "want_to_refer": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:15:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:15:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:15:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:15:59hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:15:59hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "20240401151354b2d73bea-988a-4288-bee5-150d0a5b002a",
+            "screening_uuid": "2024040115132651a951c8-5fda-4cb5-b7e9-3c5043a6418b",
+            "SCO": "2024-04-01 09:44:02.896493+00:00",
+            "SMO": "2024-04-01 09:45:59.951954+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:16:54hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:16:54hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:16:54hrs[
+    {
+        "aided_distance_le": 83,
+        "aided_distance_re": 84,
+        "aided_near_le": 98,
+        "aided_near_re": 98,
+        "app_created_at": "2024-04-01T15:13:54",
+        "app_updated_at": "2024-04-01T15:16:44",
+        "color_le": 117,
+        "color_re": 117,
+        "latitude": "13.0115864",
+        "longitude": "77.660088",
+        "partner_id": 13,
+        "pinhole_distance_le": 0,
+        "pinhole_distance_re": 0,
+        "pinhole_near_le": 0,
+        "pinhole_near_re": 0,
+        "refer_for": 124,
+        "referred_to": 135,
+        "screening_uuid": "2024040115132651a951c8-5fda-4cb5-b7e9-3c5043a6418b",
+        "sync_status": 0,
+        "treatment_for_refraction": 121,
+        "un_aided_distance_le": 85,
+        "un_aided_distance_re": 0,
+        "un_aided_near_le": 94,
+        "un_aided_near_re": 93,
+        "uuid": "20240401151354b2d73bea-988a-4288-bee5-150d0a5b002a",
+        "vision_center_id": 85,
+        "want_to_refer": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:16:54hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:16:54hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:16:54hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:16:54hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 04/01/2024, 15:16:54hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [
+        {
+            "uuid": "20240401151354b2d73bea-988a-4288-bee5-150d0a5b002a",
+            "screening_uuid": "2024040115132651a951c8-5fda-4cb5-b7e9-3c5043a6418b",
+            "SCO": "2024-04-01 09:44:02.896493+00:00",
+            "SMO": "2024-04-01 09:46:54.593256+00:00",
+            "sync_status": 2
+        }
+    ],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}

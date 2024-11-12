@@ -1,0 +1,2511 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 14:53:52hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 14:53:52hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 14:53:54hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 14:53:54hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:02:24hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:02:24hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:02:26hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:02:26hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:05:08hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:05:08hrs{
+    "csdate": "2024-08-18T16:28:33.804Z",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-18T17:28:09.547272+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 121,
+    "vsdate": "2024-07-30T10:17:35.733229+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:05:09hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:05:09hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:06:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:06:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:06:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:06:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:06:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:06:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:06:13hrs[
+    {
+        "address": "bypass",
+        "block": "",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 153,
+        "date": "2024-08-20",
+        "delay_reason": "",
+        "district": 434,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "ayodhya",
+        "modified_by": 153,
+        "name": "ayodhya",
+        "partner": 37,
+        "uuid": "2024082015061123411c90-bd98-4936-aa12-ac297d53232e",
+        "village": "",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:06:13hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "2024082015061123411c90-bd98-4936-aa12-ac297d53232e",
+            "id": 190,
+            "code": 184,
+            "SCO": "2024-08-20 09:36:13.294277+00:00",
+            "SMO": "2024-08-20 09:36:13.294300+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:06:26hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:06:26hrs{
+    "csdate": "2024-08-18T21:58:33.804139+05:30",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-18T17:28:09.547272+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 121,
+    "vsdate": "2024-07-30T10:17:35.733229+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:06:27hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:06:27hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:10:08hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:10:08hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:10:11hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:10:11hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:16:08hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 23,
+        "app_created_at": "2024-08-20T15:16:01",
+        "app_updated_at": "2024-08-20T15:16:01",
+        "camp": 190,
+        "contact_no_1": "9340874650",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "000000000000",
+        "educational_qualification": 44,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.26144063",
+        "life_insurance_policy": 2,
+        "longitude": "77.48146058",
+        "monthly_income": 34,
+        "name": "Aniket",
+        "no_of_months_employed_in_a_year": "9",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "2025-10-04",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "5",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-174-10026",
+        "user": 121,
+        "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:16:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:16:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:16:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:16:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:16:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:16:09hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:16:09hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:16:20hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 23,
+        "app_created_at": "2024-08-20T15:16:19",
+        "app_updated_at": "2024-08-20T15:16:19",
+        "camp": 190,
+        "contact_no_1": "9131670695",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "0",
+        "educational_qualification": 238,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 37,
+        "id": 0,
+        "language": 2,
+        "life_insurance_policy": 2,
+        "monthly_income": 34,
+        "name": "Khushi munshi",
+        "no_of_months_employed_in_a_year": "6",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "2024-08-22",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "2",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-174-10027",
+        "user": 121,
+        "uuid": "20240820151619d887f0c6-6f47-4c48-83c8-c9fd80d1a934",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:16:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:16:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:16:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:16:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:16:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:16:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:16:20hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "20240820151619d887f0c6-6f47-4c48-83c8-c9fd80d1a934",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:07hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 23,
+        "app_created_at": "2024-08-20T15:16:01",
+        "app_updated_at": "2024-08-20T15:19:05",
+        "camp": 190,
+        "contact_no_1": "9340874650",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "000000000000",
+        "educational_qualification": 44,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.26144063",
+        "life_insurance_policy": 2,
+        "longitude": "77.48146058",
+        "monthly_income": 34,
+        "name": "Aniket",
+        "no_of_months_employed_in_a_year": "9",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "2025-10-04",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "5",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-174-10026",
+        "user": 121,
+        "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:08hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:08hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:08hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:08hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:08hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:08hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:08hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:26hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 23,
+        "app_created_at": "2024-08-20T15:16:01",
+        "app_updated_at": "2024-08-20T15:19:23",
+        "camp": 190,
+        "contact_no_1": "9340874650",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "000000000000",
+        "educational_qualification": 44,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.26144063",
+        "life_insurance_policy": 2,
+        "longitude": "77.48146058",
+        "monthly_income": 34,
+        "name": "Aniket",
+        "no_of_months_employed_in_a_year": "9",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "2025-10-04",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "5",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-174-10026",
+        "user": 121,
+        "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:26hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:26hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:26hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:26hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:26hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:26hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:26hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:40hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 23,
+        "app_created_at": "2024-08-20T15:16:01",
+        "app_updated_at": "2024-08-20T15:19:38",
+        "camp": 190,
+        "contact_no_1": "9340874650",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "000000000000",
+        "educational_qualification": 44,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.26144063",
+        "life_insurance_policy": 2,
+        "longitude": "77.48146058",
+        "monthly_income": 34,
+        "name": "Aniket",
+        "no_of_months_employed_in_a_year": "9",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "2025-10-04",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "5",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-174-10026",
+        "user": 121,
+        "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:40hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:40hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:40hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:40hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:40hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:40hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:19:40hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:20:14hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 23,
+        "app_created_at": "2024-08-20T15:16:01",
+        "app_updated_at": "2024-08-20T15:20:11",
+        "camp": 190,
+        "contact_no_1": "9340874650",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "000000000000",
+        "educational_qualification": 44,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.26144063",
+        "life_insurance_policy": 2,
+        "longitude": "77.48146058",
+        "monthly_income": 34,
+        "name": "Aniket",
+        "no_of_months_employed_in_a_year": "9",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "2025-10-04",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "5",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-174-10026",
+        "user": 121,
+        "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:20:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:20:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:20:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:20:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:20:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:20:14hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:20:14hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:20:22hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:20:22hrs{
+    "csdate": "2024-08-20T09:36:13.294Z",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-18T17:28:09.547272+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 121,
+    "vsdate": "2024-07-30T10:17:35.733229+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:20:23hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 23,
+        "app_created_at": "2024-08-20T15:16:01",
+        "app_updated_at": "2024-08-20T15:20:11",
+        "camp": 190,
+        "contact_no_1": "9340874650",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "000000000000",
+        "educational_qualification": 44,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.26144063",
+        "life_insurance_policy": 2,
+        "longitude": "77.48146058",
+        "monthly_income": 34,
+        "name": "Aniket",
+        "no_of_months_employed_in_a_year": "9",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "2025-10-04",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "5",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-174-10026",
+        "user": 121,
+        "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:20:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:20:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:20:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:20:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:20:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:20:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:20:24hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:21:13hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:21:13hrs{
+    "csdate": "2024-08-18T21:58:33.804139+05:30",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-18T17:28:09.547272+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 121,
+    "vsdate": "2024-07-30T10:17:35.733229+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:21:22hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 23,
+        "app_created_at": "2024-08-20T15:16:01",
+        "app_updated_at": "2024-08-20T15:21:14",
+        "camp": 190,
+        "contact_no_1": "9340874650",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "000000000000",
+        "educational_qualification": 44,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.26144063",
+        "life_insurance_policy": 2,
+        "longitude": "77.48146058",
+        "monthly_income": 34,
+        "name": "Aniket",
+        "no_of_months_employed_in_a_year": "9",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "2025-10-04",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "5",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-174-10026",
+        "user": 121,
+        "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:21:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:21:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:21:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:21:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:21:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:21:22hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:21:22hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:21:42hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 23,
+        "app_created_at": "2024-08-20T15:16:01",
+        "app_updated_at": "2024-08-20T15:21:40",
+        "camp": 190,
+        "contact_no_1": "9340874650",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "000000000000",
+        "educational_qualification": 44,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.26144063",
+        "life_insurance_policy": 2,
+        "longitude": "77.48146058",
+        "monthly_income": 34,
+        "name": "Aniket",
+        "no_of_months_employed_in_a_year": "9",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "2025-10-04",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "5",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-174-10026",
+        "user": 121,
+        "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:21:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:21:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:21:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:21:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:21:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:21:42hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:21:42hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:22:58hrs[
+    {
+        "aadhaar_pan_no": "000000000000",
+        "age": 23,
+        "app_created_at": "2024-08-20T15:16:01",
+        "app_updated_at": "2024-08-20T15:22:56",
+        "camp": 190,
+        "contact_no_1": "9340874650",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "000000000000",
+        "educational_qualification": 44,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.26144063",
+        "life_insurance_policy": 2,
+        "longitude": "77.48146058",
+        "monthly_income": 34,
+        "name": "Aniket",
+        "no_of_months_employed_in_a_year": "9",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "2025-10-04",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "5",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-174-10026",
+        "user": 121,
+        "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:22:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:22:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:22:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:22:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:22:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:22:58hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:22:58hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:23:11hrs[
+    {
+        "aadhaar_pan_no": "000000000000",
+        "age": 45,
+        "app_created_at": "2024-08-20T15:23:10",
+        "app_updated_at": "2024-08-20T15:23:10",
+        "camp": 190,
+        "contact_no_1": "6261577393",
+        "contact_no_2": "7415762998",
+        "district": 426,
+        "donor": 4,
+        "drivers_license_no": "",
+        "educational_qualification": 45,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 36,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.18183898",
+        "life_insurance_policy": 2,
+        "longitude": "77.41227372",
+        "monthly_income": 34,
+        "name": "Aniket Kakde",
+        "no_of_months_employed_in_a_year": "9",
+        "partner_id": 37,
+        "permanent_address": "Rahul nagar",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 27,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-174-10028",
+        "user": 121,
+        "uuid": "20240820152310ec577596-34db-4051-9054-418c58b2bbc2",
+        "vehicle_insurance_policy": 0,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:23:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:23:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:23:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:23:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:23:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:23:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:23:11hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "20240820152310ec577596-34db-4051-9054-418c58b2bbc2",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:25hrs[
+    {
+        "aadhaar_pan_no": "000000000000",
+        "age": 23,
+        "app_created_at": "2024-08-20T15:16:01",
+        "app_updated_at": "2024-08-20T15:22:56",
+        "camp": 190,
+        "contact_no_1": "9340874650",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "000000000000",
+        "educational_qualification": 44,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.26144063",
+        "life_insurance_policy": 2,
+        "longitude": "77.48146058",
+        "monthly_income": 34,
+        "name": "Aniket",
+        "no_of_months_employed_in_a_year": "9",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "2025-10-04",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "5",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-174-10026",
+        "user": 121,
+        "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:25hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:26hrs[
+    {
+        "aadhaar_pan_no": "000000000000",
+        "age": 23,
+        "app_created_at": "2024-08-20T15:16:01",
+        "app_updated_at": "2024-08-20T15:22:56",
+        "camp": 190,
+        "contact_no_1": "9340874650",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "000000000000",
+        "educational_qualification": 44,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.26144063",
+        "life_insurance_policy": 2,
+        "longitude": "77.48146058",
+        "monthly_income": 34,
+        "name": "Aniket",
+        "no_of_months_employed_in_a_year": "9",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "2025-10-04",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "5",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-174-10026",
+        "user": 121,
+        "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:26hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:27hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:27hrs[
+    {
+        "aadhaar_pan_no": "000000000000",
+        "age": 23,
+        "app_created_at": "2024-08-20T15:16:01",
+        "app_updated_at": "2024-08-20T15:22:56",
+        "camp": 190,
+        "contact_no_1": "9340874650",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "000000000000",
+        "educational_qualification": 44,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.26144063",
+        "life_insurance_policy": 2,
+        "longitude": "77.48146058",
+        "monthly_income": 34,
+        "name": "Aniket",
+        "no_of_months_employed_in_a_year": "9",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "2025-10-04",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "5",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-174-10026",
+        "user": 121,
+        "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:27hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:25:27hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408201516015bd779c8-81e3-4231-80a5-1e0b9b69ed82",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:26:39hrs[
+    {
+        "aadhaar_pan_no": "000000000000",
+        "age": 30,
+        "app_created_at": "2024-08-20T15:25:08",
+        "app_updated_at": "2024-08-20T15:25:08",
+        "camp": 190,
+        "contact_no_1": "7224995340",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "000000000000",
+        "educational_qualification": 44,
+        "feedback": "good",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 41,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.13661657",
+        "life_insurance_policy": 1,
+        "longitude": "77.47977803",
+        "monthly_income": 34,
+        "name": "Yash Gupta",
+        "no_of_months_employed_in_a_year": "8",
+        "partner_id": 37,
+        "permanent_address": "H no. 30 khajuri kala ",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-23K-21143",
+        "user": 121,
+        "uuid": "2024082015250839e47fa3-34a8-430e-a415-e96d13b01a91",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:26:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:26:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:26:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:26:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:26:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:26:39hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:26:39hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "2024082015250839e47fa3-34a8-430e-a415-e96d13b01a91",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:27:52hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:27:52hrs{
+    "csdate": "2024-08-20T15:06:13.294300+05:30",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-18T17:28:09.547272+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 121,
+    "vsdate": "2024-07-30T10:17:35.733229+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:27:53hrs[
+    {
+        "aadhaar_pan_no": "000000000000",
+        "age": 30,
+        "app_created_at": "2024-08-20T15:25:08",
+        "app_updated_at": "2024-08-20T15:25:08",
+        "camp": 190,
+        "contact_no_1": "7224995340",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "000000000000",
+        "educational_qualification": 44,
+        "feedback": "good",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 41,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.13661657",
+        "life_insurance_policy": 1,
+        "longitude": "77.47977803",
+        "monthly_income": 34,
+        "name": "Yash Gupta",
+        "no_of_months_employed_in_a_year": "8",
+        "partner_id": 37,
+        "permanent_address": "H no. 30 khajuri kala ",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-23K-21143",
+        "user": 121,
+        "uuid": "2024082015250839e47fa3-34a8-430e-a415-e96d13b01a91",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:27:53hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:27:53hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:27:53hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:27:53hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:27:53hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:27:53hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:27:53hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "2024082015250839e47fa3-34a8-430e-a415-e96d13b01a91",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:24hrs[
+    {
+        "aadhaar_pan_no": "000000000000",
+        "age": 30,
+        "app_created_at": "2024-08-20T15:25:08",
+        "app_updated_at": "2024-08-20T15:26:53",
+        "camp": 190,
+        "contact_no_1": "7224995340",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "000000000000",
+        "educational_qualification": 44,
+        "feedback": "good",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 41,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.13661657",
+        "life_insurance_policy": 1,
+        "longitude": "77.47977803",
+        "monthly_income": 34,
+        "name": "Yash Gupta",
+        "no_of_months_employed_in_a_year": "8",
+        "partner_id": 37,
+        "permanent_address": "H no. 30 khajuri kala ",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-23K-21143",
+        "user": 121,
+        "uuid": "2024082015250839e47fa3-34a8-430e-a415-e96d13b01a91",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:24hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "2024082015250839e47fa3-34a8-430e-a415-e96d13b01a91",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:35hrs[
+    {
+        "aadhaar_pan_no": "000000000000",
+        "age": 30,
+        "app_created_at": "2024-08-20T15:25:08",
+        "app_updated_at": "2024-08-20T15:27:04",
+        "camp": 190,
+        "contact_no_1": "7224995340",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "000000000000",
+        "educational_qualification": 44,
+        "feedback": "good",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 41,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.13661657",
+        "life_insurance_policy": 1,
+        "longitude": "77.47977803",
+        "monthly_income": 34,
+        "name": "Yash Gupta",
+        "no_of_months_employed_in_a_year": "8",
+        "partner_id": 37,
+        "permanent_address": "H no. 30 khajuri kala ",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-23K-21143",
+        "user": 121,
+        "uuid": "2024082015250839e47fa3-34a8-430e-a415-e96d13b01a91",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:35hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:35hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "2024082015250839e47fa3-34a8-430e-a415-e96d13b01a91",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:51hrs[
+    {
+        "aadhaar_pan_no": "000000000000",
+        "age": 30,
+        "app_created_at": "2024-08-20T15:25:08",
+        "app_updated_at": "2024-08-20T15:27:20",
+        "camp": 190,
+        "contact_no_1": "7224995340",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "000000000000",
+        "educational_qualification": 44,
+        "feedback": "good",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 41,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.13661657",
+        "life_insurance_policy": 1,
+        "longitude": "77.47977803",
+        "monthly_income": 34,
+        "name": "Yash Gupta",
+        "no_of_months_employed_in_a_year": "8",
+        "partner_id": 37,
+        "permanent_address": "H no. 30 khajuri kala ",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-23K-21143",
+        "user": 121,
+        "uuid": "2024082015250839e47fa3-34a8-430e-a415-e96d13b01a91",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:51hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:51hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:51hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:51hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:51hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:51hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 15:28:51hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "2024082015250839e47fa3-34a8-430e-a415-e96d13b01a91",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 21:38:33hrs[
+    {
+        "aadhaar_pan_no": "000000000000",
+        "age": 30,
+        "app_created_at": "2024-08-20T15:25:08",
+        "app_updated_at": "2024-08-20T21:37:01",
+        "camp": 190,
+        "contact_no_1": "7224995340",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "000000000000",
+        "educational_qualification": 44,
+        "feedback": "good",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 41,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.22801798",
+        "life_insurance_policy": 1,
+        "longitude": "77.4892045",
+        "monthly_income": 34,
+        "name": "Yash Gupta",
+        "no_of_months_employed_in_a_year": "8",
+        "partner_id": 37,
+        "permanent_address": "H no. 30 khajuri kala ",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-23K-21143",
+        "user": 121,
+        "uuid": "2024082015250839e47fa3-34a8-430e-a415-e96d13b01a91",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 21:38:34hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 21:38:34hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 21:38:34hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 21:38:34hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 21:38:34hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 21:38:34hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 21:38:34hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "2024082015250839e47fa3-34a8-430e-a415-e96d13b01a91",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 21:38:45hrs[
+    {
+        "aadhaar_pan_no": "000000000000",
+        "age": 30,
+        "app_created_at": "2024-08-20T15:25:08",
+        "app_updated_at": "2024-08-20T21:37:13",
+        "camp": 190,
+        "contact_no_1": "7224995340",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "000000000000",
+        "educational_qualification": 44,
+        "feedback": "good",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 41,
+        "id": 0,
+        "language": 2,
+        "latitude": "23.22801798",
+        "life_insurance_policy": 1,
+        "longitude": "77.4892045",
+        "monthly_income": 34,
+        "name": "Yash Gupta",
+        "no_of_months_employed_in_a_year": "8",
+        "partner_id": 37,
+        "permanent_address": "H no. 30 khajuri kala ",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-23K-21150",
+        "user": 121,
+        "uuid": "2024082015250839e47fa3-34a8-430e-a415-e96d13b01a91",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 21:38:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 21:38:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 21:38:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 21:38:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 21:38:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 21:38:45hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/20/2024, 21:38:45hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "2024082015250839e47fa3-34a8-430e-a415-e96d13b01a91",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}

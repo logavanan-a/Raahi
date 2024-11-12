@@ -1,0 +1,2368 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 00:12:08hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 00:12:08hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 00:12:43hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 00:12:43hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 00:22:12hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 00:22:12hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 00:31:52hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 00:31:52hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:24:40hrs[
+    {
+        "id": 1,
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "124586",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "2023-07-20",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "app_created_at": null,
+        "app_updated_at": null,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:24:54hrs[
+    {
+        "id": 1,
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "124586",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "2023-07-20",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "app_created_at": null,
+        "app_updated_at": null,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:25:15hrs[
+    {
+        "id": 1,
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "1245867",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "2023-07-20",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "app_created_at": null,
+        "app_updated_at": null,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:25:15hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:25:15hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:25:15hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:38:21hrs[
+    {
+        "id": 1,
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "1245867",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "2023-07-20",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "app_created_at": null,
+        "app_updated_at": null,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:38:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:38:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:38:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:38:24hrs[
+    {
+        "id": 1,
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "1245867",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "2023-07-20",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "app_created_at": null,
+        "app_updated_at": null,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:38:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:38:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:38:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:38:36hrs[
+    {
+        "id": 1,
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "1245867",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "2023-07-20",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "app_created_at": null,
+        "app_updated_at": null,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:38:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:38:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:38:36hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:39:01hrs[
+    {
+        "id": 1,
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "1245867",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "2023-07-20",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "app_created_at": null,
+        "app_updated_at": null,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:39:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:39:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 10:39:01hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:00:03hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:00:03hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:00:37hrs[
+    {
+        "id": 1,
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "1245867",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "2023-07-20",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "app_created_at": null,
+        "app_updated_at": null,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:00:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:00:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:00:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:01:46hrs[
+    {
+        "aadhar_pan_number": "",
+        "about_camp": 40,
+        "age": "18",
+        "caste": 0,
+        "contact_number1": "6382832556",
+        "contact_number2": "",
+        "district_id": 12,
+        "donor": 1,
+        "driver_license_number": "1234567890",
+        "education_id": 46,
+        "gender_id": 1,
+        "health_insurance": 1,
+        "id": 0,
+        "life_insurance": 2,
+        "monthly_income": 0,
+        "name": "testing",
+        "no_of_months_employed_year": "1",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "state_id": 12,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "12345678",
+        "uuid": "20230725181335bf83d5c3-d2f4-4307-bf9c-7f13f85bd9aa",
+        "vehicle_insurance": 0
+    },
+    {
+        "aadhar_pan_number": "",
+        "about_camp": 38,
+        "age": "5",
+        "caste": 0,
+        "contact_number1": "12468097658",
+        "contact_number2": "",
+        "district_id": 12,
+        "donor": 1,
+        "driver_license_number": "txh",
+        "education_id": 46,
+        "gender_id": 1,
+        "health_insurance": 1,
+        "id": 0,
+        "life_insurance": 2,
+        "monthly_income": 0,
+        "name": "jcy",
+        "no_of_months_employed_year": "jtc",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "state_id": 12,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 18,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "test",
+        "uuid": "20230725181650dbdfcecf-1cc5-4dbf-949b-62e92741b9a4",
+        "vehicle_insurance": 0
+    },
+    {
+        "aadhar_pan_number": "",
+        "about_camp": 37,
+        "age": "25",
+        "caste": 0,
+        "contact_number1": "64357859787",
+        "contact_number2": "",
+        "district_id": 12,
+        "donor": 1,
+        "driver_license_number": "jftjtftj",
+        "education_id": 46,
+        "gender_id": 1,
+        "health_insurance": 2,
+        "id": 0,
+        "life_insurance": 2,
+        "monthly_income": 0,
+        "name": " cbhf ",
+        "no_of_months_employed_year": "cjg",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "state_id": 12,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "hgcjg",
+        "uuid": "20230725181824865f8c91-e96e-4bad-91a5-cf391f4ca073",
+        "vehicle_insurance": 0
+    },
+    {
+        "aadhar_pan_number": "",
+        "about_camp": 38,
+        "age": "5959",
+        "caste": 0,
+        "contact_number1": "fhdth",
+        "contact_number2": "gn gb",
+        "district_id": 12,
+        "donor": 1,
+        "driver_license_number": "gnxngcng",
+        "education_id": 45,
+        "gender_id": 1,
+        "health_insurance": 1,
+        "id": 0,
+        "life_insurance": 2,
+        "monthly_income": 0,
+        "name": "hncgnc",
+        "no_of_months_employed_year": "bv gn",
+        "others": "",
+        "permanent_address": "ngxgnc",
+        "renewal_date": "",
+        "residence_type": 48,
+        "state_id": 12,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "hgxgj",
+        "uuid": "20230726110138d7058632-147e-49fa-b992-c1171d1afcbc",
+        "vehicle_insurance": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:03:00hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:03:00hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:04:00hrs[
+    {
+        "aadhar_pan_number": "",
+        "about_camp": 38,
+        "age": "8",
+        "caste": 0,
+        "contact_number1": "465465465745",
+        "contact_number2": "36446574576",
+        "district_id": 13,
+        "donor": 1,
+        "driver_license_number": "ghcghc",
+        "education_id": 46,
+        "gender_id": 1,
+        "health_insurance": 1,
+        "id": 0,
+        "life_insurance": 2,
+        "monthly_income": 0,
+        "name": "gjhjf",
+        "no_of_months_employed_year": "2",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "2023-07-26",
+        "residence_type": 49,
+        "state_id": 13,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "thdhtd",
+        "uuid": "20230726110351479ae9b5-f68f-4277-b862-7f179b95329d",
+        "vehicle_insurance": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:07:04hrs[
+    {
+        "id": 1,
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "1245867",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "2023-07-20",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "app_created_at": null,
+        "app_updated_at": null,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:07:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:07:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:07:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:07:10hrs[
+    {
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "1245867",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "2023-07-20",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "app_created_at": null,
+        "app_updated_at": null,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:07:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:07:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:07:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:07:24hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:07:24hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:08:27hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 8,
+        "caste": 0,
+        "contact_no_1": "465465465745",
+        "contact_no_2": "36446574576",
+        "district": 13,
+        "donor": 1,
+        "drivers_license_no": "ghcghc",
+        "educational_qualification": 46,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 38,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 0,
+        "name": "gjhjf",
+        "no_of_months_employed_in_a_year": "2",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "2023-07-26",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "thdhtd",
+        "uuid": "20230726110351479ae9b5-f68f-4277-b862-7f179b95329d",
+        "vehicle_insurance_policy": 0
+    },
+    {
+        "aadhaar_pan_no": "",
+        "age": 18,
+        "caste": 0,
+        "contact_no_1": "543635475645534",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 1,
+        "drivers_license_no": "236890954433",
+        "educational_qualification": 44,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 38,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 0,
+        "name": "bvxbgx",
+        "no_of_months_employed_in_a_year": "24",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "jyfyjf",
+        "uuid": "2023072611081987cf7bab-8d5f-436d-bb8f-49a225b147d6",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:09:43hrs[
+    {
+        "id": 1,
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "1245867",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "app_created_at": null,
+        "app_updated_at": null,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:09:47hrs[
+    {
+        "id": 1,
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "1245867",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "2023-07-20",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "app_created_at": null,
+        "app_updated_at": null,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:09:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:09:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:09:47hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:10:29hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:10:29hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:11:19hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 20,
+        "caste": 0,
+        "contact_no_1": "1234578907",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 1,
+        "drivers_license_no": "12467990",
+        "educational_qualification": 46,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 38,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 0,
+        "name": "hffbcbfc",
+        "no_of_months_employed_in_a_year": "1",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "thfjgc",
+        "uuid": "20230726111110be03f62d-76e4-439e-a1b9-272630d7d1af",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:12:20hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:12:20hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:13:17hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 18,
+        "caste": 0,
+        "contact_no_1": "1233456789",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 1,
+        "drivers_license_no": "1245690",
+        "educational_qualification": 46,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 0,
+        "name": "fghfhg",
+        "no_of_months_employed_in_a_year": "1",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "2023-07-07",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "647576",
+        "uuid": "2023072611130908b16d5b-7ecd-4d94-a792-5a76e23d3008",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:13:17hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:13:37hrs[
+    {
+        "id": 1,
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "1245867",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "2023-07-20",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "app_created_at": null,
+        "app_updated_at": null,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:13:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:13:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:13:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:14:08hrs[
+    {
+        "id": 1,
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "1245867",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "2023-07-20",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "app_created_at": null,
+        "app_updated_at": null,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:14:08hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:14:15hrs[
+    {
+        "id": 1,
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "1245867",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "2023-07-20",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "app_created_at": null,
+        "app_updated_at": null,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:14:15hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:14:15hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:14:15hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:16:02hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:16:02hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:16:56hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 18,
+        "caste": 0,
+        "contact_no_1": "1234567890",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 1,
+        "drivers_license_no": "123456789",
+        "educational_qualification": 45,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 0,
+        "name": "ghcyj",
+        "no_of_months_employed_in_a_year": "1",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "2023-07-07",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "13577",
+        "uuid": "20230726111647f684dcab-3c7d-4568-8f46-aeab51499dbd",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:16:56hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:16:56hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:16:56hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:18:13hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:18:13hrs{
+    "user_id": 9,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:40:27hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:40:27hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:42:11hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 18,
+        "caste": 29,
+        "contact_no_1": "1234567890",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 1,
+        "drivers_license_no": "12334567890",
+        "educational_qualification": 45,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 38,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 0,
+        "name": "test",
+        "no_of_months_employed_in_a_year": "12",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "2023-07-07",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 26,
+        "type_of_vehicle": 21,
+        "unique_id": "1234567890",
+        "uuid": "2023072611420386614782-91cc-43ec-a0e8-f0bab9cda8df",
+        "vehicle_insurance_policy": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:42:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:42:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:42:11hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:44:28hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:44:28hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:47:12hrs[
+    {
+        "aadhaar_pan_no": "123456DGBGS",
+        "age": 18,
+        "caste": 30,
+        "contact_no_1": "1234567890",
+        "contact_no_2": "1234560987",
+        "district": 12,
+        "donor": 1,
+        "drivers_license_no": "12345678901",
+        "educational_qualification": 45,
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 0,
+        "name": "test",
+        "no_of_months_employed_in_a_year": "1",
+        "others": "test",
+        "permanent_address": "test",
+        "renewal_date": "2023-07-07",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "test",
+        "time_since_driving": "10",
+        "type_of_job": 17,
+        "type_of_route": 26,
+        "type_of_vehicle": 22,
+        "unique_id": "123456789",
+        "uuid": "20230726114703f3cd6805-eb8c-474d-94a3-324c3bbfed46",
+        "vehicle_insurance_policy": 2
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:47:12hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:47:12hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:47:12hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:53:33hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:53:33hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:54:44hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 18,
+        "caste": 30,
+        "contact_no_1": "1234567890",
+        "contact_no_2": "",
+        "district": 12,
+        "donor": 1,
+        "drivers_license_no": "1234567890",
+        "educational_qualification": 45,
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 2,
+        "monthly_income": 34,
+        "name": "test",
+        "no_of_months_employed_in_a_year": "1",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "2023-07-07",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 17,
+        "type_of_route": 26,
+        "type_of_vehicle": 22,
+        "unique_id": "1234567890",
+        "uuid": "20230726115436880ed392-3c68-4d79-9d2c-9dc4957c80ac",
+        "vehicle_insurance_policy": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:54:44hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:54:44hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:54:44hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:56:27hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 11:56:27hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 12:00:36hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 12:00:36hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 12:03:52hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 12:03:52hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 12:13:51hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 12:13:51hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 13:44:23hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 13:44:23hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 13:47:07hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 13:49:23hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 13:49:23hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 13:50:46hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 13:50:46hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 2,
+        "accident_while_driving_commercial_vehicle_before": 1,
+        "any_difficulty_in_judging_distance_while_driving": 2,
+        "app_created_at": "2023-07-26T13:46:58",
+        "app_updated_at": "",
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 2,
+        "blood_pressure_mmhg": "120",
+        "blood_sugar_mg_dl": "100",
+        "code_description": 55,
+        "do_you_consume_alcohol": 1,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 1,
+        "do_you_smoke": 2,
+        "family_details": "test",
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 2,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "127",
+        "if_you_are_happy_specify_in_what_way": "testing",
+        "on_what_basis_your_salary_is_calculated": 62,
+        "owner_holding_any_amount_from_your_salary": "2000",
+        "patient_uuid": "20230726115436880ed392-3c68-4d79-9d2c-9dc4957c80ac",
+        "sync_status": 0,
+        "total_family_members": "5",
+        "type_of_hospital": 70,
+        "uuid": "20230726134658c898c003-b06d-490d-9b9a-fc244dd11e8d",
+        "weight_kg": "50",
+        "what_do_you_do_during_non_working_months": 67,
+        "which_months_you_are_not_employed_in_a_year": 63,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 72,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 2,
+        "your_family_members_support_you_financially": 1
+    },
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 0,
+        "blood_pressure_mmhg": "98",
+        "blood_sugar_mg_dl": "90",
+        "code_description": 57,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 2,
+        "family_details": "",
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 0,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "5.6",
+        "on_what_basis_your_salary_is_calculated": 61,
+        "owner_holding_any_amount_from_your_salary": "50000",
+        "patient_uuid": "1245",
+        "sync_status": 0,
+        "total_family_members": "4",
+        "type_of_hospital": 71,
+        "uuid": "1452",
+        "weight_kg": "56",
+        "what_do_you_do_during_non_working_months": 68,
+        "which_months_you_are_not_employed_in_a_year": 64,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 74,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 1,
+        "your_family_members_support_you_financially": 1
+    },
+    {
+        "accident_vehicle_in_last_twelve_months": 1,
+        "accident_while_driving_commercial_vehicle_before": 2,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-07-26T13:50:38",
+        "app_updated_at": "",
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "100",
+        "blood_sugar_mg_dl": "101",
+        "code_description": 56,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 1,
+        "family_details": "testing",
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "98",
+        "if_you_are_happy_specify_in_what_way": "testing app",
+        "on_what_basis_your_salary_is_calculated": 59,
+        "owner_holding_any_amount_from_your_salary": "100",
+        "patient_uuid": "20230726115436880ed392-3c68-4d79-9d2c-9dc4957c80ac",
+        "sync_status": 0,
+        "total_family_members": "10",
+        "type_of_hospital": 69,
+        "uuid": "202307261350381d31f93d-3505-4caa-9ddf-f60ecc07be26",
+        "weight_kg": "77",
+        "what_do_you_do_during_non_working_months": 67,
+        "which_months_you_are_not_employed_in_a_year": 64,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 72,
+        "you_have_proper_first_aid_kit_in_your_truck": 2,
+        "you_willing_to_learn_alter_livelihood_skill": 2,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 13:54:14hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 13:54:14hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 13:55:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 13:55:21hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 0,
+        "accident_while_driving_commercial_vehicle_before": 0,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 0,
+        "blood_pressure_mmhg": "98",
+        "blood_sugar_mg_dl": "90",
+        "code_description": 57,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 2,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 2,
+        "family_details": "",
+        "have_any_difficulty_in_seeing_distant_objects": 1,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 0,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "5.6",
+        "on_what_basis_your_salary_is_calculated": 61,
+        "owner_holding_any_amount_from_your_salary": "50000",
+        "patient_uuid": "1245",
+        "sync_status": 0,
+        "total_family_members": "4",
+        "type_of_hospital": 71,
+        "uuid": "1452",
+        "weight_kg": "56",
+        "what_do_you_do_during_non_working_months": 68,
+        "which_months_you_are_not_employed_in_a_year": 64,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 74,
+        "you_have_proper_first_aid_kit_in_your_truck": 0,
+        "you_willing_to_learn_alter_livelihood_skill": 1,
+        "your_family_members_support_you_financially": 1
+    },
+    {
+        "accident_vehicle_in_last_twelve_months": 1,
+        "accident_while_driving_commercial_vehicle_before": 2,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-07-26T13:55:12",
+        "app_updated_at": "2023-07-26T13:55:12",
+        "are_you_aware_of_any_nearby_hospital": 0,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "120",
+        "blood_sugar_mg_dl": "160",
+        "code_description": 55,
+        "do_you_consume_alcohol": 2,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 2,
+        "do_you_smoke": 1,
+        "family_details": "testing",
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 2,
+        "have_you_ever_had_eye_examination": 1,
+        "height_cm": "120",
+        "if_you_are_happy_specify_in_what_way": "testing",
+        "on_what_basis_your_salary_is_calculated": 62,
+        "owner_holding_any_amount_from_your_salary": "200",
+        "patient_uuid": "20230726115436880ed392-3c68-4d79-9d2c-9dc4957c80ac",
+        "sync_status": 0,
+        "total_family_members": "5",
+        "type_of_hospital": 69,
+        "uuid": "20230726135512e0ff086b-077e-4cd5-a256-4dd8ff3f2523",
+        "weight_kg": "55",
+        "what_do_you_do_during_non_working_months": 67,
+        "which_months_you_are_not_employed_in_a_year": 65,
+        "you_able_to_identify_the_traffic_colors_easily": 2,
+        "you_equipped_with_any_alter_employment": 1,
+        "you_had_medical_check_up_in_the_past_1_year": 2,
+        "you_happy_with_your_profession": 72,
+        "you_have_proper_first_aid_kit_in_your_truck": 2,
+        "you_willing_to_learn_alter_livelihood_skill": 2,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 13:55:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 13:55:21hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 13:57:40hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 13:57:40hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 14:15:31hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 14:15:31hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 15:02:30hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 15:02:30hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 15:31:39hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 15:31:39hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 15:33:04hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 15:33:04hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 15:36:31hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 35,
+        "caste": 28,
+        "contact_no_1": "9611915434",
+        "contact_no_2": "",
+        "district": 2,
+        "donor": 4,
+        "drivers_license_no": "744664446",
+        "educational_qualification": 43,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 0,
+        "name": "pervin",
+        "no_of_months_employed_in_a_year": "test",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "test",
+        "time_since_driving": "2005",
+        "type_of_job": 15,
+        "type_of_route": 25,
+        "type_of_vehicle": 20,
+        "unique_id": "123456",
+        "uuid": "2023072615363198681c55-df32-4863-bad8-8a31419df6f0",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 15:39:40hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 15:55:26hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 35,
+        "caste": 28,
+        "contact_no_1": "9611915434",
+        "contact_no_2": "",
+        "district": 2,
+        "donor": 4,
+        "drivers_license_no": "744664446",
+        "educational_qualification": 43,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 0,
+        "name": "pervin",
+        "no_of_months_employed_in_a_year": "test",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "test",
+        "time_since_driving": "2005",
+        "type_of_job": 15,
+        "type_of_route": 25,
+        "type_of_vehicle": 20,
+        "unique_id": "123456",
+        "uuid": "2023072615363198681c55-df32-4863-bad8-8a31419df6f0",
+        "vehicle_insurance_policy": 0
+    },
+    {
+        "aadhaar_pan_no": "",
+        "age": 35,
+        "caste": 0,
+        "contact_no_1": "9611915434",
+        "contact_no_2": "",
+        "district": 2,
+        "donor": 4,
+        "drivers_license_no": "83837366",
+        "educational_qualification": 42,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 39,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 0,
+        "name": "Sundar",
+        "no_of_months_employed_in_a_year": "test",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "2025/11/22",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "7337737",
+        "uuid": "20230726155525bd33397c-3820-41a6-a64f-259004c91083",
+        "vehicle_insurance_policy": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 16:41:53hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 56,
+        "caste": 29,
+        "contact_no_1": "8861579741 ",
+        "contact_no_2": "",
+        "district": 14,
+        "donor": 1,
+        "drivers_license_no": "gfvvbn6646-77764tt",
+        "educational_qualification": 43,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 37,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 0,
+        "name": " Vishal",
+        "no_of_months_employed_in_a_year": "6",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": " ",
+        "time_since_driving": "2",
+        "type_of_job": 18,
+        "type_of_route": 27,
+        "type_of_vehicle": 24,
+        "unique_id": "AJDJ8333",
+        "uuid": "202307261641572f03a5a5-d66c-4bd7-bfd9-42ea59bd8ca9",
+        "vehicle_insurance_policy": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 16:44:43hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 16:50:50hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 16:50:50hrs{
+    "user_id": 9
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 16:52:22hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 16:58:15hrsnull
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 17:21:42hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 56,
+        "caste": 29,
+        "contact_no_1": "8861579741 ",
+        "contact_no_2": "",
+        "district": 14,
+        "donor": 1,
+        "drivers_license_no": "gfvvbn6646-77764tt",
+        "educational_qualification": 43,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 37,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 0,
+        "name": " Vishal",
+        "no_of_months_employed_in_a_year": "6",
+        "others": "",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": " ",
+        "time_since_driving": "2",
+        "type_of_job": 18,
+        "type_of_route": 27,
+        "type_of_vehicle": 24,
+        "unique_id": "AJDJ8333",
+        "uuid": "202307261641572f03a5a5-d66c-4bd7-bfd9-42ea59bd8ca9",
+        "vehicle_insurance_policy": 1
+    },
+    {
+        "aadhaar_pan_no": "",
+        "age": 56,
+        "caste": 0,
+        "contact_no_1": "hdhdhhhhhh",
+        "contact_no_2": "",
+        "district": 4,
+        "donor": 1,
+        "drivers_license_no": "dhssu7333773",
+        "educational_qualification": 43,
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 38,
+        "id": 0,
+        "life_insurance_policy": 1,
+        "monthly_income": 0,
+        "name": "ddji@)₹₹!₹83833737",
+        "no_of_months_employed_in_a_year": "jjfijdjdd",
+        "others": "ndnd",
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 48,
+        "status": 0,
+        "sync_status": 0,
+        "taluk": "",
+        "time_since_driving": "",
+        "type_of_job": 15,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "jdjd83773",
+        "uuid": "20230726172146d0763cea-8727-4396-9441-03d8fcacd654",
+        "vehicle_insurance_policy": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 17:32:51hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 17:32:51hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 17:34:06hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 17:34:06hrs{
+    "user_id": 30
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/26/2023, 17:59:46hrsnull

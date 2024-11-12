@@ -1,0 +1,125 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 08/27/2024, 16:05:02hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/27/2024, 16:05:02hrs{
+    "csdate": "2024-08-20T15:06:13.294300+05:30",
+    "dnrsdate": "2024-02-28T18:24:44.264902+05:30",
+    "dsdate": "2024-02-28T18:24:12.454011+05:30",
+    "lgdate": "2024-01-02T12:35:30.002658+05:30",
+    "psdate": "2024-04-18T17:28:09.547272+05:30",
+    "ssdate": "2024-02-28T18:00:44.942075+05:30",
+    "user_id": 121,
+    "vsdate": "2024-07-30T10:17:35.733229+05:30"
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/27/2024, 16:05:03hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 23,
+        "app_created_at": "2024-08-20T15:16:19",
+        "app_updated_at": "2024-08-20T15:16:19",
+        "camp": 190,
+        "contact_no_1": "9131670695",
+        "contact_no_2": "",
+        "district": 434,
+        "donor": 4,
+        "drivers_license_no": "0",
+        "educational_qualification": 238,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 2,
+        "how_do_you_know_about_camp": 37,
+        "id": 0,
+        "language": 2,
+        "life_insurance_policy": 2,
+        "monthly_income": 34,
+        "name": "Khushi munshi",
+        "no_of_months_employed_in_a_year": "6",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "2024-08-22",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "2",
+        "type_of_job": 15,
+        "type_of_route": 26,
+        "type_of_vehicle": 19,
+        "unique_id": "MP-174-10027",
+        "user": 121,
+        "uuid": "20240820151619d887f0c6-6f47-4c48-83c8-c9fd80d1a934",
+        "vehicle_insurance_policy": 1,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/27/2024, 16:05:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/27/2024, 16:05:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/27/2024, 16:05:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/27/2024, 16:05:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/27/2024, 16:05:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/27/2024, 16:05:04hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/27/2024, 16:05:04hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "20240820151619d887f0c6-6f47-4c48-83c8-c9fd80d1a934",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}

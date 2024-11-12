@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contents %}
+<div class="row align-items-center">
+    <div class="col-xl-12 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                <form method='POST' class="needs-validation" autocomplete="off" oninput='password2.setCustomValidity(password2.value != password.value ? "Passwords do not match." : "")'>
+                    {% csrf_token %}
+                    <div class='text-danger'>
+                        {{error}}
+                    </div> 
+                    <div class="row mb-4">
+                        <label for="" class="col-md-2 col-form-label">order_request<span class="required-field"></span></label>
+                        <div class="col-md-4">
+                            <select name="order_request" class="form-select" required>
+                                <option value="" disabled selected>Select Order Request</option>
+                                {% for order_request in order_requests %}
+                                    <option value="{{ order_request.id }}">{{ order_request }}</option>
+                                {% endfor %}
+                            </select>
+                        </div> 
+                        <label for="" class="col-md-2 col-form-label">product<span class="required-field"></span></label>
+                        <div class="col-md-4">
+                            <select name="product" class="form-select" required>
+                                <option value="" disabled selected>Select Product</option>
+                                {% for product in products %}
+                                    <option value="{{ product.id }}">{{ product }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>  
+                    <div class="row mb-4">
+                        <label for="" class="col-md-2 col-form-label">created_by<span class="required-field"></span></label>
+                        <div class="col-md-4">
+                            <select  class="form-select" name='created_by' required>
+                                <option selected="" value=''>Choose created_by...</option>
+                                {% for created_by in user %}
+                                    <option value='{{ created_by.id }}' {% if created_by.id == user_profile.created_by.id %}selected{% endif %}>{{ created_by }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <label for="" class="col-md-2 col-form-label">modified_by<span class="required-field"></span></label>
+                        <div class="col-md-4">
+                            <select  class="form-select" name='modified_by' required>
+                                <option selected="" value=''>Choose modified_by...</option>
+                                {% for modified_by in user %}
+                                    <option value='{{ modified_by.id }}' {% if modified_by.id == user_profile.modified_by.id %}selected{% endif %}>{{ modified_by }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>  
+                    <div class="row mb-4">
+                        <label for="" class="col-md-2 col-form-label">received_quantity<span class="required-field"></span></label>
+                        <div class="col-md-4">
+                            <input type="number" class="form-control" id="" name='received_quantity' placeholder="Enter received_quantity" required >
+                        </div>
+                        <label for="" class="col-md-2 col-form-label">damaged_quantity<span class="required-field"></span></label>
+                        <div class="col-md-4">
+                            <input type="number" class="form-control" id="" name='damaged_quantity' placeholder="Enter damaged_quantity" required >
+                        </div>
+                    </div>
+                    <div class="gap-2">
+                        <button type="reset" onclick="location.href='javascript:history.back()'" class="btn btn-secondary waves-effect">
+                            Cancel
+                        </button>
+                        <button type="submit" id="submitting" style="margin-left: 5px;" class="btn btn-primary w-md">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    
+{% endblock %}
+
+

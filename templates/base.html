@@ -1,0 +1,393 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+
+    <title>{% if heading %}{{ heading }}{% endif %}| login - view  
+    </title>
+    
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="{% static 'images/favicon_Raahi_logo.ico' %}" alt="Raahi_logo">
+    {% block css %}
+    {% block extra_css %}
+    {% endblock %}
+    <!-- Bootstrap Css -->
+    <link href="{% static 'css/bootstrap.min.css' %}" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="{% static 'css/icons.min.css' %}" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="{% static 'css/app.min.css' %}" id="app-style" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/base.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'libs/select2/dist/css/select2.min.css'%}" rel="stylesheet" type="text/css" />
+    
+    <link href="{% static 'libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+    <link href="{% static 'libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+    <!-- Responsive datatable examples -->
+    <link href="{% static 'libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+    {% endblock css %}
+</head>
+<style>
+    .table.dataTable {
+        margin-bottom: 0px !important;
+    }
+    .nav-tabs .nav-link:hover {
+        border-color: #eff2f7 #eff2f7 #ced4da;
+        isolation: isolate;
+        border-bottom: 0;
+    }
+    .table-rep-plugin .fixed-solution .sticky-table-header{
+        top: -1px !important;
+        background-color: #403A60;
+    }
+    .navbar-brand-box {
+        padding: 0px!important;
+    }
+    body {
+        /* font-family: 'Lato';font-size: 16px; */
+        font-family: 'Lato', sans-serif!important; font-size: 14px;  
+
+    }
+    body[data-sidebar=dark] #sidebar-menu ul li a i {
+        color: #000000;
+    }
+    td, th{
+        border: 1px solid #999999;
+    }
+    table.dataTable {
+        border-collapse: collapse !important;
+    }
+    #sidebar-menu ul li a{
+        font-size: 16px;
+    }
+    body[data-sidebar=dark] #sidebar-menu ul li ul.sub-menu li a {
+       color: #000000;
+       font-size: 16px;
+    }
+
+
+    .select2-container--default .select2-results__option--highlighted[aria-selected] {
+        background-color: #FFBB22;
+        color: #000000;
+    }
+    .select2-container--default .select2-results__option[aria-selected=true]:hover {
+        background-color: #FFBB22;
+        color: #000000;
+    }
+    .btn-outline-success:hover {
+        background-color: #006F62;
+        border-color: #006F62;
+        color: #ffffff!important;
+    }
+    .btn:hover {
+        color: #ffffff!important;
+    }
+    .btn-outline-success {
+        color: #006F62;
+        border-color: #006F62;
+    }
+    .btn-outline-success {
+        color: #006F62!important;
+    }
+    /* .table .table-light{
+        background-color: #D9D9D9;
+    } */
+    /* .table .table-light{
+        background-color: #403A60!important;
+        color: #ffffff;
+    } */
+    .page-item.active .page-link {
+        background-color: #403A60;
+    }
+    /* #sidebar-menu ul li a {
+        font-size: 16px;
+    } */
+    .login_bclr{
+        background-color:#ffffff;
+    }
+    .simplebar-mask{
+        background-color: #FFBB22;
+    }
+    #side-menu{
+        color: black;
+    }
+    
+   
+    .btn-outline-warning:hover {
+        color: #ffffff;
+        background-color: #FB6500;
+        border-color: #FB6500;
+    }
+    .btn-outline-warning {
+        color: #FB6500;
+        border-color: #FB6500;
+    }
+    .btn-outline-warning {
+        color: #FB6500;
+        border-color: #FB6500;
+    }
+    .btn-warning{
+        background-color: #FB6500;
+        border-color: #FB6500;
+    }
+    .btn-outline-primary:hover {
+        color: #ffffff;
+        background-color: #403A60;
+        border-color: #403A60;
+    }
+    .btn-outline-primary {
+        color: #403A60;
+        border-color: #403A60;
+    }
+    .btn-primary{
+        background-color: #403A60;
+        border-color: #403A60;
+    }
+    .btn-primary:hover {
+        background-color: #403A60;
+        border-color: #403A60;
+    }
+    .btn-success{
+        background-color: #006F62;
+        border-color: #006F62;
+    }
+    .btn-success:hover {
+        background-color: #006F62;
+        border-color: #006F62;
+    }
+    .btn-outline-secondary:hover {
+        color: #ffffff;
+        background-color: #4C4C4C;
+        border-color: #4C4C4C;
+    }
+    .btn-outline-secondary {
+        color: #4C4C4C;
+        border-color: #4C4C4C;
+    }
+    .btn-secondary{
+        background-color: #4C4C4C;
+        border-color: #4C4C4C;
+    }
+    .btn-secondary:hover {
+        background-color: #4C4C4C;
+        border-color: #4C4C4C;
+    }
+    .btn-outline-danger:hover {
+        color: #ffffff;
+        background-color: #AF272F;
+        border-color: #AF272F;
+    }
+    .btn-outline-danger {
+        color: #AF272F;
+        border-color: #AF272F;
+    }
+    .btn-danger{
+        background-color: #AF272F;
+        border-color: #AF272F;
+    }
+    .btn-danger:hover {
+        background-color: #AF272F;
+        border-color: #AF272F;
+    }
+    body[data-sidebar=dark] #sidebar-menu ul li a {
+    color: #000000;
+    }
+    
+    .select2-container {
+        display: block!important;
+        width: 100%!important;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow b{
+        border-color: #adb5bd transparent transparent transparent!important;
+        border-width: 6px 6px 0 6px!important;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow{
+        width: 34px!important;
+        height: 34px!important;
+        right: 3px!important;
+    }
+    .select2-container .select2-selection--single{
+        height: 36px!important;
+    }
+    .select2-container--default .select2-selection--single{
+        border: 1px solid #ced4da!important;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered{
+        line-height: 34px!important;
+    }
+    .select2-container .select2-selection--single .select2-selection__rendered{
+        padding-left: 12px!important;
+    }
+    .select2-container--default .select2-selection--multiple .select2-selection__choice {
+        background-color: #FFBB22!important;
+        border: 1px solid #FFBB22!important;
+        color: #000000!important;
+    }
+    .total-clr{
+        background-color: #d9c7c7d6!important;
+    } 
+    .submit_btn{
+        background-color: #403A60;
+        color: #ffffff;
+        font-weight: 600;
+    }
+    .btn:hover {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .btn{
+        font-size: inherit;
+    }
+    @media only screen and (max-width: 992px) {
+        .navbar-brand-box {
+            padding: 0 1.5rem!important;
+        }
+    }
+    .table-rep-plugin .btn-group .btn-default {
+        background-color: #4C4C4C;
+        color: #fff;
+        border: 1px solid #4C4C4C;
+    }
+    .table-rep-plugin .btn-group .btn-default.btn-primary {
+        background-color: #403A60;
+        border-color: #403A60;
+        color: #fff;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .table-rep-plugin .sticky-table-header, .table-rep-plugin table.focus-on tbody tr.focused td , .table-rep-plugin table.focus-on tbody tr.focused td a, .table-rep-plugin table.focus-on tbody tr.focused th {
+        background: #403A60;
+        border-color: #403A60;
+        color: #fff;
+    }
+    
+    .table-rep-plugin .btn-group.pull-right {
+    float: left;
+    }
+
+    .btn-group, .btn-group-vertical {
+        
+        margin-left: 10px;
+        margin-bottom: 0.5rem!important;
+    }
+    .nav-tabs .nav-link {
+        border-top-left-radius: 0rem;
+        border-top-right-radius: 0rem;
+    }
+    .nav-tabs .nav-link.active{
+        border-top: 3px solid #FFBB22;
+
+    }
+    .dataTables_scroll{
+        margin-bottom: 7px;
+    }
+    .table{
+        width: 100%!important;
+    }
+
+    
+    .page-title-box {
+    padding-bottom: 10px;
+}
+    .page-title-box h4 {
+        text-transform: capitalize;
+        font-size: 1.6rem!important;
+    }
+</style>
+
+<body data-sidebar="dark" {% if heading == 'Login' %} class="login_bclr"{% endif %}>
+    {% if heading != 'Login' %}
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+        {% block header %}
+        {% include 'partials/header.html' %}
+        {% endblock %}
+        {% block sidebar %}
+        {% include 'partials/sidebar.html' %}
+        {% endblock %}
+        {% comment %} {% block header %}
+        {% include 'partials/hori-header.html' %}
+        {% endblock %}
+        {% block sidebar %}
+        {% include 'partials/hori-sidebar.html' %}
+        {% endblock %} {% endcomment %}
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+            <div class="page-content">
+                <div class="container-fluid">
+                    <!-- start page title -->
+                    <div class="row">   
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0 font-size-18">{{heading}} {% if heading_vpl %} - ({{heading_vpl}}) {% endif %}{% if mat_view_last_updated %} <span style="font-size: 0.7em; font-weight: 400;"> - Data as on {{mat_view_last_updated|date:'d/m/Y g:iA'}}{% endif %}</span></h4>
+                                {% if heading == 'Dashboard' %} 
+                                    <div class="col-lg-3 text-end">
+                                        <button type="button" class="btn btn-rounded btn-warning btn-sm" id="toggle-button" {% if show_more %} title="Hide filters" {% else %} title="Show filters" {% endif %}>
+                                            {% if show_more %}
+                                                <i class="fas fa-chevron-up"></i> 
+                                            {% else %}
+                                                <i class="fas fa-chevron-down"></i> 
+                                            {% endif %}
+                                        </button>
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+    {% endif %}  
+                    <!-- end page title -->
+                    {% block contents %}
+                    {% endblock %}
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+        </div>
+        <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+    {% block Subscribe %}
+    {% endblock %} 
+
+    {% block r_sidebar %}
+    {% endblock %}
+
+            {% block javascript %}
+            
+            <!-- JAVASCRIPT -->
+            <script src="{% static 'libs/jquery/dist/jquery.min.js' %}"></script>
+            <script src="{% static 'libs/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+            <script src="{% static 'libs/metismenu/dist/metisMenu.min.js' %}"></script>
+            <script src="{% static 'libs/simplebar/dist/simplebar.min.js' %}"></script>
+            <script src="{% static 'libs/node-waves/dist/waves.min.js' %}"></script>
+        	<script src="{% static 'libs/select2/dist/js/select2.min.js'%}"></script>
+
+            <script src="{% static 'js/pages/form-advanced.init.js'%}"></script>
+
+            <script>
+                $("button").click(
+                    function() {
+                        $("button").attr("disabled", true).delay(5000).attr("disabled", false);
+                    }
+                );    
+            </script>
+            {% block extra_javascript %}
+            {% endblock %}
+
+            <script src="{% static 'js/app.js' %}"></script>    
+            <script src="{% static 'js/base.js' %}"></script>   
+            {% endblock javascript %}
+        </body>
+
+    </html>

@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% load static %} 
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+
+<!-- DataTables -->
+<link href="{% static 'libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+<link href="{% static 'libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<!-- Responsive datatable examples -->
+<link href="{% static 'libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock %}
+{% block contents %}
+{% load report_tags %}
+<!--************Chart Script Part*********-->
+{% include "dashboard/chart_script_v2.html" %}
+<!--**************************************-->
+    <div class="content-overlay"></div>
+    <div class="header-navbar-shadow"></div>
+	<div class="content-wrapper">
+		<div class="content-body">
+			<section id="advanced-search-datatable">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card">
+								{% include "dashboard/dropdown_filter_v2.html" %}
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					{% for param,value in chcl_dict.items %}
+						<input type="hidden" id="{{param}}" name="{{param}}" value="{{value}}" />
+					{% endfor %}
+					{% for ct in data_html.chart %}
+						{% if ct.chart_type == 'CARDCHART' %}
+						<div class="col-md-12 col-lg-12 col-sm-12 col-12">
+							<div class="card">
+								{%if ct.chart_title|lower != 'blank' %}
+								<div class="card-body mb-1"><h5>{{ct.chart_title}} {% if ct.tooltip %}<i class="fa fa-info-circle"data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="{{ct.tooltip}}" ></i>{% endif %}</h5>
+								{% endif %}
+									<div class="{%if ct.chart_title|lower == 'blank' %} card-body {% endif %}row {{ct.div}}" style="align-content:space-evenly !important;">
+									{% for citem in ct.datas %}
+									<div class="{{ct.bx_div|index:forloop.counter0}}">
+										<div class="card mb-1" style="height:{{ct.chart_height}};background-color:{{ct.bx_bg|index:forloop.counter0}}!important">
+											<div class="card-body text-center">
+											<h3 class="{{ct.bx_text|index:forloop.counter0}}" id = "{{citem.1}}" style="font-size:1.1rem">{{citem.1}}</h3>
+											<h6 class="{{ct.bx_text|index:forloop.counter0}}" style="font-size:0.9rem">{{citem.0}}</h6>
+											</div>
+										</div>
+									</div>
+									
+									{% endfor %}
+								{%if ct.chart_title|lower != 'blank' %}
+								</div>
+								{% endif %}
+								<span style="display:inline-block; margin-left: 20px;">{{ct.chart_note|safe}}</span>
+							</div>
+							</div>
+						</div>
+						{% elif ct.chart_type != 'CARDCHART' %}
+						<div class="{{ct.div}}" >
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title">
+										{% comment %} <i class="fa fa-info-circle" data-html="true" data-toggle="tooltip" data-placement="top" title="{{ct.tooltip}}" data-original-title=""></i> {% endcomment %}
+										<h5>{{ct.chart_title}} {% if ct.tooltip %}<i class="fa fa-info-circle"data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="{{ct.tooltip}}" ></i>{% endif %}</h5>
+									</div>
+									<div class="row">
+										<div class="col-12">
+											<div id="{{ct.chart_name}}" style="width:100%;height:{{ct.chart_height}};"></div>
+										</div>
+										<span style="display:inline-block; margin-left: 20px;">{{ct.chart_note|safe}}</span>
+									</div>
+								</div>
+							</div>	
+						</div>
+						{% endif %}
+					{% endfor %}
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script>
+function updateCounter(i) {
+    var counterElement = document.getElementById(i);
+    var currentCount = parseInt(counterElement.innerText);
+    let start_count = 0;
+    let end_count = currentCount;
+    let intervalId = setInterval(function() {
+        if (start_count < end_count) {
+            counterElement.innerText = start_count + 1;
+            start_count++;
+        } else {
+            clearInterval(intervalId);
+        }
+    }, 100);
+}
+window.onload = function() {
+    var counters = {{ counter_list|safe }};
+    for (var i = 0; i < counters.length; i++) {
+        startCounter(counters[i]);
+    }
+    function startCounter(counterId) {
+        updateCounter(counterId);
+    }
+};
+	</script>
+	
+{% endblock %}
+{% block extra_javascript %}
+{% endblock %}
+
+

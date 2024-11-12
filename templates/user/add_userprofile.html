@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contents %}
+
+<div class="row align-items-center">
+  <div class="col-xl-12 mx-auto">
+    <div class="card">
+      <div class="card-body">
+        <form method='POST' class="needs-validation" autocomplete="off" oninput='password2.setCustomValidity(password2.value != password.value ? "Passwords do not match." : "")' novalidate>
+          {% csrf_token %}
+          <div class='text-danger'>
+              {{error}}
+          </div>
+          <div class="row mb-4">
+            <label for="" class="col-md-2 col-form-label">User Name<span class="required-field"></span></label>
+            <div class="col-md-4">
+              <input type="text" id="username" class="form-control"  value="{% if user_obj.username %}{{ user_obj.username|default_if_none:'' }}{% else %}{{ username|default_if_none:'' }}{% endif %}" name="username" placeholder="Enter Username" required >
+              <div class="invalid-feedback" id="username_vlu">
+               
+              </div>
+            </div>
+            <label for="" class="col-md-2 col-form-label"> Name<span class="required-field"></span></label>
+            <div class="col-md-4">
+              <input type="text" id="first_name" class="form-control"  value="{% if user_obj.first_name %}{{user_profile.user.first_name|default_if_none:''}}{% else %}{{ first_name|default_if_none:'' }}{% endif %}" name="first_name" placeholder="Enter Name" required>
+              <div class="invalid-feedback">
+                Please enter name.
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <label for="" class="col-md-2 col-form-label mb-4">Email<span class="required-field"></span></label>
+            <div class="col-md-4 mb-4">
+              <input type="email" id="email" class="form-control"  value="{% if user_obj.email %}{{ user_obj.email }}{% else %}{{ email|default_if_none:'' }}{% endif %}" name="email" placeholder="Enter Email id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+              <div class="invalid-feedback" id="email_vlu">
+                
+              </div>
+            </div>
+            <label for="" class="col-md-2 col-form-label mb-4">Role<span class="required-field"></span></label>
+            <div class="col-md-4 mb-4">
+              <select id="formrow-inputState" class="form-select" name='role' required>
+                  <option selected="" value=''>Choose Role...</option>
+                  {% for role in userrole %}
+                      <option value='{{ role.id }}' {% if role.id == user_profile.role.id %}selected{% endif %}>{{ role.name }}</option>
+                  {% endfor %}
+              </select>
+              <div class="invalid-feedback">
+                Please select role.
+              </div> 
+            </div>
+            {% if not user_profile %}
+            <label for="" class="col-md-2 col-form-label mb-4">Password<span class="required-field"></span></label>
+            <div class="col-md-4 mb-4">
+              <input type="password" class="form-control" id="password" name='password' value="{{password|default_if_none:''}}" placeholder="Enter Password" required >
+              <div class="invalid-feedback">
+                Please enter password.
+              </div>
+            </div>
+            <label for="" class="col-md-2 col-form-label mb-4">Confirm Password<span class="required-field"></span></label>
+            <div class="col-md-4 mb-4">
+              <input type="password" class="form-control" id="password2" name='password2' value="{{password|default_if_none:''}}" placeholder="Confirm Password" required >
+              <div class="invalid-feedback" id="val_password">
+                
+              </div>
+            </div>
+            {% endif %}  
+          </div>
+          <div class="gap-2">
+              <button type="reset" onclick="location.href='javascript:history.back()'" class="btn btn-secondary waves-effect">
+                  Cancel
+              </button>
+              <button type="submit" id="submitting" style="margin-left: 5px;" class="btn btn-primary w-md">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="{% static 'js/pages/form-validation.init.js' %}"></script> 
+<script type="text/javascript">
+var exit_email = '{{email_exist}}'
+var user_exist = '{{user_exist}}'
+if (exit_email){
+  document.getElementById('email_vlu').style.display = 'block'
+  document.getElementById('email_vlu').innerText = '{{email_exist}}'
+}else{
+  document.getElementById('email_vlu').innerText = 'Please enter email.'
+}
+if (user_exist){
+  document.getElementById('username_vlu').style.display = 'block'
+  document.getElementById('username_vlu').innerText = '{{user_exist}}'
+}else{
+  document.getElementById('username_vlu').innerText = 'Please enter username.'
+}
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('val_password').innerText = "Please enter password.";
+  $("#password, #password2").keyup(function() {
+    var password = document.getElementById('password').value;
+    var password2 = document.getElementById('password2').value;
+    if(password != password2){
+      document.getElementById('val_password').innerText = "Passwords do not match.";
+    }
+  });
+});
+</script>   
+{% endblock %}
+
+

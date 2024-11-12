@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Raahi form Responses</title>
+     <style>
+        th, td{padding: 2px;}
+         @page{ size: letter landscape; margin: 2cm; } 
+    </style>
+</head>
+<body>
+    <div style="border:1px solid #222d32;padding:0px;margin:0px">
+        <div style="background:#fff;color:#fff;padding:15px;">
+            <img src="https://raahistaging.mahiti.org/static/images/new_raahi_sightsaver_india_logo.png" alt="raahi logo" class="CToWUd" style="height: 90px;">
+        </div>
+        <div style="padding: 10px;">
+            <p>{{dear}}</p></b>
+            <p>{{body}}</p></b>
+            <div class="table-responsive">
+                <table border=1 style="border-collapse: collapse;  width: 100%;" class="table">
+                    <thead class="bg-white">
+                        <tr>             
+                            <td><b>Partner name & address :-</b>  </td>
+                            <td>
+                                {% if order.order_for == 2 %}
+                                    {{ detail_view.get_pnt_details.0.camp.partner }} | {{ detail_view.get_pnt_details.0.camp.partner.address|default_if_none:'-' }}
+                                {% else %}
+                                    {{ detail_view.get_partner_shippment_address.0.partner }} | {{ detail_view.get_partner_shippment_address.0.partner.address|default_if_none:'-' }}
+                                {% endif %}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Project target location(as per PFA) :-</b> </td>
+                            <td>{{donor_linakage_list|default_if_none:'-' }}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Donor Name :-</b> </td>
+                            <td> {{detail_view.get_pnt_details.0.donor| default_if_none:'-' }} </td>
+                        </tr>
+                        <tr>                                   
+                            <td><b>Shipment address :- </b></td>
+                            <td>
+                                {% if order.order_for == 2 %}
+                                    {{ order.camp.partner.address|default_if_none:'-' }}
+                                {% else %}
+                                    {{ order.vision_center.address|default_if_none:'-' }}
+                                {% endif %}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Contact person name and contact number :-</b></td> 
+                            <td>
+                                {{order.created_by.first_name}}{% if partner_contact.contact_no %} | {% endif %} {{partner_contact.contact_no}}
+                                
+                                {% comment %} {% if order.order_for == 2 %}
+                                    {{ detail_view.get_pnt_details.0.camp.partner }} | {{ detail_view.get_pnt_details.0.camp.partner.contact_no|default_if_none:'-' }}
+                                {% else %}
+                                    {{detail_view.get_partner_shippment_address.0.partner}} | {{detail_view.get_partner_shippment_address.0.partner.contact_no}}
+                                {% endif %} {% endcomment %}
+                            </td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="table-responsive">
+                <table border=1 style="border-collapse: collapse;  margin-top: 25px; width: 100%" class="table">
+                    <thead class="table-light" >
+                        <tr>
+                            <th rowspan="2">S.No</th>
+                            <th rowspan="2">UID Code</th>   
+                            <th rowspan="2">Vision Center / Partner</th>   
+                            <th rowspan="2">Name of Patient</th>
+                            <th rowspan="2">Mobile number</th>
+                            <th rowspan="2">Vision</th>
+                            <th colspan="4">Right Eye</th>
+                            <th colspan="4">Left Eye</th>
+                            <th rowspan="2">Frame Code</th>
+                            <th rowspan="2">Frame Size</th>
+                            <th rowspan="2">Type and Coating
+                                (SV, BF, Distance, Near, Coating-UC/HC/HMC)</th>
+                        </tr> 
+                        <tr>
+                            <th>Sph</th>
+                            <th>Cyl</th>
+                            <th>Axis</th>
+                            <th>V/A</th>
+                            <th>Sph</th>
+                            <th>Cyl</th>
+                            <th>Axis</th>
+                            <th>V/A</th>
+                        </tr>   
+                    </thead>
+                    <tbody>
+                        {% for sy in spectacletype_obj %}
+                        <tr> 
+                            <td rowspan="2">{{forloop.counter}}</td>
+                            <td rowspan="2">{{sy.get_pnt_details.0.unique_id|default_if_none:'-'}}</td>
+                            <td rowspan="2">{% if sy.get_pnt_details.0.get_vision_center.name %}{{sy.get_pnt_details.0.get_vision_center.name|default_if_none:'-'}}{% else %}{{sy.get_pnt_details.0.camp.partner|default_if_none:'-'}}{% endif %}</td>
+                            <td rowspan="2">{{sy.get_pnt_details.0.name|default_if_none:'-'}}</td>
+                            <td rowspan="2">{{sy.get_pnt_details.0.contact_no_1|default_if_none:'-'}}</td>
+                            <td rowspan="2">{{sy.spectacle_name|default_if_none:'-'}}</td>
+                            <td >{{sy.get_pnt_details.1.sph_distance_re|default_if_none:'-'}}</td>
+                            <td>{{sy.get_pnt_details.1.cyl_distance_re|default_if_none:'-'}}</td>
+                            <td>{{sy.get_pnt_details.1.axis_distance_re|default_if_none:'-'}}</td>
+                            <td>{{sy.get_pnt_details.1.va_distance_re|default_if_none:'-'}}</td>
+                            <td>{{sy.get_pnt_details.1.sph_distance_le|default_if_none:'-'}}</td>
+                            <td>{{sy.get_pnt_details.1.cyl_distance_le|default_if_none:'-'}}</td>
+                            <td>{{sy.get_pnt_details.1.axis_distance_le|default_if_none:'-'}}</td>
+                            <td>{{sy.get_pnt_details.1.va_distance_le|default_if_none:'-'}}</td>
+                            <td rowspan="2">{{sy.frame_code|default_if_none:'-'}}</td>
+                            <td rowspan="2">{{sy.frame_size|default_if_none:'-'}}</td>
+                            <td rowspan="2">{{sy.type_of_coating|default_if_none:'-'}}</td>
+                        </tr>
+                        <tr>
+                            <td >{{sy.get_pnt_details.1.sph_near_re|default_if_none:'-'}}</td>
+                            <td>{{sy.get_pnt_details.1.cyl_near_re|default_if_none:'-'}}</td>
+                            <td>{{sy.get_pnt_details.1.axis_near_re|default_if_none:'-'}}</td>
+                            <td>{{sy.get_pnt_details.1.va_near_re|default_if_none:'-'}}</td>
+                            <td>{{sy.get_pnt_details.1.sph_near_le|default_if_none:'-'}}</td>
+                            <td>{{sy.get_pnt_details.1.cyl_near_le|default_if_none:'-'}}</td>
+                            <td>{{sy.get_pnt_details.1.axis_near_le|default_if_none:'-'}}</td>
+                            <td>{{sy.get_pnt_details.1.va_near_le|default_if_none:'-'}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% comment %} {% if order.order_status == 4 %}
+            <p><span><b>Rejected Reason : </b></span>{{order.remark}}</p></b>
+            {% endif %} {% endcomment %}
+        </div>
+        <div style="background:#222d32;color:#fff;padding:15px;margin:0px">
+            <p><strong>Regards,</strong></p>
+            <p>Team <span class="gmail_default" style="font-family:verdana,sans-serif"></span>R<span class="gmail_default" style="font-family:verdana,sans-serif">aahi</span></p>
+        </div>
+    </div>
+</body>
+</html>

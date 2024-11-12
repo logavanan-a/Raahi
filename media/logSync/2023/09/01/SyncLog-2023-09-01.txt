@@ -1,0 +1,135 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 09/01/2023, 12:20:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/01/2023, 12:20:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/01/2023, 12:20:10hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/01/2023, 12:20:10hrs[
+    {
+        "app_created_at": "2023-09-01T12:20:10",
+        "app_updated_at": "2023-09-01T12:20:10",
+        "axis_distance_le": "",
+        "axis_distance_re": "",
+        "axis_near_le": "",
+        "axis_near_re": "",
+        "cyl_distance_le": "",
+        "cyl_distance_re": "",
+        "cyl_near_le": "",
+        "cyl_near_re": "",
+        "follow_up_status": 0,
+        "screening_uuid": "20230828123504f564c89f-e021-4f53-a849-2775672c4278",
+        "spectacle_type": 101,
+        "sph_distance_le": "",
+        "sph_distance_re": "",
+        "sph_near_le": "",
+        "sph_near_re": "",
+        "sync_status": 0,
+        "uuid": "20230901122010f227af17-c441-4aae-99b0-541a7f0d800f",
+        "va_distance_le": 0,
+        "va_distance_re": 0,
+        "va_near_le": 0,
+        "va_near_re": 0
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/01/2023, 15:05:51hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 09/01/2023, 15:05:51hrs[
+    {
+        "accident_vehicle_in_last_twelve_months": 1,
+        "accident_while_driving_commercial_vehicle_before": 1,
+        "any_difficulty_in_judging_distance_while_driving": 1,
+        "app_created_at": "2023-09-01T15:05:50",
+        "app_updated_at": "2023-09-01T15:05:50",
+        "are_you_aware_of_any_nearby_hospital": 1,
+        "are_you_wearing_glasses_currently": 1,
+        "blood_pressure_mmhg": "35",
+        "blood_sugar_mg_dl": "67",
+        "code_description": 53,
+        "cough_for_more_than_two_weeks": 1,
+        "do_you_consume_alcohol": 3,
+        "do_you_have_diabetes": 1,
+        "do_you_have_hypertension": 3,
+        "do_you_smoke": 2,
+        "dosage_of_insulin": 52,
+        "duration_since_last_meal": 11.0,
+        "family_details": "no",
+        "family_history_of_diabetes": 188,
+        "fever_for_more_than_2_weeks": 1,
+        "have_any_difficulty_in_seeing_distant_objects": 2,
+        "have_any_difficulty_in_seeing_while_night_driving": 1,
+        "have_you_attended_awarness_training": 1,
+        "have_you_been_advised_to_wear_glasses_ever": 1,
+        "have_you_ever_had_eye_examination": 2,
+        "height_cm": "200",
+        "if_you_are_happy_specify_in_what_way": "fhvv",
+        "insulin_dependent_or_non_insulin_dependent": 175,
+        "medication_hypertension": 0,
+        "night_sweats": 1,
+        "on_what_basis_your_salary_is_calculated": 58,
+        "owner_holding_any_amount_from_your_salary": "2588",
+        "patient_uuid": "2023080311555374f3cb97-bc44-4095-88cb-6ac9364bd55e",
+        "physical_activity": 183,
+        "sync_status": 0,
+        "total_family_members": "0",
+        "type_of_hospital": 69,
+        "unexplained_weight_loss_or_loss_of_appetite": 1,
+        "uuid": "20230901150550ebde6c51-eb01-40d2-a9bb-30ae2c927851",
+        "waist_circumference": 178,
+        "weight_kg": "65",
+        "what_do_you_do_during_non_working_months": 68,
+        "when_was_it_diagnosed_number_of_years": 2,
+        "when_was_it_diagnosed_years": 0,
+        "which_months_you_are_not_employed_in_a_year": [
+            63
+        ],
+        "which_training": 224,
+        "you_able_to_identify_the_traffic_colors_easily": 1,
+        "you_equipped_with_any_alter_employment": 2,
+        "you_had_medical_check_up_in_the_past_1_year": 1,
+        "you_happy_with_your_profession": 72,
+        "you_have_proper_first_aid_kit_in_your_truck": 1,
+        "you_willing_to_learn_alter_livelihood_skill": 1,
+        "your_family_members_support_you_financially": 1
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 09/01/2023, 15:06:59hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 09/01/2023, 15:06:59hrs{
+    "user_id": 30
+}

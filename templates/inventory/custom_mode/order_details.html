@@ -1,0 +1,430 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+
+<!-- DataTables -->
+<link href="{% static 'libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+<link href="{% static 'libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+
+<!-- Responsive datatable examples -->
+<link href="{% static 'libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet"
+    type="text/css" />
+{% endblock %}
+
+{% block contents %}
+{% csrf_token %}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-rep-plugin">                       
+                    <div class="table-responsive mb-0" data-pattern="priority-columns">
+                        <table id="tech-companies-1" class="table  dt-responsive mb-0 mt-3">
+                            <thead class="bg-white">
+                                <tr>             
+                                    <td style="width: 35%;"><b>Partner name & address :-</b>  </td>
+                                    <td>
+                                        {% if order.order_for == 2 %}
+                                            {{ detail_view.get_pnt_details.0.camp.partner }} | {{ detail_view.get_pnt_details.0.camp.partner.address|default_if_none:'-' }}
+                                        {% else %}
+                                            {{ detail_view.get_partner_shippment_address.0.partner }} | {{ detail_view.get_partner_shippment_address.0.partner.address|default_if_none:'-' }}
+                                        {% endif %}
+                                    </td>                                </tr>
+                                <tr>
+                                    <td><b>Project target location(as per PFA) :-</b> </td>
+                                    <td>{{donor_linakage_list|default_if_none:'-' }}</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Donor Name :-</b> </td>
+                                    <td> {{detail_view.get_pnt_details.0.donor| default_if_none:'-' }} </td>
+                                </tr>
+                                <tr>                                   
+                                    <td><b>Shipment address :- </b></td>
+                                    {% comment %} <td>{% if order.vision_center %}{{order.vision_center.address|default_if_none:'-' }}{% else %}{{detail_view.get_pnt_details.0.camp.partner.address|default_if_none:'-' }}{% endif %}</td> {% endcomment %}
+                                    <td>
+                                        {% if order.order_for == 2 %}
+                                            {{ order.camp.partner.address|default_if_none:'-' }}
+                                        {% else %}
+                                            {{ order.vision_center.address|default_if_none:'-' }}
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Contact person name and contact number :-</b></td> 
+                                    <td>
+                                        {{order.created_by.first_name}}{% if partner_contact.contact_no %} | {% endif %} {{partner_contact.contact_no}}
+
+                                        {% comment %} {% if order.order_for == 2 %}
+                                            {{ detail_view.get_pnt_details.0.camp.partner }} | {{ detail_view.get_pnt_details.0.camp.partner.contact_no|default_if_none:'-' }}
+                                        {% else %}
+                                            {{detail_view.get_partner_shippment_address.0.partner}} | {{detail_view.get_partner_shippment_address.0.partner.contact_no}}
+                                        {% endif %} {% endcomment %}
+                                    </td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class= "d-flex justify-content-end " style= "margin-right: 20px;"> 
+    {% if request.session.role_id == 6 %}
+        <a class="btn btn-success" href="/export_order_details_to_excel/{{ order_id }}/">Export</a>
+    {% endif %}
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <form method='POST' id="submitting" class="needs-validation" autocomplete="off" >
+                    {% csrf_token %}
+                    <input type="hidden" id="order_for" name="order_for" {% if detail_view.get_pnt_details.0.camp %}value="2"{% else %}value="1"{% endif %}>
+                    <div class="table-rep-plugin">
+                        <div class="table-responsive" data-pattern="priority-columns">
+                            <table id="camps_table" class="table  dt-responsive m-0">
+                                <thead class="table-light" >
+                                    <tr>
+                                        <th rowspan="2">S.No</th>
+                                        <th rowspan="2">UID Code</th>
+                                        <th rowspan="2">Vision Center/Partner</th>   
+                                        <th rowspan="2">Name of Patient</th>
+                                        <th rowspan="2">Mobile number</th>
+                                        <th rowspan="2">Vision</th>
+                                        <th colspan="4">Right Eye</th>
+                                        <th colspan="4">Left Eye</th>
+                                        <th rowspan="2">Frame Code</th>
+                                        <th rowspan="2">Frame Size</th>
+                                        <th rowspan="2">Type and Coating
+                                            (SV, BF, Distance, Near, Coating-UC/HC/HMC)</th>
+                                    </tr> 
+                                    <tr>
+                                        <th>Sph</th>
+                                        <th>Cyl</th>
+                                        <th>Axis</th>
+                                        <th>V/A</th>
+                                        <th>Sph</th>
+                                        <th>Cyl</th>
+                                        <th>Axis</th>
+                                        <th>V/A</th>
+                                    </tr>   
+                                </thead>
+                                <tbody>
+                                    {% for sy in spectacletype_obj %}
+                                    <tr> 
+                                                                           
+                                        <td rowspan="2">{{forloop.counter}}</td>
+                                        <td rowspan="2">{{sy.get_pnt_details.0.unique_id|default_if_none:'-'}}</td>
+                                        <td rowspan="2">{% if sy.get_pnt_details.0.get_vision_center.name %}{{sy.get_pnt_details.0.get_vision_center.name|default_if_none:'-'}}{% else %}{{sy.get_pnt_details.0.camp.partner|default_if_none:'-'}}{% endif %}</td>
+                                        <td rowspan="2">{{sy.get_pnt_details.0.name|default_if_none:'-'}}</td>
+                                        <td rowspan="2">{{sy.get_pnt_details.0.contact_no_1|default_if_none:'-'}}</td>
+                                        <td>Distance</td>
+                                        <td >{{sy.get_pnt_details.1.sph_distance_re|default_if_none:'-'}}</td>
+                                        <td>{{sy.get_pnt_details.1.cyl_distance_re|default_if_none:'-'}}</td>
+                                        <td>{{sy.get_pnt_details.1.axis_distance_re|default_if_none:'-'}}</td>
+                                        <td>{{sy.get_pnt_details.1.va_distance_re|default_if_none:'-'}}</td>
+                                        <td>{{sy.get_pnt_details.1.sph_distance_le|default_if_none:'-'}}</td>
+                                        <td>{{sy.get_pnt_details.1.cyl_distance_le|default_if_none:'-'}}</td>
+                                        <td>{{sy.get_pnt_details.1.axis_distance_le|default_if_none:'-'}}</td>
+                                        <td>{{sy.get_pnt_details.1.va_distance_le|default_if_none:'-'}}</td>
+                                        <td rowspan="2">{{sy.frame_code|default_if_none:'-'}}</td>
+                                        <td rowspan="2">{{sy.frame_size|default_if_none:'-'}}</td>
+                                        <td rowspan="2">{{sy.type_of_coating|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Near</td>
+                                        <td>{{sy.get_pnt_details.1.sph_near_re|default_if_none:'-'}}</td>
+                                        <td>{{sy.get_pnt_details.1.cyl_near_re|default_if_none:'-'}}</td>
+                                        <td>{{sy.get_pnt_details.1.axis_near_re|default_if_none:'-'}}</td>
+                                        <td>{{sy.get_pnt_details.1.va_near_re|default_if_none:'-'}}</td>
+                                        <td>{{sy.get_pnt_details.1.sph_near_le|default_if_none:'-'}}</td>
+                                        <td>{{sy.get_pnt_details.1.cyl_near_le|default_if_none:'-'}}</td>
+                                        <td>{{sy.get_pnt_details.1.axis_near_le|default_if_none:'-'}}</td>
+                                        <td>{{sy.get_pnt_details.1.va_near_le|default_if_none:'-'}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </form>
+                {% if order.order_status == 5 or order.order_status == 6 %}
+                <form method='POST' id="submit_custom" class="needs-validation" autocomplete="off" >
+                    {% csrf_token %}
+                    <div class="table-responsive mb-3" data-pattern="priority-columns">
+                        <table id="frame_table" class="table  dt-responsive mb-0 mt-3">
+                            <thead class="table-light" >
+                                <tr class="text-center">
+                                    <th>S.No</th>
+                                    <th>Spectacles</th> 
+                                    <th>Quantity</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Ordered Spectacles </td>
+                                    <td style="text-align: center;">{{ spectacletype_obj|length }}</td>
+                                </tr>
+                                {% if not details_received %}
+                                <tr>
+                                    <td>2</td>
+                                    <td>Received Quantity </td>                                    
+                                    <td>
+                                        <input style="text-align: center;" type="Number" name= "invoice_numbers" class="form-control" placeholder="Enter Received quantity" id="invoice_nos" value="" min="0" max="{{spectacletype_obj|length}}" oninput="validity.valid||(value='');">
+                                    </td>                                                                       
+                                </tr>
+                                {% else %}
+                                <tr>
+                                    <td>2</td>
+                                    <td>Received Quantity </td>                                    
+                                    <td style="text-align: center;">{{received}}</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Damage/ Missing Quantity </td>                                    
+                                    <td style="text-align: center;">{{damage}}</td>
+                                </tr>
+                                {% endif %}
+                            </tbody>
+                        </table>
+                    </div>
+                </form> 
+                {% endif %}
+
+                {% comment %} {% if not order.invoice_no and not order.awb_no %} {% endcomment %}
+                {% if request.session.role_id == 6 %}
+                <form method='POST' class="needs-validation" id="sumbit-form">  
+                    {% csrf_token %}
+                    <div class="table-responsive mb-4" data-pattern="priority-columns">
+                        <table id="tech-companies-1" class="table  dt-responsive mb-0 mt-3">
+                            <thead class="table-light" >
+                                <tr class="text-center">
+                                    <th>Invoice Date</th> 
+                                    <th>Invoice Number</th> 
+                                    <th>Invoice Value</th>
+                                    <th>Courier Name</th>
+                                    <th>AWB Number</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="date" name= "invoice_date" class="form-control" placeholder="Enter Invoice Date" id="invoice_date" {% if order.invoice_date %} value="{{order.invoice_date|date:'Y-m-d'|default_if_none:''}}" {% else %} value="{{date_field}}" {% endif %} >
+                                    </td>
+                                    <td>
+                                        <input type="text" name= "invoice_number" class="form-control" placeholder="Enter Invoice Number" id="invoice_no" value="{{order.invoice_no|default_if_none:''}}" >
+                                    </td>
+                                    <td>
+                                        <input type="text" name= "invoice_value" class="form-control" id="invoice_value" placeholder="Enter Invoice Value" value="{{order.invoice_value|default_if_none:''}}" >
+                                    </td>
+                                    <td>
+                                        <input type="text" name= "courier_name" class="form-control" id="courier_name" placeholder="Enter Courier Name" value="{{order.courier_name|default_if_none:''}}" >
+                                    </td>
+                                    <td>
+                                        <input type="text" name= "awb_number" class="form-control" id="awb_no" placeholder="Enter AWB Number" value="{{order.awb_no|default_if_none:''}}" >
+                                    </td>                                                                       
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+                {% endif %}
+                {% comment %} {% endif %} {% endcomment %}
+                {% if request.session.role_id != 6 %}
+                {% if order.invoice_date %}
+                <div class="table-responsive mb-4" data-pattern="priority-columns">
+                    <table id="tech-companies-1" class="table  dt-responsive mb-0 mt-3">
+                        <thead class="table-light" >
+                            <tr class="text-center">
+                                <th>Invoice Date</th> 
+                                <th>Invoice Number</th> 
+                                <th>Invoice Value</th>
+                                <th>Courier Name</th>
+                                <th>AWB Number</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><center>{{order.invoice_date|date:"Y-m-d"|default_if_none:'-'}}</center></td>
+                                <td><center>{{order.invoice_no|default_if_none:'-'}}</center></td>
+                                <td><center>{{order.invoice_value|default_if_none:'-'}}</center></td>
+                                <td><center>{{order.courier_name|default_if_none:'-'}}</center></td>
+                                <td><center>{{order.awb_no|default_if_none:'-'}}</center></td>                                                                       
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                {% endif %}
+                {% endif %}
+                <div class="d-flex justify-content-between mt-3">
+                    <div class="gap-2">
+                        <button type="reset" onclick="location.href='javascript:history.back()'" class="btn btn-secondary waves-effect">
+                            Back
+                        </button>
+                    </div>
+                    <div class="gap-2 ">
+
+                        {% if request.session.role_id == 3 and order.order_status == 2 %}
+                        <button type="button" class=" btn btn-success waves-effect" onclick="ConfirmApprove('{{order_id}}',3,'Approve')"  >Approve</button>
+                        <button  type="button" class=" btn btn-primary w-md" onclick="ConfirmNeed('{{order_id}}','Rejection')" >Reject</button>
+                        {% elif request.session.role_id == 6 %}
+                            {% if order.order_status != 5 %}
+                                <button  id="order_status" class=" btn btn-primary w-md" onclick="ConfirmShipped('ship')" >Ship Order</button>
+                            {% else %}
+                                <button  id="order_status" class=" btn btn-primary w-md" onclick="ConfirmShipped('update')" >Update Ship Details</button>
+                            {% endif %}
+                        {% comment %} <button type="button"  class=" btn btn-primary w-md" onclick="ConfirmShipped('Ship')" >Ship Order</button> {% endcomment %}
+                        {% elif request.session.role_id == 4  %}
+                        {% if not order.order_status %}
+                        <button type="button" class="btn btn-primary w-md" onclick="Confirm('Submit for approval')">Submit for Approval</button>
+                        {% endif %}               
+                        {% endif %}               
+                    </div>
+                    {% if request.session.role_id == 4 and order.order_status == 5 %}
+                        {% if not details_received %}
+                        <div class="gap-2 ">
+                            <button type="button" class="btn btn-primary w-md" onclick="ConfirmCustom('Submit')">Submit </button>
+                        </div>
+                        {% endif %}               
+                    {% endif %}    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_javascript %}
+<script src="{% static 'js/pages/form-advanced.init.js'%}"></script>   <!--cause console issue  -->
+
+<script src="{% static 'libs/sweetalert2/dist/sweetalert2.min.js' %}"></script>
+<script src="{% static 'js/pages/datatables.init.js' %}"></script>      <!--cause console issue  -->
+<script type="text/javascript">
+    function Confirm(title) {
+        var form_sumbit = document.getElementById("submitting")
+        Swal.fire({
+            title: "Are you sure!",
+            text:"You want to "+ title +"?",
+            showCancelButton: !0,
+            confirmButtonColor: "#34c38f",
+            cancelButtonColor: "#f46a6a",
+            confirmButtonText: "Yes",
+        }).then((result) => {
+            if (result.isConfirmed){
+                form_sumbit.submit();
+            };
+                
+        })
+    }
+
+
+    function ConfirmApprove(order_id,status_id,title) {
+        Swal.fire({
+            title: "Are you sure!",
+            text:"You want to "+ title +"?",
+            showCancelButton: !0,
+            confirmButtonColor: "#34c38f",
+            cancelButtonColor: "#f46a6a",
+            confirmButtonText: "Yes",
+        }).then((result) => {
+            if (result.isConfirmed){
+                window.location.href = '/update_order_status/'+order_id+'/'+status_id+'/';
+            };
+        })
+    }
+    function ConfirmNeed(reject_id,title){
+        Swal.fire({
+        title: 'Please Enter Reason For Order '+ title ,
+        input: 'textarea',
+        showCancelButton: true,
+        confirmButtonText: 'Yes',
+        inputValidator: function (value) {
+            return !value && 'You need to write something!'
+        }
+        }).then((result) => {
+            if (result.isConfirmed){
+                window.location.href = '/ajax-reject/'+reject_id+'/'+result.value;
+            }
+        });
+    }
+    // function ConfirmShipped(order_id, title) {
+    //     var invoice_no = document.getElementById('invoice_no').value;
+    //     var awb_no = document.getElementById('awb_no').value;
+    //     if(invoice_no && awb_no){
+    //         var form_sumbit = document.getElementById('submitting');
+    //         Swal.fire({
+    //             title: "Are you sure!",
+    //             text:"You want to "+ title +"?",
+    //             showCancelButton: !0,
+    //             confirmButtonColor: "#34c38f",
+    //             cancelButtonColor: "#f46a6a",
+    //             confirmButtonText: "Yes",
+    //         }).then((result) => {
+    //             if (result.isConfirmed){
+    //                 form_sumbit.submit();
+    //                 window.location.href = '/add_invoice_awb_no/'+order_id+'/'+invoice_no+'/'+awb_no+ '/';
+    //             }; 
+    //         })
+    //     } 
+    //     else{     
+    //         Swal.fire({
+    //                 icon: 'warning',
+    //                 title: 'Please provide a valid add invoice and awb no',
+    //                 showCancelButton: true,
+    //                 showConfirmButton:false,
+    //             });
+    //     }
+    // }
+    function ConfirmShipped(title) {
+        var invoice_no = document.getElementById('invoice_no').value || ' ';
+        var awb_no = document.getElementById('awb_no').value || ' ';
+        var invoice_date = document.getElementById('invoice_date').value || ' ';
+        var invoice_value = document.getElementById('invoice_value').value || ' ';
+        var courier_name = document.getElementById('courier_name').value || ' ';
+
+        var order_id = '{{order.id}}'
+        var form_sumbit = document.getElementById('sumbit-form');
+        Swal.fire({
+            title: "Are you sure!",
+            text:"You want to "+ title +"?",
+            showCancelButton: !0,
+            confirmButtonColor: "#34c38f",
+            cancelButtonColor: "#f46a6a",
+            confirmButtonText: "Yes",
+        }).then((result) => {
+            if (result.isConfirmed){
+                form_sumbit.submit();
+                window.location.href = '/add_invoice_awb_no/'+order_id+'/'+invoice_no+'/'+awb_no+ '/'+invoice_date+'/'+invoice_value+'/'+courier_name+'/';
+            }; 
+        })
+    } 
+    
+    
+    function ConfirmCustom(title) {
+        var invoice_nos = document.getElementById('invoice_nos').value || ' ';
+
+        var order_id = '{{order.id}}'
+        var form_sumbit = document.getElementById('submit_custom');
+        Swal.fire({
+            title: "Are you sure!",
+            text:"You want to "+ title +"?",
+            showCancelButton: !0,
+            confirmButtonColor: "#34c38f",
+            cancelButtonColor: "#f46a6a",
+            confirmButtonText: "Yes",
+        }).then((result) => {
+            if (result.isConfirmed){
+                form_sumbit.submit();
+                window.location.href = '/update_custom_received/'+order_id+'/'+invoice_nos+'/';
+            }; 
+        })
+    } 
+</script>
+{% endblock %}

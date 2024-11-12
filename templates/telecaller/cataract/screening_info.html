@@ -1,0 +1,469 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block contents %}
+<div class="row align-items-center">
+    <div class="col-xl-12 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                    <ul class="nav nav-tabs nav-tabs-custom justify-content-end" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#home" role="tab" aria-selected="true">
+                                <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                <span class="d-none d-sm-block">Patient Info</span> 
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="tab" href="#profile" role="tab" aria-selected="false" tabindex="-1">
+                                <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                <span class="d-none d-sm-block">Case Sheet</span> 
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="tab" href="#contact" role="tab" aria-selected="false" tabindex="-1">
+                                <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                                <span class="d-none d-sm-block">Glass prescription</span>   
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <br>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><div class="table-responsive" >
+                            <table  class="table  dt-responsive ">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th colspan="4">PATIENT INFO ({{details.name|default_if_none:'-'}})</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Unique Id</th>
+                                        <td>{{details.unique_id|default_if_none:'-'}}</td> 
+                                        <th>Patient Name</th>
+                                        <td>{{details.name|default_if_none:'-'}}</td>   
+                                    </tr>
+                                    <tr> 
+                                        <th>Age</th>
+                                        <td>{{details.age|default_if_none:'-'}}</td>
+                                        <th>Gender</th>
+                                        <td>{{details.get_gender_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>   
+                                        <th>Contact No-1</th>
+                                        <td>{{details.contact_no_1|default_if_none:'-'}}</td>
+                                        <th>Contact No-2</th>
+                                        <td>{{details.contact_no_2|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Address</th>
+                                        <td>{{details.permanent_address|default_if_none:'-'}} </td>
+                                        <th>State</th>
+                                        <td>{{details.district.state.name|default_if_none:'-'}}</td> 
+                                    </tr>
+                                    <tr>
+                                        <th>District</th>
+                                        <td>{{details.district|default_if_none:'-'}}</td>
+                                        <th>Taluk</th>
+                                        <td>{{details.taluk|default_if_none:'-'}} </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Aadhaar Pan No</th>
+                                        <td>{{details.aadhaar_pan_no|default_if_none:'-'}} </td>
+                                        <th>Drivers License No</th>
+                                        <td>{{details.drivers_license_no|default_if_none:'-'}} </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Renewal Date</th>
+                                        <td>{{details.renewal_date|default_if_none:'-'}}</td>
+                                        <th>Type Of Job</th>
+                                        <td>{{details.type_of_job|default_if_none:'-'}} </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Time Since Driving</th>
+                                        <td>{{details.time_since_driving|default_if_none:'-'}}</td>
+                                        <th>Type Of Vehicle</th>
+                                        <td>{{details.type_of_vehicle|default_if_none:'-'}} </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Type Of Route</th>
+                                        <td>{{details.type_of_route|default_if_none:'-'}} </td>
+                                        <th>Caste</th>
+                                        <td>{{details.caste|default_if_none:'-'}}</td> 
+                                    </tr>
+                                    <tr>
+                                        <th>Monthly Income</th>
+                                        <td>{{details.monthly_income|default_if_none:'-'}}</td>
+                                        <th>Life Insurance Policy</th>
+                                        <td>{{details.get_life_insurance_policy_display|default_if_none:'-'}} </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Vehicle Insurance Policy</th>
+                                        <td>{{details.get_vehicle_insurance_policy_display|default_if_none:'-'}} </td>
+                                        <th>Health Insurance Policy</th>
+                                        <td>{{details.get_health_insurance_policy_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    
+                                    {% if details.donor.code == 'Cholamandalam' %}
+                                    <tr>
+                                        <th>No Of Months Employed In A Year</th>
+                                        <td>{{ details.no_of_months_employed_in_a_year | default_if_none:'-' }}</td>
+                                        <th>Educational Qualification</th>
+                                        <td>{{ details.educational_qualification | default_if_none:'-' }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Others</th>
+                                        <td>{{ details.others | default_if_none:'-' }}</td>
+                                        <th>Residence Type</th>
+                                        <td>{{ details.residence_type | default_if_none:'-' }}</td>
+                                    </tr>
+                                    {% endif %}
+                                    <tr>
+                                        <th>How Do You Know About Camp</th>
+                                        <td>{{details.how_do_you_know_about_camp|default_if_none:'-'}}</td> 
+                                    </tr>
+                                </tbody>
+                            </table> 
+                        </div> 
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tab-content" id="myTabContent">
+                            <table class="table  dt-responsive ">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th colspan="5">PATIENT CASE SHEET ({{details.name|default_if_none:'-'}})</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-light">
+                                        <th></th>
+                                        <th colspan="2">Right Eye</th>
+                                        <th colspan="2">Left Eye</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Vision</th>
+                                        <th>Distance</th>
+                                        <th>Near</th>
+                                        <th>Distance</th>
+                                        <th>Near</th>
+                                    </tr>
+                                    <tr>
+                                        <td>UnAided</td>
+                                        <td>{{visual_acuity.unaided_distance_re|default_if_none:'-'}}</td>
+                                        <td>{{visual_acuity.unaided_near_re|default_if_none:'-'}}</td> 
+                                        <td>{{visual_acuity.unaided_distance_le|default_if_none:'-'}}</td> 
+                                        <td>{{visual_acuity.unaided_near_le|default_if_none:'-'}}</td> 
+                                    </tr>
+                                    <tr> 
+                                        <td>Aided</td>
+                                        <td>{{visual_acuity.aided_distance_re|default_if_none:'-'}}</td>
+                                        <td>{{visual_acuity.aided_near_re|default_if_none:'-'}}</td> 
+                                        <td>{{visual_acuity.aided_distance_le|default_if_none:'-'}}</td> 
+                                        <td>{{visual_acuity.aided_near_le|default_if_none:'-'}}</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>Pinhole	</td>
+                                        <td>{{visual_acuity.pinhole_distance_re|default_if_none:'-'}}</td>
+                                        <td>{{visual_acuity.pinhole_near_re|default_if_none:'-'}}</td> 
+                                        <td>{{visual_acuity.pinhole_distance_le|default_if_none:'-'}}</td> 
+                                        <td>{{visual_acuity.pinhole_near_le|default_if_none:'-'}}</td> 
+                                    </tr>
+                                    <tr>    
+                                        <td>Colour</td>
+                                        <td colspan="2">{{visual_acuity.color_re|default_if_none:'-'}}</td>
+                                        <td colspan="2">{{visual_acuity.color_le|default_if_none:'-'}}</td> 
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">Treatment for refraction</th>
+                                        <td colspan="2">{{visual_acuity.treatment_for_refraction|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">Do you want to refer ?</th>
+                                        <td colspan="2">{{visual_acuity.get_do_you_want_to_refer_display|default_if_none:'-'}} </td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">Refer for </th>
+                                        <td colspan="2">{{visual_acuity.refer_for|default_if_none:'-'}} </td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="3">Refer to </th>
+                                        <td colspan="2">{{visual_acuity.refer_to|default_if_none:'-'}} </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table  dt-responsive ">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th colspan="5">Screening </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th colspan="3">Screening Response Code</th>
+                                        <td colspan="2">{{screening.code_description|default_if_none:'-'}} </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table  dt-responsive ">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th colspan="3">Medical Examination</th>
+                                        <th colspan="2"> Response</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th colspan="2">Blood pressure</th>
+                                        <th>Blood sugar</th>
+                                        <th>Weight</th>
+                                        <th>Height</th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">{{screening.blood_pressure|default_if_none:'-'}}</td>
+                                        <td>{{screening.blood_sugar|default_if_none:'-'}}</td>
+                                        <td>{{screening.weight|default_if_none:'-'}}</td>
+                                        <td>{{screening.height|default_if_none:'-'}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            {% if details.donor.code == 'Cholamandalam' %}
+                            <table class="table  dt-responsive ">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th colspan="3">Monthly Income Questions</th>
+                                        <th colspan="2"> Response</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3">Total Family Members</td>
+                                        <td colspan="2">{{screening.total_family_members|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">On what basis your salary is calculated</td>
+                                        <td colspan="2">{{screening.salary_calculated|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">If your owner is holding back any amount from your salary, Please specify(in Rupees)</td>
+                                        <td colspan="2">{{screening.owner_holding_amount|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Which are the months you are normally not employed in a year</td>
+                                        <td colspan="2">{{screening.employed_in_year|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">What do you do during non-working months</td>
+                                        <td colspan="2">{{screening.non_working_months|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Are you equipped with any alternative employment</td>
+                                        <td colspan="2">{{screening.get_alter_employment_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">If No, will you be willing to learn an alternative livelihood skill</td>
+                                        <td colspan="2">{{screening.get_learn_alter_livelihood_skill_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Do your family members earn and support you financially</td>
+                                        <td colspan="2">{{screening.get_family_support_financially_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            {% endif %}
+                            <table class="table  ">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th colspan="3">General Questions</th>
+                                        <th colspan="2"> Response</th>
+                                    </tr>
+                                <tbody>
+                                    
+                                    <tr>
+                                        <td colspan="3">Have you had a medical check up in the past 1 year ?</td>
+                                        <td colspan="2">{{screening.get_medical_checkup_past_1_year_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Do you have Diabetes ?</td>
+                                        <td colspan="2">{{screening.get_diabetes_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Do you have Hypertension ?</td>
+                                        <td colspan="2">{{screening.get_hypertension_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Do you Smoke ?</td>
+                                        <td colspan="2">{{screening.get_smoke_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Do you consume Alcohol ?</td>
+                                        <td colspan="2">{{screening.get_alcohol_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Have you ever had eye examination ?</td>
+                                        <td colspan="2">{{screening.get_eye_examination_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Do you have any difficulty in seeing distant object ?</td>
+                                        <td colspan="2">{{screening.get_seeing_distant_objects_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Do you have any difficulty in judging distance while driving ?</td>
+                                        <td colspan="2">{{screening.get_judging_distance_while_driving_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Are you able to identify the traffic colors easily ?</td>
+                                        <td colspan="2">{{screening.get_traffic_colors_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Do you have any difficulty in seeing while night driving ?</td>
+                                        <td colspan="2">{{screening.get_seeing_while_night_driving_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Have you been advised to wear glasses ever ?</td>
+                                        <td colspan="2">{{screening.get_wear_glasses_ever_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Are you using any glasses currently ?</td>
+                                        <td colspan="2">{{screening.get_wearing_glasses_currently_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Are you aware of nearby hospital ?</td>
+                                        <td colspan="2">{{screening.get_nearby_hospital_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Type of hospital</td>
+                                        <td colspan="2">{{screening.type_of_hospital|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Have you ever involved in road accident while driving your commercial vehicle before ?</td>
+                                        <td colspan="2">{{screening.get_accident_while_driving_commercial_vehicle_before_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Have you been involved in road accident in last twelve months</td>
+                                        <td colspan="2">{{screening.get_accident_vehicle_in_last_twelve_months_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    {% if details.donor.code == 'Cholamandalam' %}
+                                    <tr>
+                                        <td colspan="3">Do you have proper First-Aid Kit in your truck</td>
+                                        <td colspan="2">{{screening.get_first_aid_kit_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Are you generally happy with your profession</td>
+                                        <td colspan="2">{{screening.you_happy_with_your_profession|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">If you are happy, Specify in what way</td>
+                                        <td colspan="2">{{screening.if_you_are_happy_specify_in_what_way|default_if_none:'-'}}</td>
+                                    </tr>
+                                    {% endif %}
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="tab-content" id="myTabContent">
+                            <table  class="table  dt-responsive ">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th colspan="9">Glass Prescription ({{details.name|default_if_none:'-'}})</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th></th>
+                                        <th colspan="4">Right Eye</th>
+                                        <th colspan="4">Left Eye</th>
+                                    </tr>
+                                    <tr>
+                                        <th>vision</th>
+                                        <th>SPH</th>
+                                        <th>CYL</th>
+                                        <th>AXIS</th>
+                                        <th>V/A</th>
+                                        <th>SPH</th>
+                                        <th>CYL</th>
+                                        <th>AXIS</th>
+                                        <th>V/A</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Distance</td>
+                                        <td>{{glass_prescription.sph_distance_re|default_if_none:'-'}}</td>
+                                        <td>{{glass_prescription.cyl_distance_re|default_if_none:'-'}}</td>
+                                        <td>{{glass_prescription.axis_distance_re|default_if_none:'-'}}</td>
+                                        <td>{{glass_prescription.va_distance_re|default_if_none:'-'}}</td>
+                                        <td>{{glass_prescription.sph_distance_le|default_if_none:'-'}}</td>
+                                        <td>{{glass_prescription.cyl_distance_le|default_if_none:'-'}}</td>
+                                        <td>{{glass_prescription.axis_distance_le|default_if_none:'-'}}</td>
+                                        <td>{{glass_prescription.va_distance_le|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Near</td>
+                                        <td>{{glass_prescription.sph_near_re|default_if_none:'-'}}</td>
+                                        <td>{{glass_prescription.cyl_near_re|default_if_none:'-'}}</td>
+                                        <td>{{glass_prescription.axis_near_re|default_if_none:'-'}}</td>
+                                        <td>{{glass_prescription.va_near_re|default_if_none:'-'}}</td>
+                                        <td>{{glass_prescription.sph_near_le|default_if_none:'-'}}</td>
+                                        <td>{{glass_prescription.cyl_near_le|default_if_none:'-'}}</td>
+                                        <td>{{glass_prescription.axis_near_le|default_if_none:'-'}}</td>
+                                        <td>{{glass_prescription.va_near_le|default_if_none:'-'}}</td>
+
+                                    </tr>
+                                    <td colspan="9"></td>
+                                    <tr>
+                                        <th colspan="5">Spectacles Type</th>
+                                        <td colspan="4">{{spectacles_ty.spectacle_type|default_if_none:'-'}}</td>
+                                    </tr>
+                                    {% for l in spectacles_type %}
+                                    <tr class="table-light">
+                                        <th colspan="9" style="text-transform: uppercase;"> {{l.spectacle_name}}</th>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="5">Has Glass Collected at the Camp?</th>
+                                        <td colspan="4">{{l.get_has_the_glass_collected_display|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="5">Glass Collecting Location</th>
+                                        <td colspan="4">{{l.glass_collecting_location|default_if_none:'-'}}</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th colspan="5">Frame Code</th>
+                                        <td colspan="4">{{l.frame_code|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="5">Frame Size</th>
+                                        <td colspan="4">{{l.frame_size|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="5">Lens Type</th>
+                                        <td colspan="4">{{l.lens_type|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="5">Type Of Coating</th>
+                                        <td colspan="4">{{l.type_of_coating|default_if_none:'-'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="5">Model Type</th>
+                                        <td colspan="4">{{l.model_type|default_if_none:'-'}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="gap-2">
+                        <button type="reset"  onclick="window.location.href='/cataract-list/'" class="btn btn-secondary waves-effect">
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>
+
+{% endblock %}

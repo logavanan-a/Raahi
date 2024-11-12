@@ -1,0 +1,108 @@
+{% load static %}
+<style>
+  .tableCell{
+    text-align:center;
+  }
+  .headerCell{
+    background-color:#FFAA00;
+  }
+  .oddTableRow{
+    /*background-color:#ffeecd;*/
+    background-color:#eeeeed;;
+  }
+  .hoverTableRow{
+    background-color:#dededc;
+  }
+  .selectedTableRow{
+    background-color:#d1d6bb;
+  }
+  .google-visualization-table-sortind {
+    color: #fff!important;
+    padding-left: 4px;
+  }
+</style>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+
+//console.log(value.container_id);
+google.charts.load('current', {'packages':['corechart','table','geochart','timeline']});
+google.charts.setOnLoadCallback(drawChart);
+var datas = {};
+function drawChart()
+{  
+    datas= {{ data|safe }};
+    var chart;
+    for (data in datas.chart)
+    {
+      var value = datas.chart[data];
+      //console.log(value)
+      if(value.chart_type == 'CARDCHART')
+      {
+        // chartsRef[value.chart_name] = chart;
+        // chartsRef[value.chart_name] = chart;
+        continue;
+      }
+      if (datas.chart[data].chart_type != 'TOPINDICATOR'){
+      var value = datas.chart[data];
+      const colours=value.colours
+      if (colours != undefined){
+        for (var i = 0; i < value['datas'].length; i++) {
+          value['datas'][i].push(colours[i])
+          {% comment %} console.log(colours.length) {% endcomment %}
+        }
+      }
+      var data = new google.visualization.arrayToDataTable(value.datas);
+      var options = value.options;
+      var on_click_urls = value.on_click_urls;
+      var on_click_handler = value.on_click_handler;
+      var chart_type= value.chart_type;
+      var containerID= value.chart_name;
+      if(data.getNumberOfRows() == 0)
+      {
+        document.getElementById(containerID).append("Data Not Available");
+      }
+      else
+      {
+      if (chart_type == 'GEOCHART') {
+    // if all values are empty display "Data Not Available" instead of empty chart
+    var arrayColumn = (arr, n) => arr.map(x => x[n]);
+    var second_column = arrayColumn(value.datas, 1);
+    var slice_first_row = second_column.slice(1, second_column.length);
+    var all_array_value = slice_first_row.filter(x => x > 0).length >= 1;
+    
+    if (all_array_value == true) {
+        var data = google.visualization.arrayToDataTable(value.datas);
+
+        // Specify options for the GeoChart
+        var options = {
+            region: 'IN', // Region code for India
+            displayMode: 'regions',
+            resolution: 'provinces',
+            colorAxis: {colors: ['#e7f0fa', '#023858']}, // Gradient from light to dark blue
+        };
+
+        var view = new google.visualization.DataView(data);
+        view.setColumns([0, 1]); // Only include the first and second columns in the view
+
+        var chart = new google.visualization.GeoChart(document.getElementById(containerID));
+        chart.draw(view, options);
+    } else {
+        document.getElementById(containerID).innerHTML = "Data Not Available";
+    }
+}
+      }
+    // chartsRef[value.on_click_handler] = chart;
+    }
+  }
+}
+
+
+</script>
+
+<style>
+  .app-TableChart .google-visualization-table th,
+.app-TableChart .google-visualization-table td {
+  font-size: 12px;
+}
+</style>

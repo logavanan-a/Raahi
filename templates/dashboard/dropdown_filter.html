@@ -1,0 +1,327 @@
+{% load static %}
+<div class="card-body {% if not show_more %}collapsed{% endif %}" id="optional-fields" style="display: {% if not show_more %}none{% endif %};" filters>
+	<form action="{{form_url}}" class="form-horizontal" method="POST" id="filters" autocomplete="off">
+        {%csrf_token%}
+        <div class="row">
+            <div class="col-lg-3">
+                <select class="select2 form-select zone" id='zone' name='zone' {% if user_role == 8 or user_role == 9 or user_role == 10 or user_role == 4 %} disabled {% endif %}>
+                    {% if zones|length > 1 %}
+                    <option value='' selected>All zone</option>
+                    {% endif %}
+                    {% for select_zone in zones %}
+                    <option value="{{select_zone.id}}" {% if select_zone.id|slugify == user_filter_data.0  %}selected{% endif %}>
+                        {{select_zone.name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-lg-3">
+                <select class="select2 form-select state" {% if user_role == 4 %} disabled {% else%} id='state' name='state' {% endif %}>
+                    <option value='' selected>All state</option>
+                    {% for select_state in states %}
+                    <option value="{{select_state.id}}" {% if select_state.id|slugify == user_filter_data.1  %}selected{% endif %}>
+                        {{select_state.name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            {% comment %}
+            <div class="col-lg-3">
+                <select class="select2 form-select district" id='district' name='district'>
+                    <option value='' selected>All District </option>
+                    {% for district in districts%}
+                        <option value="{{district.id}}" {% if district.id|slugify == user_filter_data.2 %}selected {% endif %}>{{district.name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            {% endcomment %}
+            <div class="col-lg-3">
+                <select class="select2 form-select donor" {% if user_role == 11 %} disabled {% else %} id='donor' name='donor'  {% endif %}>
+                    {% if donors|length > 1 %}
+                    <option value='' selected>All Donor</option>
+                    {% endif %}
+                    {% for d in donors %}
+                        <option value="{{d.id}}" {% if d.id|slugify == user_filter_data.2 %}selected {% endif %}>{{d.name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-lg-3">
+                <select class="select2 form-select partner" {% if user_role == 4 %} disabled {% else%} id='partner' name='partner' {% endif %}>
+                    {% if partners|length > 1 %}
+                    <option value='' selected>All Partner</option>
+                    {% endif %}
+                    {% for p in partners%}
+                        <option value="{{p.id}}" {% if p.id|slugify == user_filter_data.3 %} selected {% endif %}>{{p.name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-lg-3 mt-3">
+                <input type="{%if user_filter_data.4 != ''%}date{%else%}text{%endif%}" name="from_date" style='color: #0e0f0f !important;font-size: 14px !important;font-weight: 500 !important;' value="{{user_filter_data.4}}"  class="form-control start_date"
+                            onclick='if(this.type == "text") {this.type="date";}' id="from_date" pattern="dd/mm/yyyy" max='{{today|date:"Y-m-d"}}' placeholder='Created From' onfocus="this.max=new Date().toISOString().split('T')[0]">
+            </div>
+            <div class="col-lg-3 mt-3">
+                <input type="{%if user_filter_data.5 != ''%}date{%else%}text{%endif%}" name="to_date" style='color: #0e0f0f !important;font-size: 14px !important;font-weight: 500 !important;' value="{{user_filter_data.5}}"  class="form-control end_date"
+                            onclick='if(this.type == "text") {this.type="date";}' id="to_date" pattern="dd/mm/yyyy" max='{{today|date:"Y-m-d"}}' placeholder='Created To' onfocus="this.max=new Date().toISOString().split('T')[0]">
+            </div>
+            <div class="col-lg-3 mt-3">
+                <button type="submit" class="btn btn-square btn-primary float-right me-3">Submit</button>
+                <button id="reset" class="btn btn-square btn-warning float-right">Reset</button>
+            </div>
+        </div>
+        <!-- <div class="row justify-content-end mt-3">
+            <div class="col-auto">
+            </div>
+			<div class="col-auto">
+            </div>
+        </div> -->
+	</form>
+	
+</div>
+{% comment %} <div class="row justify-content-end">
+    <div class="col-lg-3 text-end">
+        <button type="button" class="btn btn-primary btn-sm" id="toggle-button">
+            {% if show_more %}Show less{% else %}Show more{% endif %}
+        </button>
+    </div>
+</div> {% endcomment %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript">
+    //TODO: yet to test the onchange state/district
+    document.addEventListener('DOMContentLoaded', function() {
+        $("button[id='reset']").on("click", function(event){
+            $('#zone').val('');
+            $('#state').val('');
+            $('#district').prop('selectedIndex', 0).change();
+            $('#partner').val('');
+            $('#donor').val('');
+            $('#from_date').val('');
+            $('#to_date').val('');
+            $('#filter_form').submit();
+        });
+        $("#from_date").on("change", function(event){
+            document.getElementById("to_date").min=$("#from_date").val()
+        });
+    }); 
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+                $('select#zone').change(function () {
+                    var optionSelected = $(this).find("option:selected");
+                    var valueSelected = optionSelected.val();
+                    data = {
+                            'selected_zone': valueSelected,
+                    };
+                    $("#state option").remove();
+                    $("#partner option").remove();
+                    $("#donor option").remove();
+                        console.log(data,'---------------------')
+                        $.ajax({
+                            type: "GET",
+                            url: '/ajax/dash_state/',
+                            data: data,
+                            success: function (result) {
+                                if (JSON.parse(result).length === 0) {
+                                    $("#state option").remove();
+                                    a =
+                                    '<option selected disabled value="">No State mapped for this Zone</option>';
+                                    $("#state").append(a);
+                                } else if (JSON.parse(result).length === 1){
+                                    $.each(JSON.parse(result), function (key, value) {
+                                        a = '<option value=' + value['id'] + ' selected >' +
+                                            value['name'] + '</option>';
+                                        $("#state").append(a);
+                                    });
+                                }
+                                else {
+                                    a = '<option selected value="">All state</option>';
+                                    $("#state").append(a);
+                                    $.each(JSON.parse(result), function (key, value) {
+                                        a = '<option value=' + value['id'] + '>' +
+                                            value['name'] + '</option>';
+                                        $("#state").append(a);
+                                    });
+                                }
+                            }
+                        });
+                        $.ajax({
+                            type: "GET",
+                            url: '/ajax/dash_donor/',
+                            data: data,
+                            success: function (result) {
+                                if (JSON.parse(result).length === 0) {
+                                    a =
+                                    '<option selected disabled value="">No Donor mapped for this zone</option>';
+                                    $("#donor").append(a);
+                                } 
+                                else if (JSON.parse(result).length === 1){
+                                    $.each(JSON.parse(result), function (key, value) {
+                                        a = '<option value=' + value['id'] + ' selected >' +
+                                            value['name'] + '</option>';
+                                        $("#donor").append(a);
+                                    });
+                                }
+                                else {
+                                    a = '<option selected value="">All Donor</option>';
+                                    $("#donor").append(a);
+                                    $.each(JSON.parse(result), function (key, value) {
+                                        a = '<option value=' + value['id'] + '>' +
+                                            value['name'] + '</option>';
+                                        $("#donor").append(a);
+                                    });
+                                }
+                            }
+                        });
+                        $.ajax({
+                            type: "GET",
+                            url: '/ajax/dash_hospital/',
+                            data: data,
+                            success: function (result) {
+                                if (JSON.parse(result).length === 0) {
+                                    a =
+                                    '<option selected disabled value="">No Partner mapped for this Zone</option>';
+                                    $("#partner").append(a);
+                                } else if (JSON.parse(result).length === 1){
+                                    $.each(JSON.parse(result), function (key, value) {
+                                        a = '<option value=' + value['id'] + ' selected>' +
+                                            value['name'] + '</option>';
+                                        $("#partner").append(a);
+                                    });
+                                }
+                                else {
+                                    a = '<option selected value="">All Partner</option>';
+                                        $("#partner").append(a);
+                                    $.each(JSON.parse(result), function (key, value) {
+                                        a = '<option value=' + value['id'] + '>' +
+                                            value['name'] + '</option>';
+                                        $("#partner").append(a);
+                                    });
+                                }
+                            }
+                        });
+
+                });
+            });
+
+document.addEventListener('DOMContentLoaded', function() {
+    $('#state').change(function() {
+        debugger;
+        var optionSelected = $(this).find("option:selected");
+        var valueSelected = optionSelected.val();
+        $("#partner option").remove();
+        $("#donor option").remove();
+        data = {
+                'selected_state': valueSelected,
+                'selected_zone' : document.getElementById('zone').value
+                };
+                $.ajax({
+                        type: "GET",
+                        url: '/ajax/dash_donor/',
+                        data: data,
+                        success: function (result) {
+                            if (JSON.parse(result).length === 0) {
+                                a =
+                                '<option selected disabled value="">No Donor mapped for this zone</option>';
+                                $("#donor").append(a);
+                            } 
+                            else if (JSON.parse(result).length === 1){
+                                $.each(JSON.parse(result), function (key, value) {
+                                    a = '<option value=' + value['id'] + ' selected >' +
+                                        value['name'] + '</option>';
+                                    $("#donor").append(a);
+                                });
+                            }
+                            else {
+                                a = '<option selected value="">All Donor</option>';
+                                $("#donor").append(a);
+                                $.each(JSON.parse(result), function (key, value) {
+                                    a = '<option value=' + value['id'] + '>' +
+                                        value['name'] + '</option>';
+                                    $("#donor").append(a);
+                                });
+                            }
+                        }
+                    });
+                $.ajax({
+                    type: "GET",
+                    url: '/ajax/dash_hospital/',
+                    data: data,
+                    success: function (result) {
+                        if (JSON.parse(result).length === 0) {
+                            a =
+                            '<option selected disabled value="">No Partner mapped for this Zone</option>';
+                            $("#partner").append(a);
+                        } else if (JSON.parse(result).length === 1){
+                            $.each(JSON.parse(result), function (key, value) {
+                                a = '<option value=' + value['id'] + ' selected>' +
+                                    value['name'] + '</option>';
+                                $("#partner").append(a);
+                            });
+                        }
+                        else {
+                            a = '<option selected value="">All Partner</option>';
+                                $("#partner").append(a);
+                            $.each(JSON.parse(result), function (key, value) {
+                                a = '<option value=' + value['id'] + '>' +
+                                    value['name'] + '</option>';
+                                $("#partner").append(a);
+                            });
+                        }
+                    }
+                });
+    });
+
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    $('#donor').change(function() {
+        var optionSelected = $(this).find("option:selected");
+        var valueSelected = optionSelected.val();
+        $("#partner option").remove();
+        data = {
+                'selected_donor': valueSelected,
+                'selected_state': document.getElementById('state').value,
+                'selected_zone' : document.getElementById('zone').value
+                };
+                $.ajax({
+                type: "GET",
+                url: '/ajax/dash_hospital/',
+                data: data,
+                success: function (result) {
+                    if (JSON.parse(result).length === 0) {
+                        a =
+                        '<option selected disabled value="">No Partner mapped for this Zone</option>';
+                        $("#partner").append(a);
+                    } else if (JSON.parse(result).length === 1){
+                        $.each(JSON.parse(result), function (key, value) {
+                            a = '<option value=' + value['id'] + ' selected>' +
+                                value['name'] + '</option>';
+                            $("#partner").append(a);
+                        });
+                    }
+                    else {
+                        a = '<option selected value="">All Partner</option>';
+                            $("#partner").append(a);
+                        $.each(JSON.parse(result), function (key, value) {
+                            a = '<option value=' + value['id'] + '>' +
+                                value['name'] + '</option>';
+                            $("#partner").append(a);
+                        });
+                    }
+                }
+            });
+    });
+
+});
+
+</script>
+<script>
+    const optionalFields = document.getElementById('optional-fields');
+    const toggleButton = document.getElementById('toggle-button');
+
+    toggleButton.addEventListener('click', () => {
+    const isCollapsed = optionalFields.classList.contains('collapsed');
+    optionalFields.classList.toggle('collapsed');
+    optionalFields.style.display = isCollapsed ? 'block' : 'none';
+    toggleButton.innerHTML = isCollapsed ? '<i class="fas fa-chevron-up"></i>' : '<i class="fas fa-chevron-down"></i> ';
+    toggleButton.title = isCollapsed ? 'Hide filters' : 'Show filters';
+    });
+</script>

@@ -1,0 +1,301 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link href="{% static 'libs/sweetalert2/dist/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block contents %}
+<div class="row align-items-center">
+    <div class="col-xl-12 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                <form id="myForm" method='POST' class="needs-validation" autocomplete="off" novalidate>
+                    {% csrf_token %}
+                    <div class='text-danger'>
+                        {{error}}
+                    </div> 
+                    <div class="row mb-4">
+                        <label class="col-md-2 col-form-label">Name<span class="required-field"></span></label>
+                        <div class="col-md-4"> 
+                            <input type="text"  name= "name" class="form-control" value="{{camp.name|default_if_none:''}}" required />
+                            <div class="invalid-feedback">
+                                Please enter name.
+                            </div>
+                        </div>
+                        <label class="col-md-2 col-form-label">Code<span class="required-field"></span></label>
+                        <div class="col-md-4"> 
+                            <input type="text"  name= "code" class="form-control" value="{{camp.code|default_if_none:''}}" required readonly/>
+                            <div class="invalid-feedback">
+                                Please enter code.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <label class="col-md-2 col-form-label">Date <span class="required-field"></span></label>
+                        <div class="col-md-4">
+                            <!-- <input type="date"  name= "date" class="form-control"  value="{{camp.date|default_if_none:'-'|date:'Y-m-d'}}" /> -->
+                            <input type="date" name= "date"  class="form-control" value="{{camp.date|date:'Y-m-d'|default_if_none:''}}" required id="myDateInput"  onfocus="setMinDate()">
+                            <div class="invalid-feedback">
+                                Please choose date.
+                            </div>
+                        </div>
+                        <label class="col-md-2 col-form-label">Donor<span class="required-field"></span></label>
+                        <div class="col-md-4">
+                            <select name="donor" class="form-select select2" required>
+                                <option value="" disabled selected>Select Donor</option>
+                                {% for donor in donors %}
+                                    <option value="{{ donor.id }}" {% if donor.id == camp.donor.id %}selected{% endif %}>{{ donor }}</option>
+                                {% endfor %}
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select donor.
+                            </div>                        
+                        </div>     
+                    </div>
+                    <div class="row mb-4">
+                        <label class="col-md-2 col-form-label">Start Time</label>
+                        <div class="col-md-4"> 
+                            <input type="text"  name= "start_time" class="form-control" value="{{camp.start_time|default_if_none:''}}" readonly>
+                        </div>
+                        <label class="col-md-2 col-form-label">End Time </label>
+                        <div class="col-md-4">
+                            <input type="text" name= "end_time"  class="form-control" value="{{camp.end_time|default_if_none:''}}" readonly>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <label class="col-md-2 col-form-label">Location<span class="required-field"></span></label>
+                        <div class="col-md-4">
+                            <input type="text"  name= "location" class="form-control" required value="{{camp.location|default_if_none:''}}" />
+                            <div class="invalid-feedback">
+                                Please enter location.
+                            </div>
+                        </div>
+                        <label class="col-md-2 col-form-label">Address<span></span></label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="" name='address' value="{{camp.address|default_if_none:''}}"  >
+                        </div>
+                    </div>  
+                    <div class="row mb-4">
+                        <label class="col-md-2 col-form-label">Village<span></span></label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="" name='village' value="{{camp.village|default_if_none:''}}"  >
+                        </div>
+                        <label class="col-md-2 col-form-label">Block<span></span></label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="" name='block' value="{{camp.block|default_if_none:''}}"  >
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <label class="col-md-2 col-form-label">State<span class="required-field"></span></label>
+                        <div class="col-md-4">
+                            <select name="state" id="id_state" class="form-select select2" required>
+                                <option value="" disabled selected>Select State </option>
+                                {% for state in states %}
+                                    <option value="{{state.id}}" {% if state.id == camp.district.state.id %}selected{% endif %}>{{ state }}</option>
+                                {% endfor %}
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select state.
+                            </div>
+                        </div> 
+                        <label class="col-md-2 col-form-label">District <span class="required-field"></span></label>
+                        <div class="col-md-4">
+                            <select name="district" id="id_district" class="form-select select2" required>
+                                <option value="" disabled selected>Select District</option>
+                                {% for district in districts %}
+                                    <option value="{{district.id}}" {% if district.id == camp.district.id %}selected{% endif %}>{{ district }}</option>
+                                {% endfor %}
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select district.
+                            </div>
+                        </div>                         
+                    </div>
+                    <div class="row mb-4">
+                        <label class="col-md-2 col-form-label">Expected Glass Prescription<span></span></label>
+                        <div class="col-md-4">
+                            <input type="text"  name= "expected_glass_prescription" class="form-control" value="{{camp.expected_glass_prescription|default_if_none:''}}" />
+                        </div>
+                            <label class="col-md-2 col-form-label">Expected Refer Surgeries<span></span></label>
+                        <div class="col-md-4">
+                            <input type="text"  name= "expected_refer_surgeries" class="form-control" value="{{camp.expected_refer_surgeries|default_if_none:''}}"/>
+                        </div>
+                    </div>  
+                    <div class="row mb-4">
+                        <label class="col-md-2 col-form-label">Expected Camp OPD<span ></span></label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="" name='expected_camp_OPD' value="{{camp.expected_camp_OPD|default_if_none:''}}"/>
+                        </div>
+                        <label class="col-md-2 col-form-label">Coordinator Name<span></span></label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" maxlength="10"  id="" name='coordinator_name' value="{{camp.coordinator_name|default_if_none:''}}" >
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <label class="col-md-2 col-form-label">Coordinator Mobile No<span></span></label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="" minlength="10" maxlength="10" name='coordinator_mobile_no' value="{{camp.coordinator_mobile_no|default_if_none:''}}" >
+                        </div>
+                        <label class="col-md-2 col-form-label">Exclusive Camp<span class="required-field"></span></label>
+                        <div class="col-md-4" style="padding: 10px;">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input p-0" type="radio" name="exclusive_camp" value="1" {% if camp.exclusive_camp == 1 %} checked {% endif %}>
+                                <label class="form-check-label" for="campYes">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input p-0" type="radio" name="exclusive_camp" value="2" {% if camp.exclusive_camp == 2 %} checked {% endif %}>
+                                <label class="form-check-label" for="campNo">No</label>
+                            </div>
+                        </div>     
+                    </div> 
+                    <!-- <div class="row mb-4">
+                        <label class="col-md-2 col-form-label">Exclusive Camp<span class="required-field"></span></label>
+                        <div class="col-md-4" style="padding: 10px;">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input p-0" type="radio" name="exclusive_camp" value="1" {% if camp.exclusive_camp == 1 %} checked {% endif %}>
+                                <label class="form-check-label" for="campYes">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input p-0" type="radio" name="exclusive_camp" value="2" {% if camp.exclusive_camp == 2 %} checked {% endif %}>
+                                <label class="form-check-label" for="campNo">No</label>
+                            </div>
+                        </div>
+                    </div>   -->
+                    <div class="row mb-4" id="visionCenterContainer">
+                        <label class="col-md-2 col-form-label">VC Camp<span class="required-field"></span></label>
+                        <div class="col-md-4">
+                            <select name="visioncenter" id="visioncenter" class="form-select select2">
+                                <option value="" disabled selected>Select VC Camp</option>
+                                {% for vision_center in vision_centers %}
+                                    <option value="{{ vision_center.id }}" {% if vision_center.id == camp.vision_center.id %}selected{% endif %}>{{ vision_center }}</option>
+                                {% endfor %}
+                            </select> 
+                            <div class="invalid-feedback">
+                                Please select a VC Camp .
+                            </div>                      
+                        </div>    
+                    </div>  
+                    {% if request.session.role_id == 4 %}
+                    <div class="gap-2" style="float:right;">
+                        <button type="reset"  onclick="window.location.href='/camp_list/'" class="btn btn-secondary waves-effect">
+                            Cancel
+                        </button>
+                        <button type="submit" id="submitting" style="margin-left: 5px;" class="btn btn-primary w-md">Submit</button>
+                    </div>
+                    {% else %}
+                    <button type="reset"  onclick="window.location.href='/camp_list/'" class="btn btn-secondary waves-effect">
+                        Back
+                    </button>
+                    {% endif %}
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/pages/form-validation.init.js' %}"></script>
+
+<script src="{% static 'libs/jquery/dist/jquery.min.js' %}"></script>
+<script>
+    $(document).ready(function() {
+    
+        var vision_id = '{{camp.exclusive_camp}}'
+        if (vision_id === "2"){
+            $("#visionCenterContainer").show();
+        }
+        else {
+
+            $("#visionCenterContainer").hide();
+        }
+
+        $("input[name='exclusive_camp']").change(function() {
+            $("#visioncenter").prop('selectedIndex', 0).change();
+            if (this.value === "2") { 
+                $("#visionCenterContainer").show();
+                $("select[name='visioncenter']").prop('required', true);
+            } else {
+                $("#visionCenterContainer").hide();
+                $("select[name='visioncenter']").prop('required', false);
+            }
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('select').addClass('form-control')
+        $('input').addClass('form-control')
+
+    });
+    
+    $("#filter_reset").click(function() {
+        $('#id_state').prop('selectedIndex', 0).change();
+        this.form.submit();
+    });
+    $(document).ready(function() {
+  $('#id_district').prop('readonly', true);
+
+  $("#filter_reset").click(function() {
+    $('#id_state').prop('selectedIndex', 0).change();
+    this.form.submit();
+  });
+
+  $('#id_state').change(function() {
+    var optionSelected = $(this).find("option:selected");
+    var valueSelected = optionSelected.val();
+
+    $('#id_district').prop('readonly', false);
+
+    if (valueSelected === "") {
+      $('#id_district').prop('readonly', true);
+      $("#id_district option").remove();
+    } else {
+      $.ajax({
+        type: "GET",
+        url: '/ajax/district/' + valueSelected + '/',
+        success: function(result) {
+          $("#id_district option").remove();
+          a = '<option selected value="">Choose district Name</option>';
+          $("#id_district").append(a);
+
+          if (JSON.parse(result) == 0) {
+            $("#id_district option").remove();
+            a = '<option selected value="">No district is mapped to this state </option>';
+            console.log(a)
+            $("#id_district").append(a);
+          } else {
+            $.each(JSON.parse(result), function(key, value) {
+              a = '<option value=' + value['id'] + '>' + value['name'] + '</option>';
+              $("#id_district").append(a);
+            });
+          }
+        }
+      });
+    }
+  });
+//   $('#id_state').trigger('change');
+
+});
+
+function setMinDate() {
+  var today = new Date().toISOString().split('T')[0];
+  document.getElementById("myDateInput").min = today;
+}
+
+
+function validateForm() {
+        var form = document.getElementById('myForm');
+
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+    }
+
+    document.getElementById('submitting').addEventListener('click', validateForm);
+ 
+
+</script>    
+{% endblock %}
+

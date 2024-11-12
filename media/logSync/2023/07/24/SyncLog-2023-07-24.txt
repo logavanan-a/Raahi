@@ -1,0 +1,428 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 10:15:48hrs[
+    {
+        "id": 1,
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "124586",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "2023-07-20",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 10:17:39hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 10:17:39hrs{
+    "user_id": 2,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 10:18:15hrs[
+    {
+        "id": 1,
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "124586",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "2023-07-20",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "app_created_at": null,
+        "app_updated_at": null,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 10:18:15hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 10:18:15hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 10:18:15hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 10:41:24hrs[
+    {
+        "id": 1,
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "124586",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai,test",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "2023-07-20",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "app_created_at": null,
+        "app_updated_at": null,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 10:41:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 10:41:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 10:41:24hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 10:41:37hrs[
+    {
+        "id": 1,
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "124586",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "2023-07-20",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "app_created_at": null,
+        "app_updated_at": null,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 10:41:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 10:41:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 10:41:37hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 11:46:57hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 11:46:57hrs{
+    "user_id": 2,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 11:47:19hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 11:47:19hrs{
+    "user_id": 2,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 11:47:25hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 11:47:29hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 11:47:29hrs{
+    "user_id": 2
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 11:47:34hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 11:47:34hrs{
+    "user_id": 2,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 11:48:20hrs[
+    {
+        "id": 1,
+        "status": 2,
+        "server_created_on": "2023-07-20T16:44:23.399180+05:30",
+        "server_modified_on": "2023-07-20T16:44:23.399207+05:30",
+        "uuid": "10254",
+        "unique_id": "124586",
+        "patient_id": "1",
+        "name": "Sanjay",
+        "age": 24,
+        "gender": 1,
+        "contact_no_1": "8745213695",
+        "contact_no_2": "9856321470",
+        "permanent_address": "2nd cross, 3rd street ,mumbai",
+        "taluk": "mumbai",
+        "aadhaar_pan_no": "ASDFG7854WE",
+        "drivers_license_no": "7845124wer5210",
+        "renewal_date": "2023-07-20",
+        "time_since_driving": "10",
+        "life_insurance_policy": 1,
+        "vehicle_insurance_policy": 1,
+        "health_insurance_policy": 1,
+        "others": "None",
+        "no_of_months_employed_in_a_year": "12",
+        "app_created_at": null,
+        "app_updated_at": null,
+        "sync_status": 2,
+        "created_by": null,
+        "modified_by": null,
+        "district": 7,
+        "type_of_job": 17,
+        "type_of_vehicle": 24,
+        "type_of_route": 26,
+        "caste": 29,
+        "monthly_income": 35,
+        "how_do_you_know_about_camp": 36,
+        "educational_qualification": 47,
+        "residence_type": 48
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 11:48:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 11:48:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 11:48:20hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 11:48:24hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 11:48:24hrs{
+    "user_id": 2,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": ""
+}
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 14:46:12hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 07/24/2023, 14:46:12hrs{
+    "user_id": 2,
+    "ptsdate": "",
+    "ssdate": "",
+    "vsdate": "",
+    "gsdate": ""
+}

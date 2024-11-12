@@ -1,0 +1,434 @@
+
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 14:14:51hrs"https://raahidev.mahiti.org/master-data/"
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 14:14:51hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 14:15:08hrs"https://raahidev.mahiti.org/pull-api/"
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 14:15:08hrs{
+    "user_id": 121
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:02:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:02:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:02:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:02:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:02:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:02:25hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:02:25hrs[
+    {
+        "address": "",
+        "block": "",
+        "coordinator_mobile_no": "",
+        "coordinator_name": "",
+        "created_by": 153,
+        "date": "2024-08-05",
+        "delay_reason": "",
+        "district": 610,
+        "donor": 4,
+        "exclusive_camp": 2,
+        "expected_camp_OPD": "",
+        "expected_glass_prescription": "",
+        "expected_refer_surgeries": "",
+        "location": "delhi",
+        "modified_by": 153,
+        "name": "demo training",
+        "partner": 37,
+        "uuid": "202408051502249685c12a-eb87-4522-bf81-1c3231e49d2b",
+        "village": "",
+        "vision_center": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:02:25hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": [
+        {
+            "uuid": "202408051502249685c12a-eb87-4522-bf81-1c3231e49d2b",
+            "id": 179,
+            "code": 166,
+            "SCO": "2024-08-05 09:32:25.302672+00:00",
+            "SMO": "2024-08-05 09:32:25.302706+00:00",
+            "sync_status": 2
+        }
+    ]
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:09:17hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 20,
+        "app_created_at": "2024-08-05T15:09:16",
+        "app_updated_at": "2024-08-05T15:09:16",
+        "camp": 179,
+        "contact_no_1": "7987160596",
+        "contact_no_2": "",
+        "district": 459,
+        "donor": 4,
+        "drivers_license_no": "",
+        "educational_qualification": 45,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 40,
+        "id": 0,
+        "language": 2,
+        "latitude": "0.0",
+        "life_insurance_policy": 2,
+        "longitude": "0.0",
+        "monthly_income": 229,
+        "name": "dickson",
+        "no_of_months_employed_in_a_year": "12",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "UP-09R-1156643",
+        "user": 121,
+        "uuid": "202408051509167a853cac-118d-4a86-9295-0beced2f761e",
+        "vehicle_insurance_policy": 2,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:09:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:09:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:09:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:09:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:09:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:09:18hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:09:18hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408051509167a853cac-118d-4a86-9295-0beced2f761e",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:11:27hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 20,
+        "app_created_at": "2024-08-05T15:09:16",
+        "app_updated_at": "2024-08-05T15:11:26",
+        "camp": 179,
+        "contact_no_1": "8965818350",
+        "contact_no_2": "",
+        "district": 459,
+        "donor": 4,
+        "drivers_license_no": "",
+        "educational_qualification": 45,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 40,
+        "id": 0,
+        "language": 2,
+        "latitude": "0.0",
+        "life_insurance_policy": 2,
+        "longitude": "0.0",
+        "monthly_income": 229,
+        "name": "dickson",
+        "no_of_months_employed_in_a_year": "12",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "UP-09R-1156644",
+        "user": 121,
+        "uuid": "202408051509167a853cac-118d-4a86-9295-0beced2f761e",
+        "vehicle_insurance_policy": 2,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:11:28hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:11:28hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:11:28hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:11:28hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:11:28hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:11:28hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:11:28hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408051509167a853cac-118d-4a86-9295-0beced2f761e",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:14:12hrs[
+    {
+        "aadhaar_pan_no": "",
+        "age": 20,
+        "app_created_at": "2024-08-05T15:09:16",
+        "app_updated_at": "2024-08-05T15:14:11",
+        "camp": 179,
+        "contact_no_1": "8949186175",
+        "contact_no_2": "",
+        "district": 459,
+        "donor": 4,
+        "drivers_license_no": "",
+        "educational_qualification": 45,
+        "feedback": "",
+        "gender": 1,
+        "health_insurance_policy": 1,
+        "how_do_you_know_about_camp": 40,
+        "id": 0,
+        "language": 2,
+        "latitude": "0.0",
+        "life_insurance_policy": 2,
+        "longitude": "0.0",
+        "monthly_income": 229,
+        "name": "dickson",
+        "no_of_months_employed_in_a_year": "12",
+        "partner_id": 37,
+        "permanent_address": "",
+        "renewal_date": "",
+        "residence_type": 49,
+        "status": 0,
+        "sync_status": 0,
+        "time_since_driving": "",
+        "type_of_job": 16,
+        "type_of_route": 0,
+        "type_of_vehicle": 0,
+        "unique_id": "RJ-08O-358305",
+        "user": 121,
+        "uuid": "202408051509167a853cac-118d-4a86-9295-0beced2f761e",
+        "vehicle_insurance_policy": 2,
+        "vision_center_id": 109
+    }
+]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:14:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:14:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:14:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:14:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:14:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:14:13hrs[]
+
+
+==================================================
+
+
+Log Date & Time : 08/05/2024, 15:14:13hrs{
+    "status": 2,
+    "message": "Data send successfully",
+    "patient": [
+        {
+            "uuid": "202408051509167a853cac-118d-4a86-9295-0beced2f761e",
+            "error_message": "Invalid Unique ID",
+            "sync_status": 0
+        }
+    ],
+    "screening": [],
+    "visual_acuity": [],
+    "glass_prescription": [],
+    "spectacle_type": [],
+    "family_members": [],
+    "camp": []
+}
